@@ -1,0 +1,953 @@
+nohup: ignoring input
+开始执行所有评估实验...
+总计: 33个数据集 × 2种context_type = 66个实验
+开始时间: Sat Sep 13 09:20:59 UTC 2025
+
+========================================================
+开始处理数据集: hotpotqa (HotPotQA)
+========================================================
+
+==================================
+实验进度: 1/66
+数据集: hotpotqa
+权重: w00
+Context Type: triples
+测试文件: /home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w00.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w00
+日志文件: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w00/evaluation_getIE_wrong_tripledev100idea_log_20250913_092059.log
+开始时间: Sat Sep 13 09:20:59 UTC 2025
+==================================
+✅ 实验 1 执行成功
+   数据集: hotpotqa, 权重: w00, Context: triples
+完成时间: Sat Sep 13 09:23:23 UTC 2025
+
+==================================
+实验进度: 2/66
+数据集: hotpotqa
+权重: w00
+Context Type: documents
+测试文件: /home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w00.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w00
+日志文件: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w00/evaluation_getIE_wrong_docdev100idea_log_20250913_092323.log
+开始时间: Sat Sep 13 09:23:23 UTC 2025
+==================================
+✅ 实验 2 执行成功
+   数据集: hotpotqa, 权重: w00, Context: documents
+完成时间: Sat Sep 13 09:28:45 UTC 2025
+
+==================================
+实验进度: 3/66
+数据集: hotpotqa
+权重: w01
+Context Type: triples
+测试文件: /home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w01.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w01
+日志文件: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w01/evaluation_getIE_wrong_tripledev100idea_log_20250913_092845.log
+开始时间: Sat Sep 13 09:28:45 UTC 2025
+==================================
+✅ 实验 3 执行成功
+   数据集: hotpotqa, 权重: w01, Context: triples
+完成时间: Sat Sep 13 09:31:20 UTC 2025
+
+==================================
+实验进度: 4/66
+数据集: hotpotqa
+权重: w01
+Context Type: documents
+测试文件: /home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w01.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w01
+日志文件: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w01/evaluation_getIE_wrong_docdev100idea_log_20250913_093120.log
+开始时间: Sat Sep 13 09:31:20 UTC 2025
+==================================
+✅ 实验 4 执行成功
+   数据集: hotpotqa, 权重: w01, Context: documents
+完成时间: Sat Sep 13 09:36:40 UTC 2025
+
+==================================
+实验进度: 5/66
+数据集: hotpotqa
+权重: w02
+Context Type: triples
+测试文件: /home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w02.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w02
+日志文件: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w02/evaluation_getIE_wrong_tripledev100idea_log_20250913_093640.log
+开始时间: Sat Sep 13 09:36:40 UTC 2025
+==================================
+✅ 实验 5 执行成功
+   数据集: hotpotqa, 权重: w02, Context: triples
+完成时间: Sat Sep 13 09:39:08 UTC 2025
+
+==================================
+实验进度: 6/66
+数据集: hotpotqa
+权重: w02
+Context Type: documents
+测试文件: /home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w02.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w02
+日志文件: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w02/evaluation_getIE_wrong_docdev100idea_log_20250913_093908.log
+开始时间: Sat Sep 13 09:39:08 UTC 2025
+==================================
+✅ 实验 6 执行成功
+   数据集: hotpotqa, 权重: w02, Context: documents
+完成时间: Sat Sep 13 09:43:53 UTC 2025
+
+==================================
+实验进度: 7/66
+数据集: hotpotqa
+权重: w03
+Context Type: triples
+测试文件: /home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w03.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w03
+日志文件: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w03/evaluation_getIE_wrong_tripledev100idea_log_20250913_094353.log
+开始时间: Sat Sep 13 09:43:53 UTC 2025
+==================================
+✅ 实验 7 执行成功
+   数据集: hotpotqa, 权重: w03, Context: triples
+完成时间: Sat Sep 13 09:46:23 UTC 2025
+
+==================================
+实验进度: 8/66
+数据集: hotpotqa
+权重: w03
+Context Type: documents
+测试文件: /home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w03.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w03
+日志文件: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w03/evaluation_getIE_wrong_docdev100idea_log_20250913_094623.log
+开始时间: Sat Sep 13 09:46:23 UTC 2025
+==================================
+✅ 实验 8 执行成功
+   数据集: hotpotqa, 权重: w03, Context: documents
+完成时间: Sat Sep 13 09:51:40 UTC 2025
+
+==================================
+实验进度: 9/66
+数据集: hotpotqa
+权重: w04
+Context Type: triples
+测试文件: /home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w04.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w04
+日志文件: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w04/evaluation_getIE_wrong_tripledev100idea_log_20250913_095140.log
+开始时间: Sat Sep 13 09:51:40 UTC 2025
+==================================
+✅ 实验 9 执行成功
+   数据集: hotpotqa, 权重: w04, Context: triples
+完成时间: Sat Sep 13 09:54:12 UTC 2025
+
+==================================
+实验进度: 10/66
+数据集: hotpotqa
+权重: w04
+Context Type: documents
+测试文件: /home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w04.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w04
+日志文件: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w04/evaluation_getIE_wrong_docdev100idea_log_20250913_095412.log
+开始时间: Sat Sep 13 09:54:12 UTC 2025
+==================================
+✅ 实验 10 执行成功
+   数据集: hotpotqa, 权重: w04, Context: documents
+完成时间: Sat Sep 13 09:59:25 UTC 2025
+
+==================================
+实验进度: 11/66
+数据集: hotpotqa
+权重: w05
+Context Type: triples
+测试文件: /home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w05.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w05
+日志文件: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w05/evaluation_getIE_wrong_tripledev100idea_log_20250913_095925.log
+开始时间: Sat Sep 13 09:59:25 UTC 2025
+==================================
+✅ 实验 11 执行成功
+   数据集: hotpotqa, 权重: w05, Context: triples
+完成时间: Sat Sep 13 10:01:38 UTC 2025
+
+==================================
+实验进度: 12/66
+数据集: hotpotqa
+权重: w05
+Context Type: documents
+测试文件: /home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w05.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w05
+日志文件: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w05/evaluation_getIE_wrong_docdev100idea_log_20250913_100138.log
+开始时间: Sat Sep 13 10:01:38 UTC 2025
+==================================
+✅ 实验 12 执行成功
+   数据集: hotpotqa, 权重: w05, Context: documents
+完成时间: Sat Sep 13 10:06:33 UTC 2025
+
+==================================
+实验进度: 13/66
+数据集: hotpotqa
+权重: w06
+Context Type: triples
+测试文件: /home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w06.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w06
+日志文件: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w06/evaluation_getIE_wrong_tripledev100idea_log_20250913_100633.log
+开始时间: Sat Sep 13 10:06:33 UTC 2025
+==================================
+✅ 实验 13 执行成功
+   数据集: hotpotqa, 权重: w06, Context: triples
+完成时间: Sat Sep 13 10:08:51 UTC 2025
+
+==================================
+实验进度: 14/66
+数据集: hotpotqa
+权重: w06
+Context Type: documents
+测试文件: /home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w06.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w06
+日志文件: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w06/evaluation_getIE_wrong_docdev100idea_log_20250913_100851.log
+开始时间: Sat Sep 13 10:08:51 UTC 2025
+==================================
+✅ 实验 14 执行成功
+   数据集: hotpotqa, 权重: w06, Context: documents
+完成时间: Sat Sep 13 10:14:11 UTC 2025
+
+==================================
+实验进度: 15/66
+数据集: hotpotqa
+权重: w07
+Context Type: triples
+测试文件: /home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w07.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w07
+日志文件: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w07/evaluation_getIE_wrong_tripledev100idea_log_20250913_101411.log
+开始时间: Sat Sep 13 10:14:11 UTC 2025
+==================================
+✅ 实验 15 执行成功
+   数据集: hotpotqa, 权重: w07, Context: triples
+完成时间: Sat Sep 13 10:16:45 UTC 2025
+
+==================================
+实验进度: 16/66
+数据集: hotpotqa
+权重: w07
+Context Type: documents
+测试文件: /home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w07.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w07
+日志文件: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w07/evaluation_getIE_wrong_docdev100idea_log_20250913_101645.log
+开始时间: Sat Sep 13 10:16:45 UTC 2025
+==================================
+✅ 实验 16 执行成功
+   数据集: hotpotqa, 权重: w07, Context: documents
+完成时间: Sat Sep 13 10:22:13 UTC 2025
+
+==================================
+实验进度: 17/66
+数据集: hotpotqa
+权重: w08
+Context Type: triples
+测试文件: /home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w08.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w08
+日志文件: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w08/evaluation_getIE_wrong_tripledev100idea_log_20250913_102213.log
+开始时间: Sat Sep 13 10:22:13 UTC 2025
+==================================
+✅ 实验 17 执行成功
+   数据集: hotpotqa, 权重: w08, Context: triples
+完成时间: Sat Sep 13 10:24:39 UTC 2025
+
+==================================
+实验进度: 18/66
+数据集: hotpotqa
+权重: w08
+Context Type: documents
+测试文件: /home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w08.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w08
+日志文件: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w08/evaluation_getIE_wrong_docdev100idea_log_20250913_102439.log
+开始时间: Sat Sep 13 10:24:39 UTC 2025
+==================================
+✅ 实验 18 执行成功
+   数据集: hotpotqa, 权重: w08, Context: documents
+完成时间: Sat Sep 13 10:29:47 UTC 2025
+
+==================================
+实验进度: 19/66
+数据集: hotpotqa
+权重: w09
+Context Type: triples
+测试文件: /home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w09.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w09
+日志文件: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w09/evaluation_getIE_wrong_tripledev100idea_log_20250913_102947.log
+开始时间: Sat Sep 13 10:29:47 UTC 2025
+==================================
+✅ 实验 19 执行成功
+   数据集: hotpotqa, 权重: w09, Context: triples
+完成时间: Sat Sep 13 10:32:13 UTC 2025
+
+==================================
+实验进度: 20/66
+数据集: hotpotqa
+权重: w09
+Context Type: documents
+测试文件: /home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w09.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w09
+日志文件: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w09/evaluation_getIE_wrong_docdev100idea_log_20250913_103213.log
+开始时间: Sat Sep 13 10:32:13 UTC 2025
+==================================
+✅ 实验 20 执行成功
+   数据集: hotpotqa, 权重: w09, Context: documents
+完成时间: Sat Sep 13 10:37:43 UTC 2025
+
+==================================
+实验进度: 21/66
+数据集: hotpotqa
+权重: w10
+Context Type: triples
+测试文件: /home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w10.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w10
+日志文件: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w10/evaluation_getIE_wrong_tripledev100idea_log_20250913_103743.log
+开始时间: Sat Sep 13 10:37:43 UTC 2025
+==================================
+✅ 实验 21 执行成功
+   数据集: hotpotqa, 权重: w10, Context: triples
+完成时间: Sat Sep 13 10:40:16 UTC 2025
+
+==================================
+实验进度: 22/66
+数据集: hotpotqa
+权重: w10
+Context Type: documents
+测试文件: /home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w10.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w10
+日志文件: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w10/evaluation_getIE_wrong_docdev100idea_log_20250913_104016.log
+开始时间: Sat Sep 13 10:40:16 UTC 2025
+==================================
+✅ 实验 22 执行成功
+   数据集: hotpotqa, 权重: w10, Context: documents
+完成时间: Sat Sep 13 10:45:38 UTC 2025
+========================================================
+数据集 hotpotqa 处理完成
+========================================================
+
+========================================================
+开始处理数据集: 2wikimultihopqa (2WikiMultiHopQA)
+========================================================
+
+==================================
+实验进度: 23/66
+数据集: 2wikimultihopqa
+权重: w00
+Context Type: triples
+测试文件: /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w00.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w00
+日志文件: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w00/evaluation_getIE_wrong_tripledev100idea_log_20250913_104538.log
+开始时间: Sat Sep 13 10:45:38 UTC 2025
+==================================
+✅ 实验 23 执行成功
+   数据集: 2wikimultihopqa, 权重: w00, Context: triples
+完成时间: Sat Sep 13 10:47:42 UTC 2025
+
+==================================
+实验进度: 24/66
+数据集: 2wikimultihopqa
+权重: w00
+Context Type: documents
+测试文件: /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w00.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w00
+日志文件: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w00/evaluation_getIE_wrong_docdev100idea_log_20250913_104742.log
+开始时间: Sat Sep 13 10:47:42 UTC 2025
+==================================
+✅ 实验 24 执行成功
+   数据集: 2wikimultihopqa, 权重: w00, Context: documents
+完成时间: Sat Sep 13 10:52:21 UTC 2025
+
+==================================
+实验进度: 25/66
+数据集: 2wikimultihopqa
+权重: w01
+Context Type: triples
+测试文件: /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w01.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w01
+日志文件: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w01/evaluation_getIE_wrong_tripledev100idea_log_20250913_105221.log
+开始时间: Sat Sep 13 10:52:21 UTC 2025
+==================================
+✅ 实验 25 执行成功
+   数据集: 2wikimultihopqa, 权重: w01, Context: triples
+完成时间: Sat Sep 13 10:54:36 UTC 2025
+
+==================================
+实验进度: 26/66
+数据集: 2wikimultihopqa
+权重: w01
+Context Type: documents
+测试文件: /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w01.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w01
+日志文件: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w01/evaluation_getIE_wrong_docdev100idea_log_20250913_105436.log
+开始时间: Sat Sep 13 10:54:36 UTC 2025
+==================================
+✅ 实验 26 执行成功
+   数据集: 2wikimultihopqa, 权重: w01, Context: documents
+完成时间: Sat Sep 13 11:01:05 UTC 2025
+
+==================================
+实验进度: 27/66
+数据集: 2wikimultihopqa
+权重: w02
+Context Type: triples
+测试文件: /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w02.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w02
+日志文件: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w02/evaluation_getIE_wrong_tripledev100idea_log_20250913_110105.log
+开始时间: Sat Sep 13 11:01:05 UTC 2025
+==================================
+✅ 实验 27 执行成功
+   数据集: 2wikimultihopqa, 权重: w02, Context: triples
+完成时间: Sat Sep 13 11:03:11 UTC 2025
+
+==================================
+实验进度: 28/66
+数据集: 2wikimultihopqa
+权重: w02
+Context Type: documents
+测试文件: /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w02.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w02
+日志文件: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w02/evaluation_getIE_wrong_docdev100idea_log_20250913_110311.log
+开始时间: Sat Sep 13 11:03:11 UTC 2025
+==================================
+✅ 实验 28 执行成功
+   数据集: 2wikimultihopqa, 权重: w02, Context: documents
+完成时间: Sat Sep 13 11:08:57 UTC 2025
+
+==================================
+实验进度: 29/66
+数据集: 2wikimultihopqa
+权重: w03
+Context Type: triples
+测试文件: /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w03.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w03
+日志文件: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w03/evaluation_getIE_wrong_tripledev100idea_log_20250913_110857.log
+开始时间: Sat Sep 13 11:08:57 UTC 2025
+==================================
+✅ 实验 29 执行成功
+   数据集: 2wikimultihopqa, 权重: w03, Context: triples
+完成时间: Sat Sep 13 11:10:50 UTC 2025
+
+==================================
+实验进度: 30/66
+数据集: 2wikimultihopqa
+权重: w03
+Context Type: documents
+测试文件: /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w03.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w03
+日志文件: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w03/evaluation_getIE_wrong_docdev100idea_log_20250913_111050.log
+开始时间: Sat Sep 13 11:10:50 UTC 2025
+==================================
+✅ 实验 30 执行成功
+   数据集: 2wikimultihopqa, 权重: w03, Context: documents
+完成时间: Sat Sep 13 11:16:08 UTC 2025
+
+==================================
+实验进度: 31/66
+数据集: 2wikimultihopqa
+权重: w04
+Context Type: triples
+测试文件: /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w04.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w04
+日志文件: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w04/evaluation_getIE_wrong_tripledev100idea_log_20250913_111608.log
+开始时间: Sat Sep 13 11:16:08 UTC 2025
+==================================
+✅ 实验 31 执行成功
+   数据集: 2wikimultihopqa, 权重: w04, Context: triples
+完成时间: Sat Sep 13 11:18:07 UTC 2025
+
+==================================
+实验进度: 32/66
+数据集: 2wikimultihopqa
+权重: w04
+Context Type: documents
+测试文件: /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w04.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w04
+日志文件: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w04/evaluation_getIE_wrong_docdev100idea_log_20250913_111807.log
+开始时间: Sat Sep 13 11:18:07 UTC 2025
+==================================
+✅ 实验 32 执行成功
+   数据集: 2wikimultihopqa, 权重: w04, Context: documents
+完成时间: Sat Sep 13 11:23:35 UTC 2025
+
+==================================
+实验进度: 33/66
+数据集: 2wikimultihopqa
+权重: w05
+Context Type: triples
+测试文件: /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w05.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w05
+日志文件: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w05/evaluation_getIE_wrong_tripledev100idea_log_20250913_112335.log
+开始时间: Sat Sep 13 11:23:35 UTC 2025
+==================================
+✅ 实验 33 执行成功
+   数据集: 2wikimultihopqa, 权重: w05, Context: triples
+完成时间: Sat Sep 13 11:25:37 UTC 2025
+
+==================================
+实验进度: 34/66
+数据集: 2wikimultihopqa
+权重: w05
+Context Type: documents
+测试文件: /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w05.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w05
+日志文件: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w05/evaluation_getIE_wrong_docdev100idea_log_20250913_112537.log
+开始时间: Sat Sep 13 11:25:37 UTC 2025
+==================================
+✅ 实验 34 执行成功
+   数据集: 2wikimultihopqa, 权重: w05, Context: documents
+完成时间: Sat Sep 13 11:31:12 UTC 2025
+
+==================================
+实验进度: 35/66
+数据集: 2wikimultihopqa
+权重: w06
+Context Type: triples
+测试文件: /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w06.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w06
+日志文件: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w06/evaluation_getIE_wrong_tripledev100idea_log_20250913_113112.log
+开始时间: Sat Sep 13 11:31:12 UTC 2025
+==================================
+✅ 实验 35 执行成功
+   数据集: 2wikimultihopqa, 权重: w06, Context: triples
+完成时间: Sat Sep 13 11:33:19 UTC 2025
+
+==================================
+实验进度: 36/66
+数据集: 2wikimultihopqa
+权重: w06
+Context Type: documents
+测试文件: /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w06.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w06
+日志文件: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w06/evaluation_getIE_wrong_docdev100idea_log_20250913_113319.log
+开始时间: Sat Sep 13 11:33:19 UTC 2025
+==================================
+✅ 实验 36 执行成功
+   数据集: 2wikimultihopqa, 权重: w06, Context: documents
+完成时间: Sat Sep 13 11:39:19 UTC 2025
+
+==================================
+实验进度: 37/66
+数据集: 2wikimultihopqa
+权重: w07
+Context Type: triples
+测试文件: /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w07.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w07
+日志文件: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w07/evaluation_getIE_wrong_tripledev100idea_log_20250913_113919.log
+开始时间: Sat Sep 13 11:39:19 UTC 2025
+==================================
+✅ 实验 37 执行成功
+   数据集: 2wikimultihopqa, 权重: w07, Context: triples
+完成时间: Sat Sep 13 11:41:26 UTC 2025
+
+==================================
+实验进度: 38/66
+数据集: 2wikimultihopqa
+权重: w07
+Context Type: documents
+测试文件: /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w07.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w07
+日志文件: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w07/evaluation_getIE_wrong_docdev100idea_log_20250913_114126.log
+开始时间: Sat Sep 13 11:41:26 UTC 2025
+==================================
+✅ 实验 38 执行成功
+   数据集: 2wikimultihopqa, 权重: w07, Context: documents
+完成时间: Sat Sep 13 11:47:06 UTC 2025
+
+==================================
+实验进度: 39/66
+数据集: 2wikimultihopqa
+权重: w08
+Context Type: triples
+测试文件: /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w08.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w08
+日志文件: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w08/evaluation_getIE_wrong_tripledev100idea_log_20250913_114706.log
+开始时间: Sat Sep 13 11:47:06 UTC 2025
+==================================
+✅ 实验 39 执行成功
+   数据集: 2wikimultihopqa, 权重: w08, Context: triples
+完成时间: Sat Sep 13 11:49:07 UTC 2025
+
+==================================
+实验进度: 40/66
+数据集: 2wikimultihopqa
+权重: w08
+Context Type: documents
+测试文件: /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w08.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w08
+日志文件: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w08/evaluation_getIE_wrong_docdev100idea_log_20250913_114907.log
+开始时间: Sat Sep 13 11:49:07 UTC 2025
+==================================
+✅ 实验 40 执行成功
+   数据集: 2wikimultihopqa, 权重: w08, Context: documents
+完成时间: Sat Sep 13 11:54:34 UTC 2025
+
+==================================
+实验进度: 41/66
+数据集: 2wikimultihopqa
+权重: w09
+Context Type: triples
+测试文件: /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w09.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w09
+日志文件: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w09/evaluation_getIE_wrong_tripledev100idea_log_20250913_115434.log
+开始时间: Sat Sep 13 11:54:34 UTC 2025
+==================================
+✅ 实验 41 执行成功
+   数据集: 2wikimultihopqa, 权重: w09, Context: triples
+完成时间: Sat Sep 13 11:56:41 UTC 2025
+
+==================================
+实验进度: 42/66
+数据集: 2wikimultihopqa
+权重: w09
+Context Type: documents
+测试文件: /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w09.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w09
+日志文件: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w09/evaluation_getIE_wrong_docdev100idea_log_20250913_115641.log
+开始时间: Sat Sep 13 11:56:41 UTC 2025
+==================================
+✅ 实验 42 执行成功
+   数据集: 2wikimultihopqa, 权重: w09, Context: documents
+完成时间: Sat Sep 13 12:02:52 UTC 2025
+
+==================================
+实验进度: 43/66
+数据集: 2wikimultihopqa
+权重: w10
+Context Type: triples
+测试文件: /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w10.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w10
+日志文件: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w10/evaluation_getIE_wrong_tripledev100idea_log_20250913_120252.log
+开始时间: Sat Sep 13 12:02:52 UTC 2025
+==================================
+✅ 实验 43 执行成功
+   数据集: 2wikimultihopqa, 权重: w10, Context: triples
+完成时间: Sat Sep 13 12:05:08 UTC 2025
+
+==================================
+实验进度: 44/66
+数据集: 2wikimultihopqa
+权重: w10
+Context Type: documents
+测试文件: /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w10.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w10
+日志文件: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w10/evaluation_getIE_wrong_docdev100idea_log_20250913_120508.log
+开始时间: Sat Sep 13 12:05:08 UTC 2025
+==================================
+✅ 实验 44 执行成功
+   数据集: 2wikimultihopqa, 权重: w10, Context: documents
+完成时间: Sat Sep 13 12:10:48 UTC 2025
+========================================================
+数据集 2wikimultihopqa 处理完成
+========================================================
+
+========================================================
+开始处理数据集: musique (MuSiQue)
+========================================================
+
+==================================
+实验进度: 45/66
+数据集: musique
+权重: w00
+Context Type: triples
+测试文件: /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w00.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w00
+日志文件: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w00/evaluation_getIE_wrong_tripledev100idea_log_20250913_121048.log
+开始时间: Sat Sep 13 12:10:48 UTC 2025
+==================================
+✅ 实验 45 执行成功
+   数据集: musique, 权重: w00, Context: triples
+完成时间: Sat Sep 13 12:13:20 UTC 2025
+
+==================================
+实验进度: 46/66
+数据集: musique
+权重: w00
+Context Type: documents
+测试文件: /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w00.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w00
+日志文件: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w00/evaluation_getIE_wrong_docdev100idea_log_20250913_121320.log
+开始时间: Sat Sep 13 12:13:20 UTC 2025
+==================================
+✅ 实验 46 执行成功
+   数据集: musique, 权重: w00, Context: documents
+完成时间: Sat Sep 13 12:18:29 UTC 2025
+
+==================================
+实验进度: 47/66
+数据集: musique
+权重: w01
+Context Type: triples
+测试文件: /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w01.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w01
+日志文件: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w01/evaluation_getIE_wrong_tripledev100idea_log_20250913_121829.log
+开始时间: Sat Sep 13 12:18:29 UTC 2025
+==================================
+✅ 实验 47 执行成功
+   数据集: musique, 权重: w01, Context: triples
+完成时间: Sat Sep 13 12:21:21 UTC 2025
+
+==================================
+实验进度: 48/66
+数据集: musique
+权重: w01
+Context Type: documents
+测试文件: /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w01.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w01
+日志文件: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w01/evaluation_getIE_wrong_docdev100idea_log_20250913_122121.log
+开始时间: Sat Sep 13 12:21:21 UTC 2025
+==================================
+✅ 实验 48 执行成功
+   数据集: musique, 权重: w01, Context: documents
+完成时间: Sat Sep 13 12:28:33 UTC 2025
+
+==================================
+实验进度: 49/66
+数据集: musique
+权重: w02
+Context Type: triples
+测试文件: /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w02.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w02
+日志文件: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w02/evaluation_getIE_wrong_tripledev100idea_log_20250913_122833.log
+开始时间: Sat Sep 13 12:28:33 UTC 2025
+==================================
+✅ 实验 49 执行成功
+   数据集: musique, 权重: w02, Context: triples
+完成时间: Sat Sep 13 12:31:23 UTC 2025
+
+==================================
+实验进度: 50/66
+数据集: musique
+权重: w02
+Context Type: documents
+测试文件: /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w02.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w02
+日志文件: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w02/evaluation_getIE_wrong_docdev100idea_log_20250913_123123.log
+开始时间: Sat Sep 13 12:31:23 UTC 2025
+==================================
+✅ 实验 50 执行成功
+   数据集: musique, 权重: w02, Context: documents
+完成时间: Sat Sep 13 12:38:15 UTC 2025
+
+==================================
+实验进度: 51/66
+数据集: musique
+权重: w03
+Context Type: triples
+测试文件: /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w03.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w03
+日志文件: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w03/evaluation_getIE_wrong_tripledev100idea_log_20250913_123815.log
+开始时间: Sat Sep 13 12:38:15 UTC 2025
+==================================
+✅ 实验 51 执行成功
+   数据集: musique, 权重: w03, Context: triples
+完成时间: Sat Sep 13 12:41:07 UTC 2025
+
+==================================
+实验进度: 52/66
+数据集: musique
+权重: w03
+Context Type: documents
+测试文件: /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w03.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w03
+日志文件: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w03/evaluation_getIE_wrong_docdev100idea_log_20250913_124107.log
+开始时间: Sat Sep 13 12:41:07 UTC 2025
+==================================
+✅ 实验 52 执行成功
+   数据集: musique, 权重: w03, Context: documents
+完成时间: Sat Sep 13 12:48:21 UTC 2025
+
+==================================
+实验进度: 53/66
+数据集: musique
+权重: w04
+Context Type: triples
+测试文件: /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w04.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w04
+日志文件: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w04/evaluation_getIE_wrong_tripledev100idea_log_20250913_124821.log
+开始时间: Sat Sep 13 12:48:21 UTC 2025
+==================================
+✅ 实验 53 执行成功
+   数据集: musique, 权重: w04, Context: triples
+完成时间: Sat Sep 13 12:51:05 UTC 2025
+
+==================================
+实验进度: 54/66
+数据集: musique
+权重: w04
+Context Type: documents
+测试文件: /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w04.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w04
+日志文件: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w04/evaluation_getIE_wrong_docdev100idea_log_20250913_125105.log
+开始时间: Sat Sep 13 12:51:05 UTC 2025
+==================================
+✅ 实验 54 执行成功
+   数据集: musique, 权重: w04, Context: documents
+完成时间: Sat Sep 13 12:58:28 UTC 2025
+
+==================================
+实验进度: 55/66
+数据集: musique
+权重: w05
+Context Type: triples
+测试文件: /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w05.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w05
+日志文件: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w05/evaluation_getIE_wrong_tripledev100idea_log_20250913_125828.log
+开始时间: Sat Sep 13 12:58:28 UTC 2025
+==================================
+✅ 实验 55 执行成功
+   数据集: musique, 权重: w05, Context: triples
+完成时间: Sat Sep 13 13:01:19 UTC 2025
+
+==================================
+实验进度: 56/66
+数据集: musique
+权重: w05
+Context Type: documents
+测试文件: /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w05.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w05
+日志文件: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w05/evaluation_getIE_wrong_docdev100idea_log_20250913_130119.log
+开始时间: Sat Sep 13 13:01:19 UTC 2025
+==================================
+✅ 实验 56 执行成功
+   数据集: musique, 权重: w05, Context: documents
+完成时间: Sat Sep 13 13:08:37 UTC 2025
+
+==================================
+实验进度: 57/66
+数据集: musique
+权重: w06
+Context Type: triples
+测试文件: /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w06.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w06
+日志文件: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w06/evaluation_getIE_wrong_tripledev100idea_log_20250913_130837.log
+开始时间: Sat Sep 13 13:08:37 UTC 2025
+==================================
+✅ 实验 57 执行成功
+   数据集: musique, 权重: w06, Context: triples
+完成时间: Sat Sep 13 13:11:21 UTC 2025
+
+==================================
+实验进度: 58/66
+数据集: musique
+权重: w06
+Context Type: documents
+测试文件: /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w06.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w06
+日志文件: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w06/evaluation_getIE_wrong_docdev100idea_log_20250913_131121.log
+开始时间: Sat Sep 13 13:11:21 UTC 2025
+==================================
+✅ 实验 58 执行成功
+   数据集: musique, 权重: w06, Context: documents
+完成时间: Sat Sep 13 13:18:00 UTC 2025
+
+==================================
+实验进度: 59/66
+数据集: musique
+权重: w07
+Context Type: triples
+测试文件: /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w07.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w07
+日志文件: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w07/evaluation_getIE_wrong_tripledev100idea_log_20250913_131800.log
+开始时间: Sat Sep 13 13:18:00 UTC 2025
+==================================
+✅ 实验 59 执行成功
+   数据集: musique, 权重: w07, Context: triples
+完成时间: Sat Sep 13 13:20:42 UTC 2025
+
+==================================
+实验进度: 60/66
+数据集: musique
+权重: w07
+Context Type: documents
+测试文件: /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w07.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w07
+日志文件: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w07/evaluation_getIE_wrong_docdev100idea_log_20250913_132042.log
+开始时间: Sat Sep 13 13:20:42 UTC 2025
+==================================
+✅ 实验 60 执行成功
+   数据集: musique, 权重: w07, Context: documents
+完成时间: Sat Sep 13 13:27:27 UTC 2025
+
+==================================
+实验进度: 61/66
+数据集: musique
+权重: w08
+Context Type: triples
+测试文件: /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w08.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w08
+日志文件: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w08/evaluation_getIE_wrong_tripledev100idea_log_20250913_132727.log
+开始时间: Sat Sep 13 13:27:27 UTC 2025
+==================================
+✅ 实验 61 执行成功
+   数据集: musique, 权重: w08, Context: triples
+完成时间: Sat Sep 13 13:30:24 UTC 2025
+
+==================================
+实验进度: 62/66
+数据集: musique
+权重: w08
+Context Type: documents
+测试文件: /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w08.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w08
+日志文件: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w08/evaluation_getIE_wrong_docdev100idea_log_20250913_133024.log
+开始时间: Sat Sep 13 13:30:24 UTC 2025
+==================================
+✅ 实验 62 执行成功
+   数据集: musique, 权重: w08, Context: documents
+完成时间: Sat Sep 13 13:37:26 UTC 2025
+
+==================================
+实验进度: 63/66
+数据集: musique
+权重: w09
+Context Type: triples
+测试文件: /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w09.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w09
+日志文件: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w09/evaluation_getIE_wrong_tripledev100idea_log_20250913_133726.log
+开始时间: Sat Sep 13 13:37:26 UTC 2025
+==================================
+✅ 实验 63 执行成功
+   数据集: musique, 权重: w09, Context: triples
+完成时间: Sat Sep 13 13:39:52 UTC 2025
+
+==================================
+实验进度: 64/66
+数据集: musique
+权重: w09
+Context Type: documents
+测试文件: /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w09.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w09
+日志文件: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w09/evaluation_getIE_wrong_docdev100idea_log_20250913_133952.log
+开始时间: Sat Sep 13 13:39:52 UTC 2025
+==================================
+✅ 实验 64 执行成功
+   数据集: musique, 权重: w09, Context: documents
+完成时间: Sat Sep 13 13:46:20 UTC 2025
+
+==================================
+实验进度: 65/66
+数据集: musique
+权重: w10
+Context Type: triples
+测试文件: /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w10.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w10
+日志文件: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w10/evaluation_getIE_wrong_tripledev100idea_log_20250913_134620.log
+开始时间: Sat Sep 13 13:46:20 UTC 2025
+==================================
+✅ 实验 65 执行成功
+   数据集: musique, 权重: w10, Context: triples
+完成时间: Sat Sep 13 13:49:05 UTC 2025
+
+==================================
+实验进度: 66/66
+数据集: musique
+权重: w10
+Context Type: documents
+测试文件: /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w10.json
+保存目录: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w10
+日志文件: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w10/evaluation_getIE_wrong_docdev100idea_log_20250913_134905.log
+开始时间: Sat Sep 13 13:49:05 UTC 2025
+==================================
+✅ 实验 66 执行成功
+   数据集: musique, 权重: w10, Context: documents
+完成时间: Sat Sep 13 13:55:44 UTC 2025
+========================================================
+数据集 musique 处理完成
+========================================================
+
+🎉 所有评估实验已完成！
+总执行实验数: 66
+结束时间: Sat Sep 13 13:55:44 UTC 2025

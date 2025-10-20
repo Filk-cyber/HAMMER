@@ -1,0 +1,2664 @@
+{
+  "metrics": {
+    "weight_w": 0.2,
+    "input_file": "/home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w02.json",
+    "total_samples": 100,
+    "exact_match": 0.4,
+    "f1": 0.45486507936507936,
+    "precision": 0.4755,
+    "recall": 0.46326190476190476,
+    "avg_max_log_prob": -6.340194293854649,
+    "avg_max_prob": 0.407856956608214,
+    "avg_total_prob": 0.42194161066573577,
+    "valid_max_prob_samples": 100,
+    "invalid_max_prob_samples": 0,
+    "avg_answer_count": 1.48,
+    "avg_valid_answer_count": 1.48
+  },
+  "sample_info": [
+    {
+      "sample_idx": 0,
+      "generated_answer": "1861",
+      "gold_answers": [
+        "April 1858"
+      ],
+      "reference_answer": "April 1858",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "April 1858": 0.16696424278369107
+      },
+      "individual_log_probs": {
+        "April 1858": -1.7899756045590038
+      },
+      "max_prob": 0.16696424278369107,
+      "max_log_prob": -1.7899756045590038,
+      "best_answer": "April 1858",
+      "total_prob": 0.16696424278369107,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 1,
+      "generated_answer": "Stockholm Arlanda Airport.",
+      "gold_answers": [
+        "Stockholm Arlanda Airport",
+        "Arlanda Airport",
+        "ARN"
+      ],
+      "reference_answer": "Stockholm Arlanda Airport",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Stockholm Arlanda Airport": 0.9001227561744014,
+        "Arlanda Airport": 0.02439115209331934,
+        "ARN": 2.263384830989208e-07
+      },
+      "individual_log_probs": {
+        "Stockholm Arlanda Airport": -0.10522412920954594,
+        "Arlanda Airport": -3.713534831571451,
+        "ARN": -15.301234245300293
+      },
+      "max_prob": 0.9001227561744014,
+      "max_log_prob": -0.10522412920954594,
+      "best_answer": "Stockholm Arlanda Airport",
+      "total_prob": 0.9245141346062038,
+      "answer_count": 3,
+      "valid_answer_count": 3,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 2,
+      "generated_answer": "Kapan",
+      "gold_answers": [
+        "Kapan"
+      ],
+      "reference_answer": "Kapan",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Kapan": 0.8346564499404673
+      },
+      "individual_log_probs": {
+        "Kapan": -0.18073507599183358
+      },
+      "max_prob": 0.8346564499404673,
+      "max_log_prob": -0.18073507599183358,
+      "best_answer": "Kapan",
+      "total_prob": 0.8346564499404673,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 3,
+      "generated_answer": "Le Verrier",
+      "gold_answers": [
+        "Chinese"
+      ],
+      "reference_answer": "Chinese",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "Chinese": 1.2345959027193965e-06
+      },
+      "individual_log_probs": {
+        "Chinese": -13.604766845703125
+      },
+      "max_prob": 1.2345959027193965e-06,
+      "max_log_prob": -13.604766845703125,
+      "best_answer": "Chinese",
+      "total_prob": 1.2345959027193965e-06,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 4,
+      "generated_answer": "1993",
+      "gold_answers": [
+        "1993"
+      ],
+      "reference_answer": "1993",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "1993": 0.8953291065368499
+      },
+      "individual_log_probs": {
+        "1993": -0.11056391149758582
+      },
+      "max_prob": 0.8953291065368499,
+      "max_log_prob": -0.11056391149758582,
+      "best_answer": "1993",
+      "total_prob": 0.8953291065368499,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 5,
+      "generated_answer": "1.7 million",
+      "gold_answers": [
+        "1.7 million"
+      ],
+      "reference_answer": "1.7 million",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "1.7 million": 0.33925400123020577
+      },
+      "individual_log_probs": {
+        "1.7 million": -1.0810061859956477
+      },
+      "max_prob": 0.33925400123020577,
+      "max_log_prob": -1.0810061859956477,
+      "best_answer": "1.7 million",
+      "total_prob": 0.33925400123020577,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 6,
+      "generated_answer": "34th",
+      "gold_answers": [
+        "34th"
+      ],
+      "reference_answer": "34th",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "34th": 0.9178817703289033
+      },
+      "individual_log_probs": {
+        "34th": -0.08568668714724481
+      },
+      "max_prob": 0.9178817703289033,
+      "max_log_prob": -0.08568668714724481,
+      "best_answer": "34th",
+      "total_prob": 0.9178817703289033,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 7,
+      "generated_answer": "hotel and restaurant",
+      "gold_answers": [
+        "hotels",
+        "Hotel",
+        "hotel"
+      ],
+      "reference_answer": "hotels",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "hotels": 0.001523599797609712,
+        "Hotel": 0.24432400760177284,
+        "hotel": 0.5531757806434686
+      },
+      "individual_log_probs": {
+        "hotels": -6.486679456196725,
+        "Hotel": -1.4092600345611572,
+        "hotel": -0.5920794606208801
+      },
+      "max_prob": 0.5531757806434686,
+      "max_log_prob": -0.5920794606208801,
+      "best_answer": "hotel",
+      "total_prob": 0.7990233880428512,
+      "answer_count": 3,
+      "valid_answer_count": 3,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 8,
+      "generated_answer": "University of Nebraska",
+      "gold_answers": [
+        "University of Nebraska"
+      ],
+      "reference_answer": "University of Nebraska",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "University of Nebraska": 0.5125108719896042
+      },
+      "individual_log_probs": {
+        "University of Nebraska": -0.6684333545563277
+      },
+      "max_prob": 0.5125108719896042,
+      "max_log_prob": -0.6684333545563277,
+      "best_answer": "University of Nebraska",
+      "total_prob": 0.5125108719896042,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 9,
+      "generated_answer": "Anglican Church of Canada",
+      "gold_answers": [
+        "Anglican Church of Canada"
+      ],
+      "reference_answer": "Anglican Church of Canada",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Anglican Church of Canada": 0.8204409517320105
+      },
+      "individual_log_probs": {
+        "Anglican Church of Canada": -0.19791333724276683
+      },
+      "max_prob": 0.8204409517320105,
+      "max_log_prob": -0.19791333724276683,
+      "best_answer": "Anglican Church of Canada",
+      "total_prob": 0.8204409517320105,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 10,
+      "generated_answer": "3",
+      "gold_answers": [
+        "three"
+      ],
+      "reference_answer": "three",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "three": 0.043165527798036125
+      },
+      "individual_log_probs": {
+        "three": -3.1427130699157715
+      },
+      "max_prob": 0.043165527798036125,
+      "max_log_prob": -3.1427130699157715,
+      "best_answer": "three",
+      "total_prob": 0.043165527798036125,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 11,
+      "generated_answer": "Iván Duque",
+      "gold_answers": [
+        "Iván Duque"
+      ],
+      "reference_answer": "Iván Duque",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Iván Duque": 0.9929039174302745
+      },
+      "individual_log_probs": {
+        "Iván Duque": -0.00712137950745273
+      },
+      "max_prob": 0.9929039174302745,
+      "max_log_prob": -0.00712137950745273,
+      "best_answer": "Iván Duque",
+      "total_prob": 0.9929039174302745,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 12,
+      "generated_answer": "August 12, 1898",
+      "gold_answers": [
+        "August 12, 1898"
+      ],
+      "reference_answer": "August 12, 1898",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "August 12, 1898": 0.8592090408750903
+      },
+      "individual_log_probs": {
+        "August 12, 1898": -0.15174303284913293
+      },
+      "max_prob": 0.8592090408750903,
+      "max_log_prob": -0.15174303284913293,
+      "best_answer": "August 12, 1898",
+      "total_prob": 0.8592090408750903,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 13,
+      "generated_answer": "Beijing",
+      "gold_answers": [
+        "Dorgon"
+      ],
+      "reference_answer": "Dorgon",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "Dorgon": 5.342070784362513e-09
+      },
+      "individual_log_probs": {
+        "Dorgon": -19.04765247181058
+      },
+      "max_prob": 5.342070784362513e-09,
+      "max_log_prob": -19.04765247181058,
+      "best_answer": "Dorgon",
+      "total_prob": 5.342070784362513e-09,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 14,
+      "generated_answer": "Christians.",
+      "gold_answers": [
+        "a red cross on a white field",
+        "Red Cross"
+      ],
+      "reference_answer": "a red cross on a white field",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "a red cross on a white field": 4.834883410750236e-13,
+        "Red Cross": 2.591973981551836e-08
+      },
+      "individual_log_probs": {
+        "a red cross on a white field": -28.357749193906784,
+        "Red Cross": -17.468261003494263
+      },
+      "max_prob": 2.591973981551836e-08,
+      "max_log_prob": -17.468261003494263,
+      "best_answer": "Red Cross",
+      "total_prob": 2.5920223303859436e-08,
+      "answer_count": 2,
+      "valid_answer_count": 2,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 15,
+      "generated_answer": "Atlantic",
+      "gold_answers": [
+        "Warner Bros."
+      ],
+      "reference_answer": "Warner Bros.",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "Warner Bros.": 0.4619468487097561
+      },
+      "individual_log_probs": {
+        "Warner Bros.": -0.7723054406014853
+      },
+      "max_prob": 0.4619468487097561,
+      "max_log_prob": -0.7723054406014853,
+      "best_answer": "Warner Bros.",
+      "total_prob": 0.4619468487097561,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 16,
+      "generated_answer": "None of the above.",
+      "gold_answers": [
+        "Syracuse University",
+        "Cuse",
+        "SU"
+      ],
+      "reference_answer": "Syracuse University",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "Syracuse University": 8.837253053723602e-09,
+        "Cuse": 4.709225601456957e-11,
+        "SU": 6.529102750089844e-09
+      },
+      "individual_log_probs": {
+        "Syracuse University": -18.544289749115705,
+        "Cuse": -23.77891254425049,
+        "SU": -18.846996307373047
+      },
+      "max_prob": 8.837253053723602e-09,
+      "max_log_prob": -18.544289749115705,
+      "best_answer": "Syracuse University",
+      "total_prob": 1.5413448059828016e-08,
+      "answer_count": 3,
+      "valid_answer_count": 3,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 17,
+      "generated_answer": "1842",
+      "gold_answers": [
+        "1842"
+      ],
+      "reference_answer": "1842",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "1842": 0.9621817441900116
+      },
+      "individual_log_probs": {
+        "1842": -0.038551922885744716
+      },
+      "max_prob": 0.9621817441900116,
+      "max_log_prob": -0.038551922885744716,
+      "best_answer": "1842",
+      "total_prob": 0.9621817441900116,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 18,
+      "generated_answer": "Soviet Union",
+      "gold_answers": [
+        "KPA"
+      ],
+      "reference_answer": "KPA",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "KPA": 2.045440376553751e-08
+      },
+      "individual_log_probs": {
+        "KPA": -17.70506763458252
+      },
+      "max_prob": 2.045440376553751e-08,
+      "max_log_prob": -17.70506763458252,
+      "best_answer": "KPA",
+      "total_prob": 2.045440376553751e-08,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 19,
+      "generated_answer": "Fleetwood Mac",
+      "gold_answers": [
+        "Fleetwood Mac"
+      ],
+      "reference_answer": "Fleetwood Mac",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Fleetwood Mac": 0.9998788938880802
+      },
+      "individual_log_probs": {
+        "Fleetwood Mac": -0.00012111344585719053
+      },
+      "max_prob": 0.9998788938880802,
+      "max_log_prob": -0.00012111344585719053,
+      "best_answer": "Fleetwood Mac",
+      "total_prob": 0.9998788938880802,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 20,
+      "generated_answer": "Norwegian",
+      "gold_answers": [
+        "Norway",
+        "NO",
+        "NOR",
+        "no"
+      ],
+      "reference_answer": "Norway",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "Norway": 0.43628461268616897,
+        "NO": 5.384705023962935e-07,
+        "NOR": 5.308738725603057e-05,
+        "no": 2.529584506516453e-07
+      },
+      "individual_log_probs": {
+        "Norway": -0.8294604672119021,
+        "NO": -14.43453311920166,
+        "NOR": -9.843571186065674,
+        "no": -15.190040588378906
+      },
+      "max_prob": 0.43628461268616897,
+      "max_log_prob": -0.8294604672119021,
+      "best_answer": "Norway",
+      "total_prob": 0.436338491502378,
+      "answer_count": 4,
+      "valid_answer_count": 4,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 21,
+      "generated_answer": "1953",
+      "gold_answers": [
+        "1953"
+      ],
+      "reference_answer": "1953",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "1953": 0.9897763716139149
+      },
+      "individual_log_probs": {
+        "1953": -0.010276248628542817
+      },
+      "max_prob": 0.9897763716139149,
+      "max_log_prob": -0.010276248628542817,
+      "best_answer": "1953",
+      "total_prob": 0.9897763716139149,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 22,
+      "generated_answer": "27 BC",
+      "gold_answers": [
+        "establishment of the Roman Empire.",
+        "Roman Empire"
+      ],
+      "reference_answer": "establishment of the Roman Empire.",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "establishment of the Roman Empire.": 7.046040214749086e-07,
+        "Roman Empire": 0.00010477162370114309
+      },
+      "individual_log_probs": {
+        "establishment of the Roman Empire.": -14.165629863597559,
+        "Roman Empire": -9.163727588951588
+      },
+      "max_prob": 0.00010477162370114309,
+      "max_log_prob": -9.163727588951588,
+      "best_answer": "Roman Empire",
+      "total_prob": 0.000105476227722618,
+      "answer_count": 2,
+      "valid_answer_count": 2,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 23,
+      "generated_answer": "University of California, Los Angeles",
+      "gold_answers": [
+        "Visva-Bharati University"
+      ],
+      "reference_answer": "Visva-Bharati University",
+      "em_score": 0.0,
+      "f1_score": 0.28571428571428575,
+      "precision": 0.2,
+      "recall": 0.5,
+      "individual_probs": {
+        "Visva-Bharati University": 1.2702364222774326e-12
+      },
+      "individual_log_probs": {
+        "Visva-Bharati University": -27.391818073509967
+      },
+      "max_prob": 1.2702364222774326e-12,
+      "max_log_prob": -27.391818073509967,
+      "best_answer": "Visva-Bharati University",
+      "total_prob": 1.2702364222774326e-12,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 24,
+      "generated_answer": "Not applicable.",
+      "gold_answers": [
+        "1773"
+      ],
+      "reference_answer": "1773",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "1773": 2.9695630658591183e-10
+      },
+      "individual_log_probs": {
+        "1773": -21.9374361038208
+      },
+      "max_prob": 2.9695630658591183e-10,
+      "max_log_prob": -21.9374361038208,
+      "best_answer": "1773",
+      "total_prob": 2.9695630658591183e-10,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 25,
+      "generated_answer": "Hafez",
+      "gold_answers": [
+        "Kurdish people"
+      ],
+      "reference_answer": "Kurdish people",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "Kurdish people": 0.01071502729550234
+      },
+      "individual_log_probs": {
+        "Kurdish people": -4.53610810264945
+      },
+      "max_prob": 0.01071502729550234,
+      "max_log_prob": -4.53610810264945,
+      "best_answer": "Kurdish people",
+      "total_prob": 0.01071502729550234,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 26,
+      "generated_answer": "The eastern tip.",
+      "gold_answers": [
+        "eastern tip"
+      ],
+      "reference_answer": "eastern tip",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "eastern tip": 0.35644057109241495
+      },
+      "individual_log_probs": {
+        "eastern tip": -1.0315877540269867
+      },
+      "max_prob": 0.35644057109241495,
+      "max_log_prob": -1.0315877540269867,
+      "best_answer": "eastern tip",
+      "total_prob": 0.35644057109241495,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 27,
+      "generated_answer": "Peter Grant and Swan Song Records.",
+      "gold_answers": [
+        "Peter Grant"
+      ],
+      "reference_answer": "Peter Grant",
+      "em_score": 0.0,
+      "f1_score": 0.5,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "individual_probs": {
+        "Peter Grant": 0.9872355181924908
+      },
+      "individual_log_probs": {
+        "Peter Grant": -0.012846647758124163
+      },
+      "max_prob": 0.9872355181924908,
+      "max_log_prob": -0.012846647758124163,
+      "best_answer": "Peter Grant",
+      "total_prob": 0.9872355181924908,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 28,
+      "generated_answer": "Asia",
+      "gold_answers": [
+        "Central Asia"
+      ],
+      "reference_answer": "Central Asia",
+      "em_score": 0.0,
+      "f1_score": 0.6666666666666666,
+      "precision": 1.0,
+      "recall": 0.5,
+      "individual_probs": {
+        "Central Asia": 1.4742503827025722e-05
+      },
+      "individual_log_probs": {
+        "Central Asia": -11.12477581948042
+      },
+      "max_prob": 1.4742503827025722e-05,
+      "max_log_prob": -11.12477581948042,
+      "best_answer": "Central Asia",
+      "total_prob": 1.4742503827025722e-05,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 29,
+      "generated_answer": "Syracuse University",
+      "gold_answers": [
+        "Syracuse University",
+        "Cuse",
+        "SU"
+      ],
+      "reference_answer": "Syracuse University",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Syracuse University": 0.9993947206355044,
+        "Cuse": 1.6913123704522153e-09,
+        "SU": 1.0486611075243968e-07
+      },
+      "individual_log_probs": {
+        "Syracuse University": -0.0006054626200011626,
+        "Cuse": -20.197761058807373,
+        "SU": -16.070581436157227
+      },
+      "max_prob": 0.9993947206355044,
+      "max_log_prob": -0.0006054626200011626,
+      "best_answer": "Syracuse University",
+      "total_prob": 0.9993948271929276,
+      "answer_count": 3,
+      "valid_answer_count": 3,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 30,
+      "generated_answer": "Laura Kelly",
+      "gold_answers": [
+        "Laura Kelly"
+      ],
+      "reference_answer": "Laura Kelly",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Laura Kelly": 0.9980562280998297
+      },
+      "individual_log_probs": {
+        "Laura Kelly": -0.0019456634763628244
+      },
+      "max_prob": 0.9980562280998297,
+      "max_log_prob": -0.0019456634763628244,
+      "best_answer": "Laura Kelly",
+      "total_prob": 0.9980562280998297,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 31,
+      "generated_answer": "United States",
+      "gold_answers": [
+        "United States",
+        "America",
+        "US of A",
+        "US",
+        "the United States"
+      ],
+      "reference_answer": "United States",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "United States": 0.8892736039911475,
+        "America": 5.17256413173254e-06,
+        "US of A": 4.765841615745891e-13,
+        "US": 9.297102176428411e-06,
+        "the United States": 0.0014376596424262467
+      },
+      "individual_log_probs": {
+        "United States": -0.11735032479919028,
+        "America": -12.172142028808594,
+        "US of A": -28.372132062911987,
+        "US": -11.585807800292969,
+        "the United States": -6.544738735858118
+      },
+      "max_prob": 0.8892736039911475,
+      "max_log_prob": -0.11735032479919028,
+      "best_answer": "United States",
+      "total_prob": 0.8907257333003585,
+      "answer_count": 5,
+      "valid_answer_count": 5,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 32,
+      "generated_answer": "Hon July Moyo",
+      "gold_answers": [
+        "Hon July Moyo"
+      ],
+      "reference_answer": "Hon July Moyo",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Hon July Moyo": 0.9065998884703762
+      },
+      "individual_log_probs": {
+        "Hon July Moyo": -0.09805406349505574
+      },
+      "max_prob": 0.9065998884703762,
+      "max_log_prob": -0.09805406349505574,
+      "best_answer": "Hon July Moyo",
+      "total_prob": 0.9065998884703762,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 33,
+      "generated_answer": "Michelangelo.",
+      "gold_answers": [
+        "Italian painter"
+      ],
+      "reference_answer": "Italian painter",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "Italian painter": 5.340419228168848e-08
+      },
+      "individual_log_probs": {
+        "Italian painter": -16.745376586914062
+      },
+      "max_prob": 5.340419228168848e-08,
+      "max_log_prob": -16.745376586914062,
+      "best_answer": "Italian painter",
+      "total_prob": 5.340419228168848e-08,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 34,
+      "generated_answer": "John Lennon",
+      "gold_answers": [
+        "Alfred Lennon"
+      ],
+      "reference_answer": "Alfred Lennon",
+      "em_score": 0.0,
+      "f1_score": 0.5,
+      "precision": 0.5,
+      "recall": 0.5,
+      "individual_probs": {
+        "Alfred Lennon": 0.04335009723730184
+      },
+      "individual_log_probs": {
+        "Alfred Lennon": -3.1384463326830883
+      },
+      "max_prob": 0.04335009723730184,
+      "max_log_prob": -3.1384463326830883,
+      "best_answer": "Alfred Lennon",
+      "total_prob": 0.04335009723730184,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 35,
+      "generated_answer": "Mendelssohn & Co.",
+      "gold_answers": [
+        "KaDeWe"
+      ],
+      "reference_answer": "KaDeWe",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "KaDeWe": 0.009089942002433677
+      },
+      "individual_log_probs": {
+        "KaDeWe": -4.700586751183437
+      },
+      "max_prob": 0.009089942002433677,
+      "max_log_prob": -4.700586751183437,
+      "best_answer": "KaDeWe",
+      "total_prob": 0.009089942002433677,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 36,
+      "generated_answer": "June 30, 1960",
+      "gold_answers": [
+        "1960"
+      ],
+      "reference_answer": "1960",
+      "em_score": 0.0,
+      "f1_score": 0.5,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "individual_probs": {
+        "1960": 0.05446078452238099
+      },
+      "individual_log_probs": {
+        "1960": -2.9102743863613796
+      },
+      "max_prob": 0.05446078452238099,
+      "max_log_prob": -2.9102743863613796,
+      "best_answer": "1960",
+      "total_prob": 0.05446078452238099,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 37,
+      "generated_answer": "September 25, 2014",
+      "gold_answers": [
+        "September 25, 2014"
+      ],
+      "reference_answer": "September 25, 2014",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "September 25, 2014": 0.7203594444658933
+      },
+      "individual_log_probs": {
+        "September 25, 2014": -0.32800496312023597
+      },
+      "max_prob": 0.7203594444658933,
+      "max_log_prob": -0.32800496312023597,
+      "best_answer": "September 25, 2014",
+      "total_prob": 0.7203594444658933,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 38,
+      "generated_answer": "Laughery Creek",
+      "gold_answers": [
+        "Ohio River"
+      ],
+      "reference_answer": "Ohio River",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "Ohio River": 0.008737283628406338
+      },
+      "individual_log_probs": {
+        "Ohio River": -4.740155935287476
+      },
+      "max_prob": 0.008737283628406338,
+      "max_log_prob": -4.740155935287476,
+      "best_answer": "Ohio River",
+      "total_prob": 0.008737283628406338,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 39,
+      "generated_answer": "1912",
+      "gold_answers": [
+        "1963"
+      ],
+      "reference_answer": "1963",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "1963": 0.12436486228046201
+      },
+      "individual_log_probs": {
+        "1963": -2.084535596128262
+      },
+      "max_prob": 0.12436486228046201,
+      "max_log_prob": -2.084535596128262,
+      "best_answer": "1963",
+      "total_prob": 0.12436486228046201,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 40,
+      "generated_answer": "By a considerable margin.",
+      "gold_answers": [
+        "Europe's most innovative country",
+        "Europe"
+      ],
+      "reference_answer": "Europe's most innovative country",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "Europe's most innovative country": 8.717251094652424e-08,
+        "Europe": 0.00662804336494903
+      },
+      "individual_log_probs": {
+        "Europe's most innovative country": -16.255376797169447,
+        "Europe": -5.016445636749268
+      },
+      "max_prob": 0.00662804336494903,
+      "max_log_prob": -5.016445636749268,
+      "best_answer": "Europe",
+      "total_prob": 0.006628130537459977,
+      "answer_count": 2,
+      "valid_answer_count": 2,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 41,
+      "generated_answer": "$122,160",
+      "gold_answers": [
+        "$122,160"
+      ],
+      "reference_answer": "$122,160",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "$122,160": 0.9915481202279618
+      },
+      "individual_log_probs": {
+        "$122,160": -0.008487799443571475
+      },
+      "max_prob": 0.9915481202279618,
+      "max_log_prob": -0.008487799443571475,
+      "best_answer": "$122,160",
+      "total_prob": 0.9915481202279618,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 42,
+      "generated_answer": "WHO",
+      "gold_answers": [
+        "The World Health Organization (WHO)",
+        "WHO",
+        "World Health Organization"
+      ],
+      "reference_answer": "The World Health Organization (WHO)",
+      "em_score": 1.0,
+      "f1_score": 0.4,
+      "precision": 1.0,
+      "recall": 0.25,
+      "individual_probs": {
+        "The World Health Organization (WHO)": 0.0219464174557979,
+        "WHO": 0.5280135615801522,
+        "World Health Organization": 0.3655963342550723
+      },
+      "individual_log_probs": {
+        "The World Health Organization (WHO)": -3.8191513666406536,
+        "WHO": -0.6386333107948303,
+        "World Health Organization": -1.0062254661070256
+      },
+      "max_prob": 0.5280135615801522,
+      "max_log_prob": -0.6386333107948303,
+      "best_answer": "WHO",
+      "total_prob": 0.9155563132910225,
+      "answer_count": 3,
+      "valid_answer_count": 3,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 43,
+      "generated_answer": "August 30, 1980",
+      "gold_answers": [
+        "December 1917"
+      ],
+      "reference_answer": "December 1917",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "December 1917": 1.2033768027915295e-09
+      },
+      "individual_log_probs": {
+        "December 1917": -20.538134229718708
+      },
+      "max_prob": 1.2033768027915295e-09,
+      "max_log_prob": -20.538134229718708,
+      "best_answer": "December 1917",
+      "total_prob": 1.2033768027915295e-09,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 44,
+      "generated_answer": "Sophia Akuffo",
+      "gold_answers": [
+        "Sophia Akuffo"
+      ],
+      "reference_answer": "Sophia Akuffo",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Sophia Akuffo": 0.9972834166080017
+      },
+      "individual_log_probs": {
+        "Sophia Akuffo": -0.002720280000943376
+      },
+      "max_prob": 0.9972834166080017,
+      "max_log_prob": -0.002720280000943376,
+      "best_answer": "Sophia Akuffo",
+      "total_prob": 0.9972834166080017,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 45,
+      "generated_answer": "1909",
+      "gold_answers": [
+        "1895"
+      ],
+      "reference_answer": "1895",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "1895": 4.20203327706204e-09
+      },
+      "individual_log_probs": {
+        "1895": -19.287697315216064
+      },
+      "max_prob": 4.20203327706204e-09,
+      "max_log_prob": -19.287697315216064,
+      "best_answer": "1895",
+      "total_prob": 4.20203327706204e-09,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 46,
+      "generated_answer": "The flag of Australia.",
+      "gold_answers": [
+        "represented the island of Puerto Rico",
+        "PR",
+        "Puerto Rico"
+      ],
+      "reference_answer": "represented the island of Puerto Rico",
+      "em_score": 0.0,
+      "f1_score": 0.25,
+      "precision": 0.3333333333333333,
+      "recall": 0.2,
+      "individual_probs": {
+        "represented the island of Puerto Rico": 2.7642118116539795e-11,
+        "PR": 1.6438169965070883e-07,
+        "Puerto Rico": 2.9144094245931155e-07
+      },
+      "individual_log_probs": {
+        "represented the island of Puerto Rico": -24.311680487673584,
+        "PR": -15.621074676513672,
+        "Puerto Rico": -15.048428450449137
+      },
+      "max_prob": 2.9144094245931155e-07,
+      "max_log_prob": -15.048428450449137,
+      "best_answer": "Puerto Rico",
+      "total_prob": 4.558502842281369e-07,
+      "answer_count": 3,
+      "valid_answer_count": 3,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 47,
+      "generated_answer": "church",
+      "gold_answers": [
+        "temple, now a church",
+        "Temple",
+        "temple"
+      ],
+      "reference_answer": "temple, now a church",
+      "em_score": 0.0,
+      "f1_score": 0.5,
+      "precision": 1.0,
+      "recall": 0.3333333333333333,
+      "individual_probs": {
+        "temple, now a church": 9.072443450124844e-13,
+        "Temple": 9.071568503755756e-06,
+        "temple": 4.745323984635323e-06
+      },
+      "individual_log_probs": {
+        "temple, now a church": -27.728364581945243,
+        "Temple": -11.610365375629044,
+        "temple": -12.258350849068847
+      },
+      "max_prob": 9.071568503755756e-06,
+      "max_log_prob": -11.610365375629044,
+      "best_answer": "Temple",
+      "total_prob": 1.3816893395635424e-05,
+      "answer_count": 3,
+      "valid_answer_count": 3,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 48,
+      "generated_answer": "597",
+      "gold_answers": [
+        "1909"
+      ],
+      "reference_answer": "1909",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "1909": 2.1874313138787243e-08
+      },
+      "individual_log_probs": {
+        "1909": -17.63795280456543
+      },
+      "max_prob": 2.1874313138787243e-08,
+      "max_log_prob": -17.63795280456543,
+      "best_answer": "1909",
+      "total_prob": 2.1874313138787243e-08,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 49,
+      "generated_answer": "24 hours",
+      "gold_answers": [
+        "24 hours a day"
+      ],
+      "reference_answer": "24 hours a day",
+      "em_score": 0.0,
+      "f1_score": 0.8,
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "individual_probs": {
+        "24 hours a day": 0.05275391926933716
+      },
+      "individual_log_probs": {
+        "24 hours a day": -2.9421172104412108
+      },
+      "max_prob": 0.05275391926933716,
+      "max_log_prob": -2.9421172104412108,
+      "best_answer": "24 hours a day",
+      "total_prob": 0.05275391926933716,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 50,
+      "generated_answer": "Antarctica",
+      "gold_answers": [
+        "Antarctica"
+      ],
+      "reference_answer": "Antarctica",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Antarctica": 0.9929579868825184
+      },
+      "individual_log_probs": {
+        "Antarctica": -0.0070669251144863665
+      },
+      "max_prob": 0.9929579868825184,
+      "max_log_prob": -0.0070669251144863665,
+      "best_answer": "Antarctica",
+      "total_prob": 0.9929579868825184,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 51,
+      "generated_answer": "Rhode Island",
+      "gold_answers": [
+        "Rhode Island Department of Transportation",
+        "RIDOT"
+      ],
+      "reference_answer": "Rhode Island Department of Transportation",
+      "em_score": 0.0,
+      "f1_score": 0.5714285714285715,
+      "precision": 1.0,
+      "recall": 0.4,
+      "individual_probs": {
+        "Rhode Island Department of Transportation": 0.005391242201529982,
+        "RIDOT": 0.030899941016820122
+      },
+      "individual_log_probs": {
+        "Rhode Island Department of Transportation": -5.222979456508256,
+        "RIDOT": -3.477001003921032
+      },
+      "max_prob": 0.030899941016820122,
+      "max_log_prob": -3.477001003921032,
+      "best_answer": "RIDOT",
+      "total_prob": 0.036291183218350107,
+      "answer_count": 2,
+      "valid_answer_count": 2,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 52,
+      "generated_answer": "No one.",
+      "gold_answers": [
+        "Charles Carroll"
+      ],
+      "reference_answer": "Charles Carroll",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "Charles Carroll": 5.565029191708542e-07
+      },
+      "individual_log_probs": {
+        "Charles Carroll": -14.401593420654535
+      },
+      "max_prob": 5.565029191708542e-07,
+      "max_log_prob": -14.401593420654535,
+      "best_answer": "Charles Carroll",
+      "total_prob": 5.565029191708542e-07,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 53,
+      "generated_answer": "Pope Boniface VIII",
+      "gold_answers": [
+        "Castel Gandolfo"
+      ],
+      "reference_answer": "Castel Gandolfo",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "Castel Gandolfo": 0.09476116533851578
+      },
+      "individual_log_probs": {
+        "Castel Gandolfo": -2.3563956019778516
+      },
+      "max_prob": 0.09476116533851578,
+      "max_log_prob": -2.3563956019778516,
+      "best_answer": "Castel Gandolfo",
+      "total_prob": 0.09476116533851578,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 54,
+      "generated_answer": "No one.",
+      "gold_answers": [
+        "Charles Carroll"
+      ],
+      "reference_answer": "Charles Carroll",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "Charles Carroll": 9.182100549997205e-06
+      },
+      "individual_log_probs": {
+        "Charles Carroll": -11.598254561424255
+      },
+      "max_prob": 9.182100549997205e-06,
+      "max_log_prob": -11.598254561424255,
+      "best_answer": "Charles Carroll",
+      "total_prob": 9.182100549997205e-06,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 55,
+      "generated_answer": "Wendy Finerman",
+      "gold_answers": [
+        "Catherine Zeta-Jones"
+      ],
+      "reference_answer": "Catherine Zeta-Jones",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "Catherine Zeta-Jones": 8.15926350790077e-05
+      },
+      "individual_log_probs": {
+        "Catherine Zeta-Jones": -9.413771556452275
+      },
+      "max_prob": 8.15926350790077e-05,
+      "max_log_prob": -9.413771556452275,
+      "best_answer": "Catherine Zeta-Jones",
+      "total_prob": 8.15926350790077e-05,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 56,
+      "generated_answer": "tsampa",
+      "gold_answers": [
+        "yak meat"
+      ],
+      "reference_answer": "yak meat",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "yak meat": 8.000392149498466e-05
+      },
+      "individual_log_probs": {
+        "yak meat": -9.43343490580446
+      },
+      "max_prob": 8.000392149498466e-05,
+      "max_log_prob": -9.43343490580446,
+      "best_answer": "yak meat",
+      "total_prob": 8.000392149498466e-05,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 57,
+      "generated_answer": "London Breed",
+      "gold_answers": [
+        "former Acting Mayor London Breed",
+        "London Breed"
+      ],
+      "reference_answer": "former Acting Mayor London Breed",
+      "em_score": 1.0,
+      "f1_score": 0.5714285714285715,
+      "precision": 1.0,
+      "recall": 0.4,
+      "individual_probs": {
+        "former Acting Mayor London Breed": 5.271422158243499e-13,
+        "London Breed": 0.9998202582820672
+      },
+      "individual_log_probs": {
+        "former Acting Mayor London Breed": -28.27130602352554,
+        "London Breed": -0.00017975787341129035
+      },
+      "max_prob": 0.9998202582820672,
+      "max_log_prob": -0.00017975787341129035,
+      "best_answer": "London Breed",
+      "total_prob": 0.9998202582825944,
+      "answer_count": 2,
+      "valid_answer_count": 2,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 58,
+      "generated_answer": "Lewis Range",
+      "gold_answers": [
+        "Rocky Mountains"
+      ],
+      "reference_answer": "Rocky Mountains",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "Rocky Mountains": 0.00019034827135544865
+      },
+      "individual_log_probs": {
+        "Rocky Mountains": -8.566655156577326
+      },
+      "max_prob": 0.00019034827135544865,
+      "max_log_prob": -8.566655156577326,
+      "best_answer": "Rocky Mountains",
+      "total_prob": 0.00019034827135544865,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 59,
+      "generated_answer": "Tan Son Nhat International Airport",
+      "gold_answers": [
+        "Tân Sơn Nhất International Airport",
+        "SGN",
+        "Tan Son Nhat International Airport"
+      ],
+      "reference_answer": "Tân Sơn Nhất International Airport",
+      "em_score": 1.0,
+      "f1_score": 0.4000000000000001,
+      "precision": 0.4,
+      "recall": 0.4,
+      "individual_probs": {
+        "Tân Sơn Nhất International Airport": 2.0872370473969498e-05,
+        "SGN": 0.3982258330712507,
+        "Tan Son Nhat International Airport": 0.5995921645873278
+      },
+      "individual_log_probs": {
+        "Tân Sơn Nhất International Airport": -10.777084260480478,
+        "SGN": -0.9207360148424186,
+        "Tan Son Nhat International Airport": -0.5115055805720203
+      },
+      "max_prob": 0.5995921645873278,
+      "max_log_prob": -0.5115055805720203,
+      "best_answer": "Tan Son Nhat International Airport",
+      "total_prob": 0.9978388700290525,
+      "answer_count": 3,
+      "valid_answer_count": 3,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 60,
+      "generated_answer": "Pioneer 10",
+      "gold_answers": [
+        "Voyager probes"
+      ],
+      "reference_answer": "Voyager probes",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "Voyager probes": 0.042186315128404275
+      },
+      "individual_log_probs": {
+        "Voyager probes": -3.165659396589035
+      },
+      "max_prob": 0.042186315128404275,
+      "max_log_prob": -3.165659396589035,
+      "best_answer": "Voyager probes",
+      "total_prob": 0.042186315128404275,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 61,
+      "generated_answer": "American Idol",
+      "gold_answers": [
+        "American Idol"
+      ],
+      "reference_answer": "American Idol",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "American Idol": 0.9998001244255708
+      },
+      "individual_log_probs": {
+        "American Idol": -0.00019989555221400224
+      },
+      "max_prob": 0.9998001244255708,
+      "max_log_prob": -0.00019989555221400224,
+      "best_answer": "American Idol",
+      "total_prob": 0.9998001244255708,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 62,
+      "generated_answer": "5th–6th centuries",
+      "gold_answers": [
+        "5th–6th centuries",
+        "6th century",
+        "6th-century"
+      ],
+      "reference_answer": "5th–6th centuries",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "5th–6th centuries": 0.6047062221757662,
+        "6th century": 0.0677188539337494,
+        "6th-century": 0.03370084662449844
+      },
+      "individual_log_probs": {
+        "5th–6th centuries": -0.5030125220655393,
+        "6th century": -2.6923906454612734,
+        "6th-century": -3.390232319550705
+      },
+      "max_prob": 0.6047062221757662,
+      "max_log_prob": -0.5030125220655393,
+      "best_answer": "5th–6th centuries",
+      "total_prob": 0.7061259227340141,
+      "answer_count": 3,
+      "valid_answer_count": 3,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 63,
+      "generated_answer": "Julius Caesar",
+      "gold_answers": [
+        "March 44 BC"
+      ],
+      "reference_answer": "March 44 BC",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "March 44 BC": 4.527910633036653e-07
+      },
+      "individual_log_probs": {
+        "March 44 BC": -14.60783504677238
+      },
+      "max_prob": 4.527910633036653e-07,
+      "max_log_prob": -14.60783504677238,
+      "best_answer": "March 44 BC",
+      "total_prob": 4.527910633036653e-07,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 64,
+      "generated_answer": "Harper Simon",
+      "gold_answers": [
+        "Harper Simon"
+      ],
+      "reference_answer": "Harper Simon",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Harper Simon": 0.9683992716404821
+      },
+      "individual_log_probs": {
+        "Harper Simon": -0.03211080604523886
+      },
+      "max_prob": 0.9683992716404821,
+      "max_log_prob": -0.03211080604523886,
+      "best_answer": "Harper Simon",
+      "total_prob": 0.9683992716404821,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 65,
+      "generated_answer": "13 February 1937",
+      "gold_answers": [
+        "six months"
+      ],
+      "reference_answer": "six months",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "six months": 1.457585459414764e-06
+      },
+      "individual_log_probs": {
+        "six months": -13.438729286193848
+      },
+      "max_prob": 1.457585459414764e-06,
+      "max_log_prob": -13.438729286193848,
+      "best_answer": "six months",
+      "total_prob": 1.457585459414764e-06,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 66,
+      "generated_answer": "James McCartney",
+      "gold_answers": [
+        "James McCartney"
+      ],
+      "reference_answer": "James McCartney",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "James McCartney": 0.7499745796596915
+      },
+      "individual_log_probs": {
+        "James McCartney": -0.2877159668132663
+      },
+      "max_prob": 0.7499745796596915,
+      "max_log_prob": -0.2877159668132663,
+      "best_answer": "James McCartney",
+      "total_prob": 0.7499745796596915,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 67,
+      "generated_answer": "808",
+      "gold_answers": [
+        "808"
+      ],
+      "reference_answer": "808",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "808": 0.589457081448994
+      },
+      "individual_log_probs": {
+        "808": -0.5285533666610718
+      },
+      "max_prob": 0.589457081448994,
+      "max_log_prob": -0.5285533666610718,
+      "best_answer": "808",
+      "total_prob": 0.589457081448994,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 68,
+      "generated_answer": "TAG Heuer",
+      "gold_answers": [
+        "Louis Renault"
+      ],
+      "reference_answer": "Louis Renault",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "Louis Renault": 5.725618322301321e-07
+      },
+      "individual_log_probs": {
+        "Louis Renault": -14.37314510345459
+      },
+      "max_prob": 5.725618322301321e-07,
+      "max_log_prob": -14.37314510345459,
+      "best_answer": "Louis Renault",
+      "total_prob": 5.725618322301321e-07,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 69,
+      "generated_answer": "UTF-16",
+      "gold_answers": [
+        "WGL-4 with 652 characters"
+      ],
+      "reference_answer": "WGL-4 with 652 characters",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "WGL-4 with 652 characters": 4.003826114518144e-05
+      },
+      "individual_log_probs": {
+        "WGL-4 with 652 characters": -10.125675032402796
+      },
+      "max_prob": 4.003826114518144e-05,
+      "max_log_prob": -10.125675032402796,
+      "best_answer": "WGL-4 with 652 characters",
+      "total_prob": 4.003826114518144e-05,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 70,
+      "generated_answer": "Pakatan Harapan.",
+      "gold_answers": [
+        "Pakatan Harapan"
+      ],
+      "reference_answer": "Pakatan Harapan",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Pakatan Harapan": 0.9996679789063846
+      },
+      "individual_log_probs": {
+        "Pakatan Harapan": -0.00033207622482223087
+      },
+      "max_prob": 0.9996679789063846,
+      "max_log_prob": -0.00033207622482223087,
+      "best_answer": "Pakatan Harapan",
+      "total_prob": 0.9996679789063846,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 71,
+      "generated_answer": "Members of the Lok Sabha.",
+      "gold_answers": [
+        "Parliament of India"
+      ],
+      "reference_answer": "Parliament of India",
+      "em_score": 0.0,
+      "f1_score": 0.28571428571428575,
+      "precision": 0.25,
+      "recall": 0.3333333333333333,
+      "individual_probs": {
+        "Parliament of India": 1.0464512664968187e-07
+      },
+      "individual_log_probs": {
+        "Parliament of India": -16.07269095722586
+      },
+      "max_prob": 1.0464512664968187e-07,
+      "max_log_prob": -16.07269095722586,
+      "best_answer": "Parliament of India",
+      "total_prob": 1.0464512664968187e-07,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 72,
+      "generated_answer": "Harvard University",
+      "gold_answers": [
+        "Harvard"
+      ],
+      "reference_answer": "Harvard",
+      "em_score": 0.0,
+      "f1_score": 0.6666666666666666,
+      "precision": 0.5,
+      "recall": 1.0,
+      "individual_probs": {
+        "Harvard": 0.9776947734385546
+      },
+      "individual_log_probs": {
+        "Harvard": -0.022557750256964937
+      },
+      "max_prob": 0.9776947734385546,
+      "max_log_prob": -0.022557750256964937,
+      "best_answer": "Harvard",
+      "total_prob": 0.9776947734385546,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 73,
+      "generated_answer": "The Chicago Cubs' reason for poor late-season play.",
+      "gold_answers": [
+        "unusually high number of day games",
+        "d",
+        "day",
+        "Day",
+        "days"
+      ],
+      "reference_answer": "unusually high number of day games",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "unusually high number of day games": 0.0026128643794508808,
+        "d": 0.0007490778275725362,
+        "day": 0.011091624782569871,
+        "Day": 0.0246161306729764,
+        "days": 1.9737773112340718e-05
+      },
+      "individual_log_probs": {
+        "unusually high number of day games": -5.947308196029098,
+        "d": -7.196667671203613,
+        "day": -4.501564979553223,
+        "Day": -3.7043533325195312,
+        "days": -10.832976341247559
+      },
+      "max_prob": 0.0246161306729764,
+      "max_log_prob": -3.7043533325195312,
+      "best_answer": "Day",
+      "total_prob": 0.03908943543568203,
+      "answer_count": 5,
+      "valid_answer_count": 5,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 74,
+      "generated_answer": "month-long",
+      "gold_answers": [
+        "a month",
+        "Month",
+        "month"
+      ],
+      "reference_answer": "a month",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "a month": 0.010030618562940602,
+        "Month": 0.020506141754657814,
+        "month": 0.8370407388250615
+      },
+      "individual_log_probs": {
+        "a month": -4.602113007629669,
+        "Month": -3.887030839920044,
+        "month": -0.17788253724575043
+      },
+      "max_prob": 0.8370407388250615,
+      "max_log_prob": -0.17788253724575043,
+      "best_answer": "month",
+      "total_prob": 0.8675774991426599,
+      "answer_count": 3,
+      "valid_answer_count": 3,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 75,
+      "generated_answer": "No.",
+      "gold_answers": [
+        "totals remain relatively small in relation to the total U.S population.",
+        "the US",
+        "America",
+        "U.S.",
+        "the United States",
+        "United States",
+        "US"
+      ],
+      "reference_answer": "totals remain relatively small in relation to the total U.S population.",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "totals remain relatively small in relation to the total U.S population.": 1.0948312042286696e-30,
+        "the US": 6.850448873785619e-10,
+        "America": 3.521212983983668e-07,
+        "U.S.": 5.300173929388794e-07,
+        "the United States": 1.7795870376079536e-08,
+        "United States": 9.93466538604759e-07,
+        "US": 1.4211134480479284e-07
+      },
+      "individual_log_probs": {
+        "totals remain relatively small in relation to the total U.S population.": -68.9869525898248,
+        "the US": -21.101536750793457,
+        "America": -14.85929012298584,
+        "U.S.": -14.450356014072895,
+        "the United States": -17.844299407908693,
+        "United States": -13.822065455839038,
+        "US": -15.766654968261719
+      },
+      "max_prob": 9.93466538604759e-07,
+      "max_log_prob": -13.822065455839038,
+      "best_answer": "United States",
+      "total_prob": 2.036197490010256e-06,
+      "answer_count": 7,
+      "valid_answer_count": 7,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 76,
+      "generated_answer": "1998",
+      "gold_answers": [
+        "1998"
+      ],
+      "reference_answer": "1998",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "1998": 0.9962286504293919
+      },
+      "individual_log_probs": {
+        "1998": -0.003778479040192906
+      },
+      "max_prob": 0.9962286504293919,
+      "max_log_prob": -0.003778479040192906,
+      "best_answer": "1998",
+      "total_prob": 0.9962286504293919,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 77,
+      "generated_answer": "Veterans Stadium",
+      "gold_answers": [
+        "Lincoln Financial Field"
+      ],
+      "reference_answer": "Lincoln Financial Field",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "Lincoln Financial Field": 0.29469516475951435
+      },
+      "individual_log_probs": {
+        "Lincoln Financial Field": -1.2218137967042253
+      },
+      "max_prob": 0.29469516475951435,
+      "max_log_prob": -1.2218137967042253,
+      "best_answer": "Lincoln Financial Field",
+      "total_prob": 0.29469516475951435,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 78,
+      "generated_answer": "Aldemaro Romero",
+      "gold_answers": [
+        "Aldemaro Romero"
+      ],
+      "reference_answer": "Aldemaro Romero",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Aldemaro Romero": 0.9943612482253601
+      },
+      "individual_log_probs": {
+        "Aldemaro Romero": -0.005654709551663473
+      },
+      "max_prob": 0.9943612482253601,
+      "max_log_prob": -0.005654709551663473,
+      "best_answer": "Aldemaro Romero",
+      "total_prob": 0.9943612482253601,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 79,
+      "generated_answer": "Rafina",
+      "gold_answers": [
+        "Amna Ilyas"
+      ],
+      "reference_answer": "Amna Ilyas",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "Amna Ilyas": 2.205560844118826e-06
+      },
+      "individual_log_probs": {
+        "Amna Ilyas": -13.024528730332918
+      },
+      "max_prob": 2.205560844118826e-06,
+      "max_log_prob": -13.024528730332918,
+      "best_answer": "Amna Ilyas",
+      "total_prob": 2.205560844118826e-06,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 80,
+      "generated_answer": "Western Europe",
+      "gold_answers": [
+        "off the north - western coast of the European mainland"
+      ],
+      "reference_answer": "off the north - western coast of the European mainland",
+      "em_score": 0.0,
+      "f1_score": 0.22222222222222224,
+      "precision": 0.5,
+      "recall": 0.14285714285714285,
+      "individual_probs": {
+        "off the north - western coast of the European mainland": 2.795028791259141e-17
+      },
+      "individual_log_probs": {
+        "off the north - western coast of the European mainland": -38.1161041733576
+      },
+      "max_prob": 2.795028791259141e-17,
+      "max_log_prob": -38.1161041733576,
+      "best_answer": "off the north - western coast of the European mainland",
+      "total_prob": 2.795028791259141e-17,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 81,
+      "generated_answer": "Puerto Rico was a Spanish colony.",
+      "gold_answers": [
+        "a key part of the Spanish Empire"
+      ],
+      "reference_answer": "a key part of the Spanish Empire",
+      "em_score": 0.0,
+      "f1_score": 0.20000000000000004,
+      "precision": 0.2,
+      "recall": 0.2,
+      "individual_probs": {
+        "a key part of the Spanish Empire": 4.3693399952689914e-15
+      },
+      "individual_log_probs": {
+        "a key part of the Spanish Empire": -33.064164428040385
+      },
+      "max_prob": 4.3693399952689914e-15,
+      "max_log_prob": -33.064164428040385,
+      "best_answer": "a key part of the Spanish Empire",
+      "total_prob": 4.3693399952689914e-15,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 82,
+      "generated_answer": "Fort Lauderdale, Florida",
+      "gold_answers": [
+        "165,521"
+      ],
+      "reference_answer": "165,521",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "165,521": 0.004642565685295685
+      },
+      "individual_log_probs": {
+        "165,521": -5.372488116146997
+      },
+      "max_prob": 0.004642565685295685,
+      "max_log_prob": -5.372488116146997,
+      "best_answer": "165,521",
+      "total_prob": 0.004642565685295685,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 83,
+      "generated_answer": "Sudhir Mungantiwar",
+      "gold_answers": [
+        "Sudhir Mungantiwar"
+      ],
+      "reference_answer": "Sudhir Mungantiwar",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Sudhir Mungantiwar": 0.998048107684473
+      },
+      "individual_log_probs": {
+        "Sudhir Mungantiwar": -0.0019537997397947038
+      },
+      "max_prob": 0.998048107684473,
+      "max_log_prob": -0.0019537997397947038,
+      "best_answer": "Sudhir Mungantiwar",
+      "total_prob": 0.998048107684473,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 84,
+      "generated_answer": "Blue Nile",
+      "gold_answers": [
+        "Blue Nile"
+      ],
+      "reference_answer": "Blue Nile",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Blue Nile": 0.5288151215206333
+      },
+      "individual_log_probs": {
+        "Blue Nile": -0.6371163949370384
+      },
+      "max_prob": 0.5288151215206333,
+      "max_log_prob": -0.6371163949370384,
+      "best_answer": "Blue Nile",
+      "total_prob": 0.5288151215206333,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 85,
+      "generated_answer": "Steve Jobs",
+      "gold_answers": [
+        "Steve Jobs"
+      ],
+      "reference_answer": "Steve Jobs",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Steve Jobs": 0.9994275840961037
+      },
+      "individual_log_probs": {
+        "Steve Jobs": -0.0005725797964259982
+      },
+      "max_prob": 0.9994275840961037,
+      "max_log_prob": -0.0005725797964259982,
+      "best_answer": "Steve Jobs",
+      "total_prob": 0.9994275840961037,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 86,
+      "generated_answer": "Elliot Handler",
+      "gold_answers": [
+        "Elliot Handler"
+      ],
+      "reference_answer": "Elliot Handler",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Elliot Handler": 0.9965955467475248
+      },
+      "individual_log_probs": {
+        "Elliot Handler": -0.003410261590005348
+      },
+      "max_prob": 0.9965955467475248,
+      "max_log_prob": -0.003410261590005348,
+      "best_answer": "Elliot Handler",
+      "total_prob": 0.9965955467475248,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 87,
+      "generated_answer": "49",
+      "gold_answers": [
+        "49"
+      ],
+      "reference_answer": "49",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "49": 0.9990712692820938
+      },
+      "individual_log_probs": {
+        "49": -0.0009291622554883361
+      },
+      "max_prob": 0.9990712692820938,
+      "max_log_prob": -0.0009291622554883361,
+      "best_answer": "49",
+      "total_prob": 0.9990712692820938,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 88,
+      "generated_answer": "President",
+      "gold_answers": [
+        "Arkansas Attorney General"
+      ],
+      "reference_answer": "Arkansas Attorney General",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "Arkansas Attorney General": 1.1669479586076853e-12
+      },
+      "individual_log_probs": {
+        "Arkansas Attorney General": -27.476629357784986
+      },
+      "max_prob": 1.1669479586076853e-12,
+      "max_log_prob": -27.476629357784986,
+      "best_answer": "Arkansas Attorney General",
+      "total_prob": 1.1669479586076853e-12,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 89,
+      "generated_answer": "Impulse!",
+      "gold_answers": [
+        "RCA Records",
+        "RCA"
+      ],
+      "reference_answer": "RCA Records",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "RCA Records": 0.19909327949271485,
+        "RCA": 0.22712696612600375
+      },
+      "individual_log_probs": {
+        "RCA Records": -1.613981822913047,
+        "RCA": -1.4822460957220756
+      },
+      "max_prob": 0.22712696612600375,
+      "max_log_prob": -1.4822460957220756,
+      "best_answer": "RCA",
+      "total_prob": 0.42622024561871863,
+      "answer_count": 2,
+      "valid_answer_count": 2,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 90,
+      "generated_answer": "Kapan",
+      "gold_answers": [
+        "Kapan"
+      ],
+      "reference_answer": "Kapan",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Kapan": 0.9934178121594407
+      },
+      "individual_log_probs": {
+        "Kapan": -0.006603945968890912
+      },
+      "max_prob": 0.9934178121594407,
+      "max_log_prob": -0.006603945968890912,
+      "best_answer": "Kapan",
+      "total_prob": 0.9934178121594407,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 91,
+      "generated_answer": "Trajan",
+      "gold_answers": [
+        "Marcia"
+      ],
+      "reference_answer": "Marcia",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "Marcia": 0.001227555437518934
+      },
+      "individual_log_probs": {
+        "Marcia": -6.7027305363671985
+      },
+      "max_prob": 0.001227555437518934,
+      "max_log_prob": -6.7027305363671985,
+      "best_answer": "Marcia",
+      "total_prob": 0.001227555437518934,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 92,
+      "generated_answer": "National Rail Museum",
+      "gold_answers": [
+        "National Rail Museum"
+      ],
+      "reference_answer": "National Rail Museum",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "National Rail Museum": 0.9969402925215305
+      },
+      "individual_log_probs": {
+        "National Rail Museum": -0.0030643979534943355
+      },
+      "max_prob": 0.9969402925215305,
+      "max_log_prob": -0.0030643979534943355,
+      "best_answer": "National Rail Museum",
+      "total_prob": 0.9969402925215305,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 93,
+      "generated_answer": "The Near East.",
+      "gold_answers": [
+        "\"the East Indies\"",
+        "East Indies"
+      ],
+      "reference_answer": "\"the East Indies\"",
+      "em_score": 0.0,
+      "f1_score": 0.5,
+      "precision": 0.5,
+      "recall": 0.5,
+      "individual_probs": {
+        "\"the East Indies\"": 4.520464050673376e-09,
+        "East Indies": 2.449680098948057e-05
+      },
+      "individual_log_probs": {
+        "\"the East Indies\"": -19.214651182293892,
+        "East Indies": -10.616968020796776
+      },
+      "max_prob": 2.449680098948057e-05,
+      "max_log_prob": -10.616968020796776,
+      "best_answer": "East Indies",
+      "total_prob": 2.4501321453531245e-05,
+      "answer_count": 2,
+      "valid_answer_count": 2,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 94,
+      "generated_answer": "There is no university of George Low. George Low was a NASA administrator and the 14th President of Renssela",
+      "gold_answers": [
+        "1824"
+      ],
+      "reference_answer": "1824",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "1824": 0.01123892089410188
+      },
+      "individual_log_probs": {
+        "1824": -4.488372444988272
+      },
+      "max_prob": 0.01123892089410188,
+      "max_log_prob": -4.488372444988272,
+      "best_answer": "1824",
+      "total_prob": 0.01123892089410188,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 95,
+      "generated_answer": "Nintendo",
+      "gold_answers": [
+        "first-party games"
+      ],
+      "reference_answer": "first-party games",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "first-party games": 1.5284876369905937e-10
+      },
+      "individual_log_probs": {
+        "first-party games": -22.601572155952454
+      },
+      "max_prob": 1.5284876369905937e-10,
+      "max_log_prob": -22.601572155952454,
+      "best_answer": "first-party games",
+      "total_prob": 1.5284876369905937e-10,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 96,
+      "generated_answer": "United States",
+      "gold_answers": [
+        "United States",
+        "US of A",
+        "U.S.",
+        "US",
+        "U.S"
+      ],
+      "reference_answer": "United States",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "United States": 0.8636454701613125,
+        "US of A": 2.0940506053197444e-13,
+        "U.S.": 1.1237187143944163e-06,
+        "US": 5.9200896472618896e-06,
+        "U.S": 2.7616047927934822e-06
+      },
+      "individual_log_probs": {
+        "United States": -0.14659292985015782,
+        "US of A": -29.1945059299469,
+        "U.S.": -13.698867091909051,
+        "US": -12.037158966064453,
+        "U.S": -12.799698600545526
+      },
+      "max_prob": 0.8636454701613125,
+      "max_log_prob": -0.14659292985015782,
+      "best_answer": "United States",
+      "total_prob": 0.8636552755746765,
+      "answer_count": 5,
+      "valid_answer_count": 5,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 97,
+      "generated_answer": "Giorgio de Chirico",
+      "gold_answers": [
+        "Alberto Savinio"
+      ],
+      "reference_answer": "Alberto Savinio",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "Alberto Savinio": 0.08991670981845837
+      },
+      "individual_log_probs": {
+        "Alberto Savinio": -2.4088714836034057
+      },
+      "max_prob": 0.08991670981845837,
+      "max_log_prob": -2.4088714836034057,
+      "best_answer": "Alberto Savinio",
+      "total_prob": 0.08991670981845837,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 98,
+      "generated_answer": "Seth Magaziner, Rhode Island",
+      "gold_answers": [
+        "Seth Magaziner"
+      ],
+      "reference_answer": "Seth Magaziner",
+      "em_score": 0.0,
+      "f1_score": 0.6666666666666666,
+      "precision": 0.5,
+      "recall": 1.0,
+      "individual_probs": {
+        "Seth Magaziner": 0.9081717205653315
+      },
+      "individual_log_probs": {
+        "Seth Magaziner": -0.09632179869635138
+      },
+      "max_prob": 0.9081717205653315,
+      "max_log_prob": -0.09632179869635138,
+      "best_answer": "Seth Magaziner",
+      "total_prob": 0.9081717205653315,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 99,
+      "generated_answer": "Bianjing (present-day Kaifeng)",
+      "gold_answers": [
+        "Qiantang"
+      ],
+      "reference_answer": "Qiantang",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "Qiantang": 4.2235789276450945e-08
+      },
+      "individual_log_probs": {
+        "Qiantang": -16.979997888207436
+      },
+      "max_prob": 4.2235789276450945e-08,
+      "max_log_prob": -16.979997888207436,
+      "best_answer": "Qiantang",
+      "total_prob": 4.2235789276450945e-08,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.2
+    }
+  ]
+}

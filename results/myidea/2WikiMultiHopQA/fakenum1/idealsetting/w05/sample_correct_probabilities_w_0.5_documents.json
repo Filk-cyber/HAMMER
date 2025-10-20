@@ -1,0 +1,2520 @@
+{
+  "metrics": {
+    "weight_w": 0.5,
+    "input_file": "/home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w05.json",
+    "total_samples": 100,
+    "exact_match": 0.74,
+    "f1": 0.790329131652661,
+    "precision": 0.7796834733893557,
+    "recall": 0.83,
+    "avg_max_log_prob": -3.0841459035492194,
+    "avg_max_prob": 0.5315008846677924,
+    "avg_total_prob": 0.5315008846677924,
+    "valid_max_prob_samples": 100,
+    "invalid_max_prob_samples": 0,
+    "avg_answer_count": 1.0,
+    "avg_valid_answer_count": 1.0
+  },
+  "sample_info": [
+    {
+      "sample_idx": 0,
+      "generated_answer": "No.",
+      "gold_answers": [
+        "no"
+      ],
+      "reference_answer": "no",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "no": 0.0004693854172309484
+      },
+      "individual_log_probs": {
+        "no": -7.66408634185791
+      },
+      "max_prob": 0.0004693854172309484,
+      "max_log_prob": -7.66408634185791,
+      "best_answer": "no",
+      "total_prob": 0.0004693854172309484,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 1,
+      "generated_answer": "February 22, 1893",
+      "gold_answers": [
+        "February 22, 1893"
+      ],
+      "reference_answer": "February 22, 1893",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "February 22, 1893": 0.9998732950840421
+      },
+      "individual_log_probs": {
+        "February 22, 1893": -0.0001267129437039216
+      },
+      "max_prob": 0.9998732950840421,
+      "max_log_prob": -0.0001267129437039216,
+      "best_answer": "February 22, 1893",
+      "total_prob": 0.9998732950840421,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 2,
+      "generated_answer": "No.",
+      "gold_answers": [
+        "no"
+      ],
+      "reference_answer": "no",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "no": 0.00035863578161134644
+      },
+      "individual_log_probs": {
+        "no": -7.933203220367432
+      },
+      "max_prob": 0.00035863578161134644,
+      "max_log_prob": -7.933203220367432,
+      "best_answer": "no",
+      "total_prob": 0.00035863578161134644,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 3,
+      "generated_answer": "12 April 1942",
+      "gold_answers": [
+        "12 April 1942"
+      ],
+      "reference_answer": "12 April 1942",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "12 April 1942": 0.9953784269330713
+      },
+      "individual_log_probs": {
+        "12 April 1942": -0.0046322855541731656
+      },
+      "max_prob": 0.9953784269330713,
+      "max_log_prob": -0.0046322855541731656,
+      "best_answer": "12 April 1942",
+      "total_prob": 0.9953784269330713,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 4,
+      "generated_answer": "execution by hanging on 30 December 2006.",
+      "gold_answers": [
+        "hanging"
+      ],
+      "reference_answer": "hanging",
+      "em_score": 0.0,
+      "f1_score": 0.25,
+      "precision": 0.14285714285714285,
+      "recall": 1.0,
+      "individual_probs": {
+        "hanging": 0.00029468662069264664
+      },
+      "individual_log_probs": {
+        "hanging": -8.129598069004714
+      },
+      "max_prob": 0.00029468662069264664,
+      "max_log_prob": -8.129598069004714,
+      "best_answer": "hanging",
+      "total_prob": 0.00029468662069264664,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 5,
+      "generated_answer": "December 11, 1984",
+      "gold_answers": [
+        "December 11, 1984"
+      ],
+      "reference_answer": "December 11, 1984",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "December 11, 1984": 0.9999555367803167
+      },
+      "individual_log_probs": {
+        "December 11, 1984": -4.446420820158892e-05
+      },
+      "max_prob": 0.9999555367803167,
+      "max_log_prob": -4.446420820158892e-05,
+      "best_answer": "December 11, 1984",
+      "total_prob": 0.9999555367803167,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 6,
+      "generated_answer": "No.",
+      "gold_answers": [
+        "no"
+      ],
+      "reference_answer": "no",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "no": 0.0002786751182569079
+      },
+      "individual_log_probs": {
+        "no": -8.185463905334473
+      },
+      "max_prob": 0.0002786751182569079,
+      "max_log_prob": -8.185463905334473,
+      "best_answer": "no",
+      "total_prob": 0.0002786751182569079,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 7,
+      "generated_answer": "Innale (1990)",
+      "gold_answers": [
+        "Innale"
+      ],
+      "reference_answer": "Innale",
+      "em_score": 0.0,
+      "f1_score": 0.6666666666666666,
+      "precision": 0.5,
+      "recall": 1.0,
+      "individual_probs": {
+        "Innale": 0.7709287751013355
+      },
+      "individual_log_probs": {
+        "Innale": -0.2601592895805993
+      },
+      "max_prob": 0.7709287751013355,
+      "max_log_prob": -0.2601592895805993,
+      "best_answer": "Innale",
+      "total_prob": 0.7709287751013355,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 8,
+      "generated_answer": "Grips, Grunts and Groans (1937)",
+      "gold_answers": [
+        "Grips, Grunts And Groans"
+      ],
+      "reference_answer": "Grips, Grunts And Groans",
+      "em_score": 0.0,
+      "f1_score": 0.888888888888889,
+      "precision": 0.8,
+      "recall": 1.0,
+      "individual_probs": {
+        "Grips, Grunts And Groans": 0.17913344999104147
+      },
+      "individual_log_probs": {
+        "Grips, Grunts And Groans": -1.7196242202351186
+      },
+      "max_prob": 0.17913344999104147,
+      "max_log_prob": -1.7196242202351186,
+      "best_answer": "Grips, Grunts And Groans",
+      "total_prob": 0.17913344999104147,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 9,
+      "generated_answer": "8 April 1364",
+      "gold_answers": [
+        "8 April 1364"
+      ],
+      "reference_answer": "8 April 1364",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "8 April 1364": 0.6184648582537493
+      },
+      "individual_log_probs": {
+        "8 April 1364": -0.4805149064618419
+      },
+      "max_prob": 0.6184648582537493,
+      "max_log_prob": -0.4805149064618419,
+      "best_answer": "8 April 1364",
+      "total_prob": 0.6184648582537493,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 10,
+      "generated_answer": "No.",
+      "gold_answers": [
+        "no"
+      ],
+      "reference_answer": "no",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "no": 0.00301663680450836
+      },
+      "individual_log_probs": {
+        "no": -5.80361270904541
+      },
+      "max_prob": 0.00301663680450836,
+      "max_log_prob": -5.80361270904541,
+      "best_answer": "no",
+      "total_prob": 0.00301663680450836,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 11,
+      "generated_answer": "August 20, 2004",
+      "gold_answers": [
+        "August 20, 2004"
+      ],
+      "reference_answer": "August 20, 2004",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "August 20, 2004": 0.6004663696712149
+      },
+      "individual_log_probs": {
+        "August 20, 2004": -0.5100486429084512
+      },
+      "max_prob": 0.6004663696712149,
+      "max_log_prob": -0.5100486429084512,
+      "best_answer": "August 20, 2004",
+      "total_prob": 0.6004663696712149,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 12,
+      "generated_answer": "Yes.",
+      "gold_answers": [
+        "no"
+      ],
+      "reference_answer": "no",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "no": 0.001253375103926174
+      },
+      "individual_log_probs": {
+        "no": -6.681915283203125
+      },
+      "max_prob": 0.001253375103926174,
+      "max_log_prob": -6.681915283203125,
+      "best_answer": "no",
+      "total_prob": 0.001253375103926174,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 13,
+      "generated_answer": "Lucien Guitry",
+      "gold_answers": [
+        "Lucien Guitry"
+      ],
+      "reference_answer": "Lucien Guitry",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Lucien Guitry": 0.9988225265882624
+      },
+      "individual_log_probs": {
+        "Lucien Guitry": -0.0011781671782031822
+      },
+      "max_prob": 0.9988225265882624,
+      "max_log_prob": -0.0011781671782031822,
+      "best_answer": "Lucien Guitry",
+      "total_prob": 0.9988225265882624,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 14,
+      "generated_answer": "No.",
+      "gold_answers": [
+        "yes"
+      ],
+      "reference_answer": "yes",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "yes": 0.0002667732072817295
+      },
+      "individual_log_probs": {
+        "yes": -8.229111671447754
+      },
+      "max_prob": 0.0002667732072817295,
+      "max_log_prob": -8.229111671447754,
+      "best_answer": "yes",
+      "total_prob": 0.0002667732072817295,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 15,
+      "generated_answer": "No.",
+      "gold_answers": [
+        "no"
+      ],
+      "reference_answer": "no",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "no": 0.0005851347674944631
+      },
+      "individual_log_probs": {
+        "no": -7.443668365478516
+      },
+      "max_prob": 0.0005851347674944631,
+      "max_log_prob": -7.443668365478516,
+      "best_answer": "no",
+      "total_prob": 0.0005851347674944631,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 16,
+      "generated_answer": "Eindhoven",
+      "gold_answers": [
+        "Dutch"
+      ],
+      "reference_answer": "Dutch",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "Dutch": 3.162624880571416e-06
+      },
+      "individual_log_probs": {
+        "Dutch": -12.664108216762543
+      },
+      "max_prob": 3.162624880571416e-06,
+      "max_log_prob": -12.664108216762543,
+      "best_answer": "Dutch",
+      "total_prob": 3.162624880571416e-06,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 17,
+      "generated_answer": "Karaikudi",
+      "gold_answers": [
+        "Karaikudi"
+      ],
+      "reference_answer": "Karaikudi",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Karaikudi": 0.9996570250860275
+      },
+      "individual_log_probs": {
+        "Karaikudi": -0.00034303374332012027
+      },
+      "max_prob": 0.9996570250860275,
+      "max_log_prob": -0.00034303374332012027,
+      "best_answer": "Karaikudi",
+      "total_prob": 0.9996570250860275,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 18,
+      "generated_answer": "No",
+      "gold_answers": [
+        "no"
+      ],
+      "reference_answer": "no",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "no": 0.0003757895476027099
+      },
+      "individual_log_probs": {
+        "no": -7.886481285095215
+      },
+      "max_prob": 0.0003757895476027099,
+      "max_log_prob": -7.886481285095215,
+      "best_answer": "no",
+      "total_prob": 0.0003757895476027099,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 19,
+      "generated_answer": "20 May 1943",
+      "gold_answers": [
+        "20 May 1943"
+      ],
+      "reference_answer": "20 May 1943",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "20 May 1943": 0.9991068861209581
+      },
+      "individual_log_probs": {
+        "20 May 1943": -0.0008935129428664368
+      },
+      "max_prob": 0.9991068861209581,
+      "max_log_prob": -0.0008935129428664368,
+      "best_answer": "20 May 1943",
+      "total_prob": 0.9991068861209581,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 20,
+      "generated_answer": "Asahikawa, Hokkaidō, Japan",
+      "gold_answers": [
+        "Asahikawa"
+      ],
+      "reference_answer": "Asahikawa",
+      "em_score": 0.0,
+      "f1_score": 0.5,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "individual_probs": {
+        "Asahikawa": 0.9977993865019666
+      },
+      "individual_log_probs": {
+        "Asahikawa": -0.0022030384060940378
+      },
+      "max_prob": 0.9977993865019666,
+      "max_log_prob": -0.0022030384060940378,
+      "best_answer": "Asahikawa",
+      "total_prob": 0.9977993865019666,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 21,
+      "generated_answer": "4 December 1922",
+      "gold_answers": [
+        "4 December 1922"
+      ],
+      "reference_answer": "4 December 1922",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "4 December 1922": 0.7209196790246275
+      },
+      "individual_log_probs": {
+        "4 December 1922": -0.327227550087855
+      },
+      "max_prob": 0.7209196790246275,
+      "max_log_prob": -0.327227550087855,
+      "best_answer": "4 December 1922",
+      "total_prob": 0.7209196790246275,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 22,
+      "generated_answer": "India",
+      "gold_answers": [
+        "India"
+      ],
+      "reference_answer": "India",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "India": 0.9995214845708849
+      },
+      "individual_log_probs": {
+        "India": -0.0004786299541592598
+      },
+      "max_prob": 0.9995214845708849,
+      "max_log_prob": -0.0004786299541592598,
+      "best_answer": "India",
+      "total_prob": 0.9995214845708849,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 23,
+      "generated_answer": "Irwin Winkler",
+      "gold_answers": [
+        "Irwin Winkler"
+      ],
+      "reference_answer": "Irwin Winkler",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Irwin Winkler": 0.9992930616486474
+      },
+      "individual_log_probs": {
+        "Irwin Winkler": -0.00070718835009842
+      },
+      "max_prob": 0.9992930616486474,
+      "max_log_prob": -0.00070718835009842,
+      "best_answer": "Irwin Winkler",
+      "total_prob": 0.9992930616486474,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 24,
+      "generated_answer": "No.",
+      "gold_answers": [
+        "no"
+      ],
+      "reference_answer": "no",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "no": 0.0005630943871860734
+      },
+      "individual_log_probs": {
+        "no": -7.482063293457031
+      },
+      "max_prob": 0.0005630943871860734,
+      "max_log_prob": -7.482063293457031,
+      "best_answer": "no",
+      "total_prob": 0.0005630943871860734,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 25,
+      "generated_answer": "Britain",
+      "gold_answers": [
+        "American"
+      ],
+      "reference_answer": "American",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "American": 0.08563608630369318
+      },
+      "individual_log_probs": {
+        "American": -2.457648515701294
+      },
+      "max_prob": 0.08563608630369318,
+      "max_log_prob": -2.457648515701294,
+      "best_answer": "American",
+      "total_prob": 0.08563608630369318,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 26,
+      "generated_answer": "July 10, 1972",
+      "gold_answers": [
+        "July 10, 1972"
+      ],
+      "reference_answer": "July 10, 1972",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "July 10, 1972": 0.9971275626206512
+      },
+      "individual_log_probs": {
+        "July 10, 1972": -0.00287657074471781
+      },
+      "max_prob": 0.9971275626206512,
+      "max_log_prob": -0.00287657074471781,
+      "best_answer": "July 10, 1972",
+      "total_prob": 0.9971275626206512,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 27,
+      "generated_answer": "Worthing, Sussex.",
+      "gold_answers": [
+        "Worthing"
+      ],
+      "reference_answer": "Worthing",
+      "em_score": 0.0,
+      "f1_score": 0.6666666666666666,
+      "precision": 0.5,
+      "recall": 1.0,
+      "individual_probs": {
+        "Worthing": 0.9997528137836803
+      },
+      "individual_log_probs": {
+        "Worthing": -0.0002472167718678975
+      },
+      "max_prob": 0.9997528137836803,
+      "max_log_prob": -0.0002472167718678975,
+      "best_answer": "Worthing",
+      "total_prob": 0.9997528137836803,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 28,
+      "generated_answer": "United States",
+      "gold_answers": [
+        "American"
+      ],
+      "reference_answer": "American",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "American": 0.042752115585546334
+      },
+      "individual_log_probs": {
+        "American": -3.152336597442627
+      },
+      "max_prob": 0.042752115585546334,
+      "max_log_prob": -3.152336597442627,
+      "best_answer": "American",
+      "total_prob": 0.042752115585546334,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 29,
+      "generated_answer": "Half Past Dead.",
+      "gold_answers": [
+        "Half Past Dead"
+      ],
+      "reference_answer": "Half Past Dead",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Half Past Dead": 0.9818712780237686
+      },
+      "individual_log_probs": {
+        "Half Past Dead": -0.0182950606617851
+      },
+      "max_prob": 0.9818712780237686,
+      "max_log_prob": -0.0182950606617851,
+      "best_answer": "Half Past Dead",
+      "total_prob": 0.9818712780237686,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 30,
+      "generated_answer": "Ekk Deewana Tha",
+      "gold_answers": [
+        "Ekk Deewana Tha"
+      ],
+      "reference_answer": "Ekk Deewana Tha",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Ekk Deewana Tha": 0.8821411535295899
+      },
+      "individual_log_probs": {
+        "Ekk Deewana Tha": -0.1254031977646548
+      },
+      "max_prob": 0.8821411535295899,
+      "max_log_prob": -0.1254031977646548,
+      "best_answer": "Ekk Deewana Tha",
+      "total_prob": 0.8821411535295899,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 31,
+      "generated_answer": "November 17, 1808",
+      "gold_answers": [
+        "November 17, 1808"
+      ],
+      "reference_answer": "November 17, 1808",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "November 17, 1808": 0.9472657997168896
+      },
+      "individual_log_probs": {
+        "November 17, 1808": -0.054175549658644684
+      },
+      "max_prob": 0.9472657997168896,
+      "max_log_prob": -0.054175549658644684,
+      "best_answer": "November 17, 1808",
+      "total_prob": 0.9472657997168896,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 32,
+      "generated_answer": "19 April 2004",
+      "gold_answers": [
+        "Melbourne"
+      ],
+      "reference_answer": "Melbourne",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "Melbourne": 7.750335446460679e-05
+      },
+      "individual_log_probs": {
+        "Melbourne": -9.465189339127392
+      },
+      "max_prob": 7.750335446460679e-05,
+      "max_log_prob": -9.465189339127392,
+      "best_answer": "Melbourne",
+      "total_prob": 7.750335446460679e-05,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 33,
+      "generated_answer": "No.",
+      "gold_answers": [
+        "no"
+      ],
+      "reference_answer": "no",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "no": 0.0003812533395360907
+      },
+      "individual_log_probs": {
+        "no": -7.87204647064209
+      },
+      "max_prob": 0.0003812533395360907,
+      "max_log_prob": -7.87204647064209,
+      "best_answer": "no",
+      "total_prob": 0.0003812533395360907,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 34,
+      "generated_answer": "An Odyssey of the North",
+      "gold_answers": [
+        "An Odyssey Of The North"
+      ],
+      "reference_answer": "An Odyssey Of The North",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "An Odyssey Of The North": 0.19419684009253851
+      },
+      "individual_log_probs": {
+        "An Odyssey Of The North": -1.6388829946654369
+      },
+      "max_prob": 0.19419684009253851,
+      "max_log_prob": -1.6388829946654369,
+      "best_answer": "An Odyssey Of The North",
+      "total_prob": 0.19419684009253851,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 35,
+      "generated_answer": "Žilina",
+      "gold_answers": [
+        "Žilina"
+      ],
+      "reference_answer": "Žilina",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Žilina": 0.928425293751603
+      },
+      "individual_log_probs": {
+        "Žilina": -0.0742653604984298
+      },
+      "max_prob": 0.928425293751603,
+      "max_log_prob": -0.0742653604984298,
+      "best_answer": "Žilina",
+      "total_prob": 0.928425293751603,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 36,
+      "generated_answer": "Umberto Louzer.",
+      "gold_answers": [
+        "Salvatore Lanna"
+      ],
+      "reference_answer": "Salvatore Lanna",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "Salvatore Lanna": 0.29191473028288334
+      },
+      "individual_log_probs": {
+        "Salvatore Lanna": -1.2312935389390418
+      },
+      "max_prob": 0.29191473028288334,
+      "max_log_prob": -1.2312935389390418,
+      "best_answer": "Salvatore Lanna",
+      "total_prob": 0.29191473028288334,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 37,
+      "generated_answer": "The Cuban Love Song (1931)",
+      "gold_answers": [
+        "The Cuban Love Song"
+      ],
+      "reference_answer": "The Cuban Love Song",
+      "em_score": 0.0,
+      "f1_score": 0.8571428571428571,
+      "precision": 0.75,
+      "recall": 1.0,
+      "individual_probs": {
+        "The Cuban Love Song": 0.7566540717671377
+      },
+      "individual_log_probs": {
+        "The Cuban Love Song": -0.2788491025550002
+      },
+      "max_prob": 0.7566540717671377,
+      "max_log_prob": -0.2788491025550002,
+      "best_answer": "The Cuban Love Song",
+      "total_prob": 0.7566540717671377,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 38,
+      "generated_answer": "Thomas Panton",
+      "gold_answers": [
+        "Thomas Panton"
+      ],
+      "reference_answer": "Thomas Panton",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Thomas Panton": 0.9973700865790632
+      },
+      "individual_log_probs": {
+        "Thomas Panton": -0.0026333777184390783
+      },
+      "max_prob": 0.9973700865790632,
+      "max_log_prob": -0.0026333777184390783,
+      "best_answer": "Thomas Panton",
+      "total_prob": 0.9973700865790632,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 39,
+      "generated_answer": "British",
+      "gold_answers": [
+        "British"
+      ],
+      "reference_answer": "British",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "British": 0.9965400422553317
+      },
+      "individual_log_probs": {
+        "British": -0.0034659572411328554
+      },
+      "max_prob": 0.9965400422553317,
+      "max_log_prob": -0.0034659572411328554,
+      "best_answer": "British",
+      "total_prob": 0.9965400422553317,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 40,
+      "generated_answer": "15 July 1948",
+      "gold_answers": [
+        "15 July 1948"
+      ],
+      "reference_answer": "15 July 1948",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "15 July 1948": 0.9969887779904905
+      },
+      "individual_log_probs": {
+        "15 July 1948": -0.0030157648604856035
+      },
+      "max_prob": 0.9969887779904905,
+      "max_log_prob": -0.0030157648604856035,
+      "best_answer": "15 July 1948",
+      "total_prob": 0.9969887779904905,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 41,
+      "generated_answer": "12 July 1995",
+      "gold_answers": [
+        "12 July 1995"
+      ],
+      "reference_answer": "12 July 1995",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "12 July 1995": 0.980273782776391
+      },
+      "individual_log_probs": {
+        "12 July 1995": -0.019923376154110883
+      },
+      "max_prob": 0.980273782776391,
+      "max_log_prob": -0.019923376154110883,
+      "best_answer": "12 July 1995",
+      "total_prob": 0.980273782776391,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 42,
+      "generated_answer": "American.",
+      "gold_answers": [
+        "American"
+      ],
+      "reference_answer": "American",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "American": 0.9998778254072666
+      },
+      "individual_log_probs": {
+        "American": -0.00012218205665703863
+      },
+      "max_prob": 0.9998778254072666,
+      "max_log_prob": -0.00012218205665703863,
+      "best_answer": "American",
+      "total_prob": 0.9998778254072666,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 43,
+      "generated_answer": "3688",
+      "gold_answers": [
+        "3688"
+      ],
+      "reference_answer": "3688",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "3688": 0.7443217210487315
+      },
+      "individual_log_probs": {
+        "3688": -0.29528191685153615
+      },
+      "max_prob": 0.7443217210487315,
+      "max_log_prob": -0.29528191685153615,
+      "best_answer": "3688",
+      "total_prob": 0.7443217210487315,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 44,
+      "generated_answer": "March 11, 1975",
+      "gold_answers": [
+        "March 11, 1975"
+      ],
+      "reference_answer": "March 11, 1975",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "March 11, 1975": 0.9961251223866308
+      },
+      "individual_log_probs": {
+        "March 11, 1975": -0.0038824044015086656
+      },
+      "max_prob": 0.9961251223866308,
+      "max_log_prob": -0.0038824044015086656,
+      "best_answer": "March 11, 1975",
+      "total_prob": 0.9961251223866308,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 45,
+      "generated_answer": "American",
+      "gold_answers": [
+        "American"
+      ],
+      "reference_answer": "American",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "American": 0.3982497597879886
+      },
+      "individual_log_probs": {
+        "American": -0.9206759333610535
+      },
+      "max_prob": 0.3982497597879886,
+      "max_log_prob": -0.9206759333610535,
+      "best_answer": "American",
+      "total_prob": 0.3982497597879886,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 46,
+      "generated_answer": "Simeon T. Josselyn",
+      "gold_answers": [
+        "Simeon T. Josselyn"
+      ],
+      "reference_answer": "Simeon T. Josselyn",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Simeon T. Josselyn": 0.898117999294041
+      },
+      "individual_log_probs": {
+        "Simeon T. Josselyn": -0.10745381698057344
+      },
+      "max_prob": 0.898117999294041,
+      "max_log_prob": -0.10745381698057344,
+      "best_answer": "Simeon T. Josselyn",
+      "total_prob": 0.898117999294041,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 47,
+      "generated_answer": "Eisenach.",
+      "gold_answers": [
+        "Eisenach"
+      ],
+      "reference_answer": "Eisenach",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Eisenach": 0.9493791673541823
+      },
+      "individual_log_probs": {
+        "Eisenach": -0.05194701606524177
+      },
+      "max_prob": 0.9493791673541823,
+      "max_log_prob": -0.05194701606524177,
+      "best_answer": "Eisenach",
+      "total_prob": 0.9493791673541823,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 48,
+      "generated_answer": "7 May 1940",
+      "gold_answers": [
+        "7 May 1940"
+      ],
+      "reference_answer": "7 May 1940",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "7 May 1940": 0.9970210777932312
+      },
+      "individual_log_probs": {
+        "7 May 1940": -0.002983368026889366
+      },
+      "max_prob": 0.9970210777932312,
+      "max_log_prob": -0.002983368026889366,
+      "best_answer": "7 May 1940",
+      "total_prob": 0.9970210777932312,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 49,
+      "generated_answer": "No.",
+      "gold_answers": [
+        "no"
+      ],
+      "reference_answer": "no",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "no": 0.0012985527823237103
+      },
+      "individual_log_probs": {
+        "no": -6.646504878997803
+      },
+      "max_prob": 0.0012985527823237103,
+      "max_log_prob": -6.646504878997803,
+      "best_answer": "no",
+      "total_prob": 0.0012985527823237103,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 50,
+      "generated_answer": "A Gentleman of France (1921)",
+      "gold_answers": [
+        "A Gentleman Of France"
+      ],
+      "reference_answer": "A Gentleman Of France",
+      "em_score": 0.0,
+      "f1_score": 0.8571428571428571,
+      "precision": 0.75,
+      "recall": 1.0,
+      "individual_probs": {
+        "A Gentleman Of France": 0.023151278411336317
+      },
+      "individual_log_probs": {
+        "A Gentleman Of France": -3.7657052770227324
+      },
+      "max_prob": 0.023151278411336317,
+      "max_log_prob": -3.7657052770227324,
+      "best_answer": "A Gentleman Of France",
+      "total_prob": 0.023151278411336317,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 51,
+      "generated_answer": "No.",
+      "gold_answers": [
+        "no"
+      ],
+      "reference_answer": "no",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "no": 0.00025042245168966764
+      },
+      "individual_log_probs": {
+        "no": -8.29236125946045
+      },
+      "max_prob": 0.00025042245168966764,
+      "max_log_prob": -8.29236125946045,
+      "best_answer": "no",
+      "total_prob": 0.00025042245168966764,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 52,
+      "generated_answer": "Waking Up the Town",
+      "gold_answers": [
+        "Waking Up The Town"
+      ],
+      "reference_answer": "Waking Up The Town",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Waking Up The Town": 0.3502220791116751
+      },
+      "individual_log_probs": {
+        "Waking Up The Town": -1.0491878139685014
+      },
+      "max_prob": 0.3502220791116751,
+      "max_log_prob": -1.0491878139685014,
+      "best_answer": "Waking Up The Town",
+      "total_prob": 0.3502220791116751,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 53,
+      "generated_answer": "Yes",
+      "gold_answers": [
+        "no"
+      ],
+      "reference_answer": "no",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "no": 7.81467104245417e-07
+      },
+      "individual_log_probs": {
+        "no": -14.062092781066895
+      },
+      "max_prob": 7.81467104245417e-07,
+      "max_log_prob": -14.062092781066895,
+      "best_answer": "no",
+      "total_prob": 7.81467104245417e-07,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 54,
+      "generated_answer": "4 April 1957",
+      "gold_answers": [
+        "4 April 1957"
+      ],
+      "reference_answer": "4 April 1957",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "4 April 1957": 0.9926591064204754
+      },
+      "individual_log_probs": {
+        "4 April 1957": -0.0073679705328686396
+      },
+      "max_prob": 0.9926591064204754,
+      "max_log_prob": -0.0073679705328686396,
+      "best_answer": "4 April 1957",
+      "total_prob": 0.9926591064204754,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 55,
+      "generated_answer": "Indian",
+      "gold_answers": [
+        "India"
+      ],
+      "reference_answer": "India",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "India": 4.0969171172549686e-05
+      },
+      "individual_log_probs": {
+        "India": -10.102690696716309
+      },
+      "max_prob": 4.0969171172549686e-05,
+      "max_log_prob": -10.102690696716309,
+      "best_answer": "India",
+      "total_prob": 4.0969171172549686e-05,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 56,
+      "generated_answer": "Lisbon",
+      "gold_answers": [
+        "Lisbon"
+      ],
+      "reference_answer": "Lisbon",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Lisbon": 0.9979253821250893
+      },
+      "individual_log_probs": {
+        "Lisbon": -0.0020767728756254655
+      },
+      "max_prob": 0.9979253821250893,
+      "max_log_prob": -0.0020767728756254655,
+      "best_answer": "Lisbon",
+      "total_prob": 0.9979253821250893,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 57,
+      "generated_answer": "Anne Brooksbank",
+      "gold_answers": [
+        "Anne Brooksbank"
+      ],
+      "reference_answer": "Anne Brooksbank",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Anne Brooksbank": 0.9104186828163572
+      },
+      "individual_log_probs": {
+        "Anne Brooksbank": -0.09385069427366943
+      },
+      "max_prob": 0.9104186828163572,
+      "max_log_prob": -0.09385069427366943,
+      "best_answer": "Anne Brooksbank",
+      "total_prob": 0.9104186828163572,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 58,
+      "generated_answer": "No.",
+      "gold_answers": [
+        "yes"
+      ],
+      "reference_answer": "yes",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "yes": 0.00018114670899047958
+      },
+      "individual_log_probs": {
+        "yes": -8.616203308105469
+      },
+      "max_prob": 0.00018114670899047958,
+      "max_log_prob": -8.616203308105469,
+      "best_answer": "yes",
+      "total_prob": 0.00018114670899047958,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 59,
+      "generated_answer": "No.",
+      "gold_answers": [
+        "no"
+      ],
+      "reference_answer": "no",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "no": 0.00032071791909494234
+      },
+      "individual_log_probs": {
+        "no": -8.04494857788086
+      },
+      "max_prob": 0.00032071791909494234,
+      "max_log_prob": -8.04494857788086,
+      "best_answer": "no",
+      "total_prob": 0.00032071791909494234,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 60,
+      "generated_answer": "September 9, 1996",
+      "gold_answers": [
+        "September 9, 1996"
+      ],
+      "reference_answer": "September 9, 1996",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "September 9, 1996": 0.8888077032807898
+      },
+      "individual_log_probs": {
+        "September 9, 1996": -0.11787437363668118
+      },
+      "max_prob": 0.8888077032807898,
+      "max_log_prob": -0.11787437363668118,
+      "best_answer": "September 9, 1996",
+      "total_prob": 0.8888077032807898,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 61,
+      "generated_answer": "Peter Diversi died later, at the age of 85, while Gustavo Couttolenc died at the age of",
+      "gold_answers": [
+        "Peter Diversi"
+      ],
+      "reference_answer": "Peter Diversi",
+      "em_score": 0.0,
+      "f1_score": 0.23529411764705882,
+      "precision": 0.13333333333333333,
+      "recall": 1.0,
+      "individual_probs": {
+        "Peter Diversi": 0.8513681745853908
+      },
+      "individual_log_probs": {
+        "Peter Diversi": -0.16091060638376575
+      },
+      "max_prob": 0.8513681745853908,
+      "max_log_prob": -0.16091060638376575,
+      "best_answer": "Peter Diversi",
+      "total_prob": 0.8513681745853908,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 62,
+      "generated_answer": "No.",
+      "gold_answers": [
+        "no"
+      ],
+      "reference_answer": "no",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "no": 0.0006341524541226142
+      },
+      "individual_log_probs": {
+        "no": -7.363221168518066
+      },
+      "max_prob": 0.0006341524541226142,
+      "max_log_prob": -7.363221168518066,
+      "best_answer": "no",
+      "total_prob": 0.0006341524541226142,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 63,
+      "generated_answer": "20 June 1968",
+      "gold_answers": [
+        "20 June 1968"
+      ],
+      "reference_answer": "20 June 1968",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "20 June 1968": 0.9996632066075538
+      },
+      "individual_log_probs": {
+        "20 June 1968": -0.0003368501200782248
+      },
+      "max_prob": 0.9996632066075538,
+      "max_log_prob": -0.0003368501200782248,
+      "best_answer": "20 June 1968",
+      "total_prob": 0.9996632066075538,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 64,
+      "generated_answer": "The United States.",
+      "gold_answers": [
+        "American"
+      ],
+      "reference_answer": "American",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "American": 0.35494909055519525
+      },
+      "individual_log_probs": {
+        "American": -1.035780906677246
+      },
+      "max_prob": 0.35494909055519525,
+      "max_log_prob": -1.035780906677246,
+      "best_answer": "American",
+      "total_prob": 0.35494909055519525,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 65,
+      "generated_answer": "1 November 1680",
+      "gold_answers": [
+        "1 November 1680"
+      ],
+      "reference_answer": "1 November 1680",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "1 November 1680": 0.7009879799269124
+      },
+      "individual_log_probs": {
+        "1 November 1680": -0.3552645391317739
+      },
+      "max_prob": 0.7009879799269124,
+      "max_log_prob": -0.3552645391317739,
+      "best_answer": "1 November 1680",
+      "total_prob": 0.7009879799269124,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 66,
+      "generated_answer": "1931",
+      "gold_answers": [
+        "Cape Forlorn"
+      ],
+      "reference_answer": "Cape Forlorn",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "Cape Forlorn": 0.39248100008514863
+      },
+      "individual_log_probs": {
+        "Cape Forlorn": -0.9352671503577241
+      },
+      "max_prob": 0.39248100008514863,
+      "max_log_prob": -0.9352671503577241,
+      "best_answer": "Cape Forlorn",
+      "total_prob": 0.39248100008514863,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 67,
+      "generated_answer": "American",
+      "gold_answers": [
+        "American"
+      ],
+      "reference_answer": "American",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "American": 0.9994169299293895
+      },
+      "individual_log_probs": {
+        "American": -0.0005832401220686734
+      },
+      "max_prob": 0.9994169299293895,
+      "max_log_prob": -0.0005832401220686734,
+      "best_answer": "American",
+      "total_prob": 0.9994169299293895,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 68,
+      "generated_answer": "No.",
+      "gold_answers": [
+        "no"
+      ],
+      "reference_answer": "no",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "no": 0.00026739444709726666
+      },
+      "individual_log_probs": {
+        "no": -8.226785659790039
+      },
+      "max_prob": 0.00026739444709726666,
+      "max_log_prob": -8.226785659790039,
+      "best_answer": "no",
+      "total_prob": 0.00026739444709726666,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 69,
+      "generated_answer": "Yes",
+      "gold_answers": [
+        "yes"
+      ],
+      "reference_answer": "yes",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "yes": 0.0006116961864697492
+      },
+      "individual_log_probs": {
+        "yes": -7.399274826049805
+      },
+      "max_prob": 0.0006116961864697492,
+      "max_log_prob": -7.399274826049805,
+      "best_answer": "yes",
+      "total_prob": 0.0006116961864697492,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 70,
+      "generated_answer": "Rock All Night",
+      "gold_answers": [
+        "Rock All Night"
+      ],
+      "reference_answer": "Rock All Night",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Rock All Night": 0.5573731634745398
+      },
+      "individual_log_probs": {
+        "Rock All Night": -0.5845203109947761
+      },
+      "max_prob": 0.5573731634745398,
+      "max_log_prob": -0.5845203109947761,
+      "best_answer": "Rock All Night",
+      "total_prob": 0.5573731634745398,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 71,
+      "generated_answer": "No.",
+      "gold_answers": [
+        "no"
+      ],
+      "reference_answer": "no",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "no": 0.0016845437733569123
+      },
+      "individual_log_probs": {
+        "no": -6.386260509490967
+      },
+      "max_prob": 0.0016845437733569123,
+      "max_log_prob": -6.386260509490967,
+      "best_answer": "no",
+      "total_prob": 0.0016845437733569123,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 72,
+      "generated_answer": "Chinese",
+      "gold_answers": [
+        "no"
+      ],
+      "reference_answer": "no",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "no": 0.000159889463911425
+      },
+      "individual_log_probs": {
+        "no": -8.74102783203125
+      },
+      "max_prob": 0.000159889463911425,
+      "max_log_prob": -8.74102783203125,
+      "best_answer": "no",
+      "total_prob": 0.000159889463911425,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 73,
+      "generated_answer": "Not mentioned.",
+      "gold_answers": [
+        "Auckland"
+      ],
+      "reference_answer": "Auckland",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "Auckland": 2.4238246576038004e-05
+      },
+      "individual_log_probs": {
+        "Auckland": -10.627578735351562
+      },
+      "max_prob": 2.4238246576038004e-05,
+      "max_log_prob": -10.627578735351562,
+      "best_answer": "Auckland",
+      "total_prob": 2.4238246576038004e-05,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 74,
+      "generated_answer": "October 21, 1954",
+      "gold_answers": [
+        "October 21, 1954"
+      ],
+      "reference_answer": "October 21, 1954",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "October 21, 1954": 0.9999463581325172
+      },
+      "individual_log_probs": {
+        "October 21, 1954": -5.3643306259232304e-05
+      },
+      "max_prob": 0.9999463581325172,
+      "max_log_prob": -5.3643306259232304e-05,
+      "best_answer": "October 21, 1954",
+      "total_prob": 0.9999463581325172,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 75,
+      "generated_answer": "Hermann Speelmans.",
+      "gold_answers": [
+        "Hermann Speelmans"
+      ],
+      "reference_answer": "Hermann Speelmans",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Hermann Speelmans": 0.9970360064810441
+      },
+      "individual_log_probs": {
+        "Hermann Speelmans": -0.002968394846902811
+      },
+      "max_prob": 0.9970360064810441,
+      "max_log_prob": -0.002968394846902811,
+      "best_answer": "Hermann Speelmans",
+      "total_prob": 0.9970360064810441,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 76,
+      "generated_answer": "Yes.",
+      "gold_answers": [
+        "yes"
+      ],
+      "reference_answer": "yes",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "yes": 0.0005136830908233459
+      },
+      "individual_log_probs": {
+        "yes": -7.573904037475586
+      },
+      "max_prob": 0.0005136830908233459,
+      "max_log_prob": -7.573904037475586,
+      "best_answer": "yes",
+      "total_prob": 0.0005136830908233459,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 77,
+      "generated_answer": "National University of Singapore.",
+      "gold_answers": [
+        "National University of Singapore"
+      ],
+      "reference_answer": "National University of Singapore",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "National University of Singapore": 0.7494681845028405
+      },
+      "individual_log_probs": {
+        "National University of Singapore": -0.2883914113026549
+      },
+      "max_prob": 0.7494681845028405,
+      "max_log_prob": -0.2883914113026549,
+      "best_answer": "National University of Singapore",
+      "total_prob": 0.7494681845028405,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 78,
+      "generated_answer": "He was shot and killed in the archway of his Manhattan apartment building three weeks after the album's release.",
+      "gold_answers": [
+        "shot"
+      ],
+      "reference_answer": "shot",
+      "em_score": 0.0,
+      "f1_score": 0.1111111111111111,
+      "precision": 0.058823529411764705,
+      "recall": 1.0,
+      "individual_probs": {
+        "shot": 0.0980696329086739
+      },
+      "individual_log_probs": {
+        "shot": -2.322077512741089
+      },
+      "max_prob": 0.0980696329086739,
+      "max_log_prob": -2.322077512741089,
+      "best_answer": "shot",
+      "total_prob": 0.0980696329086739,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 79,
+      "generated_answer": "No.",
+      "gold_answers": [
+        "no"
+      ],
+      "reference_answer": "no",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "no": 0.0003551583147491968
+      },
+      "individual_log_probs": {
+        "no": -7.942946910858154
+      },
+      "max_prob": 0.0003551583147491968,
+      "max_log_prob": -7.942946910858154,
+      "best_answer": "no",
+      "total_prob": 0.0003551583147491968,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 80,
+      "generated_answer": "22 September 1896",
+      "gold_answers": [
+        "22 September 1896"
+      ],
+      "reference_answer": "22 September 1896",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "22 September 1896": 0.9988362225746563
+      },
+      "individual_log_probs": {
+        "22 September 1896": -0.0011644551401488457
+      },
+      "max_prob": 0.9988362225746563,
+      "max_log_prob": -0.0011644551401488457,
+      "best_answer": "22 September 1896",
+      "total_prob": 0.9988362225746563,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 81,
+      "generated_answer": "Loyal Lives",
+      "gold_answers": [
+        "Loyal Lives"
+      ],
+      "reference_answer": "Loyal Lives",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Loyal Lives": 0.8359230752846389
+      },
+      "individual_log_probs": {
+        "Loyal Lives": -0.1792186853408566
+      },
+      "max_prob": 0.8359230752846389,
+      "max_log_prob": -0.1792186853408566,
+      "best_answer": "Loyal Lives",
+      "total_prob": 0.8359230752846389,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 82,
+      "generated_answer": "The Heiress",
+      "gold_answers": [
+        "The Heiress"
+      ],
+      "reference_answer": "The Heiress",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "The Heiress": 0.5745631568197019
+      },
+      "individual_log_probs": {
+        "The Heiress": -0.5541452541938838
+      },
+      "max_prob": 0.5745631568197019,
+      "max_log_prob": -0.5541452541938838,
+      "best_answer": "The Heiress",
+      "total_prob": 0.5745631568197019,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 83,
+      "generated_answer": "May 5, 1972",
+      "gold_answers": [
+        "May 5, 1972"
+      ],
+      "reference_answer": "May 5, 1972",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "May 5, 1972": 0.9898291312398937
+      },
+      "individual_log_probs": {
+        "May 5, 1972": -0.010222945456860089
+      },
+      "max_prob": 0.9898291312398937,
+      "max_log_prob": -0.010222945456860089,
+      "best_answer": "May 5, 1972",
+      "total_prob": 0.9898291312398937,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 84,
+      "generated_answer": "Edith Posca",
+      "gold_answers": [
+        "Edith Posca"
+      ],
+      "reference_answer": "Edith Posca",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Edith Posca": 0.6687219452978833
+      },
+      "individual_log_probs": {
+        "Edith Posca": -0.4023869326083229
+      },
+      "max_prob": 0.6687219452978833,
+      "max_log_prob": -0.4023869326083229,
+      "best_answer": "Edith Posca",
+      "total_prob": 0.6687219452978833,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 85,
+      "generated_answer": "21 July 1986",
+      "gold_answers": [
+        "21 July 1986"
+      ],
+      "reference_answer": "21 July 1986",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "21 July 1986": 0.9188221300605802
+      },
+      "individual_log_probs": {
+        "21 July 1986": -0.0846627226272787
+      },
+      "max_prob": 0.9188221300605802,
+      "max_log_prob": -0.0846627226272787,
+      "best_answer": "21 July 1986",
+      "total_prob": 0.9188221300605802,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 86,
+      "generated_answer": "December 16, 1956",
+      "gold_answers": [
+        "December 16, 1956"
+      ],
+      "reference_answer": "December 16, 1956",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "December 16, 1956": 0.9381650232348977
+      },
+      "individual_log_probs": {
+        "December 16, 1956": -0.06382941449589907
+      },
+      "max_prob": 0.9381650232348977,
+      "max_log_prob": -0.06382941449589907,
+      "best_answer": "December 16, 1956",
+      "total_prob": 0.9381650232348977,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 87,
+      "generated_answer": "17 March 2001",
+      "gold_answers": [
+        "17 March 2001"
+      ],
+      "reference_answer": "17 March 2001",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "17 March 2001": 0.9529795649903938
+      },
+      "individual_log_probs": {
+        "17 March 2001": -0.048161818380087595
+      },
+      "max_prob": 0.9529795649903938,
+      "max_log_prob": -0.048161818380087595,
+      "best_answer": "17 March 2001",
+      "total_prob": 0.9529795649903938,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 88,
+      "generated_answer": "October 28, 1953",
+      "gold_answers": [
+        "October 28, 1953"
+      ],
+      "reference_answer": "October 28, 1953",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "October 28, 1953": 0.9998871188226012
+      },
+      "individual_log_probs": {
+        "October 28, 1953": -0.00011288754895844022
+      },
+      "max_prob": 0.9998871188226012,
+      "max_log_prob": -0.00011288754895844022,
+      "best_answer": "October 28, 1953",
+      "total_prob": 0.9998871188226012,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 89,
+      "generated_answer": "Berkeley Castle",
+      "gold_answers": [
+        "Berkeley Castle"
+      ],
+      "reference_answer": "Berkeley Castle",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Berkeley Castle": 0.9913872994555618
+      },
+      "individual_log_probs": {
+        "Berkeley Castle": -0.008650004194322491
+      },
+      "max_prob": 0.9913872994555618,
+      "max_log_prob": -0.008650004194322491,
+      "best_answer": "Berkeley Castle",
+      "total_prob": 0.9913872994555618,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 90,
+      "generated_answer": "Beauty And The Rogue",
+      "gold_answers": [
+        "Beauty And The Rogue"
+      ],
+      "reference_answer": "Beauty And The Rogue",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Beauty And The Rogue": 0.5274147164899421
+      },
+      "individual_log_probs": {
+        "Beauty And The Rogue": -0.6397681016032948
+      },
+      "max_prob": 0.5274147164899421,
+      "max_log_prob": -0.6397681016032948,
+      "best_answer": "Beauty And The Rogue",
+      "total_prob": 0.5274147164899421,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 91,
+      "generated_answer": "24 July 1969",
+      "gold_answers": [
+        "24 July 1969"
+      ],
+      "reference_answer": "24 July 1969",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "24 July 1969": 0.9976123469754999
+      },
+      "individual_log_probs": {
+        "24 July 1969": -0.0023905080133701517
+      },
+      "max_prob": 0.9976123469754999,
+      "max_log_prob": -0.0023905080133701517,
+      "best_answer": "24 July 1969",
+      "total_prob": 0.9976123469754999,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 92,
+      "generated_answer": "No.",
+      "gold_answers": [
+        "no"
+      ],
+      "reference_answer": "no",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "no": 0.00045649527823664294
+      },
+      "individual_log_probs": {
+        "no": -7.691932201385498
+      },
+      "max_prob": 0.00045649527823664294,
+      "max_log_prob": -7.691932201385498,
+      "best_answer": "no",
+      "total_prob": 0.00045649527823664294,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 93,
+      "generated_answer": "Yes.",
+      "gold_answers": [
+        "no"
+      ],
+      "reference_answer": "no",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "no": 2.434979073955627e-06
+      },
+      "individual_log_probs": {
+        "no": -12.925572395324707
+      },
+      "max_prob": 2.434979073955627e-06,
+      "max_log_prob": -12.925572395324707,
+      "best_answer": "no",
+      "total_prob": 2.434979073955627e-06,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 94,
+      "generated_answer": "Moscow.",
+      "gold_answers": [
+        "Moscow"
+      ],
+      "reference_answer": "Moscow",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "Moscow": 0.9350727635697134
+      },
+      "individual_log_probs": {
+        "Moscow": -0.06713093072173137
+      },
+      "max_prob": 0.9350727635697134,
+      "max_log_prob": -0.06713093072173137,
+      "best_answer": "Moscow",
+      "total_prob": 0.9350727635697134,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 95,
+      "generated_answer": "India",
+      "gold_answers": [
+        "India"
+      ],
+      "reference_answer": "India",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "India": 0.9995332751566155
+      },
+      "individual_log_probs": {
+        "India": -0.0004668337933253497
+      },
+      "max_prob": 0.9995332751566155,
+      "max_log_prob": -0.0004668337933253497,
+      "best_answer": "India",
+      "total_prob": 0.9995332751566155,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 96,
+      "generated_answer": "No.",
+      "gold_answers": [
+        "no"
+      ],
+      "reference_answer": "no",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "no": 0.0007362146917861958
+      },
+      "individual_log_probs": {
+        "no": -7.213988780975342
+      },
+      "max_prob": 0.0007362146917861958,
+      "max_log_prob": -7.213988780975342,
+      "best_answer": "no",
+      "total_prob": 0.0007362146917861958,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 97,
+      "generated_answer": "No",
+      "gold_answers": [
+        "yes"
+      ],
+      "reference_answer": "yes",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "yes": 0.00012102607410398626
+      },
+      "individual_log_probs": {
+        "yes": -9.01950454711914
+      },
+      "max_prob": 0.00012102607410398626,
+      "max_log_prob": -9.01950454711914,
+      "best_answer": "yes",
+      "total_prob": 0.00012102607410398626,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 98,
+      "generated_answer": "No.",
+      "gold_answers": [
+        "no"
+      ],
+      "reference_answer": "no",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "individual_probs": {
+        "no": 0.00048260547780343244
+      },
+      "individual_log_probs": {
+        "no": -7.636311054229736
+      },
+      "max_prob": 0.00048260547780343244,
+      "max_log_prob": -7.636311054229736,
+      "best_answer": "no",
+      "total_prob": 0.00048260547780343244,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    },
+    {
+      "sample_idx": 99,
+      "generated_answer": "American",
+      "gold_answers": [
+        "America"
+      ],
+      "reference_answer": "America",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "individual_probs": {
+        "America": 6.638911098045813e-06
+      },
+      "individual_log_probs": {
+        "America": -11.922562599182129
+      },
+      "max_prob": 6.638911098045813e-06,
+      "max_log_prob": -11.922562599182129,
+      "best_answer": "America",
+      "total_prob": 6.638911098045813e-06,
+      "answer_count": 1,
+      "valid_answer_count": 1,
+      "weight_w": 0.5
+    }
+  ]
+}

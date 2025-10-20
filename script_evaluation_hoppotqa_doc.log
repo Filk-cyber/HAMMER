@@ -1,0 +1,15 @@
+nohup: ignoring input
+开始在单GPU上顺序执行评估实验...
+开始时间: Wed Sep 10 07:13:04 UTC 2025
+==================================
+正在评估第 11/11 个文件
+Weight: 1.0 (w10)
+测试文件: /home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w10.json
+日志文件: results/myidea/HotPotQA/fakenum1/idealsetting/w10/evaluation_trace_docdev100ideal_log_20250910_071304.log
+开始时间: Wed Sep 10 07:13:04 UTC 2025
+==================================
+✅ Weight 1.0 评估成功
+完成时间: Wed Sep 10 07:14:16 UTC 2025
+
+🎉 所有评估任务已完成！
+结束时间: Wed Sep 10 07:14:16 UTC 2025

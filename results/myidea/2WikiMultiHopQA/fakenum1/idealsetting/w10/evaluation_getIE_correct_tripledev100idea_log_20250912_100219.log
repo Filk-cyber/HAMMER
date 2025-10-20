@@ -1,0 +1,285 @@
+2025-09-12 10:02:20 INFO: - Rank: -1, Saving log file to checkpoint/llama3/evaluation_w_1.0.log ...
+2025-09-12 10:02:20 INFO: - Loading data from /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w10.json ... 
+从文件名自动解析得到权重: w = 1.0
+权重值: 1.0
+输入文件: /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w10.json
+日志文件: checkpoint/llama3/evaluation_w_1.0.log
+正在加载数据集...
+正在加载分词器: "/home/jiangjp/models/Meta-Llama-3-8B-Instruct"，padding_side: "left"
+缺少padding token，设置padding token为eos_token
+正在加载模型...
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.20s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.27s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.27s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.18it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.01it/s]
+开始评估...
+正在评估权重 w = 1.0
+输入文件: /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w10.json
+数据集大小: 100
+评估 w=1.0:   0%|          | 0/25 [00:00<?, ?it/s]/home/jiangjp/miniconda3/envs/trace/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:497: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+评估 w=1.0:   4%|▍         | 1/25 [00:05<02:04,  5.20s/it]评估 w=1.0:   8%|▊         | 2/25 [00:08<01:37,  4.24s/it]评估 w=1.0:  12%|█▏        | 3/25 [00:15<01:55,  5.27s/it]评估 w=1.0:  16%|█▌        | 4/25 [00:17<01:25,  4.08s/it]评估 w=1.0:  20%|██        | 5/25 [00:20<01:15,  3.78s/it]评估 w=1.0:  24%|██▍       | 6/25 [00:24<01:13,  3.88s/it]评估 w=1.0:  28%|██▊       | 7/25 [00:29<01:12,  4.00s/it]评估 w=1.0:  32%|███▏      | 8/25 [00:36<01:28,  5.23s/it]评估 w=1.0:  36%|███▌      | 9/25 [00:40<01:17,  4.84s/it]评估 w=1.0:  40%|████      | 10/25 [00:46<01:15,  5.03s/it]评估 w=1.0:  44%|████▍     | 11/25 [00:50<01:05,  4.65s/it]评估 w=1.0:  48%|████▊     | 12/25 [00:54<00:59,  4.56s/it]评估 w=1.0:  52%|█████▏    | 13/25 [00:58<00:53,  4.45s/it]评估 w=1.0:  56%|█████▌    | 14/25 [01:02<00:45,  4.11s/it]评估 w=1.0:  60%|██████    | 15/25 [01:05<00:38,  3.87s/it]评估 w=1.0:  64%|██████▍   | 16/25 [01:09<00:34,  3.87s/it]评估 w=1.0:  68%|██████▊   | 17/25 [01:14<00:33,  4.20s/it]评估 w=1.0:  72%|███████▏  | 18/25 [01:15<00:24,  3.46s/it]评估 w=1.0:  76%|███████▌  | 19/25 [01:19<00:21,  3.62s/it]评估 w=1.0:  80%|████████  | 20/25 [01:22<00:16,  3.32s/it]评估 w=1.0:  84%|████████▍ | 21/25 [01:27<00:15,  3.77s/it]评估 w=1.0:  88%|████████▊ | 22/25 [01:32<00:12,  4.18s/it]评估 w=1.0:  92%|█████████▏| 23/25 [01:36<00:08,  4.24s/it]评估 w=1.0:  96%|█████████▌| 24/25 [01:38<00:03,  3.51s/it]评估 w=1.0: 100%|██████████| 25/25 [01:40<00:00,  2.92s/it]评估 w=1.0: 100%|██████████| 25/25 [01:40<00:00,  4.01s/it]
+2025-09-12 10:04:14 INFO: - 评估完成
+2025-09-12 10:04:14 INFO: - 权重值: 1.0
+2025-09-12 10:04:14 INFO: - 输入文件: /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w10.json
+2025-09-12 10:04:14 INFO: - 评估结果: {'weight_w': 1.0, 'input_file': '/home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w10.json', 'total_samples': 100, 'exact_match': 0.41, 'f1': 0.45223484848484846, 'precision': 0.4483076923076923, 'recall': 0.4716666666666666, 'avg_max_log_prob': -7.06959539227091, 'avg_max_prob': 0.3015602542631427, 'avg_total_prob': 0.3015602542631427, 'valid_max_prob_samples': 100, 'invalid_max_prob_samples': 0, 'avg_answer_count': 1.0, 'avg_valid_answer_count': 1.0}
+样本0 错误:
+  生成答案: 'yes'
+  正确答案: ['no']
+  最佳正确答案概率: 0.000301 ('no')
+样本1 错误:
+  生成答案: 'October 10, 1890'
+  正确答案: ['February 22, 1893']
+  最佳正确答案概率: 0.000000 ('February 22, 1893')
+样本2 错误:
+  生成答案: 'Yes.'
+  正确答案: ['no']
+  最佳正确答案概率: 0.000002 ('no')
+样本3 错误:
+  生成答案: 'April 10, 1943'
+  正确答案: ['12 April 1942']
+  最佳正确答案概率: 0.000001 ('12 April 1942')
+样本4 错误:
+  生成答案: 'Heart attack'
+  正确答案: ['hanging']
+  最佳正确答案概率: 0.000000 ('hanging')
+样本6 错误:
+  生成答案: 'Yes.'
+  正确答案: ['no']
+  最佳正确答案概率: 0.000117 ('no')
+样本7 错误:
+  生成答案: 'P. Padmarajan'
+  正确答案: ['Innale']
+  最佳正确答案概率: 0.294909 ('Innale')
+样本8 错误:
+  生成答案: 'The Big Caper'
+  正确答案: ['Grips, Grunts And Groans']
+  最佳正确答案概率: 0.000011 ('Grips, Grunts And Groans')
+样本9 错误:
+  生成答案: 'April 10, 1363'
+  正确答案: ['8 April 1364']
+  最佳正确答案概率: 0.000000 ('8 April 1364')
+样本10 错误:
+  生成答案: 'Yes.'
+  正确答案: ['no']
+  最佳正确答案概率: 0.000000 ('no')
+样本11 错误:
+  生成答案: 'July 4, 2003'
+  正确答案: ['August 20, 2004']
+  最佳正确答案概率: 0.000006 ('August 20, 2004')
+样本15 错误:
+  生成答案: 'Yes'
+  正确答案: ['no']
+  最佳正确答案概率: 0.000000 ('no')
+样本16 错误:
+  生成答案: 'Eindhoven'
+  正确答案: ['Dutch']
+  最佳正确答案概率: 0.000000 ('Dutch')
+样本20 错误:
+  生成答案: 'Asahikawa, Hokkaidō, Japan'
+  正确答案: ['Asahikawa']
+  最佳正确答案概率: 0.999495 ('Asahikawa')
+样本21 错误:
+  生成答案: '10 February 1927'
+  正确答案: ['4 December 1922']
+  最佳正确答案概率: 0.000000 ('4 December 1922')
+样本22 错误:
+  生成答案: 'United Kingdom'
+  正确答案: ['India']
+  最佳正确答案概率: 0.000007 ('India')
+样本23 错误:
+  生成答案: 'Robert De Niro'
+  正确答案: ['Irwin Winkler']
+  最佳正确答案概率: 0.331887 ('Irwin Winkler')
+样本24 错误:
+  生成答案: 'Yes'
+  正确答案: ['no']
+  最佳正确答案概率: 0.000408 ('no')
+样本25 错误:
+  生成答案: 'Canada'
+  正确答案: ['American']
+  最佳正确答案概率: 0.012778 ('American')
+样本26 错误:
+  生成答案: 'January 5, 1973'
+  正确答案: ['July 10, 1972']
+  最佳正确答案概率: 0.000000 ('July 10, 1972')
+样本27 错误:
+  生成答案: 'Bath'
+  正确答案: ['Worthing']
+  最佳正确答案概率: 0.002606 ('Worthing')
+样本28 错误:
+  生成答案: 'France'
+  正确答案: ['American']
+  最佳正确答案概率: 0.000000 ('American')
+样本30 错误:
+  生成答案: 'Gautham Menon, the director of Ekk Deewana Tha, was born on 25 February 197'
+  正确答案: ['Ekk Deewana Tha']
+  最佳正确答案概率: 0.128309 ('Ekk Deewana Tha')
+样本31 错误:
+  生成答案: 'January 8, 1820'
+  正确答案: ['November 17, 1808']
+  最佳正确答案概率: 0.000002 ('November 17, 1808')
+样本32 错误:
+  生成答案: 'Paris'
+  正确答案: ['Melbourne']
+  最佳正确答案概率: 0.000000 ('Melbourne')
+样本36 错误:
+  生成答案: 'Umberto Louzer'
+  正确答案: ['Salvatore Lanna']
+  最佳正确答案概率: 0.000086 ('Salvatore Lanna')
+样本37 错误:
+  生成答案: 'Amor a primera vista'
+  正确答案: ['The Cuban Love Song']
+  最佳正确答案概率: 0.022186 ('The Cuban Love Song')
+样本38 错误:
+  生成答案: 'Mary Panton'
+  正确答案: ['Thomas Panton']
+  最佳正确答案概率: 0.000006 ('Thomas Panton')
+样本43 错误:
+  生成答案: 'Maya Bazaar (1995 Film)'
+  正确答案: ['3688']
+  最佳正确答案概率: 0.033350 ('3688')
+样本47 错误:
+  生成答案: 'Stockholm, Sweden'
+  正确答案: ['Eisenach']
+  最佳正确答案概率: 0.000000 ('Eisenach')
+样本48 错误:
+  生成答案: 'April 17, 1942'
+  正确答案: ['7 May 1940']
+  最佳正确答案概率: 0.000000 ('7 May 1940')
+样本50 错误:
+  生成答案: '1921'
+  正确答案: ['A Gentleman Of France']
+  最佳正确答案概率: 0.002539 ('A Gentleman Of France')
+样本51 错误:
+  生成答案: 'Yes'
+  正确答案: ['no']
+  最佳正确答案概率: 0.000265 ('no')
+样本53 错误:
+  生成答案: 'Yes'
+  正确答案: ['no']
+  最佳正确答案概率: 0.000007 ('no')
+样本55 错误:
+  生成答案: 'Indian'
+  正确答案: ['India']
+  最佳正确答案概率: 0.000062 ('India')
+样本58 错误:
+  生成答案: 'No'
+  正确答案: ['yes']
+  最佳正确答案概率: 0.000002 ('yes')
+样本59 错误:
+  生成答案: 'Yes.'
+  正确答案: ['no']
+  最佳正确答案概率: 0.000000 ('no')
+样本61 错误:
+  生成答案: 'Gustavo Couttolenc'
+  正确答案: ['Peter Diversi']
+  最佳正确答案概率: 0.467802 ('Peter Diversi')
+样本63 错误:
+  生成答案: 'July 19, 1967'
+  正确答案: ['20 June 1968']
+  最佳正确答案概率: 0.000123 ('20 June 1968')
+样本64 错误:
+  生成答案: 'Italian'
+  正确答案: ['American']
+  最佳正确答案概率: 0.000011 ('American')
+样本65 错误:
+  生成答案: '1690'
+  正确答案: ['1 November 1680']
+  最佳正确答案概率: 0.000003 ('1 November 1680')
+样本66 错误:
+  生成答案: 'Already Famous'
+  正确答案: ['Cape Forlorn']
+  最佳正确答案概率: 0.013973 ('Cape Forlorn')
+样本67 错误:
+  生成答案: 'Canadian'
+  正确答案: ['American']
+  最佳正确答案概率: 0.081985 ('American')
+样本69 错误:
+  生成答案: 'No'
+  正确答案: ['yes']
+  最佳正确答案概率: 0.000001 ('yes')
+样本72 错误:
+  生成答案: 'Yes'
+  正确答案: ['no']
+  最佳正确答案概率: 0.000064 ('no')
+样本73 错误:
+  生成答案: 'City of Angels'
+  正确答案: ['Auckland']
+  最佳正确答案概率: 0.000831 ('Auckland')
+样本78 错误:
+  生成答案: 'Shot and killed in the archway of his Manhattan apartment building.'
+  正确答案: ['shot']
+  最佳正确答案概率: 0.297171 ('shot')
+样本79 错误:
+  生成答案: 'Yes'
+  正确答案: ['no']
+  最佳正确答案概率: 0.000018 ('no')
+样本80 错误:
+  生成答案: 'September 22, 1896'
+  正确答案: ['22 September 1896']
+  最佳正确答案概率: 0.365780 ('22 September 1896')
+样本81 错误:
+  生成答案: 'Che (2014 Film)'
+  正确答案: ['Loyal Lives']
+  最佳正确答案概率: 0.149324 ('Loyal Lives')
+样本82 错误:
+  生成答案: 'Arizona Dream'
+  正确答案: ['The Heiress']
+  最佳正确答案概率: 0.002624 ('The Heiress')
+样本85 错误:
+  生成答案: '19 December 1984'
+  正确答案: ['21 July 1986']
+  最佳正确答案概率: 0.000015 ('21 July 1986')
+样本87 错误:
+  生成答案: 'March 17, 2001'
+  正确答案: ['17 March 2001']
+  最佳正确答案概率: 0.000001 ('17 March 2001')
+样本91 错误:
+  生成答案: 'October 10, 1965'
+  正确答案: ['24 July 1969']
+  最佳正确答案概率: 0.000007 ('24 July 1969')
+样本92 错误:
+  生成答案: 'yes'
+  正确答案: ['no']
+  最佳正确答案概率: 0.003588 ('no')
+样本93 错误:
+  生成答案: 'Yes.'
+  正确答案: ['no']
+  最佳正确答案概率: 0.000039 ('no')
+样本95 错误:
+  生成答案: 'American'
+  正确答案: ['India']
+  最佳正确答案概率: 0.000001 ('India')
+样本97 错误:
+  生成答案: 'no'
+  正确答案: ['yes']
+  最佳正确答案概率: 0.000285 ('yes')
+样本99 错误:
+  生成答案: 'American'
+  正确答案: ['America']
+  最佳正确答案概率: 0.000009 ('America')
+
+============================================================
+评估结果
+============================================================
+weight_w: 1.000000
+input_file: /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w10.json
+total_samples: 100
+exact_match: 0.410000
+f1: 0.452235
+precision: 0.448308
+recall: 0.471667
+avg_max_log_prob: -7.069595
+avg_max_prob: 0.301560
+avg_total_prob: 0.301560
+valid_max_prob_samples: 100
+invalid_max_prob_samples: 0
+avg_answer_count: 1.000000
+avg_valid_answer_count: 1.000000
+============================================================
+2025-09-12 10:04:14 INFO: - 结果已保存至: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w10/sample_correct_probabilities_w_1.0_triples.json
+
+结果已保存至: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w10/sample_correct_probabilities_w_1.0_triples.json
+
+统计信息:
+平均每个问题有 1.0 个正确答案
+平均每个问题有 1.0 个有效概率的答案
+有效概率样本: 100 / 100

@@ -1,0 +1,373 @@
+2025-09-12 11:31:44 INFO: - Rank: -1, Saving log file to checkpoint/llama3/evaluation_w_0.9.log ...
+2025-09-12 11:31:44 INFO: - Loading data from /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w09.json ... 
+从文件名自动解析得到权重: w = 0.9
+权重值: 0.9
+输入文件: /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w09.json
+日志文件: checkpoint/llama3/evaluation_w_0.9.log
+正在加载数据集...
+正在加载分词器: "/home/jiangjp/models/Meta-Llama-3-8B-Instruct"，padding_side: "left"
+缺少padding token，设置padding token为eos_token
+正在加载模型...
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.17s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.25s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.26s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.19it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.02it/s]
+开始评估...
+正在评估权重 w = 0.9
+输入文件: /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w09.json
+数据集大小: 100
+评估 w=0.9:   0%|          | 0/25 [00:00<?, ?it/s]/home/jiangjp/miniconda3/envs/trace/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:497: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+评估 w=0.9:   4%|▍         | 1/25 [00:09<03:40,  9.19s/it]评估 w=0.9:   8%|▊         | 2/25 [00:19<03:42,  9.66s/it]评估 w=0.9:  12%|█▏        | 3/25 [00:26<03:08,  8.58s/it]评估 w=0.9:  16%|█▌        | 4/25 [00:43<04:06, 11.75s/it]评估 w=0.9:  20%|██        | 5/25 [00:53<03:42, 11.11s/it]评估 w=0.9:  24%|██▍       | 6/25 [01:07<03:53, 12.30s/it]评估 w=0.9:  28%|██▊       | 7/25 [01:15<03:17, 10.98s/it]评估 w=0.9:  32%|███▏      | 8/25 [01:37<04:01, 14.19s/it]评估 w=0.9:  36%|███▌      | 9/25 [01:41<02:57, 11.06s/it]评估 w=0.9:  40%|████      | 10/25 [01:50<02:39, 10.62s/it]评估 w=0.9:  44%|████▍     | 11/25 [02:01<02:28, 10.63s/it]评估 w=0.9:  48%|████▊     | 12/25 [02:17<02:39, 12.29s/it]评估 w=0.9:  52%|█████▏    | 13/25 [02:31<02:31, 12.65s/it]评估 w=0.9:  56%|█████▌    | 14/25 [02:45<02:26, 13.30s/it]评估 w=0.9:  60%|██████    | 15/25 [03:00<02:17, 13.70s/it]评估 w=0.9:  64%|██████▍   | 16/25 [03:21<02:23, 15.91s/it]评估 w=0.9:  68%|██████▊   | 17/25 [03:28<01:44, 13.10s/it]样本0 错误:
+  生成答案: '1858'
+  正确答案: ['April 1858']
+  最佳正确答案概率: 0.390827 ('April 1858')
+样本1 错误:
+  生成答案: 'Amsterdam Airport Schiphol (AMS)'
+  正确答案: ['Stockholm Arlanda Airport', 'Arlanda Airport', 'ARN']
+  最佳正确答案概率: 0.000002 ('Stockholm Arlanda Airport')
+样本2 错误:
+  生成答案: 'Yerevan'
+  正确答案: ['Kapan']
+  最佳正确答案概率: 0.000005 ('Kapan')
+样本3 错误:
+  生成答案: 'Russian'
+  正确答案: ['Chinese']
+  最佳正确答案概率: 0.000011 ('Chinese')
+样本5 错误:
+  生成答案: '2.3 million'
+  正确答案: ['1.7 million']
+  最佳正确答案概率: 0.000046 ('1.7 million')
+样本6 错误:
+  生成答案: '38th'
+  正确答案: ['34th']
+  最佳正确答案概率: 0.000118 ('34th')
+样本7 错误:
+  生成答案: 'A boarding house and a boarding school.'
+  正确答案: ['hotels', 'Hotel', 'hotel']
+  最佳正确答案概率: 0.000001 ('Hotel')
+样本8 错误:
+  生成答案: 'Nebraska.'
+  正确答案: ['University of Nebraska']
+  最佳正确答案概率: 0.050590 ('University of Nebraska')
+样本9 错误:
+  生成答案: 'The Roman Catholic Church.'
+  正确答案: ['Anglican Church of Canada']
+  最佳正确答案概率: 0.000001 ('Anglican Church of Canada')
+样本10 错误:
+  生成答案: '10'
+  正确答案: ['three']
+  最佳正确答案概率: 0.000005 ('three')
+样本12 错误:
+  生成答案: '1898'
+  正确答案: ['August 12, 1898']
+  最佳正确答案概率: 0.000555 ('August 12, 1898')
+样本13 错误:
+  生成答案: 'Beijing'
+  正确答案: ['Dorgon']
+  最佳正确答案概率: 0.000000 ('Dorgon')
+样本14 错误:
+  生成答案: 'A white cross on a red field.'
+  正确答案: ['a red cross on a white field', 'Red Cross']
+  最佳正确答案概率: 0.000000 ('a red cross on a white field')
+样本15 错误:
+  生成答案: 'Columbia Records.'
+  正确答案: ['Warner Bros.']
+  最佳正确答案概率: 0.000000 ('Warner Bros.')
+样本16 错误:
+  生成答案: 'Princeton University.'
+  正确答案: ['Syracuse University', 'Cuse', 'SU']
+  最佳正确答案概率: 0.000005 ('Syracuse University')
+样本17 错误:
+  生成答案: '1945'
+  正确答案: ['1842']
+  最佳正确答案概率: 0.000000 ('1842')
+样本18 错误:
+  生成答案: 'German Wehrmacht'
+  正确答案: ['KPA']
+  最佳正确答案概率: 0.000000 ('KPA')
+样本19 错误:
+  生成答案: 'The Rolling Stones'
+  正确答案: ['Fleetwood Mac']
+  最佳正确答案概率: 0.000032 ('Fleetwood Mac')
+样本20 错误:
+  生成答案: 'Ireland'
+  正确答案: ['Norway', 'NO', 'NOR', 'no']
+  最佳正确答案概率: 0.000414 ('Norway')
+样本21 错误:
+  生成答案: '1979'
+  正确答案: ['1953']
+  最佳正确答案概率: 0.000003 ('1953')
+样本22 错误:
+  生成答案: '27 BC'
+  正确答案: ['establishment of the Roman Empire.', 'Roman Empire']
+  最佳正确答案概率: 0.000024 ('establishment of the Roman Empire.')
+样本23 错误:
+  生成答案: 'There is no composer mentioned in the context about Ganashatru. The context is about a film directed by Satyaj'
+  正确答案: ['Visva-Bharati University']
+  最佳正确答案概率: 0.000000 ('Visva-Bharati University')
+样本24 错误:
+  生成答案: 'There is no mention of the XXX Corps invading an island in the given context.'
+  正确答案: ['1773']
+  最佳正确答案概率: 0.000000 ('1773')
+样本25 错误:
+  生成答案: 'The Persian Empire.'
+  正确答案: ['Kurdish people']
+  最佳正确答案概率: 0.000000 ('Kurdish people')
+样本26 错误:
+  生成答案: 'St. John's.'
+  正确答案: ['eastern tip']
+  最佳正确答案概率: 0.060734 ('eastern tip')
+样本28 错误:
+  生成答案: 'Southeast Asia'
+  正确答案: ['Central Asia']
+  最佳正确答案概率: 0.000043 ('Central Asia')
+样本29 错误:
+  生成答案: 'Columbia University.'
+  正确答案: ['Syracuse University', 'Cuse', 'SU']
+  最佳正确答案概率: 0.000000 ('Syracuse University')
+样本30 错误:
+  生成答案: 'The Scarecrow'
+  正确答案: ['Laura Kelly']
+  最佳正确答案概率: 0.000000 ('Laura Kelly')
+样本34 错误:
+  生成答案: 'Paul McCartney'
+  正确答案: ['Alfred Lennon']
+  最佳正确答案概率: 0.000015 ('Alfred Lennon')
+样本35 错误:
+  生成答案: 'Macy's'
+  正确答案: ['KaDeWe']
+  最佳正确答案概率: 0.000000 ('KaDeWe')
+样本37 错误:
+  生成答案: 'May 14, 2015'
+  正确答案: ['September 25, 2014']
+  最佳正确答案概率: 0.012845 ('September 25, 2014')
+样本38 错误:
+  生成答案: 'Laughery Creek'
+  正确答案: ['Ohio River']
+  最佳正确答案概率: 0.000347 ('Ohio River')
+样本39 错误:
+  生成答案: '1950'
+  正确答案: ['1963']
+  最佳正确答案概率: 0.000011 ('1963')
+样本40 错误:
+  生成答案: 'The European Union.'
+  正确答案: ["Europe's most innovative country", 'Europe']
+  最佳正确答案概率: 0.007165 ('Europe')
+样本41 错误:
+  生成答案: '$100,000'
+  正确答案: ['$122,160']
+  最佳正确答案概率: 0.000000 ('$122,160')
+样本43 错误:
+  生成答案: '1945'
+  正确答案: ['December 1917']
+  最佳正确答案概率: 0.000000 ('December 1917')
+样本44 错误:
+  生成答案: 'John Dramani Mahama'
+  正确答案: ['Sophia Akuffo']
+  最佳正确答案概率: 0.006280 ('Sophia Akuffo')
+样本45 错误:
+  生成答案: '1842'
+  正确答案: ['1895']
+  最佳正确答案概率: 0.003035 ('1895')
+样本46 错误:
+  生成答案: 'It does not.'
+  正确答案: ['represented the island of Puerto Rico', 'PR', 'Puerto Rico']
+  最佳正确答案概率: 0.000000 ('PR')
+样本47 错误:
+  生成答案: 'a church'
+  正确答案: ['temple, now a church', 'Temple', 'temple']
+  最佳正确答案概率: 0.000004 ('Temple')
+样本48 错误:
+  生成答案: '597'
+  正确答案: ['1909']
+  最佳正确答案概率: 0.000000 ('1909')
+样本49 错误:
+  生成答案: 'Outside of royal events, alcohol is strictly prohibited.'
+  正确答案: ['24 hours a day']
+  最佳正确答案概率: 0.000001 ('24 hours a day')
+样本50 错误:
+  生成答案: 'North America'
+  正确答案: ['Antarctica']
+  最佳正确答案概率: 0.052515 ('Antarctica')
+样本51 错误:
+  生成答案: 'The Federal Highway Administration (FHWA).'
+  正确答案: ['Rhode Island Department of Transportation', 'RIDOT']
+  最佳正确答案概率: 0.000007 ('Rhode Island Department of Transportation')
+样本52 错误:
+  生成答案: 'None of the signers of the Declaration of Independence were from Washington County, Maryland, where the Keedy House is located.'
+  正确答案: ['Charles Carroll']
+  最佳正确答案概率: 0.008532 ('Charles Carroll')
+样本53 错误:
+  生成答案: 'Rome'
+  正确答案: ['Castel Gandolfo']
+  最佳正确答案概率: 0.000652 ('Castel Gandolfo')
+样本55 错误:
+  生成答案: 'Shirley Temple'
+  正确答案: ['Catherine Zeta-Jones']
+  最佳正确答案概率: 0.000004 ('Catherine Zeta-Jones')
+样本56 错误:
+  生成答案: 'Barley.'
+  正确答案: ['yak meat']
+  最佳正确答案概率: 0.000077 ('yak meat')
+样本58 错误:
+  生成答案: 'The Lewis Range.'
+  正确答案: ['Rocky Mountains']
+  最佳正确答案概率: 0.000005 ('Rocky Mountains')
+样本60 错误:
+  生成答案: 'The Voyager 1 and Voyager 2 spacecraft used the gravitational pull of Jupiter.'
+  正确答案: ['Voyager probes']
+  最佳正确答案概率: 0.001090 ('Voyager probes')
+样本61 错误:
+  生成答案: 'The Voice'
+  正确答案: ['American Idol']
+  最佳正确答案概率: 0.000000 ('American Idol')
+样本62 错误:
+  生成答案: 'Not mentioned in the provided context.'
+  正确答案: ['5th–6th centuries', '6th century', '6th-century']
+  最佳正确答案概率: 0.085353 ('6th century')
+样本63 错误:
+  生成答案: 'December 1, 44 AD'
+  正确答案: ['March 44 BC']
+  最佳正确答案概率: 0.000000 ('March 44 BC')
+样本66 错误:
+  生成答案: 'Ringo Starr'
+  正确答案: ['James McCartney']
+  最佳正确答案概率: 0.000038 ('James McCartney')
+样本68 错误:
+  生成答案: 'Ferdinand Porsche'
+  正确答案: ['Louis Renault']
+评估 w=0.9:  72%|███████▏  | 18/25 [03:36<01:22, 11.84s/it]评估 w=0.9:  76%|███████▌  | 19/25 [04:16<02:01, 20.18s/it]评估 w=0.9:  80%|████████  | 20/25 [04:25<01:23, 16.70s/it]评估 w=0.9:  84%|████████▍ | 21/25 [04:47<01:13, 18.32s/it]评估 w=0.9:  88%|████████▊ | 22/25 [04:55<00:45, 15.28s/it]评估 w=0.9:  92%|█████████▏| 23/25 [05:08<00:29, 14.53s/it]评估 w=0.9:  96%|█████████▌| 24/25 [05:23<00:14, 14.79s/it]评估 w=0.9: 100%|██████████| 25/25 [05:39<00:00, 15.09s/it]评估 w=0.9: 100%|██████████| 25/25 [05:39<00:00, 13.58s/it]
+2025-09-12 11:37:40 INFO: - 评估完成
+2025-09-12 11:37:40 INFO: - 权重值: 0.9
+2025-09-12 11:37:40 INFO: - 输入文件: /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w09.json
+2025-09-12 11:37:40 INFO: - 评估结果: {'weight_w': 0.9, 'input_file': '/home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w09.json', 'total_samples': 100, 'exact_match': 0.19, 'f1': 0.25220512820512825, 'precision': 0.27324242424242423, 'recall': 0.24883333333333332, 'avg_max_log_prob': -10.687727275391563, 'avg_max_prob': 0.14695557854992425, 'avg_total_prob': 0.15476314080173406, 'valid_max_prob_samples': 100, 'invalid_max_prob_samples': 0, 'avg_answer_count': 1.48, 'avg_valid_answer_count': 1.48}
+2025-09-12 11:37:40 INFO: - 结果已保存至: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w09/sample_correct_probabilities_w_0.9_documents.json
+  最佳正确答案概率: 0.000000 ('Louis Renault')
+样本69 错误:
+  生成答案: 'UTF-16'
+  正确答案: ['WGL-4 with 652 characters']
+  最佳正确答案概率: 0.000002 ('WGL-4 with 652 characters')
+样本70 错误:
+  生成答案: 'Pakatan Nasional'
+  正确答案: ['Pakatan Harapan']
+  最佳正确答案概率: 0.001064 ('Pakatan Harapan')
+样本71 错误:
+  生成答案: 'members of the Lok Sabha'
+  正确答案: ['Parliament of India']
+  最佳正确答案概率: 0.000001 ('Parliament of India')
+样本72 错误:
+  生成答案: 'Stanford University.'
+  正确答案: ['Harvard']
+  最佳正确答案概率: 0.000000 ('Harvard')
+样本74 错误:
+  生成答案: 'A year.'
+  正确答案: ['a month', 'Month', 'month']
+  最佳正确答案概率: 0.000000 ('Month')
+样本75 错误:
+  生成答案: 'No.'
+  正确答案: ['totals remain relatively small in relation to the total U.S population.', 'the US', 'America', 'U.S.', 'the United States', 'United States', 'US']
+  最佳正确答案概率: 0.000000 ('U.S.')
+样本76 错误:
+  生成答案: '1972'
+  正确答案: ['1998']
+  最佳正确答案概率: 0.000010 ('1998')
+样本77 错误:
+  生成答案: 'Charlottesville'
+  正确答案: ['Lincoln Financial Field']
+  最佳正确答案概率: 0.000000 ('Lincoln Financial Field')
+样本78 错误:
+  生成答案: 'José Feliciano.'
+  正确答案: ['Aldemaro Romero']
+  最佳正确答案概率: 0.000000 ('Aldemaro Romero')
+样本79 错误:
+  生成答案: 'Penelope Cruz.'
+  正确答案: ['Amna Ilyas']
+  最佳正确答案概率: 0.000000 ('Amna Ilyas')
+样本80 错误:
+  生成答案: 'Hertfordshire, United Kingdom'
+  正确答案: ['off the north - western coast of the European mainland']
+  最佳正确答案概率: 0.000000 ('off the north - western coast of the European mainland')
+样本81 错误:
+  生成答案: 'British Virgin Islands'
+  正确答案: ['a key part of the Spanish Empire']
+  最佳正确答案概率: 0.000000 ('a key part of the Spanish Empire')
+样本82 错误:
+  生成答案: '82,345'
+  正确答案: ['165,521']
+  最佳正确答案概率: 0.000001 ('165,521')
+样本83 错误:
+  生成答案: 'Arun Jaitley'
+  正确答案: ['Sudhir Mungantiwar']
+  最佳正确答案概率: 0.000003 ('Sudhir Mungantiwar')
+样本86 错误:
+  生成答案: 'Mattel'
+  正确答案: ['Elliot Handler']
+  最佳正确答案概率: 0.009129 ('Elliot Handler')
+样本88 错误:
+  生成答案: 'California Governor'
+  正确答案: ['Arkansas Attorney General']
+  最佳正确答案概率: 0.000027 ('Arkansas Attorney General')
+样本89 错误:
+  生成答案: 'Def Jam Recordings.'
+  正确答案: ['RCA Records', 'RCA']
+  最佳正确答案概率: 0.000000 ('RCA')
+样本90 错误:
+  生成答案: 'Yerevan'
+  正确答案: ['Kapan']
+  最佳正确答案概率: 0.000000 ('Kapan')
+样本91 错误:
+  生成答案: 'Trajan'
+  正确答案: ['Marcia']
+  最佳正确答案概率: 0.000050 ('Marcia')
+样本92 错误:
+  生成答案: 'Indian Railway Heritage Museum'
+  正确答案: ['National Rail Museum']
+  最佳正确答案概率: 0.000000 ('National Rail Museum')
+样本94 错误:
+  生成答案: '1775'
+  正确答案: ['1824']
+  最佳正确答案概率: 0.000000 ('1824')
+样本95 错误:
+  生成答案: 'Nintendo'
+  正确答案: ['first-party games']
+  最佳正确答案概率: 0.000000 ('first-party games')
+样本96 错误:
+  生成答案: 'Canada'
+  正确答案: ['United States', 'US of A', 'U.S.', 'US', 'U.S']
+  最佳正确答案概率: 0.000000 ('United States')
+样本97 错误:
+  生成答案: 'Giorgio de Chirico'
+  正确答案: ['Alberto Savinio']
+  最佳正确答案概率: 0.100344 ('Alberto Savinio')
+样本98 错误:
+  生成答案: 'Nathan Green'
+  正确答案: ['Seth Magaziner']
+  最佳正确答案概率: 0.000001 ('Seth Magaziner')
+样本99 错误:
+  生成答案: 'Zhongdu'
+  正确答案: ['Qiantang']
+  最佳正确答案概率: 0.000000 ('Qiantang')
+
+============================================================
+评估结果
+============================================================
+weight_w: 0.900000
+input_file: /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w09.json
+total_samples: 100
+exact_match: 0.190000
+f1: 0.252205
+precision: 0.273242
+recall: 0.248833
+avg_max_log_prob: -10.687727
+avg_max_prob: 0.146956
+avg_total_prob: 0.154763
+valid_max_prob_samples: 100
+invalid_max_prob_samples: 0
+avg_answer_count: 1.480000
+avg_valid_answer_count: 1.480000
+============================================================
+
+结果已保存至: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w09/sample_correct_probabilities_w_0.9_documents.json
+
+统计信息:
+平均每个问题有 1.5 个正确答案
+平均每个问题有 1.5 个有效概率的答案
+有效概率样本: 100 / 100

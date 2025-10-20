@@ -1,0 +1,144 @@
+2025-09-12 08:00:25 INFO: - Rank: -1, Saving log file to checkpoint/llama3/evaluation_w_0.4.log ...
+2025-09-12 08:00:25 INFO: - Loading data from /home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w04.json ... 
+从文件名自动解析得到权重: w = 0.4
+权重值: 0.4
+输入文件: /home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w04.json
+日志文件: checkpoint/llama3/evaluation_w_0.4.log
+正在加载数据集...
+正在加载分词器: "/home/jiangjp/models/Meta-Llama-3-8B-Instruct"，padding_side: "left"
+缺少padding token，设置padding token为eos_token
+正在加载模型...
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.17s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.27s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.28s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.18it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.01it/s]
+开始评估...
+正在评估权重 w = 0.4
+输入文件: /home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w04.json
+数据集大小: 100
+评估 w=0.4:   0%|          | 0/25 [00:00<?, ?it/s]/home/jiangjp/miniconda3/envs/trace/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:497: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+评估 w=0.4:   4%|▍         | 1/25 [00:07<03:01,  7.56s/it]评估 w=0.4:   8%|▊         | 2/25 [00:23<04:41, 12.22s/it]评估 w=0.4:  12%|█▏        | 3/25 [00:33<04:10, 11.37s/it]评估 w=0.4:  16%|█▌        | 4/25 [00:42<03:36, 10.30s/it]评估 w=0.4:  20%|██        | 5/25 [00:53<03:35, 10.78s/it]评估 w=0.4:  24%|██▍       | 6/25 [01:03<03:20, 10.57s/it]评估 w=0.4:  28%|██▊       | 7/25 [01:14<03:12, 10.70s/it]评估 w=0.4:  32%|███▏      | 8/25 [01:28<03:16, 11.55s/it]评估 w=0.4:  36%|███▌      | 9/25 [01:39<03:02, 11.42s/it]评估 w=0.4:  40%|████      | 10/25 [01:49<02:43, 10.93s/it]评估 w=0.4:  44%|████▍     | 11/25 [02:08<03:10, 13.59s/it]评估 w=0.4:  48%|████▊     | 12/25 [02:20<02:47, 12.88s/it]评估 w=0.4:  52%|█████▏    | 13/25 [02:35<02:42, 13.57s/it]评估 w=0.4:  56%|█████▌    | 14/25 [02:46<02:20, 12.80s/it]评估 w=0.4:  60%|██████    | 15/25 [02:55<01:57, 11.76s/it]评估 w=0.4:  64%|██████▍   | 16/25 [03:03<01:35, 10.62s/it]评估 w=0.4:  68%|██████▊   | 17/25 [03:14<01:24, 10.62s/it]评估 w=0.4:  72%|███████▏  | 18/25 [03:22<01:10, 10.09s/it]评估 w=0.4:  76%|███████▌  | 19/25 [03:34<01:02, 10.43s/it]评估 w=0.4:  80%|████████  | 20/25 [03:43<00:49,  9.97s/it]评估 w=0.4:  84%|████████▍ | 21/25 [03:49<00:36,  9.03s/it]评估 w=0.4:  88%|████████▊ | 22/25 [03:59<00:27,  9.07s/it]评估 w=0.4:  92%|█████████▏| 23/25 [04:13<00:21, 10.54s/it]评估 w=0.4:  96%|█████████▌| 24/25 [04:23<00:10, 10.36s/it]评估 w=0.4: 100%|██████████| 25/25 [04:30<00:00,  9.37s/it]评估 w=0.4: 100%|██████████| 25/25 [04:30<00:00, 10.80s/it]
+2025-09-12 08:05:08 INFO: - 评估完成
+2025-09-12 08:05:08 INFO: - 权重值: 0.4
+2025-09-12 08:05:08 INFO: - 输入文件: /home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w04.json
+2025-09-12 08:05:08 INFO: - 评估结果: {'weight_w': 0.4, 'input_file': '/home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w04.json', 'total_samples': 100, 'exact_match': 0.77, 'f1': 0.8144430641821947, 'precision': 0.8147777777777779, 'recall': 0.8341666666666667, 'avg_max_log_prob': -2.77535176717432, 'avg_max_prob': 0.5924303266886551, 'avg_total_prob': 0.5924303266886551, 'valid_max_prob_samples': 100, 'invalid_max_prob_samples': 0, 'avg_answer_count': 1.0, 'avg_valid_answer_count': 1.0}
+2025-09-12 08:05:08 INFO: - 结果已保存至: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w04/sample_correct_probabilities_w_0.4_documents.json
+样本0 正确:
+  生成答案: 'No.'
+  最佳正确答案概率: 0.002113 ('no')
+样本1 错误:
+  生成答案: 'The University of Delaware has more undergraduate students, with approximately 18,500, compared to Boston College's 9,100'
+  正确答案: ['University of Delaware']
+  最佳正确答案概率: 0.009819 ('University of Delaware')
+样本3 错误:
+  生成答案: 'Flowering plants.'
+  正确答案: ['genus']
+  最佳正确答案概率: 0.004933 ('genus')
+样本4 错误:
+  生成答案: 'Kirk Fogg'
+  正确答案: ['Jeff Sutphen']
+  最佳正确答案概率: 0.288178 ('Jeff Sutphen')
+样本5 错误:
+  生成答案: 'The Forest of Bowland.'
+  正确答案: ['the Bowland Fells']
+  最佳正确答案概率: 0.092778 ('the Bowland Fells')
+样本10 错误:
+  生成答案: '2003'
+  正确答案: ['20 March to 1 May 2003']
+  最佳正确答案概率: 0.004969 ('20 March to 1 May 2003')
+样本11 错误:
+  生成答案: 'Both Borassodendron and Chelidonium are genera of flowering plants.'
+  正确答案: ['plant']
+  最佳正确答案概率: 0.004137 ('plant')
+样本22 错误:
+  生成答案: '1852'
+  正确答案: ['1904']
+  最佳正确答案概率: 0.000000 ('1904')
+样本30 错误:
+  生成答案: '1989'
+  正确答案: ['fifth album']
+  最佳正确答案概率: 0.000000 ('fifth album')
+样本43 错误:
+  生成答案: '4'
+  正确答案: ['Their biggest hit was "Tall Cool One", first released in 1959']
+  最佳正确答案概率: 0.000000 ('Their biggest hit was "Tall Cool One", first released in 1959')
+样本44 错误:
+  生成答案: 'Jawaharlal Nehru'
+  正确答案: ['first Prime Minister of India']
+  最佳正确答案概率: 0.000001 ('first Prime Minister of India')
+样本45 错误:
+  生成答案: 'United Kingdom'
+  正确答案: ['Ireland']
+  最佳正确答案概率: 0.100162 ('Ireland')
+样本50 错误:
+  生成答案: 'Masako'
+  正确答案: ['Aiko, Princess Toshi']
+  最佳正确答案概率: 0.006004 ('Aiko, Princess Toshi')
+样本54 错误:
+  生成答案: 'not provided in the given contexts.'
+  正确答案: ['University of North Texas']
+  最佳正确答案概率: 0.002671 ('University of North Texas')
+样本63 错误:
+  生成答案: '3D animation.'
+  正确答案: ['animation']
+  最佳正确答案概率: 0.001145 ('animation')
+样本68 错误:
+  生成答案: 'Arantxa Sánchez Vicario (World No. 1)'
+  正确答案: ['"Arantxa" Sánchez Vicario']
+  最佳正确答案概率: 0.000000 ('"Arantxa" Sánchez Vicario')
+样本71 错误:
+  生成答案: '1968'
+  正确答案: ['1939']
+  最佳正确答案概率: 0.000000 ('1939')
+样本74 错误:
+  生成答案: 'Lithuanian Labour party'
+  正确答案: ['Viktor Uspaskich']
+  最佳正确答案概率: 0.000000 ('Viktor Uspaskich')
+样本77 错误:
+  生成答案: 'formulated the classical theory of electromagnetic radiation, bringing together for the first time electricity, magnetism, and light as manifestations of'
+  正确答案: ['classical theory of electromagnetic radiation']
+  最佳正确答案概率: 0.000235 ('classical theory of electromagnetic radiation')
+样本78 错误:
+  生成答案: 'The London Connection (1979)'
+  正确答案: ['The London Connection']
+  最佳正确答案概率: 0.717197 ('The London Connection')
+样本91 错误:
+  生成答案: 'Theo van Gogh'
+  正确答案: ['Theodorus "Theo" van Gogh']
+  最佳正确答案概率: 0.000006 ('Theodorus "Theo" van Gogh')
+样本94 错误:
+  生成答案: 'Ludovico Einaudi has performed with Canzoniere Grecanico Salentino.'
+  正确答案: ['Italian pianist and composer']
+  最佳正确答案概率: 0.000000 ('Italian pianist and composer')
+样本97 错误:
+  生成答案: 'Yes.'
+  正确答案: ['no']
+  最佳正确答案概率: 0.000075 ('no')
+样本99 错误:
+  生成答案: 'On the Road with Austin and Santino.'
+  正确答案: ['Project Runway']
+  最佳正确答案概率: 0.051038 ('Project Runway')
+
+============================================================
+评估结果
+============================================================
+weight_w: 0.400000
+input_file: /home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w04.json
+total_samples: 100
+exact_match: 0.770000
+f1: 0.814443
+precision: 0.814778
+recall: 0.834167
+avg_max_log_prob: -2.775352
+avg_max_prob: 0.592430
+avg_total_prob: 0.592430
+valid_max_prob_samples: 100
+invalid_max_prob_samples: 0
+avg_answer_count: 1.000000
+avg_valid_answer_count: 1.000000
+============================================================
+
+结果已保存至: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w04/sample_correct_probabilities_w_0.4_documents.json
+
+统计信息:
+平均每个问题有 1.0 个正确答案
+平均每个问题有 1.0 个有效概率的答案
+有效概率样本: 100 / 100

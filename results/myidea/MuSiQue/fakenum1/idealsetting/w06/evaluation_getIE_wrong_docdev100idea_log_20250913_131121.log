@@ -1,0 +1,77 @@
+2025-09-13 13:11:22 INFO: - Rank: -1, Saving log file to checkpoint/llama3/evaluation_wrong_w_0.6.log ...
+2025-09-13 13:11:22 INFO: - Loading data from /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w06.json ... 
+从文件名自动解析得到权重: w = 0.6
+权重值: 0.6
+输入文件: /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w06.json
+日志文件: checkpoint/llama3/evaluation_wrong_w_0.6.log
+正在加载数据集...
+正在加载分词器: "/home/jiangjp/models/Meta-Llama-3-8B-Instruct"，padding_side: "left"
+缺少padding token，设置padding token为eos_token
+正在加载模型...
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:04,  1.50s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.37s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:04<00:01,  1.32s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.14it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.06s/it]
+开始评估...
+正在评估权重 w = 0.6
+输入文件: /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w06.json
+数据集大小: 100
+评估 w=0.6:   0%|          | 0/25 [00:00<?, ?it/s]/home/jiangjp/miniconda3/envs/trace/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:497: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+评估 w=0.6:   4%|▍         | 1/25 [00:12<05:10, 12.92s/it]评估 w=0.6:   8%|▊         | 2/25 [00:23<04:29, 11.73s/it]评估 w=0.6:  12%|█▏        | 3/25 [00:29<03:16,  8.91s/it]评估 w=0.6:  16%|█▌        | 4/25 [00:42<03:44, 10.69s/it]评估 w=0.6:  20%|██        | 5/25 [00:52<03:25, 10.26s/it]评估 w=0.6:  24%|██▍       | 6/25 [01:12<04:17, 13.55s/it]评估 w=0.6:  28%|██▊       | 7/25 [01:25<04:00, 13.34s/it]评估 w=0.6:  32%|███▏      | 8/25 [01:46<04:29, 15.85s/it]评估 w=0.6:  36%|███▌      | 9/25 [01:52<03:26, 12.90s/it]评估 w=0.6:  40%|████      | 10/25 [02:02<02:58, 11.88s/it]评估 w=0.6:  44%|████▍     | 11/25 [02:20<03:14, 13.88s/it]评估 w=0.6:  48%|████▊     | 12/25 [02:40<03:21, 15.51s/it]评估 w=0.6:  52%|█████▏    | 13/25 [02:54<03:03, 15.33s/it]评估 w=0.6:  56%|█████▌    | 14/25 [03:06<02:35, 14.14s/it]评估 w=0.6:  60%|██████    | 15/25 [03:18<02:14, 13.40s/it]评估 w=0.6:  64%|██████▍   | 16/25 [03:44<02:35, 17.32s/it]评估 w=0.6:  68%|██████▊   | 17/25 [03:52<01:56, 14.60s/it]评估 w=0.6:  72%|███████▏  | 18/25 [04:03<01:33, 13.33s/it]评估 w=0.6:  76%|███████▌  | 19/25 [05:02<02:42, 27.16s/it]评估 w=0.6:  80%|████████  | 20/25 [05:09<01:46, 21.21s/it]评估 w=0.6:  84%|████████▍ | 21/25 [05:23<01:16, 19.07s/it]评估 w=0.6:  88%|████████▊ | 22/25 [05:30<00:46, 15.37s/it]评估 w=0.6:  92%|█████████▏| 23/25 [05:43<00:29, 14.55s/it]评估 w=0.6:  96%|█████████▌| 24/25 [06:00<00:15, 15.50s/it]评估 w=0.6: 100%|██████████| 25/25 [06:19<00:00, 16.52s/it]评估 w=0.6: 100%|██████████| 25/25 [06:19<00:00, 15.19s/it]
+2025-09-13 13:17:59 INFO: - 错误答案概率评估完成
+2025-09-13 13:17:59 INFO: - 权重值: 0.6
+2025-09-13 13:17:59 INFO: - 输入文件: /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w06.json
+2025-09-13 13:17:59 INFO: - 评估结果: {'weight_w': 0.6, 'input_file': '/home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w06.json', 'total_samples': 100, 'exact_match': 0.41, 'f1': 0.4614908424908425, 'precision': 0.48490909090909085, 'recall': 0.462, 'avg_wrong_log_prob': -28.28797740336051, 'avg_wrong_prob': 0.019770932323611747, 'valid_wrong_prob_samples': 100, 'invalid_wrong_prob_samples': 0, 'wrong_answer_valid_rate': 1.0}
+2025-09-13 13:17:59 INFO: - 结果已保存至: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w06/sample_wrong_probabilities_w_0.6_documents.json
+样本0:
+  生成答案: '1858' (EM: False)
+  正确答案: ['April 1858']
+  错误答案(原始): '['1860']'
+  错误答案(清理): '1860'
+  错误答案概率: 0.000002
+样本20:
+  生成答案: 'Norway' (EM: True)
+  正确答案: ['Norway', 'NO', 'NOR', 'no']
+  错误答案(原始): '['Ireland', 'IE', 'IRL', 'ie']'
+  错误答案(清理): 'Ireland', 'IE', 'IRL', 'ie'
+  错误答案概率: 0.000000
+样本40:
+  生成答案: 'The European Union.' (EM: False)
+  正确答案: ["Europe's most innovative country", 'Europe']
+  错误答案(原始): '["Europe's smallest economy", 'North America']'
+  错误答案(清理): '"Europe's smallest economy", 'North America''
+  错误答案概率: 0.000000
+样本60:
+  生成答案: 'The Voyager 1 and Voyager 2 spacecraft used the gravitational pull of Jupiter.' (EM: False)
+  正确答案: ['Voyager probes']
+  错误答案(原始): '['Pioneer 10']'
+  错误答案(清理): 'Pioneer 10'
+  错误答案概率: 0.005758
+样本80:
+  生成答案: 'Hemel Hempstead.' (EM: False)
+  正确答案: ['off the north - western coast of the European mainland']
+  错误答案(原始): '['in the heart of South America']'
+  错误答案(清理): 'in the heart of South America'
+  错误答案概率: 0.000000
+
+============================================================
+错误答案概率评估结果
+============================================================
+weight_w: 0.600000
+input_file: /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w06.json
+total_samples: 100
+exact_match: 0.410000
+f1: 0.461491
+precision: 0.484909
+recall: 0.462000
+avg_wrong_log_prob: -28.287977
+avg_wrong_prob: 0.019771
+valid_wrong_prob_samples: 100
+invalid_wrong_prob_samples: 0
+wrong_answer_valid_rate: 1.000000
+============================================================
+
+结果已保存至: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w06/sample_wrong_probabilities_w_0.6_documents.json
+
+统计信息:
+平均每个问题有1 个错误答案
+平均每个问题有1个有效概率的错误答案
+有效错误答案概率样本: 100 / 100

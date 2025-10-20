@@ -1,0 +1,1818 @@
+{
+  "metrics": {
+    "weight_w": 0.2,
+    "input_file": "/home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w02.json",
+    "total_samples": 100,
+    "exact_match": 0.66,
+    "f1": 0.7002380952380952,
+    "precision": 0.7066666666666667,
+    "recall": 0.7033333333333333,
+    "avg_wrong_log_prob": -19.80219025133682,
+    "avg_wrong_prob": 0.007064089698636219,
+    "valid_wrong_prob_samples": 100,
+    "invalid_wrong_prob_samples": 0,
+    "wrong_answer_valid_rate": 1.0
+  },
+  "sample_info": [
+    {
+      "sample_idx": 0,
+      "generated_answer": "No.",
+      "gold_answers": [
+        "no"
+      ],
+      "wrong_answer_raw": "['yes']",
+      "wrong_answer_cleaned": "yes",
+      "reference_answer": "no",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 1.582190225204986e-07,
+      "wrong_log_prob": -15.659285545349121,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 1,
+      "generated_answer": "University of Delaware",
+      "gold_answers": [
+        "University of Delaware"
+      ],
+      "wrong_answer_raw": "['Boston College']",
+      "wrong_answer_cleaned": "Boston College",
+      "reference_answer": "University of Delaware",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 0.0091847183451432,
+      "wrong_log_prob": -4.690214225440286,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 2,
+      "generated_answer": "Secrets of the Furious Five",
+      "gold_answers": [
+        "NBC"
+      ],
+      "wrong_answer_raw": "['ABC']",
+      "wrong_answer_cleaned": "ABC",
+      "reference_answer": "NBC",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "wrong_prob": 0.006437498820420001,
+      "wrong_log_prob": -5.045615196228027,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 3,
+      "generated_answer": "Plants",
+      "gold_answers": [
+        "genus"
+      ],
+      "wrong_answer_raw": "['species']",
+      "wrong_answer_cleaned": "species",
+      "reference_answer": "genus",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "wrong_prob": 0.00030177488305782894,
+      "wrong_log_prob": -8.105829238891602,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 4,
+      "generated_answer": "Kirk Fogg.",
+      "gold_answers": [
+        "Jeff Sutphen"
+      ],
+      "wrong_answer_raw": "['Steve Urkel']",
+      "wrong_answer_cleaned": "Steve Urkel",
+      "reference_answer": "Jeff Sutphen",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "wrong_prob": 3.330073915514114e-08,
+      "wrong_log_prob": -17.217686243355274,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 5,
+      "generated_answer": "The Forest of Bowland.",
+      "gold_answers": [
+        "the Bowland Fells"
+      ],
+      "wrong_answer_raw": "['the Lake District']",
+      "wrong_answer_cleaned": "the Lake District",
+      "reference_answer": "the Bowland Fells",
+      "em_score": 0.0,
+      "f1_score": 0.4,
+      "precision": 0.3333333333333333,
+      "recall": 0.5,
+      "wrong_prob": 6.789112180971289e-07,
+      "wrong_log_prob": -14.202775471843779,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 6,
+      "generated_answer": "Daft Punk",
+      "gold_answers": [
+        "Daft Punk"
+      ],
+      "wrong_answer_raw": "['Queen']",
+      "wrong_answer_cleaned": "Queen",
+      "reference_answer": "Daft Punk",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 2.247047723183804e-09,
+      "wrong_log_prob": -19.91364860534668,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 7,
+      "generated_answer": "3rd Rock from the Sun",
+      "gold_answers": [
+        "3rd Rock from the Sun"
+      ],
+      "wrong_answer_raw": "['Friends']",
+      "wrong_answer_cleaned": "Friends",
+      "reference_answer": "3rd Rock from the Sun",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 2.5185428358575325e-09,
+      "wrong_log_prob": -19.799585342407227,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 8,
+      "generated_answer": "The Island.",
+      "gold_answers": [
+        "The Island"
+      ],
+      "wrong_answer_raw": "['Transformers']",
+      "wrong_answer_cleaned": "Transformers",
+      "reference_answer": "The Island",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 2.5625223641868097e-07,
+      "wrong_log_prob": -15.177103579044342,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 9,
+      "generated_answer": "The Great Mouse Detective",
+      "gold_answers": [
+        "The Great Mouse Detective"
+      ],
+      "wrong_answer_raw": "['Who Framed Roger Rabbit']",
+      "wrong_answer_cleaned": "Who Framed Roger Rabbit",
+      "reference_answer": "The Great Mouse Detective",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 5.2171621658484e-10,
+      "wrong_log_prob": -21.373897322264384,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 10,
+      "generated_answer": "2003",
+      "gold_answers": [
+        "20 March to 1 May 2003"
+      ],
+      "wrong_answer_raw": "['17 January to 28 February 2003']",
+      "wrong_answer_cleaned": "17 January to 28 February 2003",
+      "reference_answer": "20 March to 1 May 2003",
+      "em_score": 0.0,
+      "f1_score": 0.2857142857142857,
+      "precision": 1.0,
+      "recall": 0.16666666666666666,
+      "wrong_prob": 3.586685705609481e-16,
+      "wrong_log_prob": -35.56413291359786,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 11,
+      "generated_answer": "Both Borassodendron and Chelidonium are types of flowering plants.",
+      "gold_answers": [
+        "plant"
+      ],
+      "wrong_answer_raw": "['mineral']",
+      "wrong_answer_cleaned": "mineral",
+      "reference_answer": "plant",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "wrong_prob": 5.977914859429919e-09,
+      "wrong_log_prob": -18.93519401550293,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 12,
+      "generated_answer": "Montclair State University",
+      "gold_answers": [
+        "Montclair State University"
+      ],
+      "wrong_answer_raw": "['Rutgers University - Newark']",
+      "wrong_answer_cleaned": "Rutgers University - Newark",
+      "reference_answer": "Montclair State University",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 1.6667648121861756e-13,
+      "wrong_log_prob": -29.422721699578688,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 13,
+      "generated_answer": "Soha Ali Khan",
+      "gold_answers": [
+        "Soha Ali Khan"
+      ],
+      "wrong_answer_raw": "['Preity Zinta']",
+      "wrong_answer_cleaned": "Preity Zinta",
+      "reference_answer": "Soha Ali Khan",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 2.8684304783744736e-11,
+      "wrong_log_prob": -24.274671014398336,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 14,
+      "generated_answer": "Yes",
+      "gold_answers": [
+        "yes"
+      ],
+      "wrong_answer_raw": "['no']",
+      "wrong_answer_cleaned": "no",
+      "reference_answer": "yes",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 5.4018322592087565e-09,
+      "wrong_log_prob": -19.036527633666992,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 15,
+      "generated_answer": "Bodo League massacre.",
+      "gold_answers": [
+        "Bodo League massacre"
+      ],
+      "wrong_answer_raw": "['Taejon Massacre']",
+      "wrong_answer_cleaned": "Taejon Massacre",
+      "reference_answer": "Bodo League massacre",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 7.872913402472899e-11,
+      "wrong_log_prob": -23.265007838097517,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 16,
+      "generated_answer": "Ariocarpus",
+      "gold_answers": [
+        "Ariocarpus"
+      ],
+      "wrong_answer_raw": "['Phebalium']",
+      "wrong_answer_cleaned": "Phebalium",
+      "reference_answer": "Ariocarpus",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 0.0027989713548046964,
+      "wrong_log_prob": -5.878503302583113,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 17,
+      "generated_answer": "761",
+      "gold_answers": [
+        "761"
+      ],
+      "wrong_answer_raw": "['1,042']",
+      "wrong_answer_cleaned": "1,042",
+      "reference_answer": "761",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 2.732871012265831e-12,
+      "wrong_log_prob": -26.62566840648651,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 18,
+      "generated_answer": "Cnut the Great",
+      "gold_answers": [
+        "Cnut the Great"
+      ],
+      "wrong_answer_raw": "['Harald Bluetooth']",
+      "wrong_answer_cleaned": "Harald Bluetooth",
+      "reference_answer": "Cnut the Great",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 2.5372440977660435e-08,
+      "wrong_log_prob": -17.489602252840996,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 19,
+      "generated_answer": "Channel V",
+      "gold_answers": [
+        "Channel V"
+      ],
+      "wrong_answer_raw": "['MTV India']",
+      "wrong_answer_cleaned": "MTV India",
+      "reference_answer": "Channel V",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 4.226258168248837e-11,
+      "wrong_log_prob": -23.887119015154894,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 20,
+      "generated_answer": "Fyodor Dostoyevsky",
+      "gold_answers": [
+        "Albert Camus"
+      ],
+      "wrong_answer_raw": "Jean-Paul Sartre",
+      "wrong_answer_cleaned": "Jean-Paul Sartre",
+      "reference_answer": "Albert Camus",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "wrong_prob": 8.626608216550648e-07,
+      "wrong_log_prob": -13.96324424553245,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 21,
+      "generated_answer": "Archbishop Gilday",
+      "gold_answers": [
+        "Paul Marcinkus"
+      ],
+      "wrong_answer_raw": "['Cardinal Spellman']",
+      "wrong_answer_cleaned": "Cardinal Spellman",
+      "reference_answer": "Paul Marcinkus",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "wrong_prob": 8.983571037431815e-10,
+      "wrong_log_prob": -20.830453461036086,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 22,
+      "generated_answer": "1852",
+      "gold_answers": [
+        "1904"
+      ],
+      "wrong_answer_raw": "['1923']",
+      "wrong_answer_cleaned": "1923",
+      "reference_answer": "1904",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "wrong_prob": 1.0382730214845734e-08,
+      "wrong_log_prob": -18.383121967315674,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 23,
+      "generated_answer": "Ralph Fiennes",
+      "gold_answers": [
+        "Ralph Fiennes"
+      ],
+      "wrong_answer_raw": "['Anthony Hopkins']",
+      "wrong_answer_cleaned": "Anthony Hopkins",
+      "reference_answer": "Ralph Fiennes",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 1.9935743782801218e-09,
+      "wrong_log_prob": -20.033336639404297,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 24,
+      "generated_answer": "runner-up",
+      "gold_answers": [
+        "runner-up"
+      ],
+      "wrong_answer_raw": "['champion']",
+      "wrong_answer_cleaned": "champion",
+      "reference_answer": "runner-up",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 1.1079962801128027e-08,
+      "wrong_log_prob": -18.318127512931824,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 25,
+      "generated_answer": "Swedish",
+      "gold_answers": [
+        "Swedish"
+      ],
+      "wrong_answer_raw": "['Norwegian']",
+      "wrong_answer_cleaned": "Norwegian",
+      "reference_answer": "Swedish",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 8.947819162263619e-08,
+      "wrong_log_prob": -16.229270910378546,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 26,
+      "generated_answer": "Vice",
+      "gold_answers": [
+        "Vice"
+      ],
+      "wrong_answer_raw": "['Montreal Gazette']",
+      "wrong_answer_cleaned": "Montreal Gazette",
+      "reference_answer": "Vice",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 1.4672345443486516e-11,
+      "wrong_log_prob": -24.945056656288216,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 27,
+      "generated_answer": "The Preppie Murder.",
+      "gold_answers": [
+        "The Preppie Murder"
+      ],
+      "wrong_answer_raw": "['Central Park Crime']",
+      "wrong_answer_cleaned": "Central Park Crime",
+      "reference_answer": "The Preppie Murder",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 5.592871438009377e-14,
+      "wrong_log_prob": -30.51469847257249,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 28,
+      "generated_answer": "Isolde Kostner",
+      "gold_answers": [
+        "Isolde Kostner"
+      ],
+      "wrong_answer_raw": "Carolina Kostner is actually a famous Italian figure skater and the one who achieved the mentioned accolades, not the sister. This creates a plausible-sounding incorrect answer because of the familial connection implied by the style of the correct answer.)",
+      "wrong_answer_cleaned": "Carolina Kostner is actually a famous Italian figure skater and the one who achieved the mentioned accolades, not the sister. This creates a plausible-sounding incorrect answer because of the familial connection implied by the style of the correct answer.)",
+      "reference_answer": "Isolde Kostner",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 4.939292686419845e-68,
+      "wrong_log_prob": -154.9785641835333,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 29,
+      "generated_answer": "Westwood Jr. High School",
+      "gold_answers": [
+        "Beverly Hills High School"
+      ],
+      "wrong_answer_raw": "['Hollywood High School']",
+      "wrong_answer_cleaned": "Hollywood High School",
+      "reference_answer": "Beverly Hills High School",
+      "em_score": 0.0,
+      "f1_score": 0.5,
+      "precision": 0.5,
+      "recall": 0.5,
+      "wrong_prob": 1.3233980161336128e-06,
+      "wrong_log_prob": -13.535307874437422,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 30,
+      "generated_answer": "1989",
+      "gold_answers": [
+        "fifth album"
+      ],
+      "wrong_answer_raw": "['third album']",
+      "wrong_answer_cleaned": "third album",
+      "reference_answer": "fifth album",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "wrong_prob": 9.152382340016992e-10,
+      "wrong_log_prob": -20.81183671951294,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 31,
+      "generated_answer": "Welterweight",
+      "gold_answers": [
+        "Welterweight"
+      ],
+      "wrong_answer_raw": "['Middleweight']",
+      "wrong_answer_cleaned": "Middleweight",
+      "reference_answer": "Welterweight",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 7.497651217539161e-06,
+      "wrong_log_prob": -11.800920757465065,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 32,
+      "generated_answer": "Times Beach",
+      "gold_answers": [
+        "Times Beach"
+      ],
+      "wrong_answer_raw": "['Gasconade']",
+      "wrong_answer_cleaned": "Gasconade",
+      "reference_answer": "Times Beach",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 2.248469365094164e-09,
+      "wrong_log_prob": -19.91301613440737,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 33,
+      "generated_answer": "Beverly Hills Supper Club fire.",
+      "gold_answers": [
+        "Beverly Hills Supper Club fire"
+      ],
+      "wrong_answer_raw": "['Alcoholocaust Supper Club blaze']",
+      "wrong_answer_cleaned": "Alcoholocaust Supper Club blaze",
+      "reference_answer": "Beverly Hills Supper Club fire",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 2.231372792591734e-19,
+      "wrong_log_prob": -42.94649976876099,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 34,
+      "generated_answer": "Ryan Leaf",
+      "gold_answers": [
+        "quarterback"
+      ],
+      "wrong_answer_raw": "['wide receiver']",
+      "wrong_answer_cleaned": "wide receiver",
+      "reference_answer": "quarterback",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "wrong_prob": 1.1294932760559344e-05,
+      "wrong_log_prob": -11.391156361089088,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 35,
+      "generated_answer": "Kelly Gregg",
+      "gold_answers": [
+        "Dusty Dvoracek"
+      ],
+      "wrong_answer_raw": "['Casey Hampton']",
+      "wrong_answer_cleaned": "Casey Hampton",
+      "reference_answer": "Dusty Dvoracek",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "wrong_prob": 1.4168631277033913e-07,
+      "wrong_log_prob": -15.769650287926197,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 36,
+      "generated_answer": "No.",
+      "gold_answers": [
+        "no"
+      ],
+      "wrong_answer_raw": "['yes']",
+      "wrong_answer_cleaned": "yes",
+      "reference_answer": "no",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 2.2662109606416754e-08,
+      "wrong_log_prob": -17.602571487426758,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 37,
+      "generated_answer": "Texas Rangers",
+      "gold_answers": [
+        "Texas Rangers"
+      ],
+      "wrong_answer_raw": "['New York Yankees']",
+      "wrong_answer_cleaned": "New York Yankees",
+      "reference_answer": "Texas Rangers",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 0.003944601728321216,
+      "wrong_log_prob": -5.535407285846304,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 38,
+      "generated_answer": "Germanic, Baltic, and Thracian tribes.",
+      "gold_answers": [
+        "Germanic, Baltic and Thracian tribes"
+      ],
+      "wrong_answer_raw": "['Slavic, Hungarian, and Romanian groups']",
+      "wrong_answer_cleaned": "Slavic, Hungarian, and Romanian groups",
+      "reference_answer": "Germanic, Baltic and Thracian tribes",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 3.4005643742397315e-17,
+      "wrong_log_prob": -37.92000517062843,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 39,
+      "generated_answer": "American",
+      "gold_answers": [
+        "American"
+      ],
+      "wrong_answer_raw": "['British']",
+      "wrong_answer_cleaned": "British",
+      "reference_answer": "American",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 4.1188160012861146e-07,
+      "wrong_log_prob": -14.702529907226562,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 40,
+      "generated_answer": "Mario Lemieux",
+      "gold_answers": [
+        "Mario Lemieux"
+      ],
+      "wrong_answer_raw": "['Wayne Gretzky']",
+      "wrong_answer_cleaned": "Wayne Gretzky",
+      "reference_answer": "Mario Lemieux",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 1.748234586329783e-09,
+      "wrong_log_prob": -20.16465936601162,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 41,
+      "generated_answer": "Mumbai",
+      "gold_answers": [
+        "Mumbai"
+      ],
+      "wrong_answer_raw": "['Delhi']",
+      "wrong_answer_cleaned": "Delhi",
+      "reference_answer": "Mumbai",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 4.421671411124062e-08,
+      "wrong_log_prob": -16.9341629720293,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 42,
+      "generated_answer": "Alexander Scriabin",
+      "gold_answers": [
+        "Alexander Scriabin"
+      ],
+      "wrong_answer_raw": "['Sergei Rachmaninoff']",
+      "wrong_answer_cleaned": "Sergei Rachmaninoff",
+      "reference_answer": "Alexander Scriabin",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 3.214951851824528e-07,
+      "wrong_log_prob": -14.950283269485226,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 43,
+      "generated_answer": "4",
+      "gold_answers": [
+        "Their biggest hit was \"Tall Cool One\", first released in 1959"
+      ],
+      "wrong_answer_raw": "['Their biggest hit was \"Last Train to Clarksville\", first released in 1966']",
+      "wrong_answer_cleaned": "Their biggest hit was \"Last Train to Clarksville\", first released in 1966",
+      "reference_answer": "Their biggest hit was \"Tall Cool One\", first released in 1959",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "wrong_prob": 3.680688355211988e-18,
+      "wrong_log_prob": -40.14343188615749,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 44,
+      "generated_answer": "Jawaharlal Nehru",
+      "gold_answers": [
+        "first Prime Minister of India"
+      ],
+      "wrong_answer_raw": "['second President of India']",
+      "wrong_answer_cleaned": "second President of India",
+      "reference_answer": "first Prime Minister of India",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "wrong_prob": 3.270347652848448e-10,
+      "wrong_log_prob": -21.84095463482663,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 45,
+      "generated_answer": "Ireland",
+      "gold_answers": [
+        "Ireland"
+      ],
+      "wrong_answer_raw": "['United Kingdom']",
+      "wrong_answer_cleaned": "United Kingdom",
+      "reference_answer": "Ireland",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 0.005790161163897832,
+      "wrong_log_prob": -5.151595152914524,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 46,
+      "generated_answer": "72-78",
+      "gold_answers": [
+        "72-78"
+      ],
+      "wrong_answer_raw": "['58-64']",
+      "wrong_answer_cleaned": "58-64",
+      "reference_answer": "72-78",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 5.952056236522593e-09,
+      "wrong_log_prob": -18.939529091119766,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 47,
+      "generated_answer": "Heroica Matamoros",
+      "gold_answers": [
+        "Heroica Matamoros"
+      ],
+      "wrong_answer_raw": "['San Juan de los Lagos']",
+      "wrong_answer_cleaned": "San Juan de los Lagos",
+      "reference_answer": "Heroica Matamoros",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 8.44235739822243e-11,
+      "wrong_log_prob": -23.19517444074154,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 48,
+      "generated_answer": "Benedict Arnold",
+      "gold_answers": [
+        "Benedict Arnold"
+      ],
+      "wrong_answer_raw": "['George Washington']",
+      "wrong_answer_cleaned": "George Washington",
+      "reference_answer": "Benedict Arnold",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 1.7157190726179118e-05,
+      "wrong_log_prob": -10.973093187902123,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 49,
+      "generated_answer": "South Kesteven Sports Stadium",
+      "gold_answers": [
+        "South Kesteven Sports Stadium"
+      ],
+      "wrong_answer_raw": "['Wembley Stadium']",
+      "wrong_answer_cleaned": "Wembley Stadium",
+      "reference_answer": "South Kesteven Sports Stadium",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 3.5512801657582467e-09,
+      "wrong_log_prob": -19.455957688390527,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 50,
+      "generated_answer": "Aiko, Princess Toshi",
+      "gold_answers": [
+        "Aiko, Princess Toshi"
+      ],
+      "wrong_answer_raw": "['Hisahito, Prince Akishino']",
+      "wrong_answer_cleaned": "Hisahito, Prince Akishino",
+      "reference_answer": "Aiko, Princess Toshi",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 1.7670869850211152e-10,
+      "wrong_log_prob": -22.456518510298338,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 51,
+      "generated_answer": "Naseem Hamed",
+      "gold_answers": [
+        "Marco Antonio Barrera"
+      ],
+      "wrong_answer_raw": "['Erik Morales']",
+      "wrong_answer_cleaned": "Erik Morales",
+      "reference_answer": "Marco Antonio Barrera",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "wrong_prob": 2.527673466324276e-09,
+      "wrong_log_prob": -19.795966535806656,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 52,
+      "generated_answer": "Iberian Peninsula",
+      "gold_answers": [
+        "Iberian Peninsula"
+      ],
+      "wrong_answer_raw": "['Balearic Islands']",
+      "wrong_answer_cleaned": "Balearic Islands",
+      "reference_answer": "Iberian Peninsula",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 6.319010355610184e-07,
+      "wrong_log_prob": -14.274533044363125,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 53,
+      "generated_answer": "Hume Highway",
+      "gold_answers": [
+        "Hume Highway"
+      ],
+      "wrong_answer_raw": "['Princes Highway']",
+      "wrong_answer_cleaned": "Princes Highway",
+      "reference_answer": "Hume Highway",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 4.481290710328267e-09,
+      "wrong_log_prob": -19.2233547270298,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 54,
+      "generated_answer": "University of North Texas",
+      "gold_answers": [
+        "University of North Texas"
+      ],
+      "wrong_answer_raw": "['Lawrence Technological University']",
+      "wrong_answer_cleaned": "Lawrence Technological University",
+      "reference_answer": "University of North Texas",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 0.01705494029553766,
+      "wrong_log_prob": -4.071315363819053,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 55,
+      "generated_answer": "Humber Refinery.",
+      "gold_answers": [
+        "the A160"
+      ],
+      "wrong_answer_raw": "['the M180']",
+      "wrong_answer_cleaned": "the M180",
+      "reference_answer": "the A160",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "wrong_prob": 5.510886767308396e-09,
+      "wrong_log_prob": -19.01654028892517,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 56,
+      "generated_answer": "American",
+      "gold_answers": [
+        "American"
+      ],
+      "wrong_answer_raw": "['British']",
+      "wrong_answer_cleaned": "British",
+      "reference_answer": "American",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 3.863292648712028e-07,
+      "wrong_log_prob": -14.766575813293457,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 57,
+      "generated_answer": "Red Bhutlah and Trinidad Douglah",
+      "gold_answers": [
+        "\"Capsicum chinense\""
+      ],
+      "wrong_answer_raw": "['\"Capsicum annuum\"']",
+      "wrong_answer_cleaned": "\"Capsicum annuum\"",
+      "reference_answer": "\"Capsicum chinense\"",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "wrong_prob": 3.907060163585431e-11,
+      "wrong_log_prob": -23.965650808058854,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 58,
+      "generated_answer": "Hillary Rodham Clinton",
+      "gold_answers": [
+        "Hillary Clinton"
+      ],
+      "wrong_answer_raw": "['Barack Obama']",
+      "wrong_answer_cleaned": "Barack Obama",
+      "reference_answer": "Hillary Clinton",
+      "em_score": 0.0,
+      "f1_score": 0.8,
+      "precision": 0.6666666666666666,
+      "recall": 1.0,
+      "wrong_prob": 9.21281100375515e-07,
+      "wrong_log_prob": -13.897500635124743,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 59,
+      "generated_answer": "Lynyrd Skynyrd",
+      "gold_answers": [
+        "Lynyrd Skynyrd"
+      ],
+      "wrong_answer_raw": "['Creedence Clearwater Revival']",
+      "wrong_answer_cleaned": "Creedence Clearwater Revival",
+      "reference_answer": "Lynyrd Skynyrd",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 5.960833756098651e-10,
+      "wrong_log_prob": -21.240640566684306,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 60,
+      "generated_answer": "Rammstein",
+      "gold_answers": [
+        "Herzeleid"
+      ],
+      "wrong_answer_raw": "['Sehnsucht']",
+      "wrong_answer_cleaned": "Sehnsucht",
+      "reference_answer": "Herzeleid",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "wrong_prob": 4.593287718955829e-06,
+      "wrong_log_prob": -12.29091451165732,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 61,
+      "generated_answer": "1897",
+      "gold_answers": [
+        "1897"
+      ],
+      "wrong_answer_raw": "['1912']",
+      "wrong_answer_cleaned": "1912",
+      "reference_answer": "1897",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 5.6059687291803476e-08,
+      "wrong_log_prob": -16.69684886932373,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 62,
+      "generated_answer": "Mahmoud Salah",
+      "gold_answers": [
+        "Ahmed Elmohamady"
+      ],
+      "wrong_answer_raw": "['Mohamed Elneny']",
+      "wrong_answer_cleaned": "Mohamed Elneny",
+      "reference_answer": "Ahmed Elmohamady",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "wrong_prob": 4.331783490136937e-06,
+      "wrong_log_prob": -12.349531209267298,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 63,
+      "generated_answer": "Stop-motion animation.",
+      "gold_answers": [
+        "animation"
+      ],
+      "wrong_answer_raw": "['live-action']",
+      "wrong_answer_cleaned": "live-action",
+      "reference_answer": "animation",
+      "em_score": 0.0,
+      "f1_score": 0.6666666666666666,
+      "precision": 0.5,
+      "recall": 1.0,
+      "wrong_prob": 0.0002465949619001272,
+      "wrong_log_prob": -8.307763397693634,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 64,
+      "generated_answer": "Jeff Healey",
+      "gold_answers": [
+        "Jeff Healey"
+      ],
+      "wrong_answer_raw": "['Stevie Ray Vaughan']",
+      "wrong_answer_cleaned": "Stevie Ray Vaughan",
+      "reference_answer": "Jeff Healey",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 2.1069764499989183e-10,
+      "wrong_log_prob": -22.280596972210333,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 65,
+      "generated_answer": "the British Armed Forces",
+      "gold_answers": [
+        "British Armed Forces"
+      ],
+      "wrong_answer_raw": "['Royal Air Force']",
+      "wrong_answer_cleaned": "Royal Air Force",
+      "reference_answer": "British Armed Forces",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 4.5158267316011954e-08,
+      "wrong_log_prob": -16.913092466071248,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 66,
+      "generated_answer": "Kadhalan",
+      "gold_answers": [
+        "Kadhalan"
+      ],
+      "wrong_answer_raw": "['Gentleman']",
+      "wrong_answer_cleaned": "Gentleman",
+      "reference_answer": "Kadhalan",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 2.2195951460773654e-09,
+      "wrong_log_prob": -19.925941024324857,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 67,
+      "generated_answer": "Cherepanov Hill",
+      "gold_answers": [
+        "Cherepanov Hill"
+      ],
+      "wrong_answer_raw": "['Vydubychi Hill']",
+      "wrong_answer_cleaned": "Vydubychi Hill",
+      "reference_answer": "Cherepanov Hill",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 3.2020442050297953e-12,
+      "wrong_log_prob": -26.46723169600591,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 68,
+      "generated_answer": "Arantxa Sánchez Vicario",
+      "gold_answers": [
+        "\"Arantxa\" Sánchez Vicario"
+      ],
+      "wrong_answer_raw": "['\"Julien\" Benneteau']",
+      "wrong_answer_cleaned": "\"Julien\" Benneteau",
+      "reference_answer": "\"Arantxa\" Sánchez Vicario",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 1.715136490610583e-16,
+      "wrong_log_prob": -36.3018688240918,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 69,
+      "generated_answer": "University of Alabama",
+      "gold_answers": [
+        "University of Alabama"
+      ],
+      "wrong_answer_raw": "['University of Oklahoma']",
+      "wrong_answer_cleaned": "University of Oklahoma",
+      "reference_answer": "University of Alabama",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 1.8514398352838207e-09,
+      "wrong_log_prob": -20.10730221122367,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 70,
+      "generated_answer": "Pizza Hut",
+      "gold_answers": [
+        "Pizza Hut"
+      ],
+      "wrong_answer_raw": "['Burger King']",
+      "wrong_answer_cleaned": "Burger King",
+      "reference_answer": "Pizza Hut",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 8.241886390755869e-10,
+      "wrong_log_prob": -20.916621681302786,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 71,
+      "generated_answer": "1969",
+      "gold_answers": [
+        "1939"
+      ],
+      "wrong_answer_raw": "['1945']",
+      "wrong_answer_cleaned": "1945",
+      "reference_answer": "1939",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "wrong_prob": 0.00024543485087507005,
+      "wrong_log_prob": -8.312479019165039,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 72,
+      "generated_answer": "1962",
+      "gold_answers": [
+        "1962"
+      ],
+      "wrong_answer_raw": "['1964']",
+      "wrong_answer_cleaned": "1964",
+      "reference_answer": "1962",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 1.276978017142611e-08,
+      "wrong_log_prob": -18.176184381503845,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 73,
+      "generated_answer": "Harbour Square Park",
+      "gold_answers": [
+        "Metreon"
+      ],
+      "wrong_answer_raw": "['Aquatium']",
+      "wrong_answer_cleaned": "Aquatium",
+      "reference_answer": "Metreon",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "wrong_prob": 5.4518910065823995e-12,
+      "wrong_log_prob": -25.93505859375,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 74,
+      "generated_answer": "Viktor Uspaskich",
+      "gold_answers": [
+        "Viktor Uspaskich"
+      ],
+      "wrong_answer_raw": "['Rolandas Paksas']",
+      "wrong_answer_cleaned": "Rolandas Paksas",
+      "reference_answer": "Viktor Uspaskich",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 1.6040764727136484e-09,
+      "wrong_log_prob": -20.250717652383173,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 75,
+      "generated_answer": "Spacemen 3",
+      "gold_answers": [
+        "Spacemen 3"
+      ],
+      "wrong_answer_raw": "['The Verve']",
+      "wrong_answer_cleaned": "The Verve",
+      "reference_answer": "Spacemen 3",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 0.0008922320259951207,
+      "wrong_log_prob": -7.021784340380691,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 76,
+      "generated_answer": "Stephen King.",
+      "gold_answers": [
+        "Stephen King"
+      ],
+      "wrong_answer_raw": "['George R.R. Martin']",
+      "wrong_answer_cleaned": "George R.R. Martin",
+      "reference_answer": "Stephen King",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 1.7082683146981696e-08,
+      "wrong_log_prob": -17.885200568009168,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 77,
+      "generated_answer": "classical theory of electromagnetic radiation",
+      "gold_answers": [
+        "classical theory of electromagnetic radiation"
+      ],
+      "wrong_answer_raw": "['development of quantum mechanics']",
+      "wrong_answer_cleaned": "development of quantum mechanics",
+      "reference_answer": "classical theory of electromagnetic radiation",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 9.91373921168344e-10,
+      "wrong_log_prob": -20.73192933574319,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 78,
+      "generated_answer": "1979",
+      "gold_answers": [
+        "The London Connection"
+      ],
+      "wrong_answer_raw": "['The Country Bears']",
+      "wrong_answer_cleaned": "The Country Bears",
+      "reference_answer": "The London Connection",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "wrong_prob": 0.0012963537896764168,
+      "wrong_log_prob": -6.648199732444482,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 79,
+      "generated_answer": "American",
+      "gold_answers": [
+        "Mexican"
+      ],
+      "wrong_answer_raw": "['Canadian']",
+      "wrong_answer_cleaned": "Canadian",
+      "reference_answer": "Mexican",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "wrong_prob": 1.4755618724919496e-06,
+      "wrong_log_prob": -13.426471710205078,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 80,
+      "generated_answer": "December 7, 2008",
+      "gold_answers": [
+        "December 7, 2008"
+      ],
+      "wrong_answer_raw": "['September 23, 2001']",
+      "wrong_answer_cleaned": "September 23, 2001",
+      "reference_answer": "December 7, 2008",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 3.525136801633509e-13,
+      "wrong_log_prob": -28.673686964437366,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 81,
+      "generated_answer": "Yes",
+      "gold_answers": [
+        "yes"
+      ],
+      "wrong_answer_raw": "['no']",
+      "wrong_answer_cleaned": "no",
+      "reference_answer": "yes",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 0.00011288339246479011,
+      "wrong_log_prob": -9.089155197143555,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 82,
+      "generated_answer": "Football",
+      "gold_answers": [
+        "Football"
+      ],
+      "wrong_answer_raw": "['Cricket']",
+      "wrong_answer_cleaned": "Cricket",
+      "reference_answer": "Football",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 1.8074285323180095e-05,
+      "wrong_log_prob": -10.921020330220927,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 83,
+      "generated_answer": "Betty X",
+      "gold_answers": [
+        "Betty X"
+      ],
+      "wrong_answer_raw": "['Malcolm Little']",
+      "wrong_answer_cleaned": "Malcolm Little",
+      "reference_answer": "Betty X",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 3.775975332470528e-07,
+      "wrong_log_prob": -14.789436935410777,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 84,
+      "generated_answer": "Pie Five",
+      "gold_answers": [
+        "Extreme Pizza"
+      ],
+      "wrong_answer_raw": "['Pizza Inn']",
+      "wrong_answer_cleaned": "Pizza Inn",
+      "reference_answer": "Extreme Pizza",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "wrong_prob": 0.027345040196753982,
+      "wrong_log_prob": -3.5992201121989638,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 85,
+      "generated_answer": "Anna Mae Bullock",
+      "gold_answers": [
+        "Anna Mae Bullock"
+      ],
+      "wrong_answer_raw": "['Diana Ernestine Earle Ross']",
+      "wrong_answer_cleaned": "Diana Ernestine Earle Ross",
+      "reference_answer": "Anna Mae Bullock",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 1.364181988796515e-17,
+      "wrong_log_prob": -38.8333916075062,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 86,
+      "generated_answer": "Michie Stadium",
+      "gold_answers": [
+        "Michie Stadium"
+      ],
+      "wrong_answer_raw": "['Blaik Field']",
+      "wrong_answer_cleaned": "Blaik Field",
+      "reference_answer": "Michie Stadium",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 1.1158822383242205e-11,
+      "wrong_log_prob": -25.218790685757995,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 87,
+      "generated_answer": "Pacific Ocean",
+      "gold_answers": [
+        "the Pacific Ocean"
+      ],
+      "wrong_answer_raw": "['the Atlantic Ocean']",
+      "wrong_answer_cleaned": "the Atlantic Ocean",
+      "reference_answer": "the Pacific Ocean",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 7.908798619038626e-09,
+      "wrong_log_prob": -18.655289947986603,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 88,
+      "generated_answer": "Angela Nissel",
+      "gold_answers": [
+        "Angela R. Nissel"
+      ],
+      "wrong_answer_raw": "['John J. Strauss']",
+      "wrong_answer_cleaned": "John J. Strauss",
+      "reference_answer": "Angela R. Nissel",
+      "em_score": 0.0,
+      "f1_score": 0.8,
+      "precision": 1.0,
+      "recall": 0.6666666666666666,
+      "wrong_prob": 2.8538029987055433e-13,
+      "wrong_log_prob": -28.88495371863246,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 89,
+      "generated_answer": "LyondellBasell.",
+      "gold_answers": [
+        "Netherlands"
+      ],
+      "wrong_answer_raw": "['Switzerland']",
+      "wrong_answer_cleaned": "Switzerland",
+      "reference_answer": "Netherlands",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "wrong_prob": 1.3316885871264395e-06,
+      "wrong_log_prob": -13.529062806628644,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 90,
+      "generated_answer": "Alessandro Nannini",
+      "gold_answers": [
+        "Alessandro Nannini"
+      ],
+      "wrong_answer_raw": "['Michael Schumacher']",
+      "wrong_answer_cleaned": "Michael Schumacher",
+      "reference_answer": "Alessandro Nannini",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 1.6649847768377466e-08,
+      "wrong_log_prob": -17.91086476360215,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 91,
+      "generated_answer": "Vincent van Gogh",
+      "gold_answers": [
+        "Theodorus \"Theo\" van Gogh"
+      ],
+      "wrong_answer_raw": "['Vincent van Gogh']",
+      "wrong_answer_cleaned": "Vincent van Gogh",
+      "reference_answer": "Theodorus \"Theo\" van Gogh",
+      "em_score": 0.0,
+      "f1_score": 0.5714285714285715,
+      "precision": 0.6666666666666666,
+      "recall": 0.5,
+      "wrong_prob": 0.6275532783658236,
+      "wrong_log_prob": -0.4659267058182195,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 92,
+      "generated_answer": "Indian Rebellion of 1857",
+      "gold_answers": [
+        "Indian Rebellion of 1857"
+      ],
+      "wrong_answer_raw": "['Sipoy Mutiny of 1847']",
+      "wrong_answer_cleaned": "Sipoy Mutiny of 1847",
+      "reference_answer": "Indian Rebellion of 1857",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 5.379353284834133e-22,
+      "wrong_log_prob": -48.97430388620069,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 93,
+      "generated_answer": "Yes.",
+      "gold_answers": [
+        "yes"
+      ],
+      "wrong_answer_raw": "['no']",
+      "wrong_answer_cleaned": "no",
+      "reference_answer": "yes",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 1.1100850328775784e-08,
+      "wrong_log_prob": -18.31624412536621,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 94,
+      "generated_answer": "Ludovico Einaudi collaborated with Canzoniere Grecanico Salentino.",
+      "gold_answers": [
+        "Italian pianist and composer"
+      ],
+      "wrong_answer_raw": "['Founder and lead singer']",
+      "wrong_answer_cleaned": "Founder and lead singer",
+      "reference_answer": "Italian pianist and composer",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "wrong_prob": 1.1519014597575356e-12,
+      "wrong_log_prob": -27.489607095718384,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 95,
+      "generated_answer": "Jang Yoon Jeong, Super Junior-T, Daesung, Joy, Hong Jin-young",
+      "gold_answers": [
+        "actress"
+      ],
+      "wrong_answer_raw": "['dancer']",
+      "wrong_answer_cleaned": "dancer",
+      "reference_answer": "actress",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "wrong_prob": 8.6598557430164e-08,
+      "wrong_log_prob": -16.261982679367065,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 96,
+      "generated_answer": "Amsterdam",
+      "gold_answers": [
+        "Amsterdam"
+      ],
+      "wrong_answer_raw": "['London']",
+      "wrong_answer_cleaned": "London",
+      "reference_answer": "Amsterdam",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 0.00013817763090819335,
+      "wrong_log_prob": -8.886970520019531,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 97,
+      "generated_answer": "Yes",
+      "gold_answers": [
+        "no"
+      ],
+      "wrong_answer_raw": "['yes']",
+      "wrong_answer_cleaned": "yes",
+      "reference_answer": "no",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "wrong_prob": 0.0029920281282859,
+      "wrong_log_prob": -5.811803817749023,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 98,
+      "generated_answer": "Nickelodeon",
+      "gold_answers": [
+        "Nickelodeon"
+      ],
+      "wrong_answer_raw": "['Disney Channel']",
+      "wrong_answer_cleaned": "Disney Channel",
+      "reference_answer": "Nickelodeon",
+      "em_score": 1.0,
+      "f1_score": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "wrong_prob": 3.731802580417848e-09,
+      "wrong_log_prob": -19.40637445449829,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    },
+    {
+      "sample_idx": 99,
+      "generated_answer": "On the Road with Austin and Santino",
+      "gold_answers": [
+        "Project Runway"
+      ],
+      "wrong_answer_raw": "['America's Next Top Model']",
+      "wrong_answer_cleaned": "America's Next Top Model",
+      "reference_answer": "Project Runway",
+      "em_score": 0.0,
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "wrong_prob": 1.502773835526798e-06,
+      "wrong_log_prob": -13.408197933880729,
+      "wrong_answer_valid": true,
+      "weight_w": 0.2
+    }
+  ]
+}

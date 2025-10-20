@@ -1,0 +1,15 @@
+nohup: ignoring input
+开始在单GPU上顺序执行实验...
+开始时间: Wed Sep 10 06:11:23 UTC 2025
+==================================
+正在执行第 11/11 个任务
+Weight: 1.0 (w10)
+开始时间: Wed Sep 10 06:11:23 UTC 2025
+日志文件: results/myidea/HotPotQA/fakenum1/idealsetting/w10/hotpotqa_construct_reasoning_chains_modify_log100_20250910_061123.log
+输出文件: /home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w10.json
+==================================
+✅ Weight 1.0 执行成功
+完成时间: Wed Sep 10 06:41:37 UTC 2025
+
+🎉 所有任务已完成！
+结束时间: Wed Sep 10 06:41:37 UTC 2025
