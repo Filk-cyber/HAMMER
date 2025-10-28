@@ -993,8 +993,8 @@ def setup_parser():
     parser.add_argument("--input_data_file", type=str, default="data/hotpotqa/dev_with_kgs.json",
                         help="输入数据文件路径")
     parser.add_argument("--model_type", type=str, choices=["cag", "llama3", "gemma","mistral"], default="llama3",
-                        help="模型类型：cag表示CAG-7B，llama3表示Llama3-8B-Instruct")
-    parser.add_argument("--model_path", type=str, required=True, help="CAG-7B模型路径")
+                        help="模型类型")
+    parser.add_argument("--model_path", type=str, required=True, help="模型路径")
     parser.add_argument("--context_nums", type=int, default=5, help="检索的文档数量")
     parser.add_argument("--answer_maxlength", type=int, default=25, help="答案最大长度")
     parser.add_argument("--fake_num", type=int, default=1)
