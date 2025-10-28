@@ -567,9 +567,9 @@ def main():
     print("=" * 60)
 
     # 配置参数
-    API_KEY = "05748176082447f483438dfd914cc299.NcsCifhTarCch6es"  # 请填写您的API密钥
-    INPUT_FILE = "/home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_test1000_optimized_final.json"  # 输入文件路径
-    OUTPUT_FILE = "/home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_test1000_add_wronganswer.json"  # 输出文件路径
+    API_KEY = ""  # 请填写您的API密钥
+    INPUT_FILE = "wiki_test1000.json"  # 输入文件路径
+    OUTPUT_FILE = "wiki_test1000_add_wronganswer.json"  # 输出文件路径
 
     # 并行处理参数
     MAX_WORKERS = 3000  # 并发线程数，根据API限制调整
