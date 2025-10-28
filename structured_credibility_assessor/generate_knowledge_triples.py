@@ -20,8 +20,8 @@ from prompts import generate_knowledge_triples_template, generate_knowledge_trip
 
 tokenizer = None 
 model = None 
-tokenizer_name_or_path = "/home/jiangjp/models/Meta-Llama-3-8B-Instruct"
-model_name_or_path = "/home/jiangjp/models/Meta-Llama-3-8B-Instruct"
+tokenizer_name_or_path = "Meta-Llama-3-8B-Instruct"
+model_name_or_path = "Meta-Llama-3-8B-Instruct"
 device = torch.device("cuda")
 
 def setup_parser():
