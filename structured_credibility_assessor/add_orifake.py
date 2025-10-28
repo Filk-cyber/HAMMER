@@ -626,9 +626,9 @@ def main():
     主函数 - 使用示例
     """
     # 配置参数
-    API_KEY = "05748176082447f483438dfd914cc299.NcsCifhTarCch6es"  # 请填写您的ZhipuAI API Key
-    INPUT_FILE = "/home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_test1000_add_wronganswer.json"
-    OUTPUT_FILE = "/home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_test1000_add_orifake.json"
+    API_KEY = ""  # 请填写您的ZhipuAI API Key
+    INPUT_FILE = "/wiki_test1000_add_wronganswer.json"
+    OUTPUT_FILE = "wiki_test1000_add_orifake.json"
 
     # 并行处理参数
     MAX_WORKERS = 3000  # 并发线程数，根据API限制调整
