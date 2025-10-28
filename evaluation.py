@@ -21,9 +21,9 @@ from utils.utils import seed_everything, setup_logger, to_device
 logger = logging.getLogger(__file__)
 
 READER_NAME_TO_MODEL_NAME_MAP = {
-    "llama3": "/home/jiangjp/models/Meta-Llama-3-8B-Instruct",
-    "mistral": "/home/jiangjp/mydatastore/Mistral-7B-v0.1",
-    "gemma": "/home/jiangjp/models/gemma-7b",
+    "llama3": "Meta-Llama-3-8B-Instruct",
+    "mistral": "Mistral-7B-v0.1",
+    "gemma": "gemma-7b",
 }
 
 COLLATOR_MAP = {
