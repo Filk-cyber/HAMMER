@@ -1,1723 +1,0 @@
-nohup: ignoring input
-2025-08-15 09:29:44 INFO: - Rank: -1, Saving log file to checkpoint/llama3/prediction.log ...
-2025-08-15 09:29:44 INFO: - Loading data from /home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_test1000_with_reasoning_chains_modify_w9.json ... 
-loading tokenizer for "/home/jiangjp/models/Meta-Llama-3-8B-Instruct" with padding_side: "left"
-Missing padding token, setting padding token to eos_token
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.30s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.33s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:04<00:01,  1.36s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.07it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.08s/it]
-Evaluation:   0%|          | 0/250 [00:00<?, ?it/s]2025-08-15 09:29:59 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:29:59 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:29:59 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:30:00 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:30:16 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:30:44 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-/home/jiangjp/miniconda3/envs/trace/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:497: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
-  warnings.warn(
-Evaluation:   0%|          | 1/250 [01:00<4:10:41, 60.41s/it]2025-08-15 09:30:59 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:30:59 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:30:59 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:30:59 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:   1%|          | 2/250 [01:17<2:25:29, 35.20s/it]2025-08-15 09:31:17 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:31:17 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:31:17 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:31:17 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:   1%|          | 3/250 [01:36<1:53:18, 27.53s/it]2025-08-15 09:31:35 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:31:35 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:31:35 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:31:35 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:   2%|▏         | 4/250 [02:04<1:54:39, 27.97s/it]2025-08-15 09:32:04 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:32:04 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:32:04 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:32:04 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:   2%|▏         | 5/250 [02:25<1:42:57, 25.21s/it]2025-08-15 09:32:25 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:32:25 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:32:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:32:28 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:   2%|▏         | 6/250 [02:49<1:41:11, 24.88s/it]2025-08-15 09:32:48 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:32:49 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:32:49 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:32:49 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:   3%|▎         | 7/250 [03:10<1:35:41, 23.63s/it]2025-08-15 09:33:11 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:33:11 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:33:11 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:33:11 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:   3%|▎         | 8/250 [03:27<1:27:02, 21.58s/it]2025-08-15 09:33:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:33:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:33:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:33:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:   4%|▎         | 9/250 [03:44<1:21:04, 20.18s/it]2025-08-15 09:33:44 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:33:44 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:33:44 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:33:45 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:34:10 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:   4%|▍         | 10/250 [04:28<1:50:10, 27.55s/it]2025-08-15 09:34:28 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:34:28 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:34:28 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:34:28 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:   4%|▍         | 11/250 [04:43<1:33:43, 23.53s/it]2025-08-15 09:34:42 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:34:42 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:34:42 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:34:42 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:35:11 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:   5%|▍         | 12/250 [05:31<2:02:24, 30.86s/it]2025-08-15 09:35:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:35:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:35:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:35:31 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:   5%|▌         | 13/250 [05:49<1:47:02, 27.10s/it]2025-08-15 09:35:48 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:35:48 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:35:48 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:35:48 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:36:10 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:   6%|▌         | 14/250 [06:27<1:59:55, 30.49s/it]2025-08-15 09:36:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:36:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:36:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:36:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:   6%|▌         | 15/250 [06:45<1:44:20, 26.64s/it]2025-08-15 09:36:44 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:36:44 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:36:45 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:36:45 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:37:12 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:   6%|▋         | 16/250 [07:37<2:13:19, 34.19s/it]2025-08-15 09:37:36 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:37:36 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:37:36 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:37:36 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:   7%|▋         | 17/250 [07:51<1:49:21, 28.16s/it]2025-08-15 09:37:50 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:37:50 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:37:50 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:37:51 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:   7%|▋         | 18/250 [08:10<1:38:37, 25.51s/it]2025-08-15 09:38:09 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:38:09 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:38:10 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:38:10 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:   8%|▊         | 19/250 [08:30<1:32:10, 23.94s/it]2025-08-15 09:38:31 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:38:31 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:38:31 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:38:31 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:   8%|▊         | 20/250 [08:52<1:28:59, 23.21s/it]2025-08-15 09:38:51 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:38:51 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:38:51 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:38:53 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:   8%|▊         | 21/250 [09:18<1:31:35, 24.00s/it]2025-08-15 09:39:17 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:39:17 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:39:17 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:39:17 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:   9%|▉         | 22/250 [09:43<1:32:54, 24.45s/it]2025-08-15 09:39:43 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:39:43 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:39:43 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:39:43 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:   9%|▉         | 23/250 [10:00<1:23:43, 22.13s/it]2025-08-15 09:39:59 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:39:59 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:39:59 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:40:00 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:40:19 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  10%|▉         | 24/250 [10:36<1:38:47, 26.23s/it]2025-08-15 09:40:35 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:40:35 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:40:35 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:40:35 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  10%|█         | 25/250 [10:54<1:29:05, 23.76s/it]2025-08-15 09:40:53 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:40:53 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:40:53 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:40:53 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  10%|█         | 26/250 [11:17<1:27:32, 23.45s/it]2025-08-15 09:41:16 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:41:16 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:41:16 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:41:16 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:41:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  11%|█         | 27/250 [11:44<1:32:01, 24.76s/it]2025-08-15 09:41:44 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:41:44 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:41:44 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:41:44 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:41:59 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  11%|█         | 28/250 [12:13<1:36:00, 25.95s/it]2025-08-15 09:42:12 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:42:12 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:42:12 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:42:13 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  12%|█▏        | 29/250 [12:31<1:26:52, 23.59s/it]2025-08-15 09:42:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:42:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:42:31 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:42:31 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  12%|█▏        | 30/250 [12:47<1:17:47, 21.21s/it]2025-08-15 09:42:46 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:42:46 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:42:46 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:42:46 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  12%|█▏        | 31/250 [13:03<1:12:19, 19.82s/it]2025-08-15 09:43:04 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:43:04 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:43:04 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:43:05 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  13%|█▎        | 32/250 [13:20<1:08:34, 18.87s/it]2025-08-15 09:43:19 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:43:19 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:43:20 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:43:21 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:43:42 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  13%|█▎        | 33/250 [13:59<1:30:33, 25.04s/it]2025-08-15 09:44:00 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:44:00 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:44:00 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:44:00 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  14%|█▎        | 34/250 [14:15<1:20:21, 22.32s/it]2025-08-15 09:44:15 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:44:15 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:44:15 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:44:15 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  14%|█▍        | 35/250 [14:32<1:13:34, 20.53s/it]2025-08-15 09:44:31 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:44:31 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:44:32 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:44:32 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  14%|█▍        | 36/250 [14:53<1:13:29, 20.61s/it]2025-08-15 09:44:52 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:44:52 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:44:52 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:44:52 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  15%|█▍        | 37/250 [15:12<1:12:15, 20.35s/it]2025-08-15 09:45:12 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:45:12 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:45:12 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:45:12 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  15%|█▌        | 38/250 [15:30<1:09:25, 19.65s/it]2025-08-15 09:45:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:45:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:45:31 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:45:31 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  16%|█▌        | 39/250 [15:51<1:10:20, 20.00s/it]2025-08-15 09:45:50 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:45:51 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:45:51 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:45:51 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  16%|█▌        | 40/250 [16:10<1:08:57, 19.70s/it]2025-08-15 09:46:09 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:46:10 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:46:10 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:46:10 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  16%|█▋        | 41/250 [16:28<1:06:10, 19.00s/it]2025-08-15 09:46:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:46:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:46:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:46:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  17%|█▋        | 42/250 [16:44<1:03:07, 18.21s/it]2025-08-15 09:46:43 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:46:43 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:46:43 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:46:43 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:46:55 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:46:59 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:47:08 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  17%|█▋        | 43/250 [17:20<1:21:26, 23.61s/it]2025-08-15 09:47:19 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:47:20 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:47:20 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:47:20 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  18%|█▊        | 44/250 [17:36<1:13:24, 21.38s/it]2025-08-15 09:47:36 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:47:36 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:47:36 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:47:37 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:47:51 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  18%|█▊        | 45/250 [18:03<1:18:52, 23.09s/it]2025-08-15 09:48:03 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:48:04 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:48:04 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:48:04 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  18%|█▊        | 46/250 [18:30<1:21:40, 24.02s/it]2025-08-15 09:48:29 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:48:29 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:48:29 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:48:31 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  19%|█▉        | 47/250 [18:53<1:20:46, 23.87s/it]2025-08-15 09:48:52 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:48:52 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:48:53 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:48:53 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  19%|█▉        | 48/250 [19:18<1:20:53, 24.03s/it]2025-08-15 09:49:17 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:49:17 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:49:17 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:49:17 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  20%|█▉        | 49/250 [19:36<1:15:18, 22.48s/it]2025-08-15 09:49:36 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:49:36 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:49:36 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:49:36 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:49:55 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:50:17 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-/home/jiangjp/trace-idea/readers/collators4.py:192: UserWarning: API调用失败超过最大重试次数，返回默认分数
-  warnings.warn(f"API调用失败超过最大重试次数，返回默认分数")
-Evaluation:  20%|██        | 50/250 [20:39<1:55:10, 34.55s/it]2025-08-15 09:50:40 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:50:40 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:50:40 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:50:40 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  20%|██        | 51/250 [20:56<1:37:06, 29.28s/it]2025-08-15 09:50:55 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:50:55 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:50:56 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:50:56 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:51:21 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  21%|██        | 52/250 [21:38<1:48:42, 32.94s/it]2025-08-15 09:51:38 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:51:38 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:51:38 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:51:38 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:51:48 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:52:06 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  21%|██        | 53/250 [22:21<1:58:58, 36.24s/it]2025-08-15 09:52:22 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:52:22 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:52:22 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:52:22 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  22%|██▏       | 54/250 [22:43<1:44:19, 31.94s/it]2025-08-15 09:52:43 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:52:43 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:52:43 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:52:43 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  22%|██▏       | 55/250 [23:00<1:28:48, 27.33s/it]2025-08-15 09:53:00 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:53:00 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:53:00 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:53:00 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  22%|██▏       | 56/250 [23:17<1:18:25, 24.25s/it]2025-08-15 09:53:17 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:53:17 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:53:17 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:53:17 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  23%|██▎       | 57/250 [23:37<1:14:19, 23.10s/it]2025-08-15 09:53:37 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:53:37 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:53:37 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:53:37 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  23%|██▎       | 58/250 [23:53<1:06:35, 20.81s/it]2025-08-15 09:53:52 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:53:52 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:53:52 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:53:54 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  24%|██▎       | 59/250 [24:14<1:06:09, 20.78s/it]2025-08-15 09:54:13 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:54:13 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:54:13 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:54:13 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  24%|██▍       | 60/250 [24:31<1:02:36, 19.77s/it]2025-08-15 09:54:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:54:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:54:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:54:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  24%|██▍       | 61/250 [24:47<58:50, 18.68s/it]  2025-08-15 09:54:46 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:54:46 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:54:47 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:54:47 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  25%|██▍       | 62/250 [25:05<57:53, 18.48s/it]2025-08-15 09:55:04 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:55:05 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:55:05 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:55:05 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  25%|██▌       | 63/250 [25:27<1:00:26, 19.39s/it]2025-08-15 09:55:26 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:55:26 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:55:26 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:55:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  26%|██▌       | 64/250 [25:46<1:00:17, 19.45s/it]2025-08-15 09:55:46 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:55:46 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:55:46 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:55:46 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  26%|██▌       | 65/250 [26:03<57:22, 18.61s/it]  2025-08-15 09:56:02 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:56:02 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:56:02 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:56:02 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  26%|██▋       | 66/250 [26:26<1:00:50, 19.84s/it]2025-08-15 09:56:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:56:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:56:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:56:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:56:43 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  27%|██▋       | 67/250 [27:05<1:18:17, 25.67s/it]2025-08-15 09:57:04 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:57:04 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:57:04 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:57:06 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  27%|██▋       | 68/250 [27:29<1:16:39, 25.27s/it]2025-08-15 09:57:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:57:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:57:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:57:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  28%|██▊       | 69/250 [27:50<1:11:50, 23.82s/it]2025-08-15 09:57:49 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:57:49 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:57:49 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:57:49 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-尝试 1: 分数数量 (10) 不等于上下文数量 (6)
-尝试 2: 分数数量 (12) 不等于上下文数量 (6)
-Friends since college 	 ['brothers']
-Polar explorer 	 ['feats of exploration']
-Supervisor 	 ['supervisor of the royal works']
-Ryan Babel composed the song. 	 ['The song also features rap parts from Darryl, RB Djan and Ryan Babel.']
-Producers 	 ['director']
-Yes 	 ['no']
-Entente powers 	 ['The Allies of World War I']
-Combining the paragraphs with scores, I identify the high-confidence passages as:
-
-* [Credibility Score: 8, 	 ['Swiss made']
-Penguin Books 	 ['Sir William Collins']
-French Navy 	 ['British Army']
-Germany 	 ['German service cartridge']
-1 January 1788 	 ['January 1788']
-Texas 	 ['Washington']
-Vigor 	 ['Honda Ballade']
-1964-1974 	 ['1964 to 1974']
-Bigfoot 	 ['Dewey Lake Monster']
-A Whole New World 	 ['A Star Is Born']
-Bodø/Glimt 	 ['IK Start']
-尝试 1: 分数数量 (14) 不等于上下文数量 (7)
-Charles Rocket 	 ['Dumb and Dumber']
-Columbia 	 ['Columbia, Maryland']
-Hachette Book Group 	 ['BBC']
-Bishop's Stortford F.C. 	 ["Bishop's Stortford"]
-尝试 1: 分数数量 (12) 不等于上下文数量 (6)
-Bette Davis 	 ['Ruth Elizabeth "Bette" Davis']
-Villanelle 	 ['the villanelle poetic form']
-6 	 ['a few minutes']
-Yes 	 ['no']
-Neither 	 ['Greek Fire']
-尝试 1: 分数数量 (14) 不等于上下文数量 (7)
-Togodumnus 	 ['Roman']
-Field Marshal Bernard Montgomery 	 ['Bernard Montgomery']
-Kaunas massacre 	 ['Große Aktion']
-尝试 1: 分数数量 (18) 不等于上下文数量 (9)
-Patter song 	 ['characterised by a moderately fast to very fast tempo']
-Missouri 	 ['Little Dixie']
-Ashland, New Hampshire 	 ['Ashland is home to Scribner-Fellows State Forest']
-Coaxial cable 	 ['coaxial']
-Taylor Swift 	 ['Big Machine Records']
-944 	 ['924']
-Pim Fortuyn 	 ['Wilhelmus Simon Petrus Fortuijn, known as Pim Fortuyn']
-Hawaii 	 ['Hawaii County']
-BAFTA Awards 	 ['BAFTA Awards for Best Actress']
-Chesley Sullenberger 	 ['Chesley Burnett "Sully" Sullenberger III']
-Manley MacDonald 	 ['Dennis Hull, as well as painter Manley MacDonald.']
-Marcus Island 	 ['Wake Atoll']
-University of Montana 	 ['Montana State University.']
-Simultaneous 360-degree rotation 	 ['combination of a loop and a roll']
-Literate, authoritative, transcendent. 	 ['to make pictures that are "literate, authoritative, transcendent"']
-Children's Euthanasia Program 	 ['Euthanasia Program']
-Yes 	 ['no']
-Jerry Bingham 	 ['Gerald "Jerry" Joseph Bingham, Jr.']
-PlayStation 3 and PlayStation 4 	 ['PlayStation 4']
-尝试 1: 分数数量 (14) 不等于上下文数量 (7)
-Zaman Shah Durrani 	 ['Afghanistan']
-Onset and progression of Alzheimer's disease 	 ["due to the onset and progression of Alzheimer's disease"]
-1934 	 ['1945']
-Jean-Jacques Dessalines 	 ['the Haitian Revolution']
-Cyclone Gonu 	 ['1999 Odisha cyclone']
-尝试 1: 分数数量 (8) 不等于上下文数量 (7)
-approximately 1,000 	 ['About 200']
-1450 	 ['1449']
-1847-1980 	 ['from 1847 until 1980']
-Nuptse 	 ['It lies two kilometres WSW of Mount Everest.']
-尝试 1: 分数数量 (8) 不等于上下文数量 (4)
-Timanfaya 	 ['Timanfaya National Park']
-Kingdom of Dalmatia 	 ['held in Kingdom of Dalmatia']
-Stephanie March 	 ['Stephanie Caroline March']
-Austria 	 ['Iranian']
-books, films 	 ['books, films and other media']
-Yes 	 ['no']
-Yes 	 ['no']
-2000 	 ['2009']
-Children's National Medical Center 	 ['MedStar Washington Hospital Center']
-Idina Menzel 	 ['Idina Kim Menzel']
-Mark Helfrich 	 ['Mark August Helfrich']
-Asante Traditional Buildings 	 ['Gulangyu']
-尝试 1: 分数数量 (14) 不等于上下文数量 (7)
-No 	 ['yes']
-Bill Clinton 	 ['President Bill Clinton']
-Ericsson 	 ['Ericsson ("Telefonaktiebolaget L. M. Ericsson")']
-Both Mulled wine and Blue Lagoon are considered primarily non-alcoholic. 	 ['alcoholic']
-Sebastian Shaw 	 ['Sebastian Lewis Shaw']
-Yes 	 ['no']
-1942 	 ['1934']
-Democratic Unionist Party 	 ['Northern Ireland Assembly for Fermanagh and South Tyrone']
-5,112 	 ['5,112 feet']
-New York City, New York, USA 	 ['Bury, Greater Manchester, England']
-Shirley Manson 	 ['Shirley Ann Manson']
-Sam Raimi 	 ['Ivan Raimi']
-Cercis 	 ['Monstera']
-Over 100 million 	 ['100 million']
-Woody Allen 	 ['Heywood "Woody" Allen']
-Bulldog 	 ['The Bears']
-Hotchkiss M1914 	 ['Mle 1914 Hotchkiss machine gun']
-1999 	 ['(foaled February 1, 1999)']
-Newton's Precedence 	 ['Apple Lisa']
-1959 	 ['1952']
-Qualcomm Stadium 	 ['Qualcomm']
-Laurence Fishburne 	 ['Andy García']
-Tufts University 	 ['Tufts College']
-Gunpowder 	 ['Anvil firing']
-14,674 	 ['143,372']
-Lewis and Clark 	 ['Corps of Discovery']
-Gabriel García Márquez 	 ['Gabriel José de la Concordia García Márquez']
-Tillakaratne Dilshan 	 ['Sri Lanka national cricket team']
-尝试 1: 分数数量 (10) 不等于上下文数量 (5)
-尝试 1: 分数数量 (10) 不等于上下文数量 (5)
-尝试 2: 分数数量 (10) 不等于上下文数量 (5)
-American 	 ['no']
-Adrian McLaren 	 ['Adrian Peter McLaren']
-The Battle of Manila. 	 ['The Seven Days Battles']
-Thanks for the assistance! Based on the given information, I'll synthesize the answer.
-
-From the high-confidence passages (C 	 ['for their assistance after the 1917 Halifax Explosion']
-Aerolíneas Argentinas 	 ['Austral Líneas Aéreas']
-Danielle Steel 	 ['Danielle Fernandes Dominique Schuelein-Steel']
-尝试 1: 分数数量 (10) 不等于上下文数量 (5)
-Augustus 	 ['Caligula']
-Two Episodes of Mash 	 ['the deadpan sketch group']
-Eminem 	 ['Sleepy Brown']
-Shock Resistance 	 ['water resistance']
-1996 	 ['The 1996 PGA Championship']
-Norse mythology content tales of various deities, beings, and heroes. 	 ['various deities, beings, and heroes']
-Warner Bros. Records 	 ['Warner Bros']
-He flew to Scotland without authorization. 	 ["report Hess's illegal May 1941 flight to Scotland"]
-Bourbon 	 ['Bourbon County']
-Polly Draper 	 ['Timothy Simon "Tim" Roth']
-尝试 1: 分数数量 (12) 不等于上下文数量 (6)
-尝试 2: 分数数量 (12) 不等于上下文数量 (6)
-尝试 3: 分数数量 (12) 不等于上下文数量 (6)
-The Masters Tournament 	 ['2015 FedEx Cup']
-How to Train Your Dragon: Riders of Berk 	 ['Dragons: Riders of Berk']
-Palm Springs International Airport 	 ['Trenton–Mercer Airport']
-U.S. military, military, paramilitary, and police forces around the world 	 ['U.S.']
-New York 	 ['New Jersey']
-尝试 1: 分数数量 (16) 不等于上下文数量 (8)
-119 	 ['119 minutes']
-20 	 ['ten']
-Horror 	 ['horror film']
-尝试 1: 分数数量 (5) 不等于上下文数量 (6)
-尝试 2: 分数数量 (10) 不等于上下文数量 (6)
-Matildas 	 ["Australian women's national soccer team"]
-Moscow 	 ['largest country']
-UHF channel 3 	 ['44']
-Europe 	 ['Lithuania']
-Robin 	 ['Robin Gibb']
-Corey Dillon 	 ['Curtis James Martin Jr.']
-Trans-Pacific 	 ['trans-Pacific flight']
-Rothmannia 	 ['Morning glory']
-Kona 	 ['Kona coast']
-Prince Alfred 	 ['Prince Leopold']
-New York City 	 ['New York City, New York']
-Bulgarian-Canadian 	 ['Velichko Todorov Tsochev) is a Bulgarian-Canadian']
-Tom Ince 	 ['Thomas Christopher Ince']
-Lichfield Cathedral's diocese coverage. 	 ['defence of the Cathedral']
-1806 	 ['1837']
-Las Vegas Raiders share its stadium with UNLV Rebels. 	 ['University of Nevada, Las Vegas']
-T-6 Texan 	 ['North American Aviation T-6 Texan']
-point-coloration 	 ['Point coloration']
-Woody Allen 	 ['John Candy']
-Abigail Adams 	 ['Abigail']
-Seattle 	 ['Issaquah']
-John 	 ['Lester']
-Susan Estrich and Hillary Rodham 	 ['"There Is Only the Fight . . . : An Analysis of the Alinsky Model."']
-Patagonia 	 ['sub-Saharan Africa']
-Miles Davis 	 ['Miles Dewey Davis III']
-Mohamed Sanu 	 ['Mohamed Sanu Sr.']
-Benito Mussolini and Clara Petacci 	 ['Clara Petacci']
-尝试 1: 分数数量 (9) 不等于上下文数量 (8)
-cards 	 ['dice, cards, and boards']
-"How I Raised, Folded, Bluffed, Flirted, Cursed, and Won Millions at the World Series of 	 ['"How I Raised, Folded, Bluffed, Flirted, Cursed, and Won Millions at the World Series of Poker"']
-Floral arrangement. 	 ['genus']
-Australian 	 ['New Zealand citizen']
-Representative 	 ['for crafting and voting on legislation']
-Midfielder 	 ['centre-back']
-Prudential Center in Newark, New Jersey 	 ['Prudential Center']
-2025-08-15 09:58:05 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  28%|██▊       | 70/250 [28:21<1:18:11, 26.06s/it]2025-08-15 09:58:22 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:58:22 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:58:22 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:58:22 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:58:48 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  28%|██▊       | 71/250 [29:06<1:34:50, 31.79s/it]2025-08-15 09:59:05 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:59:06 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:59:06 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:59:06 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:59:26 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 09:59:47 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  29%|██▉       | 72/250 [30:05<1:58:35, 39.97s/it]2025-08-15 10:00:06 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:00:06 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:00:06 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:00:07 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  29%|██▉       | 73/250 [30:30<1:44:49, 35.53s/it]2025-08-15 10:00:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:00:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:00:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:00:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  30%|██▉       | 74/250 [30:51<1:31:23, 31.16s/it]2025-08-15 10:00:51 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:00:51 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:00:51 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:00:51 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  30%|███       | 75/250 [31:09<1:18:48, 27.02s/it]2025-08-15 10:01:08 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:01:08 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:01:08 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:01:08 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  30%|███       | 76/250 [31:26<1:09:54, 24.11s/it]2025-08-15 10:01:25 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:01:25 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:01:25 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:01:25 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:01:45 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  31%|███       | 77/250 [32:01<1:18:48, 27.33s/it]2025-08-15 10:02:01 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:02:01 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:02:01 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:02:01 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  31%|███       | 78/250 [32:20<1:11:41, 25.01s/it]2025-08-15 10:02:20 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:02:20 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:02:20 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:02:20 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  32%|███▏      | 79/250 [32:34<1:01:12, 21.48s/it]2025-08-15 10:02:33 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:02:33 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:02:33 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:02:33 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  32%|███▏      | 80/250 [32:53<59:01, 20.83s/it]  2025-08-15 10:02:52 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:02:52 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:02:52 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:02:53 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  32%|███▏      | 81/250 [33:11<56:22, 20.01s/it]2025-08-15 10:03:10 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:03:10 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:03:11 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:03:11 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  33%|███▎      | 82/250 [33:32<56:34, 20.20s/it]2025-08-15 10:03:31 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:03:31 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:03:31 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:03:31 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  33%|███▎      | 83/250 [33:52<56:23, 20.26s/it]2025-08-15 10:03:51 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:03:51 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:03:52 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:03:52 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  34%|███▎      | 84/250 [34:10<54:03, 19.54s/it]2025-08-15 10:04:09 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:04:10 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:04:10 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:04:11 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:04:29 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  34%|███▍      | 85/250 [34:47<1:08:19, 24.85s/it]2025-08-15 10:04:49 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:04:49 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:04:49 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:04:52 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  34%|███▍      | 86/250 [35:07<1:03:48, 23.34s/it]2025-08-15 10:05:07 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:05:07 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:05:07 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:05:07 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:05:23 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:05:26 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  35%|███▍      | 87/250 [35:39<1:10:30, 25.95s/it]2025-08-15 10:05:39 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:05:39 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:05:39 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:05:39 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  35%|███▌      | 88/250 [36:06<1:10:37, 26.16s/it]2025-08-15 10:06:06 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:06:06 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:06:06 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:06:07 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  36%|███▌      | 89/250 [36:25<1:04:47, 24.15s/it]2025-08-15 10:06:25 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:06:25 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:06:25 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:06:26 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  36%|███▌      | 90/250 [36:45<1:00:57, 22.86s/it]2025-08-15 10:06:44 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:06:44 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:06:44 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:06:45 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  36%|███▋      | 91/250 [37:01<54:53, 20.72s/it]  2025-08-15 10:07:03 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:07:03 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:07:03 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:07:03 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  37%|███▋      | 92/250 [37:23<55:33, 21.10s/it]2025-08-15 10:07:22 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:07:22 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:07:22 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:07:23 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  37%|███▋      | 93/250 [37:42<53:21, 20.39s/it]2025-08-15 10:07:42 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:07:42 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:07:42 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:07:42 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  38%|███▊      | 94/250 [37:56<48:28, 18.64s/it]2025-08-15 10:07:56 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:07:56 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:07:56 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:07:56 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  38%|███▊      | 95/250 [38:19<51:10, 19.81s/it]2025-08-15 10:08:19 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:08:19 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:08:19 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:08:19 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  38%|███▊      | 96/250 [38:36<49:17, 19.21s/it]2025-08-15 10:08:36 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:08:36 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:08:36 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:08:36 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  39%|███▉      | 97/250 [38:50<44:50, 17.58s/it]2025-08-15 10:08:49 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:08:50 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:08:50 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:08:50 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  39%|███▉      | 98/250 [39:10<46:25, 18.32s/it]2025-08-15 10:09:10 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:09:10 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:09:10 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:09:10 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  40%|███▉      | 99/250 [39:24<42:20, 16.82s/it]2025-08-15 10:09:23 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:09:24 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:09:24 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:09:24 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:09:52 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  40%|████      | 100/250 [40:14<1:07:04, 26.83s/it]2025-08-15 10:10:13 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:10:13 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:10:13 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:10:13 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  40%|████      | 101/250 [40:33<1:01:11, 24.64s/it]2025-08-15 10:10:33 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:10:34 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:10:34 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:10:34 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:10:47 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:11:02 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  41%|████      | 102/250 [41:19<1:16:06, 30.85s/it]2025-08-15 10:11:19 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:11:19 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:11:19 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:11:19 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  41%|████      | 103/250 [41:40<1:08:37, 28.01s/it]2025-08-15 10:11:39 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:11:39 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:11:39 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:11:40 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:11:54 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:12:13 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  42%|████▏     | 104/250 [42:30<1:24:32, 34.74s/it]2025-08-15 10:12:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:12:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:12:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:12:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  42%|████▏     | 105/250 [42:47<1:10:38, 29.23s/it]2025-08-15 10:12:46 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:12:46 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:12:46 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:12:46 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  42%|████▏     | 106/250 [43:06<1:02:40, 26.12s/it]2025-08-15 10:13:06 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:13:06 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:13:06 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:13:07 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  43%|████▎     | 107/250 [43:28<59:31, 24.97s/it]  2025-08-15 10:13:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:13:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:13:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:13:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  43%|████▎     | 108/250 [43:47<54:39, 23.10s/it]2025-08-15 10:13:46 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:13:46 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:13:46 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:13:46 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  44%|████▎     | 109/250 [44:09<53:47, 22.89s/it]2025-08-15 10:14:08 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:14:08 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:14:08 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:14:13 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  44%|████▍     | 110/250 [44:32<53:32, 22.94s/it]2025-08-15 10:14:31 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:14:32 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:14:32 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:14:32 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  44%|████▍     | 111/250 [44:52<50:41, 21.88s/it]2025-08-15 10:14:51 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:14:51 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:14:51 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:14:51 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  45%|████▍     | 112/250 [45:10<47:53, 20.82s/it]2025-08-15 10:15:09 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:15:09 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:15:09 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:15:10 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  45%|████▌     | 113/250 [45:31<47:47, 20.93s/it]2025-08-15 10:15:31 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:15:31 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:15:31 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:15:31 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  46%|████▌     | 114/250 [45:54<49:00, 21.62s/it]2025-08-15 10:15:54 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:15:54 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:15:54 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:15:54 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  46%|████▌     | 115/250 [46:17<49:03, 21.80s/it]2025-08-15 10:16:16 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:16:16 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:16:16 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:16:18 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:16:29 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:16:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:16:37 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  46%|████▋     | 116/250 [46:52<57:51, 25.90s/it]2025-08-15 10:16:51 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:16:53 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:16:53 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:16:53 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  47%|████▋     | 117/250 [47:10<52:23, 23.64s/it]2025-08-15 10:17:10 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:17:10 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:17:10 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:17:10 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  47%|████▋     | 118/250 [47:31<49:54, 22.69s/it]2025-08-15 10:17:31 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:17:31 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:17:31 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:17:31 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  48%|████▊     | 119/250 [47:53<49:15, 22.56s/it]2025-08-15 10:17:52 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:17:53 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:17:53 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:17:53 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  48%|████▊     | 120/250 [48:10<44:56, 20.74s/it]2025-08-15 10:18:11 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:18:11 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:18:11 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:18:11 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  48%|████▊     | 121/250 [48:29<43:39, 20.31s/it]2025-08-15 10:18:28 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:18:28 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:18:28 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:18:29 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  49%|████▉     | 122/250 [48:49<42:55, 20.12s/it]2025-08-15 10:18:48 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:18:48 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:18:48 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:18:51 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  49%|████▉     | 123/250 [49:10<43:29, 20.55s/it]2025-08-15 10:19:09 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:19:10 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:19:10 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:19:10 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  50%|████▉     | 124/250 [49:28<41:20, 19.69s/it]2025-08-15 10:19:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:19:28 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:19:28 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:19:28 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  50%|█████     | 125/250 [49:51<43:01, 20.65s/it]2025-08-15 10:19:54 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:19:54 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:19:54 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:19:54 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  50%|█████     | 126/250 [50:17<45:59, 22.26s/it]2025-08-15 10:20:16 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:20:16 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:20:19 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:20:21 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  51%|█████     | 127/250 [50:43<48:06, 23.47s/it]2025-08-15 10:20:44 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:20:45 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:20:47 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:20:47 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  51%|█████     | 128/250 [51:05<46:37, 22.93s/it]2025-08-15 10:21:04 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:21:04 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:21:04 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:21:05 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  52%|█████▏    | 129/250 [51:22<42:55, 21.28s/it]2025-08-15 10:21:21 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:21:22 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:21:22 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:21:22 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  52%|█████▏    | 130/250 [51:40<40:17, 20.14s/it]2025-08-15 10:21:39 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:21:39 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:21:39 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:21:40 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  52%|█████▏    | 131/250 [51:56<37:40, 19.00s/it]2025-08-15 10:21:55 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:21:55 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:21:55 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:21:55 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:22:06 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  53%|█████▎    | 132/250 [52:22<41:15, 20.98s/it]2025-08-15 10:22:21 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:22:21 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:22:21 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:22:21 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  53%|█████▎    | 133/250 [52:37<37:32, 19.25s/it]2025-08-15 10:22:36 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:22:36 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:22:36 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:22:36 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  54%|█████▎    | 134/250 [52:55<36:19, 18.79s/it]2025-08-15 10:22:54 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:22:54 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:22:54 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:22:55 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  54%|█████▍    | 135/250 [53:16<37:16, 19.45s/it]2025-08-15 10:23:17 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:23:17 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:23:17 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:23:17 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  54%|█████▍    | 136/250 [53:33<35:57, 18.93s/it]2025-08-15 10:23:33 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:23:33 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:23:33 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:23:34 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:23:41 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  55%|█████▍    | 137/250 [53:53<36:01, 19.13s/it]2025-08-15 10:23:52 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:23:52 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:23:52 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:23:52 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  55%|█████▌    | 138/250 [54:09<34:10, 18.31s/it]2025-08-15 10:24:10 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:24:10 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:24:10 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:24:10 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:24:31 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:24:50 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  56%|█████▌    | 139/250 [55:09<56:42, 30.66s/it]2025-08-15 10:25:08 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:25:08 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:25:08 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:25:08 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  56%|█████▌    | 140/250 [55:25<48:19, 26.36s/it]2025-08-15 10:25:24 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:25:26 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:25:26 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:25:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  56%|█████▋    | 141/250 [55:45<44:30, 24.50s/it]2025-08-15 10:25:45 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:25:46 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:25:46 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:25:46 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  57%|█████▋    | 142/250 [56:01<39:36, 22.00s/it]2025-08-15 10:26:01 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:26:01 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:26:01 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:26:01 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  57%|█████▋    | 143/250 [56:20<37:31, 21.04s/it]2025-08-15 10:26:19 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:26:19 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:26:20 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:26:21 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-尝试 1: 分数数量 (10) 不等于上下文数量 (5)
-French 	 ['German']
-Robert Smigel 	 ['Robert Smigel, Michael Koman and David Feldman']
-Several other artists 	 ['People! and The Carnabeats']
-Suburbs 	 ['city']
-尝试 1: 分数数量 (14) 不等于上下文数量 (7)
-Magazines 	 ['magazine']
-Roger Staubach 	 ['Roger Thomas Staubach (born February 5, 1942)']
-尝试 1: 分数数量 (14) 不等于上下文数量 (7)
-尝试 2: 分数数量 (14) 不等于上下文数量 (7)
-Hark! The Herald Angels Sing 	 ['The Andy Williams Christmas Album']
-Logar 	 ['Puli Alam']
-True Williams 	 ['Truman W. "True" Williams']
-Ohio 	 ['Mahoning County']
-The Krypto Report 	 ['The Daily Stormer']
-Anaïs Lameche 	 ['Darren Stanley Hayes']
-South Africa 	 ['James Searle Dawley']
-Pat McCarran 	 ['U.S. Senator Pat McCarran']
-Yes 	 ['no']
-400 	 ['400 members']
-Yes 	 ['no']
-尝试 1: 分数数量 (12) 不等于上下文数量 (6)
-George Atzerodt 	 ['Andrew Johnson']
-Gardnerville, Nevada 	 ['Gardnerville']
-Golden Globe 	 ['Golden Globe for Best Supporting Actress']
-Lucrezia Borgia 	 ['Mosè in Egitto']
-La Liga 	 ['Premier League']
-Charles Darwin 	 ['Robert FitzRoy']
-Vættir 	 ['Idisi']
-Dolly Parton 	 ['Steve Martin']
-Pacific 	 ['the Atlantic Ocean']
-Jimi Hendrix 	 ['Kristoffer Rygg']
-The Beatles 	 ['Badfinger']
-Golden Calf for Best Actor 	 ['Best Actor in 2013']
-Hampton Bays 	 ['Town of Islip']
-Kentucky Wildcats 	 ["The 1997–98 Kentucky Wildcats men's basketball team"]
-University of Georgia 	 ['Louisiana Tech']
-Singer, songwriter 	 ['singer and songwriter']
-New York-based 	 ['the world']
-尝试 1: 分数数量 (12) 不等于上下文数量 (6)
-Yes 	 ['no']
-Ashley Cole 	 ['Los Angeles Galaxy']
-Sergio Ramos 	 ['Real Madrid and the Spain national team']
-John Murray 	 ['Fred Willard']
-尝试 1: 分数数量 (12) 不等于上下文数量 (6)
-尝试 1: 分数数量 (12) 不等于上下文数量 (6)
-Middlesbrough F.C. 	 ['Middlesbrough']
-Provides booking and ticketing capabilities for a wider range of international airlines. 	 ['Computer reservations']
-Tyronn Lue 	 ['Cleveland Cavaliers']
-December 1, 2018 	 ['September 25, 2017']
-Historic house museum 	 ['museum']
-Despicable Me 	 ['Ghostbusters Spooktacular']
-Tiffany & Co. 	 ["Tiffany's"]
-Record-Breaking Scorer 	 ['shortest player ever to play in the National Basketball Association']
-Oklahoma 	 ['the U.S. state of Kansas']
-Gus Van Sant 	 ['American film "Elephant" by Gus Van Sant']
-CBS 	 ['ABC']
-Daughter 	 ['his daughter']
-The Boot 	 ['"lo Stivale" (the Boot)']
-Los Angeles 	 ['Los Angeles, California']
-Robert Frost's former home in Franconia, New Hampshire, United States 	 ['Franconia, New Hampshire']
-August 11, 1947 	 ['August 11, 1946']
-The Old Ones are more powerful than the mightiest Gods in Palladium. 	 ['mightiest Gods in Palladium']
-Jai McDowall 	 ['U2']
-Landsman Kill 	 ['a body of water']
-Florence Nightingale 	 ['Sister Anthony, S.C.']
-Buzzcocks 	 ['in Bolton']
-Yes 	 ['no']
-Cuban-American Major League Clubs Series 	 ['1909 Cuban-American Major League Clubs Series']
-Benoît Jutras 	 ['Franco Dragone']
-Yes 	 ['no']
-MCA Nashville 	 ['Dolly Records']
-Yes 	 ['no']
-尝试 1: 分数数量 (14) 不等于上下文数量 (7)
-Calgary 	 ['Hanna']
-No 	 ['yes']
-Lincolnshire 	 ['North Kesteven, Lincolnshire, England']
-Yoga 	 ['model and yoga teacher']
-尝试 1: 分数数量 (10) 不等于上下文数量 (5)
-尝试 2: 分数数量 (10) 不等于上下文数量 (5)
-Rockingham 	 ['Merrimack']
-Yes 	 ['no']
-Barry Humphries 	 ['My Gorgeous Life']
-c. 1430 	 ['1430']
-Electronic gaming machines, table games, iGaming and iLottery products, instant lottery games, lottery gaming systems, terminals 	 ['paper-based']
-Wilton Mall 	 ['Viaport Rotterdam']
-尝试 1: 分数数量 (10) 不等于上下文数量 (5)
-尝试 2: 分数数量 (10) 不等于上下文数量 (5)
-Ribosome 	 ['Ribosomes']
-Hector Berlioz 	 ['Louis-Hector Berlioz']
-Czech 	 ['Czech (Bohemian) and German (Franconian)']
-Roman Republic 	 ['Roman Empire']
-One of the youngest publicly documented people to be identified as transgender. 	 ['youngest person to become a national transgender figure']
-Kim Wilson 	 ['Chino Moreno']
-South African 	 ['South African-born']
-bands 	 ['heavy metal band']
-bioelectricity 	 ['bioelectromagnetics']
-Four 	 ['one of the four founding members']
-Thorny shrubs and trees 	 ['genus']
-The play All's Well That Ends Well was written by William Shakespeare. 	 ["All's Well That Ends Well"]
-Brotherly Leader 	 ['"Brotherly Leader" of the Great Socialist People\'s Libyan Arab Jamahiriya']
-Seoul, South Korea 	 ['South Korea']
-Abul ʿAla Al-Maʿarri 	 ['poet, and writer']
-Step Up (2006), 27 Dresses (2008) 	 ['dancer, actress, choreographer']
-Baseball Digest 	 ['Adventist World']
-Bucky Pizzarelli 	 ['Ted Nugent']
-Submarine Voyage 	 ['Autopia']
-30 	 ['29']
-CD Castellón 	 ['Club Deportivo Castellón']
-尝试 1: 分数数量 (0) 不等于上下文数量 (6)
-尝试 1: 分数数量 (7) 不等于上下文数量 (6)
-尝试 1: 分数数量 (12) 不等于上下文数量 (6)
-Yes 	 ['no']
-1914 	 ['1736']
-Germany 	 ['Dutch']
-Celtic F.C. 	 ['Scottish Premiership club Hibernian']
-Bob Iger 	 ['Robert A. Iger']
-No information provided about train frequency. 	 ['24 hours a day and 7 days a week']
-Atlanta 	 ['Philadelphia']
-composer 	 ['Italian composer']
-Ready to Die 	 ['September 13, 1994']
-Volcano 	 ['"Now and Then" (1995)']
-Topeka 	 ['near Philip Billard Municipal Airport']
-Over 1 million acres 	 ['over 1 million']
-I synthesized the answer from the high-confidence evidence. 
-
-Answer: Not mentioned. 	 ['fashion model']
-Berlin TV Tower 	 ['Stern-Plaza']
-Le Mans 24 Hours 	 ['Formula One']
-Rock band 	 ['band']
-January 	 ['December 1993']
-Pakistan 	 ['Dubai']
-Fiat S.p.A. 	 ['Fabbrica Italiana Automobili Torino']
-Royce da 5'9" and Eminem 	 ['Royce da 5\'9" (Bad) and Eminem (Evil)']
-Neon City 	 ['Anno 2053']
-EFL 	 ['Vanarama']
-League Two 	 ['second']
-Melbourne 	 ['Melbourne, Australia']
-The Omega Man (1971) 	 ['The Omega Man']
-Ramsey 	 ['Hennepin County']
-Al Capone 	 ['Alphonse Gabriel Capone']
-Vitellius 	 ['second']
-Notoriety 	 ['Ramsey has also worked with other well-known artists']
-Robert Palmer 	 ['Maxim "Max" Bemis']
-entire stretch 	 ["The highway's eastern terminus"]
-Terry Kath 	 ['David Michael Draiman']
-None 	 ['Strange Synergy']
-Deborah Joy Winans, Detroit, Michigan 	 ['Detroit, Michigan']
-Mercury Records 	 ['Blackheart Records']
-Principal 	 ["schoolmaster at J. L. Young's Adelaide Educational Institution and at Saint Peter's College."]
-Workers' self-management 	 ['self-directed work processes']
-Thomas Friedman 	 ['Thomas Loren Friedman']
-Jerry Glanville 	 ['Keith Bostic']
-尝试 1: 分数数量 (0) 不等于上下文数量 (6)
-Sekou Cissé 	 ["Feyenoord's Sekou Cissé, WS Woluwe's Bassilia Sakanoko, UTA Arad's Leoh Digbeu"]
-Phil Rosen 	 ['Delmer Lawrence Daves']
-1971 	 ['2013']
-Tenerife 	 ['Macaronesia']
-Jacking 	 ['the jack']
-Sandusky 	 ['Port Clinton']
-General Allenby's 	 ['Field Marshal Edmund Henry Hynman Allenby']
-Shirley Temple 	 ['Shirley Temple Black']
-278th 	 ['278th episode']
-Ernest Hemingway 	 ['Death in the Afternoon']
-尝试 1: 分数数量 (6) 不等于上下文数量 (3)
-Yes 	 ['no']
-1,500 	 ['1,925 yards']
-Psych 	 ['Psych is an American detective comedy-drama']
-personal earnings, business income, capital gains 	 ['"personal earnings" (such as salary and wages), "business income" and "capital gains"']
-Grizzly River Revival 	 ['Nashville Tribute Band']
-尝试 1: 分数数量 (14) 不等于上下文数量 (7)
-尝试 2: 分数数量 (14) 不等于上下文数量 (7)
-Sam Neill 	 ['Nigel John Dermot Neill']
-3,677 	 ['3,677 seated']
-Council of Elders 	 ['the Council of Forty-four']
-None 	 ['Joseph Leo Mankiewicz']
-World War II 	 ['the Slavic women accompanying their husbands in the First Balkan War.']
-Romantic period 	 ['end of the 18th century']
-Ulan Hot 	 ['Ulanhot']
-Mastered 	 ['mastered recordings']
-Yes 	 ['no']
-Economic Cooperation Organization 	 ['Economic Cooperation Organisation']
-The Operation M.D. 	 ['Del Amitri']
-17 December 1926 	 ['7 June 1926 to 17 December 1926']
-Yes 	 ['no']
-Nina 	 ['third studio album, "Nina"']
-1200 	 ['4080']
-Political hip hop 	 Evaluation:  58%|█████▊    | 144/250 [56:42<37:28, 21.22s/it]2025-08-15 10:26:41 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:26:41 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:26:44 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:26:44 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  58%|█████▊    | 145/250 [57:00<35:19, 20.19s/it]2025-08-15 10:26:59 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:26:59 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:26:59 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:26:59 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  58%|█████▊    | 146/250 [57:17<33:25, 19.28s/it]2025-08-15 10:27:16 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:27:16 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:27:16 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:27:16 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  59%|█████▉    | 147/250 [57:36<33:17, 19.39s/it]2025-08-15 10:27:36 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:27:36 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:27:36 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:27:36 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  59%|█████▉    | 148/250 [57:50<30:06, 17.71s/it]2025-08-15 10:27:50 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:27:50 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:27:50 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:27:50 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  60%|█████▉    | 149/250 [58:08<29:55, 17.77s/it]2025-08-15 10:28:07 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:28:07 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:28:08 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:28:08 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  60%|██████    | 150/250 [58:25<29:01, 17.41s/it]2025-08-15 10:28:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:28:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:28:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:28:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:28:43 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  60%|██████    | 151/250 [58:56<35:34, 21.56s/it]2025-08-15 10:28:55 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:28:55 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:28:55 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:28:55 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  61%|██████    | 152/250 [59:18<35:23, 21.67s/it]2025-08-15 10:29:19 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:29:19 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:29:19 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:29:19 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  61%|██████    | 153/250 [59:41<35:36, 22.03s/it]2025-08-15 10:29:40 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:29:40 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:29:40 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:29:40 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  62%|██████▏   | 154/250 [1:00:03<35:20, 22.09s/it]2025-08-15 10:30:04 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:30:04 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:30:04 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:30:04 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  62%|██████▏   | 155/250 [1:00:23<33:52, 21.39s/it]2025-08-15 10:30:23 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:30:23 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:30:23 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:30:23 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  62%|██████▏   | 156/250 [1:00:43<33:06, 21.14s/it]2025-08-15 10:30:43 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:30:43 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:30:43 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:30:43 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  63%|██████▎   | 157/250 [1:00:58<29:52, 19.28s/it]2025-08-15 10:30:57 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:30:57 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:30:57 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:30:57 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:31:15 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  63%|██████▎   | 158/250 [1:01:30<35:13, 22.97s/it]2025-08-15 10:31:29 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:31:29 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:31:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:31:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  64%|██████▎   | 159/250 [1:01:46<31:54, 21.04s/it]2025-08-15 10:31:46 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:31:46 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:31:47 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:31:48 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  64%|██████▍   | 160/250 [1:02:10<32:40, 21.78s/it]2025-08-15 10:32:11 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:32:12 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:32:12 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:32:12 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  64%|██████▍   | 161/250 [1:02:30<31:32, 21.26s/it]2025-08-15 10:32:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:32:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:32:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:32:31 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:32:49 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:33:05 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  65%|██████▍   | 162/250 [1:03:19<43:18, 29.53s/it]2025-08-15 10:33:18 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:33:18 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:33:18 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:33:18 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  65%|██████▌   | 163/250 [1:03:37<37:46, 26.05s/it]2025-08-15 10:33:36 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:33:36 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:33:36 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:33:37 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:33:54 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  66%|██████▌   | 164/250 [1:04:07<39:07, 27.30s/it]2025-08-15 10:34:06 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:34:06 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:34:06 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:34:06 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:34:18 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  66%|██████▌   | 165/250 [1:04:29<36:29, 25.76s/it]2025-08-15 10:34:28 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:34:28 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:34:28 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:34:29 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  66%|██████▋   | 166/250 [1:04:43<31:13, 22.30s/it]2025-08-15 10:34:44 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:34:44 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:34:44 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:34:46 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:35:07 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  67%|██████▋   | 167/250 [1:05:29<40:26, 29.24s/it]2025-08-15 10:35:28 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:35:28 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:35:28 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:35:29 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  67%|██████▋   | 168/250 [1:05:46<34:56, 25.57s/it]2025-08-15 10:35:45 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:35:46 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:35:46 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:35:46 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  68%|██████▊   | 169/250 [1:06:02<30:36, 22.68s/it]2025-08-15 10:36:01 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:36:01 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:36:01 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:36:01 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:36:17 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:36:35 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  68%|██████▊   | 170/250 [1:06:51<40:52, 30.65s/it]2025-08-15 10:36:52 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:36:52 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:36:52 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:36:52 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  68%|██████▊   | 171/250 [1:07:10<35:49, 27.22s/it]2025-08-15 10:37:09 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:37:09 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:37:09 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:37:10 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  69%|██████▉   | 172/250 [1:07:24<30:06, 23.16s/it]2025-08-15 10:37:23 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:37:24 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:37:24 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:37:24 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  69%|██████▉   | 173/250 [1:07:43<28:19, 22.08s/it]2025-08-15 10:37:43 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:37:43 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:37:43 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:37:43 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  70%|██████▉   | 174/250 [1:08:05<27:39, 21.83s/it]2025-08-15 10:38:04 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:38:04 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:38:04 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:38:04 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  70%|███████   | 175/250 [1:08:27<27:35, 22.08s/it]2025-08-15 10:38:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:38:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:38:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:38:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  70%|███████   | 176/250 [1:08:49<26:58, 21.87s/it]2025-08-15 10:38:49 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:38:49 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:38:49 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:38:49 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  71%|███████   | 177/250 [1:09:05<24:36, 20.23s/it]2025-08-15 10:39:04 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:39:04 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:39:04 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:39:04 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:39:22 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:39:37 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  71%|███████   | 178/250 [1:09:56<35:13, 29.36s/it]2025-08-15 10:39:55 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:39:55 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:39:55 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:39:55 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  72%|███████▏  | 179/250 [1:10:17<31:46, 26.85s/it]2025-08-15 10:40:17 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:40:18 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:40:18 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:40:18 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  72%|███████▏  | 180/250 [1:10:35<28:19, 24.28s/it]2025-08-15 10:40:34 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:40:34 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:40:34 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:40:34 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  72%|███████▏  | 181/250 [1:10:58<27:26, 23.86s/it]2025-08-15 10:40:57 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:40:57 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:40:57 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:40:57 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  73%|███████▎  | 182/250 [1:11:14<24:34, 21.69s/it]2025-08-15 10:41:14 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:41:14 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:41:14 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:41:15 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  73%|███████▎  | 183/250 [1:11:33<23:07, 20.71s/it]2025-08-15 10:41:32 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:41:32 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:41:32 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:41:33 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  74%|███████▎  | 184/250 [1:11:50<21:29, 19.54s/it]2025-08-15 10:41:49 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:41:49 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:41:49 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:41:50 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  74%|███████▍  | 185/250 [1:12:05<19:39, 18.15s/it]2025-08-15 10:42:04 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:42:04 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:42:04 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:42:04 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:42:15 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:42:34 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  74%|███████▍  | 186/250 [1:12:51<28:17, 26.53s/it]2025-08-15 10:42:50 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:42:50 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:42:50 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:42:51 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  75%|███████▍  | 187/250 [1:13:11<25:46, 24.55s/it]2025-08-15 10:43:10 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:43:10 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:43:10 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:43:10 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:43:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  75%|███████▌  | 188/250 [1:13:43<27:48, 26.90s/it]2025-08-15 10:43:42 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:43:42 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:43:42 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:43:44 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:43:58 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  76%|███████▌  | 189/250 [1:14:18<29:54, 29.42s/it]2025-08-15 10:44:20 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:44:20 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:44:20 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:44:20 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  76%|███████▌  | 190/250 [1:14:38<26:37, 26.62s/it]2025-08-15 10:44:38 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:44:38 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:44:38 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:44:38 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  76%|███████▋  | 191/250 [1:14:58<24:11, 24.61s/it]2025-08-15 10:45:01 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:45:01 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:45:01 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:45:01 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  77%|███████▋  | 192/250 [1:15:18<22:15, 23.02s/it]2025-08-15 10:45:18 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:45:18 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:45:18 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:45:18 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:45:35 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  77%|███████▋  | 193/250 [1:15:49<24:18, 25.58s/it]2025-08-15 10:45:48 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:45:49 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:45:49 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:45:50 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:46:05 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:46:20 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  78%|███████▊  | 194/250 [1:16:39<30:38, 32.83s/it]2025-08-15 10:46:38 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:46:38 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:46:38 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:46:39 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  78%|███████▊  | 195/250 [1:16:59<26:34, 29.00s/it]2025-08-15 10:46:59 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:47:00 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:47:00 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:47:01 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  78%|███████▊  | 196/250 [1:17:26<25:34, 28.41s/it]2025-08-15 10:47:26 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:47:26 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:47:26 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:47:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  79%|███████▉  | 197/250 [1:17:46<22:46, 25.79s/it]2025-08-15 10:47:45 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:47:45 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:47:46 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:47:47 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  79%|███████▉  | 198/250 [1:18:07<21:10, 24.44s/it]2025-08-15 10:48:06 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:48:06 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:48:06 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:48:06 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  80%|███████▉  | 199/250 [1:18:24<18:47, 22.11s/it]2025-08-15 10:48:24 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:48:24 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:48:24 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:48:26 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  80%|████████  | 200/250 [1:18:44<18:05, 21.70s/it]2025-08-15 10:48:45 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:48:45 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:48:45 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:48:45 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  80%|████████  | 201/250 [1:19:00<16:10, 19.80s/it]2025-08-15 10:48:59 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:48:59 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:48:59 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:48:59 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  81%|████████  | 202/250 [1:19:16<15:06, 18.88s/it]2025-08-15 10:49:16 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:49:17 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:49:17 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:49:18 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  81%|████████  | 203/250 [1:19:30<13:28, 17.20s/it]2025-08-15 10:49:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:49:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:49:31 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:49:31 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:49:45 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  82%|████████▏ | 204/250 [1:19:59<15:51, 20.68s/it]2025-08-15 10:49:58 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:49:58 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:49:58 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:49:58 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  82%|████████▏ | 205/250 [1:20:13<14:12, 18.94s/it]2025-08-15 10:50:16 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:50:16 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:50:16 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:50:16 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  82%|████████▏ | 206/250 [1:20:38<15:01, 20.49s/it]2025-08-15 10:50:37 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:50:37 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:50:37 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:50:37 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:50:53 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  83%|████████▎ | 207/250 [1:21:15<18:20, 25.58s/it]2025-08-15 10:51:14 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:51:14 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:51:14 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:51:15 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  83%|████████▎ | 208/250 [1:21:34<16:33, 23.65s/it]2025-08-15 10:51:33 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:51:33 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:51:33 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:51:33 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  84%|████████▎ | 209/250 [1:21:52<14:54, 21.83s/it]2025-08-15 10:51:51 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:51:51 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:51:51 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:51:51 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  84%|████████▍ | 210/250 [1:22:10<13:46, 20.67s/it]2025-08-15 10:52:10 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:52:10 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:52:11 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:52:12 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  84%|████████▍ | 211/250 [1:22:27<12:50, 19.76s/it]2025-08-15 10:52:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:52:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:52:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:52:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  85%|████████▍ | 212/250 [1:22:44<11:55, 18.83s/it]2025-08-15 10:52:43 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:52:43 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:52:43 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:52:43 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  85%|████████▌ | 213/250 [1:23:03<11:43, 19.01s/it]2025-08-15 10:53:03 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:53:03 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:53:03 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:53:03 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  86%|████████▌ | 214/250 [1:23:22<11:24, 19.02s/it]2025-08-15 10:53:22 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:53:22 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:53:22 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:53:22 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  86%|████████▌ | 215/250 [1:23:44<11:32, 19.80s/it]2025-08-15 10:53:43 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:53:43 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:53:43 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:53:44 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  86%|████████▋ | 216/250 [1:23:58<10:13, 18.06s/it]2025-08-15 10:53:57 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:53:57 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:53:57 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:53:58 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  87%|████████▋ | 217/250 [1:24:12<09:17, 16.89s/it]2025-08-15 10:54:12 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:54:12 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:54:12 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:54:12 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:54:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  87%|████████▋ | 218/250 [1:24:57<13:24, 25.14s/it]2025-08-15 10:54:57 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:54:57 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:54:57 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:54:57 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:55:15 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  88%|████████▊ | 219/250 [1:25:30<14:13, 27.54s/it]2025-08-15 10:55:29 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:55:29 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:55:29 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:55:29 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  88%|████████▊ | 220/250 [1:25:45<11:54, 23.82s/it]2025-08-15 10:55:44 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:55:44 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:55:44 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:55:44 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  88%|████████▊ | 221/250 [1:26:02<10:35, 21.93s/it]2025-08-15 10:56:03 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:56:03 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:56:03 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:56:03 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:56:09 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  89%|████████▉ | 222/250 [1:26:20<09:38, 20.66s/it]2025-08-15 10:56:20 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:56:20 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:56:20 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:56:21 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-['underground hip hop']
-Mahonia 	 ['Diplazium']
-Tragedy 	 ['"Carmen", perhaps the most famous "opéra comique", is a tragedy']
-Yes 	 ['Jones was born in Rosedale, Indiana']
-Ana Kasparian 	 ['Andre Kirk Agassi']
-Thomas Newman 	 ['Thomas Montgomery Newman']
-Japan 	 ['Bandai']
-Firth of Forth 	 ['Yellowcraig']
-Lecrae 	 ['Lecrae Devaughn Moore']
-Columbus Crew SC 	 ['Columbus Crew Soccer Club']
-9.2 	 ['8.7']
-French, English, Spanish 	 ['French, English and Spanish']
-Over 30 	 ['over 150 films']
-Haier 	 ['GE Appliances']
-She Came to Stay 	 ['Les Temps modernes']
-German 	 ['no']
-尝试 1: 分数数量 (10) 不等于上下文数量 (5)
-Waylon Smithers 	 ['Mr. Smithers']
-Bury St Edmunds, Suffolk, England 	 ['Bury St Edmunds,']
-Jason Gould 	 ['Jason Emanuel Gould']
-Yes 	 ['no']
-3,000 	 ['2,664']
-15,000 	 ['15,000 people']
-sci-fi action 	 ['satirical erotic romantic comedy']
-American Scary 	 ['The Agronomist']
-National Socialist black metal 	 ['neo-Nazi']
-September 25, 1957 	 ['March 31, 1944']
-FIFA World Cup, AFC Asian Cup, East Asian Football Championship 	 ['FIFA World Cup']
-Over 300,000 	 ['300,000']
-40 	 ['40 members']
-Herbaceous perennial plants. 	 ['genus']
-Firefly 	 ['Dollhouse']
-200 km2 	 ['110 km2']
-Italian 	 ['English-language']
-Yes 	 ['by']
-尝试 1: 分数数量 (10) 不等于上下文数量 (5)
-Singer 	 ['songwriter']
-Acid house 	 ['acid-house']
-Boston 	 ['Chicago']
-Nye 	 ['Nye County']
-The Tonight Show 	 ['The Danny Kaye Show']
-尝试 1: 分数数量 (12) 不等于上下文数量 (6)
-尝试 2: 分数数量 (12) 不等于上下文数量 (6)
-Virginia Woolf 	 ['Adeline Virginia Woolf']
-Monty Stratton 	 ['Monty Franklin Pierce Stratton']
-London 	 ['Broadcasting House in London']
-Vickers machine gun 	 ['World War I fighter aircraft.']
-Writer 	 ['director']
-尝试 1: 分数数量 (10) 不等于上下文数量 (5)
-Real estate investments 	 ['business']
-Dennis Kux 	 ['Daniel Patrick "Pat" Moynihan']
-尝试 1: 分数数量 (8) 不等于上下文数量 (4)
-Arshile Gorky 	 ['Charles A. Agemian']
-No 	 ['yes']
-29 October 1868 	 ['The High Sheriff changes every March.']
-January to February 	 ['20 March to 1 May 2003']
-尝试 1: 分数数量 (10) 不等于上下文数量 (9)
-Evangelical Christian 	 ['evangelical Christian periodical']
-San Jose Earthquakes 	 ['LA Galaxy']
-Maggie Cheung 	 ['Joey Wong Cho-Yee']
-ESPN College Football Friday Primetime 	 ['College Football Scoreboard']
-More than 40 million 	 ['40 million']
-Preacher 	 ['the Vertigo series "Preacher"']
-Timanfaya National Park 	 ['Sierra Nevada National Park']
-尝试 1: 分数数量 (14) 不等于上下文数量 (7)
-尝试 2: 分数数量 (14) 不等于上下文数量 (7)
-Volta Region 	 ['Volta']
-Yes 	 ['no']
-Ted Bundy 	 ['Wayne Clifford Boden']
-43,000 	 ['43,000 marchers']
-My Sassy Girl 	 ['"That Bizarre Girl"']
-The CW 	 ['FX']
-21st Century Fox 	 ['News Corp.']
-Meghan Markle 	 ['Rachel Meghan Markle']
-1970 	 ['2001']
-Into the Woods 	 ['Stephen Sondheim']
-Sheridan County, Montana 	 ['Sheridan County']
-Tosca 	 ['Don Quichotte']
-George Harrison 	 ['Bob Dylan']
-Robert Aldrich 	 ['The Longest Yard']
-Ross Watson 	 ['Dark Heresy']
-Ortegocactus 	 ['Eschscholzia']
-NBC 	 ['National Broadcasting Company']
-Liesl 	 ['the eldest Von Trapp daughter']
-Elodea 	 ['Apium']
-Joseph Campbell 	 ['Joseph John Campbell']
-Mollie King 	 ['Mollie Elizabeth King']
-尝试 1: 分数数量 (7) 不等于上下文数量 (8)
-尝试 2: 分数数量 (7) 不等于上下文数量 (8)
-尝试 3: 分数数量 (7) 不等于上下文数量 (8)
-Kentucky Derby 	 ['Saturday']
-1993 	 ['Tian Tan Buddha']
-Gay Byrne 	 ['The Late Late Show']
-Historical 	 ['War']
-Allure 	 ['Allure is an American women’s beauty magazine']
-Essex 	 ['Bergen']
-Ken Kwapis 	 ['Kenneth William "Ken" Kwapis']
-1993 	 ['2001']
-Merv 	 ['Mary']
-1910 	 ['1898']
-Amgen 	 ['Merck']
-National Treasure 	 ['Cool Runnings']
-Aamir Khan 	 ['Tariq Khan']
-1970s 	 ['early 1970s']
-Kauai 	 ['Polihale State Park']
-尝试 1: 分数数量 (6) 不等于上下文数量 (8)
-尝试 2: 分数数量 (10) 不等于上下文数量 (8)
-尝试 3: 分数数量 (7) 不等于上下文数量 (8)
-Louis Vuitton 	 ['Gucci']
-Pulitzer Prize 	 ["the 2002 Rhode Island Children's Book Award"]
-New Jersey 	 ['Centre-du-Québec']
-2018-19 UEFA Europa League group stage 	 ['2018–19 UEFA Europa League']
-Los Angeles 	 ['Atlanta, Georgia']
-尝试 1: 分数数量 (10) 不等于上下文数量 (5)
-Bosco Wong 	 ['Bosco Wong Chung-chak']
-No 	 ['Zaza Pachulia']
-Dr. Peter Brant 	 ['Josh']
-尝试 1: 分数数量 (9) 不等于上下文数量 (8)
-Kansas Joe McCoy and Memphis Minnie 	 ['Joe McCoy and Memphis Minnie']
-No 	 ['yes']
-Doha, Qatar 	 ['with other campuses located in Chicago and Doha, Qatar']
-Yes 	 ['no']
-1998 	 ['1999']
-Lawyers 	 ['mathematician']
-Actress, producer, and occasional singer 	 ['singer']
-Jean-Paul Sartre 	 ['George Bernard Shaw']
-Ozzy Osbourne 	 ['John Michael "Ozzy" Osbourne']
-Season 4 	 ['during the sixth season of "Shark Tank".']
-尝试 1: 分数数量 (11) 不等于上下文数量 (6)
-Emma Watson 	 ['Esther "Essie" Davis']
-尝试 1: 分数数量 (6) 不等于上下文数量 (7)
-尝试 2: 分数数量 (0) 不等于上下文数量 (7)
-Historical evidence 	 ['linguistic analysis']
-Film 	 ['The cinema of Russia']
-Mickey's Magical Christmas Featurette 	 ["Mickey's Christmas Carol"]
-Gaahl 	 ['Kristian Eivind Espedal']
-Leitneria 	 ['Tricyrtis']
-Cameron Muncey 	 ['Nicholas John "Nic" Cester']
-American rock 	 ['punk rock']
-Great Yarmouth 	 ['Lowestoft']
-1984-1985 	 ['1984 to 1985']
-Frank Matcham 	 ['theatrical architect Frank Matcham']
-Manu Vatuvei Stadium 	 ['Ericsson Stadium']
-Ian Schneider 	 ['Frederick King Keller']
-Translation of and commentary on Isaac Newton's book "Principia" 	 ['commentary on Isaac Newton\'s book "Principia"']
-United States 	 ['American']
-Blender magazine 	 ['steamy pictorials of celebrities']
-Sulfur mustard 	 ['mustard gas']
-Three 	 ['three official languages']
-Yes 	 ['no']
-Unknown 	 ['a championship and an NBA Finals Most Valuable Player Award']
-Nobel Prize in Physics 	 ['Nobel Prize']
-尝试 1: 分数数量 (12) 不等于上下文数量 (6)
-Anheuser-Busch 	 ["Stroh's"]
-France 	 ['It was held in France from 10 June to 12 July 1998.']
-Kilobaud Microcomputing 	 ['Humbug']
-Yes 	 ['no']
-William J. Crowe 	 ['Bill Clinton']
-Alfred L. Werker 	 ['James Stanley Brakhage']
-7 million 	 ['5.3 million']
-The Coen Brothers' film. 	 ['the Hanna-Barbera show "Birdman and the Galaxy Trio."']
-尝试 1: 分数数量 (12) 不等于上下文数量 (6)
-1963 	 ['1961']
-Xinghua, Jiangsu 	 ['Xinghua () is a county-level city']
-2005-2017 	 ['1995 to 2012']
-Sellem 	 ["The Rake's Progress"]
-Taipei 	 ['Keelung']
-2000 	 ['2000 Summer Olympic Games']
-Terence Winter 	 ['Martin Scorsese']
-1998 	 ['2001']
-Richard Branson 	 ['Peter Shea']
-Apollo 14 	 ['Mercury Seven']
-Over 100 million 	 ['100 million']
-National Lottery 	 ['state-franchised']
-The New Yorker 	 ['Amazing Stories']
-Catfish and the Bottlemen 	 ['The Lumineers']
-North Side Gang 	 ['Scarface']
-New South Wales 	 ['on the Cumberland Plain']
-Centre-right or liberal conservative 	 ['liberal conservative']
-Over 26,000 	 ['26,000']
-Statue of Liberty 	 ['Liberty Enlightening the World']
-Stan Lee 	 ['Marvel Comics']
-Manhattan 	 ['lower Manhattan']
-Danny Green is older than James Worthy. 	 ['James Worthy']
-U-505 type German Type IXC U-boat 	 ['German Type IXC U-boat']
-Hound 	 ['The Beagle is a breed of small hound']
-Blue Lacy 	 ['Norrbottenspets']
-King James II 	 ['King James II of England']
-尝试 1: 分数数量 (16) 不等于上下文数量 (9)
-Early Gothic Revival 	 ['Hellenism']
-Portraits 	 ['portrait']
-尝试 1: 分数数量 (10) 不等于上下文数量 (5)
-No 	 ['yes']
-Diplolaena and Arenaria. 	 ['Diplolaena']
-District 81 	 ['represented District 65']
-Tropicana Hotel 	 ['Tropicana Casino & Resort']
-1985 	 ['2009']
-The French Kiss 	 ['The Tremblement de Terre']
-Ulf Merbold 	 ['Ulf Dietrich Merbold']
-尝试 1: 分数数量 (0) 不等于上下文数量 (3)
-Not the inventor of the Latinized term Jehovah. 	 ['the God of Israel']
-"Rock Chalk, Jayhawk" 	 ['Kansas Song']
-Outlander 	 ['Claire is a married World War II nurse']
-Yes 	 ['no']
-Actors 	 ['director']
-Evaluation:  89%|████████▉ | 223/250 [1:26:38<08:56, 19.88s/it]2025-08-15 10:56:40 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:56:40 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:56:40 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:56:40 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  90%|████████▉ | 224/250 [1:26:56<08:23, 19.37s/it]2025-08-15 10:56:57 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:56:57 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:56:57 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:56:57 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  90%|█████████ | 225/250 [1:27:14<07:54, 18.97s/it]2025-08-15 10:57:14 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:57:14 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:57:14 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:57:14 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  90%|█████████ | 226/250 [1:27:31<07:16, 18.20s/it]2025-08-15 10:57:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:57:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:57:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:57:30 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  91%|█████████ | 227/250 [1:27:49<06:56, 18.10s/it]2025-08-15 10:57:48 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:57:48 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:57:48 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:57:48 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  91%|█████████ | 228/250 [1:28:07<06:37, 18.08s/it]2025-08-15 10:58:06 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:58:07 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:58:07 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:58:07 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  92%|█████████▏| 229/250 [1:28:24<06:15, 17.89s/it]2025-08-15 10:58:23 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:58:23 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:58:23 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:58:23 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  92%|█████████▏| 230/250 [1:28:39<05:38, 16.92s/it]2025-08-15 10:58:38 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:58:38 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:58:38 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:58:38 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  92%|█████████▏| 231/250 [1:28:54<05:12, 16.46s/it]2025-08-15 10:58:55 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:58:56 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:58:56 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:58:56 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  93%|█████████▎| 232/250 [1:29:13<05:07, 17.06s/it]2025-08-15 10:59:12 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:59:12 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:59:12 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:59:12 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  93%|█████████▎| 233/250 [1:29:29<04:45, 16.81s/it]2025-08-15 10:59:28 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:59:28 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:59:28 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:59:28 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  94%|█████████▎| 234/250 [1:29:47<04:33, 17.12s/it]2025-08-15 10:59:46 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:59:46 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:59:46 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 10:59:47 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  94%|█████████▍| 235/250 [1:30:01<04:05, 16.37s/it]2025-08-15 11:00:01 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:00:01 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:00:01 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:00:01 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  94%|█████████▍| 236/250 [1:30:14<03:33, 15.27s/it]2025-08-15 11:00:13 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:00:14 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:00:15 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:00:17 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:00:36 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  95%|█████████▍| 237/250 [1:31:02<05:26, 25.08s/it]2025-08-15 11:01:01 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:01:01 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:01:01 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:01:02 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:01:20 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  95%|█████████▌| 238/250 [1:31:37<05:36, 28.05s/it]2025-08-15 11:01:36 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:01:36 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:01:36 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:01:36 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  96%|█████████▌| 239/250 [1:31:52<04:26, 24.24s/it]2025-08-15 11:01:55 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:01:55 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:01:55 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:01:57 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  96%|█████████▌| 240/250 [1:32:17<04:05, 24.51s/it]2025-08-15 11:02:17 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:02:17 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:02:17 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:02:22 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  96%|█████████▋| 241/250 [1:32:38<03:28, 23.19s/it]2025-08-15 11:02:39 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:02:39 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:02:39 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:02:39 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  97%|█████████▋| 242/250 [1:32:55<02:50, 21.34s/it]2025-08-15 11:02:54 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:02:54 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:02:54 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:02:55 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  97%|█████████▋| 243/250 [1:33:13<02:22, 20.41s/it]2025-08-15 11:03:12 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:03:12 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:03:12 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:03:13 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:03:27 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  98%|█████████▊| 244/250 [1:33:44<02:21, 23.66s/it]2025-08-15 11:03:45 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:03:45 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:03:45 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:03:45 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  98%|█████████▊| 245/250 [1:34:05<01:53, 22.74s/it]2025-08-15 11:04:04 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:04:05 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:04:05 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:04:05 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  98%|█████████▊| 246/250 [1:34:27<01:30, 22.59s/it]2025-08-15 11:04:26 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:04:26 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:04:26 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:04:26 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  99%|█████████▉| 247/250 [1:34:40<00:59, 19.81s/it]2025-08-15 11:04:40 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:04:40 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:04:40 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:04:40 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation:  99%|█████████▉| 248/250 [1:34:54<00:35, 17.99s/it]2025-08-15 11:04:53 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:04:53 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:04:53 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:04:53 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation: 100%|█████████▉| 249/250 [1:35:10<00:17, 17.33s/it]2025-08-15 11:05:09 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:05:09 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:05:09 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:05:09 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:05:26 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:05:28 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-2025-08-15 11:05:28 INFO: - HTTP Request: POST https://open.bigmodel.cn/api/paas/v4/chat/completions "HTTP/1.1 200 OK"
-Evaluation: 100%|██████████| 250/250 [1:35:48<00:00, 23.70s/it]Evaluation: 100%|██████████| 250/250 [1:35:48<00:00, 23.00s/it]
-2025-08-15 11:05:47 INFO: - ====================== Evaluation Results ======================
-2025-08-15 11:05:47 INFO: - n_context: 5
-2025-08-15 11:05:47 INFO: - context_type: triples
-2025-08-15 11:05:47 INFO: - {'exact_match': 0.44, 'f1': 0.5692916163057137, 'precision': 0.6070737012987013, 'recall': 0.5697564213564212, 'avg_num_tokens': 554.373}
-2025-08-15 11:05:47 INFO: - ================================================================
-rural Orissa 	 ['Orissa']
-Germany 	 ['German']
-You Belong with Me 	 ['White Horse']
-Lisburn Distillery F.C. 	 ['Distillery']
-John Dalton 	 ['Friedrich Hermann Hund']
-Elton John 	 ['Watford Football Club']
-Not mentioned 	 ['fourth']
-Fishing boats 	 ['motor ships']
-Dirk Frimout (3) 	 ['Hans Wilhelm Schlegel']
-Steven Jacobs, Grace McClure, Teisha Lowry, Kellie Johns 	 ['the Simpson family']
-Westlake Recording Studios in Los Angeles 	 ['at Westlake Recording Studios in Los Angeles']
-The Citizen King 	 ['La mamma morta']
-Battle of Agincourt 	 ['Battle of Agincourt (1415)']
-western 	 ['western part of Guwahati city']
-1977 	 ['1998']
-Notre Dame 	 ['Notre Dame Fighting Irish football']
-Seattle and Portland 	 ['two termini']
-Herschell Gordon Lewis 	 ['Herschell Gordon Lewis was a pioneer']
-Catholic Church 	 ['The Catholic Church in Ireland']
-Stone Brewing Co. 	 ['Stone Brewing']
-Yes 	 ['no']
-Jani Liimatainen 	 ['Marco Hietala']
-Over 40 million 	 ['40 million']
-Theoretical particle physics and quantum field theory. 	 ['quantum mechanics']
-Truro Cathedral 	 ['The Cathedral of the Blessed Virgin Mary, Truro']
-American 	 ['by the moods they elicit']
-Sam Houston 	 ['General Sam Houston']
-B2FH paper 	 ['BFH']
-Adelaide 	 ['Australian coast']
-Polonius 	 ['Odysseus']
-Bathurst 	 ['Bathurst in New South Wales']
-All Nippon Airways 	 ['All Nippon']
-2014 	 ['2000']
-尝试 1: 分数数量 (16) 不等于上下文数量 (8)
-Gomer Pyle 	 ['Barney Fife']
-Over 26,000 	 ['more than 26,000']
-Kevin Richardson 	 ['Kentucky Music Hall of Fame']
-Trump Plaza Hotel and Casino 	 ['The Atlantic Club Casino Hotel']
-尝试 1: 分数数量 (8) 不等于上下文数量 (7)
-Ahmed Radi 	 ['Emad Hashim']
-Win world titles in all four of the lowest weight classes 	 ['win world titles in four weight classes']
-Lenny Wilkens 	 ['Bill Walton']
-867 feet 	 ['867']
-Ron Saunders 	 ['Stephen Roger "Steve" Bruce']
-Mixed martial artist 	 ['martial artist']
-England 	 ['Northern Irish']
-Fulgencio Batista 	 ['Fulgencio Batista y Zaldívar']
-Blackpool F.C. 	 ['Blackpool Football Club']
-尝试 1: 分数数量 (10) 不等于上下文数量 (5)
-957 	 ['552']
-Jackie Stewart 	 ['Graham Hill']
-Texas 	 ['Kansas']
-Director and producer 	 ['director']
-Susan Choi 	 ['Paul Avery']
-Tourism 	 ['wineries']
-1698 	 ['since 1864']
-The Gambia 	 ['Ghana']
-Domitian 	 ['95 AD']
-Marlins Park, 2008 	 ['2012']
-The Great Ziegfeld. 	 ['"An All-Colored Vaudeville Show"']
-尝试 1: 分数数量 (9) 不等于上下文数量 (8)
-尝试 1: 分数数量 (16) 不等于上下文数量 (8)
-尝试 1: 分数数量 (12) 不等于上下文数量 (6)
-George R. R. Martin 	 ['J. R. R. Tolkien']
-1995 	 ['1992']

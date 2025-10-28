@@ -1,1057 +1,0 @@
-nohup: ignoring input
-================================================================================
-================================================================================
-检索文档数: 5
-模型路径: /home/jiangjp/models/cag-7b/
-================================================================================
-步骤1: 加载测试数据...
-数据集大小: 1000 个样本
-步骤2: 加载CAG-7B模型...
-Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:03<00:06,  3.04s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:05<00:02,  2.84s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:07<00:00,  2.25s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:07<00:00,  2.43s/it]
-步骤3: 开始检索和评估...
-开始评估 1000 个样本...
-正在评估:   0%|          | 0/1000 [00:00<?, ?it/s]You're using a LlamaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
-loading e5-mistral model in torch.bfloat16 ...
-
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][A
-Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.37s/it][A
-Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.59s/it][ALoading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.70s/it]
-正在评估:   0%|          | 1/1000 [00:14<4:00:51, 14.47s/it]正在评估:   0%|          | 2/1000 [00:16<1:58:10,  7.10s/it]正在评估:   0%|          | 3/1000 [00:18<1:20:01,  4.82s/it]正在评估:   0%|          | 4/1000 [00:19<57:19,  3.45s/it]  正在评估:   0%|          | 5/1000 [00:21<49:11,  2.97s/it]正在评估:   1%|          | 6/1000 [00:23<41:14,  2.49s/it]正在评估:   1%|          | 7/1000 [00:25<36:24,  2.20s/it]正在评估:   1%|          | 8/1000 [00:26<32:19,  1.96s/it]正在评估:   1%|          | 9/1000 [00:28<31:46,  1.92s/it]正在评估:   1%|          | 10/1000 [00:30<32:35,  1.98s/it]正在评估:   1%|          | 11/1000 [00:32<32:47,  1.99s/it]正在评估:   1%|          | 12/1000 [00:34<31:27,  1.91s/it]正在评估:   1%|▏         | 13/1000 [00:35<29:23,  1.79s/it]正在评估:   1%|▏         | 14/1000 [00:37<30:07,  1.83s/it]正在评估:   2%|▏         | 15/1000 [00:39<29:44,  1.81s/it]正在评估:   2%|▏         | 16/1000 [00:41<30:01,  1.83s/it]正在评估:   2%|▏         | 17/1000 [00:42<28:57,  1.77s/it]正在评估:   2%|▏         | 18/1000 [00:45<30:15,  1.85s/it]正在评估:   2%|▏         | 19/1000 [00:47<31:36,  1.93s/it]正在评估:   2%|▏         | 20/1000 [00:49<31:53,  1.95s/it]正在评估:   2%|▏         | 21/1000 [00:50<30:06,  1.85s/it]正在评估:   2%|▏         | 22/1000 [00:52<30:55,  1.90s/it]正在评估:   2%|▏         | 23/1000 [00:54<32:31,  2.00s/it]正在评估:   2%|▏         | 24/1000 [00:57<32:56,  2.02s/it]正在评估:   2%|▎         | 25/1000 [00:59<33:05,  2.04s/it]正在评估:   3%|▎         | 26/1000 [01:01<33:04,  2.04s/it]正在评估:   3%|▎         | 27/1000 [01:02<31:51,  1.96s/it]正在评估:   3%|▎         | 28/1000 [01:04<31:52,  1.97s/it]正在评估:   3%|▎         | 29/1000 [01:06<31:16,  1.93s/it]正在评估:   3%|▎         | 30/1000 [01:08<31:24,  1.94s/it]正在评估:   3%|▎         | 31/1000 [01:10<31:24,  1.94s/it]正在评估:   3%|▎         | 32/1000 [01:12<31:13,  1.94s/it]正在评估:   3%|▎         | 33/1000 [01:14<31:51,  1.98s/it]正在评估:   3%|▎         | 34/1000 [01:16<31:24,  1.95s/it]正在评估:   4%|▎         | 35/1000 [01:18<32:02,  1.99s/it]正在评估:   4%|▎         | 36/1000 [01:20<32:02,  1.99s/it]正在评估:   4%|▎         | 37/1000 [01:22<31:12,  1.94s/it]正在评估:   4%|▍         | 38/1000 [01:24<30:50,  1.92s/it]正在评估:   4%|▍         | 39/1000 [01:26<33:03,  2.06s/it]正在评估:   4%|▍         | 40/1000 [01:28<32:41,  2.04s/it]正在评估:   4%|▍         | 41/1000 [01:30<32:20,  2.02s/it]正在评估:   4%|▍         | 42/1000 [01:32<30:59,  1.94s/it]正在评估:   4%|▍         | 43/1000 [01:34<32:55,  2.06s/it]正在评估:   4%|▍         | 44/1000 [01:36<31:57,  2.01s/it]正在评估:   4%|▍         | 45/1000 [01:38<32:17,  2.03s/it]正在评估:   5%|▍         | 46/1000 [01:41<33:06,  2.08s/it]正在评估:   5%|▍         | 47/1000 [01:43<33:05,  2.08s/it]正在评估:   5%|▍         | 48/1000 [01:45<32:50,  2.07s/it]正在评估:   5%|▍         | 49/1000 [01:47<33:04,  2.09s/it]正在评估:   5%|▌         | 50/1000 [01:49<33:02,  2.09s/it]正在评估:   5%|▌         | 51/1000 [01:51<32:46,  2.07s/it]正在评估:   5%|▌         | 52/1000 [01:53<32:47,  2.08s/it]正在评估:   5%|▌         | 53/1000 [01:55<33:20,  2.11s/it]正在评估:   5%|▌         | 54/1000 [01:57<33:43,  2.14s/it]正在评估:   6%|▌         | 55/1000 [01:59<31:49,  2.02s/it]正在评估:   6%|▌         | 56/1000 [02:01<31:28,  2.00s/it]正在评估:   6%|▌         | 57/1000 [02:03<31:04,  1.98s/it]正在评估:   6%|▌         | 58/1000 [02:05<31:31,  2.01s/it]正在评估:   6%|▌         | 59/1000 [02:07<31:01,  1.98s/it]正在评估:   6%|▌         | 60/1000 [02:09<30:09,  1.93s/it]正在评估:   6%|▌         | 61/1000 [02:11<30:38,  1.96s/it]正在评估:   6%|▌         | 62/1000 [02:13<31:58,  2.05s/it]正在评估:   6%|▋         | 63/1000 [02:15<31:58,  2.05s/it]正在评估:   6%|▋         | 64/1000 [02:17<32:23,  2.08s/it]The Free Software Foundation (FSF) was started by Richard Stallman in 1985. The FSF
-
-错误案例 1:
-问题: Who started the foundation that developed the Free Software Directory?
-预测答案: The Free Software Foundation (FSF) was started by Richard Stallman in 1985. The FSF
-正确答案: ['Richard Stallman', 'rms']
---------------------------------------------------
-Based on the information provided, the answer is NBC. The external documentation mentions the show "The Biggest Loser Br
-
-错误案例 2:
-问题: Country A has an embassy from the country that contains the bay where the city of General Santos is located. What network created country A's version of The Biggest Loser?
-预测答案: Based on the information provided, the answer is NBC. The external documentation mentions the show "The Biggest Loser Br
-正确答案: ['NBC']
---------------------------------------------------
-Based on the information provided, it is not possible to determine who was a prominent figure at the radio division of the broadcasting
-
-错误案例 3:
-问题: Who was a prominent figure at the radio division of the broadcasting company that created the version of The Biggest Loser: The Final Chance, set in the country containing Labu?
-预测答案: Based on the information provided, it is not possible to determine who was a prominent figure at the radio division of the broadcasting
-正确答案: ['Walter Sabo']
---------------------------------------------------
-Mt. Hood.
-
-错误案例 4:
-问题: What mountain can you see from Portland in the state where Fishing Creek Confederacy is located?
-预测答案: Mt. Hood.
-正确答案: ['Tualatin Mountains']
---------------------------------------------------
-Nintendo's limit on games per developer per year on the platform that plays Drac's Night Out was five games
-
-错误案例 5:
-问题: What was Nintendo's limit on games per developer per year on the platform that plays Drac's Night Out?
-预测答案: Nintendo's limit on games per developer per year on the platform that plays Drac's Night Out was five games
-正确答案: ['five']
---------------------------------------------------
-To the division of languages that includes the innovative form, such as Central Catalan.
-I Dig Love's record label is a part of Interscope Records.
-Roger Franklin was born in Duncanville, Texas.
-Based on the provided information, Margaret Knox's spouse passed away in 1564. This information is
-Nintendo's limit on games per developer per year on the platform of Nightshade was five. This information is based
-The party that gained control of Congress in the midterm elections in 1946 took control of the government branch that
-The population of the city in 1900 was 7,531.
-John D. Loudermilk.
-The headquarters of the organization that the Office of Science Education is a part of is located in Southlake, Texas. This
-The river where the majority of Egyptians lived is located in northeastern Africa.
-The composer of Al gran sole carico d'amore is Luigi Nono.
-Theodore Roosevelt's Rough Riders
-Based on the information provided, the president of the newly declared independent country that is part of the Commission of Truth and Friend
-The guy in the "One Last Time" music video by the singer of a new version of "Somewhere Over the
-The experimental satellite that was the forerunner to the communication satellite of IRS-P3's operator is A
-The owner of the record label of the Please Remember Me performer is Al Bell.
-Based on the information provided, it is not possible to determine when the baseball team from the city where most university graduates stay
-The new season of the show named for the Politically Incorrect cast member will premiere on HBO on February 2
-The name of the university that educated the character that Mel Brooks plays in Mr. Peabody and Sherman is not
-Popper's academic appointment was in the country near the country of citizenship of the person who wrote The Book Thief
-In The Godfather, the actor producing the Freddie Mercury film plays the role of Luca Brasi.
-Based on the information provided, the Chief Judge of Tebesa Nemine's birthplace is Adama Lamikanra
-Based on the information provided, the city that shares a border with the city where the person who went to the state where Eng
-Based on the information provided, the performer of "Darlings" was born in Toronto, Ontario, Canada. The
-The information provided does not directly answer the question about the number of people who work in the school where Ross Porter was educated
-Based on the information provided, the headquarters city of the Fireball Cinnamon Whiskey manufacturer elected its first
-The first mosque in the capital of the Marshall Islands opened in September 2012.
-The free crops in the state having Free State of Brunswick were constituted by the free people of color.
-Based on the information provided, the seat of the county sharing a border with the county with a town to which KRSU
-The president of the newly declared independent country that is part of the Commission of Truth and Friendship with the country where J
-Based on the information provided, the answer to the question is not clear. The question asks about the winner of an Indy
-Based on the given information, the body of water by the headquarters location of Wipac is the Wapizagonke
-The city of Bergen is located in McHenry County, North Dakota, United States.
-The party with a majority in the body the President calls on for support of his appointments to the USAF gained control of
-The performer of "Don't Be Cruel" plays a Western District uniformed officer in the wire.
-The US believes that the country of the birthplace of Pao Sarasin, Thailand, helped Japan because of
-The person that Adversary in the House is based on is a member of the Democratic Party.
-The word that is also a majority religion in the area that became India when the country where Punial is located was created
-Based on the information provided, the mascot of the operator of RV Wecoma is Benny Beaver. Ben
-Based on the information provided, it is not explicitly stated where Mary's betrothed was born. However, the
-John Knox, the author of History of the Reformation in Scotland, died in 1572.
-Based on the information provided, the city where Veoh's headquarters is located, San Diego, ranks in the top five
-Based on the information provided, the host of Who Wants to be a Millionaire in the country that the producer of
-The regular season of the league where the team with the most titles from the series after which the MLB MVP award is
-Based on the information provided, the country that has the original language of the film named after Vladimir Karalić's birth
-The headquarters of the Radio Television of the country whose co-official language was used in the film named after the city where
-Based on the information provided, the president of the newly declared independent country that is part of the Commission of Truth and Friend
-The region immediately north of the area where the country that released Atalia is located and the Persian Gulf was established in
-The place where the Jin court reestablished itself after fleeing had been the capitol city of the headquarters location of
-The Girlfriend performer plays a character named Wallace in The Wire.
-Based on the information provided, the affiliate that left the owner of Canadian Broadcasting Centre due to an agreement with CHBC
-The Beach was filmed in Thailand, specifically on the Thai island Koh Phi Phi.
-The RX 350 model of the luxury division of the company that manufactures Scion Fuse changed body
-Brian Thomas Moynihan is the chairman of the company that bought FleetBoston Financial.
-The mascot of the university related to Randy Conrads is Benny Beaver.
-The country of the border troops of the country of the literature of the country Wilfried Grobner was in is Austria.
-The spouse of the actor who plays Vision in Avengers: Age of Ultron is Laura Barton.
-Based on the information provided, the child of the person who issued the Tamworth manifesto is not explicitly mentioned. However,
-The dissolution of the privileges of the empire using Pan-Slavism as a political tool was the Habsburg
-正在评估:   6%|▋         | 65/1000 [02:19<32:06,  2.06s/it]正在评估:   7%|▋         | 66/1000 [02:21<32:00,  2.06s/it]正在评估:   7%|▋         | 67/1000 [02:23<32:31,  2.09s/it]正在评估:   7%|▋         | 68/1000 [02:25<32:03,  2.06s/it]正在评估:   7%|▋         | 69/1000 [02:28<32:35,  2.10s/it]正在评估:   7%|▋         | 70/1000 [02:30<31:35,  2.04s/it]正在评估:   7%|▋         | 71/1000 [02:31<30:37,  1.98s/it]正在评估:   7%|▋         | 72/1000 [02:33<29:53,  1.93s/it]正在评估:   7%|▋         | 73/1000 [02:35<29:36,  1.92s/it]正在评估:   7%|▋         | 74/1000 [02:37<30:09,  1.95s/it]正在评估:   8%|▊         | 75/1000 [02:39<30:26,  1.97s/it]正在评估:   8%|▊         | 76/1000 [02:41<31:21,  2.04s/it]正在评估:   8%|▊         | 77/1000 [02:43<31:28,  2.05s/it]正在评估:   8%|▊         | 78/1000 [02:45<31:32,  2.05s/it]正在评估:   8%|▊         | 79/1000 [02:48<31:40,  2.06s/it]正在评估:   8%|▊         | 80/1000 [02:50<31:04,  2.03s/it]正在评估:   8%|▊         | 81/1000 [02:52<31:37,  2.06s/it]正在评估:   8%|▊         | 82/1000 [02:54<31:47,  2.08s/it]正在评估:   8%|▊         | 83/1000 [02:56<31:28,  2.06s/it]正在评估:   8%|▊         | 84/1000 [02:58<31:50,  2.09s/it]正在评估:   8%|▊         | 85/1000 [03:00<31:52,  2.09s/it]正在评估:   9%|▊         | 86/1000 [03:02<31:02,  2.04s/it]正在评估:   9%|▊         | 87/1000 [03:03<27:02,  1.78s/it]正在评估:   9%|▉         | 88/1000 [03:05<28:00,  1.84s/it]正在评估:   9%|▉         | 89/1000 [03:07<27:40,  1.82s/it]正在评估:   9%|▉         | 90/1000 [03:09<27:24,  1.81s/it]正在评估:   9%|▉         | 91/1000 [03:11<28:37,  1.89s/it]正在评估:   9%|▉         | 92/1000 [03:13<29:23,  1.94s/it]正在评估:   9%|▉         | 93/1000 [03:15<29:46,  1.97s/it]正在评估:   9%|▉         | 94/1000 [03:17<31:13,  2.07s/it]正在评估:  10%|▉         | 95/1000 [03:19<30:59,  2.05s/it]正在评估:  10%|▉         | 96/1000 [03:20<27:12,  1.81s/it]正在评估:  10%|▉         | 97/1000 [03:22<27:11,  1.81s/it]正在评估:  10%|▉         | 98/1000 [03:24<28:54,  1.92s/it]正在评估:  10%|▉         | 99/1000 [03:26<29:14,  1.95s/it]正在评估:  10%|█         | 100/1000 [03:29<30:34,  2.04s/it]正在评估:  10%|█         | 101/1000 [03:31<30:09,  2.01s/it]正在评估:  10%|█         | 102/1000 [03:33<30:13,  2.02s/it]正在评估:  10%|█         | 103/1000 [03:35<30:08,  2.02s/it]正在评估:  10%|█         | 104/1000 [03:37<30:01,  2.01s/it]正在评估:  10%|█         | 105/1000 [03:39<30:24,  2.04s/it]正在评估:  11%|█         | 106/1000 [03:41<29:51,  2.00s/it]正在评估:  11%|█         | 107/1000 [03:43<29:55,  2.01s/it]正在评估:  11%|█         | 108/1000 [03:45<29:39,  1.99s/it]正在评估:  11%|█         | 109/1000 [03:46<28:27,  1.92s/it]正在评估:  11%|█         | 110/1000 [03:48<29:03,  1.96s/it]正在评估:  11%|█         | 111/1000 [03:51<29:24,  1.98s/it]正在评估:  11%|█         | 112/1000 [03:53<29:50,  2.02s/it]正在评估:  11%|█▏        | 113/1000 [03:55<30:06,  2.04s/it]正在评估:  11%|█▏        | 114/1000 [03:56<28:35,  1.94s/it]正在评估:  12%|█▏        | 115/1000 [03:58<29:09,  1.98s/it]正在评估:  12%|█▏        | 116/1000 [04:00<28:42,  1.95s/it]正在评估:  12%|█▏        | 117/1000 [04:02<29:15,  1.99s/it]正在评估:  12%|█▏        | 118/1000 [04:04<29:32,  2.01s/it]正在评估:  12%|█▏        | 119/1000 [04:06<27:31,  1.87s/it]正在评估:  12%|█▏        | 120/1000 [04:08<29:04,  1.98s/it]正在评估:  12%|█▏        | 121/1000 [04:11<30:08,  2.06s/it]正在评估:  12%|█▏        | 122/1000 [04:13<30:20,  2.07s/it]正在评估:  12%|█▏        | 123/1000 [04:15<29:46,  2.04s/it]正在评估:  12%|█▏        | 124/1000 [04:17<30:00,  2.05s/it]正在评估:  12%|█▎        | 125/1000 [04:18<28:21,  1.94s/it]正在评估:  13%|█▎        | 126/1000 [04:20<27:16,  1.87s/it]正在评估:  13%|█▎        | 127/1000 [04:22<26:55,  1.85s/it]正在评估:  13%|█▎        | 128/1000 [04:24<26:50,  1.85s/it]正在评估:  13%|█▎        | 129/1000 [04:26<27:14,  1.88s/it]正在评估:  13%|█▎        | 130/1000 [04:28<27:14,  1.88s/it]正在评估:  13%|█▎        | 131/1000 [04:29<27:12,  1.88s/it]正在评估:  13%|█▎        | 132/1000 [04:32<28:15,  1.95s/it]正在评估:  13%|█▎        | 133/1000 [04:33<27:01,  1.87s/it]正在评估:  13%|█▎        | 134/1000 [04:35<28:05,  1.95s/it]正在评估:  14%|█▎        | 135/1000 [04:38<29:12,  2.03s/it]正在评估:  14%|█▎        | 136/1000 [04:40<29:24,  2.04s/it]正在评估:  14%|█▎        | 137/1000 [04:42<30:07,  2.09s/it]正在评估:  14%|█▍        | 138/1000 [04:44<29:32,  2.06s/it]正在评估:  14%|█▍        | 139/1000 [04:45<27:27,  1.91s/it]正在评估:  14%|█▍        | 140/1000 [04:48<28:42,  2.00s/it]正在评估:  14%|█▍        | 141/1000 [04:50<28:17,  1.98s/it]正在评估:  14%|█▍        | 142/1000 [04:52<29:05,  2.03s/it]正在评估:  14%|█▍        | 143/1000 [04:54<28:48,  2.02s/it]正在评估:  14%|█▍        | 144/1000 [04:56<28:18,  1.98s/it]正在评估:  14%|█▍        | 145/1000 [04:57<27:47,  1.95s/it]正在评估:  15%|█▍        | 146/1000 [05:00<28:46,  2.02s/it]正在评估:  15%|█▍        | 147/1000 [05:02<28:34,  2.01s/it]正在评估:  15%|█▍        | 148/1000 [05:04<29:47,  2.10s/it]The person talking at the beginning of "Thriller" by Fall Out Boy is not mentioned in the provided external documents.
-John Kukuzelis introduced a system of musical notation used in the region referred to as "the powderkeg of
-The word "Slavs" was used in the national anthem of the unprepared country in 194
-Andy Murray is the brother of the player who has won the most BBC Sports Personality of the Year awards.
-The people from whom new coins were a proclamation of independence by the Somali Muslim Ajuran Empire were
-The birthplace of St. Simeon Stylites' author is Simpson, Minnesota.
-Amílcar Cabral International Airport is located on Sal Island, Cabo Verde.
-The network that National Cycle Route 57 is part of is the National Cycle Network (NCN) in the
-In 2002, the company that merged with the CEMM developer was Infogrames.
-The luxury division of the company that produces TMG EV P001 changed the body style of RX
-The singer of the original version of Moon River, Audrey Hepburn, won a Tony award for her role in the
-Based on the information provided, the city where Veoh's headquarters are located, San Diego, ranks first among the top
-Based on the given information, the father of The Portrait of George Dyer Talking's creator is Francis
-Roncalli left the city where the creator of The Entombment died because he was elected to succeed the late P
-The prize named after the author of Lectures on Jurisprudence is given out by the University of Cambridge.
-The University of Oklahoma holds the Julian P. Kanter Political Commercial Archive, which is a depository for political television
-The third generation iPod introduced compatibility with the industry standard connection that was first widely used at version 1.1.
-The highest award in India before becoming president was the Bharat Ratna. This award is given in recognition of exceptional
-George Peppard, the actor who played Zeb in How the West was Won, was married to Elizabeth Ashley
-Based on the given information, the number of games in a season for the league that had the most Champions League wins between
-The singer of "Moon River" in the movie Breakfast at Tiffany's, Audrey Hepburn
-Chen Zheng led the military expedition in the province that borders Zhejiang to the south.
-The Ohio River.
-The Rehabilitation Center at Hollywood Hills was owned by Jack Michel and affiliated with Larkin Community Hospital.
-The narrator on How I Met Your Mother ends up with Tracy McConnell.
-Based on the information provided, Chris Meffert's birth place in the state of Florida is Ocala.
-The school that granted Francis Travis a Ph.D. has a student body of about 2,750 students
-The cast member of Escape from L.A. who played a character in another movie is Kurt Russell.
-The name of the child of the Italian navigator who sailed for England and explored the east coast of the continent Francisco
-The Yongle emperor greeted the Karmapa in Nanjing, where the GDP per person in
-Germany's main goal in the battle of the ocean adjacent to the US city having WEDR was to prevent the build
-Liverpool.
-The river that Toongabbie Creek flows into flows into the Parramatta River, which is a tributary of
-In the city where the Yongle emperor greeted the person to whom the edict was addressed, there are
-The first mosque in Majuro, the capital of the Marshall Islands, opened in September 2012.
-The word that is also a majority religion in the area that became India when the country that withdrew its forces was created
-The spouse of Andrea Dotti, Audrey Hepburn, won a Tony Award for Best Performance by a Leading
-The geographical location of the country that secured southern Lebanon in 1978 was strategic due to its proxim
-Based on the provided information, it is not possible to determine when the headquarters city of Kentucky Tavern's manufacturer elected
-The creator of the Washington Monument, Robert Mills, belonged to the Freemasonry movement.
-The Genesis' advantages over the platform of Colorful Dragon were its 16-bit architecture, improved graphics and sound
-In the movie "Speechless," the character played by John Ross Bowie is Barry Kripke.
-The person who retained trust in Longchamp went away to the Holy Land in the month of August.
-The name of the castle in the city where the headquarters of the production company of A Cosmic Christmas is located is Casa L
-The birth date of the Till dom ensamma performer is not provided in the given information.
-Honda, Toyota, and Nissan opened US assembly plants in the 1980s.
-Lana Wood is the sister of the actress who played Susan Walker in Miracle on 34th street.
-The city where the author of Pacem in Terris died became its own country on 3 June 1963
-The body of water by the city where The Minikahda Club empties into the Gulf of Mexico is the
-The father of Katherine of England was crowned in 1100.
-The performer of Victrola in Willy Wonka and the Chocolate Factory was named after the character Vio
-Based on the information provided, the sibling of the screenwriter of War of the Coprophages is Joel Sayre
-The luxury division of the company that made Daihatsu Charmant changed the body style of the RX
-Conscription was introduced in 1964 in the country where the film Grievous Bodily Harm was later released
-Based on the information provided, Tom Denney's birthplace is located in Ocala, Florida.
-The longest home run hit in the league where the team with the most games in the series after which the MLB MVP
-The German priest who wanted to reform Laurean Rugambwa's religion preached a sermon on Marian dev
-Based on the information provided, it is not possible to determine who was a prominent figure at the radio division of the network that
-Griffin Dunne, the director of The Accidental Husband, was nominated for an Academy Award for Best Live Action
-The party that holds the majority in the House of Representatives took control of the branch that gives regulators discretion to prohib
-The region directly north of Israel is the Golan Heights.
-The city located in the county containing Qiantong is Ningbo.
-The institution that Desert Studies Center is a part of has 7 campuses.
-William O'Dwyer was the mayor of New York when the first cake mix came out.
-Chaya Mushka Schneersohn is the daughter to the third Rebbe of Chabad Lubavitch, named after
-Josh Dallas plays the person with the same name as he who was caught by surprise in Once Upon a Time.
-Based on the information provided, the cast member of the show that contains the character Michael Knight is David Hasselhoff.
-The Slavs had contact with non-Slavic Bronze- and Iron Age civilizations in the country that Steven
-The publisher of Labyrinth ended in 1984.
-Based on the given information, it is estimated that around 50% of Eritrea's population adheres
-The population of the place that the US helped with the Marshall Plan was reduced by 30% due to the Black Death
-The population density of Tammy Leitner's city of birth in 2009 is not provided in the
-Salma Hayek plays the wife of the actor who produced Paul Blart: Mall Cop 2 in the movie Grown
-Roncali left the place of death of the creator of Malchiostro Annunciation because the creator of
-Taifa of Ronda ceased to exist in 1065.
-The countries that found their economic growth in the period when young boys were employed in the glass making industries are the United States
-The record label of the Shake What God Gave Ya performer is owned by Warner Bros. Nashville.
-People from whom new coins were a proclamation of independence by the Somali Muslim Ajuran Empire were exp
-Go Down Records is the owner of the record label of the performer of Flamenco a Go-Go.
-The name of the castle in the city where the creator of Scene in the Northwest: Portrait of John Henry
-The region of the country of Sa Thầy and the territory of the Zone 5 Military Museum is located in the Central
-The movement that was led by a man who challenged the church in New Zealand is the Pentecostal movement.
-The answer is Moscow. The external document states that the Embassy of Canada to Russia in Moscow is the diplomatic mission
-The person the organizers wanted to arrest survived impeachment by a vote of 52-50.
-正在评估:  15%|█▍        | 149/1000 [05:06<29:26,  2.08s/it]正在评估:  15%|█▌        | 150/1000 [05:08<28:50,  2.04s/it]正在评估:  15%|█▌        | 151/1000 [05:09<25:58,  1.84s/it]正在评估:  15%|█▌        | 152/1000 [05:11<25:43,  1.82s/it]正在评估:  15%|█▌        | 153/1000 [05:13<26:41,  1.89s/it]正在评估:  15%|█▌        | 154/1000 [05:15<27:19,  1.94s/it]正在评估:  16%|█▌        | 155/1000 [05:17<26:43,  1.90s/it]正在评估:  16%|█▌        | 156/1000 [05:19<27:36,  1.96s/it]正在评估:  16%|█▌        | 157/1000 [05:21<26:49,  1.91s/it]正在评估:  16%|█▌        | 158/1000 [05:23<27:24,  1.95s/it]正在评估:  16%|█▌        | 159/1000 [05:25<27:31,  1.96s/it]正在评估:  16%|█▌        | 160/1000 [05:27<28:06,  2.01s/it]正在评估:  16%|█▌        | 161/1000 [05:29<28:07,  2.01s/it]正在评估:  16%|█▌        | 162/1000 [05:30<25:30,  1.83s/it]正在评估:  16%|█▋        | 163/1000 [05:32<26:16,  1.88s/it]正在评估:  16%|█▋        | 164/1000 [05:34<26:53,  1.93s/it]正在评估:  16%|█▋        | 165/1000 [05:37<28:01,  2.01s/it]正在评估:  17%|█▋        | 166/1000 [05:39<27:43,  1.99s/it]正在评估:  17%|█▋        | 167/1000 [05:41<27:37,  1.99s/it]正在评估:  17%|█▋        | 168/1000 [05:43<27:20,  1.97s/it]正在评估:  17%|█▋        | 169/1000 [05:45<27:53,  2.01s/it]正在评估:  17%|█▋        | 170/1000 [05:47<27:41,  2.00s/it]正在评估:  17%|█▋        | 171/1000 [05:49<29:01,  2.10s/it]正在评估:  17%|█▋        | 172/1000 [05:51<27:57,  2.03s/it]正在评估:  17%|█▋        | 173/1000 [05:53<27:24,  1.99s/it]正在评估:  17%|█▋        | 174/1000 [05:55<26:55,  1.96s/it]正在评估:  18%|█▊        | 175/1000 [05:57<27:36,  2.01s/it]正在评估:  18%|█▊        | 176/1000 [05:59<27:04,  1.97s/it]正在评估:  18%|█▊        | 177/1000 [06:01<27:17,  1.99s/it]正在评估:  18%|█▊        | 178/1000 [06:03<27:09,  1.98s/it]正在评估:  18%|█▊        | 179/1000 [06:05<27:12,  1.99s/it]正在评估:  18%|█▊        | 180/1000 [06:07<27:13,  1.99s/it]正在评估:  18%|█▊        | 181/1000 [06:09<27:28,  2.01s/it]正在评估:  18%|█▊        | 182/1000 [06:11<27:20,  2.01s/it]正在评估:  18%|█▊        | 183/1000 [06:13<27:37,  2.03s/it]正在评估:  18%|█▊        | 184/1000 [06:14<25:05,  1.85s/it]正在评估:  18%|█▊        | 185/1000 [06:15<23:01,  1.69s/it]正在评估:  19%|█▊        | 186/1000 [06:17<23:49,  1.76s/it]正在评估:  19%|█▊        | 187/1000 [06:19<24:29,  1.81s/it]正在评估:  19%|█▉        | 188/1000 [06:21<24:56,  1.84s/it]正在评估:  19%|█▉        | 189/1000 [06:23<24:26,  1.81s/it]正在评估:  19%|█▉        | 190/1000 [06:25<24:50,  1.84s/it]正在评估:  19%|█▉        | 191/1000 [06:27<24:59,  1.85s/it]正在评估:  19%|█▉        | 192/1000 [06:29<25:30,  1.89s/it]正在评估:  19%|█▉        | 193/1000 [06:31<26:00,  1.93s/it]正在评估:  19%|█▉        | 194/1000 [06:33<27:09,  2.02s/it]正在评估:  20%|█▉        | 195/1000 [06:35<27:09,  2.02s/it]正在评估:  20%|█▉        | 196/1000 [06:37<28:35,  2.13s/it]正在评估:  20%|█▉        | 197/1000 [06:39<27:52,  2.08s/it]正在评估:  20%|█▉        | 198/1000 [06:41<27:31,  2.06s/it]正在评估:  20%|█▉        | 199/1000 [06:43<27:32,  2.06s/it]正在评估:  20%|██        | 200/1000 [06:46<28:03,  2.10s/it]正在评估:  20%|██        | 201/1000 [06:48<28:02,  2.11s/it]正在评估:  20%|██        | 202/1000 [06:50<28:07,  2.11s/it]正在评估:  20%|██        | 203/1000 [06:52<27:09,  2.04s/it]正在评估:  20%|██        | 204/1000 [06:54<27:00,  2.04s/it]正在评估:  20%|██        | 205/1000 [06:56<26:44,  2.02s/it]正在评估:  21%|██        | 206/1000 [06:58<27:01,  2.04s/it]正在评估:  21%|██        | 207/1000 [07:00<27:13,  2.06s/it]正在评估:  21%|██        | 208/1000 [07:02<26:59,  2.04s/it]正在评估:  21%|██        | 209/1000 [07:04<27:17,  2.07s/it]正在评估:  21%|██        | 210/1000 [07:06<25:54,  1.97s/it]正在评估:  21%|██        | 211/1000 [07:08<25:47,  1.96s/it]正在评估:  21%|██        | 212/1000 [07:10<26:40,  2.03s/it]正在评估:  21%|██▏       | 213/1000 [07:12<26:54,  2.05s/it]正在评估:  21%|██▏       | 214/1000 [07:14<26:58,  2.06s/it]正在评估:  22%|██▏       | 215/1000 [07:16<27:02,  2.07s/it]正在评估:  22%|██▏       | 216/1000 [07:18<26:35,  2.03s/it]正在评估:  22%|██▏       | 217/1000 [07:20<24:23,  1.87s/it]正在评估:  22%|██▏       | 218/1000 [07:22<25:12,  1.93s/it]正在评估:  22%|██▏       | 219/1000 [07:24<24:49,  1.91s/it]正在评估:  22%|██▏       | 220/1000 [07:26<25:46,  1.98s/it]正在评估:  22%|██▏       | 221/1000 [07:28<27:09,  2.09s/it]正在评估:  22%|██▏       | 222/1000 [07:30<27:03,  2.09s/it]正在评估:  22%|██▏       | 223/1000 [07:32<26:52,  2.08s/it]正在评估:  22%|██▏       | 224/1000 [07:35<27:44,  2.14s/it]正在评估:  22%|██▎       | 225/1000 [07:37<26:58,  2.09s/it]正在评估:  23%|██▎       | 226/1000 [07:38<25:26,  1.97s/it]正在评估:  23%|██▎       | 227/1000 [07:40<25:33,  1.98s/it]正在评估:  23%|██▎       | 228/1000 [07:42<26:13,  2.04s/it]正在评估:  23%|██▎       | 229/1000 [07:45<27:04,  2.11s/it]正在评估:  23%|██▎       | 230/1000 [07:47<26:33,  2.07s/it]The Japanese got to the current administrative territorial entity of the Century Lotus Stadium and the rest of the Guangdong province
-The body of water by the city where Write This Down was formed and Ohio River meet at the city of Cairo, Illinois
-Melanie Hamilton.
-The manufacturer of Agni-V was founded during the 1970s.
-Based on the information provided, the county that shares a border with the city that became the state capital of where Representative Thomas
-The city that shares a border with the capital of the state where Levi Casey was born is Nashville, which is
-The border troops of the country of literature of the country of citizenship of Rainer Ernst are from Germany.
-Based on the given information, it is not possible to determine the exact month in which the person with whom Henry fought a short
-The starting meridian for the longitude system on the world map is the IERS Reference Meridian.
-The direction of flow of the body of water by the home of the juicy lucy is towards the Mississippi River.
-Celebrity Big Brother is coming to the network which, along with ABC and the network that broadcasted Hello,
-The 2011 Australian Open - Men's Doubles winner, Bob Bryan, went to Stanford University
-The creator of A Burial at Ornans, Gustave Courbet, was born on June 10,
-Barry Bonds.
-The city council terms in the second largest city in the state where Yuma is located are four years. This information is based
-Based on the information provided, the birthplace of the child of the Italian navigator who sailed for England and explored
-The name of the city where the Yongle emperor greeted the person to whom the edict was addressed is
-Based on the information provided, it is not possible to determine the number of ethnic minorities that were looked at differently where
-The spouse of the famous governor signing legislation in honor of Donda West's death is not mentioned in the provided
-The spouse of the child of Peter Andreas Heiberg is Johan Ludvig Heiberg, who was the son
-The plague occurred in the city where Flora's painter died multiple times. The Black Death, also known as the Great
-The father of Dahyabhai Patel died when Dahyabhai Patel was a child.
-Based on the provided information, Mohamed Atta's car made by the car manufacturer owning the naming rights to
-Another notable work by the illustrator of Sylvester and the Magic Pebble is Doctor De Soto.
-Gerald T. Whelan's birthplace is located in Hastings, Nebraska.
-The label that was bought in the UK by the other major New York broadcast, in addition to ABC, is CBS. CBS
-In the movie "Who Influenced Beyoncé," the character Beyoncé is influenced by various artists such as
-The source of the body of water where Augrabies Falls is located is the Orange River. This information is supported by
-The town WLUJ is licensed in became the capitol of the state in which a statue of a Latin mother
-Celebrity Big Brother is coming to the network that is the other major broadcaster based in NY, along
-The new season of the Carolina Hurricanes' league starts on October 3, 2018.
-Based on the information provided, the busiest airport in the city where Marcel Bich died is Charles de Gaulle Airport
-Oklahoma City ranks among the top five largest urban areas of the state where the performer of Getting Away With Murder was
-Based on the information provided, the credible source indicates that Neil Young's co-singer on "Four Str
-The Jack Goes Boating director, Philip Seymour Hoffman, received a Special Jury Recognition for Direct
-John Cabot.
-Ted Mosby
-Based on the provided information, there are 12 episodes in season 5 of the series with "The Bag or the
-The place of death of Paenitentiam Agere's author became its own country on 1 July 1
-The capital of the county that shares a border with the county where Don Werner was born is Pécs.
-Wenzhou is the city where Protestants are especially notable in Zhejiang.
-Osbert Sitwell's sibling was educated at Eton College and King's College, Cambridge.
-The public library system called in the place where the Cosbys live in New York is the New York Public Library.
-The 1967 Federation Cup is an instance of the Fed Cup, which is named after the International Tennis Federation (
-Based on the information provided, the town WIZE is licensed in became the capital of the state where Ward Township is
-The British colonies where bison antiquus could be found had a population of roughly 60,000
-Conscription was introduced in the United Kingdom during the two periods: from 1916 to 1920
-The movement against communism was led by Ronald Reid-Daly, who was a British politician and the leader of
-Mt. Hood and Mt. St. Helens can be seen from Portland, Oregon.
-The author of The Rise and Fall of the Confederate Government, Jefferson Davis, ended his fight in the Mexican-American
-The company that was formed after a merger of the company that built ASM-N-5 Gorgon V is
-Real Time with the Author of The New New Rules starts again in 2018 on September 20th
-The leaders of the opposition party that was created as a result of the Kansas-Nebraska Act were Abraham Lincoln,
-In the performer of The One movie, Joe Jackson played the character who sang "Is She Really Going Out with
-The National Communication Association published the Communication of the association that Deborah Estrin is a member of.
-Based on the information provided, the town WIZE is licensed in became the capital of the state where Brantley
-The owner of IPLEDGE has a food safety system known as the Food Safety Modernization Act (FSMA). This
-Nintendo's limit on games per developer per year on the platform of Yoshi was five games. This information is supported
-The American colonies were lost by the country that owned the region that secured southern Lebanon in 1978 before
-The Palau de la Generalitat was constructed in the location where Paco Godia was born in 1886
-The place of birth of the person who submitted the first version of the equal rights amendment to congress in 1
-The historical period of A Rose for Emily is after the American Civil War.
-The headquarters location of Pfrang Association had been the capitol city of the area where Guangling District is located for
-The last name Sylvester comes from the Latin adjective silvestris, meaning "wooded" or "wild
-Based on the information provided, the county that shares a border with the county containing the city where the singer of "Hun
-Based on the information provided, the president of the other country that participated in the Commission of Truth and Friendship is Sus
-Based on the information provided, it is not possible to determine who was a prominent figure in the radio division of the network of
-The place where the author of Princeps Pastorum died became its own country on 11 February 1929
-Alfred Gough and Miles Millar.
-Hayek worked for Ludwig von Mises upon being hired by the author of Bureaucracy.
-Aaron Benward is one of the members of the music group that performed "Good Little Girls".
-The majority party in the body which determines the rules of the US House and US Senate gained control of the House in the
-The people who controlled New York before it became an English colony came to the country where John Kerry's yacht
-During the last cold phase of the last glacial, the Irish Channel and the body of water by the city Caspar Vog
-Based on the information provided, the county that shares a border with the county where the birthplace of Tonight You're
-The German priest who wanted to reform the religious denomination now the largest in the US preached a sermon on Marian
-Based on the information provided, the explorer reached the city where the only group larger than the record label of The Lost Tr
-The song "The Story" was written by Phil Hanseroth.
-KUAT-TV 6 is the PBS station in the city that shares a county with Allen, Arizona.
-The dissolution of the privileges in Poland of the empire that helped the patriots during the Revolutionary War, the Kingdom
-The city where the Yongle emperor greeted the person to whom the edict was addressed is Nanjing
-The creator of The Blind Girl, John Everett Millais, died on August 5, 18
-正在评估:  23%|██▎       | 231/1000 [07:49<26:08,  2.04s/it]正在评估:  23%|██▎       | 232/1000 [07:51<25:46,  2.01s/it]正在评估:  23%|██▎       | 233/1000 [07:53<27:08,  2.12s/it]正在评估:  23%|██▎       | 234/1000 [07:55<26:36,  2.08s/it]正在评估:  24%|██▎       | 235/1000 [07:57<26:26,  2.07s/it]正在评估:  24%|██▎       | 236/1000 [07:59<27:00,  2.12s/it]正在评估:  24%|██▎       | 237/1000 [08:01<26:33,  2.09s/it]正在评估:  24%|██▍       | 238/1000 [08:03<25:55,  2.04s/it]正在评估:  24%|██▍       | 239/1000 [08:05<24:50,  1.96s/it]正在评估:  24%|██▍       | 240/1000 [08:07<26:17,  2.08s/it]正在评估:  24%|██▍       | 241/1000 [08:09<24:52,  1.97s/it]正在评估:  24%|██▍       | 242/1000 [08:11<25:38,  2.03s/it]正在评估:  24%|██▍       | 243/1000 [08:13<25:18,  2.01s/it]正在评估:  24%|██▍       | 244/1000 [08:15<25:36,  2.03s/it]正在评估:  24%|██▍       | 245/1000 [08:16<22:09,  1.76s/it]正在评估:  25%|██▍       | 246/1000 [08:18<23:28,  1.87s/it]正在评估:  25%|██▍       | 247/1000 [08:20<24:02,  1.92s/it]正在评估:  25%|██▍       | 248/1000 [08:23<25:41,  2.05s/it]正在评估:  25%|██▍       | 249/1000 [08:25<26:21,  2.11s/it]正在评估:  25%|██▌       | 250/1000 [08:27<26:35,  2.13s/it]正在评估:  25%|██▌       | 251/1000 [08:29<25:56,  2.08s/it]正在评估:  25%|██▌       | 252/1000 [08:31<24:58,  2.00s/it]正在评估:  25%|██▌       | 253/1000 [08:33<26:28,  2.13s/it]正在评估:  25%|██▌       | 254/1000 [08:35<25:00,  2.01s/it]正在评估:  26%|██▌       | 255/1000 [08:37<24:54,  2.01s/it]正在评估:  26%|██▌       | 256/1000 [08:39<24:47,  2.00s/it]正在评估:  26%|██▌       | 257/1000 [08:41<24:59,  2.02s/it]正在评估:  26%|██▌       | 258/1000 [08:43<23:49,  1.93s/it]正在评估:  26%|██▌       | 259/1000 [08:45<24:50,  2.01s/it]正在评估:  26%|██▌       | 260/1000 [08:47<25:01,  2.03s/it]正在评估:  26%|██▌       | 261/1000 [08:49<24:32,  1.99s/it]正在评估:  26%|██▌       | 262/1000 [08:51<25:09,  2.04s/it]正在评估:  26%|██▋       | 263/1000 [08:54<25:42,  2.09s/it]正在评估:  26%|██▋       | 264/1000 [08:55<23:38,  1.93s/it]正在评估:  26%|██▋       | 265/1000 [08:57<23:27,  1.91s/it]正在评估:  27%|██▋       | 266/1000 [08:59<24:02,  1.96s/it]正在评估:  27%|██▋       | 267/1000 [09:01<24:47,  2.03s/it]正在评估:  27%|██▋       | 268/1000 [09:03<24:06,  1.98s/it]正在评估:  27%|██▋       | 269/1000 [09:05<23:10,  1.90s/it]正在评估:  27%|██▋       | 270/1000 [09:06<22:07,  1.82s/it]正在评估:  27%|██▋       | 271/1000 [09:08<22:40,  1.87s/it]正在评估:  27%|██▋       | 272/1000 [09:10<21:31,  1.77s/it]正在评估:  27%|██▋       | 273/1000 [09:12<22:13,  1.83s/it]正在评估:  27%|██▋       | 274/1000 [09:14<21:56,  1.81s/it]正在评估:  28%|██▊       | 275/1000 [09:16<22:28,  1.86s/it]正在评估:  28%|██▊       | 276/1000 [09:18<23:05,  1.91s/it]正在评估:  28%|██▊       | 277/1000 [09:20<23:51,  1.98s/it]正在评估:  28%|██▊       | 278/1000 [09:21<22:32,  1.87s/it]正在评估:  28%|██▊       | 279/1000 [09:24<23:29,  1.95s/it]正在评估:  28%|██▊       | 280/1000 [09:26<24:06,  2.01s/it]正在评估:  28%|██▊       | 281/1000 [09:28<24:54,  2.08s/it]正在评估:  28%|██▊       | 282/1000 [09:30<24:27,  2.04s/it]正在评估:  28%|██▊       | 283/1000 [09:32<23:44,  1.99s/it]正在评估:  28%|██▊       | 284/1000 [09:34<24:45,  2.07s/it]正在评估:  28%|██▊       | 285/1000 [09:36<24:37,  2.07s/it]正在评估:  29%|██▊       | 286/1000 [09:38<22:45,  1.91s/it]正在评估:  29%|██▊       | 287/1000 [09:40<23:07,  1.95s/it]正在评估:  29%|██▉       | 288/1000 [09:42<23:26,  1.98s/it]正在评估:  29%|██▉       | 289/1000 [09:44<22:45,  1.92s/it]正在评估:  29%|██▉       | 290/1000 [09:45<21:41,  1.83s/it]正在评估:  29%|██▉       | 291/1000 [09:47<22:39,  1.92s/it]正在评估:  29%|██▉       | 292/1000 [09:49<22:48,  1.93s/it]正在评估:  29%|██▉       | 293/1000 [09:51<22:32,  1.91s/it]正在评估:  29%|██▉       | 294/1000 [09:53<22:38,  1.92s/it]正在评估:  30%|██▉       | 295/1000 [09:55<22:41,  1.93s/it]正在评估:  30%|██▉       | 296/1000 [09:56<19:42,  1.68s/it]正在评估:  30%|██▉       | 297/1000 [09:58<21:20,  1.82s/it]正在评估:  30%|██▉       | 298/1000 [10:00<21:56,  1.88s/it]正在评估:  30%|██▉       | 299/1000 [10:02<21:48,  1.87s/it]正在评估:  30%|███       | 300/1000 [10:04<21:55,  1.88s/it]正在评估:  30%|███       | 301/1000 [10:06<23:01,  1.98s/it]正在评估:  30%|███       | 302/1000 [10:08<23:40,  2.04s/it]正在评估:  30%|███       | 303/1000 [10:10<23:28,  2.02s/it]正在评估:  30%|███       | 304/1000 [10:13<24:16,  2.09s/it]正在评估:  30%|███       | 305/1000 [10:15<24:35,  2.12s/it]正在评估:  31%|███       | 306/1000 [10:17<25:13,  2.18s/it]正在评估:  31%|███       | 307/1000 [10:19<24:20,  2.11s/it]正在评估:  31%|███       | 308/1000 [10:21<23:33,  2.04s/it]正在评估:  31%|███       | 309/1000 [10:23<23:05,  2.00s/it]正在评估:  31%|███       | 310/1000 [10:25<23:46,  2.07s/it]正在评估:  31%|███       | 311/1000 [10:27<23:53,  2.08s/it]正在评估:  31%|███       | 312/1000 [10:29<23:06,  2.02s/it]The makers of the Acura Legend, Scion bbX, and Nissan opened US assembly plants in
-The name of the castle in the city where the performers of Born A Lion was formed is not mentioned in the provided external
-The author of A Treatise Concerning the Principles of Human Knowledge lived in the 18th century
-The two features of Windows 98 that were highlighted by the man who announced Windows in 1983 were
-SEAL stands for Sea, Air, and Land, which refers to the primary special operations force of the U.S.
-The US believes that the country where Siddhi Savetsila was born in helped Japan because of economic sanctions.
-The socialist candidate, Eugene V. Debs, was part of the Socialist Party of America, which ran for
-The PBS station of the city in the same county as Helvetia is KUAT-TV 6.
-Based on the given information, the person who acted in Signora Enrica was born in Italy.
-According to Pew, in 2010, 49.3% of Nigeria's population was
-The operator of the R class patrol boat served in the Vietnam War.
-The famous leader of the Confederate Military, Jefferson Davis, ended his fight in the Mexican-American war on March 1
-The star of Dark Hazard, Edward G. Robinson, played the character Rameses in The Ten Commandments.
-The father of Jujhar Singh's father is Guru Gobind Singh.
-Aiken County
-Based on the information provided, the team that Jamie Ward is a member of won the FA Cup in 199
-Based on the information provided, it is not possible to determine who won the Indy Car Race in the largest city and capital
-The tribes from the place where the Rossen culture is located invaded the Roman Empire in the year 406.
-The version of the language where the last name Sylvester originates was used in the era of the king that united
-The new season for the show starring the author of True Story: A Novel starts on February 20,
-Based on the information provided, John Phan's birthplace is in the Central Highlands region of Vietnam, specifically in
-Based on the information provided, it is unclear which university won more national championships between the university featuring Fort Hill and the university
-Matt Bennett stars alongside the songwriter of "No Tears Left to Cry" in the music video for "one last
-Celebrity Big Brother is coming to CBS in early 2018.
-Hurricanes occur in the Atlantic Ocean, which borders the state where Williamsburg, Main Street Station, and another share
-The creator of "Christ in the House of His Parents," John Everett Millais, died on August
-The same people who the Somali Muslim Ajuran Empire declared independence from were expelled from the natural boundary between Th
-The performer who released "All Your Faded Things" is Anna Oxygen and the record label is Cold Crush Records
-Based on the provided information, it is unclear how many mandatory transmitters of the owner and operator of most CBC TV
-People from whom the new coins were a proclamation of independence by the Somali Muslim Ajuran Empire were
-The record label of the co-writer and recording artist of Permission to Fly is not provided in the given information.
-The child of the person who sponsored the resolution to reopen trade with Vietnam, along with Kerry, is Vanessa
-The district where the man who wanted to reform the religion practiced by Innocenzo Ferrieri is in Massachusetts.
-Louis Chedid is the father of the Labo M performer.
-Based on the information provided, Tom Denney's birthplace is located in Ocala, Florida. This is supported by
-The population of the state where The Dukes of Hazzard took place is unknown.
-The country where the top-ranking Warsaw Pact operatives originated became allies with the US in 1
-The company preceding Metalmark Capital was named after Harold Stanley, one of the founders of Morgan Stanley.
-Based on the provided information, the spouse of the Redcap cast member is Melinda.
-David Currie has played for West Ham and Ajax.
-The gun used by Pollack's director in Westworld is not mentioned in the provided external documentation.
-The seat of the county where Van Hook Township is located is Mountrail County.
-During the last cold phase of the last glacial period, the Irish Channel and the English Channel were connected to the Atlantic Ocean
-The pole the balloon was supposed to pass over is located at the North Pole.
-The state that contains the county where Elmo is found reinstated the death penalty in 1984.
-The president of the other country that participated in the Commission of Truth and Friendship is Susilo Bambang Yud
-The city where Hillcrest High School is located became the capital of the state in which a statue of a Latin mother god
-The mother of the screenwriter of WarGames is Sarah Monfort.
-Based on the information provided, the All-Star game being played in the league that Jim Wilson plays for is on February
-According to the provided information, it is stated that Ibn Sina (Avicenna) is regarded as the most
-The spouse of the actor that plays Jarvis in the Avengers Age of Ultron is Laura Barton.
-Based on the information provided, Gaspar reached the region that would be the headquarters of the record label of which the only larger
-The city where the Zone 5 Military Museum can be found is in the South Central Coast region of Vietnam.
-The tribes from the location of Lusatia invaded the Roman Empire in the year 376.
-The people of the nation were expelled from the country that borders Thailand and Ban Nampo village's country through military
-Minudasht County is located in Golestan Province in Iran.
-The majority party in the House of Representatives took control of the determiner of rules of the US House and US Senate in the
-Based on the information provided, the Vice-President of the organization that controls the monetary policy of the EU is
-The company that eventually became the company that made the Skyflash missile was General Electric Company.
-The Leone brothers started their band in 2005.
-Based on the information provided, the wettest year in the second largest city in the state where Yuma's Library District
-Based on the information provided, the county that shares a border with the other county containing the city that is the birthplace of
-The USS Acme seals are a reference to the United States Navy's primary special operations force, the Navy SEAL
-Thelma in the movie Thelma and Louise was played by Geena Davis, who also played the character Dott
-The person telling the story in How I Met Your Mother ends up with Tracy McConnell.
-CBS.
-Based on the information provided, it is not possible to determine the exact number of students attending Daniel Thürer's
-The ocean adjacent to Miami meets the body of water where the Mississippi River empties into the sea in the Gulf of
-The ocean meets the Gulf of Mexico at the Virginia Beach boardwalk.
-Based on the information provided, it is not possible to determine where Ulrich Walter's employer is headquartered.
-Based on the information provided, the county that shares a border with the county where the most populous city in the state where
-The Genesis's advantages over the platform of the game Nightshade were its larger library of games, lower price point
-The only communist country to have an embassy where the unprepared country was invaded is Czechoslovakia
-The company that initiated a successful price war among PC manufacturers in 1994 merged with Hewlett
-The wrestler who created the Money in the Bank Ladder Match won in 2008 at WrestleMan
-The 2018 population of the Italian city that's underwater is 260,897
-The death penalty was reinstated in the state that contains the county where Howard Mill is located in 1984
-Based on the information provided, the country that has a body of water that was inspiration for the name of the Mara
-The Ira C. Allen Mansion is located in Fair Haven, Vermont, which is in the county of Rut
-The pop artist who started his career on adult contemporary radio along with the subject of the song "The One That Got Away
-Based on the information provided, it is estimated that 50% of Eritrea adheres to the religion widely
-Based on the given information, Adolf Overweg died in the geological area of Maduari, Chad.
-正在评估:  31%|███▏      | 313/1000 [10:31<23:39,  2.07s/it]正在评估:  31%|███▏      | 314/1000 [10:33<23:50,  2.09s/it]正在评估:  32%|███▏      | 315/1000 [10:35<23:42,  2.08s/it]正在评估:  32%|███▏      | 316/1000 [10:38<24:13,  2.13s/it]正在评估:  32%|███▏      | 317/1000 [10:39<22:17,  1.96s/it]正在评估:  32%|███▏      | 318/1000 [10:41<21:43,  1.91s/it]正在评估:  32%|███▏      | 319/1000 [10:43<22:40,  2.00s/it]正在评估:  32%|███▏      | 320/1000 [10:45<23:15,  2.05s/it]正在评估:  32%|███▏      | 321/1000 [10:48<23:32,  2.08s/it]正在评估:  32%|███▏      | 322/1000 [10:50<23:47,  2.11s/it]正在评估:  32%|███▏      | 323/1000 [10:52<23:31,  2.09s/it]正在评估:  32%|███▏      | 324/1000 [10:54<24:12,  2.15s/it]正在评估:  32%|███▎      | 325/1000 [10:56<23:28,  2.09s/it]正在评估:  33%|███▎      | 326/1000 [10:58<22:53,  2.04s/it]正在评估:  33%|███▎      | 327/1000 [11:00<23:23,  2.09s/it]正在评估:  33%|███▎      | 328/1000 [11:02<23:24,  2.09s/it]正在评估:  33%|███▎      | 329/1000 [11:04<22:51,  2.04s/it]正在评估:  33%|███▎      | 330/1000 [11:06<21:57,  1.97s/it]正在评估:  33%|███▎      | 331/1000 [11:08<22:19,  2.00s/it]正在评估:  33%|███▎      | 332/1000 [11:10<21:36,  1.94s/it]正在评估:  33%|███▎      | 333/1000 [11:12<21:45,  1.96s/it]正在评估:  33%|███▎      | 334/1000 [11:14<23:04,  2.08s/it]正在评估:  34%|███▎      | 335/1000 [11:16<23:02,  2.08s/it]正在评估:  34%|███▎      | 336/1000 [11:18<23:08,  2.09s/it]正在评估:  34%|███▎      | 337/1000 [11:21<23:40,  2.14s/it]正在评估:  34%|███▍      | 338/1000 [11:23<23:35,  2.14s/it]正在评估:  34%|███▍      | 339/1000 [11:25<23:25,  2.13s/it]正在评估:  34%|███▍      | 340/1000 [11:27<23:12,  2.11s/it]正在评估:  34%|███▍      | 341/1000 [11:29<23:10,  2.11s/it]正在评估:  34%|███▍      | 342/1000 [11:31<23:08,  2.11s/it]正在评估:  34%|███▍      | 343/1000 [11:33<22:43,  2.07s/it]正在评估:  34%|███▍      | 344/1000 [11:35<21:37,  1.98s/it]正在评估:  34%|███▍      | 345/1000 [11:37<21:32,  1.97s/it]正在评估:  35%|███▍      | 346/1000 [11:39<21:20,  1.96s/it]正在评估:  35%|███▍      | 347/1000 [11:41<22:07,  2.03s/it]正在评估:  35%|███▍      | 348/1000 [11:43<22:24,  2.06s/it]正在评估:  35%|███▍      | 349/1000 [11:45<22:44,  2.10s/it]正在评估:  35%|███▌      | 350/1000 [11:47<22:51,  2.11s/it]正在评估:  35%|███▌      | 351/1000 [11:50<22:43,  2.10s/it]正在评估:  35%|███▌      | 352/1000 [11:52<22:20,  2.07s/it]正在评估:  35%|███▌      | 353/1000 [11:54<22:56,  2.13s/it]正在评估:  35%|███▌      | 354/1000 [11:56<22:33,  2.10s/it]正在评估:  36%|███▌      | 355/1000 [11:58<22:20,  2.08s/it]正在评估:  36%|███▌      | 356/1000 [12:00<22:17,  2.08s/it]正在评估:  36%|███▌      | 357/1000 [12:02<22:07,  2.07s/it]正在评估:  36%|███▌      | 358/1000 [12:04<21:53,  2.05s/it]正在评估:  36%|███▌      | 359/1000 [12:06<20:59,  1.97s/it]正在评估:  36%|███▌      | 360/1000 [12:08<21:16,  1.99s/it]正在评估:  36%|███▌      | 361/1000 [12:10<21:52,  2.05s/it]正在评估:  36%|███▌      | 362/1000 [12:12<21:01,  1.98s/it]正在评估:  36%|███▋      | 363/1000 [12:14<20:47,  1.96s/it]正在评估:  36%|███▋      | 364/1000 [12:16<21:45,  2.05s/it]正在评估:  36%|███▋      | 365/1000 [12:17<19:47,  1.87s/it]正在评估:  37%|███▋      | 366/1000 [12:19<20:18,  1.92s/it]正在评估:  37%|███▋      | 367/1000 [12:22<20:49,  1.97s/it]正在评估:  37%|███▋      | 368/1000 [12:24<20:56,  1.99s/it]正在评估:  37%|███▋      | 369/1000 [12:26<21:00,  2.00s/it]正在评估:  37%|███▋      | 370/1000 [12:28<21:17,  2.03s/it]正在评估:  37%|███▋      | 371/1000 [12:30<21:18,  2.03s/it]正在评估:  37%|███▋      | 372/1000 [12:32<21:23,  2.04s/it]正在评估:  37%|███▋      | 373/1000 [12:33<19:58,  1.91s/it]正在评估:  37%|███▋      | 374/1000 [12:35<19:17,  1.85s/it]正在评估:  38%|███▊      | 375/1000 [12:37<20:00,  1.92s/it]正在评估:  38%|███▊      | 376/1000 [12:39<20:29,  1.97s/it]正在评估:  38%|███▊      | 377/1000 [12:41<20:36,  1.99s/it]正在评估:  38%|███▊      | 378/1000 [12:44<21:11,  2.04s/it]正在评估:  38%|███▊      | 379/1000 [12:45<20:47,  2.01s/it]正在评估:  38%|███▊      | 380/1000 [12:47<20:32,  1.99s/it]正在评估:  38%|███▊      | 381/1000 [12:50<20:57,  2.03s/it]正在评估:  38%|███▊      | 382/1000 [12:51<20:10,  1.96s/it]正在评估:  38%|███▊      | 383/1000 [12:53<19:50,  1.93s/it]正在评估:  38%|███▊      | 384/1000 [12:55<20:12,  1.97s/it]正在评估:  38%|███▊      | 385/1000 [12:57<19:30,  1.90s/it]正在评估:  39%|███▊      | 386/1000 [12:59<20:53,  2.04s/it]正在评估:  39%|███▊      | 387/1000 [13:01<20:53,  2.04s/it]正在评估:  39%|███▉      | 388/1000 [13:03<20:39,  2.03s/it]正在评估:  39%|███▉      | 389/1000 [13:05<20:32,  2.02s/it]正在评估:  39%|███▉      | 390/1000 [13:07<20:46,  2.04s/it]正在评估:  39%|███▉      | 391/1000 [13:09<20:14,  2.00s/it]Based on the given information, the country where Siddhi Savetsila was born formed an alliance with Japan in
-The region immediately north of the region where Israel is located and the location of the Battle of Qurah and Umm al
-Based on the information provided, it is unclear which university has more national championships between the University of the State having Fort Hill
-Based on the given information, the answer is not clear. There is no specific mention of a player winning the MVP award
-The performer of "Addicted" was a part of the sixth season.
-The government got involved in healthcare after the war where Dunn Dunn's artist died.
-Based on the information provided, the largest state in the region where the fictional Gilead in the Handmaid'
-Based on the information provided, the average yearly income for the same nationality as the author of The Feminine Myst
-The Palau de la Generalitat in Barcelona was constructed in the 15th century for the kings of Aragon
-Based on the information provided, the spouse of the actor who played Scarlet in Gone with the wind is Charles
-Yes, foreign tourists can cruise to the country between the nation that hosted 2020 AFC U-
-The longest home run hit in the league where the team with the most titles from the event after which the MLB MVP
-Aeson was the father of the leader of the Argonauts in the search for the golden fleece.
-The spouse of the Rabbit Hole's producer is Becca Corbett.
-Based on the information provided, the last time Duane Courtney's team beat the winner of the 189
-The Black Death reduced the population of the region offered aid by the Marshall Plan by approximately 30%.
-Lacey Chabert originally voiced the character Mila Kunis plays on Family Guy.
-The answer to the question is not provided in the given information or the external documents.
-Mohamed Atta's car, manufactured by the company that includes Datsun, is an instance of a
-Cedar Springs is located in Falls County, Texas, which shares a border with Bell County.
-The original voice for the character in Mickey's Safari in Letterland is Walt Disney.
-In the Justice League movie, the person portraying Batman played the character of Mike in Dazed and Confused
-Based on the given information, it is not possible to determine how long Lijia Zhang's birthplace had been
-Based on the given information, it is not possible to determine who the child of the person that Mel Brooks played in Mr
-The spouse of the voice actor of Batman in The Lego Batman Movie is Lori Greiner.
-Based on the information provided, the makers of Acura Legend, the biggest automobile company in the world, and
-The RX 350 from the Scion xB manufacturer's luxury division changed body style in April
-Since 2004, the location of the body to which, if a matter is not specifically reserved, it is
-Based on the given information, the father of the man who conceived of the 'new' police is Francis J. Ban
-The food safety system of the agency that has the authority to decide if a drug is marketed otc or prescription
-The party of Oklahoma's US Senators took control of the body determining the rules of the US House and US Senate
-The city where someone worked that went to the state where Atwell Mill Grove is located during the gold rush is Sac
-The party that controls the House of Representatives took control of the branch that approves the appointees to the American cabinet
-The regular season for the league the Carolina Hurricanes belong to begins on October 3, 2018
-John Kukuzelis introduced a system of musical notation used during the 14th century in the Balkans,
-Zhu Qinan was born in Wenzhou, which is located in Zhejiang Province, China.
-Based on the information provided, it is unclear which university won more national championships between the university featuring Fort Hill and the university
-The Palau de la Generalitat in Barcelona was constructed in the 15th century for the kings of Aragon
-Based on the information provided, the answer is not clear as the external documents do not mention any prominent figures in the radio division
-Nintendo's limit on games per developer per year on the platform with a three letter abbreviation, that had the game
-According to QS World University Rankings, the place that employed Said Ashour is ranked 551-6
-The major conflict for which the country on the natural boundary between the country that hosted the tournament and the country where A Don is
-The country where women's football is played in the country where the German chancellor was criticized by The Sun
-In the movie A League of their Own, the husband of the person who also played Thelma in the movie Th
-The district where the person who wanted to reform and address Brian Nobles's religion preached a sermon on Marian dev
-The actress in My Fair Lady, Julie Andrews, won a Tony Award for her work in the Broadway musical version of
-Based on the given information, the high school that is most likely to get the most rain where Sandy High School is is
-Based on the provided information, the country whose co-official language was used in the show named for the place Slav
-After being hired by Ludwig von Mises, Hayek worked for the Austrian government, specifically on the legal and economic
-Magic Christian Music is the record label of Badfinger, which is part of Apple Records.
-The Beijing -- Shanghai High-Speed Railway is the railway line in the country where The Longest Night in Shang
-Based on the given information, the last time Darren Carter's team beat the 1894-95
-John D. Loudermilk.
-Based on the information provided, it is not possible to determine who the child of the person who started the State of the Union
-The version of the Molotov–Ribbentrop Pact that was established by the man who succeeded the leader
-The performer of "Beat Hotel" is Mauro Scocco, and his date of birth is not provided in
-The Directory of Public Worship was approved by a parliament whose modern equivalent has been based in Edinburgh since 2004
-The political party of Stewart and Harlan took control of the body in question in 1868.
-Based on the information provided, the largest state in the region where The Handmaid's Tale takes place is the
-After the Soviet President departed from the Kremlin, the Soviet flag was lowered for the last time and the Russian
-The Umchabezi River serves as the mouth of the Limpopo River.
-The full name of the organization that publishes the Laws of the Game is FIFA.
-The US believes that the country where Ercole Manfredi died, Thailand, helped Japan due to economic sanctions
-Based on the information provided, the only communist country to have an embassy in Country B was Yugoslavia
-The league playing in the Thursday night football game is a type of the National Football League (NFL).
-According to the QS World University Rankings, the employer of Hasan Hanafi, Cairo University, is
-James Howard Meredith was the first black student admitted to the University of Mississippi that Stewart Patridge attended.
-The capital of the county that shares a border with the county where the headquarters of Pierce Manufacturing is located is P
-Jessie Woodrow Wilson Sayre was the child of the 28th U.S. president, Woodrow Wilson
-The Beach was filmed on the Thai island Koh Phi Phi.
-The song "Turn Me On" is performed by Norah Jones and written by Lee Alexander.
-The plague occurred in the place of death of the creator of La Schiavona three times.
-The source of the river that is the mouth of the Caledon River is the Modder River.
-Based on the given information, it is not possible to determine the exact percent of Nigerians in 2010 who
-According to the organization that creates census county division, the total area in square miles is 17.037.
-The spouse of the actor who plays the father on I Can Only Imagine is Madeline Carroll.
-The city where Hans-Joachim Merker was born is Merseburg, and the year of his birth is 1
-The person who wanted to reform and address the church that the general population converted to lead was Martin Luther.
-The military that overran much of Erich Zakowski's place of birth is the Soviet Union.
-正在评估:  39%|███▉      | 392/1000 [13:11<20:36,  2.03s/it]正在评估:  39%|███▉      | 393/1000 [13:14<21:00,  2.08s/it]正在评估:  39%|███▉      | 394/1000 [13:16<20:18,  2.01s/it]正在评估:  40%|███▉      | 395/1000 [13:18<20:28,  2.03s/it]正在评估:  40%|███▉      | 396/1000 [13:20<21:00,  2.09s/it]正在评估:  40%|███▉      | 397/1000 [13:22<20:07,  2.00s/it]正在评估:  40%|███▉      | 398/1000 [13:24<20:32,  2.05s/it]正在评估:  40%|███▉      | 399/1000 [13:26<20:29,  2.05s/it]正在评估:  40%|████      | 400/1000 [13:28<20:58,  2.10s/it]正在评估:  40%|████      | 401/1000 [13:30<20:19,  2.04s/it]正在评估:  40%|████      | 402/1000 [13:32<21:08,  2.12s/it]正在评估:  40%|████      | 403/1000 [13:34<20:17,  2.04s/it]正在评估:  40%|████      | 404/1000 [13:36<20:00,  2.01s/it]正在评估:  40%|████      | 405/1000 [13:38<19:35,  1.98s/it]正在评估:  41%|████      | 406/1000 [13:40<19:51,  2.01s/it]正在评估:  41%|████      | 407/1000 [13:43<21:31,  2.18s/it]正在评估:  41%|████      | 408/1000 [13:45<21:21,  2.17s/it]正在评估:  41%|████      | 409/1000 [13:47<21:39,  2.20s/it]正在评估:  41%|████      | 410/1000 [13:49<21:27,  2.18s/it]正在评估:  41%|████      | 411/1000 [13:51<20:33,  2.09s/it]正在评估:  41%|████      | 412/1000 [13:53<20:33,  2.10s/it]正在评估:  41%|████▏     | 413/1000 [13:55<19:55,  2.04s/it]正在评估:  41%|████▏     | 414/1000 [13:57<20:14,  2.07s/it]正在评估:  42%|████▏     | 415/1000 [13:59<19:50,  2.04s/it]正在评估:  42%|████▏     | 416/1000 [14:01<20:23,  2.10s/it]正在评估:  42%|████▏     | 417/1000 [14:03<19:40,  2.03s/it]正在评估:  42%|████▏     | 418/1000 [14:05<19:48,  2.04s/it]正在评估:  42%|████▏     | 419/1000 [14:07<19:58,  2.06s/it]正在评估:  42%|████▏     | 420/1000 [14:09<19:46,  2.05s/it]正在评估:  42%|████▏     | 421/1000 [14:11<19:36,  2.03s/it]正在评估:  42%|████▏     | 422/1000 [14:13<19:13,  2.00s/it]正在评估:  42%|████▏     | 423/1000 [14:15<19:14,  2.00s/it]正在评估:  42%|████▏     | 424/1000 [14:18<19:51,  2.07s/it]正在评估:  42%|████▎     | 425/1000 [14:20<19:46,  2.06s/it]正在评估:  43%|████▎     | 426/1000 [14:22<19:55,  2.08s/it]正在评估:  43%|████▎     | 427/1000 [14:24<20:09,  2.11s/it]正在评估:  43%|████▎     | 428/1000 [14:25<18:21,  1.93s/it]正在评估:  43%|████▎     | 429/1000 [14:28<19:11,  2.02s/it]正在评估:  43%|████▎     | 430/1000 [14:30<18:45,  1.97s/it]正在评估:  43%|████▎     | 431/1000 [14:32<18:51,  1.99s/it]正在评估:  43%|████▎     | 432/1000 [14:34<19:22,  2.05s/it]正在评估:  43%|████▎     | 433/1000 [14:36<19:39,  2.08s/it]正在评估:  43%|████▎     | 434/1000 [14:38<18:48,  1.99s/it]正在评估:  44%|████▎     | 435/1000 [14:40<18:46,  1.99s/it]正在评估:  44%|████▎     | 436/1000 [14:42<18:38,  1.98s/it]正在评估:  44%|████▎     | 437/1000 [14:44<19:01,  2.03s/it]正在评估:  44%|████▍     | 438/1000 [14:46<18:52,  2.02s/it]正在评估:  44%|████▍     | 439/1000 [14:48<19:21,  2.07s/it]正在评估:  44%|████▍     | 440/1000 [14:50<19:29,  2.09s/it]正在评估:  44%|████▍     | 441/1000 [14:52<17:54,  1.92s/it]正在评估:  44%|████▍     | 442/1000 [14:54<18:02,  1.94s/it]正在评估:  44%|████▍     | 443/1000 [14:55<16:07,  1.74s/it]正在评估:  44%|████▍     | 444/1000 [14:57<17:16,  1.86s/it]正在评估:  44%|████▍     | 445/1000 [14:59<17:33,  1.90s/it]正在评估:  45%|████▍     | 446/1000 [15:01<18:24,  1.99s/it]正在评估:  45%|████▍     | 447/1000 [15:03<18:25,  2.00s/it]正在评估:  45%|████▍     | 448/1000 [15:05<17:18,  1.88s/it]正在评估:  45%|████▍     | 449/1000 [15:07<17:47,  1.94s/it]正在评估:  45%|████▌     | 450/1000 [15:09<17:48,  1.94s/it]正在评估:  45%|████▌     | 451/1000 [15:11<17:03,  1.86s/it]正在评估:  45%|████▌     | 452/1000 [15:13<17:48,  1.95s/it]正在评估:  45%|████▌     | 453/1000 [15:15<17:40,  1.94s/it]正在评估:  45%|████▌     | 454/1000 [15:16<17:21,  1.91s/it]正在评估:  46%|████▌     | 455/1000 [15:19<18:06,  1.99s/it]正在评估:  46%|████▌     | 456/1000 [15:21<18:58,  2.09s/it]正在评估:  46%|████▌     | 457/1000 [15:23<18:42,  2.07s/it]正在评估:  46%|████▌     | 458/1000 [15:25<19:14,  2.13s/it]正在评估:  46%|████▌     | 459/1000 [15:27<18:48,  2.09s/it]正在评估:  46%|████▌     | 460/1000 [15:29<18:26,  2.05s/it]正在评估:  46%|████▌     | 461/1000 [15:31<18:20,  2.04s/it]正在评估:  46%|████▌     | 462/1000 [15:33<17:17,  1.93s/it]正在评估:  46%|████▋     | 463/1000 [15:35<16:41,  1.87s/it]正在评估:  46%|████▋     | 464/1000 [15:36<15:36,  1.75s/it]正在评估:  46%|████▋     | 465/1000 [15:38<16:53,  1.89s/it]正在评估:  47%|████▋     | 466/1000 [15:40<17:32,  1.97s/it]正在评估:  47%|████▋     | 467/1000 [15:42<17:04,  1.92s/it]正在评估:  47%|████▋     | 468/1000 [15:44<17:33,  1.98s/it]正在评估:  47%|████▋     | 469/1000 [15:46<17:15,  1.95s/it]正在评估:  47%|████▋     | 470/1000 [15:48<17:23,  1.97s/it]正在评估:  47%|████▋     | 471/1000 [15:50<17:15,  1.96s/it]正在评估:  47%|████▋     | 472/1000 [15:52<16:04,  1.83s/it]正在评估:  47%|████▋     | 473/1000 [15:54<17:04,  1.94s/it]Based on the given information, it is not possible to determine the average yearly income for someone with the same nationality as
-The German priest who wanted Abraham Shimonaya's religious denomination to reform preached a sermon on Marian dev
-Based on the information provided, the brother of the artist who made "Nothin' My Love Can't Fix"
-The company that succeeded the owner of Empire Sports Network was Fox Sports West and Prime Ticket, which are American regional sports networks
-The person who took over the territory and made it part of their empire died in 1371.
-The start of the battle of the birthplace of the performer of III is unknown.
-Based on the information provided, the team that John Surtees is a member of, the owner of Scion, and
-From Portland, in the state with the county where McCauley Mountain is located, you can see Mt. H
-The Genesis's advantages over the platform in which Robodemons is played include its 16-bit architecture
-SEAL stands for Sea, Air, and Land, which refers to the primary special operations force of the United States Navy,
-According to Pew, in 2010, approximately 50% of Nigeria's population practiced
-The creator of The Painter's Studio, Gustave Courbet, was born on June 10,
-The city that contains the basilica named after the saint who is holding a knife in the last supper became a
-The Ohio River meets the body of water by the city Astronautalis is from, which is the Mississippi River, at
-The 1993 Indy Car race in the city with the largest population in the state where Poachie Range
-The tribes in the area where the Ashkenazi Jews can trace their ancestry to Jews who settled there invaded the Roman
-The story that included the character from The Bourne Betrayal was based on the novel "The Bourne Ultimatum
-The region that lies to the north of the country where Sar-El is located and the Persian Gulf was established in
-The same people who the Somali Muslim Ajuran Empire declared independence from were expelled from the natural boundary between Th
-The geological event that caused the foundations of the land beneath the city where most university graduates stay after acquiring a
-Andrew Scheer is the federal leader of the party that Pierre-Hugues Boisvenu is a member of.
-The body style of the RX 350 changed in 2012.
-The tallest building in the state where KZAR is located is the Willis Tower, also known as the Sears
-Ferdinand de Lesseps led an attempt to link the Pacific Ocean with the Atlantic Ocean via a canal through the continental region
-Based on the provided information, it is not possible to determine the last time George Hollis's team beat the
-After the annexation of the northern part of Erich Zakowski's birthplace in 1946,
-The Sega Genesis had several advantages over the system Knight Rider came out on. The Genesis was a 1
-The people that the Somali Muslim Ajuran Empire made coins to proclaim independence from were the Portuguese. The
-Andrew Scheer is the federal leader of the party in which John Lynch-Staunton held a position.
-The construction of the Palau de la Generalitat in the place of death of Martin, of the region that contained Isuer
-Based on the given information, the highest goal scorer in the EPL is a member of Liverpool.
-Based on the information provided, the country that is the natural boundary between where the tournament was hosted and where A Don is located
-Based on the given information, it is not possible to determine the last time the team that Malcolm Briggs was a
-In April 2010, Shell announced that it was in the process of trying to find a potential buyer
-Based on the provided information, it is unclear how many mandatory transmitters of the Canadian Broadcasting Centre's owner were
-The language that the last name Sylvester comes from, used in the era of Rotrude's father, later
-The city of KABG is located in Santa Fe County.
-The spouse of the person who plays Batman in the Lego Batman Movie is Lois Lane.
-The administrative territorial entity where Zuchang Gymnasium is located is Jinjiang, Fujian, China.
-The majority party in the House of Representatives gained control of the body which approves members of the Cabinet in the 1
-When Hayek started working on Abuse of Reason, there were three groups involved in the war.
-The headquarters of Radio Television of the country that has a co-official language that is the same as the language of Oliver
-The college where Wolf V. Vishniac studied is part of the City University of New York.
-The enrollment at Henry Latimer's alma mater is 16,801.
-Based on the information provided, the answer to the question is not clear. The given information does not directly mention the Governor of
-The answer to the question is the Netherlands. The Netherlands sent naval ships to the body of water that joins the Atlantic and the
-Based on the information provided, the place of death of Felix Ives Batson is approximately 135 miles (2
-Based on the information provided, the player with the most points in a NBA season plays for the Los Angeles Lakers. This
-Charles Hamilton was the spouse of the leading lady in Gone With the Wind, portrayed by Vivien Leigh.
-The actress in Signora Enrica is from Italy.
-Based on the information provided, it is not clear who the spouse of the Green performer is. The external documentation does
-James Brown.
-The person who discovered that all atoms of an element have the same number of protons, participated in the discovery of the neut
-The person who launched the Bardoli Satyagraha on 4th February 1928 died on
-Based on the information provided, the spouse of the actress who plays Scarlett in Gone With the Wind is Charles
-The current population in 2017 of the country being the defending champions of the Champions Trophy is 2
-Lorenzo Costa the Younger died in 1583.
-The child of the Italian navigator who explored the eastern coast of the continent César Gaytan was born in for the English
-In the 14th century, John Kukuzelis introduced a system of musical notation used in the area where
-Based on the information provided, the band Hawk Nelson signed to the label Tooth & Nail.
-Nintendo's limit on games per developer per year for the platform with an abbreviated name that had the game Sun
-Mt. Hood and Mt. St. Helens can be seen from Portland, Oregon.
-Between Lithuania and Frederic Chopin's home country, there is Poland.
-The dynasty that the oldest wooden buildings in China can be dated to is the Han dynasty. The Han dynasty was
-The county that shares a border with the county where the most populous city in the state where the Dukes of H
-The political party that favored harsh punishment of southern states after the Civil War gained control of the House in 1
-In 2009, the team that won the first match in the 1943 Copa del Generaliss
-The actor who played Thelma in "Thelma and Louise" also played the character Dottie Hinson in
-In April 2010, the owner of MV Rapana announced that it was in the process of trying to
-Based on the information provided, the head of the developer of Simon is Bruce L. Davis, who is currently the CEO
-The birthplace of John Phan is located in the South Central Coast region of Vietnam.
-The Ciudad Deportiva is located in Nuevo Laredo, Mexico.
-Christin Hinojosa.
-By 1931, approximately 92% of the world's Jews were Ashkenazi Jews, who
-Based on the information provided, the spouse of the first convert to the faith that is the most common religion in Lebanon
-Based on the given information, the creator of The Blind Girl died on an unknown date.
-The Real Housewives series from the largest city of the state where WEKL transmits started when? The answer
-Roncalli left the city where the creator of Vanity died because of the mysterious circumstances surrounding the death of James
-Greyhound buses leave from the Toronto Coach Terminal in the birthplace of Spirit If...'s performer.
-The UK label that was bought by the company, along with ABC and the network that broadcasted The Chisholms,
-The river the Willemsbrug crosses over the mouth of the Nieuwe Maas.
-The enrollment where the first debate between Kerry and Bush took place is the University of Miami.
-正在评估:  47%|████▋     | 474/1000 [15:56<17:42,  2.02s/it]正在评估:  48%|████▊     | 475/1000 [15:58<17:44,  2.03s/it]正在评估:  48%|████▊     | 476/1000 [16:00<17:31,  2.01s/it]正在评估:  48%|████▊     | 477/1000 [16:02<17:34,  2.02s/it]正在评估:  48%|████▊     | 478/1000 [16:04<17:39,  2.03s/it]正在评估:  48%|████▊     | 479/1000 [16:06<15:52,  1.83s/it]正在评估:  48%|████▊     | 480/1000 [16:08<16:36,  1.92s/it]正在评估:  48%|████▊     | 481/1000 [16:10<16:46,  1.94s/it]正在评估:  48%|████▊     | 482/1000 [16:12<16:48,  1.95s/it]正在评估:  48%|████▊     | 483/1000 [16:14<16:48,  1.95s/it]正在评估:  48%|████▊     | 484/1000 [16:16<17:36,  2.05s/it]正在评估:  48%|████▊     | 485/1000 [16:17<15:36,  1.82s/it]正在评估:  49%|████▊     | 486/1000 [16:19<15:56,  1.86s/it]正在评估:  49%|████▊     | 487/1000 [16:21<16:25,  1.92s/it]正在评估:  49%|████▉     | 488/1000 [16:23<16:51,  1.98s/it]正在评估:  49%|████▉     | 489/1000 [16:25<16:48,  1.97s/it]正在评估:  49%|████▉     | 490/1000 [16:27<15:51,  1.87s/it]正在评估:  49%|████▉     | 491/1000 [16:29<15:47,  1.86s/it]正在评估:  49%|████▉     | 492/1000 [16:31<16:11,  1.91s/it]正在评估:  49%|████▉     | 493/1000 [16:33<16:52,  2.00s/it]正在评估:  49%|████▉     | 494/1000 [16:35<17:29,  2.07s/it]正在评估:  50%|████▉     | 495/1000 [16:37<17:15,  2.05s/it]正在评估:  50%|████▉     | 496/1000 [16:39<16:48,  2.00s/it]正在评估:  50%|████▉     | 497/1000 [16:41<16:31,  1.97s/it]正在评估:  50%|████▉     | 498/1000 [16:43<17:01,  2.04s/it]正在评估:  50%|████▉     | 499/1000 [16:45<16:54,  2.03s/it]正在评估:  50%|█████     | 500/1000 [16:47<15:20,  1.84s/it]正在评估:  50%|█████     | 501/1000 [16:48<15:12,  1.83s/it]正在评估:  50%|█████     | 502/1000 [16:50<15:41,  1.89s/it]正在评估:  50%|█████     | 503/1000 [16:52<15:51,  1.91s/it]正在评估:  50%|█████     | 504/1000 [16:54<15:14,  1.84s/it]正在评估:  50%|█████     | 505/1000 [16:56<14:31,  1.76s/it]正在评估:  51%|█████     | 506/1000 [16:57<14:41,  1.78s/it]正在评估:  51%|█████     | 507/1000 [16:59<14:51,  1.81s/it]正在评估:  51%|█████     | 508/1000 [17:01<15:09,  1.85s/it]正在评估:  51%|█████     | 509/1000 [17:03<15:37,  1.91s/it]正在评估:  51%|█████     | 510/1000 [17:06<16:14,  1.99s/it]正在评估:  51%|█████     | 511/1000 [17:07<15:59,  1.96s/it]正在评估:  51%|█████     | 512/1000 [17:09<16:12,  1.99s/it]正在评估:  51%|█████▏    | 513/1000 [17:12<16:13,  2.00s/it]正在评估:  51%|█████▏    | 514/1000 [17:14<16:14,  2.00s/it]正在评估:  52%|█████▏    | 515/1000 [17:16<16:35,  2.05s/it]正在评估:  52%|█████▏    | 516/1000 [17:17<15:45,  1.95s/it]正在评估:  52%|█████▏    | 517/1000 [17:19<15:57,  1.98s/it]正在评估:  52%|█████▏    | 518/1000 [17:22<16:29,  2.05s/it]正在评估:  52%|█████▏    | 519/1000 [17:24<16:21,  2.04s/it]正在评估:  52%|█████▏    | 520/1000 [17:26<16:31,  2.07s/it]正在评估:  52%|█████▏    | 521/1000 [17:27<15:20,  1.92s/it]正在评估:  52%|█████▏    | 522/1000 [17:30<15:51,  1.99s/it]正在评估:  52%|█████▏    | 523/1000 [17:32<16:03,  2.02s/it]正在评估:  52%|█████▏    | 524/1000 [17:34<15:54,  2.00s/it]正在评估:  52%|█████▎    | 525/1000 [17:35<15:24,  1.95s/it]正在评估:  53%|█████▎    | 526/1000 [17:37<15:20,  1.94s/it]正在评估:  53%|█████▎    | 527/1000 [17:39<15:12,  1.93s/it]正在评估:  53%|█████▎    | 528/1000 [17:41<15:28,  1.97s/it]正在评估:  53%|█████▎    | 529/1000 [17:44<16:14,  2.07s/it]正在评估:  53%|█████▎    | 530/1000 [17:45<15:33,  1.99s/it]正在评估:  53%|█████▎    | 531/1000 [17:47<15:40,  2.01s/it]正在评估:  53%|█████▎    | 532/1000 [17:50<15:43,  2.02s/it]正在评估:  53%|█████▎    | 533/1000 [17:52<16:20,  2.10s/it]正在评估:  53%|█████▎    | 534/1000 [17:54<15:53,  2.05s/it]正在评估:  54%|█████▎    | 535/1000 [17:56<15:24,  1.99s/it]正在评估:  54%|█████▎    | 536/1000 [17:57<13:21,  1.73s/it]正在评估:  54%|█████▎    | 537/1000 [17:59<14:07,  1.83s/it]正在评估:  54%|█████▍    | 538/1000 [18:01<14:29,  1.88s/it]正在评估:  54%|█████▍    | 539/1000 [18:03<14:43,  1.92s/it]正在评估:  54%|█████▍    | 540/1000 [18:05<14:50,  1.94s/it]正在评估:  54%|█████▍    | 541/1000 [18:07<14:42,  1.92s/it]正在评估:  54%|█████▍    | 542/1000 [18:08<14:14,  1.87s/it]正在评估:  54%|█████▍    | 543/1000 [18:10<14:42,  1.93s/it]正在评估:  54%|█████▍    | 544/1000 [18:12<14:21,  1.89s/it]正在评估:  55%|█████▍    | 545/1000 [18:14<15:00,  1.98s/it]正在评估:  55%|█████▍    | 546/1000 [18:16<14:52,  1.97s/it]正在评估:  55%|█████▍    | 547/1000 [18:18<15:05,  2.00s/it]正在评估:  55%|█████▍    | 548/1000 [18:21<15:33,  2.07s/it]正在评估:  55%|█████▍    | 549/1000 [18:23<15:37,  2.08s/it]正在评估:  55%|█████▌    | 550/1000 [18:24<13:50,  1.85s/it]正在评估:  55%|█████▌    | 551/1000 [18:26<14:33,  1.95s/it]正在评估:  55%|█████▌    | 552/1000 [18:28<14:41,  1.97s/it]正在评估:  55%|█████▌    | 553/1000 [18:30<14:04,  1.89s/it]正在评估:  55%|█████▌    | 554/1000 [18:32<14:21,  1.93s/it]正在评估:  56%|█████▌    | 555/1000 [18:34<14:44,  1.99s/it]正在评估:  56%|█████▌    | 556/1000 [18:35<12:46,  1.73s/it]正在评估:  56%|█████▌    | 557/1000 [18:37<13:21,  1.81s/it]正在评估:  56%|█████▌    | 558/1000 [18:39<13:22,  1.82s/it]While cog-railways were being built in the Alps, several countries experienced economic growth. These countries include Switzerland
-A participant of the Battle of Brechin is an instance of a Scottish professional footballer who played for Brechin City.
-The capital of the county that shares a border with the county whose capital is the birthplace of Erik Jensen is Appleton
-The adage "If you find yourself in a hole, stop digging" is attributed to a number of sources, including
-The president of the newly declared independent country that has a Commission of Truth and Friendship with the country where Ambelau
-Norton County.
-The inventor of the Money in the Bank ladder match, Chris Jericho, won the match in 2
-The U.S. and the country in effective control of political and military functions of the group the People's Socialist
-In the film "The King's Speech," Colin Firth played the future King George VI, who adopted the
-Based on the information provided, it is not clear who the child of the cast member of Green Ice is. The external documentation
-Based on the provided information, it is not possible to determine the average yearly income for a person of the same nationality
-Latin
-Based on the provided information, it is not possible to determine when the luxury division of the manufacturer of the Scion
-Nissan, along with the company that makes the Comstar wheel and the company that makes the Scion, opened US
-The population of the country that worked with the outfit behind Man in Space Soonest is 29.
-Based on the information provided, the seat of the county sharing a border with the county in which J.P. Hayes
-The river that Thuli River turns into flows into the Limpopo River.
-The city that AvtoVAZ's headquarters is located in is named after Palmiro Togliatti.
-The Indiana Pacers drafted the winner of the NBA scoring title this year.
-According to Pew, in 2010, 49.3% of Nigeria's population was
-Based on the provided information, it is not possible to determine the last time the sports team that Malcolm Beard was
-The spouse of the actor who played Hannibal Smith in The A-Team is Jeff Gourson.
-The seal in the operator of the list of destroyer classes of the USS Tringa seals stands for the United
-The place of birth of Tang Jinhua had been the capital city of the Yaxing Coach headquarters location for approximately
-Based on the provided information, the last time the team employing Ronnie Morris beat the 1894-9
-SEAL stands for Sea, Air, and Land, which refers to the primary special operations force of the U.S.
-The company that bought the label is CBS.
-The company that makes Skyflash was abolished on 30 November 1999.
-From Portland, in the state containing the county where Lorenz Park is located, you can see Mt. Hood
-The council terms of the city that shares a county with Helvetia are four years. This information is based on the high
-Sophie, Countess of Wessex.
-Jessie Woodrow Wilson Sayre.
-Based on the information provided, the owner of the record label that the performer of "Better Than Me" is
-The city where Superior Drill Company is located became the capitol of the state where the screenwriter of The Poor
-Based on the information provided, the county that shares a border with the county where the singer of "Hungry Eyes
-The people who the Ajuran Empire declared independence from by minting coins were expelled from country A through military
-The party that controls the House of Representatives took control of the branch that gives regulators discretion to prohibit proprietary
-The author of Growing Up this nationality of the creator MacGruder and Loud is American.
-The plague occurred in the place where Crucifixion's creator died multiple times.
-Based on the information provided, the owner of the record label that the singer of the theme song from the movie Arthur belongs to
-Based on the information provided, the game "Steven Universe: Save the Light" features seven playable characters from the
-Based on the information provided, the longest win streak in the history of the league that the team plays for is 2
-Conscription was introduced in the country where Pepsi Live was hosted during the Vietnam War.
-Based on the information provided, the county that shares a border with the county where the performer of "She Did It"
-Before the player with the highest point average in NBA history, Wilt Chamberlain, was picked in the NBA draft, there
-Mohammed Atta has a model of the company that makes Datsun Type 12, which is a 1
-Germany's main goal in the battle of the ocean region adjacent to the city where WIOD is licensed was to
-The province that contains Maraveh Tappeh County is Golestan Province.
-The theological interpretation of the work of the writer of The Canon of Medicine, Ibn Sina (Avicen
-Daylight saving time in the country near the country where the author of The Book Thief is from ends on the first Sunday
-The county that shares a border with the county where the city in which the original singer of All By Myself was born is
-The largest med school in what was the nobilities commonwealth is the Medical College of Georgia.
-The name of the castle in the headquarters of the company that employs Arna Selznick is Marksburg Castle
-The town WLUJ is licensed in became the capital of the state where The Poor Boob's screen
-In Willy Wonka and the Chocolate Factory, the character that the band who performs Eight Arms to
-The second pick in the 1999 draft of the organization, that includes the team with the most titles, in
-The record label for "Oh Woman, Oh Why" is a part of Apple Records.
-Rudolf Wolf was educated at the University of Zurich, which has approximately 18,000 students in attendance
-Based on the information provided, the country with a co-official language used in the film titled after the city that is
-The plague occurred in the birthplace of the person who used the spice route that the Ottoman Empire controlled multiple times
-The French and Indian War ended in 1763 on the continent where London Broil comes from.
-The river on which the Pa Sak Jolasid Dam is located serves as the mouth of the Chao Phraya River
-CBS
-Genesis had advantages over the platform that plays Bigfoot in terms of graphics, sound, and gameplay. The external documentation
-The death penalty was abolished in the country near the country where the writer of The Book Thief is a citizen of
-The hardest hit area in the Toussaint performer's birthplace was the 17th Street Canal le
-The president of the newly declared independent country that established the Timor Leste Commission of Truth and Friendship with the country
-Griffin Dunne, the director of Lisa Picard is Famous, was nominated for an Academy Award for Best Live Action
-The Review of Communication published Communications of the agency that Michael Schroeder is a member of.
-Elisabeth Shue played the girlfriend of the actor who played Marlene McFly in Back to the Future.
-Claudia Wells played Marty's girlfriend in Back to the Future.
-The longest homer in the history of the league where the team with the most titles from the event after which they give out
-During the war that saw the introduction of income tax in the U.S., the city where the artist who recorded "D
-SEAL stands for Sea, Air, and Land, which refers to the U.S. Navy SEALs, the
-The assets of the agency that abolished the dual system of government in Bengal after it was removed from power were an
-In Grown Ups, Salma Hayek is married to the actor who also starred in Here Comes the Bo
-Josh Groban.
-The music video "One Last Time" by the performer of "Baby I" features Ariana Grande.
-Julie Dawn Cole played the character with the same name as the Volcano Girls performer in Willy Wonka
-The city in the county where the Red Cross is located is Albemarle.
-The famous bridge located in the birthplace of the composer of Nulla in mundo pax sincera is the Rial
-The author of the novel "2030" was nominated for an Academy Award for his role in "Broadcast
-Thrill Jockey Records
-The word "Slavs" was used in the national anthem of Country B in 1943.
-The name of the game reserve in the country where hunters spend 50 to 100 times more than the
-正在评估:  56%|█████▌    | 559/1000 [18:41<13:57,  1.90s/it]正在评估:  56%|█████▌    | 560/1000 [18:43<13:14,  1.81s/it]正在评估:  56%|█████▌    | 561/1000 [18:45<13:32,  1.85s/it]正在评估:  56%|█████▌    | 562/1000 [18:47<13:59,  1.92s/it]正在评估:  56%|█████▋    | 563/1000 [18:49<14:26,  1.98s/it]正在评估:  56%|█████▋    | 564/1000 [18:51<14:33,  2.00s/it]正在评估:  56%|█████▋    | 565/1000 [18:53<14:32,  2.01s/it]正在评估:  57%|█████▋    | 566/1000 [18:55<14:52,  2.06s/it]正在评估:  57%|█████▋    | 567/1000 [18:57<14:23,  1.99s/it]正在评估:  57%|█████▋    | 568/1000 [18:59<14:38,  2.03s/it]正在评估:  57%|█████▋    | 569/1000 [19:01<15:09,  2.11s/it]正在评估:  57%|█████▋    | 570/1000 [19:03<14:24,  2.01s/it]正在评估:  57%|█████▋    | 571/1000 [19:05<14:25,  2.02s/it]正在评估:  57%|█████▋    | 572/1000 [19:07<14:06,  1.98s/it]正在评估:  57%|█████▋    | 573/1000 [19:09<14:06,  1.98s/it]正在评估:  57%|█████▋    | 574/1000 [19:11<14:23,  2.03s/it]正在评估:  57%|█████▊    | 575/1000 [19:13<13:53,  1.96s/it]正在评估:  58%|█████▊    | 576/1000 [19:15<14:16,  2.02s/it]正在评估:  58%|█████▊    | 577/1000 [19:17<13:29,  1.91s/it]正在评估:  58%|█████▊    | 578/1000 [19:19<13:33,  1.93s/it]正在评估:  58%|█████▊    | 579/1000 [19:21<13:30,  1.92s/it]正在评估:  58%|█████▊    | 580/1000 [19:23<13:41,  1.95s/it]正在评估:  58%|█████▊    | 581/1000 [19:25<13:30,  1.93s/it]正在评估:  58%|█████▊    | 582/1000 [19:26<13:12,  1.90s/it]正在评估:  58%|█████▊    | 583/1000 [19:28<13:27,  1.94s/it]正在评估:  58%|█████▊    | 584/1000 [19:31<13:57,  2.01s/it]正在评估:  58%|█████▊    | 585/1000 [19:33<14:07,  2.04s/it]正在评估:  59%|█████▊    | 586/1000 [19:35<13:43,  1.99s/it]正在评估:  59%|█████▊    | 587/1000 [19:37<13:47,  2.00s/it]正在评估:  59%|█████▉    | 588/1000 [19:39<13:33,  1.97s/it]正在评估:  59%|█████▉    | 589/1000 [19:40<13:05,  1.91s/it]正在评估:  59%|█████▉    | 590/1000 [19:42<13:23,  1.96s/it]正在评估:  59%|█████▉    | 591/1000 [19:44<13:22,  1.96s/it]正在评估:  59%|█████▉    | 592/1000 [19:46<13:36,  2.00s/it]正在评估:  59%|█████▉    | 593/1000 [19:48<13:32,  2.00s/it]正在评估:  59%|█████▉    | 594/1000 [19:51<13:49,  2.04s/it]正在评估:  60%|█████▉    | 595/1000 [19:53<13:53,  2.06s/it]正在评估:  60%|█████▉    | 596/1000 [19:54<13:09,  1.95s/it]正在评估:  60%|█████▉    | 597/1000 [19:57<13:44,  2.04s/it]正在评估:  60%|█████▉    | 598/1000 [19:59<13:40,  2.04s/it]正在评估:  60%|█████▉    | 599/1000 [20:01<13:51,  2.07s/it]正在评估:  60%|██████    | 600/1000 [20:03<13:24,  2.01s/it]正在评估:  60%|██████    | 601/1000 [20:05<12:53,  1.94s/it]正在评估:  60%|██████    | 602/1000 [20:06<12:56,  1.95s/it]正在评估:  60%|██████    | 603/1000 [20:08<12:55,  1.95s/it]正在评估:  60%|██████    | 604/1000 [20:10<12:26,  1.89s/it]正在评估:  60%|██████    | 605/1000 [20:12<13:15,  2.01s/it]正在评估:  61%|██████    | 606/1000 [20:14<12:54,  1.96s/it]正在评估:  61%|██████    | 607/1000 [20:16<12:36,  1.93s/it]正在评估:  61%|██████    | 608/1000 [20:18<13:15,  2.03s/it]正在评估:  61%|██████    | 609/1000 [20:21<13:41,  2.10s/it]正在评估:  61%|██████    | 610/1000 [20:23<13:06,  2.02s/it]正在评估:  61%|██████    | 611/1000 [20:25<13:36,  2.10s/it]正在评估:  61%|██████    | 612/1000 [20:27<13:11,  2.04s/it]正在评估:  61%|██████▏   | 613/1000 [20:28<12:37,  1.96s/it]正在评估:  61%|██████▏   | 614/1000 [20:30<12:16,  1.91s/it]正在评估:  62%|██████▏   | 615/1000 [20:32<12:36,  1.97s/it]正在评估:  62%|██████▏   | 616/1000 [20:35<13:00,  2.03s/it]正在评估:  62%|██████▏   | 617/1000 [20:37<13:00,  2.04s/it]正在评估:  62%|██████▏   | 618/1000 [20:39<12:49,  2.01s/it]正在评估:  62%|██████▏   | 619/1000 [20:41<13:09,  2.07s/it]正在评估:  62%|██████▏   | 620/1000 [20:43<13:12,  2.09s/it]正在评估:  62%|██████▏   | 621/1000 [20:45<12:25,  1.97s/it]正在评估:  62%|██████▏   | 622/1000 [20:46<11:23,  1.81s/it]正在评估:  62%|██████▏   | 623/1000 [20:48<11:30,  1.83s/it]正在评估:  62%|██████▏   | 624/1000 [20:50<11:02,  1.76s/it]正在评估:  62%|██████▎   | 625/1000 [20:52<11:52,  1.90s/it]正在评估:  63%|██████▎   | 626/1000 [20:53<11:10,  1.79s/it]正在评估:  63%|██████▎   | 627/1000 [20:55<10:25,  1.68s/it]正在评估:  63%|██████▎   | 628/1000 [20:57<11:08,  1.80s/it]正在评估:  63%|██████▎   | 629/1000 [20:59<11:01,  1.78s/it]正在评估:  63%|██████▎   | 630/1000 [21:01<11:27,  1.86s/it]正在评估:  63%|██████▎   | 631/1000 [21:03<11:58,  1.95s/it]正在评估:  63%|██████▎   | 632/1000 [21:05<12:33,  2.05s/it]正在评估:  63%|██████▎   | 633/1000 [21:07<12:33,  2.05s/it]正在评估:  63%|██████▎   | 634/1000 [21:09<12:38,  2.07s/it]正在评估:  64%|██████▎   | 635/1000 [21:11<12:35,  2.07s/it]正在评估:  64%|██████▎   | 636/1000 [21:13<11:52,  1.96s/it]正在评估:  64%|██████▎   | 637/1000 [21:15<11:18,  1.87s/it]正在评估:  64%|██████▍   | 638/1000 [21:17<11:39,  1.93s/it]正在评估:  64%|██████▍   | 639/1000 [21:19<11:57,  1.99s/it]正在评估:  64%|██████▍   | 640/1000 [21:21<11:35,  1.93s/it]正在评估:  64%|██████▍   | 641/1000 [21:23<12:09,  2.03s/it]正在评估:  64%|██████▍   | 642/1000 [21:25<12:07,  2.03s/it]The Palau de la Generalitat in Barcelona was built in the 15th century for the kings of Aragon
-The Ohio River meets the Mississippi River at the city of Cairo, Illinois.
-It is not mentioned in the provided information how long Lynn Hung's birthplace had been the capitol city of Y
-The region that lies to the north of Israel and the body of water between East Africa and the Arabian peninsula was
-The answer is John Kukuzelis. He was a prominent reformer of Orthodox Church music from the first half of
-Celebrity Big Brother is coming to the network which, along with ABC and the network that hosts Westinghouse
-Roncalli left the place where the composer of Al gran sole carico d'amore worked because he was elected to
-The majority religion in the area of British India that became India when Garlat's country was created is Islam.
-The performer of Night Rocker, David Hasselhoff, played the character Snapper Foster on The Young and the
-The famous bridge in the city where the composer of La costanza trionfante degl'amori e de gl
-The institution behind the denomination constituting 12.6% of Christians in New Zealand is the Roman Catholic
-Roncalli left the place of death of the maker of The Gozzi Altarpiece because the location of
-Based on the information provided, the race mentioned in the question is the Indy car race held in the capital of the state
-The company that makes Nirbhay was founded during the era of the Defence Research and Development Organisation.
-The major conflict between the country that hosted the tournament and the country where That Dam is from is the Kashmir issue.
-The dissolution of the privileges of the birth empire of Alexey Brodovitch was caused by the Partitions of
-The spouse of the performer of "Somethin' Bad" belongs to Warner Bros. Records.
-Germany launched an air attack on the country the U.S. fought during the American Revolution on June 22,
-The author of Alciphron lived in the 20th century.
-The monuments in the Mother-in-Law performer's birthplace were built in the 1920
-The actor who plays Copper in Fox and the Hound is a character in The Fox and the Hound.
-The spouse of the person who voices Smokey the bear is not mentioned in the provided information.
-The city where Dunn Dunn's artist died in the war during which income tax started was burned down by the
-The grandfather of James Mayer de Rothschild is Mayer Amschel Rothschild.
-The direction of flow of the body of water by the city that Astronautalis is from is southwards.
-In 1900, the population of the second largest city in the state that the cross-border transactions committee focus
-The maximum amount of load that can be drawn by the device where 1.1 was the first widely used version is
-The city that WIZE is licensed to broadcast to became the capital of the state that contains the county where the Battle
-Based on the information provided, it is not possible to determine the exact city where Alain Lascoux's employer
-The author of Miss Sara Sampson also wrote Emilia Galotti, which is another notable work.
-Mark Dismore's birthplace is located in Hancock County, Indiana.
-Based on the information provided, the president of the newly declared independent country that is part of the Commission of Truth and Friend
-The Beach, where Pao Sarasin was born, was filmed in the country where Pao Sarasin was
-Honda, Toyota, and Nissan opened US assembly plants in the early 1980s to distinguish
-Based on the information provided, the rapper who owns Aspiro was inspired by three different relationships when writing "Song
-Based on the information provided, Pam got married in The Office on October 8, 2009. This information
-The language where the last name Sylvester originates, used in the era of the man crowned Emperor of the Rom
-Based on the given information, the answer is not provided in the external documentation.
-CFJC-TV in Kamloops left the company that owns and operates most of the CBC television stations
-Based on the information provided, it is not possible to determine who won the Indy car race in the largest city and capit
-People from whom new coins were a proclamation of independence by the Somali Muslim Ajuran Empire were exp
-The newly elected Chief Justice of the country where Masherbrum is located is Mian Saqib Nisar
-During the era of Rotrude's father, Auctor comes from Latin.
-Based on the information provided, the most recent Bicycle Friendly Community award was given to the city where the headquarters of
-The region where Poachie Range is located achieved U.S. statehood on February 14, 19
-Chaya Mushka Schneersohn followed Menucha Rochel Slonim's father.
-The city where the Yongle Emperor greeted the Karmapa had been the capitol city of Yaxing
-Based on the information provided, the chief judge at Gloria Kemasuode's birthplace is Rosaline Pat
-The scientist that the GHZ experiment is named for is in the field of quantum physics.
-The city containing some of the finest and oldest museums in China had been the capitol city of Yaxing Co
-The spouse of the individual who lives in the houses in Windsor Castle is Elizabeth Bowes - Lyon.
-Artists like George Benson, Kenny G, Dave Koz, and others had crossover hits played on
-The team that picked the highest point average holder in NBA history in the NBA draft is the Golden State Warriors.
-The character Cosmic Boy was created by George Perez and Gerry Conway.
-Jose Miranda's team competed in the Major League Soccer (MLS).
-Based on the information provided, the artist featured on Smooth Jazz Stations along with Kenny G and the performer of
-The Portuguese were expelled from the natural boundary between the country that hosted the tournament and the country where A Don is located by
-The people who the Somali Muslim Ajuran Empire declared independence from were expelled from the natural boundary between Thailand
-The 2017 population of the country where Bedari was made was 211,059,
-Based on the information provided, the body of water near George Mills' place of birth is the River Etherow.
-The child of the physicist who developed an explanation for the photoelectric effect is Evelyn Einstein.
-The direction of flow of the body of water by the city sharing a border with Elizabeth Berg's birthplace is southwards
-The song "The Story" was written by Phil Hanseroth.
-Charles Hamilton.
-Based on the information provided, the explorer reached the headquarters location of the group Study in Brown's record label is part
-Hayrat is the birthplace of Mehmet Hayri Tarhan.
-The wife of the person who first brought postal service to Umayyad lands belonged to the Kalb tribe.
-The province containing Bandar-e Gaz County is located in Iran.
-Crawford County.
-The main port of Axum was Adulis, which was located near Massawa in present-day Eritrea.
-The spouse of the owner of the British Virgin Islands is the Governor.
-Based on the given information, it is not possible to determine the exact time period for which the place of birth of Noel
-Based on the information provided, the county that shares a border with the county where the most populous city in the state where
-The majority party in the body which approves members of the American Cabinet gained control of the House in 199
-The Governorship of the city that contains the basilica named after the saint who was the apostle that was cruc
-After the departure of the queen who Martha Ann Ricks presented the famed Liberian coffee tree to, Buckingham Palace
-The president of the newly declared independent country that is part of the commission of Truth and Friendship with the country where In
-Erik Hort's birthplace is in Rockland County, New York.
-The company making ALARM follows the company Hirox.
-The RX 350 from The Hino Dutro creator's luxury division changed body style in
-Sir Robert Peel, 1st Baronet, was the father of the person who issued the Tamworth manifesto.
-The resulting browser of the group that owns Mozilla Messaging is Firefox.
-Nintendo had a limit of 16 games per developer per year for the platform supporting the video game named after the sports
-The 2018 PFA player of the year, Mohamed Salah, plays for Liverpool.
-正在评估:  64%|██████▍   | 643/1000 [21:27<12:00,  2.02s/it]正在评估:  64%|██████▍   | 644/1000 [21:29<12:07,  2.04s/it]正在评估:  64%|██████▍   | 645/1000 [21:30<10:54,  1.84s/it]正在评估:  65%|██████▍   | 646/1000 [21:32<11:21,  1.93s/it]正在评估:  65%|██████▍   | 647/1000 [21:34<10:28,  1.78s/it]正在评估:  65%|██████▍   | 648/1000 [21:36<10:58,  1.87s/it]正在评估:  65%|██████▍   | 649/1000 [21:38<11:33,  1.97s/it]正在评估:  65%|██████▌   | 650/1000 [21:40<11:36,  1.99s/it]正在评估:  65%|██████▌   | 651/1000 [21:42<11:31,  1.98s/it]正在评估:  65%|██████▌   | 652/1000 [21:44<11:34,  2.00s/it]正在评估:  65%|██████▌   | 653/1000 [21:46<10:25,  1.80s/it]正在评估:  65%|██████▌   | 654/1000 [21:48<10:40,  1.85s/it]正在评估:  66%|██████▌   | 655/1000 [21:50<11:13,  1.95s/it]正在评估:  66%|██████▌   | 656/1000 [21:52<11:18,  1.97s/it]正在评估:  66%|██████▌   | 657/1000 [21:54<11:02,  1.93s/it]正在评估:  66%|██████▌   | 658/1000 [21:55<10:50,  1.90s/it]正在评估:  66%|██████▌   | 659/1000 [21:57<11:05,  1.95s/it]正在评估:  66%|██████▌   | 660/1000 [22:00<11:41,  2.06s/it]正在评估:  66%|██████▌   | 661/1000 [22:02<11:29,  2.03s/it]正在评估:  66%|██████▌   | 662/1000 [22:04<11:55,  2.12s/it]正在评估:  66%|██████▋   | 663/1000 [22:06<12:11,  2.17s/it]正在评估:  66%|██████▋   | 664/1000 [22:08<12:01,  2.15s/it]正在评估:  66%|██████▋   | 665/1000 [22:10<11:38,  2.09s/it]正在评估:  67%|██████▋   | 666/1000 [22:12<11:19,  2.03s/it]正在评估:  67%|██████▋   | 667/1000 [22:14<10:00,  1.80s/it]正在评估:  67%|██████▋   | 668/1000 [22:15<10:07,  1.83s/it]正在评估:  67%|██████▋   | 669/1000 [22:18<10:43,  1.95s/it]正在评估:  67%|██████▋   | 670/1000 [22:20<11:09,  2.03s/it]正在评估:  67%|██████▋   | 671/1000 [22:22<11:34,  2.11s/it]正在评估:  67%|██████▋   | 672/1000 [22:24<11:26,  2.09s/it]正在评估:  67%|██████▋   | 673/1000 [22:26<11:15,  2.07s/it]正在评估:  67%|██████▋   | 674/1000 [22:28<10:39,  1.96s/it]正在评估:  68%|██████▊   | 675/1000 [22:30<10:49,  2.00s/it]正在评估:  68%|██████▊   | 676/1000 [22:32<11:02,  2.05s/it]正在评估:  68%|██████▊   | 677/1000 [22:34<10:34,  1.96s/it]正在评估:  68%|██████▊   | 678/1000 [22:36<09:52,  1.84s/it]正在评估:  68%|██████▊   | 679/1000 [22:37<09:53,  1.85s/it]正在评估:  68%|██████▊   | 680/1000 [22:40<10:35,  1.99s/it]正在评估:  68%|██████▊   | 681/1000 [22:42<10:22,  1.95s/it]正在评估:  68%|██████▊   | 682/1000 [22:44<10:38,  2.01s/it]正在评估:  68%|██████▊   | 683/1000 [22:46<11:15,  2.13s/it]正在评估:  68%|██████▊   | 684/1000 [22:48<11:14,  2.13s/it]正在评估:  68%|██████▊   | 685/1000 [22:50<10:21,  1.97s/it]正在评估:  69%|██████▊   | 686/1000 [22:52<10:23,  1.99s/it]正在评估:  69%|██████▊   | 687/1000 [22:54<10:24,  2.00s/it]正在评估:  69%|██████▉   | 688/1000 [22:56<10:21,  1.99s/it]正在评估:  69%|██████▉   | 689/1000 [22:58<10:10,  1.96s/it]正在评估:  69%|██████▉   | 690/1000 [23:00<10:28,  2.03s/it]正在评估:  69%|██████▉   | 691/1000 [23:02<10:34,  2.05s/it]正在评估:  69%|██████▉   | 692/1000 [23:04<10:27,  2.04s/it]正在评估:  69%|██████▉   | 693/1000 [23:06<10:25,  2.04s/it]正在评估:  69%|██████▉   | 694/1000 [23:08<09:31,  1.87s/it]正在评估:  70%|██████▉   | 695/1000 [23:10<09:47,  1.93s/it]正在评估:  70%|██████▉   | 696/1000 [23:12<10:06,  2.00s/it]正在评估:  70%|██████▉   | 697/1000 [23:14<10:14,  2.03s/it]正在评估:  70%|██████▉   | 698/1000 [23:16<10:12,  2.03s/it]正在评估:  70%|██████▉   | 699/1000 [23:18<10:07,  2.02s/it]正在评估:  70%|███████   | 700/1000 [23:20<10:22,  2.08s/it]正在评估:  70%|███████   | 701/1000 [23:22<10:30,  2.11s/it]正在评估:  70%|███████   | 702/1000 [23:24<10:18,  2.07s/it]正在评估:  70%|███████   | 703/1000 [23:26<10:12,  2.06s/it]正在评估:  70%|███████   | 704/1000 [23:28<09:42,  1.97s/it]正在评估:  70%|███████   | 705/1000 [23:29<08:38,  1.76s/it]正在评估:  71%|███████   | 706/1000 [23:32<09:08,  1.87s/it]正在评估:  71%|███████   | 707/1000 [23:34<09:50,  2.02s/it]正在评估:  71%|███████   | 708/1000 [23:36<09:42,  1.99s/it]正在评估:  71%|███████   | 709/1000 [23:38<09:55,  2.05s/it]正在评估:  71%|███████   | 710/1000 [23:40<10:07,  2.10s/it]正在评估:  71%|███████   | 711/1000 [23:42<10:10,  2.11s/it]正在评估:  71%|███████   | 712/1000 [23:44<09:36,  2.00s/it]正在评估:  71%|███████▏  | 713/1000 [23:46<09:40,  2.02s/it]正在评估:  71%|███████▏  | 714/1000 [23:48<09:52,  2.07s/it]正在评估:  72%|███████▏  | 715/1000 [23:50<09:41,  2.04s/it]正在评估:  72%|███████▏  | 716/1000 [23:52<09:35,  2.03s/it]正在评估:  72%|███████▏  | 717/1000 [23:54<09:36,  2.04s/it]正在评估:  72%|███████▏  | 718/1000 [23:56<09:31,  2.03s/it]正在评估:  72%|███████▏  | 719/1000 [23:58<09:30,  2.03s/it]正在评估:  72%|███████▏  | 720/1000 [24:01<09:37,  2.06s/it]正在评估:  72%|███████▏  | 721/1000 [24:03<09:47,  2.11s/it]正在评估:  72%|███████▏  | 722/1000 [24:05<09:26,  2.04s/it]正在评估:  72%|███████▏  | 723/1000 [24:07<09:28,  2.05s/it]正在评估:  72%|███████▏  | 724/1000 [24:09<09:01,  1.96s/it]正在评估:  72%|███████▎  | 725/1000 [24:10<08:55,  1.95s/it]The symbol of the Saints from the city where the headquarters of the manufacturer of McAfee's Benchmark
-The Curonians who lived in the area where Erich Zakowski was born were expelled by the Soviet Union and many
-Tim DuBois was born in Missouri.
-The Palau de la Generalitat in Barcelona was constructed in the 15th century for the kings of Aragon
-Jessie Woodrow Wilson Sayre
-Based on the given information, the creator of Autumn Leaves died on October 24, 197
-Based on the information provided, the city sharing border with the state capital of the US state filming the movie "The Patri
-Diego Maradona was signed by Barcelona in June 1982 for a world record fee of £5 million from
-The movie starring Preity Zinta, Madhuri Dixit and the spouse of Kajol is "
-Based on the information provided, it is not possible to determine who the child of the Victim of Romance performer is
-Chuck Norris.
-Based on the information provided, it is unclear which song Paul McCartney wrote for the person who performed "Too Late
-The word Hindu in the Arabic dictionary refers to the majority religion of what became India when the country whose business news is
-The 1900 population of the city located within the county that also contains Helvetia is 7,5
-After the death of Sarah, the spouse of Hagar married Keturah.
-Lawrence Landweber was educated at Purdue University, which is part of the State University of New York (SUNY
-The section of the emergency response guidebook of the continent where bison antiquus are found that contains the response gu
-The someone who argued that Yagutil Mishiev's country had become an imperialist power declared that they would interven
-Based on the information provided, it is not possible to determine when the town WIZE is licensed in became the capital
-Based on the given information, the country that lies immediately north of the Persian Gulf and the region where the country containing
-Based on the information provided, it is not possible to determine who won the All-Star MVP for the league that the
-Based on the given information, the headquarters of the Radio Television of the country whose co-official language is the same as
-The guy defending this stuff from the highest authority in Protestantism for morals is Martin Luther.
-Based on the information provided, the BBC Footballer of the Year is a member of the Liverpool Football Club. This is because
-Josh Radnor.
-The painter of Femme nue couchée, Gustave Courbet, was born on June 10, 1
-Dhondo Keshav Karve was honored with the award prior to becoming the President of India.
-The person who was given India's highest civilian honor before he became President of India is A.P.J.
-Based on the information provided, the child of Obama's opponent in his first election is Meghan McCain,
-The show named after the character featured in the video game Mickey's Safari in Letterland is Mickey's
-The Freddie Mercury film's producer played Fredo Corleone in Godfather 2.
-The record label of the record label of "So Insane" is not provided in the given information.
-The Treaty of Cession of Manuʻa ceded territory to the US extending west to the body of water by
-The name of the Chinese capitol Kanmu modeled his government after is an instance of him trying to recreate the Tang
-The producer of Mistress played Vito Andolini Corleone in The Godfather Part II.
-WMOP is located in the Gainesville-Ocala, Florida region.
-The town WLUJ is licensed in became the capital of the state where Brantley York was born on February
-Based on the information provided, the most credible source is the first one, which states that Pete Rose holds the Major
-Based on the information provided, the University of South Carolina has more national championships than the University of the State having Fort Hill
-Based on the information provided, the city where the Yongle emperor greeted the person to whom the edict
-The genetic similarity between the group representing at least 70% of Jews worldwide and Italians may be due
-The artist associated with Beyoncé's premiere solo recording, "Cry", is James Brown.
-The answer is not provided in the given information.
-Based on the information provided, it is not possible to determine who fathered the father of Alice Clere. The given information
-The language having the same name as this area of the era with Fastrada's spouse's name later known
-Leslie Knope's spouse is Chris Traeger, as mentioned in the external document about the character Ann Per
-The seat of the county sharing a border with the county in which Amy McKenzie was born is Pécs.
-The actor who played Peter Pan in the movie Hook, Robin Williams, received an Academy Award for his role in "Good Will
-The beautiful country used as a backdrop for the movie The Lord of the Rings was founded on September 2,
-Based on the information provided, the leading ballet company in the country where the discoverer of C/2014
-The president of the newly declared independent country of Timor Leste is José Ramos-Horta.
-The fictional work Doctor Fate exists in is "Doctor Who".
-Based on the information provided, the opening day of the league that Jim Wilson plays for is not specified. However, the Major
-The language of the European culture in the era of Rotrude's father was later referred to as Medieval Latin.
-The majority party in the House of Representatives gained control of the body which determines rules of the US House and US Senate in
-The star to which Solgränd is named after was discovered to be the center of the solar system in 178
-Based on the information provided, Hod Lisenbee's place of death in TN is approximately 12
-In the movie based on the artist whose concert was the first Beyonce attended, the singer of "Is She Really Go
-The version of the language where the last name Sylvester originates, used in the era of Fastrada's
-The body of water where the performer of Lots More Blues, Rags and Hollers was formed, empt
-The Governor of the city where Pacem in Terris' author died in 1963.
-The mascot of William J. Ripple's university is Benny Beaver.
-Belgrade
-The company that abolished the dual system of government in Bengal was established in 1765. This is based
-The Celts are said to have migrated from the place where they are said to have migrated from in the year
-Based on the information provided, the state where Copake Lake is located reinstated the death penalty in 199
-Based on the information provided, the average per capita GVA in 2013 of the country that created Bur
-The city where the Yongle Emperor greeted the leader that the edict was addressed to, the capital city of
-Based on the given information, it is unclear who has the lowest batting average in the league that Jim Wilson's team
-The county where Imperial is located shares a border with El Paso County.
-The Palau de la Generalitat in Barcelona was constructed in the 15th century for the kings of Aragon
-According to the QS World University Rankings, Hala El Badry's university, Cairo University, is ranked
-Celebrity Big Brother is coming to the network that is the other major broadcaster based in NY, along
-The PBS station located in the city contained within the county where Summit is also located is KUAT-TV
-Burma changed its name to the country on the natural boundary between the country that hosted the tournament and the country where That Dam
-The Frederick Douglass Prize is awarded annually by the American Historical Association to recognize outstanding contributions to history.
-The actress who played Mary Poppins in the 1964 film, Julie Andrews, plays Queen dow
-A.P.J. Abdul Kalam was honored with the highest award a citizen without military experience in India
-Based on the given information, it is not possible to determine the last time the sports team employing Winston Foster
-The exact time period for how long Pfrang Association's headquarters location had been the capitol city of Yaxing
-The people fared well during the reign of the abolisher of sati, Partha in India. The practice of s
-The city where Eutychides was born is a part of Greek mythology.
-The child of Sigrid Eskilsdotter's child is Christina Gyllenstierna.
-正在评估:  73%|███████▎  | 726/1000 [24:13<09:07,  2.00s/it]正在评估:  73%|███████▎  | 727/1000 [24:15<09:25,  2.07s/it]正在评估:  73%|███████▎  | 728/1000 [24:17<09:31,  2.10s/it]正在评估:  73%|███████▎  | 729/1000 [24:19<09:22,  2.08s/it]正在评估:  73%|███████▎  | 730/1000 [24:21<09:27,  2.10s/it]正在评估:  73%|███████▎  | 731/1000 [24:23<09:11,  2.05s/it]正在评估:  73%|███████▎  | 732/1000 [24:25<08:58,  2.01s/it]正在评估:  73%|███████▎  | 733/1000 [24:27<08:48,  1.98s/it]正在评估:  73%|███████▎  | 734/1000 [24:29<08:58,  2.02s/it]正在评估:  74%|███████▎  | 735/1000 [24:31<08:48,  2.00s/it]正在评估:  74%|███████▎  | 736/1000 [24:33<08:54,  2.02s/it]正在评估:  74%|███████▎  | 737/1000 [24:35<08:56,  2.04s/it]正在评估:  74%|███████▍  | 738/1000 [24:37<08:41,  1.99s/it]正在评估:  74%|███████▍  | 739/1000 [24:39<08:43,  2.01s/it]正在评估:  74%|███████▍  | 740/1000 [24:41<08:19,  1.92s/it]正在评估:  74%|███████▍  | 741/1000 [24:43<08:32,  1.98s/it]正在评估:  74%|███████▍  | 742/1000 [24:45<08:44,  2.03s/it]正在评估:  74%|███████▍  | 743/1000 [24:47<08:51,  2.07s/it]正在评估:  74%|███████▍  | 744/1000 [24:48<07:45,  1.82s/it]正在评估:  74%|███████▍  | 745/1000 [24:50<08:00,  1.88s/it]正在评估:  75%|███████▍  | 746/1000 [24:53<08:20,  1.97s/it]正在评估:  75%|███████▍  | 747/1000 [24:54<08:05,  1.92s/it]正在评估:  75%|███████▍  | 748/1000 [24:56<08:04,  1.92s/it]正在评估:  75%|███████▍  | 749/1000 [24:58<08:14,  1.97s/it]正在评估:  75%|███████▌  | 750/1000 [25:00<07:58,  1.92s/it]正在评估:  75%|███████▌  | 751/1000 [25:02<07:52,  1.90s/it]正在评估:  75%|███████▌  | 752/1000 [25:03<06:55,  1.67s/it]正在评估:  75%|███████▌  | 753/1000 [25:05<07:36,  1.85s/it]正在评估:  75%|███████▌  | 754/1000 [25:07<07:33,  1.84s/it]正在评估:  76%|███████▌  | 755/1000 [25:09<06:56,  1.70s/it]正在评估:  76%|███████▌  | 756/1000 [25:11<07:38,  1.88s/it]正在评估:  76%|███████▌  | 757/1000 [25:13<07:47,  1.92s/it]正在评估:  76%|███████▌  | 758/1000 [25:15<07:56,  1.97s/it]正在评估:  76%|███████▌  | 759/1000 [25:17<07:56,  1.98s/it]正在评估:  76%|███████▌  | 760/1000 [25:19<08:07,  2.03s/it]正在评估:  76%|███████▌  | 761/1000 [25:21<08:02,  2.02s/it]正在评估:  76%|███████▌  | 762/1000 [25:23<07:59,  2.02s/it]正在评估:  76%|███████▋  | 763/1000 [25:25<08:05,  2.05s/it]正在评估:  76%|███████▋  | 764/1000 [25:27<07:50,  2.00s/it]正在评估:  76%|███████▋  | 765/1000 [25:29<07:51,  2.01s/it]正在评估:  77%|███████▋  | 766/1000 [25:31<07:52,  2.02s/it]正在评估:  77%|███████▋  | 767/1000 [25:33<07:46,  2.00s/it]正在评估:  77%|███████▋  | 768/1000 [25:36<08:07,  2.10s/it]正在评估:  77%|███████▋  | 769/1000 [25:38<07:58,  2.07s/it]正在评估:  77%|███████▋  | 770/1000 [25:39<06:49,  1.78s/it]正在评估:  77%|███████▋  | 771/1000 [25:41<07:05,  1.86s/it]正在评估:  77%|███████▋  | 772/1000 [25:42<06:24,  1.69s/it]正在评估:  77%|███████▋  | 773/1000 [25:44<06:47,  1.79s/it]正在评估:  77%|███████▋  | 774/1000 [25:46<06:54,  1.83s/it]正在评估:  78%|███████▊  | 775/1000 [25:48<06:55,  1.85s/it]正在评估:  78%|███████▊  | 776/1000 [25:50<07:11,  1.92s/it]正在评估:  78%|███████▊  | 777/1000 [25:52<06:49,  1.84s/it]正在评估:  78%|███████▊  | 778/1000 [25:54<06:54,  1.87s/it]正在评估:  78%|███████▊  | 779/1000 [25:55<06:55,  1.88s/it]正在评估:  78%|███████▊  | 780/1000 [25:58<07:21,  2.01s/it]正在评估:  78%|███████▊  | 781/1000 [26:00<07:24,  2.03s/it]正在评估:  78%|███████▊  | 782/1000 [26:02<07:28,  2.06s/it]正在评估:  78%|███████▊  | 783/1000 [26:04<07:27,  2.06s/it]正在评估:  78%|███████▊  | 784/1000 [26:06<07:30,  2.09s/it]正在评估:  78%|███████▊  | 785/1000 [26:08<07:06,  1.99s/it]正在评估:  79%|███████▊  | 786/1000 [26:10<07:12,  2.02s/it]正在评估:  79%|███████▊  | 787/1000 [26:12<07:25,  2.09s/it]正在评估:  79%|███████▉  | 788/1000 [26:14<06:32,  1.85s/it]正在评估:  79%|███████▉  | 789/1000 [26:16<06:34,  1.87s/it]正在评估:  79%|███████▉  | 790/1000 [26:17<06:34,  1.88s/it]正在评估:  79%|███████▉  | 791/1000 [26:20<06:48,  1.95s/it]正在评估:  79%|███████▉  | 792/1000 [26:21<06:33,  1.89s/it]正在评估:  79%|███████▉  | 793/1000 [26:24<06:54,  2.00s/it]正在评估:  79%|███████▉  | 794/1000 [26:26<06:58,  2.03s/it]正在评估:  80%|███████▉  | 795/1000 [26:28<06:55,  2.03s/it]正在评估:  80%|███████▉  | 796/1000 [26:30<07:05,  2.09s/it]正在评估:  80%|███████▉  | 797/1000 [26:32<07:16,  2.15s/it]正在评估:  80%|███████▉  | 798/1000 [26:34<07:10,  2.13s/it]正在评估:  80%|███████▉  | 799/1000 [26:36<07:09,  2.14s/it]正在评估:  80%|████████  | 800/1000 [26:39<07:19,  2.20s/it]正在评估:  80%|████████  | 801/1000 [26:41<06:55,  2.09s/it]正在评估:  80%|████████  | 802/1000 [26:42<06:37,  2.01s/it]正在评估:  80%|████████  | 803/1000 [26:44<06:37,  2.02s/it]正在评估:  80%|████████  | 804/1000 [26:47<06:51,  2.10s/it]正在评估:  80%|████████  | 805/1000 [26:49<06:45,  2.08s/it]正在评估:  81%|████████  | 806/1000 [26:51<06:45,  2.09s/it]正在评估:  81%|████████  | 807/1000 [26:53<06:29,  2.02s/it]正在评估:  81%|████████  | 808/1000 [26:55<06:31,  2.04s/it]正在评估:  81%|████████  | 809/1000 [26:57<06:09,  1.94s/it]正在评估:  81%|████████  | 810/1000 [26:59<06:20,  2.00s/it]正在评估:  81%|████████  | 811/1000 [27:01<06:16,  1.99s/it]The population of the largest state where The Handmaid's Tale is set is not provided in the given information.
-James Chadwick, the person who discovered that nuclei of atoms contained neutrons with no charge, was a participant
-The birthplace of Ah Via Musicom's performer became the capital of the state Knowles is from in 1
-The author of Parallel Worlds, Michio Kaku, works in the field of theoretical physics. This is supported by
-The sibling of the president, other than Taft, that the Jenkins Orphanage played for was Theodore Roose
-The city where the author of Sacerdotii Nostri Primordia died became its own country on February 1
-Based on the information provided, the city where Hillcrest High School is located became the capital of the state where the screen
-The war with the person for whom Pyrrhic victory is named occurred between 323–272 BC
-The majority party in the House of Representatives took control of the body that the President calls on for support in his USAF appoint
-The person who authored "Missing Person" received the Prix Goncourt in the same year of publication.
-The company that followed the company that made AAM-N-4 Oriole is Lockheed Martin.
-The capital of the state where Mary Boykin Chesnut lived is Columbia, which is located in Richland County, South
-The winner of the Battle between Poras and Sikander died in 326 BC.
-In the film True Grit, the producer of Big Jim McLain played the character Mattie Ross.
-Based on the information provided, John Phan was born in the South Central Coast region of Vietnam, which consists of the independent
-The person who was the first viceroy of the British Empire in India, Warren Hastings, was impeached
-The People's Socialist Republic of Albania was a member of the Warsaw Pact, which was dissolved in
-The Black Death is estimated to have reduced the population of the region that the Soviet Union feared invasion from by approximately 3
-Sacramento
-The version of the browser that GNU IceCat is based on was made accessible on Windows 8 in September 201
-Based on the given information, it is not possible to determine when the new season of the show starring the cast member of
-Based on the information provided, John Phan's birthplace is in the Central Highlands region of Vietnam, specifically in
-Based on the information provided, Lloyd Dane's birthplace is in Dane County, Wisconsin. This is supported by
-The language from which the last name Sylvester originated during the era of the person crowned emperor of the west
-The last year of the Castle of Riddles publisher is 1985.
-The team that Jose Cancela was a member of in the MLS (Major League Soccer).
-Steve Irwin.
-Based on the information provided, the country whose co-official language was used by the director of Group Portrait with a
-The star of Sous les pieds des femmes is Claudia Cardinale, who is a French actress.
-Sacramento
-The system of musical notation in the 14th century that is used in the area where most of the invasion of the
-The actor who plays Kurt in Daddy's Home 2 was educated at Hillcrest High School, Stanford University
-Based on the information provided, it is not clear where they hold NASCAR races in the city that is in the same
-The German priest preached a sermon on Marian devotion a month before his death in Germany.
-The monarch at the end of WW2 in The King's Speech was played by Geoffrey Rush.
-Andrew Scheer is the federal leader of the party that James Rajotte is a member of.
-The cast member of "Real Time with the Pizza Man" starts again in 2018 on March 2
-Based on the information provided, the makers of the Acura Legend, the largest auto company in the world, and
-The company that makes ALARM was abolished on November 30, 1999.
-The country that lies north of the region that prevailed with the disgrace of the "Near East" and
-Roncalli left the city where La Bella's creator died because he was elected to succeed the late Pius
-The band that performed "Cherchez le Garçon" is Taxi Girl, with members Daniel Darc and Mirw
-The tribes from the area where Linear Pottery culture was found invaded the Roman Empire in 375 AD.
-Based on the information provided, the band that recorded the album "I'm Alive and on Fire" formed in Toronto
-Lisbon
-Jim and Pam end up together in the season 4 finale of The Office.
-CBS
-The people that the Somali Muslim Ajuran Empire made coins to proclaim independence from were the Portuguese. The
-The region immediately north of what used to be known as the "Near East" and the location of Operation Earnest
-Ernie Watts was born in the district of Woolhampton in Berkshire, England.
-Based on the information provided, the city that shares a border with the capital of the state that won the 201
-The mascot of the institution that owns Memorial Union is Benny Beaver.
-The location of the administrative territorial entity of Zone 5 Military Museum is in the region of S-Fone.
-The regular season for the league in which the Buffalo Sabres Alumni Hockey Team had most of its members from begins
-The great mosque constructed at the site of the old temple in the city originating Christianity in Rome, Egypt, J
-The Japanese got to the city where New Plaza Stadium is located, and the rest of the Guangdong province on
-The last name Sylvester comes from the Latin language, which was used in the era of the individual crowned Emperor of
-Matthew McConaughey played the character David Wooderson in the film "Dazed and Confused".
-The RX 350 from the Scion owner's luxury division changed body style in 200
-The birth place of Ravil Aryapov is named after Aklia.
-The maximum load drawn by the device that was designed to standardize connection of computer peripherals is 500 m
-The country of the military group to which the Air Defense Artillery belongs was the only communist country to have an emb
-Casa Loma.
-The river where Long Spruce Generating Station is located is a tributary of the North Saskatchewan River
-The name of the castle in the place where the performer of Dragon Dreams was born is not provided in the given information
-Based on the information provided, the headquarters city of Veoh is ranked first among the top five largest urban areas in the state
-Blair International Baccalaureate School in Pasadena.
-In the Arabic dictionary, the word for the majority religion in the area of British India that became India when Achh'
-Based on the information provided, Burma's name was changed to Myanmar in 1989. This
-The body of water by the city that shares a border with Elizabeth Berg's birthplace and Ohio River meets the Mississippi River
-The Yongle Emperor moved the capitol from the city where he greeted the person to whom the edict was
-The arguer that Boris Lagutin's country of citizenship had become an imperialist power declared he would interven
-Based on the information provided, it is not clear which gun Amy Madigan's spouse used in Westworld. The
-Based on the information provided, the city in which Alexander Golitzen died, San Diego, ranks as the 5th largest
-The plague occurred in the birth place of Concerto in C Major Op 3 6's composer, Antonio
-The Chief Judge of the place where Orezi was born is Rosaline Patricia Irorefe Bozimo
-The administrative territorial entity Radwanice, Polkowice County is located in shares a border with Lublin Voivodeship
-Based on the information provided, the population of the second largest city in the state where the Oh Yeah performer is from was
-In the Biblical crossing of the sea where herbivorous fishes have been seen feeding on gelatinous
-Aeacides of Epirus's child, Pyrrhus, was at war from 280 BC
-Based on the given information, the answer is not clear as the provided external documents do not mention the specific year when the Governor
-The character name of the Hero and the Terror star in Walker, Texas Ranger is Alexandra Cahill.
-The manufacturers of VTEC, the owner of Scion, and Nissan opened US assembly plants in the
-The goal of the group that European Movement Germany is a member of is to promote European integration.
-Based on the information provided, the spouse of a cast member of Secrets of a Windmill Girl is Pauline Collins
-Brian Thomas Moynihan is the CEO of FleetBoston Financial's purchaser, Bank of
-正在评估:  81%|████████  | 812/1000 [27:03<06:07,  1.96s/it]正在评估:  81%|████████▏ | 813/1000 [27:04<05:39,  1.81s/it]正在评估:  81%|████████▏ | 814/1000 [27:06<06:04,  1.96s/it]正在评估:  82%|████████▏ | 815/1000 [27:08<05:48,  1.89s/it]正在评估:  82%|████████▏ | 816/1000 [27:10<05:51,  1.91s/it]正在评估:  82%|████████▏ | 817/1000 [27:12<05:58,  1.96s/it]正在评估:  82%|████████▏ | 818/1000 [27:14<06:16,  2.07s/it]正在评估:  82%|████████▏ | 819/1000 [27:16<06:15,  2.07s/it]正在评估:  82%|████████▏ | 820/1000 [27:19<06:22,  2.12s/it]正在评估:  82%|████████▏ | 821/1000 [27:20<05:50,  1.96s/it]正在评估:  82%|████████▏ | 822/1000 [27:22<05:16,  1.78s/it]正在评估:  82%|████████▏ | 823/1000 [27:24<05:36,  1.90s/it]正在评估:  82%|████████▏ | 824/1000 [27:26<05:35,  1.91s/it]正在评估:  82%|████████▎ | 825/1000 [27:28<05:27,  1.87s/it]正在评估:  83%|████████▎ | 826/1000 [27:30<05:48,  2.00s/it]正在评估:  83%|████████▎ | 827/1000 [27:32<06:01,  2.09s/it]正在评估:  83%|████████▎ | 828/1000 [27:34<05:39,  1.97s/it]正在评估:  83%|████████▎ | 829/1000 [27:36<05:37,  1.98s/it]正在评估:  83%|████████▎ | 830/1000 [27:38<05:48,  2.05s/it]正在评估:  83%|████████▎ | 831/1000 [27:40<05:50,  2.08s/it]正在评估:  83%|████████▎ | 832/1000 [27:42<05:31,  1.97s/it]正在评估:  83%|████████▎ | 833/1000 [27:44<05:34,  2.00s/it]正在评估:  83%|████████▎ | 834/1000 [27:46<05:14,  1.90s/it]正在评估:  84%|████████▎ | 835/1000 [27:48<05:22,  1.96s/it]正在评估:  84%|████████▎ | 836/1000 [27:50<05:32,  2.03s/it]正在评估:  84%|████████▎ | 837/1000 [27:52<05:39,  2.08s/it]正在评估:  84%|████████▍ | 838/1000 [27:54<05:34,  2.06s/it]正在评估:  84%|████████▍ | 839/1000 [27:56<05:24,  2.02s/it]正在评估:  84%|████████▍ | 840/1000 [27:58<05:28,  2.05s/it]正在评估:  84%|████████▍ | 841/1000 [28:00<05:24,  2.04s/it]正在评估:  84%|████████▍ | 842/1000 [28:02<05:17,  2.01s/it]正在评估:  84%|████████▍ | 843/1000 [28:04<05:25,  2.08s/it]正在评估:  84%|████████▍ | 844/1000 [28:06<05:23,  2.08s/it]正在评估:  84%|████████▍ | 845/1000 [28:08<05:18,  2.06s/it]正在评估:  85%|████████▍ | 846/1000 [28:10<05:14,  2.04s/it]正在评估:  85%|████████▍ | 847/1000 [28:12<04:57,  1.95s/it]正在评估:  85%|████████▍ | 848/1000 [28:14<05:00,  1.98s/it]正在评估:  85%|████████▍ | 849/1000 [28:16<04:48,  1.91s/it]正在评估:  85%|████████▌ | 850/1000 [28:18<04:49,  1.93s/it]正在评估:  85%|████████▌ | 851/1000 [28:20<04:47,  1.93s/it]正在评估:  85%|████████▌ | 852/1000 [28:22<04:48,  1.95s/it]正在评估:  85%|████████▌ | 853/1000 [28:23<04:29,  1.84s/it]正在评估:  85%|████████▌ | 854/1000 [28:26<04:40,  1.92s/it]正在评估:  86%|████████▌ | 855/1000 [28:27<04:05,  1.70s/it]正在评估:  86%|████████▌ | 856/1000 [28:29<04:25,  1.84s/it]正在评估:  86%|████████▌ | 857/1000 [28:31<04:31,  1.90s/it]正在评估:  86%|████████▌ | 858/1000 [28:33<04:39,  1.97s/it]正在评估:  86%|████████▌ | 859/1000 [28:35<04:18,  1.84s/it]正在评估:  86%|████████▌ | 860/1000 [28:36<04:17,  1.84s/it]正在评估:  86%|████████▌ | 861/1000 [28:38<04:19,  1.87s/it]正在评估:  86%|████████▌ | 862/1000 [28:41<04:33,  1.98s/it]正在评估:  86%|████████▋ | 863/1000 [28:43<04:42,  2.06s/it]正在评估:  86%|████████▋ | 864/1000 [28:45<04:41,  2.07s/it]正在评估:  86%|████████▋ | 865/1000 [28:47<04:38,  2.07s/it]正在评估:  87%|████████▋ | 866/1000 [28:49<04:43,  2.12s/it]正在评估:  87%|████████▋ | 867/1000 [28:51<04:35,  2.07s/it]正在评估:  87%|████████▋ | 868/1000 [28:53<04:39,  2.12s/it]正在评估:  87%|████████▋ | 869/1000 [28:55<04:31,  2.07s/it]正在评估:  87%|████████▋ | 870/1000 [28:57<04:23,  2.02s/it]正在评估:  87%|████████▋ | 871/1000 [28:59<04:23,  2.04s/it]正在评估:  87%|████████▋ | 872/1000 [29:02<04:26,  2.08s/it]正在评估:  87%|████████▋ | 873/1000 [29:04<04:25,  2.09s/it]正在评估:  87%|████████▋ | 874/1000 [29:06<04:17,  2.04s/it]正在评估:  88%|████████▊ | 875/1000 [29:08<04:21,  2.09s/it]正在评估:  88%|████████▊ | 876/1000 [29:10<04:19,  2.10s/it]正在评估:  88%|████████▊ | 877/1000 [29:12<04:14,  2.07s/it]正在评估:  88%|████████▊ | 878/1000 [29:14<04:19,  2.13s/it]正在评估:  88%|████████▊ | 879/1000 [29:16<04:13,  2.10s/it]正在评估:  88%|████████▊ | 880/1000 [29:18<04:05,  2.04s/it]正在评估:  88%|████████▊ | 881/1000 [29:20<03:57,  1.99s/it]正在评估:  88%|████████▊ | 882/1000 [29:22<03:40,  1.87s/it]正在评估:  88%|████████▊ | 883/1000 [29:24<03:49,  1.96s/it]正在评估:  88%|████████▊ | 884/1000 [29:26<03:45,  1.95s/it]正在评估:  88%|████████▊ | 885/1000 [29:28<03:53,  2.03s/it]正在评估:  89%|████████▊ | 886/1000 [29:30<03:50,  2.02s/it]正在评估:  89%|████████▊ | 887/1000 [29:32<03:56,  2.09s/it]正在评估:  89%|████████▉ | 888/1000 [29:34<03:28,  1.86s/it]正在评估:  89%|████████▉ | 889/1000 [29:36<03:32,  1.91s/it]正在评估:  89%|████████▉ | 890/1000 [29:38<03:34,  1.95s/it]正在评估:  89%|████████▉ | 891/1000 [29:40<03:33,  1.96s/it]正在评估:  89%|████████▉ | 892/1000 [29:42<03:32,  1.97s/it]正在评估:  89%|████████▉ | 893/1000 [29:44<03:34,  2.01s/it]正在评估:  89%|████████▉ | 894/1000 [29:46<03:27,  1.96s/it]正在评估:  90%|████████▉ | 895/1000 [29:48<03:27,  1.98s/it]正在评估:  90%|████████▉ | 896/1000 [29:50<03:30,  2.03s/it]正在评估:  90%|████████▉ | 897/1000 [29:51<03:16,  1.91s/it]The song "The Devil Went Down to Georgia" was written on May 21, 1979
-Kingscliff, New South Wales
-Based on the given information, it is not possible to determine the last time the team Matthew Webb was a member of beat
-Zena Tsarfin's school is a part of the City University of New York.
-Based on the information provided, the spouse of the actor who plays Paul in Breakfast at Tiffany's is
-Grant Park in the largest city by population in the state where WEKL is found is named after Lemuel P.
-The Arabic dictionary meaning of the word for the majority religion in the part of British India that became India when the country that
-The war with the person the Ioannina National Airport is named after occurred in the years 323–27
-The league in which Barcelona won titles in 1948 and 1949 had a season format of
-Frances Freeling Broderip's sibling is Jane Reynolds.
-Josh Groban.
-The deepest part of the ocean off the east coast of the United States is the Mariana Trench, located in the
-Roncalli left the place where the artist who made The Bacchanal of the Andrians died because he was elected
-After the death of Sarah, Haran's sibling married Keturah.
-Based on the information provided, the longest win streak in the league that Jim Wilson's team plays for is 2
-The empire that brought the practices of the most common religion in Southeast Asia is the Islamic empire.
-The population of state A is not provided in the given information.
-The castle found in the birthplace of the performer of The Speckless Sky is Pidhirtsi Castle.
-The celestial body that all objects focus on according to Kepler's laws was discovered to be the center of the
-The person who provided evidence to suggest the existence of the neutron was a participant in the discovery of the neutron.
-The experimental satellite that preceded IRS-P2 was ATS-6.
-In The Office, Pam gets together with her husband in the episode "Niagara".
-The river that Darling Mills Creek turns into flows into the Parramatta River.
-Based on the information provided, the U.S. News ranking of the law school at Abraham Lavender's employer
-The person who hit the first home run at the new stadium in South Bronx plays for the New York Yankees
-The city that is popular with tourists and is the capital city of the location of the Yaxing Coach headquarters had
-The child of Empress Dowager Huang's child is Wang Yanjun.
-The capital of the country is Brazzaville, located on the Congo River, in the south of the country, immediately
-Based on the information provided, it is not possible to determine which film the cast member in "Search for the Gods"
-The body of water by the city that Astronautalis is from, which is the Mississippi River, empties into
-The place where Mater et Magistra's author died became its own country on 1 December 2013
-Based on the given information, it is not possible to determine the exact number of major sports centers located in Nanjing
-The party that is the current majority in the political assembly that passed a bill giving regulators discretion to prohibit propriet
-Liam Thomas Garrigan plays the legendary figure featured in Historia Regum Britanniae in the show Once Upon a Time
-Based on the information provided, the actress who plays the role of the Queen of England in 1890 on the
-The actor who played Michael Knight on Young and Restless is David Hasselhoff.
-The father of the person who fulfilled the warning "Beware the man with one sandal" is Jason.
-Eddie Argos is the lead singer of the band performing Bang Bang Rock & Roll.
-Based on the given information, the owner of MV Miralda announced in April 2010 that it was
-The country that had the Border Troops of the republic known for the literature of the country of citizenship of Ilona Rich
-SEAL stands for Sea, Air, and Land, which refers to the primary special operations force of the United States Navy,
-The band named after who is Nina Sky.
-The U.S. believes that the country where the birthplace of Yaovabha Bongsanid is located
-Matthew Nelson.
-Based on the provided information, the player with the most league sacks is J.J. Watt, who had
-The school that employs Roberto Andorno has a total enrollment of 1,787 students.
-The president of the newly declared independent country part of the Commission of Truth and Friendship with the country where Kaimana
-King James I of England.
-The performer of "Be the One" was a member of the group Broken Social Scene.
-Roncalli left the place of death of The Punishment of Tythus' creator because it was a painting
-Based on the given information, the guy defending stuff from the religious scripture that fits into a large, loose definition
-The word that is also a majority religion in the area that became India when the country that released Ankahi was created
-In A League of Their Own, the husband of the actress who played Thelma in Thelma and Louise is
-The team that won the 1959 FA Cup final, beating Luton Town 2-1,
-Based on the information provided, the answer is not clear. The external document does not directly mention the specific question or provide a
-Based on the information provided, the only communist country to have an embassy where is Yugoslavia. Y
-Based on the given information, it is not possible to determine the exact number of places of higher learning in the city where the
-Teak wood was produced primarily in the country between the country that hosted the tournament and the country where That Dam is from during
-The owner of the record label that the performer of Days of Our Lives is on is Warner Music Group.
-Based on the information provided, the answer to the question is not clear. The external documentation does not directly mention the winner of
-The team that won the AL East in 2017 last played in the event after which the MLB MVP
-The president of the Confederate States of America ended his fight in the Mexican-American war on February 22,
-The Dow Jones fell 22.61% in the historical era where the book takes place.
-The troops of the country blamed for the stagnation and failure of the Tripartite discussion left the country that receives
-Honda, Toyota, and Nissan opened US assembly plants in the 1980s.
-Based on the information provided, the father of the man with the same name as the Big Brother hot dog challenge winner is
-The founder of the Presbyterian Church, John Calvin, died in 1564.
-The word "Slavs" was used in the national anthem of the country whose military having the Air Defense Art
-Based on the given information, the child of the cast member of Ice Bound: A Woman's Survival at
-Based on the information provided, the seat of the county sharing a border with the county where Miller Electric is headquartered
-The headquarters of Julia's House is located in Dorset, England.
-The abbreviation for Angela Merkel's original home country that once had border troops called the Deutsche Grenzpolize
-The city where Lesnoye Sanatorium is located is named after Palmiro Togliatti.
-According to the QS World University Rankings, Cairo University, where Mohamed Abu Hamed attended, ranks in
-The famous bridge in the birthplace of Gloria in D Major's composer is the Rialto Bridge.
-According to Pew, in 2010, 49.3 percent of Nigeria's population pract
-German
-Raymond Struan McDonald Stewart, Gerald Gazzard, Samuel John Small, Michail Gregory Antonio, and Mido
-Based on the given information, it is not possible to determine the exact number of books written by the person who proposed explanations
-Sebastian Cabot is the son of the Italian navigator who explored the eastern coast of the continent Hugo Casillas was born
-Roncalli left Venice for the conclave in Rome because he was elected to succeed the late Pius XII.
-The actor playing the voice of John Smith in Pocahontas, John Kassir, attended the institute of
-The state that contains the place where Fatata te Miti is displayed is Washington, D.C.
-The person credited with the discovery of the neutron is a participant in the project to determine the atomic number of various
-The all-time top goal scorer in the Premier League in one season is a member of Liverpool.
-Stan's place of birth is in South Park, Colorado.
-正在评估:  90%|████████▉ | 898/1000 [29:53<03:18,  1.95s/it]正在评估:  90%|████████▉ | 899/1000 [29:56<03:26,  2.04s/it]正在评估:  90%|█████████ | 900/1000 [29:57<03:11,  1.91s/it]正在评估:  90%|█████████ | 901/1000 [29:59<03:17,  2.00s/it]正在评估:  90%|█████████ | 902/1000 [30:02<03:25,  2.10s/it]正在评估:  90%|█████████ | 903/1000 [30:04<03:22,  2.08s/it]正在评估:  90%|█████████ | 904/1000 [30:06<03:18,  2.06s/it]正在评估:  90%|█████████ | 905/1000 [30:08<03:15,  2.06s/it]正在评估:  91%|█████████ | 906/1000 [30:10<03:11,  2.04s/it]正在评估:  91%|█████████ | 907/1000 [30:12<03:06,  2.01s/it]正在评估:  91%|█████████ | 908/1000 [30:14<03:00,  1.96s/it]正在评估:  91%|█████████ | 909/1000 [30:16<02:56,  1.94s/it]正在评估:  91%|█████████ | 910/1000 [30:17<02:43,  1.81s/it]正在评估:  91%|█████████ | 911/1000 [30:19<02:51,  1.92s/it]正在评估:  91%|█████████ | 912/1000 [30:21<02:54,  1.98s/it]正在评估:  91%|█████████▏| 913/1000 [30:24<02:58,  2.05s/it]正在评估:  91%|█████████▏| 914/1000 [30:26<03:00,  2.10s/it]正在评估:  92%|█████████▏| 915/1000 [30:28<02:52,  2.03s/it]正在评估:  92%|█████████▏| 916/1000 [30:30<02:47,  1.99s/it]正在评估:  92%|█████████▏| 917/1000 [30:32<02:51,  2.07s/it]正在评估:  92%|█████████▏| 918/1000 [30:34<02:51,  2.09s/it]正在评估:  92%|█████████▏| 919/1000 [30:36<02:44,  2.04s/it]正在评估:  92%|█████████▏| 920/1000 [30:38<02:40,  2.01s/it]正在评估:  92%|█████████▏| 921/1000 [30:40<02:42,  2.06s/it]正在评估:  92%|█████████▏| 922/1000 [30:42<02:43,  2.10s/it]正在评估:  92%|█████████▏| 923/1000 [30:44<02:37,  2.05s/it]正在评估:  92%|█████████▏| 924/1000 [30:46<02:39,  2.10s/it]正在评估:  92%|█████████▎| 925/1000 [30:48<02:34,  2.06s/it]正在评估:  93%|█████████▎| 926/1000 [30:50<02:30,  2.03s/it]正在评估:  93%|█████████▎| 927/1000 [30:52<02:20,  1.92s/it]正在评估:  93%|█████████▎| 928/1000 [30:54<02:23,  2.00s/it]正在评估:  93%|█████████▎| 929/1000 [30:56<02:23,  2.02s/it]正在评估:  93%|█████████▎| 930/1000 [30:58<02:20,  2.00s/it]正在评估:  93%|█████████▎| 931/1000 [31:00<02:14,  1.95s/it]正在评估:  93%|█████████▎| 932/1000 [31:02<02:15,  1.99s/it]正在评估:  93%|█████████▎| 933/1000 [31:04<02:15,  2.02s/it]正在评估:  93%|█████████▎| 934/1000 [31:06<02:10,  1.97s/it]正在评估:  94%|█████████▎| 935/1000 [31:08<02:12,  2.04s/it]正在评估:  94%|█████████▎| 936/1000 [31:10<02:05,  1.96s/it]正在评估:  94%|█████████▎| 937/1000 [31:12<02:04,  1.98s/it]正在评估:  94%|█████████▍| 938/1000 [31:14<02:00,  1.95s/it]正在评估:  94%|█████████▍| 939/1000 [31:16<02:02,  2.00s/it]正在评估:  94%|█████████▍| 940/1000 [31:18<01:58,  1.98s/it]正在评估:  94%|█████████▍| 941/1000 [31:20<01:56,  1.98s/it]正在评估:  94%|█████████▍| 942/1000 [31:22<01:51,  1.92s/it]正在评估:  94%|█████████▍| 943/1000 [31:24<01:52,  1.97s/it]正在评估:  94%|█████████▍| 944/1000 [31:26<01:50,  1.98s/it]正在评估:  94%|█████████▍| 945/1000 [31:27<01:43,  1.88s/it]正在评估:  95%|█████████▍| 946/1000 [31:29<01:41,  1.88s/it]正在评估:  95%|█████████▍| 947/1000 [31:30<01:28,  1.68s/it]正在评估:  95%|█████████▍| 948/1000 [31:32<01:29,  1.72s/it]正在评估:  95%|█████████▍| 949/1000 [31:34<01:29,  1.75s/it]正在评估:  95%|█████████▌| 950/1000 [31:36<01:28,  1.78s/it]正在评估:  95%|█████████▌| 951/1000 [31:38<01:35,  1.94s/it]正在评估:  95%|█████████▌| 952/1000 [31:40<01:31,  1.90s/it]正在评估:  95%|█████████▌| 953/1000 [31:42<01:27,  1.86s/it]正在评估:  95%|█████████▌| 954/1000 [31:44<01:29,  1.94s/it]正在评估:  96%|█████████▌| 955/1000 [31:46<01:28,  1.96s/it]正在评估:  96%|█████████▌| 956/1000 [31:47<01:15,  1.71s/it]正在评估:  96%|█████████▌| 957/1000 [31:49<01:16,  1.78s/it]正在评估:  96%|█████████▌| 958/1000 [31:50<01:06,  1.58s/it]正在评估:  96%|█████████▌| 959/1000 [31:52<01:08,  1.66s/it]正在评估:  96%|█████████▌| 960/1000 [31:54<01:10,  1.76s/it]正在评估:  96%|█████████▌| 961/1000 [31:56<01:12,  1.86s/it]正在评估:  96%|█████████▌| 962/1000 [31:58<01:14,  1.97s/it]正在评估:  96%|█████████▋| 963/1000 [32:00<01:14,  2.01s/it]正在评估:  96%|█████████▋| 964/1000 [32:03<01:13,  2.04s/it]正在评估:  96%|█████████▋| 965/1000 [32:05<01:11,  2.04s/it]正在评估:  97%|█████████▋| 966/1000 [32:07<01:09,  2.05s/it]正在评估:  97%|█████████▋| 967/1000 [32:09<01:08,  2.08s/it]正在评估:  97%|█████████▋| 968/1000 [32:11<01:06,  2.07s/it]正在评估:  97%|█████████▋| 969/1000 [32:13<01:00,  1.96s/it]正在评估:  97%|█████████▋| 970/1000 [32:14<00:54,  1.82s/it]正在评估:  97%|█████████▋| 971/1000 [32:15<00:46,  1.61s/it]正在评估:  97%|█████████▋| 972/1000 [32:16<00:41,  1.47s/it]正在评估:  97%|█████████▋| 973/1000 [32:17<00:35,  1.31s/it]正在评估:  97%|█████████▋| 974/1000 [32:18<00:33,  1.28s/it]正在评估:  98%|█████████▊| 975/1000 [32:20<00:31,  1.27s/it]正在评估:  98%|█████████▊| 976/1000 [32:21<00:29,  1.25s/it]正在评估:  98%|█████████▊| 977/1000 [32:22<00:28,  1.23s/it]正在评估:  98%|█████████▊| 978/1000 [32:23<00:27,  1.23s/it]正在评估:  98%|█████████▊| 979/1000 [32:24<00:24,  1.16s/it]正在评估:  98%|█████████▊| 980/1000 [32:25<00:22,  1.14s/it]The person who illustrated Shrek also worked on other notable works such as "Charlotte's Web" and "A
-Based on the given information, it is not possible to determine when Gary Rowett's team beat the 189
-Saxony-Anhalt.
-Dell's PowerShare feature allows drives attached via an industry standard connector to remain powered when the computer is
-Based on the given information, the average winter daytime temperature in the region containing Richmond, in the state where WXB
-The Palau de la Generalitat in Barcelona was constructed in the 15th century for the kings of Aragon
-The birthday of the creator of Le ruisseau noir is not mentioned in the provided external documents.
-The first mosque in Majuro, the capital of the Marshall Islands, opened in September 2012. This
-The oldest college in the state that contains Borough House Plantation is the College of Charleston.
-The famous bridge in the city where the composer of La Silvia was born is the Rialto Bridge.
-The Mtetengwe River is the mouth of the watercourse that turns into the Mtetengwe.
-The name of the castle in the city where the performer of "I'm Alive and on Fire" was formed
-John D. Loudermilk.
-The signing of the treaty named for the city where Beyoncé got pregnant took place on April 4,
-The mission for the agency that controls the monetary policy of the EU is found in Frankfurt, Germany. The European
-During the conflict when UN troops approached the Yalu River, North Korea had a government led by Kim Il-sung.
-The old show that was named after a character that Walt Disney created in 1928 is called Mickey Mouse
-Based on the information provided, it is not possible to determine the number of ethnic minorities that were looked at differently in
-The SEALs stand for the United States Navy's primary special operations force, conducting small-unit maritime military
-The country that includes the birth city of Bodindecha formed an alliance with Japan in 1941.
-The president of the newly declared independent country that is part of the commission of truth and friendship with the country that eats K
-Based on the information provided, it is not possible to determine the exact number of people who work in Susan Winchester's
-Greyhound buses leave from the Philadelphia Greyhound Terminal in the city where the headquarters of Care Bears: J
-The population of the largest state in the region of the U.S. where trading practices were once threatened by the Navigation
-Based on the information provided, it is not possible to determine the last time Cian Hughton's team beat
-Based on the information provided, it is not possible to determine the exact number of people who live in the largest state of the
-According to the United States Census Bureau, the total area of Los Angeles County is 17,037 square miles
-Based on the information provided, the direction of flow of the body of water by the city where The Minikahda Club
-The grandmother of Philippe, Duke of Orléans is Maria de las Mercedes of Orléans, who was
-Jennifer Parker was played by Elisabeth Shue in Back to the Future.
-The country where Fuser and Alberto meet the indigenous couple traveling to look for work changes their clocks for D
-The party that controls the House of Representatives took control of the branch that determines the rules of the US House and Senate in
-The owner of the record label that the performer of "Think of Laura" is on is Christopher Cross.
-Matt Damon is the actor who plays the title character in The Bourne Betrayal.
-Based on the given information, the answer is that Country B was the only communist country to have an embassy in
-In the 14th century, Philippe de Vitry and Guillaume de Machaut introduced musical notation used where Jack later participated
-Dimuthu Bandara Abayakoon was founded by Rohana Wijeweera, who was the founding
-Linda Edna Cardellini is the spouse of the person who voices Jarvis in the Avengers Age of Ul
-The performer from Night Rocker played the character Snapper Foster on Young and Restless.
-During the last cold phase of the last glacial period, the Irish Channel, the English Channel, and most of the North
-Based on the information provided, the answer to the first question is "The Lost Weekend" by Charles R. Jackson.
-The troops of the country blamed for the stagnation and failure of the Tripartite discussion left the country known for
-Based on the information provided, the city where the performer was born elected its first black mayor in 1973
-After the Soviet president visiting the country of citizenship of Yasyn Khamid while the protests were taking place
-Based on the information provided, it is unclear which state includes Narraguagus High School. However, if we assume
-The 1st Governor General of India, Warren Hastings, was impeached between 1788 and
-Based on the information provided, the author of "Neighbors" was born in New York City. This conclusion is
-The football star who backed out due to relay controversy was not signed by Barcelona.
-Vito Andolini Corleone was played by Robert De Niro in The Godfather Part II.
-Annabichl Castle
-The spouse of the longest reigning British monarch is Prince Philip, Duke of Edinburgh.
-The region where Leuna was located came to an end in 1918.
-Based on the information provided, John Phan's birthplace is in the Northeast region of Vietnam.
-The leader who argued that the country of citizenship of Vladimir Ageev had become an imperialist power, declared that he would
-After the Nazis invaded the country where many expelled French Jews relocated to Poland.
-San Clemente is in the Talca Province of Chile's Maule Region.
-The person who sponsored the resolution to reopen trade with Vietnam along with Kerry went to Yale University.
-Based on the information provided, the spouse of the creator of The Nanny Reunion: A Nosh to Remember
-Czocha Castle
-The city where Dunn Dunn's recording artist died during the conflict after which the government got involved in healthcare was
-Minnesota.
-The Battle at Choo Hoey's birthplace ended on 20 October 1934.
-The life expectancy of the type of retriever named after the body of water the Patuxent River turns into is
-Based on the information provided, the makers of Acura Legend, Daihatsu Charmant, and
-The Black Death is estimated to have reduced the population of the country for Bâton à feu by approximately 30%
-The Genesis's advantage over the platform of Pictionary was its ability to display more colors on the screen. This allowed
-The guy in the video of the performer of "One Last Time" is Matt Bennett.
-Based on the information provided, the birth date of the Sarah performer is not mentioned in any of the given external documents.
-The cast member of "Now You See Him, Now You Don't" is also a character in the film "D
-Based on the provided information, it is not possible to determine when Mark Crossley's team won the FA Cup. The
-The city's team in question is not Real Madrid, but rather FC Barcelona. Real Madrid is a football club based in
-The label responsible for the performer of One Night in America is Telarc.
-The Russian SFSR was suspended by President Yeltsin.
-The Basilica that is named after the same saint as the Schleswig Cathedral and the head of the Catholic religion became
-The region immediately north of the region where Israel is located and the final destination for the export crops was established during the Roman
-KTRP is licensed to broadcast to the community of Notus, Idaho.
-The region that lies to the north of where Eyal Golan is located and the Persian Gulf was created before the
-The winter season begins in the place where fuser and alberto meet the indigenous couple who were traveling for work
-The language of the European culture in which the carnival in the town where Jean Mathonet died is rooted is
-The Dow Jones fell 22.61% when the US had the highest unemployment rate.
-Based on the given information, it is not possible to determine how many times plague occurred in the place where Bajaz
-The headquarters of the publisher of Bamboo Among the Oaks is located in Minnesota.
-The Feast in the city where the headquarters of the only group larger than Desde El Principio's record label is held
-正在评估:  98%|█████████▊| 981/1000 [32:27<00:21,  1.14s/it]正在评估:  98%|█████████▊| 982/1000 [32:28<00:19,  1.09s/it]正在评估:  98%|█████████▊| 983/1000 [32:29<00:19,  1.13s/it]正在评估:  98%|█████████▊| 984/1000 [32:30<00:17,  1.12s/it]正在评估:  98%|█████████▊| 985/1000 [32:31<00:16,  1.13s/it]正在评估:  99%|█████████▊| 986/1000 [32:32<00:15,  1.08s/it]正在评估:  99%|█████████▊| 987/1000 [32:33<00:14,  1.10s/it]正在评估:  99%|█████████▉| 988/1000 [32:34<00:13,  1.12s/it]正在评估:  99%|█████████▉| 989/1000 [32:35<00:12,  1.11s/it]正在评估:  99%|█████████▉| 990/1000 [32:36<00:11,  1.12s/it]正在评估:  99%|█████████▉| 991/1000 [32:38<00:10,  1.16s/it]正在评估:  99%|█████████▉| 992/1000 [32:39<00:09,  1.20s/it]正在评估:  99%|█████████▉| 993/1000 [32:40<00:08,  1.19s/it]正在评估:  99%|█████████▉| 994/1000 [32:41<00:07,  1.18s/it]正在评估: 100%|█████████▉| 995/1000 [32:43<00:05,  1.18s/it]正在评估: 100%|█████████▉| 996/1000 [32:44<00:04,  1.14s/it]正在评估: 100%|█████████▉| 997/1000 [32:45<00:03,  1.12s/it]正在评估: 100%|█████████▉| 998/1000 [32:46<00:02,  1.09s/it]正在评估: 100%|█████████▉| 999/1000 [32:47<00:01,  1.11s/it]正在评估: 100%|██████████| 1000/1000 [32:48<00:00,  1.14s/it]正在评估: 100%|██████████| 1000/1000 [32:48<00:00,  1.97s/it]
-The city sharing a border with the capitol of the state where WYFG is located is in Washington, D.
-The kingdom that Heptarchy was part of was abolished in 1974.
-The performer of Watching Movies released Best Day Ever on May 25, 2013.
-Rebecca Romijn is the spouse of the actor portraying Jerry Lee Lewis in Great Balls of Fire.
-Celebrity Big Brother is coming to the network which, along with ABC and the network which released Stand Against
-The label responsible for the performer of Live Life Loud is the Blue Note label.
-Based on the information provided, the wettest year for the city in the same county as Summit was in 19
-The symbols of the Saints from the place where Here Come the Girl's performer was born are called "La Ros
-The original name of the bank that bought FleetBoston Financial was Bank of America.
-The author of "Business @ the Speed of Thought" played up the importance of digital infrastructures and information networks
-Based on the given information, the average winter daytime temperature in the region containing Richmond, in the state where WUSH
-The political party that holds the majority in the political body that passed a bill giving regulators discretion to prohibit propriet
-The party that Harlan and Stewart were affiliated with gained control of the body which determines the rules of the US House
-Based on the information provided, the opening day of the season of the league that Jim Wilson's team plays for is Th
-Based on the provided information, the answer to the question is that the country that was in effective control of both political and military
-The performer of "Sings America" played the character Scott "Scotty" Grainger Jr. on the soap
-Artists such as George Benson, Kenny G, and Dave Koz were featured on smooth jazz stations alongside Kenny
-The religion of Anubis' father is not provided in the given information.
-The label responsible for "Don't Let Me Wait Too Long" is a part of the Universal Music Group.
-The author of "Treatise Concerning the Principles of Human Knowledge" lived in the 17
-
-================================================================================
-评估结果:
-================================================================================
-exact_match: 0.0120
-f1: 0.0932
-accuracy: 0.1950
-================================================================================

@@ -1,248 +1,0 @@
-2025-09-12 09:54:58 INFO: - Rank: -1, Saving log file to checkpoint/llama3/evaluation_w_0.9.log ...
-2025-09-12 09:54:58 INFO: - Loading data from /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w09.json ... 
-从文件名自动解析得到权重: w = 0.9
-权重值: 0.9
-输入文件: /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w09.json
-日志文件: checkpoint/llama3/evaluation_w_0.9.log
-正在加载数据集...
-正在加载分词器: "/home/jiangjp/models/Meta-Llama-3-8B-Instruct"，padding_side: "left"
-缺少padding token，设置padding token为eos_token
-正在加载模型...
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.19s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.22s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.20s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.25it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.05it/s]
-开始评估...
-正在评估权重 w = 0.9
-输入文件: /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w09.json
-数据集大小: 100
-评估 w=0.9:   0%|          | 0/25 [00:00<?, ?it/s]/home/jiangjp/miniconda3/envs/trace/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:497: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
-  warnings.warn(
-评估 w=0.9:   4%|▍         | 1/25 [00:05<02:01,  5.07s/it]评估 w=0.9:   8%|▊         | 2/25 [00:10<02:00,  5.23s/it]评估 w=0.9:  12%|█▏        | 3/25 [00:16<02:07,  5.80s/it]评估 w=0.9:  16%|█▌        | 4/25 [00:19<01:34,  4.51s/it]评估 w=0.9:  20%|██        | 5/25 [00:22<01:18,  3.94s/it]评估 w=0.9:  24%|██▍       | 6/25 [00:26<01:13,  3.84s/it]评估 w=0.9:  28%|██▊       | 7/25 [00:29<01:09,  3.87s/it]评估 w=0.9:  32%|███▏      | 8/25 [00:36<01:19,  4.67s/it]评估 w=0.9:  36%|███▌      | 9/25 [00:40<01:10,  4.40s/it]评估 w=0.9:  40%|████      | 10/25 [00:44<01:08,  4.54s/it]评估 w=0.9:  44%|████▍     | 11/25 [00:48<00:58,  4.16s/it]评估 w=0.9:  48%|████▊     | 12/25 [00:53<00:59,  4.56s/it]评估 w=0.9:  52%|█████▏    | 13/25 [00:57<00:50,  4.19s/it]评估 w=0.9:  56%|█████▌    | 14/25 [01:00<00:42,  3.83s/it]评估 w=0.9:  60%|██████    | 15/25 [01:02<00:33,  3.38s/it]评估 w=0.9:  64%|██████▍   | 16/25 [01:06<00:31,  3.55s/it]评估 w=0.9:  68%|██████▊   | 17/25 [01:10<00:29,  3.72s/it]评估 w=0.9:  72%|███████▏  | 18/25 [01:12<00:21,  3.14s/it]评估 w=0.9:  76%|███████▌  | 19/25 [01:16<00:20,  3.39s/it]评估 w=0.9:  80%|████████  | 20/25 [01:18<00:15,  3.15s/it]评估 w=0.9:  84%|████████▍ | 21/25 [01:23<00:14,  3.53s/it]评估 w=0.9:  88%|████████▊ | 22/25 [01:27<00:11,  3.86s/it]评估 w=0.9:  92%|█████████▏| 23/25 [01:32<00:08,  4.12s/it]评估 w=0.9:  96%|█████████▌| 24/25 [01:34<00:03,  3.44s/it]评估 w=0.9: 100%|██████████| 25/25 [01:35<00:00,  2.82s/it]评估 w=0.9: 100%|██████████| 25/25 [01:35<00:00,  3.83s/it]
-2025-09-12 09:56:49 INFO: - 评估完成
-2025-09-12 09:56:49 INFO: - 权重值: 0.9
-2025-09-12 09:56:49 INFO: - 输入文件: /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w09.json
-2025-09-12 09:56:49 INFO: - 评估结果: {'weight_w': 0.9, 'input_file': '/home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w09.json', 'total_samples': 100, 'exact_match': 0.51, 'f1': 0.5341515151515152, 'precision': 0.5285, 'recall': 0.5566666666666666, 'avg_max_log_prob': -5.678017705538281, 'avg_max_prob': 0.3746654774781019, 'avg_total_prob': 0.3746654774781019, 'valid_max_prob_samples': 100, 'invalid_max_prob_samples': 0, 'avg_answer_count': 1.0, 'avg_valid_answer_count': 1.0}
-2025-09-12 09:56:49 INFO: - 结果已保存至: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w09/sample_correct_probabilities_w_0.9_triples.json
-样本0 正确:
-  生成答案: 'No.'
-  最佳正确答案概率: 0.001040 ('no')
-样本2 错误:
-  生成答案: 'Yes'
-  正确答案: ['no']
-  最佳正确答案概率: 0.007258 ('no')
-样本3 错误:
-  生成答案: 'April 10, 1943'
-  正确答案: ['12 April 1942']
-  最佳正确答案概率: 0.000001 ('12 April 1942')
-样本4 错误:
-  生成答案: 'Heart attack.'
-  正确答案: ['hanging']
-  最佳正确答案概率: 0.000000 ('hanging')
-样本7 错误:
-  生成答案: 'Craig Lahiff, the director of Swerve (Film), is still alive. P. Padmarajan, the director of'
-  正确答案: ['Innale']
-  最佳正确答案概率: 0.003553 ('Innale')
-样本9 错误:
-  生成答案: 'April 10, 1363'
-  正确答案: ['8 April 1364']
-  最佳正确答案概率: 0.000000 ('8 April 1364')
-样本10 错误:
-  生成答案: 'Yes'
-  正确答案: ['no']
-  最佳正确答案概率: 0.000010 ('no')
-样本11 错误:
-  生成答案: 'July 4, 2003'
-  正确答案: ['August 20, 2004']
-  最佳正确答案概率: 0.000008 ('August 20, 2004')
-样本13 错误:
-  生成答案: 'Humphrey Bogart'
-  正确答案: ['Lucien Guitry']
-  最佳正确答案概率: 0.003260 ('Lucien Guitry')
-样本14 错误:
-  生成答案: 'No.'
-  正确答案: ['yes']
-  最佳正确答案概率: 0.000813 ('yes')
-样本15 错误:
-  生成答案: 'Yes'
-  正确答案: ['no']
-  最佳正确答案概率: 0.000005 ('no')
-样本16 错误:
-  生成答案: 'Eindhoven'
-  正确答案: ['Dutch']
-  最佳正确答案概率: 0.000000 ('Dutch')
-样本17 错误:
-  生成答案: 'Chennai'
-  正确答案: ['Karaikudi']
-  最佳正确答案概率: 0.000145 ('Karaikudi')
-样本20 错误:
-  生成答案: 'Asahikawa, Hokkaidō, Japan'
-  正确答案: ['Asahikawa']
-  最佳正确答案概率: 0.999495 ('Asahikawa')
-样本21 错误:
-  生成答案: '10 February 1927'
-  正确答案: ['4 December 1922']
-  最佳正确答案概率: 0.000000 ('4 December 1922')
-样本22 错误:
-  生成答案: 'United Kingdom'
-  正确答案: ['India']
-  最佳正确答案概率: 0.000029 ('India')
-样本23 错误:
-  生成答案: 'Robert De Niro'
-  正确答案: ['Irwin Winkler']
-  最佳正确答案概率: 0.000584 ('Irwin Winkler')
-样本25 错误:
-  生成答案: 'Canada'
-  正确答案: ['American']
-  最佳正确答案概率: 0.000000 ('American')
-样本26 错误:
-  生成答案: 'January 5, 1973'
-  正确答案: ['July 10, 1972']
-  最佳正确答案概率: 0.000001 ('July 10, 1972')
-样本27 错误:
-  生成答案: 'Worthing, Sussex'
-  正确答案: ['Worthing']
-  最佳正确答案概率: 0.999342 ('Worthing')
-样本28 错误:
-  生成答案: 'United States'
-  正确答案: ['American']
-  最佳正确答案概率: 0.010418 ('American')
-样本29 错误:
-  生成答案: 'Africa Paradis'
-  正确答案: ['Half Past Dead']
-  最佳正确答案概率: 0.126118 ('Half Past Dead')
-样本30 错误:
-  生成答案: 'Gautham Menon (Ekk Deewana Tha) is older than Ryan Peters (Downtown Rumble).'
-  正确答案: ['Ekk Deewana Tha']
-  最佳正确答案概率: 0.297704 ('Ekk Deewana Tha')
-样本31 错误:
-  生成答案: 'January 8, 1820'
-  正确答案: ['November 17, 1808']
-  最佳正确答案概率: 0.332232 ('November 17, 1808')
-样本32 错误:
-  生成答案: 'Paris'
-  正确答案: ['Melbourne']
-  最佳正确答案概率: 0.000000 ('Melbourne')
-样本36 错误:
-  生成答案: 'Umberto Louzer'
-  正确答案: ['Salvatore Lanna']
-  最佳正确答案概率: 0.051502 ('Salvatore Lanna')
-样本38 错误:
-  生成答案: 'Peregrine Bertie, 3rd Duke of Ancaster and Kesteven'
-  正确答案: ['Thomas Panton']
-  最佳正确答案概率: 0.000000 ('Thomas Panton')
-样本43 错误:
-  生成答案: 'Maya Bazaar (1995 Film)'
-  正确答案: ['3688']
-  最佳正确答案概率: 0.071913 ('3688')
-样本47 错误:
-  生成答案: 'Stockholm, Sweden'
-  正确答案: ['Eisenach']
-  最佳正确答案概率: 0.007159 ('Eisenach')
-样本50 错误:
-  生成答案: '1921'
-  正确答案: ['A Gentleman Of France']
-  最佳正确答案概率: 0.002260 ('A Gentleman Of France')
-样本53 错误:
-  生成答案: 'Yes'
-  正确答案: ['no']
-  最佳正确答案概率: 0.000007 ('no')
-样本55 错误:
-  生成答案: 'Iranian'
-  正确答案: ['India']
-  最佳正确答案概率: 0.000000 ('India')
-样本57 错误:
-  生成答案: 'John Clayton'
-  正确答案: ['Anne Brooksbank']
-  最佳正确答案概率: 0.112190 ('Anne Brooksbank')
-样本58 错误:
-  生成答案: 'No'
-  正确答案: ['yes']
-  最佳正确答案概率: 0.000017 ('yes')
-样本59 错误:
-  生成答案: 'Yes'
-  正确答案: ['no']
-  最佳正确答案概率: 0.000000 ('no')
-样本61 错误:
-  生成答案: 'Gustavo Couttolenc'
-  正确答案: ['Peter Diversi']
-  最佳正确答案概率: 0.004110 ('Peter Diversi')
-样本64 错误:
-  生成答案: 'United States'
-  正确答案: ['American']
-  最佳正确答案概率: 0.016903 ('American')
-样本66 错误:
-  生成答案: 'Already Famous'
-  正确答案: ['Cape Forlorn']
-  最佳正确答案概率: 0.260658 ('Cape Forlorn')
-样本67 错误:
-  生成答案: 'Canadian'
-  正确答案: ['American']
-  最佳正确答案概率: 0.013759 ('American')
-样本69 错误:
-  生成答案: 'No'
-  正确答案: ['yes']
-  最佳正确答案概率: 0.000148 ('yes')
-样本70 错误:
-  生成答案: 'Death On The Job'
-  正确答案: ['Rock All Night']
-  最佳正确答案概率: 0.028864 ('Rock All Night')
-样本72 错误:
-  生成答案: 'Yes'
-  正确答案: ['no']
-  最佳正确答案概率: 0.000006 ('no')
-样本73 错误:
-  生成答案: 'City of Angels'
-  正确答案: ['Auckland']
-  最佳正确答案概率: 0.001165 ('Auckland')
-样本75 错误:
-  生成答案: 'Leopoldo Penna Franca'
-  正确答案: ['Hermann Speelmans']
-  最佳正确答案概率: 0.000369 ('Hermann Speelmans')
-样本76 错误:
-  生成答案: 'No'
-  正确答案: ['yes']
-  最佳正确答案概率: 0.000000 ('yes')
-样本78 错误:
-  生成答案: 'Shot and killed in the archway of his Manhattan apartment building.'
-  正确答案: ['shot']
-  最佳正确答案概率: 0.089488 ('shot')
-样本79 错误:
-  生成答案: 'Yes.'
-  正确答案: ['no']
-  最佳正确答案概率: 0.000000 ('no')
-样本93 错误:
-  生成答案: 'Yes.'
-  正确答案: ['no']
-  最佳正确答案概率: 0.000001 ('no')
-样本97 错误:
-  生成答案: 'No'
-  正确答案: ['yes']
-  最佳正确答案概率: 0.000125 ('yes')
-样本99 错误:
-  生成答案: 'American'
-  正确答案: ['America']
-  最佳正确答案概率: 0.000009 ('America')
-
-============================================================
-评估结果
-============================================================
-weight_w: 0.900000
-input_file: /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w09.json
-total_samples: 100
-exact_match: 0.510000
-f1: 0.534152
-precision: 0.528500
-recall: 0.556667
-avg_max_log_prob: -5.678018
-avg_max_prob: 0.374665
-avg_total_prob: 0.374665
-valid_max_prob_samples: 100
-invalid_max_prob_samples: 0
-avg_answer_count: 1.000000
-avg_valid_answer_count: 1.000000
-============================================================
-
-结果已保存至: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w09/sample_correct_probabilities_w_0.9_triples.json
-
-统计信息:
-平均每个问题有 1.0 个正确答案
-平均每个问题有 1.0 个有效概率的答案
-有效概率样本: 100 / 100

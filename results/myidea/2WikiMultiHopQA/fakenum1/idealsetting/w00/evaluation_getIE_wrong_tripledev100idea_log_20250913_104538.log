@@ -1,77 +1,0 @@
-2025-09-13 10:45:40 INFO: - Rank: -1, Saving log file to checkpoint/llama3/evaluation_wrong_w_0.0.log ...
-2025-09-13 10:45:40 INFO: - Loading data from /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w00.json ... 
-从文件名自动解析得到权重: w = 0.0
-权重值: 0.0
-输入文件: /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w00.json
-日志文件: checkpoint/llama3/evaluation_wrong_w_0.0.log
-正在加载数据集...
-正在加载分词器: "/home/jiangjp/models/Meta-Llama-3-8B-Instruct"，padding_side: "left"
-缺少padding token，设置padding token为eos_token
-正在加载模型...
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.28s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.30s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.32s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.13it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.04s/it]
-开始评估...
-正在评估权重 w = 0.0
-输入文件: /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w00.json
-数据集大小: 100
-评估 w=0.0:   0%|          | 0/25 [00:00<?, ?it/s]/home/jiangjp/miniconda3/envs/trace/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:497: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
-  warnings.warn(
-评估 w=0.0:   4%|▍         | 1/25 [00:04<01:54,  4.79s/it]评估 w=0.0:   8%|▊         | 2/25 [00:09<01:49,  4.75s/it]评估 w=0.0:  12%|█▏        | 3/25 [00:14<01:44,  4.74s/it]评估 w=0.0:  16%|█▌        | 4/25 [00:17<01:25,  4.09s/it]评估 w=0.0:  20%|██        | 5/25 [00:19<01:09,  3.48s/it]评估 w=0.0:  24%|██▍       | 6/25 [00:22<01:04,  3.38s/it]评估 w=0.0:  28%|██▊       | 7/25 [00:26<00:59,  3.30s/it]评估 w=0.0:  32%|███▏      | 8/25 [00:30<01:03,  3.71s/it]评估 w=0.0:  36%|███▌      | 9/25 [00:33<00:57,  3.57s/it]评估 w=0.0:  40%|████      | 10/25 [00:38<00:59,  3.96s/it]评估 w=0.0:  44%|████▍     | 11/25 [00:43<00:57,  4.14s/it]评估 w=0.0:  48%|████▊     | 12/25 [00:48<00:56,  4.36s/it]评估 w=0.0:  52%|█████▏    | 13/25 [00:50<00:46,  3.88s/it]评估 w=0.0:  56%|█████▌    | 14/25 [00:53<00:38,  3.51s/it]评估 w=0.0:  60%|██████    | 15/25 [00:55<00:31,  3.13s/it]评估 w=0.0:  64%|██████▍   | 16/25 [01:00<00:31,  3.49s/it]评估 w=0.0:  68%|██████▊   | 17/25 [01:07<00:36,  4.57s/it]评估 w=0.0:  72%|███████▏  | 18/25 [01:18<00:45,  6.48s/it]评估 w=0.0:  76%|███████▌  | 19/25 [01:22<00:35,  5.97s/it]评估 w=0.0:  80%|████████  | 20/25 [01:25<00:25,  5.09s/it]评估 w=0.0:  84%|████████▍ | 21/25 [01:31<00:21,  5.28s/it]评估 w=0.0:  88%|████████▊ | 22/25 [01:37<00:16,  5.37s/it]评估 w=0.0:  92%|█████████▏| 23/25 [01:42<00:10,  5.32s/it]评估 w=0.0:  96%|█████████▌| 24/25 [01:44<00:04,  4.35s/it]评估 w=0.0: 100%|██████████| 25/25 [01:46<00:00,  3.52s/it]评估 w=0.0: 100%|██████████| 25/25 [01:46<00:00,  4.25s/it]
-2025-09-13 10:47:41 INFO: - 错误答案概率评估完成
-2025-09-13 10:47:41 INFO: - 权重值: 0.0
-2025-09-13 10:47:41 INFO: - 输入文件: /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w00.json
-2025-09-13 10:47:41 INFO: - 评估结果: {'weight_w': 0.0, 'input_file': '/home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w00.json', 'total_samples': 100, 'exact_match': 0.45, 'f1': 0.47515151515151516, 'precision': 0.47028113553113554, 'recall': 0.4966666666666667, 'avg_wrong_log_prob': -15.442346124986539, 'avg_wrong_prob': 0.02699261458291483, 'valid_wrong_prob_samples': 100, 'invalid_wrong_prob_samples': 0, 'wrong_answer_valid_rate': 1.0}
-2025-09-13 10:47:41 INFO: - 结果已保存至: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w00/sample_wrong_probabilities_w_0.0_triples.json
-样本0:
-  生成答案: 'American' (EM: False)
-  正确答案: ['no']
-  错误答案(原始): '['yes']'
-  错误答案(清理): 'yes'
-  错误答案概率: 0.000457
-样本20:
-  生成答案: 'Deir el-Medina' (EM: False)
-  正确答案: ['Asahikawa']
-  错误答案(原始): '['Kolkata']'
-  错误答案(清理): 'Kolkata'
-  错误答案概率: 0.000000
-样本40:
-  生成答案: '13 November 1959' (EM: False)
-  正确答案: ['15 July 1948']
-  错误答案(原始): '['15 July 1945']'
-  错误答案(清理): '15 July 1945'
-  错误答案概率: 0.000001
-样本60:
-  生成答案: 'September 9, 1996' (EM: True)
-  正确答案: ['September 9, 1996']
-  错误答案(原始): '['June 7, 1995']'
-  错误答案(清理): 'June 7, 1995'
-  错误答案概率: 0.000000
-样本80:
-  生成答案: 'Not provided.' (EM: False)
-  正确答案: ['22 September 1896']
-  错误答案(原始): '['20 September 1897']'
-  错误答案(清理): '20 September 1897'
-  错误答案概率: 0.000000
-
-============================================================
-错误答案概率评估结果
-============================================================
-weight_w: 0.000000
-input_file: /home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_dev100ideal_with_reasoning_chains_modify_w00.json
-total_samples: 100
-exact_match: 0.450000
-f1: 0.475152
-precision: 0.470281
-recall: 0.496667
-avg_wrong_log_prob: -15.442346
-avg_wrong_prob: 0.026993
-valid_wrong_prob_samples: 100
-invalid_wrong_prob_samples: 0
-wrong_answer_valid_rate: 1.000000
-============================================================
-
-结果已保存至: /home/jiangjp/trace-idea/results/myidea/2WikiMultiHopQA/fakenum1/idealsetting/w00/sample_wrong_probabilities_w_0.0_triples.json
-
-统计信息:
-平均每个问题有1 个错误答案
-平均每个问题有1个有效概率的错误答案
-有效错误答案概率样本: 100 / 100

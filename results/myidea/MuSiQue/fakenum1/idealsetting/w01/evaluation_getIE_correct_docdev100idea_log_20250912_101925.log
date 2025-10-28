@@ -1,260 +1,0 @@
-2025-09-12 10:19:26 INFO: - Rank: -1, Saving log file to checkpoint/llama3/evaluation_w_0.1.log ...
-2025-09-12 10:19:26 INFO: - Loading data from /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w01.json ... 
-从文件名自动解析得到权重: w = 0.1
-权重值: 0.1
-输入文件: /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w01.json
-日志文件: checkpoint/llama3/evaluation_w_0.1.log
-正在加载数据集...
-正在加载分词器: "/home/jiangjp/models/Meta-Llama-3-8B-Instruct"，padding_side: "left"
-缺少padding token，设置padding token为eos_token
-正在加载模型...
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.07s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.14s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.13s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.31it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:03<00:00,  1.12it/s]
-开始评估...
-正在评估权重 w = 0.1
-输入文件: /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w01.json
-数据集大小: 100
-评估 w=0.1:   0%|          | 0/25 [00:00<?, ?it/s]/home/jiangjp/miniconda3/envs/trace/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:497: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
-  warnings.warn(
-评估 w=0.1:   4%|▍         | 1/25 [00:11<04:35, 11.50s/it]评估 w=0.1:   8%|▊         | 2/25 [00:22<04:18, 11.23s/it]评估 w=0.1:  12%|█▏        | 3/25 [00:31<03:39,  9.97s/it]评估 w=0.1:  16%|█▌        | 4/25 [00:43<03:50, 10.99s/it]评估 w=0.1:  20%|██        | 5/25 [00:52<03:21, 10.08s/it]评估 w=0.1:  24%|██▍       | 6/25 [01:14<04:32, 14.35s/it]评估 w=0.1:  28%|██▊       | 7/25 [01:24<03:52, 12.93s/it]评估 w=0.1:  32%|███▏      | 8/25 [01:47<04:32, 16.05s/it]评估 w=0.1:  36%|███▌      | 9/25 [01:52<03:22, 12.67s/it]评估 w=0.1:  40%|████      | 10/25 [02:06<03:15, 13.03s/it]评估 w=0.1:  44%|████▍     | 11/25 [02:20<03:04, 13.20s/it]评估 w=0.1:  48%|████▊     | 12/25 [02:32<02:48, 12.97s/it]评估 w=0.1:  52%|█████▏    | 13/25 [02:48<02:46, 13.89s/it]评估 w=0.1:  56%|█████▌    | 14/25 [03:05<02:44, 14.98s/it]评估 w=0.1:  60%|██████    | 15/25 [03:20<02:28, 14.87s/it]评估 w=0.1:  64%|██████▍   | 16/25 [03:41<02:30, 16.71s/it]评估 w=0.1:  68%|██████▊   | 17/25 [03:48<01:49, 13.66s/it]评估 w=0.1:  72%|███████▏  | 18/25 [04:01<01:34, 13.45s/it]评估 w=0.1:  76%|███████▌  | 19/25 [04:40<02:07, 21.31s/it]评估 w=0.1:  80%|████████  | 20/25 [04:47<01:24, 16.89s/it]评估 w=0.1:  84%|████████▍ | 21/25 [05:06<01:10, 17.71s/it]评估 w=0.1:  88%|████████▊ | 22/25 [05:16<00:45, 15.21s/it]评估 w=0.1:  92%|█████████▏| 23/25 [05:35<00:32, 16.39s/it]评估 w=0.1:  96%|█████████▌| 24/25 [05:51<00:16, 16.33s/it]样本0 错误:
-  生成答案: '1858'
-  正确答案: ['April 1858']
-  最佳正确答案概率: 0.390838 ('April 1858')
-样本3 错误:
-  生成答案: 'None of the provided contexts mention peace talks in Geneva with a country that approved the name of the planet that features the Small Dark'
-  正确答案: ['Chinese']
-  最佳正确答案概率: 0.000003 ('Chinese')
-样本7 错误:
-  生成答案: 'Hotel and restaurant.'
-  正确答案: ['hotels', 'Hotel', 'hotel']
-  最佳正确答案概率: 0.447420 ('Hotel')
-样本10 错误:
-  生成答案: '3'
-  正确答案: ['three']
-  最佳正确答案概率: 0.005013 ('three')
-样本12 错误:
-  生成答案: '1898'
-  正确答案: ['August 12, 1898']
-  最佳正确答案概率: 0.000555 ('August 12, 1898')
-样本13 错误:
-  生成答案: 'Beijing'
-  正确答案: ['Dorgon']
-  最佳正确答案概率: 0.000000 ('Dorgon')
-样本14 错误:
-  生成答案: 'Christians.'
-  正确答案: ['a red cross on a white field', 'Red Cross']
-  最佳正确答案概率: 0.000000 ('Red Cross')
-样本15 错误:
-  生成答案: 'Columbia Records.'
-  正确答案: ['Warner Bros.']
-  最佳正确答案概率: 0.000000 ('Warner Bros.')
-样本18 错误:
-  生成答案: 'North Korea'
-  正确答案: ['KPA']
-  最佳正确答案概率: 0.005039 ('KPA')
-样本22 错误:
-  生成答案: '27 BC'
-  正确答案: ['establishment of the Roman Empire.', 'Roman Empire']
-  最佳正确答案概率: 0.000024 ('establishment of the Roman Empire.')
-样本23 错误:
-  生成答案: 'The composer of Ganashatru, Satyajit Ray, is not mentioned in the text. The question is asking'
-  正确答案: ['Visva-Bharati University']
-  最佳正确答案概率: 0.000000 ('Visva-Bharati University')
-样本24 错误:
-  生成答案: 'There is no mention of the XXX Corps invading an island in the given context.'
-  正确答案: ['1773']
-  最佳正确答案概率: 0.000000 ('1773')
-样本26 错误:
-  生成答案: 'St. John's.'
-  正确答案: ['eastern tip']
-  最佳正确答案概率: 0.004541 ('eastern tip')
-样本28 错误:
-  生成答案: 'Asia'
-  正确答案: ['Central Asia']
-  最佳正确答案概率: 0.000102 ('Central Asia')
-样本29 错误:
-  生成答案: 'Royal College Colombo.'
-  正确答案: ['Syracuse University', 'Cuse', 'SU']
-  最佳正确答案概率: 0.000000 ('SU')
-样本33 错误:
-  生成答案: 'Italian High Renaissance master.'
-  正确答案: ['Italian painter']
-  最佳正确答案概率: 0.000116 ('Italian painter')
-样本34 错误:
-  生成答案: 'John Lennon'
-  正确答案: ['Alfred Lennon']
-  最佳正确答案概率: 0.000001 ('Alfred Lennon')
-样本35 错误:
-  生成答案: 'Macy's'
-  正确答案: ['KaDeWe']
-  最佳正确答案概率: 0.000000 ('KaDeWe')
-样本37 错误:
-  生成答案: 'May 14, 2015'
-  正确答案: ['September 25, 2014']
-  最佳正确答案概率: 0.061016 ('September 25, 2014')
-样本38 错误:
-  生成答案: 'Laughery Creek'
-  正确答案: ['Ohio River']
-  最佳正确答案概率: 0.001460 ('Ohio River')
-样本40 错误:
-  生成答案: 'The European Union.'
-  正确答案: ["Europe's most innovative country", 'Europe']
-  最佳正确答案概率: 0.012787 ('Europe')
-样本43 错误:
-  生成答案: 'There is no mention of Alanders rejoining the country in the given contexts.'
-  正确答案: ['December 1917']
-  最佳正确答案概率: 0.000000 ('December 1917')
-样本45 错误:
-  生成答案: 'Kenya'
-  正确答案: ['1895']
-  最佳正确答案概率: 0.272649 ('1895')
-样本46 错误:
-  生成答案: 'The flag of the United States has 50 stars, not one.'
-  正确答案: ['represented the island of Puerto Rico', 'PR', 'Puerto Rico']
-  最佳正确答案概率: 0.000000 ('PR')
-样本47 错误:
-  生成答案: 'a church'
-  正确答案: ['temple, now a church', 'Temple', 'temple']
-  最佳正确答案概率: 0.000004 ('Temple')
-样本48 错误:
-  生成答案: '597'
-  正确答案: ['1909']
-  最佳正确答案概率: 0.000000 ('1909')
-样本49 错误:
-  生成答案: '11:00 until 23:00'
-  正确答案: ['24 hours a day']
-  最佳正确答案概率: 0.198957 ('24 hours a day')
-样本50 正确:
-  生成答案: 'Antarctica'
-  最佳正确答案概率: 0.999147 ('Antarctica')
-样本51 错误:
-  生成答案: 'Rhode Island Department of Transportation (RIDOT).'
-  正确答案: ['Rhode Island Department of Transportation', 'RIDOT']
-  最佳正确答案概率: 0.316415 ('Rhode Island Department of Transportation')
-样本52 错误:
-  生成答案: 'None of the signers of the Declaration of Independence were from the state where Keedy House is located, which is Maryland.'
-  正确答案: ['Charles Carroll']
-  最佳正确答案概率: 0.032417 ('Charles Carroll')
-样本53 错误:
-  生成答案: 'Monte Porzio Catone'
-  正确答案: ['Castel Gandolfo']
-  最佳正确答案概率: 0.000001 ('Castel Gandolfo')
-样本54 错误:
-  生成答案: 'Thomas Stone'
-  正确答案: ['Charles Carroll']
-  最佳正确答案概率: 0.127611 ('Charles Carroll')
-样本55 错误:
-  生成答案: 'Widower.'
-  正确答案: ['Catherine Zeta-Jones']
-  最佳正确答案概率: 0.000250 ('Catherine Zeta-Jones')
-样本56 错误:
-  生成答案: 'Barley.'
-  正确答案: ['yak meat']
-  最佳正确答案概率: 0.000077 ('yak meat')
-样本58 错误:
-  生成答案: 'The Lewis Range.'
-  正确答案: ['Rocky Mountains']
-  最佳正确答案概率: 0.000000 ('Rocky Mountains')
-样本60 错误:
-  生成答案: 'The Voyager 1 and Voyager 2 spacecraft used the gravitational pull of Jupiter.'
-  正确答案: ['Voyager probes']
-  最佳正确答案概率: 0.001090 ('Voyager probes')
-样本62 错误:
-  生成答案: '1876'
-  正确答案: ['5th–6th centuries', '6th century', '6th-century']
-  最佳正确答案概率: 0.042565 ('5th–6th centuries')
-样本63 错误:
-  生成答案: 'Julius Caesar'
-  正确答案: ['March 44 BC']
-  最佳正确答案概率: 0.000000 ('March 44 BC')
-样本68 错误:
-  生成答案: 'Renault'
-  正确答案: ['Louis Renault']
-  最佳正确答案概率: 0.000000 ('Louis Renault')
-样本69 错误:
-  生成答案: 'UTF-16'
-  正确答案: ['WGL-4 with 652 characters']
-  最佳正确答案概率: 0.000723 ('WGL-4 with 652 characters')
-样本71 错误:
-  生成答案: 'members of the Lok Sabha'
-  正确答案: ['Parliament of India']
-  最佳正确答案概率: 0.000001 ('Parliament of India')
-样本72 错误:
-  生成答案: 'Harvard University'
-  正确答案: ['Harvard']
-  最佳正确答案概率: 0.698173 ('Harvard')
-样本74 错误:
-  生成答案: 'A month-long affair.'
-  正确答案: ['a month', 'Month', 'month']
-  最佳正确答案概率: 0.108938 ('a month')
-样本75 错误:
-  生成答案: 'No.'
-  正确答案: ['totals remain relatively small in relation to the total U.S population.', 'the US', 'America', 'U.S.', 'the United States', 'United States', 'US']
-  最佳正确答案概率: 0.000001 ('U.S.')
-样本80 错误:
-  生成答案: 'Hertfordshire, United Kingdom'
-  正确答案: ['off the north - western coast of the European mainland']
-  最佳正确答案概率: 0.000000 ('off the north - western coast of the European mainland')
-样本81 错误:
-  生成答案: 'Puerto Rico'
-  正确答案: ['a key part of the Spanish Empire']
-  最佳正确答案概率: 0.000000 ('a key part of the Spanish Empire')
-样本82 错误:
-  生成答案: 'St. Petersburg'
-  正确答案: ['165,521']
-  最佳正确答案概率: 0.000000 ('165,521')
-样本86 错误:
-  生成答案: 'Mattel.'
-  正确答案: ['Elliot Handler']
-  最佳正确答案概率: 0.490146 ('Elliot Handler')
-样本88 错误:
-  生成答案: 'Andrew Johnson'
-  正确答案: ['Arkansas Attorney General']
-  最佳正确答案概率: 0.000000 ('Arkansas Attorney General')
-样本91 错误:
-  生成答案: 'Trajan'
-  正确答案: ['Marcia']
-  最佳正确答案概率: 0.000062 ('Marcia')
-样本95 错误:
-  生成答案: 'Nintendo'
-  正确答案: ['first-party games']
-  最佳正确答案概率: 0.000000 ('first-party games')
-样本98 错误:
-  生成答案: 'Seth Magaziner, Rhode Island'
-  正确答案: ['Seth Magaziner']
-  最佳正确答案概率: 0.985973 ('Seth Magaziner')
-样本99 错误:
-  生成答案: 'Hangzhou'
-评估 w=0.1: 100%|██████████| 25/25 [06:24<00:00, 21.26s/it]评估 w=0.1: 100%|██████████| 25/25 [06:24<00:00, 15.38s/it]
-2025-09-12 10:26:04 INFO: - 评估完成
-2025-09-12 10:26:04 INFO: - 权重值: 0.1
-2025-09-12 10:26:04 INFO: - 输入文件: /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w01.json
-2025-09-12 10:26:04 INFO: - 评估结果: {'weight_w': 0.1, 'input_file': '/home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w01.json', 'total_samples': 100, 'exact_match': 0.48, 'f1': 0.5362960372960373, 'precision': 0.5543535353535354, 'recall': 0.54, 'avg_max_log_prob': -6.013149095939643, 'avg_max_prob': 0.42126063366484345, 'avg_total_prob': 0.4392148066756142, 'valid_max_prob_samples': 100, 'invalid_max_prob_samples': 0, 'avg_answer_count': 1.48, 'avg_valid_answer_count': 1.48}
-2025-09-12 10:26:04 INFO: - 结果已保存至: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w01/sample_correct_probabilities_w_0.1_documents.json
-  正确答案: ['Qiantang']
-  最佳正确答案概率: 0.000000 ('Qiantang')
-
-============================================================
-评估结果
-============================================================
-weight_w: 0.100000
-input_file: /home/jiangjp/trace-idea/data/musique/musique_dev100ideal_with_reasoning_chains_modify_w01.json
-total_samples: 100
-exact_match: 0.480000
-f1: 0.536296
-precision: 0.554354
-recall: 0.540000
-avg_max_log_prob: -6.013149
-avg_max_prob: 0.421261
-avg_total_prob: 0.439215
-valid_max_prob_samples: 100
-invalid_max_prob_samples: 0
-avg_answer_count: 1.480000
-avg_valid_answer_count: 1.480000
-============================================================
-
-结果已保存至: /home/jiangjp/trace-idea/results/myidea/MuSiQue/fakenum1/idealsetting/w01/sample_correct_probabilities_w_0.1_documents.json
-
-统计信息:
-平均每个问题有 1.5 个正确答案
-平均每个问题有 1.5 个有效概率的答案
-有效概率样本: 100 / 100

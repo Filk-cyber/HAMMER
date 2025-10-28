@@ -1,160 +1,0 @@
-2025-09-12 07:36:40 INFO: - Rank: -1, Saving log file to checkpoint/llama3/evaluation_w_0.1.log ...
-2025-09-12 07:36:40 INFO: - Loading data from /home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w01.json ... 
-从文件名自动解析得到权重: w = 0.1
-权重值: 0.1
-输入文件: /home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w01.json
-日志文件: checkpoint/llama3/evaluation_w_0.1.log
-正在加载数据集...
-正在加载分词器: "/home/jiangjp/models/Meta-Llama-3-8B-Instruct"，padding_side: "left"
-缺少padding token，设置padding token为eos_token
-正在加载模型...
-Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.24s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.36s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:04<00:01,  1.34s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.13it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.05s/it]
-开始评估...
-正在评估权重 w = 0.1
-输入文件: /home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w01.json
-数据集大小: 100
-评估 w=0.1:   0%|          | 0/25 [00:00<?, ?it/s]/home/jiangjp/miniconda3/envs/trace/lib/python3.10/site-packages/transformers/generation/configuration_utils.py:497: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.9` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
-  warnings.warn(
-评估 w=0.1:   4%|▍         | 1/25 [00:02<01:11,  2.97s/it]评估 w=0.1:   8%|▊         | 2/25 [00:08<01:44,  4.56s/it]评估 w=0.1:  12%|█▏        | 3/25 [00:15<01:59,  5.42s/it]评估 w=0.1:  16%|█▌        | 4/25 [00:19<01:43,  4.93s/it]评估 w=0.1:  20%|██        | 5/25 [00:23<01:32,  4.61s/it]评估 w=0.1:  24%|██▍       | 6/25 [00:27<01:25,  4.52s/it]评估 w=0.1:  28%|██▊       | 7/25 [00:31<01:18,  4.39s/it]评估 w=0.1:  32%|███▏      | 8/25 [00:37<01:21,  4.82s/it]评估 w=0.1:  36%|███▌      | 9/25 [00:43<01:22,  5.16s/it]评估 w=0.1:  40%|████      | 10/25 [00:47<01:10,  4.73s/it]评估 w=0.1:  44%|████▍     | 11/25 [00:53<01:11,  5.08s/it]评估 w=0.1:  48%|████▊     | 12/25 [00:58<01:06,  5.12s/it]评估 w=0.1:  52%|█████▏    | 13/25 [01:06<01:11,  5.95s/it]评估 w=0.1:  56%|█████▌    | 14/25 [01:10<01:00,  5.54s/it]评估 w=0.1:  60%|██████    | 15/25 [01:14<00:51,  5.13s/it]评估 w=0.1:  64%|██████▍   | 16/25 [01:18<00:40,  4.52s/it]评估 w=0.1:  68%|██████▊   | 17/25 [01:22<00:36,  4.56s/it]评估 w=0.1:  72%|███████▏  | 18/25 [01:26<00:30,  4.33s/it]评估 w=0.1:  76%|███████▌  | 19/25 [01:31<00:27,  4.62s/it]评估 w=0.1:  80%|████████  | 20/25 [01:36<00:22,  4.57s/it]评估 w=0.1:  84%|████████▍ | 21/25 [01:40<00:17,  4.50s/it]评估 w=0.1:  88%|████████▊ | 22/25 [01:43<00:12,  4.15s/it]评估 w=0.1:  92%|█████████▏| 23/25 [01:49<00:09,  4.62s/it]评估 w=0.1:  96%|█████████▌| 24/25 [01:53<00:04,  4.55s/it]评估 w=0.1: 100%|██████████| 25/25 [01:57<00:00,  4.34s/it]评估 w=0.1: 100%|██████████| 25/25 [01:57<00:00,  4.71s/it]
-2025-09-12 07:38:51 INFO: - 评估完成
-2025-09-12 07:38:51 INFO: - 权重值: 0.1
-2025-09-12 07:38:51 INFO: - 输入文件: /home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w01.json
-2025-09-12 07:38:51 INFO: - 评估结果: {'weight_w': 0.1, 'input_file': '/home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w01.json', 'total_samples': 100, 'exact_match': 0.73, 'f1': 0.7882380952380953, 'precision': 0.7909285714285714, 'recall': 0.8066666666666665, 'avg_max_log_prob': -3.443892479125007, 'avg_max_prob': 0.6065275466137651, 'avg_total_prob': 0.6065275466137651, 'valid_max_prob_samples': 100, 'invalid_max_prob_samples': 0, 'avg_answer_count': 1.0, 'avg_valid_answer_count': 1.0}
-2025-09-12 07:38:51 INFO: - 结果已保存至: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w01/sample_correct_probabilities_w_0.1_triples.json
-样本0 正确:
-  生成答案: 'No.'
-  最佳正确答案概率: 0.003193 ('no')
-样本2 错误:
-  生成答案: 'France 3'
-  正确答案: ['NBC']
-  最佳正确答案概率: 0.004527 ('NBC')
-样本4 错误:
-  生成答案: 'Kirk Fogg.'
-  正确答案: ['Jeff Sutphen']
-  最佳正确答案概率: 0.352008 ('Jeff Sutphen')
-样本10 错误:
-  生成答案: '2003'
-  正确答案: ['20 March to 1 May 2003']
-  最佳正确答案概率: 0.319993 ('20 March to 1 May 2003')
-样本11 错误:
-  生成答案: 'A genus of flowering plant.'
-  正确答案: ['plant']
-  最佳正确答案概率: 0.005194 ('plant')
-样本22 错误:
-  生成答案: '1852'
-  正确答案: ['1904']
-  最佳正确答案概率: 0.000000 ('1904')
-样本24 错误:
-  生成答案: 'runner-up in the Bundesliga to SV Werder Bremen'
-  正确答案: ['runner-up']
-  最佳正确答案概率: 0.947646 ('runner-up')
-样本29 错误:
-  生成答案: 'Northwestern University'
-  正确答案: ['Beverly Hills High School']
-  最佳正确答案概率: 0.000001 ('Beverly Hills High School')
-样本30 错误:
-  生成答案: '1989'
-  正确答案: ['fifth album']
-  最佳正确答案概率: 0.000000 ('fifth album')
-样本34 错误:
-  生成答案: 'Linebacker'
-  正确答案: ['quarterback']
-  最佳正确答案概率: 0.000019 ('quarterback')
-样本38 错误:
-  生成答案: 'Baltic, Germanic, and Thracian tribes.'
-  正确答案: ['Germanic, Baltic and Thracian tribes']
-  最佳正确答案概率: 0.000185 ('Germanic, Baltic and Thracian tribes')
-样本43 错误:
-  生成答案: '14'
-  正确答案: ['Their biggest hit was "Tall Cool One", first released in 1959']
-  最佳正确答案概率: 0.000000 ('Their biggest hit was "Tall Cool One", first released in 1959')
-样本44 错误:
-  生成答案: 'Jawaharlal Nehru'
-  正确答案: ['first Prime Minister of India']
-  最佳正确答案概率: 0.042584 ('first Prime Minister of India')
-样本50 错误:
-  生成答案: 'Masako, Crown Princess of Japan'
-  正确答案: ['Aiko, Princess Toshi']
-  最佳正确答案概率: 0.235309 ('Aiko, Princess Toshi')
-样本58 错误:
-  生成答案: 'Hillary Rodham Clinton'
-  正确答案: ['Hillary Clinton']
-  最佳正确答案概率: 0.379356 ('Hillary Clinton')
-样本60 错误:
-  生成答案: 'Rosenrot'
-  正确答案: ['Herzeleid']
-  最佳正确答案概率: 0.205766 ('Herzeleid')
-样本63 错误:
-  生成答案: 'Stop-motion animation.'
-  正确答案: ['animation']
-  最佳正确答案概率: 0.000035 ('animation')
-样本71 错误:
-  生成答案: '1966'
-  正确答案: ['1939']
-  最佳正确答案概率: 0.000004 ('1939')
-样本73 错误:
-  生成答案: 'Harbour Square Park'
-  正确答案: ['Metreon']
-  最佳正确答案概率: 0.003347 ('Metreon')
-样本78 错误:
-  生成答案: 'The London Connection (1979)'
-  正确答案: ['The London Connection']
-  最佳正确答案概率: 0.464353 ('The London Connection')
-样本79 错误:
-  生成答案: 'American'
-  正确答案: ['Mexican']
-  最佳正确答案概率: 0.000164 ('Mexican')
-样本88 错误:
-  生成答案: 'Angela Nissel'
-  正确答案: ['Angela R. Nissel']
-  最佳正确答案概率: 0.000000 ('Angela R. Nissel')
-样本89 错误:
-  生成答案: 'LyondellBasell'
-  正确答案: ['Netherlands']
-  最佳正确答案概率: 0.006737 ('Netherlands')
-样本91 错误:
-  生成答案: 'Vincent van Gogh'
-  正确答案: ['Theodorus "Theo" van Gogh']
-  最佳正确答案概率: 0.000000 ('Theodorus "Theo" van Gogh')
-样本94 错误:
-  生成答案: 'Ludovico Einaudi is a notable performer with Canzoniere Grecanico Salentino.'
-  正确答案: ['Italian pianist and composer']
-  最佳正确答案概率: 0.000002 ('Italian pianist and composer')
-样本95 错误:
-  生成答案: 'Daesung.'
-  正确答案: ['actress']
-  最佳正确答案概率: 0.003784 ('actress')
-样本97 错误:
-  生成答案: 'Yes.'
-  正确答案: ['no']
-  最佳正确答案概率: 0.000119 ('no')
-样本99 错误:
-  生成答案: 'On the Road with Austin and Santino.'
-  正确答案: ['Project Runway']
-  最佳正确答案概率: 0.370255 ('Project Runway')
-
-============================================================
-评估结果
-============================================================
-weight_w: 0.100000
-input_file: /home/jiangjp/trace-idea/data/hotpotqa/hotpotqa_dev100ideal_with_reasoning_chains_modify_w01.json
-total_samples: 100
-exact_match: 0.730000
-f1: 0.788238
-precision: 0.790929
-recall: 0.806667
-avg_max_log_prob: -3.443892
-avg_max_prob: 0.606528
-avg_total_prob: 0.606528
-valid_max_prob_samples: 100
-invalid_max_prob_samples: 0
-avg_answer_count: 1.000000
-avg_valid_answer_count: 1.000000
-============================================================
-
-结果已保存至: /home/jiangjp/trace-idea/results/myidea/HotPotQA/fakenum1/idealsetting/w01/sample_correct_probabilities_w_0.1_triples.json
-
-统计信息:
-平均每个问题有 1.0 个正确答案
-平均每个问题有 1.0 个有效概率的答案
-有效概率样本: 100 / 100

@@ -1,1057 +1,0 @@
-nohup: ignoring input
-================================================================================
-================================================================================
-检索文档数: 5
-模型路径: /home/jiangjp/models/cag-7b/
-================================================================================
-步骤1: 加载测试数据...
-数据集大小: 1000 个样本
-步骤2: 加载CAG-7B模型...
-Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:02<00:04,  2.12s/it]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:06<00:03,  3.40s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:07<00:00,  2.52s/it]Loading checkpoint shards: 100%|██████████| 3/3 [00:07<00:00,  2.63s/it]
-步骤3: 开始检索和评估...
-开始评估 1000 个样本...
-正在评估:   0%|          | 0/1000 [00:00<?, ?it/s]You're using a LlamaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
-loading e5-mistral model in torch.bfloat16 ...
-
-Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][A
-Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.33s/it][A
-Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.56s/it][ALoading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.67s/it]
-正在评估:   0%|          | 1/1000 [00:13<3:51:58, 13.93s/it]正在评估:   0%|          | 2/1000 [00:14<1:43:42,  6.23s/it]正在评估:   0%|          | 3/1000 [00:15<1:03:26,  3.82s/it]正在评估:   0%|          | 4/1000 [00:16<44:02,  2.65s/it]  正在评估:   0%|          | 5/1000 [00:17<33:17,  2.01s/it]正在评估:   1%|          | 6/1000 [00:18<26:01,  1.57s/it]正在评估:   1%|          | 7/1000 [00:19<22:31,  1.36s/it]正在评估:   1%|          | 8/1000 [00:19<19:58,  1.21s/it]正在评估:   1%|          | 9/1000 [00:20<17:29,  1.06s/it]正在评估:   1%|          | 10/1000 [00:21<16:55,  1.03s/it]正在评估:   1%|          | 11/1000 [00:22<16:24,  1.01it/s]正在评估:   1%|          | 12/1000 [00:23<15:09,  1.09it/s]正在评估:   1%|▏         | 13/1000 [00:24<15:21,  1.07it/s]正在评估:   1%|▏         | 14/1000 [00:25<15:01,  1.09it/s]正在评估:   2%|▏         | 15/1000 [00:26<15:20,  1.07it/s]正在评估:   2%|▏         | 16/1000 [00:27<15:23,  1.07it/s]正在评估:   2%|▏         | 17/1000 [00:28<15:36,  1.05it/s]正在评估:   2%|▏         | 18/1000 [00:28<15:20,  1.07it/s]正在评估:   2%|▏         | 19/1000 [00:29<14:32,  1.12it/s]正在评估:   2%|▏         | 20/1000 [00:30<14:47,  1.10it/s]正在评估:   2%|▏         | 21/1000 [00:31<14:42,  1.11it/s]正在评估:   2%|▏         | 22/1000 [00:32<15:15,  1.07it/s]正在评估:   2%|▏         | 23/1000 [00:33<15:08,  1.08it/s]正在评估:   2%|▏         | 24/1000 [00:34<15:13,  1.07it/s]正在评估:   2%|▎         | 25/1000 [00:35<15:14,  1.07it/s]正在评估:   3%|▎         | 26/1000 [00:36<15:21,  1.06it/s]正在评估:   3%|▎         | 27/1000 [00:36<13:37,  1.19it/s]正在评估:   3%|▎         | 28/1000 [00:37<12:48,  1.27it/s]正在评估:   3%|▎         | 29/1000 [00:38<12:26,  1.30it/s]正在评估:   3%|▎         | 30/1000 [00:39<13:10,  1.23it/s]正在评估:   3%|▎         | 31/1000 [00:40<13:48,  1.17it/s]正在评估:   3%|▎         | 32/1000 [00:41<14:08,  1.14it/s]正在评估:   3%|▎         | 33/1000 [00:42<14:20,  1.12it/s]正在评估:   3%|▎         | 34/1000 [00:43<14:48,  1.09it/s]正在评估:   4%|▎         | 35/1000 [00:43<13:11,  1.22it/s]正在评估:   4%|▎         | 36/1000 [00:44<13:23,  1.20it/s]正在评估:   4%|▎         | 37/1000 [00:45<13:46,  1.16it/s]正在评估:   4%|▍         | 38/1000 [00:46<13:59,  1.15it/s]正在评估:   4%|▍         | 39/1000 [00:47<14:29,  1.11it/s]正在评估:   4%|▍         | 40/1000 [00:47<13:15,  1.21it/s]正在评估:   4%|▍         | 41/1000 [00:48<13:53,  1.15it/s]正在评估:   4%|▍         | 42/1000 [00:49<14:26,  1.11it/s]正在评估:   4%|▍         | 43/1000 [00:50<14:23,  1.11it/s]正在评估:   4%|▍         | 44/1000 [00:51<13:28,  1.18it/s]正在评估:   4%|▍         | 45/1000 [00:52<11:44,  1.36it/s]正在评估:   5%|▍         | 46/1000 [00:52<12:29,  1.27it/s]正在评估:   5%|▍         | 47/1000 [00:53<13:24,  1.19it/s]正在评估:   5%|▍         | 48/1000 [00:54<13:44,  1.15it/s]正在评估:   5%|▍         | 49/1000 [00:55<11:56,  1.33it/s]正在评估:   5%|▌         | 50/1000 [00:56<12:09,  1.30it/s]正在评估:   5%|▌         | 51/1000 [00:57<12:52,  1.23it/s]正在评估:   5%|▌         | 52/1000 [00:58<13:45,  1.15it/s]正在评估:   5%|▌         | 53/1000 [00:58<13:11,  1.20it/s]正在评估:   5%|▌         | 54/1000 [00:59<13:32,  1.16it/s]正在评估:   6%|▌         | 55/1000 [01:00<13:49,  1.14it/s]正在评估:   6%|▌         | 56/1000 [01:01<11:41,  1.35it/s]正在评估:   6%|▌         | 57/1000 [01:01<10:41,  1.47it/s]正在评估:   6%|▌         | 58/1000 [01:02<10:42,  1.47it/s]正在评估:   6%|▌         | 59/1000 [01:03<11:51,  1.32it/s]正在评估:   6%|▌         | 60/1000 [01:04<12:28,  1.26it/s]正在评估:   6%|▌         | 61/1000 [01:05<13:25,  1.17it/s]正在评估:   6%|▌         | 62/1000 [01:05<13:25,  1.16it/s]正在评估:   6%|▋         | 63/1000 [01:06<13:29,  1.16it/s]正在评估:   6%|▋         | 64/1000 [01:07<13:13,  1.18it/s]正在评估:   6%|▋         | 65/1000 [01:08<11:22,  1.37it/s]正在评估:   7%|▋         | 66/1000 [01:08<11:35,  1.34it/s]正在评估:   7%|▋         | 67/1000 [01:09<11:18,  1.38it/s]正在评估:   7%|▋         | 68/1000 [01:10<12:02,  1.29it/s]正在评估:   7%|▋         | 69/1000 [01:11<12:47,  1.21it/s]正在评估:   7%|▋         | 70/1000 [01:12<13:01,  1.19it/s]正在评估:   7%|▋         | 71/1000 [01:13<13:11,  1.17it/s]正在评估:   7%|▋         | 72/1000 [01:14<13:16,  1.16it/s]正在评估:   7%|▋         | 73/1000 [01:14<11:31,  1.34it/s]正在评估:   7%|▋         | 74/1000 [01:15<12:15,  1.26it/s]正在评估:   8%|▊         | 75/1000 [01:16<11:36,  1.33it/s]正在评估:   8%|▊         | 76/1000 [01:17<12:42,  1.21it/s]正在评估:   8%|▊         | 77/1000 [01:17<12:34,  1.22it/s]正在评估:   8%|▊         | 78/1000 [01:18<12:54,  1.19it/s]正在评估:   8%|▊         | 79/1000 [01:19<13:23,  1.15it/s]The Wolf Prize winner and Vadim Bereinskii-inspired Nobel laureate is suffering from dement
-
-错误案例 1:
-问题: What disease is the Wolf Prize winner and Vadim  Bereinskii-inspired Nobel laureate suffering from?
-预测答案: The Wolf Prize winner and Vadim Bereinskii-inspired Nobel laureate is suffering from dement
-正确答案: ['dementia']
---------------------------------------------------
-The relationship between the singers on the album Tales of Old Grand Daddy is that it is the recording debut of future
-
-错误案例 2:
-问题: What is the relationship between the singers on the album Tales of Old Grand Daddy?
-预测答案: The relationship between the singers on the album Tales of Old Grand Daddy is that it is the recording debut of future
-正确答案: ['brothers']
---------------------------------------------------
-The specialization of the American naval officer who led the aircraft of the United States Antarctic Service to photograph Cox Point
-
-错误案例 3:
-问题: What was the specialization of an American naval officer who led the aircraft of the United States Antarctic Service to photograph Cox Point?
-预测答案: The specialization of the American naval officer who led the aircraft of the United States Antarctic Service to photograph Cox Point
-正确答案: ['feats of exploration']
---------------------------------------------------
-Jean Baptiste Androuet du Cerceau was an architect under King Henry III of the Polish-Lithuanian
-
-错误案例 4:
-问题: What was the position of Jean Baptiste Androuet du Cerceau under the man who was King of the Polish-Lithuanian Commonwealth from 1573 to 1575?
-预测答案: Jean Baptiste Androuet du Cerceau was an architect under King Henry III of the Polish-Lithuanian
-正确答案: ['supervisor of the royal works']
---------------------------------------------------
-Yes, both 111 Murray Street and 220 Central Park South are located in Manhattan.
-
-错误案例 5:
-问题: Are 111 Murray Street and 220 Central Park South both located in Manhattan?
-预测答案: Yes, both 111 Murray Street and 220 Central Park South are located in Manhattan.
-正确答案: ['yes']
---------------------------------------------------
-Willi Forst and Elmer Clifton shared the profession of being actors.
-The character portrayed by DeForest Kelley in the "Star Trek" franchise was Dr. Leonard "
-Ryan Babel is connected to the song "Wij Zijn Ajax" through his involvement as a rapper in the
-Brent Hodge and Harley Knoles are both known for being filmmakers.
-No, The Moon-Spinners and Oceans are not both documentaries. The Moon-Spinners is a feature
-The socialist conferences were held with countries such as Great Britain, France, Russia, Italy, and the United States,
-Shanghai has a larger population than Hanggin Rear Banner.
-At Guerra de Titanes, Dulce Maria García Rivas took part in a "Mask vs. Hair"
-Favre-Leuba wristwatches are known for their high precision and reliability. The brand is a pione
-Shirley Breeden won her first Senate term in a narrow upset over the politician who was a member of the U
-The continent that has a distribution of both the Ternstroemia and Cussonia genus of plants is Asia.
-The singer who performs Pon de Replay and was born Robyn Fenty is Rihanna. She was born in Saint
-The publisher that released the prequel to the 2012 novel Boneland in 1960 is
-Both Graham Streeter and Geir Hansteen Jörgensen are film directors.
-The Julian P. Kanter Political Commercial Archive has been designated an official project by Save America's Treasures,
-The guns stolen from the HMS ship "Marlin" were originally produced for the Royal Navy.
-The 7.92×57mm Mauser rifle cartridge was used by Germany's military in
-The newspaper in which the 1891 Birthday Honours list appeared on 30 May 18
-Based on the information provided, the credible source states that Corn Ranch is a spaceport in Van Horn, Texas,
-The "civic rally cross" was sold alongside the Honda Ballade at Honda Verno dealerships
-The debut album for the opening act for the 2016 tour with a headlining band that was formed in
-Isabella (Belle) Baumfree.
-Tyler Bunch acted in Red Dead Redemption.
-EOG Resources Inc. is an American petroleum company.
-No, The Straight Story and Frozen are not both of the same genre. The Straight Story is a biographical
-The car featured on the cover of Earth's "Pentastar: In the Style of Demons" was manufact
-The creature of American folklore that gained notoriety in 1964 is the Bigfoot.
-Based on the information provided, the actor who plays Marius Josipovic in Sneaky Pete, Giovanni
-The settlement of the Americas by the Paleo-Indians occurred tens of thousands of years ago, with the earliest evidence
-"Let Me Be the One"
-The 2011 La Manga Cup was won by Viking, who beat Start from the town of Kristians
-The home city of the author of the famous novel tracing the life of a male roe deer from his birth on
-Based on the information provided, Gail Matthius co-anchored the Weekend Update segment of "Saturday Night Live
-Lake Elkhorn is the city in the Baltimore metropolitan area that includes a lake and surrounding park. This information is supported
-Yes, Tímea Babos and Jack Sock are tennis players.
-The Rungrado 1st of May Stadium, also known as the May Day Stadium, hosted the Collision in Korea
-The band that had a concert tour called the In Blue Tour is The Corrs, and they are from County Louth,
-The British company involved in recording the audiobook for the book known as The Golden Compass in North America is BBC.
-Kevin Watson currently manages Bishop's Stortford.
-Bette Davis.
-"Mad Girl's Love Song" is written in the villanelle poetic form and appears in the novel "The
-The horse-collar tackle is most closely associated with Roy Williams, who was drafted by the Dallas Cowboys
-The Moonlite BunnyRanch is located about six miles east of Carson City, Nevada, on Moonlight
-Donald Duck.
-The Lance Todd Trophy is presented at a stadium located in England.
-Based on the information provided, D-A-D and Gândul Mâței do not play the same style
-Based on the information provided, it can be determined that The Smashing Pumpkins originated in a more southern location
-The third studio album released by Richard Melville Hall is "Everything Is Wrong."
-The Celtic ruler who was born in AD 43 ruled southeastern Britain prior to conquest by the
-Field Marshal Bernard Law Montgomery, 1st Viscount Montgomery of Alamein, was the commander
-Obafemi Martins.
-Thomas Merton was ordained to priesthood.
-Yes, Tetrapanax is an evergreen shrub.
-The event known as the Great Action, also referred to as the Kaunas massacre of October 29, 1
-Hovsep Pushman's works are more likely to be seen in an art gallery.
-James Stuart became a specialist in the patter roles of Gilbert and Sullivan, which are characterized by a rapid
-Elem Klimov is known for writing, directing, and starring in his movies.
-Based on the information provided, the man known as one of the most brutal pro-Confederate guerrilla leaders
-Ashland, New Hampshire is located near the Scribner-Fellows State Forest.
-Sonic Mania
-SR connector is based on the connector that is often used for coaxial cable.
-Based on the provided information, The Innocence Mission was formed first.
-Based on the information provided, the 1946 musical comedy film "Two Sisters from Boston" starred a
-Sampha Sisay, the British singer whose debut album "Process" won the 2017 Mercury Prize
-Taylor Swift's second studio album, "Fearless," was released by Big Machine Records.
-The Porsche 924 is the earlier model that followed the 944 and was the last in a line
-According to the 2011 census, the population of the city where Royal Wahingdoh F.C
-Pim Fortuyn
-El Chapo premiered on Univision in April 2017, starring Marco de la O as the
-The W. H. Shipman House is in Hawaii County.
-Based on the information provided, Ali Eren Balıkel's restaurant, Kilikya's Cafe Bar R
-Chesley Burnett "Sully" Sullenberger III.
-Besides "The Golden Jet" (Bobby Hull), Manley MacDonald was also born in Point Anne, Ontario.
-The National Archives and Records Administration (NARA) is responsible for transmitting votes of the Electoral College to Congress.
-正在评估:   8%|▊         | 80/1000 [01:20<13:47,  1.11it/s]正在评估:   8%|▊         | 81/1000 [01:21<13:46,  1.11it/s]正在评估:   8%|▊         | 82/1000 [01:22<12:50,  1.19it/s]正在评估:   8%|▊         | 83/1000 [01:23<12:45,  1.20it/s]正在评估:   8%|▊         | 84/1000 [01:24<13:04,  1.17it/s]正在评估:   8%|▊         | 85/1000 [01:24<13:15,  1.15it/s]正在评估:   9%|▊         | 86/1000 [01:25<13:12,  1.15it/s]正在评估:   9%|▊         | 87/1000 [01:26<13:09,  1.16it/s]正在评估:   9%|▉         | 88/1000 [01:27<11:38,  1.31it/s]正在评估:   9%|▉         | 89/1000 [01:28<12:08,  1.25it/s]正在评估:   9%|▉         | 90/1000 [01:28<12:48,  1.18it/s]正在评估:   9%|▉         | 91/1000 [01:29<13:20,  1.13it/s]正在评估:   9%|▉         | 92/1000 [01:30<13:35,  1.11it/s]正在评估:   9%|▉         | 93/1000 [01:31<13:37,  1.11it/s]正在评估:   9%|▉         | 94/1000 [01:32<13:43,  1.10it/s]正在评估:  10%|▉         | 95/1000 [01:33<13:52,  1.09it/s]正在评估:  10%|▉         | 96/1000 [01:34<13:55,  1.08it/s]正在评估:  10%|▉         | 97/1000 [01:35<13:13,  1.14it/s]正在评估:  10%|▉         | 98/1000 [01:36<13:03,  1.15it/s]正在评估:  10%|▉         | 99/1000 [01:37<13:55,  1.08it/s]正在评估:  10%|█         | 100/1000 [01:37<11:57,  1.25it/s]正在评估:  10%|█         | 101/1000 [01:38<12:31,  1.20it/s]正在评估:  10%|█         | 102/1000 [01:39<12:07,  1.23it/s]正在评估:  10%|█         | 103/1000 [01:40<11:58,  1.25it/s]正在评估:  10%|█         | 104/1000 [01:41<12:14,  1.22it/s]正在评估:  10%|█         | 105/1000 [01:42<12:58,  1.15it/s]正在评估:  11%|█         | 106/1000 [01:42<12:40,  1.18it/s]正在评估:  11%|█         | 107/1000 [01:43<13:03,  1.14it/s]正在评估:  11%|█         | 108/1000 [01:44<12:48,  1.16it/s]正在评估:  11%|█         | 109/1000 [01:45<12:06,  1.23it/s]正在评估:  11%|█         | 110/1000 [01:46<11:40,  1.27it/s]正在评估:  11%|█         | 111/1000 [01:46<11:29,  1.29it/s]正在评估:  11%|█         | 112/1000 [01:47<12:17,  1.20it/s]正在评估:  11%|█▏        | 113/1000 [01:48<10:27,  1.41it/s]正在评估:  11%|█▏        | 114/1000 [01:49<11:20,  1.30it/s]正在评估:  12%|█▏        | 115/1000 [01:49<10:10,  1.45it/s]正在评估:  12%|█▏        | 116/1000 [01:50<09:48,  1.50it/s]正在评估:  12%|█▏        | 117/1000 [01:51<10:50,  1.36it/s]正在评估:  12%|█▏        | 118/1000 [01:51<09:43,  1.51it/s]正在评估:  12%|█▏        | 119/1000 [01:52<10:47,  1.36it/s]正在评估:  12%|█▏        | 120/1000 [01:53<11:31,  1.27it/s]正在评估:  12%|█▏        | 121/1000 [01:54<11:12,  1.31it/s]正在评估:  12%|█▏        | 122/1000 [01:54<10:19,  1.42it/s]正在评估:  12%|█▏        | 123/1000 [01:55<09:08,  1.60it/s]正在评估:  12%|█▏        | 124/1000 [01:56<10:17,  1.42it/s]正在评估:  12%|█▎        | 125/1000 [01:57<11:26,  1.27it/s]正在评估:  13%|█▎        | 126/1000 [01:57<10:01,  1.45it/s]正在评估:  13%|█▎        | 127/1000 [01:57<09:10,  1.59it/s]正在评估:  13%|█▎        | 128/1000 [01:58<10:16,  1.41it/s]正在评估:  13%|█▎        | 129/1000 [01:59<11:21,  1.28it/s]正在评估:  13%|█▎        | 130/1000 [02:00<12:01,  1.21it/s]正在评估:  13%|█▎        | 131/1000 [02:01<12:12,  1.19it/s]正在评估:  13%|█▎        | 132/1000 [02:02<12:30,  1.16it/s]正在评估:  13%|█▎        | 133/1000 [02:02<10:34,  1.37it/s]正在评估:  13%|█▎        | 134/1000 [02:03<09:01,  1.60it/s]正在评估:  14%|█▎        | 135/1000 [02:04<09:25,  1.53it/s]正在评估:  14%|█▎        | 136/1000 [02:04<08:35,  1.68it/s]正在评估:  14%|█▎        | 137/1000 [02:05<09:19,  1.54it/s]正在评估:  14%|█▍        | 138/1000 [02:06<10:08,  1.42it/s]正在评估:  14%|█▍        | 139/1000 [02:06<09:28,  1.51it/s]正在评估:  14%|█▍        | 140/1000 [02:07<10:24,  1.38it/s]正在评估:  14%|█▍        | 141/1000 [02:08<11:02,  1.30it/s]正在评估:  14%|█▍        | 142/1000 [02:08<10:02,  1.42it/s]正在评估:  14%|█▍        | 143/1000 [02:10<11:26,  1.25it/s]正在评估:  14%|█▍        | 144/1000 [02:10<11:48,  1.21it/s]正在评估:  14%|█▍        | 145/1000 [02:11<10:57,  1.30it/s]正在评估:  15%|█▍        | 146/1000 [02:12<11:36,  1.23it/s]正在评估:  15%|█▍        | 147/1000 [02:13<11:39,  1.22it/s]正在评估:  15%|█▍        | 148/1000 [02:13<10:04,  1.41it/s]正在评估:  15%|█▍        | 149/1000 [02:14<10:38,  1.33it/s]正在评估:  15%|█▌        | 150/1000 [02:15<10:08,  1.40it/s]正在评估:  15%|█▌        | 151/1000 [02:16<11:07,  1.27it/s]正在评估:  15%|█▌        | 152/1000 [02:16<09:35,  1.47it/s]正在评估:  15%|█▌        | 153/1000 [02:17<08:54,  1.58it/s]正在评估:  15%|█▌        | 154/1000 [02:18<09:55,  1.42it/s]正在评估:  16%|█▌        | 155/1000 [02:18<09:48,  1.44it/s]正在评估:  16%|█▌        | 156/1000 [02:19<10:51,  1.30it/s]正在评估:  16%|█▌        | 157/1000 [02:20<11:19,  1.24it/s]正在评估:  16%|█▌        | 158/1000 [02:21<11:11,  1.25it/s]正在评估:  16%|█▌        | 159/1000 [02:21<10:23,  1.35it/s]正在评估:  16%|█▌        | 160/1000 [02:22<10:30,  1.33it/s]正在评估:  16%|█▌        | 161/1000 [02:23<11:13,  1.25it/s]正在评估:  16%|█▌        | 162/1000 [02:24<11:40,  1.20it/s]正在评估:  16%|█▋        | 163/1000 [02:25<12:08,  1.15it/s]正在评估:  16%|█▋        | 164/1000 [02:26<12:29,  1.12it/s]正在评估:  16%|█▋        | 165/1000 [02:27<12:49,  1.08it/s]正在评估:  17%|█▋        | 166/1000 [02:27<11:09,  1.25it/s]正在评估:  17%|█▋        | 167/1000 [02:28<10:56,  1.27it/s]正在评估:  17%|█▋        | 168/1000 [02:29<11:41,  1.19it/s]正在评估:  17%|█▋        | 169/1000 [02:30<11:48,  1.17it/s]正在评估:  17%|█▋        | 170/1000 [02:31<10:38,  1.30it/s]正在评估:  17%|█▋        | 171/1000 [02:31<10:59,  1.26it/s]正在评估:  17%|█▋        | 172/1000 [02:32<11:25,  1.21it/s]正在评估:  17%|█▋        | 173/1000 [02:33<09:35,  1.44it/s]正在评估:  17%|█▋        | 174/1000 [02:34<10:33,  1.30it/s]正在评估:  18%|█▊        | 175/1000 [02:35<11:26,  1.20it/s]正在评估:  18%|█▊        | 176/1000 [02:35<11:07,  1.24it/s]正在评估:  18%|█▊        | 177/1000 [02:36<11:42,  1.17it/s]正在评估:  18%|█▊        | 178/1000 [02:37<12:21,  1.11it/s]正在评估:  18%|█▊        | 179/1000 [02:38<12:29,  1.10it/s]正在评估:  18%|█▊        | 180/1000 [02:39<12:18,  1.11it/s]正在评估:  18%|█▊        | 181/1000 [02:40<12:23,  1.10it/s]正在评估:  18%|█▊        | 182/1000 [02:41<10:36,  1.29it/s]正在评估:  18%|█▊        | 183/1000 [02:42<11:10,  1.22it/s]正在评估:  18%|█▊        | 184/1000 [02:42<11:40,  1.16it/s]正在评估:  18%|█▊        | 185/1000 [02:43<10:58,  1.24it/s]正在评估:  19%|█▊        | 186/1000 [02:44<11:30,  1.18it/s]正在评估:  19%|█▊        | 187/1000 [02:45<12:02,  1.13it/s]正在评估:  19%|█▉        | 188/1000 [02:46<11:59,  1.13it/s]正在评估:  19%|█▉        | 189/1000 [02:47<11:02,  1.22it/s]The nickname of the island that is 1,415 km further to the east-southeast of Tokyo
-Yes, both Alice Munro and Lillian Hellman are writers. Alice Munro is a Canadian short story writer and
-Bridger, Gallatin County, Montana serves Montana State University.
-The Route 66 State Park is closest to the city of Eureka in Missouri.
-Both the Iron Rattler's inversion and a barrel roll involve a combination of a loop and a roll.
-"Do Lafzon Ki Kahani" is a remake of the Korean movie "Always," directed by Song
-The pistol that was replaced by a pistol manufactured by Spreewerk is the Walther P.38.
-The goal of the photographer of the man whose "Message from the Interior" was published by Eakins Press was
-Aktion T4.
-Yes, both Random House Tower and 888 7th Avenue are used for real estate purposes. The Random House
-Jerry Bingham is known for his work on Marvel Team-Up and Batman: Son of the Demon.
-Yakuza Kiwami and Yakuza 0 were both released on the PlayStation 4 console.
-In the 2002 United States Senate election in Minnesota, Norm Coleman won as the last Republican elected as of
-Dost Mohammad Khan was killed by a ruler who became the third king of Afghanistan.
-The CEO of the football team based in Denver, Colorado stepped down in 2014 due to the on
-Evelyn Waugh's famous works, such as "Decline and Fall," "A Handful of Dust
-Suzanne Simone Baptiste Louverture is the wife of Toussaint Louverture, the leader of the
-Yes, Stefan Edberg has won more events than Édouard Roger-Vasselin.
-The actress who plays the character in the series "24" is Elisha Cuthbert.
-The cyclone that had a film made about it in 2007 is Super Cyclonic Storm Gonu.
-Psy
-Based on the information provided, Riaz-Ur-Rehman Saghar wrote songs for Hadiqa
-Frank Ocean had a guest appearance on the album too Cozy.
-The theme park served by the Huis Ten Bosch train service is themed on the Netherlands.
-James Davidson reported on the infamous American serial killers such as Richard Cottingham, Ted Bundy, John
-Based on the information provided, it is not possible to determine the exact number of Indians killed in the massacre that "ky
-Mesih Pasha's uncle became emperor in 1453.
-The railroad that had a station stop in Ringling, Montana operated from 1847 until 19
-Gasherbrum II is not the closest mountain to the tallest mountain in the world.
-Gloria Trevi released the song "Todos Me Miran."
-Timanfaya National Park is further south within Spain than Picos de Europa National Park.
-Icknield Walk First School is located in Hertfordshire.
-The Dalmatian parliamentary election, 1861 was held in the Kingdom of Dalmatia, which was
-Stephanie March
-Based on the information provided, the director of "Shirin in Love" is Ramin Niami, who is an
-Daredevil
-The building in Portland formerly known as the Rose Garden.
-Thea Ruth White is best known for her voice over work as Muriel Bagge on the American animated horror comedy television series
-BitInstant.
-Manfred Albrecht Freiherr von Richthofen, also known as the "Red Baron," was a fighter
-No, both magazines Diva and Cleo were not founded in the same country. Diva is a leading les
-No, Jeff Martin and Kyle Patrick were not both in The Click Five.
-The Vice Presidential candidate from Virginia.
-Neve Campbell.
-The biographical-comedy-crime film directed by Steven Soderbergh about the highest-level corporate executive
-Based on the information provided, MedStar Washington Hospital Center has more beds than Children's National Medical Center. The external
-Idina Menzel
-Mark Helfrich.
-Based on the information provided, Gulangyu is larger than Asante Traditional Buildings. Gulangyu is
-Air Chief Marshal Hugh Caswall Tremenheere Dowding was unwillingly replaced in command by a senior commander in
-The author of the "Hell on Earth" series, Jackie Kessler, was born in 197
-Yes, both Illinois Institute of Technology and Boise State University were bounded before 1950.
-PricewaterhouseCoopers (PwC) is the multinational professional services firm headquartered in London
-Bill Clinton
-Ericsson
-Both Mulled wine and Blue Lagoon are primarily alcoholic beverages.
-Sebastian Lewis Shaw.
-No, both bands, Digital Summer and Underoath, are not from the same US state.
-The star veterinarian of The Bionic Vet is a specialist neuro-orthopaedic veterinary sur
-Andrei Platonov died first.
-Carl Barks is best known for his comics about the cartoon character created in 1934.
-The organization that has been led by the overseer of the Renewable Heat Incentive Scandal since
-Sarah Kerrigan.
-The structure in Wyoming that Bořeň is similar to has a summit that is 5,112 feet
-Based on the given information, it is not clear which association football station Robert Bobby Noble's third football engagement was
-Jean-Marie Pfaff is older than Anne Noe.
-Robin Pingeton replaced Cindy Stein as the head coach of the University of Missouri's women's basketball team
-Based on the provided information, Shirley Manson is the younger singer compared to Jim Kerr.
-Sam Raimi.
-The Latin name for one of the five "big cats" that the word "Panther" may refer to when outside
-Based on the information provided, the genus Cercis has more species than the genus Monstera.
-The Chronicles of Narnia, a series of fantasy novels written by C. S. Lewis, has sold
-Woody Allen
-Ronnie Schell.
-Based on the information provided, the upcoming British-German biographical film "Trautmann" stars German actor David
-The mascot of the oldest private university in Georgia is the Mercer Bear.
-The Ckm wz. 25 Hotchkiss was a Polish derivative of the Hotchkiss M1914
-Farda Amiga won a race at the Saratoga Race Course in 2001.
-The predecessor to The Magic Mouse and Mighty Mouse was the Apple Mouse.
-The series aired in 1955.
-The former name of the stadium where the Aztecs play is San Diego Stadium.
-Andy García played the crime boss considered the father of modern organized crime in the 1997 drama Hoodl
-The election for which Krishanti Vignarajah is a declared Democratic candidate will be held on November 6,
-Vivian Pinn taught at Tufts University, which was founded in Massachusetts in 1852.
-In the USA, gun powder is used in conjunction with an anvil to start the Boomershot.
-The population of the city at which the transmitter of WLLZ-LP was placed is 14,67
-The Lewis and Clark Expedition.
-Gabriel García Márquez has won more literary awards than Annie Dillard.
-The former captain of the Sri Lanka national cricket team who played a supporting role in the film Sinhawalok
-No, Jim Lindberg and Alison Moyet are not singers of the same nationality. Jim Lindberg is
-Adrian McLaren was born first.
-The Battle of Manila was fought earlier in our nation's history than the Seven Days Battles.
-The City of Boston gets their Christmas tree from Ainslee Glen Nova Scotia because of the long-standing tradition of giving
-Austral.
-The 2002-03 Inter Milan season was marked by the arrival of Hernán Crespo, a
-Dorothy Sarnoff's personal client list included Danielle Steel, an American novelist who has sold over
-The Atik Valide Mosque and Valens Aqueduct are found in Turkey.
-The song "Chim Chim Cher-ee" can be heard in the "Mary Poppins" scene of
-Augustus was the Roman Emperor who was the grandfather of the children of Mark Antony. This information is supported by the
-Dianne Morgan and Joe Wilkinson are part of the group called "Two Episodes of Mash" in the
-John Dufresne, as he is an American author of French Canadian descent who actually lived in France.
-Cyclic Defrost is the Australian specialist electronic music magazine that features avant-rock, experimental sound art, and experimental hip
-Janet Jackson.
-Abba Kovner was a Jewish Hebrew and Yiddish poet, writer, and cousin of Meir Vilner
-The G-shock watch has a feature that is tested by a leakage test. The G-shock watch is
-Mark Brooks won the 1996 PGA Championship.
-Based on the information provided, the actor in the film "The Ladder of Lies" who was born on October
-The goddess associated with the goddess Frigg consists of various tales, including Fulla, Volla, Hlín
-Warner Bros. Records released Van Morrison's "I've Been Working" on the album "H
-Yes, The Shins were formed before the band Paramore.
-正在评估:  19%|█▉        | 190/1000 [02:48<11:18,  1.19it/s]正在评估:  19%|█▉        | 191/1000 [02:48<11:35,  1.16it/s]正在评估:  19%|█▉        | 192/1000 [02:49<11:50,  1.14it/s]正在评估:  19%|█▉        | 193/1000 [02:50<11:51,  1.13it/s]正在评估:  19%|█▉        | 194/1000 [02:51<11:46,  1.14it/s]正在评估:  20%|█▉        | 195/1000 [02:52<10:42,  1.25it/s]正在评估:  20%|█▉        | 196/1000 [02:52<10:08,  1.32it/s]正在评估:  20%|█▉        | 197/1000 [02:53<10:45,  1.24it/s]正在评估:  20%|█▉        | 198/1000 [02:54<10:43,  1.25it/s]正在评估:  20%|█▉        | 199/1000 [02:54<09:03,  1.47it/s]正在评估:  20%|██        | 200/1000 [02:55<09:57,  1.34it/s]正在评估:  20%|██        | 201/1000 [02:56<10:47,  1.23it/s]正在评估:  20%|██        | 202/1000 [02:57<10:50,  1.23it/s]正在评估:  20%|██        | 203/1000 [02:58<11:16,  1.18it/s]正在评估:  20%|██        | 204/1000 [02:59<10:51,  1.22it/s]正在评估:  20%|██        | 205/1000 [03:00<11:16,  1.18it/s]正在评估:  21%|██        | 206/1000 [03:01<11:17,  1.17it/s]正在评估:  21%|██        | 207/1000 [03:02<11:21,  1.16it/s]正在评估:  21%|██        | 208/1000 [03:02<11:42,  1.13it/s]正在评估:  21%|██        | 209/1000 [03:03<11:38,  1.13it/s]正在评估:  21%|██        | 210/1000 [03:04<11:28,  1.15it/s]正在评估:  21%|██        | 211/1000 [03:05<09:57,  1.32it/s]正在评估:  21%|██        | 212/1000 [03:06<10:19,  1.27it/s]正在评估:  21%|██▏       | 213/1000 [03:06<10:36,  1.24it/s]正在评估:  21%|██▏       | 214/1000 [03:07<10:57,  1.19it/s]正在评估:  22%|██▏       | 215/1000 [03:08<11:09,  1.17it/s]正在评估:  22%|██▏       | 216/1000 [03:09<11:20,  1.15it/s]正在评估:  22%|██▏       | 217/1000 [03:10<10:54,  1.20it/s]正在评估:  22%|██▏       | 218/1000 [03:11<10:36,  1.23it/s]正在评估:  22%|██▏       | 219/1000 [03:11<09:05,  1.43it/s]正在评估:  22%|██▏       | 220/1000 [03:12<08:24,  1.55it/s]正在评估:  22%|██▏       | 221/1000 [03:12<09:31,  1.36it/s]正在评估:  22%|██▏       | 222/1000 [03:13<10:05,  1.28it/s]正在评估:  22%|██▏       | 223/1000 [03:14<10:02,  1.29it/s]正在评估:  22%|██▏       | 224/1000 [03:15<09:47,  1.32it/s]正在评估:  22%|██▎       | 225/1000 [03:15<09:10,  1.41it/s]正在评估:  23%|██▎       | 226/1000 [03:16<08:43,  1.48it/s]正在评估:  23%|██▎       | 227/1000 [03:17<09:45,  1.32it/s]正在评估:  23%|██▎       | 228/1000 [03:18<10:31,  1.22it/s]正在评估:  23%|██▎       | 229/1000 [03:19<10:46,  1.19it/s]正在评估:  23%|██▎       | 230/1000 [03:20<11:12,  1.14it/s]正在评估:  23%|██▎       | 231/1000 [03:21<11:11,  1.14it/s]正在评估:  23%|██▎       | 232/1000 [03:22<11:18,  1.13it/s]正在评估:  23%|██▎       | 233/1000 [03:22<09:14,  1.38it/s]正在评估:  23%|██▎       | 234/1000 [03:23<09:50,  1.30it/s]正在评估:  24%|██▎       | 235/1000 [03:23<08:28,  1.50it/s]正在评估:  24%|██▎       | 236/1000 [03:24<09:45,  1.30it/s]正在评估:  24%|██▎       | 237/1000 [03:25<10:18,  1.23it/s]正在评估:  24%|██▍       | 238/1000 [03:26<10:57,  1.16it/s]正在评估:  24%|██▍       | 239/1000 [03:27<11:22,  1.12it/s]正在评估:  24%|██▍       | 240/1000 [03:28<11:31,  1.10it/s]正在评估:  24%|██▍       | 241/1000 [03:29<11:32,  1.10it/s]正在评估:  24%|██▍       | 242/1000 [03:30<11:40,  1.08it/s]正在评估:  24%|██▍       | 243/1000 [03:31<11:04,  1.14it/s]正在评估:  24%|██▍       | 244/1000 [03:31<10:11,  1.24it/s]正在评估:  24%|██▍       | 245/1000 [03:32<09:10,  1.37it/s]正在评估:  25%|██▍       | 246/1000 [03:33<09:47,  1.28it/s]正在评估:  25%|██▍       | 247/1000 [03:33<08:34,  1.46it/s]正在评估:  25%|██▍       | 248/1000 [03:34<09:04,  1.38it/s]正在评估:  25%|██▍       | 249/1000 [03:35<09:46,  1.28it/s]正在评估:  25%|██▌       | 250/1000 [03:36<09:00,  1.39it/s]正在评估:  25%|██▌       | 251/1000 [03:36<09:45,  1.28it/s]正在评估:  25%|██▌       | 252/1000 [03:37<10:07,  1.23it/s]正在评估:  25%|██▌       | 253/1000 [03:38<10:50,  1.15it/s]正在评估:  25%|██▌       | 254/1000 [03:39<11:12,  1.11it/s]正在评估:  26%|██▌       | 255/1000 [03:40<10:45,  1.15it/s]正在评估:  26%|██▌       | 256/1000 [03:41<10:28,  1.18it/s]正在评估:  26%|██▌       | 257/1000 [03:42<10:49,  1.14it/s]正在评估:  26%|██▌       | 258/1000 [03:43<10:12,  1.21it/s]正在评估:  26%|██▌       | 259/1000 [03:44<10:37,  1.16it/s]正在评估:  26%|██▌       | 260/1000 [03:44<09:26,  1.31it/s]正在评估:  26%|██▌       | 261/1000 [03:45<09:17,  1.33it/s]正在评估:  26%|██▌       | 262/1000 [03:45<08:57,  1.37it/s]正在评估:  26%|██▋       | 263/1000 [03:46<09:34,  1.28it/s]正在评估:  26%|██▋       | 264/1000 [03:47<10:07,  1.21it/s]正在评估:  26%|██▋       | 265/1000 [03:48<10:28,  1.17it/s]正在评估:  27%|██▋       | 266/1000 [03:49<10:39,  1.15it/s]正在评估:  27%|██▋       | 267/1000 [03:50<11:03,  1.10it/s]正在评估:  27%|██▋       | 268/1000 [03:51<11:12,  1.09it/s]正在评估:  27%|██▋       | 269/1000 [03:51<09:09,  1.33it/s]正在评估:  27%|██▋       | 270/1000 [03:52<09:04,  1.34it/s]正在评估:  27%|██▋       | 271/1000 [03:53<09:34,  1.27it/s]正在评估:  27%|██▋       | 272/1000 [03:54<08:34,  1.41it/s]正在评估:  27%|██▋       | 273/1000 [03:54<08:36,  1.41it/s]正在评估:  27%|██▋       | 274/1000 [03:55<09:21,  1.29it/s]正在评估:  28%|██▊       | 275/1000 [03:56<09:52,  1.22it/s]正在评估:  28%|██▊       | 276/1000 [03:57<08:47,  1.37it/s]正在评估:  28%|██▊       | 277/1000 [03:57<09:15,  1.30it/s]正在评估:  28%|██▊       | 278/1000 [03:58<08:19,  1.44it/s]正在评估:  28%|██▊       | 279/1000 [03:59<09:12,  1.31it/s]正在评估:  28%|██▊       | 280/1000 [04:00<09:36,  1.25it/s]正在评估:  28%|██▊       | 281/1000 [04:00<09:06,  1.32it/s]正在评估:  28%|██▊       | 282/1000 [04:01<09:58,  1.20it/s]正在评估:  28%|██▊       | 283/1000 [04:02<09:45,  1.23it/s]正在评估:  28%|██▊       | 284/1000 [04:03<10:10,  1.17it/s]正在评估:  28%|██▊       | 285/1000 [04:04<10:23,  1.15it/s]正在评估:  29%|██▊       | 286/1000 [04:05<10:23,  1.15it/s]正在评估:  29%|██▊       | 287/1000 [04:06<09:51,  1.21it/s]正在评估:  29%|██▉       | 288/1000 [04:06<08:59,  1.32it/s]正在评估:  29%|██▉       | 289/1000 [04:07<08:42,  1.36it/s]正在评估:  29%|██▉       | 290/1000 [04:08<09:08,  1.29it/s]正在评估:  29%|██▉       | 291/1000 [04:08<08:32,  1.38it/s]正在评估:  29%|██▉       | 292/1000 [04:09<09:22,  1.26it/s]正在评估:  29%|██▉       | 293/1000 [04:10<09:30,  1.24it/s]Geoffrey Hutchings plays opposite the double Olivier Award-winning English actress in the 2000 TV
-Rudolf Hess stopped serving Hitler in 1941 because he flew solo to Scotland in an attempt to negotiate
-Based on the information provided, the county in the northeast of Iola is Bourbon County. This information is supported by
-Mía Maestro had a role in the 2002 biopic "Frida" directed by Julie
-The upcoming horror film adaptation starring Melanie Griffith's daughter is "Suspiria".
-Polly Draper gained recognition earlier than Tim Roth.
-Tetrahydrogestrinone (THG).
-The prequel to the TV series "Young Sheldon" is "The Big Bang Theory." This is based on
-The golfer born in 1993 participated in the 2015 Masters Tournament.
-Liverpool Bay.
-John Paesano wrote the film "DreamWorks Dragons" based on the "How to Train Your Dragon"
-Based on the provided information, Trenton–Mercer Airport is busier than Palm Springs International Airport. The
-The M1919 and the M1 were used by the U.S. military.
-The bomber who carried out the Provisional Irish Republican Army (IRA) assassination attempt against the top tier of
-Both Rex Gene Foods and Foodtown were located in New Jersey.
-The film "King and the Clown" runs for 119 minutes, in which Kang Sung
-Based on the provided information, it is not possible to determine the exact number of episodes made for the science fiction series with G
-The film that Chun Woo-hee acted in 2016 is a horror film.
-Based on the information provided, it is not possible to determine how many Golden Globe Awards the artist who published the photo book
-The unofficial national anthem of Australia is the basis for the nickname of the Australian women's national soccer team
-Parapsychologist Konstantīns Raudive, who popularized the idea in the 1970s
-The largest country on Earth.
-Alan Watts, the British philosopher whose works inspired Kate Horsley's interest in Zen, died
-No, Pterostyrax and Dregea are not both native to Asia. Pterostyrax
-Based on the information provided, Cindy Williams is on the station WCSH 6 in Portland, Maine.
-The famous Bhavageet by Arun Date is "Shukratara". It was adjudged as the song
-The youngest daughter of Lady Mary-Gaye Curzon stars with Douglas Smith and Lucien Laviscount in "The
-Falling Stars is a role-playing game published by the company based out of Russia.
-The novella "A Christmas Carol" was written in 1843.
-Robin Gibb.
-Curtis Martin.
-The usual main ingredient of Hákarl is normally found in the waters of the North Atlantic Ocean and Arctic
-Australian National Airways was founded by Charles Kingsford Smith, who made the first trans-Pacific flight in 1
-The French novel HHhH is based on the assassination of Reinhard Heydrich.
-Purandara Dasa was born in 1484.
-Morning glory is part of a family with a longer name.
-The author of Sexual Politics attended Oxford University.
-The name of the largest shipping facility in the Northeastern United States, where the Boston Red Socks play,
-Based on the given information, Wilmington International Airport is closer to the Atlantic Ocean than Texarkana Regional Airport.
-The Death of Cook depicts the death of James Cook at Kealakekua Bay on the Kona coast of
-John Wickham Legg was recommended by Jenner for the post of medical attendant to Prince Leopold, the eighth
-Based on the information provided, the man known for the science humor story "Buttered Cat Paradox" was born in
-The director of the 1971 film Wake in Fright is of Bulgarian-Canadian nationality
-Tom Ince
-Minister Pool is important to Black Country and the West Midlands in England because it is a reservoir located in Lich
-Bruce Conner was born first.
-Ion Creangă, the Moldavian, later Romanian writer known for his work "The Goat and Her
-The Director team with NASA scientists is James Cameron, and the film is "Aliens of the Deep".
-The team moving from Oakland, California to Las Vegas, Nevada will share its stadium with the UNLV
-The actor Vikram was awarded an Honorary Doctorate by the People's University of Milan in the year 20
-The film "Mom" starring the voice of Shashaa Tirupati was released in 2017
-The single-engined training aircraft created by North American Aviation is the North American Aviation T-6 Texan.
-Colorpoint Shorthairs and Siamese share the type of coat coloration known as point coloration. This refers to
-Yes, both Stephen R. Donaldson and Michael Moorcock are science fiction writers.
-Daisy Chainsaw released their debut album first.
-Odysseas Elytis.
-Based on the information provided, the former Major League Baseball player who worked on the same broadcast team as Kim Kelch is Se
-Katherine Harris
-The Whitewater Canal was built between 1836 and 1847.
-Howard Van Doren Shaw was the designer of Deerpath Hill Estates, a residential development in western Lake Forest,
-"Waiting for Guffman"
-Yes, filmmakers Brent Hodge and Ayoub Qanir have both received awards for their work. Br
-The last comedy sports film to be released during the life of John Candy was "Cool Runnings" in
-The Panel with striding lion was one of many that lined the way north of the gate to the inner city
-No, Dodgy and Massive Attack are not based in the same country. Dodgy is an English power
-The birth name of Nadeem Siddique's favorite boxer is Walker Smith Jr.
-Abigail Adams was the wife of the president when William Bainbridge started his career.
-Based on the information provided, Davey Brozowski is a percussionist for a band that formed in Seattle, Washington
-The first name of Jack Benny Binion's father is Benny.
-Based on the information provided, it is clear that Alan Schechter supervised Hillary Rodham with her senior thesis
-Luca Guadagnino.
-The closest relative to the whale is located in Africa.
-While at the University of Michigan, Louis Smith played with Miles Davis.
-Mohamed Sanu was the game's MVP during the 2009 St. Petersburg Bowl.
-Giuseppina Tuissi played a role in the execution of Benito Mussolini, the leader of the
-No, Cardinal Health and Kansas City Southern are not located in the same state. Cardinal Health is headquartered
-In playing Monopoly and King of Tokyo, common things used are custom dice, cards, and boards.
-Based on the information provided, the runner-up in The Celebrity Apprentice 2 has written an aut
-The main difference between Aloinopsis and Washingtonia is that Aloinopsis is a genus of ice plants from South Africa,
-Australian
-The biggest store today owned by the State of Qatar is Harrods.
-From 2003 to 2008, Tom Holland was a member of the Kansas House of Representatives.
-Harriet Tubman.
-The First Vice Captain of Juventus plays as a midfielder.
-The 2012 NBA Draft was held at the Prudential Center in Newark, New Jersey.
-The name of the town where Jack Briggs was born is Haslingden, which is located in Lancashire, England
-Timothy Dalton.
-The trophy given to the winner of the college football game between University of Idaho Vandals and University of Montana
-Robert Smigel.
-The song "I Love You" by Chris White was covered by several artists including People!, The Carnabeats, and
-Regency Road, Adelaide and Klemzig, South Australia have in common that they are all located in South Australia
-Lear's and Oh Comely are both magazines.
-The free agent quarterback acquired for the 2015 Buffalo Bills season played college football at Virginia Tech
-The hit TLC show about Orange County Ironworks is called "American Chopper".
-Hall of Fame Racing was created by Troy Aikman, Bill Saunders, and Roger Staubach.
-The Japanese Weekend School of New York has its offices in the entertainment complex in the Downtown section of New Ro
-The song written by Charles Wesley appeared on Andy Williams' album "The Andy Williams Christmas Album".
-Alfred Gell and Edmund Leach were both British social anthropologists.
-Yes, both Superdrag and Collective Soul are rock bands.
-World Extreme Cagefighting (WEC).
-The capital of the province where Baraki Barak District is situated is Pul-i-Alam.
-Truman W. "True" Williams.
-The show that Andrew "Andy" Spade's brother was in the 1990s is "S
-The team that would become the Little Giants was located in the county seat of Ohio County, Indiana.
-正在评估:  29%|██▉       | 294/1000 [04:11<09:57,  1.18it/s]正在评估:  30%|██▉       | 295/1000 [04:12<10:07,  1.16it/s]正在评估:  30%|██▉       | 296/1000 [04:13<09:11,  1.28it/s]正在评估:  30%|██▉       | 297/1000 [04:14<09:26,  1.24it/s]正在评估:  30%|██▉       | 298/1000 [04:14<09:08,  1.28it/s]正在评估:  30%|██▉       | 299/1000 [04:15<09:37,  1.21it/s]正在评估:  30%|███       | 300/1000 [04:16<09:57,  1.17it/s]正在评估:  30%|███       | 301/1000 [04:17<09:58,  1.17it/s]正在评估:  30%|███       | 302/1000 [04:18<09:59,  1.16it/s]正在评估:  30%|███       | 303/1000 [04:18<08:37,  1.35it/s]正在评估:  30%|███       | 304/1000 [04:19<09:10,  1.26it/s]正在评估:  30%|███       | 305/1000 [04:20<08:26,  1.37it/s]正在评估:  31%|███       | 306/1000 [04:20<07:55,  1.46it/s]正在评估:  31%|███       | 307/1000 [04:21<08:33,  1.35it/s]正在评估:  31%|███       | 308/1000 [04:22<09:18,  1.24it/s]正在评估:  31%|███       | 309/1000 [04:23<09:24,  1.22it/s]正在评估:  31%|███       | 310/1000 [04:24<09:37,  1.20it/s]正在评估:  31%|███       | 311/1000 [04:25<09:45,  1.18it/s]正在评估:  31%|███       | 312/1000 [04:26<09:50,  1.17it/s]正在评估:  31%|███▏      | 313/1000 [04:26<09:13,  1.24it/s]正在评估:  31%|███▏      | 314/1000 [04:27<09:49,  1.16it/s]正在评估:  32%|███▏      | 315/1000 [04:28<09:21,  1.22it/s]正在评估:  32%|███▏      | 316/1000 [04:29<09:23,  1.21it/s]正在评估:  32%|███▏      | 317/1000 [04:30<09:08,  1.25it/s]正在评估:  32%|███▏      | 318/1000 [04:31<09:17,  1.22it/s]正在评估:  32%|███▏      | 319/1000 [04:32<09:46,  1.16it/s]正在评估:  32%|███▏      | 320/1000 [04:32<08:16,  1.37it/s]正在评估:  32%|███▏      | 321/1000 [04:33<08:32,  1.33it/s]正在评估:  32%|███▏      | 322/1000 [04:34<08:55,  1.27it/s]正在评估:  32%|███▏      | 323/1000 [04:34<07:52,  1.43it/s]正在评估:  32%|███▏      | 324/1000 [04:35<08:55,  1.26it/s]正在评估:  32%|███▎      | 325/1000 [04:36<09:12,  1.22it/s]正在评估:  33%|███▎      | 326/1000 [04:37<09:12,  1.22it/s]正在评估:  33%|███▎      | 327/1000 [04:37<08:08,  1.38it/s]正在评估:  33%|███▎      | 328/1000 [04:38<07:22,  1.52it/s]正在评估:  33%|███▎      | 329/1000 [04:39<08:19,  1.34it/s]正在评估:  33%|███▎      | 330/1000 [04:40<08:59,  1.24it/s]正在评估:  33%|███▎      | 331/1000 [04:41<09:16,  1.20it/s]正在评估:  33%|███▎      | 332/1000 [04:41<09:04,  1.23it/s]正在评估:  33%|███▎      | 333/1000 [04:42<09:21,  1.19it/s]正在评估:  33%|███▎      | 334/1000 [04:43<09:36,  1.15it/s]正在评估:  34%|███▎      | 335/1000 [04:44<09:59,  1.11it/s]正在评估:  34%|███▎      | 336/1000 [04:45<09:52,  1.12it/s]正在评估:  34%|███▎      | 337/1000 [04:46<10:00,  1.10it/s]正在评估:  34%|███▍      | 338/1000 [04:47<09:43,  1.14it/s]正在评估:  34%|███▍      | 339/1000 [04:48<09:46,  1.13it/s]正在评估:  34%|███▍      | 340/1000 [04:49<09:45,  1.13it/s]正在评估:  34%|███▍      | 341/1000 [04:49<09:19,  1.18it/s]正在评估:  34%|███▍      | 342/1000 [04:50<09:20,  1.17it/s]正在评估:  34%|███▍      | 343/1000 [04:51<09:18,  1.18it/s]正在评估:  34%|███▍      | 344/1000 [04:52<09:39,  1.13it/s]正在评估:  34%|███▍      | 345/1000 [04:53<09:40,  1.13it/s]正在评估:  35%|███▍      | 346/1000 [04:53<08:32,  1.28it/s]正在评估:  35%|███▍      | 347/1000 [04:54<08:51,  1.23it/s]正在评估:  35%|███▍      | 348/1000 [04:55<09:20,  1.16it/s]正在评估:  35%|███▍      | 349/1000 [04:56<09:37,  1.13it/s]正在评估:  35%|███▌      | 350/1000 [04:57<09:37,  1.13it/s]正在评估:  35%|███▌      | 351/1000 [04:58<09:43,  1.11it/s]正在评估:  35%|███▌      | 352/1000 [04:59<08:17,  1.30it/s]正在评估:  35%|███▌      | 353/1000 [04:59<07:35,  1.42it/s]正在评估:  35%|███▌      | 354/1000 [05:00<08:07,  1.33it/s]正在评估:  36%|███▌      | 355/1000 [05:00<06:56,  1.55it/s]正在评估:  36%|███▌      | 356/1000 [05:01<07:43,  1.39it/s]正在评估:  36%|███▌      | 357/1000 [05:02<08:33,  1.25it/s]正在评估:  36%|███▌      | 358/1000 [05:03<09:10,  1.17it/s]正在评估:  36%|███▌      | 359/1000 [05:04<08:17,  1.29it/s]正在评估:  36%|███▌      | 360/1000 [05:05<08:51,  1.20it/s]正在评估:  36%|███▌      | 361/1000 [05:06<08:54,  1.20it/s]正在评估:  36%|███▌      | 362/1000 [05:06<08:33,  1.24it/s]正在评估:  36%|███▋      | 363/1000 [05:07<07:35,  1.40it/s]正在评估:  36%|███▋      | 364/1000 [05:08<08:23,  1.26it/s]正在评估:  36%|███▋      | 365/1000 [05:09<08:41,  1.22it/s]正在评估:  37%|███▋      | 366/1000 [05:10<08:45,  1.21it/s]正在评估:  37%|███▋      | 367/1000 [05:11<09:10,  1.15it/s]正在评估:  37%|███▋      | 368/1000 [05:11<09:16,  1.14it/s]正在评估:  37%|███▋      | 369/1000 [05:12<08:50,  1.19it/s]正在评估:  37%|███▋      | 370/1000 [05:13<08:58,  1.17it/s]正在评估:  37%|███▋      | 371/1000 [05:14<09:07,  1.15it/s]正在评估:  37%|███▋      | 372/1000 [05:15<09:21,  1.12it/s]正在评估:  37%|███▋      | 373/1000 [05:16<09:18,  1.12it/s]正在评估:  37%|███▋      | 374/1000 [05:17<09:33,  1.09it/s]正在评估:  38%|███▊      | 375/1000 [05:18<09:06,  1.14it/s]正在评估:  38%|███▊      | 376/1000 [05:18<09:08,  1.14it/s]正在评估:  38%|███▊      | 377/1000 [05:19<08:34,  1.21it/s]正在评估:  38%|███▊      | 378/1000 [05:20<08:47,  1.18it/s]正在评估:  38%|███▊      | 379/1000 [05:21<08:09,  1.27it/s]正在评估:  38%|███▊      | 380/1000 [05:22<08:27,  1.22it/s]正在评估:  38%|███▊      | 381/1000 [05:23<08:48,  1.17it/s]正在评估:  38%|███▊      | 382/1000 [05:23<09:04,  1.14it/s]正在评估:  38%|███▊      | 383/1000 [05:24<08:19,  1.24it/s]正在评估:  38%|███▊      | 384/1000 [05:25<08:46,  1.17it/s]正在评估:  38%|███▊      | 385/1000 [05:26<08:52,  1.15it/s]正在评估:  39%|███▊      | 386/1000 [05:27<08:49,  1.16it/s]正在评估:  39%|███▊      | 387/1000 [05:28<09:04,  1.12it/s]正在评估:  39%|███▉      | 388/1000 [05:28<08:12,  1.24it/s]正在评估:  39%|███▉      | 389/1000 [05:29<08:23,  1.21it/s]正在评估:  39%|███▉      | 390/1000 [05:30<08:26,  1.21it/s]正在评估:  39%|███▉      | 391/1000 [05:31<08:46,  1.16it/s]正在评估:  39%|███▉      | 392/1000 [05:32<08:10,  1.24it/s]正在评估:  39%|███▉      | 393/1000 [05:33<08:40,  1.17it/s]Faith Goldy got fired after an interview she gave on "The Daily Stormer," a production site edited by Andrew Ang
-The conflict involving the Mende ethnic group that lasted for eleven years is the Sierra Leone Civil War (19
-Darren Hayes was born first.
-Based on the information provided, J. Searle Dawley was the director who was from a country closer to Canada.
-No, Harry Everett Smith and Vladimir Danilevich are not both from Russia.
-Henderson Executive Airport got its name in 1996 when it was purchased by Clark County to be used as a
-No, Dee Dee Ramone and Ben Weasel were not in the same band. Dee Dee Ram
-The fortified complex built in the heart of Moscow in 1736 is known as the Kremlin Arsen
-The lower house of the state legislature in which Samuel Leavitt served has 400 members.
-Tumnus
-No, Robert Holdstock and H. L. Mencken were not both known for being satirists. Robert Holdstock
-Andrew Johnson was older than George Atzerodt.
-John Fogerty was also an actor.
-The second World Junior Ice Hockey Championship in which Miroslav Přerost coached the men's national junior ice
-The event in which Marie Gisele Eleme Asse won two medals in 2017 was the
-The Holden Commodore (VF) is manufactured by Holden and it also produces the Holden Calais (
-"Pound Puppies and the Legend of Big Paw" is the movie starring Tony Longo that is
-Based on the provided information, Gardnerville, Nevada has a greater population as of the 2010 census
-Based on the information provided, the co-star of Robert Hays in "Honeymoon Academy" is Kim C
-Lucrezia Borgia has more acts than Mosè in Egitto.
-The English Electric Canberra was the British first-generation jet-powered medium bomber used in the South West
-The son of Souleyman Sané plays in the Premier League.
-The species of Alerce tree native to the Andes mountains was named after Robert FitzRoy.
-Another Nordic term for a ghost is a dísir.
-No, Lygodium is a genus of ferns, not orchids, while Maxillaria is a genus
-Jolyon James performed the role of Moonshadow in a musical by a composer of British nationality, as J
-Steve Martin.
-The highway carried by the Long-Allen bridge terminates near the Atlantic Ocean.
-Ulver is the collective that founded the album Messe I.X-VI.X.
-Badfinger.
-The Tunisian-Dutch actor that starred in Collide won a Golden Calf for Best Actor.
-The coach who led the 2007 South Carolina Gamecocks football team was born in 1960
-The Sord M5 had a wider range of sales compared to the Interact Home Computer.
-Duke Cunningham.
-Devon Bostick
-The town in which the Suffolk county hamlet that was served by the Suffolk Traction Company is located is
-The 1997–98 UCLA Bruins men's basketball team lost to the Kentucky Wildcats
-Based on the information provided, the man who currently serves as the wide receivers coach for the Dallas Cowboys used to
-Toshi and Emily Haines share the occupation of being singers and songwriters.
-The Wu-Tang Clan is a New York City–based hip-hop musical group that consists of rappers
-The Royal Albert Hall is located on the northern edge of South Kensington, London, and had songs chosen from a number
-Based on the information provided, the Basham brother who appeared with World Wrestling Entertainment between 2002 and 2
-Hamilton Evans "Tony" James is the COO and director of the largest alternative investment firm in the world.
-The Adoption and Safe Families Act and the Adoption 2002 Initiative were both
-Yes, Mauritz Stiller and Johannes Grenzfurthner are both of the same nationality.
-Based on the information provided, Shadi Attieh is often referred to as the Lebanese version of a footballer who
-Kalle Mäkinen is nicknamed "Sergio" after Spanish football player Sergio Ramos, who captains
-Both Eric Ambler and Carol Shields are best known for their work as authors.
-Traditionally, a hot toddy is drunk before retiring to bed. A hot toddy is a mixed
-In addition to the actors mentioned, the film "Moving Violations" also starred Fred Willard.
-The English rock band formed that released the box set of four studio albums "Genesis 1983–19
-Based on the information provided, the coastal town that the Oxley Highway ends at is Port Macquarie, which had
-Middlesbrough Football Club.
-WonderWorks made an adaptation of "A Little Princess" novel by Frances Hogson Burnett.
-Axess is an IT company spun out of Japan Airlines, the national flag carrying airline. It provides computer reservation
-Based on the information provided, the Atlanta Hawks acquired Tyronn Lue during the 2004-0
-After the Truth is a fictional film depicting the trial of Dr. Josef Mengele, a German war criminal
-Based on the information provided, the comedy film directed by Kevin Tent and starring the Bulgarian-Canadian actress
-Dan Bilzerian.
-Jang Hyun-seung was born last.
-Once it became Atatürk Museum Mansion, Mustafa Kemal Atatürk's residence was
-Happy Death Day
-The attraction at Universal Studios that was based on "The Tonight Show" replaced an attraction that replaced an attraction
-Based on the information provided, Ruth Vollmer began working as an artist for Bonwit Teller, Tiffany'
-Muggsy Bogues is the former NBA player who was a member of the Charlotte Hornets during their 1
-Purcell is located in McClain County, Oklahoma.
-The constitutional union of the Austrian Empire and the Kingdom of Hungary, known as Austria-Hungary, existed
-The Seduction of Hillary Rodham is a 1996 book written by David Brock, the founder
-Bruce Lee played the role of Kato in the television series Green Hornet.
-Gus Van Sant.
-The negotiations with the owners of Auschwitz concentration and extermination camp were conducted by Kurt Gerstein, who
-The Nassau Herald serves a village in Nassau County, New York with a population of 6,4
-"I Wed Three Wives" is an episode of the American television series "Hawaiian Eye".
-Meghan Strange is an American actress and voice actress known for her role as Robin on the American animated television series "S
-Ada Lovelace, the first computer programmer, was the daughter of Lord Byron's half-sister, Lady
-The band that released Feeding the Wolves was formed in Knoxville, Tennessee.
-The nickname of the peninsula that is home to the Calabrian Black Squirrel is "lo St
-David Angell was headed home from their vacation in Cape Cod when he died aboard the American Airlines Fl
-The seminar Jeanne Marie Beaumont directed in 2007-2010 is located in Fran
-Based on the information provided, Ruddles Brewery is owned by Greene King, a pub retailer and
-Based on the information provided, the scientific journal for which Danilo Erricolo is currently Editor-in-Chief was
-Yes, Edward F. Cline and Floyd Mutrux are both screenwriters.
-Based on the given information, the singer of "Miss Emily's Picture" is John Conlee, and there is
-The Old Ones are more powerful than the mightiest Gods.
-Gildo Siopaes won a bronze medal for bobsledding in the 1964 Winter Olympics in
-U2 released the song "With or Without You" first.
-Elizabeth Ann Bayley Seton was born on August 28, 1774.
-The Landsman Kill is a stream located near New York State Route 308. It is mentioned in the provided
-The portrait that hangs in the Smithsonian Institute along with Florence Nightingale, the founder of nursing,
-Prevention magazine was started in 1950.
-Arthur Freed wrote the lyrics to the 2016/2017 Australian production that stars Gret
-Buzzcocks, the English punk rock band which Howard Devoto is the original singer, is formed in Bolton,
-Neither Hou Hsiao-hsien nor Kenny Ortega were winners of an Academy Award.
-William Hopke played in the 1909 Cuban-American Major League Clubs Series for the Detroit Tigers
-Toshi Ichiyanagi.
-The name of the fantasy film starring Sarah Bolger, featuring a New England family who discover magical creatures around
-The Australian professional women's basketball team that has an American player in it is the Dandenong Rangers.
-Andrew Adamson was the director behind the Cirque du Soleil show in Las Vegas that was first performed on December
-Yes, Jeff Ragsdale and Millard Webb are both authors.
-The name of the record label owned by one of the three artists responsible for creating the 1993 album Honky
-正在评估:  39%|███▉      | 394/1000 [05:34<08:43,  1.16it/s]正在评估:  40%|███▉      | 395/1000 [05:34<08:47,  1.15it/s]正在评估:  40%|███▉      | 396/1000 [05:35<08:50,  1.14it/s]正在评估:  40%|███▉      | 397/1000 [05:36<08:15,  1.22it/s]正在评估:  40%|███▉      | 398/1000 [05:37<08:14,  1.22it/s]正在评估:  40%|███▉      | 399/1000 [05:37<07:30,  1.34it/s]正在评估:  40%|████      | 400/1000 [05:38<07:50,  1.28it/s]正在评估:  40%|████      | 401/1000 [05:39<07:22,  1.35it/s]正在评估:  40%|████      | 402/1000 [05:40<07:05,  1.41it/s]正在评估:  40%|████      | 403/1000 [05:41<07:51,  1.27it/s]正在评估:  40%|████      | 404/1000 [05:41<08:09,  1.22it/s]正在评估:  40%|████      | 405/1000 [05:42<08:06,  1.22it/s]正在评估:  41%|████      | 406/1000 [05:43<08:10,  1.21it/s]正在评估:  41%|████      | 407/1000 [05:44<08:28,  1.17it/s]正在评估:  41%|████      | 408/1000 [05:45<08:31,  1.16it/s]正在评估:  41%|████      | 409/1000 [05:46<08:30,  1.16it/s]正在评估:  41%|████      | 410/1000 [05:47<08:31,  1.15it/s]正在评估:  41%|████      | 411/1000 [05:48<08:42,  1.13it/s]正在评估:  41%|████      | 412/1000 [05:49<08:58,  1.09it/s]正在评估:  41%|████▏     | 413/1000 [05:49<08:48,  1.11it/s]正在评估:  41%|████▏     | 414/1000 [05:50<08:08,  1.20it/s]正在评估:  42%|████▏     | 415/1000 [05:51<08:37,  1.13it/s]正在评估:  42%|████▏     | 416/1000 [05:52<08:37,  1.13it/s]正在评估:  42%|████▏     | 417/1000 [05:53<08:39,  1.12it/s]正在评估:  42%|████▏     | 418/1000 [05:53<07:27,  1.30it/s]正在评估:  42%|████▏     | 419/1000 [05:54<07:48,  1.24it/s]正在评估:  42%|████▏     | 420/1000 [05:55<08:04,  1.20it/s]正在评估:  42%|████▏     | 421/1000 [05:56<08:17,  1.16it/s]正在评估:  42%|████▏     | 422/1000 [05:57<08:05,  1.19it/s]正在评估:  42%|████▏     | 423/1000 [05:58<08:23,  1.15it/s]正在评估:  42%|████▏     | 424/1000 [05:58<07:38,  1.26it/s]正在评估:  42%|████▎     | 425/1000 [05:59<08:01,  1.19it/s]正在评估:  43%|████▎     | 426/1000 [06:00<08:03,  1.19it/s]正在评估:  43%|████▎     | 427/1000 [06:01<08:18,  1.15it/s]正在评估:  43%|████▎     | 428/1000 [06:02<08:24,  1.13it/s]正在评估:  43%|████▎     | 429/1000 [06:03<07:48,  1.22it/s]正在评估:  43%|████▎     | 430/1000 [06:04<07:47,  1.22it/s]正在评估:  43%|████▎     | 431/1000 [06:04<07:54,  1.20it/s]正在评估:  43%|████▎     | 432/1000 [06:05<07:59,  1.18it/s]正在评估:  43%|████▎     | 433/1000 [06:06<08:11,  1.15it/s]正在评估:  43%|████▎     | 434/1000 [06:07<07:11,  1.31it/s]正在评估:  44%|████▎     | 435/1000 [06:08<07:10,  1.31it/s]正在评估:  44%|████▎     | 436/1000 [06:09<07:43,  1.22it/s]正在评估:  44%|████▎     | 437/1000 [06:09<07:45,  1.21it/s]正在评估:  44%|████▍     | 438/1000 [06:10<07:50,  1.19it/s]正在评估:  44%|████▍     | 439/1000 [06:11<08:13,  1.14it/s]正在评估:  44%|████▍     | 440/1000 [06:12<07:44,  1.21it/s]正在评估:  44%|████▍     | 441/1000 [06:13<07:24,  1.26it/s]正在评估:  44%|████▍     | 442/1000 [06:13<07:31,  1.24it/s]正在评估:  44%|████▍     | 443/1000 [06:14<07:49,  1.19it/s]正在评估:  44%|████▍     | 444/1000 [06:15<06:55,  1.34it/s]正在评估:  44%|████▍     | 445/1000 [06:16<07:16,  1.27it/s]正在评估:  45%|████▍     | 446/1000 [06:17<07:28,  1.24it/s]正在评估:  45%|████▍     | 447/1000 [06:18<07:44,  1.19it/s]正在评估:  45%|████▍     | 448/1000 [06:18<07:56,  1.16it/s]正在评估:  45%|████▍     | 449/1000 [06:19<07:01,  1.31it/s]正在评估:  45%|████▌     | 450/1000 [06:20<07:26,  1.23it/s]正在评估:  45%|████▌     | 451/1000 [06:21<07:52,  1.16it/s]正在评估:  45%|████▌     | 452/1000 [06:21<06:55,  1.32it/s]正在评估:  45%|████▌     | 453/1000 [06:22<07:31,  1.21it/s]正在评估:  45%|████▌     | 454/1000 [06:23<07:33,  1.20it/s]正在评估:  46%|████▌     | 455/1000 [06:24<07:50,  1.16it/s]正在评估:  46%|████▌     | 456/1000 [06:25<07:57,  1.14it/s]正在评估:  46%|████▌     | 457/1000 [06:26<07:21,  1.23it/s]正在评估:  46%|████▌     | 458/1000 [06:26<06:20,  1.42it/s]正在评估:  46%|████▌     | 459/1000 [06:27<06:46,  1.33it/s]正在评估:  46%|████▌     | 460/1000 [06:28<06:43,  1.34it/s]正在评估:  46%|████▌     | 461/1000 [06:29<07:02,  1.28it/s]正在评估:  46%|████▌     | 462/1000 [06:29<06:56,  1.29it/s]正在评估:  46%|████▋     | 463/1000 [06:30<07:23,  1.21it/s]正在评估:  46%|████▋     | 464/1000 [06:31<07:07,  1.25it/s]正在评估:  46%|████▋     | 465/1000 [06:32<07:25,  1.20it/s]正在评估:  47%|████▋     | 466/1000 [06:33<07:25,  1.20it/s]正在评估:  47%|████▋     | 467/1000 [06:34<07:54,  1.12it/s]正在评估:  47%|████▋     | 468/1000 [06:34<07:03,  1.26it/s]正在评估:  47%|████▋     | 469/1000 [06:35<07:27,  1.19it/s]正在评估:  47%|████▋     | 470/1000 [06:36<07:36,  1.16it/s]正在评估:  47%|████▋     | 471/1000 [06:37<06:40,  1.32it/s]正在评估:  47%|████▋     | 472/1000 [06:38<06:33,  1.34it/s]正在评估:  47%|████▋     | 473/1000 [06:38<06:59,  1.26it/s]正在评估:  47%|████▋     | 474/1000 [06:39<06:46,  1.29it/s]正在评估:  48%|████▊     | 475/1000 [06:40<06:57,  1.26it/s]正在评估:  48%|████▊     | 476/1000 [06:41<07:27,  1.17it/s]正在评估:  48%|████▊     | 477/1000 [06:42<07:41,  1.13it/s]正在评估:  48%|████▊     | 478/1000 [06:43<07:44,  1.12it/s]正在评估:  48%|████▊     | 479/1000 [06:44<07:48,  1.11it/s]正在评估:  48%|████▊     | 480/1000 [06:45<07:48,  1.11it/s]正在评估:  48%|████▊     | 481/1000 [06:46<07:45,  1.11it/s]正在评估:  48%|████▊     | 482/1000 [06:46<06:38,  1.30it/s]正在评估:  48%|████▊     | 483/1000 [06:47<07:07,  1.21it/s]正在评估:  48%|████▊     | 484/1000 [06:48<06:43,  1.28it/s]正在评估:  48%|████▊     | 485/1000 [06:49<07:06,  1.21it/s]正在评估:  49%|████▊     | 486/1000 [06:49<06:15,  1.37it/s]正在评估:  49%|████▊     | 487/1000 [06:50<06:44,  1.27it/s]正在评估:  49%|████▉     | 488/1000 [06:51<06:47,  1.26it/s]正在评估:  49%|████▉     | 489/1000 [06:52<07:12,  1.18it/s]正在评估:  49%|████▉     | 490/1000 [06:53<07:08,  1.19it/s]正在评估:  49%|████▉     | 491/1000 [06:54<07:33,  1.12it/s]正在评估:  49%|████▉     | 492/1000 [06:55<07:30,  1.13it/s]Yes, both Anthony Burgess and Tennessee Williams used pen names. Anthony Burgess published under the pen name Anthony Burgess,
-The call sign of the airline that operates the flight with United Express Flight 3411 incident is "
-The shopping centre on the street numbered B411, which is Whiteleys, opened in 19
-Based on the information provided, the band formed in Hanna, Alberta.
-Yes, both Jack and Coke and Clover Club Cocktail are cocktails.
-Russell Humphreys.
-The town Digby, Victoria may be named after the district of North Kesteven, Lincolnshire, England.
-Kara Ross is a jewelry designer.
-Both Stephen Jay Gould and Ann Beattie are writers.
-The actress who was killed off along with Sonny is Carmel McQueen, who was a former English actress and port
-Brady John Haran is an Australian-born British independent filmmaker and video journalist known for his work with the YouTube series
-John Stark Regional High School serves the community in Merrimack County, New Hampshire.
-No, Parents and Madame Figaro are not published in the same country. Madame Figaro is a French magazine supplement
-The autobiography of Barry Humphries, the author of Les Patterson Saves the World, is "My
-The 2nd wife of the leader of the Hussites, Joanna of Rožmitál, was born in
-Scientific Games Corporation makes games that are composed of various elements such as electronic gaming machines, table games, iGaming
-"Sex Drive" is the name of the movie that stars Katrina Bowden and was directed by Sean Anders
-Based on the provided information, Wilton Mall has had more owners compared to Viaport Rotterdam. Wilton Mall
-The screenplay that was worked on by both Edward Carfagno and Miklos Rozsa is "Julius Ca
-Based on the 2010 United States Census, the population of the city where the band Quincy Mum
-Both Christopher Nolan and Paul Schrader are film directors.
-The large subunit and small subunit of the ribosome, which use two types of RNA, are major components
-Matt Vasgersian and Michael Casey are both individuals who have worked in the field of broadcasting. Matt Vasgersian
-Hector Berlioz was a French Romantic composer in the 1800's.
-The Backstreet Boys.
-The medieval fortress to the north of Yellowcraig was abandoned at the end of the 17th century
-"Alien Resurrection" was the last of four Alien films to feature Sigourney Weaver.
-The noble house that employed Frntisek Rint to organize the human bones interred at the Sedlec
-Florentius was a praetorian prefect for the Roman Empire.
-The book that attracted 600 people at a 2015 reading is based on a person who is
-Chino Moreno has played in more bands than Kim Wilson.
-The Swallow Bluff Island Mounds is located in the Tennessee River, which was once known as the "River of
-The Lady Craved Excitement was a film that featured the British character actor originally of Canadian nationality, Evan Thomas
-The Vilnius Cathedral is located in the Vilnius Old Town, which is one of the largest surviving medieval old towns
-The founder of The International Grenfell Association, Sir Wilfred Grenfell, acts as a missionary to Newfound
-Om and Six Organs of Admittance are both bands.
-Dr. Strangelove is a 1964 political satire black comedy film.
-Eusebio Valli studied alongside a physician who was the pioneer of bioelectricity.
-HK Express is one of the founding members of the world's first alliance of low cost carriers, U
-Eleutherococcus and Amaryllis are both genera of plants. Eleutherococcus is a genus
-George Balanchine.
-The scarp was first imaged by Voyager 2.
-During the Libyan Civil War, Muammar Mohammed Abu Minyar Gaddafi held the title of "
-David Simon created and mostly wrote the show that Idris Akuna Elba played Stringer Bell in.
-Nexon, where was it located at? Based on the information provided, Nexon was located in Tokyo, Japan
-Blind Arab philosopher Abd Allah ibn al-Fadl had other interests such as poetry and writing. He
-Carnegie Mellon University is a university in Pennsylvania.
-Billie Jean King won more Grand Slam titles than Liezel Huber.
-The director of the American romantic comedy "The Proposal" is known for directing films such as "Step Up
-The 2013 Smurfs moving is based on "The Legend of Sleepy Hollow" short
-Despicable Me 3
-Based on the information provided, Adventist World is based out of more countries compared to Baseball Digest. Adventist World is
-A two disc compilation album is "Out of the Dark" by Nuclear Blast Records, featuring a variable collection of
-The private university that Alan Hurwitz served as the 10th President was located in Washington, D.C. This
-The component that was included on the iPad4 and is now a registered trademark in Jamaica is the Ret
-The Faroe Islands.
-Socrates was one of the first religious skeptics, and he had several disciples, including Plato,
-The Matterhorn Bobsleds roller coaster at Disneyland is an expanded version of the Autopia att
-Texas Christian University was established first.
-Adele broke the record for selling 2 million copies in the UK in the fastest time when her album "
-Fiske O'Hara was born in Rockland, which is a city in Knox County, Maine.
-The host of The 2011 Teen Choice Awards ceremony, Kaley Cuoco, currently stars on
-The capacity of the stadium that hosts games of the team that was coached by Barry Switzer in 198
-Ángel Dealbert Ibáñez played for CD Castellón.
-Kang.
-A Taxi Driver, directed by Jang Hoon and starring Song Kang-ho, debuted in 2
-Fabián Bielinsky was born earlier than Murdock MacQuarrie.
-Based on the information provided, the Pulandian District is further south in China compared to Kaiyuan, Lia
-No, Logan Leistikow and Guru Dutt were not alive at the same time.
-Based on the information provided, the highest rank held by Sir Charles Comyn Egerton in the British Army was Field Marshal
-Echeveria is the genus native to arid or semi-desert areas.
-The country of origin that Eric Lucassen and Party for Freedom have in common is the Netherlands. Eric Lucassen is a
-No, the genera Gordonia and Osbeckia are not in the same family. Gordonia belongs to the
-The new manager who made considerable changes to the Celtic team for the 2010-11 season head
-James A. "Jay" Rasulo.
-"She's a Woman" is a song by the Beatles, written mainly by Paul McCartney and credited
-Trains run on the system that has a terminal station located at the intersection of 32nd Street and Sixth Avenue
-The band formed in Philadelphia.
-Hugo Rodríguez Romero plays for a team in the autonomous community of Murcia.
-No, Jiujiang, Guangdong and Ruzhou are not located in the same Chinese district. J
-Golf Digest has been around longer than Guitar World.
-Giacomo Benvenuti and Claudio Monteverdi share the profession of being composers.
-The album with the song Unbelievable by American rapper The Notorious B.I.G. was released on
-Based on the information provided, the supporting cast member in "Sleepless in Seattle" who appeared in another film is
-The company that owns Bonifacio High Street was founded in 1988. This information is based on the
-A remix is called when a piece of media is altered from its original state, like when Bubba Spar
-Based on the provided information, the person who was born in Ireland and has coached the captain of MLS club Colorado Rap
-"The Chance of a Lunchtime" is an episode of the BBC sitcom "Only Fools and Hors
-Sparky
-The offices of the weather service that serves Kansas City, which was named after an agreement between European Americans and the Osage Nation
-Glacier National Park encompasses over 1 million acres.
-The second First Lady to be born outside the United States or areas that would become part of the United States, Melania Trump
-The Brandenburg Gate in Berlin.
-Yes, both filmmakers Enrico Cocozza and Mira Nair have been nominated for awards for their work.
-The formal name of a species of tree is Microcachrys tetragona.
-The notable song by Suresh Peters from "Gentleman" is in Tamil language.
-One of the ex-security officials that means The Institute is Meir Dagan.
-Based on the information provided, Jacky Ickx won more races in the Le Mans 24 Hours series compared
-Both Takahiro Moriuchi and Doug Pinnick are involved in the music industry, specifically as vocalists in
-正在评估:  49%|████▉     | 493/1000 [06:55<07:30,  1.13it/s]正在评估:  49%|████▉     | 494/1000 [06:56<07:07,  1.18it/s]正在评估:  50%|████▉     | 495/1000 [06:57<06:37,  1.27it/s]正在评估:  50%|████▉     | 496/1000 [06:58<06:38,  1.26it/s]正在评估:  50%|████▉     | 497/1000 [06:58<06:48,  1.23it/s]正在评估:  50%|████▉     | 498/1000 [06:59<06:57,  1.20it/s]正在评估:  50%|████▉     | 499/1000 [07:00<07:17,  1.15it/s]正在评估:  50%|█████     | 500/1000 [07:01<07:02,  1.18it/s]正在评估:  50%|█████     | 501/1000 [07:02<07:11,  1.16it/s]正在评估:  50%|█████     | 502/1000 [07:03<07:12,  1.15it/s]正在评估:  50%|█████     | 503/1000 [07:04<07:21,  1.13it/s]正在评估:  50%|█████     | 504/1000 [07:05<07:20,  1.13it/s]正在评估:  50%|█████     | 505/1000 [07:06<07:01,  1.17it/s]正在评估:  51%|█████     | 506/1000 [07:06<07:20,  1.12it/s]正在评估:  51%|█████     | 507/1000 [07:07<07:34,  1.08it/s]正在评估:  51%|█████     | 508/1000 [07:08<07:26,  1.10it/s]正在评估:  51%|█████     | 509/1000 [07:09<07:28,  1.09it/s]正在评估:  51%|█████     | 510/1000 [07:10<07:27,  1.10it/s]正在评估:  51%|█████     | 511/1000 [07:11<07:27,  1.09it/s]正在评估:  51%|█████     | 512/1000 [07:12<06:21,  1.28it/s]正在评估:  51%|█████▏    | 513/1000 [07:13<06:48,  1.19it/s]正在评估:  51%|█████▏    | 514/1000 [07:13<05:58,  1.36it/s]正在评估:  52%|█████▏    | 515/1000 [07:14<05:45,  1.40it/s]正在评估:  52%|█████▏    | 516/1000 [07:15<06:09,  1.31it/s]正在评估:  52%|█████▏    | 517/1000 [07:16<06:41,  1.20it/s]正在评估:  52%|█████▏    | 518/1000 [07:16<05:42,  1.41it/s]正在评估:  52%|█████▏    | 519/1000 [07:17<05:43,  1.40it/s]正在评估:  52%|█████▏    | 520/1000 [07:18<06:09,  1.30it/s]正在评估:  52%|█████▏    | 521/1000 [07:18<06:13,  1.28it/s]正在评估:  52%|█████▏    | 522/1000 [07:19<06:19,  1.26it/s]正在评估:  52%|█████▏    | 523/1000 [07:20<05:57,  1.33it/s]正在评估:  52%|█████▏    | 524/1000 [07:21<05:44,  1.38it/s]正在评估:  52%|█████▎    | 525/1000 [07:22<06:16,  1.26it/s]正在评估:  53%|█████▎    | 526/1000 [07:22<06:24,  1.23it/s]正在评估:  53%|█████▎    | 527/1000 [07:23<05:56,  1.33it/s]正在评估:  53%|█████▎    | 528/1000 [07:24<05:20,  1.47it/s]正在评估:  53%|█████▎    | 529/1000 [07:24<05:17,  1.48it/s]正在评估:  53%|█████▎    | 530/1000 [07:25<05:40,  1.38it/s]正在评估:  53%|█████▎    | 531/1000 [07:26<06:05,  1.28it/s]正在评估:  53%|█████▎    | 532/1000 [07:27<06:21,  1.23it/s]正在评估:  53%|█████▎    | 533/1000 [07:28<06:32,  1.19it/s]正在评估:  53%|█████▎    | 534/1000 [07:29<06:38,  1.17it/s]正在评估:  54%|█████▎    | 535/1000 [07:29<06:37,  1.17it/s]正在评估:  54%|█████▎    | 536/1000 [07:30<06:19,  1.22it/s]正在评估:  54%|█████▎    | 537/1000 [07:31<06:32,  1.18it/s]正在评估:  54%|█████▍    | 538/1000 [07:32<06:40,  1.15it/s]正在评估:  54%|█████▍    | 539/1000 [07:33<05:48,  1.32it/s]正在评估:  54%|█████▍    | 540/1000 [07:33<06:08,  1.25it/s]正在评估:  54%|█████▍    | 541/1000 [07:34<06:20,  1.20it/s]正在评估:  54%|█████▍    | 542/1000 [07:35<06:29,  1.18it/s]正在评估:  54%|█████▍    | 543/1000 [07:36<06:35,  1.15it/s]正在评估:  54%|█████▍    | 544/1000 [07:37<06:27,  1.18it/s]正在评估:  55%|█████▍    | 545/1000 [07:38<06:23,  1.19it/s]正在评估:  55%|█████▍    | 546/1000 [07:39<06:35,  1.15it/s]正在评估:  55%|█████▍    | 547/1000 [07:40<06:37,  1.14it/s]正在评估:  55%|█████▍    | 548/1000 [07:40<05:45,  1.31it/s]正在评估:  55%|█████▍    | 549/1000 [07:41<05:09,  1.46it/s]正在评估:  55%|█████▌    | 550/1000 [07:42<05:43,  1.31it/s]正在评估:  55%|█████▌    | 551/1000 [07:43<06:09,  1.21it/s]正在评估:  55%|█████▌    | 552/1000 [07:43<06:23,  1.17it/s]正在评估:  55%|█████▌    | 553/1000 [07:44<05:29,  1.35it/s]正在评估:  55%|█████▌    | 554/1000 [07:45<05:58,  1.24it/s]正在评估:  56%|█████▌    | 555/1000 [07:46<06:15,  1.18it/s]正在评估:  56%|█████▌    | 556/1000 [07:47<06:24,  1.16it/s]正在评估:  56%|█████▌    | 557/1000 [07:47<05:51,  1.26it/s]正在评估:  56%|█████▌    | 558/1000 [07:48<05:47,  1.27it/s]正在评估:  56%|█████▌    | 559/1000 [07:49<05:00,  1.47it/s]正在评估:  56%|█████▌    | 560/1000 [07:50<05:40,  1.29it/s]正在评估:  56%|█████▌    | 561/1000 [07:50<06:01,  1.21it/s]正在评估:  56%|█████▌    | 562/1000 [07:51<06:00,  1.22it/s]正在评估:  56%|█████▋    | 563/1000 [07:52<05:42,  1.28it/s]正在评估:  56%|█████▋    | 564/1000 [07:53<06:06,  1.19it/s]正在评估:  56%|█████▋    | 565/1000 [07:54<06:19,  1.15it/s]正在评估:  57%|█████▋    | 566/1000 [07:55<06:10,  1.17it/s]正在评估:  57%|█████▋    | 567/1000 [07:55<05:47,  1.24it/s]正在评估:  57%|█████▋    | 568/1000 [07:56<06:03,  1.19it/s]正在评估:  57%|█████▋    | 569/1000 [07:57<06:16,  1.15it/s]正在评估:  57%|█████▋    | 570/1000 [07:58<05:38,  1.27it/s]正在评估:  57%|█████▋    | 571/1000 [07:59<05:43,  1.25it/s]正在评估:  57%|█████▋    | 572/1000 [08:00<05:59,  1.19it/s]正在评估:  57%|█████▋    | 573/1000 [08:01<06:07,  1.16it/s]正在评估:  57%|█████▋    | 574/1000 [08:01<05:55,  1.20it/s]正在评估:  57%|█████▊    | 575/1000 [08:02<05:13,  1.36it/s]正在评估:  58%|█████▊    | 576/1000 [08:02<05:01,  1.41it/s]正在评估:  58%|█████▊    | 577/1000 [08:03<04:34,  1.54it/s]正在评估:  58%|█████▊    | 578/1000 [08:04<05:05,  1.38it/s]正在评估:  58%|█████▊    | 579/1000 [08:05<05:32,  1.26it/s]正在评估:  58%|█████▊    | 580/1000 [08:06<05:18,  1.32it/s]正在评估:  58%|█████▊    | 581/1000 [08:07<05:53,  1.18it/s]正在评估:  58%|█████▊    | 582/1000 [08:07<06:00,  1.16it/s]正在评估:  58%|█████▊    | 583/1000 [08:08<06:03,  1.15it/s]正在评估:  58%|█████▊    | 584/1000 [08:09<05:23,  1.28it/s]正在评估:  58%|█████▊    | 585/1000 [08:10<05:36,  1.23it/s]正在评估:  59%|█████▊    | 586/1000 [08:11<05:52,  1.17it/s]正在评估:  59%|█████▊    | 587/1000 [08:12<06:01,  1.14it/s]正在评估:  59%|█████▉    | 588/1000 [08:13<06:15,  1.10it/s]正在评估:  59%|█████▉    | 589/1000 [08:14<06:08,  1.12it/s]正在评估:  59%|█████▉    | 590/1000 [08:14<06:07,  1.12it/s]正在评估:  59%|█████▉    | 591/1000 [08:15<06:12,  1.10it/s]正在评估:  59%|█████▉    | 592/1000 [08:16<06:13,  1.09it/s]正在评估:  59%|█████▉    | 593/1000 [08:17<05:22,  1.26it/s]Based on the information provided, Tony Leung Ka-fai is a four-time winner of the Hong Kong Film Award
-The company based out of Dubai broadcasts Khushi Ek Roag.
-Fiat Chrysler Automobiles NV
-Christmas in the Sun was performed mainly by the entertainer of Australian nationality, Rolf Harris.
-Jason Gilbert has worked with the Detroit-based hip hop duo Yancey Boys, which consists of Illa J and
-The Canadian movie called in Italy that starred a professional American football defensive end of the National Football League along with Michael Ir
-The U.S. Counselor to the President Kellyanne Conway was born in 1967.
-Macclesfield Town F.C. plays in the league sponsored by Vanarama.
-The team that competed against Notts County in the 1894 FA Cup Final currently competes in League Two,
-The 2006 Commonwealth Games, where Mmoloki Nogeng won a bronze medal, were held in
-"The Omega Man" is the film that featured Rosalind Cash prior to the release of "Sister,
-The 2013 Valdosta State Blazers football team and the Gulf South Conference were both a part
-Fort Snelling spurred the growth of Saint Paul was located in Hennepin County.
-Luke Rockhold defeated the MMA fighter who was the first to earn a win against Chris Weidman in the
-The given information states that a molera is a "hole" in the head of a breed of dog, specifically the
-Dean O'Banion was the main rival of Al Capone, known as Scarface.
-The third emperor in the Year of the Four Emperors, Vitellius, had three wives.
-Sly Stone is a musician, songwriter, and record producer, known for his role as frontman for Sly
-The genre of the 1991 film that featured the song "Breakin' the Rules" is a
-Max Bemis.
-On U.S. Route 56 in the Midwestern United States, you can listen to the KCTV.
-Terry Kath was born first.
-Strange Synergy is a card game published by Steve Jackson Games.
-The actress that plays Charity in the drama series "Greenleaf" is a member of a musical family from Detroit, Michigan
-The Chancellor Otto von Bismark and Reichstadt agreement were part of the League of the Three Emperors.
-Blackheart Records.
-Yes, both Distortion Mirrors and OK Go are considered rock bands.
-Twisted Fortune, directed by Victor Varnado, starred Eddie Murphy's brother, Charles Quinton
-Thomas Boutflower Bennett was a schoolmaster at The Collegiate School of St Peter.
-Socialist Thought and Practice was regarded as an important vehicle for the spread of the ideas of Third Camp Socialism and
-Thomas Friedman has won more Pulitzer Prizes.
-Jerry Glanville is younger than Keith Bostic.
-The figure skater who was coached to Olympic, World, and national titles by Richard Callaghan was born in
-Based on the given information, the only other big name footballer besides the Ivorian born in 1986 who
-Delmer Daves has more scope of profession compared to Phil Rosen.
-King Duncan.
-Cookstown, County Tyrone, Northern Ireland.
-Based on the information provided, the person who beat Alex Clark for mayor in 1967 stopped serving as a US
-William Shakespeare is the author of the play that was adapted into a film and featured the orchestral arrangement Suite from Henry
-The Church of the Guanche People was founded in the city that is on the most populated island of the Canary Islands.
-Ellie Kemper stars in the title role of the Netflix show "Unbreakable Kimmy Schmidt," co
-The term political correctness is generally used to describe the avoidance of language or actions that are seen as excluding, marg
-Jacking is the element of House dance where the dancer ripples his or her torso back and forth. This
-W41AP is a station owned by the daily newspaper serving Sandusky, Ohio.
-The Palestine Brigade RAF was formed in response to General Allenby's request for an air formation for his planned off
-Heart is an American rock band that first found success in Canada and later in the United States and worldwide. Over the group
-Shirley Temple
-The Pollution Prevention Act of 1990 expanded the Toxics Release Inventory, which is a
-The actor born in 1955, who acted in the movie Ransom, was nominated for a Golden Glo
-"White People Renovating Houses" is the first episode of the twenty-first season of South Park, which a
-Based on the information provided, the inventor of the Hennchata, a cocktail consisting of Henness
-No, Even and Incubus are not known for their skill in classical music.
-Yes, both Ernst Messerschmid and Reinhold Ewald were ESA astronauts.
-Adrian Peterson, the nephew of Ivory Lee Brown, got 1,925 yards during his
-Kurt Fuller appeared in the American detective comedy drama television series "Psych" created by Steve Franks.
-Barnoldswick.
-Herman's Hermits
-Eric Radomski produced "Avengers Assemble" that premiered on Disney XD on May 26,
-Income tax in Australia is levied under the Parliament of Australia's tax code in the following categories: personal earnings
-The band that is a tribute to a band originally known as the Grizzly River Boys is Diamond Rio.
-Sam Neill.
-The arena where the Lewiston Maineiacs played their home games, the Androscoggin Bank Colisée
-The central institution of Cheyenne Indian tribal governance that Ehyophsta was not a member of is the Council
-Based on the information provided, Port Macquarie is larger than Bonny Hills. Port Macquarie is a coastal
-Joseph L. Mankiewicz won more Academy Awards.
-The legal name of Johnny Campbell's hometown is Derry, Northern Ireland.
-Car drifting
-Vasily Agapkin's most well-known march was written in honor of the First Balkan War.
-The folk dance style Johannes Brahms' Liebeslieder Waltzes were written for was most popular during the Romantic
-Xingcheng and Ulan Hot are not located in the Inner Mongolia region of China.
-In The Lodge, David Bowie has worked as an assistant.
-The man credited for developing a Crescograph, Sir Jagadish Chandra Bose, was born in
-No, the American Foxhound and Löwchen are not both types of Foxhounds. The American Foxhound
-Gül Train is a project of the Economic Cooperation Organization (ECO).
-Del Amitri had more members than The Operation M.D.
-The successor of Aleksandras Stulginskis held office between June 7, 1926 and December
-Based on the information provided, Francis Asbury began attending the revival meetings in June 1800.
-Yes, Gregory La Cava and Mike Judge were both actors.
-"I Do" the song by Nina is from her self-titled third studio album.
-Based on the information provided, Profile Lake is located at the foot of Cannon Mountain, which is 4080
-The music that fits under the larger sub-genre of political hip hop, which was inspired by The Last Poets and
-Based on the information provided, it is difficult to determine which genus, Mahonia or Diplazium, has more species
-Carmen is a tragedy.
-Neither Craig Melville nor Grover Jones were born in Indiana.
-Andre Agassi was born first.
-Thomas Newman is known for composing American Beauty: Original Motion Picture Score and many other film scores.
-No, the documentaries "Out of Place" and "The Mosuo Sisters" are not by the same director.
-The device that is similar to Princess max was released in Japan.
-Based on the information provided, 270 Park Avenue is used for more different uses compared to MiMA. 2
-The eldest brother of the Mexican drug trafficker born on 12 March 1952 is Eduardo
-The coastal area that the medieval fortress in Dirleton, East Lothian, Scotland borders on the south side
-Gawvi was born first.
-Gregg Berhalter, the head coach of Columbus Crew SC, was born on August 1, 1
-Henry John Kaiser, an American industrialist, is known as the father of modern American shipbuilding. He founded Kaiser Ventures
-According to the 2001 census, the population of the city in which Kirton End is located was 3
-The size of the 1700 Cascadia earthquake predicted by Kenji Satake was
-The journal that Michel Feher semi-regularly blogs for is published in French.
-"In a Better World" is the Danish drama thriller film produced by Sisse Graum Jørgensen.
-The 1948 Commonwealth Prime Ministers' Conference was hosted by the Prime Minister from the British Labour party, Clement
-Based on the provided information, Hans Florian Zimmer has composed music for over 150 films since the 1
-Sir Charles Benedict Ainslie.
-正在评估:  59%|█████▉    | 594/1000 [08:18<05:41,  1.19it/s]正在评估:  60%|█████▉    | 595/1000 [08:19<05:52,  1.15it/s]正在评估:  60%|█████▉    | 596/1000 [08:20<06:00,  1.12it/s]正在评估:  60%|█████▉    | 597/1000 [08:20<05:46,  1.16it/s]正在评估:  60%|█████▉    | 598/1000 [08:21<05:46,  1.16it/s]正在评估:  60%|█████▉    | 599/1000 [08:22<05:54,  1.13it/s]正在评估:  60%|██████    | 600/1000 [08:23<05:48,  1.15it/s]正在评估:  60%|██████    | 601/1000 [08:24<05:06,  1.30it/s]正在评估:  60%|██████    | 602/1000 [08:25<05:28,  1.21it/s]正在评估:  60%|██████    | 603/1000 [08:25<05:32,  1.20it/s]正在评估:  60%|██████    | 604/1000 [08:26<04:51,  1.36it/s]正在评估:  60%|██████    | 605/1000 [08:26<04:20,  1.52it/s]正在评估:  61%|██████    | 606/1000 [08:27<04:17,  1.53it/s]正在评估:  61%|██████    | 607/1000 [08:28<04:20,  1.51it/s]正在评估:  61%|██████    | 608/1000 [08:29<04:53,  1.33it/s]正在评估:  61%|██████    | 609/1000 [08:30<05:18,  1.23it/s]正在评估:  61%|██████    | 610/1000 [08:30<05:08,  1.27it/s]正在评估:  61%|██████    | 611/1000 [08:31<05:24,  1.20it/s]正在评估:  61%|██████    | 612/1000 [08:32<05:28,  1.18it/s]正在评估:  61%|██████▏   | 613/1000 [08:33<05:04,  1.27it/s]正在评估:  61%|██████▏   | 614/1000 [08:33<04:32,  1.42it/s]正在评估:  62%|██████▏   | 615/1000 [08:34<04:38,  1.38it/s]正在评估:  62%|██████▏   | 616/1000 [08:35<04:54,  1.30it/s]正在评估:  62%|██████▏   | 617/1000 [08:36<05:18,  1.20it/s]正在评估:  62%|██████▏   | 618/1000 [08:37<05:31,  1.15it/s]正在评估:  62%|██████▏   | 619/1000 [08:38<05:08,  1.23it/s]正在评估:  62%|██████▏   | 620/1000 [08:38<05:08,  1.23it/s]正在评估:  62%|██████▏   | 621/1000 [08:39<05:09,  1.22it/s]正在评估:  62%|██████▏   | 622/1000 [08:40<04:51,  1.30it/s]正在评估:  62%|██████▏   | 623/1000 [08:41<04:37,  1.36it/s]正在评估:  62%|██████▏   | 624/1000 [08:41<04:59,  1.26it/s]正在评估:  62%|██████▎   | 625/1000 [08:42<05:00,  1.25it/s]正在评估:  63%|██████▎   | 626/1000 [08:43<04:53,  1.27it/s]正在评估:  63%|██████▎   | 627/1000 [08:44<04:53,  1.27it/s]正在评估:  63%|██████▎   | 628/1000 [08:45<05:10,  1.20it/s]正在评估:  63%|██████▎   | 629/1000 [08:45<04:52,  1.27it/s]正在评估:  63%|██████▎   | 630/1000 [08:46<04:26,  1.39it/s]正在评估:  63%|██████▎   | 631/1000 [08:47<04:47,  1.28it/s]正在评估:  63%|██████▎   | 632/1000 [08:48<05:06,  1.20it/s]正在评估:  63%|██████▎   | 633/1000 [08:49<05:20,  1.15it/s]正在评估:  63%|██████▎   | 634/1000 [08:50<05:03,  1.21it/s]正在评估:  64%|██████▎   | 635/1000 [08:50<05:04,  1.20it/s]正在评估:  64%|██████▎   | 636/1000 [08:51<05:19,  1.14it/s]正在评估:  64%|██████▎   | 637/1000 [08:52<04:58,  1.22it/s]正在评估:  64%|██████▍   | 638/1000 [08:53<05:00,  1.20it/s]正在评估:  64%|██████▍   | 639/1000 [08:54<04:43,  1.28it/s]正在评估:  64%|██████▍   | 640/1000 [08:55<04:54,  1.22it/s]正在评估:  64%|██████▍   | 641/1000 [08:55<05:01,  1.19it/s]正在评估:  64%|██████▍   | 642/1000 [08:56<05:08,  1.16it/s]正在评估:  64%|██████▍   | 643/1000 [08:57<05:08,  1.16it/s]正在评估:  64%|██████▍   | 644/1000 [08:58<05:11,  1.14it/s]正在评估:  64%|██████▍   | 645/1000 [08:59<04:40,  1.26it/s]正在评估:  65%|██████▍   | 646/1000 [09:00<04:43,  1.25it/s]正在评估:  65%|██████▍   | 647/1000 [09:00<04:58,  1.18it/s]正在评估:  65%|██████▍   | 648/1000 [09:01<05:06,  1.15it/s]正在评估:  65%|██████▍   | 649/1000 [09:02<04:52,  1.20it/s]正在评估:  65%|██████▌   | 650/1000 [09:03<05:01,  1.16it/s]正在评估:  65%|██████▌   | 651/1000 [09:04<04:36,  1.26it/s]正在评估:  65%|██████▌   | 652/1000 [09:05<04:42,  1.23it/s]正在评估:  65%|██████▌   | 653/1000 [09:05<04:42,  1.23it/s]正在评估:  65%|██████▌   | 654/1000 [09:06<04:56,  1.17it/s]正在评估:  66%|██████▌   | 655/1000 [09:07<04:36,  1.25it/s]正在评估:  66%|██████▌   | 656/1000 [09:08<04:51,  1.18it/s]正在评估:  66%|██████▌   | 657/1000 [09:09<04:40,  1.22it/s]正在评估:  66%|██████▌   | 658/1000 [09:10<04:45,  1.20it/s]正在评估:  66%|██████▌   | 659/1000 [09:10<04:42,  1.21it/s]正在评估:  66%|██████▌   | 660/1000 [09:11<04:40,  1.21it/s]正在评估:  66%|██████▌   | 661/1000 [09:12<04:46,  1.18it/s]正在评估:  66%|██████▌   | 662/1000 [09:13<04:55,  1.14it/s]正在评估:  66%|██████▋   | 663/1000 [09:14<04:18,  1.30it/s]正在评估:  66%|██████▋   | 664/1000 [09:15<04:37,  1.21it/s]正在评估:  66%|██████▋   | 665/1000 [09:15<04:06,  1.36it/s]正在评估:  67%|██████▋   | 666/1000 [09:16<04:24,  1.26it/s]正在评估:  67%|██████▋   | 667/1000 [09:17<04:20,  1.28it/s]正在评估:  67%|██████▋   | 668/1000 [09:17<03:46,  1.47it/s]正在评估:  67%|██████▋   | 669/1000 [09:18<04:18,  1.28it/s]正在评估:  67%|██████▋   | 670/1000 [09:19<04:33,  1.21it/s]正在评估:  67%|██████▋   | 671/1000 [09:20<04:25,  1.24it/s]正在评估:  67%|██████▋   | 672/1000 [09:21<04:39,  1.17it/s]正在评估:  67%|██████▋   | 673/1000 [09:22<04:45,  1.14it/s]正在评估:  67%|██████▋   | 674/1000 [09:23<04:34,  1.19it/s]正在评估:  68%|██████▊   | 675/1000 [09:23<04:43,  1.15it/s]正在评估:  68%|██████▊   | 676/1000 [09:24<04:26,  1.21it/s]正在评估:  68%|██████▊   | 677/1000 [09:25<04:32,  1.18it/s]正在评估:  68%|██████▊   | 678/1000 [09:26<03:54,  1.37it/s]正在评估:  68%|██████▊   | 679/1000 [09:26<04:09,  1.29it/s]正在评估:  68%|██████▊   | 680/1000 [09:27<04:30,  1.18it/s]正在评估:  68%|██████▊   | 681/1000 [09:28<03:38,  1.46it/s]正在评估:  68%|██████▊   | 682/1000 [09:29<03:53,  1.36it/s]正在评估:  68%|██████▊   | 683/1000 [09:30<04:17,  1.23it/s]正在评估:  68%|██████▊   | 684/1000 [09:30<04:21,  1.21it/s]正在评估:  68%|██████▊   | 685/1000 [09:31<04:27,  1.18it/s]正在评估:  69%|██████▊   | 686/1000 [09:32<04:27,  1.17it/s]正在评估:  69%|██████▊   | 687/1000 [09:33<04:21,  1.20it/s]正在评估:  69%|██████▉   | 688/1000 [09:34<04:23,  1.18it/s]正在评估:  69%|██████▉   | 689/1000 [09:35<04:27,  1.16it/s]正在评估:  69%|██████▉   | 690/1000 [09:35<04:07,  1.25it/s]正在评估:  69%|██████▉   | 691/1000 [09:36<04:22,  1.18it/s]正在评估:  69%|██████▉   | 692/1000 [09:37<04:28,  1.14it/s]正在评估:  69%|██████▉   | 693/1000 [09:38<04:21,  1.18it/s]正在评估:  69%|██████▉   | 694/1000 [09:39<04:21,  1.17it/s]正在评估:  70%|██████▉   | 695/1000 [09:39<03:47,  1.34it/s]正在评估:  70%|██████▉   | 696/1000 [09:40<03:44,  1.35it/s]正在评估:  70%|██████▉   | 697/1000 [09:41<03:36,  1.40it/s]正在评估:  70%|██████▉   | 698/1000 [09:42<04:01,  1.25it/s]正在评估:  70%|██████▉   | 699/1000 [09:43<04:08,  1.21it/s]正在评估:  70%|███████   | 700/1000 [09:44<04:20,  1.15it/s]Based on the information provided, One Manhattan Square will be higher than Time Warner Center. One Manhattan Square is a resident
-Haier has North American rights to GE Appliances, which is headquartered in Louisville, Kentucky.
-The journal that Simone de Beauvoir's partner would be called "The Ethics of Ambiguity."
-The Lawton–Fort Sill Regional Airport is situated in the state of Oklahoma.
-Ethel Winter worked with Jean Erdman, an American dancer and choreographer of modern dance and avant-gar
-No, the libretto of Tristan und Isolde and Ariane et Barbe-bleue are not in the
-Laysan Island is located 808 nmi northwest of the capital of Hawaii.
-Waylon J. Smithers Jr.
-Joan Feynman, the younger sister of physicist Richard Feynman, made important contributions to the study of solar
-The company that owns the ThanKing Horse pub restaurant chain is based in Bury St Edmunds, Su
-Jason Gould.
-Les Miles
-Palm Springs is near West Palm Beach.
-Gunsmoke is a TV series created by John Meston.
-The animated movie that starred Danny DeVito and featured music written and produced by Kool Kojak is "
-Turner Field was originally built as the 85,000-seat main stadium for the 19
-No, Skin Yard and Ostava were not from the U.S.
-The hotel that is home to the Cirque du Soleil show Mystere has 2,664 rooms.
-The capacity of the venue for the 2014 FIBA Basketball World Cup Final was 15,0
-Emmanuelle Vaugier played a supporting role in the horror genre.
-The Agronomist was created first.
-The drummer of Torment is involved with National Socialist black metal ideology.
-Thomas J. Connolly was born on September 25, 1957.
-Based on the information provided, the manga inspired by Keitaro Arima is "Love Hina." The main
-Lai Shiu Wing team competes in various competitions such as the FIFA World Cup, AFC Asian Cup, and
-The population of the city where the Akademisches Kunstmuseum is located is over 300,000.
-The Florida Senate, which Ken Pruitt was a member of, has 40 members.
-Both Dahlia and Aruncus are examples of herbaceous perennial plants.
-Yes, Ari Up and Boz Burrell are both guitarists.
-"Battlestar Galactica".
-The lake that is near Wyee Point is Lake Macquarie, which covers an area of 110 km2
-The band that sang "Gives You Hell" formed in 1999.
-"The Best Offer" by Giuseppe Tornatore was written and directed in Italian.
-Yes, both The Stuff of Legend and Babes in Toyland are entertainment.
-The singer of the song "I Want a Hippopotamus for Christmas" that peaked at number
-Both Markus Feehily and Bobby Fuller were singers.
-Hydrangea has more species than Abrus.
-During the period known as the Second Red Scare, Alexander Trachtenberg was convicted under the Act of 19
-Calloway County, in which Kentucky's 20th-largest city is located, was founded in November
-The tour for the album "Red" by Taylor Swift began on March 13, 2013.
-Hope Solo, the American soccer goalkeeper, won two Olympic gold medals.
-Charlotte Hatherley initially came to prominence in a band formed in 1992.
-Phuture began a subgenre of house music called acid house, which spread to the United Kingdom and Europe. Acid
-Gauhar Ali and Iftikhar Ahmed are from Pakistan.
-Shin Hyun-joon was in the successful South Korean comedy sequel "Marrying the Mafia II"
-The band was formed in Wilmette, Illinois.
-The site where Operation Buster–Jangle was conducted is located in Nye County, Nevada.
-The comedian who starred in "Gone Are the Dayes" made his big break on "The Danny
-The film "wild combination" is about Arthur Russell, an American cellist, composer, producer, and singer.
-The 1932 Allan Cup was won by the Toronto National Sea Fleas, who went on to represent Canada
-Based on the information provided, Dalhousie University has more campuses than California State Polytechnic University, Pomona
-Virginia Woolf was born earlier than Emma Bull.
-Daniel Ricciardo won the 44-lap race for the Red Bull Racing team.
-Josephine Baker was the regular performer at the R-26 club in Paris known for her banana-themed
-Monty Stratton, also known as "Gander", was the MLB pitcher who was written about in "
-The headquarters for the service broadcaster the show Tenko is on is in London.
-The air-cooled version of the Vickers machine gun was found on the HMAS "Narani
-Sigmund Jähn went into space at a later date.
-Both Ithu Engal Neethi and Shoba Chandrasekhar are associated with the film industry, specifically
-Investing and value creation are the activities that Owner earnings and Warren Buffett have in common.
-Mike Leach, the coach of the "2008 Texas Tech Red Raiders football team," was born on
-Daniel Patrick Moynihan was elected more times than Dennis Kux.
-The film "First Knight" was being filmed at a studio located approximately 20 miles west of central London and
-Denis O'Hare appeared in the first season of American Horror Story.
-George Martin produced the song "Pipes of Peace" by Paul McCartney and Michael Jackson.
-Arshile Gorky had more career changes compared to Charles A. Agemian.
-Yes, both Basil Dean and Francis Ford Coppola were alive at some point in time.
-The role of William Vere Reeve King-Fane changes when he becomes the High Sheriff of Lincolnshire.
-The codex donated to the library of Exeter Cathedral by Leofric, the first bishop of Exeter,
-1987
-The media outlets were accused of having a pro-war basis during the months of March, April, and May of the
-Christianity Today magazine.
-The soccer team in Cason, CA that features the son of Roy Lassiter is the LA Galaxy.
-Beatrice Borromeo is a member of the ancient aristocratic House of Borromeo.
-Joey Wong.
-Based on the information provided, the actor who appeared on Charlotte's Shorts and Weeds was born in 19
-The name of the show that the man that was drafted eighth overall in the 1995 NFL Draft
-The sponsor of Driven To Perform includes the electronics store chain from Canada.
-Lever Brothers merged with Margarine Unie to form Unilever, and then established a soap factory in Indonesia
-Based on the information provided, it is not possible to determine the exact number of albums sold worldwide by the singer-song
-The comic book written by the writer of Crossed is Preacher.
-Stokely Webster's paintings can be found in Gracie Mansion, the official residence of the Mayor
-Sierra Nevada National Park is larger than Timanfaya National Park.
-Louis King directed the film that starred Steve Cochran and the actor who played Sheriff Roy Coffee in "
-Kete Krachi is a town in the Volta Region.
-Yes, Lance King and Han Seung-yeon are both heavy metal vocalists. Lance King is an American
-The infantry regiment featured in the 2006 film "Only the Brave" began in 194
-Tennis
-Based on the provided information, Wayne Boden was known to start killing first, followed by Ted Bundy.
-Based on the information provided, it is not possible to determine the exact number of marchers in the protest that Pelham D
-Based on the information provided, the online adult website Perfect 10 recognized Nikita Gross as their "Pet
-The composer for the music in the film "A Clockwork Orange" was born in Rhode Island.
-"My Sassy Girl" is a 2001 South Korean romantic comedy film directed by Kwak
-Yes, APB and Sleeper are both from Britain. APB is a Scottish post-punk band, while
-The series that Bradley Thompson started working on in 2014 premiered on FX.
-"Text Me Merry Christmas" is a song performed by Kristen Bell and a group that originated at Indiana University.
-The University of California, Santa Barbara was founded first.
-The successor to News Corporation following its split on 28 June 2013 that Paul Cheesbrough works
-Meghan Markle portrays Rachel Zane on the American legal comedy-drama "Suits" that air
-Alex Jesaulenko won The Goal of the Year award in 2001.
-Dylan Everett starred in the television show "Open Heart" in 2015.
-Stephen Sondheim
-Chandra Taal is farther west than Sheridan County, Montana.
-Tosca has more acts than Don Quichotte.
-The member of the British-American supergroup who recorded a version of Nobody's Child in 1990
-The producer of "World for Ransom" is notable for the 1974 film "The Apprentices
-Yakuza Kiwami is a remake of the first video game in the Yakuza series, which is an
-正在评估:  70%|███████   | 701/1000 [09:45<04:22,  1.14it/s]正在评估:  70%|███████   | 702/1000 [09:46<04:28,  1.11it/s]正在评估:  70%|███████   | 703/1000 [09:47<04:31,  1.10it/s]正在评估:  70%|███████   | 704/1000 [09:47<03:50,  1.28it/s]正在评估:  70%|███████   | 705/1000 [09:48<03:49,  1.29it/s]正在评估:  71%|███████   | 706/1000 [09:48<03:32,  1.39it/s]正在评估:  71%|███████   | 707/1000 [09:49<03:56,  1.24it/s]正在评估:  71%|███████   | 708/1000 [09:50<03:37,  1.34it/s]正在评估:  71%|███████   | 709/1000 [09:50<03:12,  1.51it/s]正在评估:  71%|███████   | 710/1000 [09:51<03:39,  1.32it/s]正在评估:  71%|███████   | 711/1000 [09:52<03:55,  1.22it/s]正在评估:  71%|███████   | 712/1000 [09:53<04:07,  1.16it/s]正在评估:  71%|███████▏  | 713/1000 [09:54<04:06,  1.17it/s]正在评估:  71%|███████▏  | 714/1000 [09:55<04:13,  1.13it/s]正在评估:  72%|███████▏  | 715/1000 [09:56<03:58,  1.19it/s]正在评估:  72%|███████▏  | 716/1000 [09:57<03:59,  1.19it/s]正在评估:  72%|███████▏  | 717/1000 [09:58<04:05,  1.15it/s]正在评估:  72%|███████▏  | 718/1000 [09:59<04:08,  1.14it/s]正在评估:  72%|███████▏  | 719/1000 [09:59<04:08,  1.13it/s]正在评估:  72%|███████▏  | 720/1000 [10:00<03:37,  1.29it/s]正在评估:  72%|███████▏  | 721/1000 [10:01<03:32,  1.31it/s]正在评估:  72%|███████▏  | 722/1000 [10:01<03:23,  1.37it/s]正在评估:  72%|███████▏  | 723/1000 [10:02<03:31,  1.31it/s]正在评估:  72%|███████▏  | 724/1000 [10:03<03:22,  1.37it/s]正在评估:  72%|███████▎  | 725/1000 [10:04<03:31,  1.30it/s]正在评估:  73%|███████▎  | 726/1000 [10:05<03:37,  1.26it/s]正在评估:  73%|███████▎  | 727/1000 [10:05<03:37,  1.25it/s]正在评估:  73%|███████▎  | 728/1000 [10:06<03:10,  1.43it/s]正在评估:  73%|███████▎  | 729/1000 [10:07<03:27,  1.31it/s]正在评估:  73%|███████▎  | 730/1000 [10:08<03:35,  1.25it/s]正在评估:  73%|███████▎  | 731/1000 [10:09<03:47,  1.18it/s]正在评估:  73%|███████▎  | 732/1000 [10:09<03:51,  1.16it/s]正在评估:  73%|███████▎  | 733/1000 [10:10<03:42,  1.20it/s]正在评估:  73%|███████▎  | 734/1000 [10:11<03:43,  1.19it/s]正在评估:  74%|███████▎  | 735/1000 [10:11<03:07,  1.42it/s]正在评估:  74%|███████▎  | 736/1000 [10:12<03:23,  1.30it/s]正在评估:  74%|███████▎  | 737/1000 [10:13<03:04,  1.43it/s]正在评估:  74%|███████▍  | 738/1000 [10:14<03:21,  1.30it/s]正在评估:  74%|███████▍  | 739/1000 [10:15<03:33,  1.22it/s]正在评估:  74%|███████▍  | 740/1000 [10:16<03:42,  1.17it/s]正在评估:  74%|███████▍  | 741/1000 [10:17<03:35,  1.20it/s]正在评估:  74%|███████▍  | 742/1000 [10:17<03:03,  1.41it/s]正在评估:  74%|███████▍  | 743/1000 [10:18<03:23,  1.26it/s]正在评估:  74%|███████▍  | 744/1000 [10:19<03:38,  1.17it/s]正在评估:  74%|███████▍  | 745/1000 [10:20<03:46,  1.13it/s]正在评估:  75%|███████▍  | 746/1000 [10:21<03:45,  1.12it/s]正在评估:  75%|███████▍  | 747/1000 [10:22<03:43,  1.13it/s]正在评估:  75%|███████▍  | 748/1000 [10:22<03:30,  1.20it/s]正在评估:  75%|███████▍  | 749/1000 [10:23<03:14,  1.29it/s]正在评估:  75%|███████▌  | 750/1000 [10:24<03:09,  1.32it/s]正在评估:  75%|███████▌  | 751/1000 [10:25<03:19,  1.25it/s]正在评估:  75%|███████▌  | 752/1000 [10:26<03:33,  1.16it/s]正在评估:  75%|███████▌  | 753/1000 [10:26<03:19,  1.24it/s]正在评估:  75%|███████▌  | 754/1000 [10:27<03:31,  1.16it/s]正在评估:  76%|███████▌  | 755/1000 [10:28<03:34,  1.14it/s]正在评估:  76%|███████▌  | 756/1000 [10:29<03:22,  1.20it/s]正在评估:  76%|███████▌  | 757/1000 [10:30<03:24,  1.19it/s]正在评估:  76%|███████▌  | 758/1000 [10:31<03:30,  1.15it/s]正在评估:  76%|███████▌  | 759/1000 [10:32<03:21,  1.20it/s]正在评估:  76%|███████▌  | 760/1000 [10:32<03:20,  1.20it/s]正在评估:  76%|███████▌  | 761/1000 [10:33<03:24,  1.17it/s]正在评估:  76%|███████▌  | 762/1000 [10:34<02:56,  1.35it/s]正在评估:  76%|███████▋  | 763/1000 [10:35<03:11,  1.24it/s]正在评估:  76%|███████▋  | 764/1000 [10:35<02:57,  1.33it/s]正在评估:  76%|███████▋  | 765/1000 [10:36<02:55,  1.34it/s]正在评估:  77%|███████▋  | 766/1000 [10:37<03:03,  1.27it/s]正在评估:  77%|███████▋  | 767/1000 [10:38<03:10,  1.22it/s]正在评估:  77%|███████▋  | 768/1000 [10:39<03:23,  1.14it/s]正在评估:  77%|███████▋  | 769/1000 [10:40<03:22,  1.14it/s]正在评估:  77%|███████▋  | 770/1000 [10:40<03:10,  1.21it/s]正在评估:  77%|███████▋  | 771/1000 [10:41<03:12,  1.19it/s]正在评估:  77%|███████▋  | 772/1000 [10:42<03:16,  1.16it/s]正在评估:  77%|███████▋  | 773/1000 [10:43<02:59,  1.26it/s]正在评估:  77%|███████▋  | 774/1000 [10:44<03:06,  1.21it/s]正在评估:  78%|███████▊  | 775/1000 [10:45<03:13,  1.16it/s]正在评估:  78%|███████▊  | 776/1000 [10:46<03:18,  1.13it/s]正在评估:  78%|███████▊  | 777/1000 [10:47<03:22,  1.10it/s]正在评估:  78%|███████▊  | 778/1000 [10:48<03:21,  1.10it/s]正在评估:  78%|███████▊  | 779/1000 [10:48<03:20,  1.10it/s]正在评估:  78%|███████▊  | 780/1000 [10:49<03:12,  1.14it/s]正在评估:  78%|███████▊  | 781/1000 [10:50<03:16,  1.11it/s]正在评估:  78%|███████▊  | 782/1000 [10:51<03:01,  1.20it/s]正在评估:  78%|███████▊  | 783/1000 [10:52<03:04,  1.17it/s]正在评估:  78%|███████▊  | 784/1000 [10:53<03:10,  1.13it/s]正在评估:  78%|███████▊  | 785/1000 [10:53<02:42,  1.32it/s]正在评估:  79%|███████▊  | 786/1000 [10:54<02:42,  1.31it/s]正在评估:  79%|███████▊  | 787/1000 [10:55<02:47,  1.27it/s]正在评估:  79%|███████▉  | 788/1000 [10:56<02:58,  1.19it/s]正在评估:  79%|███████▉  | 789/1000 [10:57<02:59,  1.17it/s]正在评估:  79%|███████▉  | 790/1000 [10:58<03:04,  1.14it/s]正在评估:  79%|███████▉  | 791/1000 [10:58<02:57,  1.18it/s]正在评估:  79%|███████▉  | 792/1000 [10:59<02:58,  1.16it/s]正在评估:  79%|███████▉  | 793/1000 [11:00<02:56,  1.17it/s]正在评估:  79%|███████▉  | 794/1000 [11:01<02:53,  1.19it/s]正在评估:  80%|███████▉  | 795/1000 [11:02<02:41,  1.27it/s]正在评估:  80%|███████▉  | 796/1000 [11:02<02:42,  1.25it/s]正在评估:  80%|███████▉  | 797/1000 [11:03<02:47,  1.21it/s]正在评估:  80%|███████▉  | 798/1000 [11:04<02:53,  1.16it/s]正在评估:  80%|███████▉  | 799/1000 [11:05<02:56,  1.14it/s]正在评估:  80%|████████  | 800/1000 [11:06<02:57,  1.13it/s]The lead developer for the game Black Crusade was Ross Watson, who was also the lead developer for Dark Heresy
-Based on the information provided, the genus Eschscholzia contains more species than the genus Ortegocactus
-The episode "Marry Me a Little, Marry Me a Little More" of the series "Will & Grace" was
-Charmian Carr.
-Based on the information provided, the genus Apium has more species than the genus Elodea. The genus Apium includes
-Joseph Campbell said "Follow your bliss."
-The girl born in 1987 who was a member of the group formed during the summer of 200
-Brassia is a type of herb.
-Philip K. Dick
-In the TV series "Kentucky Jones," Harry Morgan played the role of Seldom Jackson, a former jockey
-Based on the provided information, the Stanford Chaparral is older than Dime Magazine. The Stanford Chaparral
-The day of the horse race that ESPN covers both the post position draw and the undercard races is the first Saturday in
-The rap group that released the album "Future Rhythm" is from Oakland, California.
-The most famous statute at Po Lin Monastery, the Tian Tan Buddha, was built in 1
-Yes, Robert Wise had more award nominations than Zoltan Korda.
-The defending titlist of the 2009-10 Biathlon World Cup - Pursuit Men
-The man most well-known for hosting "The Late Late Show" from 1962 until 199
-The type of conflict that Nathaniel Starbuck and Bernard Cornwell have in common is the American Civil War.
-Yes, both Denzel Washington and David Hewlett are actors. Denzel Washington is an American actor, director, and
-Allure magazine was founded first.
-Ip Man 3 was released in 2015.
-"My Beautiful Dark Twisted Fantasy"
-Beaconsfield is the satellite suburb of Melbourne that is partially included in the Electoral district of Bass.
-Matt Herr was raised in Alpine, New Jersey.
-Based on the information provided, Ken Kwapis has directed more films than Jon Paul Puno. Ken Kwapis has
-The award-winning fantasy adventure novel "The Giant Under The Snow" was published in 196
-The city located near the historical region known as Margianḗ in Greek is Merv.
-David Dunn.
-The novella "The Turn of the Screw" by Henry James was published in 1898, which
-Mike Holmgren was the team president of the 2012 Cleveland Browns.
-During their 1990–91 season, the New Jersey Nets acquired Dražen Petrović from the
-In 2011, the estimated population of the city from which Numidia TV broadcasts was around 3,
-Merck & Co., Inc. is the American maker of Robatumumab.
-Yes, Stanley Kubrick and Elio Petri were from different countries. Stanley Kubrick was from the United States, while
-National Treasure
-Jaguar Land Rover Automotive PLC has its headquarters in Whitley, Coventry, United Kingdom.
-Aamir Khan.
-The A5117 runs between Shotwick and Helsby, a village with a 2011 population
-The rock band that sang "All Join Hands" rose to prominence in the late 1960
-The remote wild beach on the seventh largest inhabited island in Hawaii is Polihale State Park. This information is
-A luxury goods company on Northern Boulevard in the Miracle Mile is Hermes.
-Tony Ducks
-The author of Anastasia on Her Own, Lois Lowry, won the 2002 Rhode
-The dish that emerged in the late 1950s and is a long-standing tradition in New Jersey
-The 2014 FIFA World Cup was hosted in Brazil, where Algeria qualified for the first time into the
-The defending EFL Championship winner will qualify for the 2018-19 UEFA Europa League group stage
-The album "Back Up n da Chevy" was by the rap group Boyz n da Hood from Atlanta, Georgia
-Juan Martín del Potro is an Argentinian professional tennis player.
-Yes, I can read both Bicycling and National Review.
-Bosco Wong will star in "Heart and Greed".
-No, Zaza Pachulia did not win an NBA Championship with the Atlanta Hawks.
-Based on the information provided, the answer is that the producer of "Live By Night" began his film career playing the role
-Kansas Joe McCoy and Memphis Minnie.
-"The Highwayman" is the song written by Jimmy Webb that inspired the name of a supergroup including Johnny Cash
-Yes, both Korematsu v. United States and Chaplinsky v. New Hampshire cases regard the rights of
-Northwestern University has a campus outside of the United States territories.
-No, Will Durant and Margaret Mitchell were not both philosophical writers. Will Durant was a writer and historian, known for his
-Guns N' Roses performed a promo for a movie starring Arnold Schwarzenegger as a former New York
-Leonty Magnitsky and Leonid Khachiyan are both mathematicians.
-Before I Go to Sleep stars Nicole Kidman, an Australian actress, producer, and occasional singer.
-Luis Gianneo was the teacher of Ariel Ramírez, who was a chief exponent of Argentine folk music.
-David Weissman.
-The Atlanta Zero Mile Post is located within a historic area that was opened in 1969. This information is
-George Bernard Shaw had more influence on turn of the century literature.
-Curt Smith has released more solo albums than Ozzy Osbourne.
-Roominate got an investment from Mark Cuban and Lori Greiner during the sixth season of "Shark T
-Based on the information provided, the ethnicity of the American professional baseball right fielder born in 1987
-Yes, Marilyn Manson and Joe Lynn Turner are both American singer, songwriters. Marilyn M
-Yes, both Roger Waters and Tom Johnston are musicians. Roger Waters is an English singer, songwriter,
-Essie Davis played Amelia Vanek in the film adaptation of Monster.
-The name of the mountains near the autonomous community where Felipe Alcaraz was born is Sierra Nevada.
-The Taipa island is part of Macau, which is a special administrative region of the People's Republic of China
-The Battle of Antietam came first.
-The 2017 Chinese television series "The Legend of the Condor Heroes" was directed by Jeffrey
-Adam Silver is the current commissioner of the NBA, after succeeding David Stern in 2014.
-The film starring Hugh Jackman, Jake Gyllenhaal, and an actress appearing in "The Cool
-The likelihood of collaboration on a William Shakespeare Play written between 1588 and 1593 is supported
-Based on the information provided, Raymond Pearl, the person who established the Human Biology journal, had released 84
-The Russian film industry would have films in which Ilya Khrzhanovsky would be the director.
-"Following The Simple Things" is a featurette directed by Burny Mattinson.
-Wardruna performed on the album "Runaljod - Ragnarok" and in the film "Flu
-Based on the information provided, it can be concluded that the genus Leitneria has more species than the genus Tricy
-The location where ROH 13th Anniversary Show took place is owned and operated by Boyd Gaming.
-The American cartoonist, writer, producer, animator, and voice actor that worked with the multiple Shuster Award,
-Cameron Muncey
-Billie Joe Armstrong and Frank Iero were involved with punk rock music.
-The English rock band from Lowestoft, Suffolk, is The Darkness.
-Alexander Petrovich Nikolayev received the title Hero of the Soviet Union and the Order of Lenin for his actions during
-Based on the information provided, the team based in South Wales that participated in the final game of the 1980
-Actor David Lee Stenstrom played the character Waldo the inventor in a TV show that ran on Nickelode
-The theater where the London Philharmonic Orchestra plays was designed by Frank Matcham.
-Toni Braxton: Revealed was performed at a hotel and casino owned and operated by Caesars Entertainment
-The former name of the stadium where the OFC U-20 Championship was played in 1986 was
-Bonnie Franklin starred as a divorced mother in the American sitcom "One Day at a Time."
-Ian Schneider had more diverse job experiences compared to Frederick King Keller.
-Based on the information provided, the actor who co-starred with Joe Chen and Jia Nailiang in "
-Emilie du Chatelet, through her translation and commentary on Isaac Newton's "Principia," contributed
-The filmmaker featured in the Collective for Living Cinema of Lower Manhattan was Dziga Vertov, also known
-The nationality of the foreign-born victim of Singapore's caning punishment before Oliver Fricker experienced the same is
-The international football team that has had a player endorse the "Nike Hypervenom" football boot is Liverpool.
-正在评估:  80%|████████  | 801/1000 [11:07<03:01,  1.10it/s]正在评估:  80%|████████  | 802/1000 [11:08<03:00,  1.10it/s]正在评估:  80%|████████  | 803/1000 [11:09<02:53,  1.14it/s]正在评估:  80%|████████  | 804/1000 [11:10<02:53,  1.13it/s]正在评估:  80%|████████  | 805/1000 [11:10<02:51,  1.13it/s]正在评估:  81%|████████  | 806/1000 [11:11<02:54,  1.11it/s]正在评估:  81%|████████  | 807/1000 [11:12<02:58,  1.08it/s]正在评估:  81%|████████  | 808/1000 [11:13<02:52,  1.11it/s]正在评估:  81%|████████  | 809/1000 [11:14<02:38,  1.21it/s]正在评估:  81%|████████  | 810/1000 [11:15<02:31,  1.25it/s]正在评估:  81%|████████  | 811/1000 [11:15<02:24,  1.30it/s]正在评估:  81%|████████  | 812/1000 [11:16<02:35,  1.21it/s]正在评估:  81%|████████▏ | 813/1000 [11:17<02:16,  1.37it/s]正在评估:  81%|████████▏ | 814/1000 [11:18<02:26,  1.27it/s]正在评估:  82%|████████▏ | 815/1000 [11:19<02:33,  1.20it/s]正在评估:  82%|████████▏ | 816/1000 [11:20<02:34,  1.19it/s]正在评估:  82%|████████▏ | 817/1000 [11:20<02:23,  1.28it/s]正在评估:  82%|████████▏ | 818/1000 [11:21<02:14,  1.36it/s]正在评估:  82%|████████▏ | 819/1000 [11:21<02:11,  1.37it/s]正在评估:  82%|████████▏ | 820/1000 [11:22<02:22,  1.27it/s]正在评估:  82%|████████▏ | 821/1000 [11:23<02:30,  1.19it/s]正在评估:  82%|████████▏ | 822/1000 [11:24<02:20,  1.26it/s]正在评估:  82%|████████▏ | 823/1000 [11:25<02:28,  1.19it/s]正在评估:  82%|████████▏ | 824/1000 [11:26<02:29,  1.18it/s]正在评估:  82%|████████▎ | 825/1000 [11:27<02:30,  1.16it/s]正在评估:  83%|████████▎ | 826/1000 [11:28<02:30,  1.16it/s]正在评估:  83%|████████▎ | 827/1000 [11:29<02:29,  1.15it/s]正在评估:  83%|████████▎ | 828/1000 [11:29<02:29,  1.15it/s]正在评估:  83%|████████▎ | 829/1000 [11:30<02:32,  1.12it/s]正在评估:  83%|████████▎ | 830/1000 [11:31<02:27,  1.15it/s]正在评估:  83%|████████▎ | 831/1000 [11:32<02:28,  1.14it/s]正在评估:  83%|████████▎ | 832/1000 [11:33<02:17,  1.22it/s]正在评估:  83%|████████▎ | 833/1000 [11:33<02:02,  1.37it/s]正在评估:  83%|████████▎ | 834/1000 [11:34<02:04,  1.34it/s]正在评估:  84%|████████▎ | 835/1000 [11:35<02:14,  1.23it/s]正在评估:  84%|████████▎ | 836/1000 [11:36<02:21,  1.16it/s]正在评估:  84%|████████▎ | 837/1000 [11:37<02:24,  1.13it/s]正在评估:  84%|████████▍ | 838/1000 [11:38<02:22,  1.14it/s]正在评估:  84%|████████▍ | 839/1000 [11:39<02:25,  1.11it/s]正在评估:  84%|████████▍ | 840/1000 [11:40<02:23,  1.12it/s]正在评估:  84%|████████▍ | 841/1000 [11:40<02:14,  1.18it/s]正在评估:  84%|████████▍ | 842/1000 [11:41<02:18,  1.14it/s]正在评估:  84%|████████▍ | 843/1000 [11:42<02:19,  1.12it/s]正在评估:  84%|████████▍ | 844/1000 [11:43<02:20,  1.11it/s]正在评估:  84%|████████▍ | 845/1000 [11:44<02:02,  1.27it/s]正在评估:  85%|████████▍ | 846/1000 [11:45<02:10,  1.18it/s]正在评估:  85%|████████▍ | 847/1000 [11:45<01:54,  1.34it/s]正在评估:  85%|████████▍ | 848/1000 [11:46<02:03,  1.24it/s]正在评估:  85%|████████▍ | 849/1000 [11:47<02:05,  1.20it/s]正在评估:  85%|████████▌ | 850/1000 [11:47<01:48,  1.38it/s]正在评估:  85%|████████▌ | 851/1000 [11:48<01:42,  1.45it/s]正在评估:  85%|████████▌ | 852/1000 [11:49<01:50,  1.34it/s]正在评估:  85%|████████▌ | 853/1000 [11:50<01:51,  1.32it/s]正在评估:  85%|████████▌ | 854/1000 [11:51<01:54,  1.27it/s]正在评估:  86%|████████▌ | 855/1000 [11:52<02:02,  1.19it/s]正在评估:  86%|████████▌ | 856/1000 [11:52<02:02,  1.18it/s]正在评估:  86%|████████▌ | 857/1000 [11:53<02:05,  1.14it/s]正在评估:  86%|████████▌ | 858/1000 [11:54<02:05,  1.13it/s]正在评估:  86%|████████▌ | 859/1000 [11:55<02:09,  1.09it/s]正在评估:  86%|████████▌ | 860/1000 [11:56<02:07,  1.10it/s]正在评估:  86%|████████▌ | 861/1000 [11:57<02:05,  1.11it/s]正在评估:  86%|████████▌ | 862/1000 [11:58<02:06,  1.09it/s]正在评估:  86%|████████▋ | 863/1000 [11:59<01:52,  1.21it/s]正在评估:  86%|████████▋ | 864/1000 [11:59<01:51,  1.22it/s]正在评估:  86%|████████▋ | 865/1000 [12:00<01:49,  1.23it/s]正在评估:  87%|████████▋ | 866/1000 [12:01<01:48,  1.24it/s]正在评估:  87%|████████▋ | 867/1000 [12:02<01:40,  1.32it/s]正在评估:  87%|████████▋ | 868/1000 [12:03<01:45,  1.25it/s]正在评估:  87%|████████▋ | 869/1000 [12:03<01:32,  1.42it/s]正在评估:  87%|████████▋ | 870/1000 [12:04<01:40,  1.29it/s]正在评估:  87%|████████▋ | 871/1000 [12:05<01:45,  1.22it/s]正在评估:  87%|████████▋ | 872/1000 [12:06<01:50,  1.16it/s]正在评估:  87%|████████▋ | 873/1000 [12:07<01:46,  1.19it/s]正在评估:  87%|████████▋ | 874/1000 [12:07<01:37,  1.29it/s]正在评估:  88%|████████▊ | 875/1000 [12:08<01:30,  1.38it/s]正在评估:  88%|████████▊ | 876/1000 [12:09<01:38,  1.26it/s]正在评估:  88%|████████▊ | 877/1000 [12:09<01:26,  1.42it/s]正在评估:  88%|████████▊ | 878/1000 [12:10<01:33,  1.31it/s]正在评估:  88%|████████▊ | 879/1000 [12:11<01:37,  1.24it/s]正在评估:  88%|████████▊ | 880/1000 [12:12<01:39,  1.20it/s]正在评估:  88%|████████▊ | 881/1000 [12:13<01:42,  1.16it/s]正在评估:  88%|████████▊ | 882/1000 [12:14<01:42,  1.15it/s]正在评估:  88%|████████▊ | 883/1000 [12:15<01:38,  1.18it/s]正在评估:  88%|████████▊ | 884/1000 [12:16<01:39,  1.16it/s]正在评估:  88%|████████▊ | 885/1000 [12:17<01:42,  1.12it/s]正在评估:  89%|████████▊ | 886/1000 [12:17<01:43,  1.10it/s]正在评估:  89%|████████▊ | 887/1000 [12:18<01:44,  1.08it/s]正在评估:  89%|████████▉ | 888/1000 [12:19<01:24,  1.32it/s]正在评估:  89%|████████▉ | 889/1000 [12:20<01:29,  1.24it/s]正在评估:  89%|████████▉ | 890/1000 [12:21<01:33,  1.18it/s]正在评估:  89%|████████▉ | 891/1000 [12:21<01:26,  1.26it/s]正在评估:  89%|████████▉ | 892/1000 [12:22<01:18,  1.38it/s]正在评估:  89%|████████▉ | 893/1000 [12:23<01:25,  1.24it/s]正在评估:  89%|████████▉ | 894/1000 [12:24<01:27,  1.21it/s]正在评估:  90%|████████▉ | 895/1000 [12:24<01:23,  1.26it/s]正在评估:  90%|████████▉ | 896/1000 [12:25<01:26,  1.20it/s]正在评估:  90%|████████▉ | 897/1000 [12:26<01:29,  1.16it/s]正在评估:  90%|████████▉ | 898/1000 [12:27<01:29,  1.14it/s]正在评估:  90%|████████▉ | 899/1000 [12:28<01:28,  1.14it/s]正在评估:  90%|█████████ | 900/1000 [12:29<01:28,  1.13it/s]正在评估:  90%|█████████ | 901/1000 [12:30<01:29,  1.10it/s]正在评估:  90%|█████████ | 902/1000 [12:31<01:29,  1.09it/s]Blender is the magazine that listed "Jump Around" by House of Pain at 325 out of
-The M104 155mm Projectile was specifically designed to carry about 11.7 pounds of
-Cedric the Entertainer hosted the Black Movie Awards in 2005.
-Based on the information provided, Luxembourg has three official languages: Luxembourgish, French, and German. This is supported
-Giovanni Carmazzi was a backup quarterback for the San Francisco 49ers.
-No, Holland's Magazine and Moondance did not both begin in 1996. According to the provided
-During his rookie season, the NBA player who visited Tlacote el Bajo, Magic Johnson, won a championship
-Frank Borzage is the director of the Hollywood film "7th Heaven" (1927).
-The Black Mouth Cur has origins outside of the United States.
-The American film actor who produced Stephen Susco's movie is Sam Raimi.
-The single-engine BAE Systems Hawk was operated by the Royal Navy.
-The prize won in 1963 by the physicist who was part of the Princeton Three was the
-Marino Girolami was born first.
-Budweiser was competing with Stroh's beer, as Stroh's had its own character
-The wide receiver for the Toronto Argonauts, who played college football for a team that represents the University of Oklahoma, belongs
-Petrus van Hooijdonk competed in the 1998 FIFA World Cup in France.
-Both S. Sylvan Simon and Danny Cannon are film directors.
-Kilobaud Microcomputing ran for only one year.
-The nationality of the most successful female ski racer ever is Swiss.
-No, both Pomeranian and Sporting Lucas Terrier are not named after a particular person. The Pomeran
-David Chanoff collaborated with Admiral William J. Crowe Jr., who served as the ambassador to the United
-Stan Brakhage was a non-narrative filmmaker.
-It is estimated that approximately 5.3 million Italians immigrated to the United States between 182
-Based on the provided information, Gary Cole's character is based on various fictional characters such as Robert "Bob" Russell
-The 2014–15 UEFA Champions League knockout phase lead to the final of the 23rd
-The subject of the biography "Name Dropper" was born in 1961.
-No, Baiyin or Xinghua, Jiangsu is not a county-level city.
-The sedan variant of the Volvo V50 car was manufactured from 1995 to 201
-Nico van der Meel starred in the opera "The Rake's Progress" by Igor Stravinsky
-The port city that lies approximately 25 km north of the Lingnan Fine Arts Museum is most likely Szczyt
-Sara Symington competed in the 2000 Summer Olympic Games held in Sydney, Australia.
-A song that is released separately from an album.
-Terence Winter.
-The Honda H engine was introduced in 1990.
-Dan Scalco is best known as a contributing author for "Inc. Magazine," which is owned by Inc.
-Rear Admiral Alan Bartlett Shepard Jr. is known for the space mission Apollo 14.
-The late singer-songwriter who co-wrote "Born 2 B.R.E.E.D
-No, Pago Pago International Airport and Hoonah Airport are not both on American territory. Pago Pago International
-Jerry Tarkanian, the coach of the 1986-87 UNLV Runnin'
-Both Jerome Bernard and Ira Lewis have the film adaptation of "Chinese Coffee" in common.
-The Millennium Greens were funded in part by the National Lottery.
-The failed magazine that preceded and inspired the The Science Fiction League was "Amazing Stories".
-The We The People Amendment was introduced by the U.S. Representative for Minnesota's 8th con
-The lead singer of The Joggers is the son of an American chemist who received the highest Hirsch index rating of
-Jonghyun
-The director of Panic 5 Bravo, Kuno Becker, was born in 1968.
-Frank Sinatra
-Based on the information provided, The Lumineers has been around longer than Catfish and the Bottlemen.
-Vincent Drucci was a member of a rival gang to the mob boss known as Scarface.
-Planet Terror
-Kellyville Ridge is located in Sydney, Australia.
-The Cleveland Browns selected the quarterback in the 1999 NFL draft, two spots after All American Tim
-Martin O'Neill replaced the manager of Aston Villa that began at Leeds United.
-Pío Cabanillas Gallas and José María de Areilza were the leaders of the Liberal Citizens Action,
-Based on the information provided, it is not possible to determine the exact number of students who attend the Swiss University Philip Kraft has
-The statue whose replica has been created in many landmarks worldwide, including near Pont de Grenelle in Paris, is
-Based on the information provided, the focus city for Israel's third largest airline is located in Tel Aviv. This
-The Six Arms Saga was written by Stan Lee, who was the former editor-in-chief of Marvel Comics
-Based on the given information, Anthony Avent played basketball for Malcolm X Shabazz High School, which is located
-The TV show "The Middle" premiered on September 30, 2009.
-NGC 166 was located by an American astronomer named Francis Preserved Leavenworth in 1886
-Based on the provided information, the driver who placed third in the 2003 Italian Grand Prix has won at the
-James Worthy is older than Danny Green.
-Kyle York holds the position of Chief Strategy Officer at the internet performance management company Dyn.
-The German submarine U-505 was a Type IXC U-boat.
-The Basset Bleu de Gascogne and the Beagle are both breeds of dog.
-The Norrbottenspets came first.
-The last monarch of England to be overthrown before The English General Election, 1690 was James II
-Dallas, Texas
-The rectory of St. John of the Cross Episcopal Church was in a style that was a product of the Greek
-Based on the information provided, Daniel Greene has created portraits for a variety of clients, including sportscaster Bry
-The magazine that nominated George Rainsford for their Best Actor award in 2017 comes out every week on
-Yes, both Dutch Smoushond and Sussex Spaniel are dog breeds.
-Philip Cortez and Julian Castro are both Democrats.
-The Diplolaena is in the family Rutaceae.
-Fatma Lanouar is best known for winning gold in the women's 1500 meters event at
-District 65.
-The population of the birth city of Daniela Scalia is approximately 265,000.
-Johnny Mathis: Wonderful, Wonderful! was aired at the Tropicana Hotel in Atlantic City.
-The brother of Saulius Kuzminskas, Mindaugas Kuzminskas, plays at the small
-The early consumer co-operative, in which a 2012 British biographical feature film tells the story of
-The film that starred Michael Bean and was directed by Terry Gilliam was made in 2009.
-The boulevardier cocktail has a French nickname of "Bouche".
-Ulf Merbold was born first, in 1941, making him the oldest among the mentioned individuals.
-Stewart Nozette is currently serving time at the Federal Correctional Institution, Terre Haute, which is operated
-The term Pietro Colonna Galatino is sometimes referred to as the inventor of refers to the Latinized term Jehov
-The fight song of the university whose main campus is in Lawrence, Kansas and whose branch campuses are in the Kansas City metropol
-Dandong and Hotan are located in China.
-Claire Fraser is a strong-willed and resourceful character in the British-American television drama series "Out
-No, the bands "Black Grape" and "Balance and Composure" are not from the same country. "
-Sarah Price and Rob Schneider are both filmmakers.
-The film was set in rural Orissa.
-"Santa Bring My Baby Back" was released on the fourth Elvis studio album, "Elvis' Christmas Album
-The Siegfriedstellung in the First World War was a defensive position of the German army.
-Yes, both Joss Whedon and Norman Mailer were Americans.
-Anandji Virji Shah is the brother of Kalyanji Virji Shah who won the Filmfare Award for Best Music
-"White Horse" is the song co-written by Liz Rose that was released on December 7, 2
-The eldest daughter of Princess Louise of Denmark and Norway was the wife of a king whose motto was "God
-Sean Connor played for Distillery, Port Vale, Macclesfield Town, Ards, and Clifton
-Friedrich Hermann Hund is credited with creating the first rule of chemistry, known as Hund's Rule. This
-The nickname of the Command Module in the NASA mission where Moon trees were taken into space was "Kitty Hawk
-The football club owned by the singer of "Grow Some Funk of Your Own" is not mentioned in the provided
-正在评估:  90%|█████████ | 903/1000 [12:32<01:28,  1.09it/s]正在评估:  90%|█████████ | 904/1000 [12:33<01:29,  1.08it/s]正在评估:  90%|█████████ | 905/1000 [12:34<01:27,  1.09it/s]正在评估:  91%|█████████ | 906/1000 [12:35<01:28,  1.06it/s]正在评估:  91%|█████████ | 907/1000 [12:35<01:17,  1.20it/s]正在评估:  91%|█████████ | 908/1000 [12:36<01:20,  1.14it/s]正在评估:  91%|█████████ | 909/1000 [12:37<01:20,  1.12it/s]正在评估:  91%|█████████ | 910/1000 [12:38<01:20,  1.12it/s]正在评估:  91%|█████████ | 911/1000 [12:39<01:21,  1.09it/s]正在评估:  91%|█████████ | 912/1000 [12:40<01:20,  1.10it/s]正在评估:  91%|█████████▏| 913/1000 [12:41<01:18,  1.10it/s]正在评估:  91%|█████████▏| 914/1000 [12:42<01:16,  1.12it/s]正在评估:  92%|█████████▏| 915/1000 [12:43<01:15,  1.13it/s]正在评估:  92%|█████████▏| 916/1000 [12:43<01:15,  1.12it/s]正在评估:  92%|█████████▏| 917/1000 [12:44<01:16,  1.09it/s]正在评估:  92%|█████████▏| 918/1000 [12:45<01:07,  1.22it/s]正在评估:  92%|█████████▏| 919/1000 [12:46<01:08,  1.19it/s]正在评估:  92%|█████████▏| 920/1000 [12:46<00:59,  1.35it/s]正在评估:  92%|█████████▏| 921/1000 [12:47<01:01,  1.28it/s]正在评估:  92%|█████████▏| 922/1000 [12:48<01:02,  1.24it/s]正在评估:  92%|█████████▏| 923/1000 [12:49<01:04,  1.19it/s]正在评估:  92%|█████████▏| 924/1000 [12:50<01:06,  1.14it/s]正在评估:  92%|█████████▎| 925/1000 [12:51<01:08,  1.10it/s]正在评估:  93%|█████████▎| 926/1000 [12:52<01:07,  1.10it/s]正在评估:  93%|█████████▎| 927/1000 [12:53<01:00,  1.20it/s]正在评估:  93%|█████████▎| 928/1000 [12:53<00:55,  1.31it/s]正在评估:  93%|█████████▎| 929/1000 [12:54<00:56,  1.26it/s]正在评估:  93%|█████████▎| 930/1000 [12:54<00:47,  1.47it/s]正在评估:  93%|█████████▎| 931/1000 [12:55<00:52,  1.32it/s]正在评估:  93%|█████████▎| 932/1000 [12:56<00:54,  1.25it/s]正在评估:  93%|█████████▎| 933/1000 [12:57<00:47,  1.40it/s]正在评估:  93%|█████████▎| 934/1000 [12:58<00:52,  1.26it/s]正在评估:  94%|█████████▎| 935/1000 [12:59<00:52,  1.24it/s]正在评估:  94%|█████████▎| 936/1000 [13:00<00:55,  1.16it/s]正在评估:  94%|█████████▎| 937/1000 [13:00<00:45,  1.38it/s]正在评估:  94%|█████████▍| 938/1000 [13:01<00:48,  1.28it/s]正在评估:  94%|█████████▍| 939/1000 [13:02<00:46,  1.30it/s]正在评估:  94%|█████████▍| 940/1000 [13:02<00:40,  1.50it/s]正在评估:  94%|█████████▍| 941/1000 [13:03<00:44,  1.34it/s]正在评估:  94%|█████████▍| 942/1000 [13:04<00:39,  1.47it/s]正在评估:  94%|█████████▍| 943/1000 [13:04<00:34,  1.67it/s]正在评估:  94%|█████████▍| 944/1000 [13:05<00:37,  1.50it/s]正在评估:  94%|█████████▍| 945/1000 [13:06<00:39,  1.40it/s]正在评估:  95%|█████████▍| 946/1000 [13:07<00:41,  1.30it/s]正在评估:  95%|█████████▍| 947/1000 [13:07<00:42,  1.23it/s]正在评估:  95%|█████████▍| 948/1000 [13:08<00:38,  1.36it/s]正在评估:  95%|█████████▍| 949/1000 [13:09<00:33,  1.51it/s]正在评估:  95%|█████████▌| 950/1000 [13:09<00:31,  1.61it/s]正在评估:  95%|█████████▌| 951/1000 [13:10<00:34,  1.43it/s]正在评估:  95%|█████████▌| 952/1000 [13:11<00:36,  1.31it/s]正在评估:  95%|█████████▌| 953/1000 [13:11<00:32,  1.44it/s]正在评估:  95%|█████████▌| 954/1000 [13:12<00:32,  1.43it/s]正在评估:  96%|█████████▌| 955/1000 [13:13<00:34,  1.29it/s]正在评估:  96%|█████████▌| 956/1000 [13:14<00:36,  1.21it/s]正在评估:  96%|█████████▌| 957/1000 [13:15<00:37,  1.16it/s]正在评估:  96%|█████████▌| 958/1000 [13:16<00:37,  1.11it/s]正在评估:  96%|█████████▌| 959/1000 [13:17<00:38,  1.08it/s]正在评估:  96%|█████████▌| 960/1000 [13:17<00:33,  1.20it/s]正在评估:  96%|█████████▌| 961/1000 [13:18<00:33,  1.15it/s]正在评估:  96%|█████████▌| 962/1000 [13:19<00:31,  1.22it/s]正在评估:  96%|█████████▋| 963/1000 [13:20<00:26,  1.41it/s]正在评估:  96%|█████████▋| 964/1000 [13:20<00:23,  1.53it/s]正在评估:  96%|█████████▋| 965/1000 [13:21<00:25,  1.36it/s]正在评估:  97%|█████████▋| 966/1000 [13:22<00:25,  1.32it/s]正在评估:  97%|█████████▋| 967/1000 [13:23<00:27,  1.21it/s]正在评估:  97%|█████████▋| 968/1000 [13:24<00:27,  1.17it/s]正在评估:  97%|█████████▋| 969/1000 [13:25<00:26,  1.17it/s]正在评估:  97%|█████████▋| 970/1000 [13:26<00:25,  1.17it/s]正在评估:  97%|█████████▋| 971/1000 [13:26<00:21,  1.34it/s]正在评估:  97%|█████████▋| 972/1000 [13:27<00:22,  1.24it/s]正在评估:  97%|█████████▋| 973/1000 [13:28<00:22,  1.20it/s]正在评估:  97%|█████████▋| 974/1000 [13:29<00:22,  1.15it/s]正在评估:  98%|█████████▊| 975/1000 [13:30<00:21,  1.15it/s]正在评估:  98%|█████████▊| 976/1000 [13:31<00:21,  1.13it/s]正在评估:  98%|█████████▊| 977/1000 [13:31<00:20,  1.14it/s]正在评估:  98%|█████████▊| 978/1000 [13:32<00:19,  1.12it/s]正在评估:  98%|█████████▊| 979/1000 [13:33<00:19,  1.10it/s]正在评估:  98%|█████████▊| 980/1000 [13:34<00:16,  1.24it/s]正在评估:  98%|█████████▊| 981/1000 [13:35<00:15,  1.20it/s]正在评估:  98%|█████████▊| 982/1000 [13:35<00:14,  1.27it/s]正在评估:  98%|█████████▊| 983/1000 [13:36<00:11,  1.51it/s]正在评估:  98%|█████████▊| 984/1000 [13:36<00:09,  1.70it/s]正在评估:  98%|█████████▊| 985/1000 [13:37<00:10,  1.46it/s]正在评估:  99%|█████████▊| 986/1000 [13:38<00:10,  1.34it/s]正在评估:  99%|█████████▊| 987/1000 [13:39<00:10,  1.23it/s]正在评估:  99%|█████████▉| 988/1000 [13:40<00:09,  1.23it/s]正在评估:  99%|█████████▉| 989/1000 [13:40<00:08,  1.35it/s]正在评估:  99%|█████████▉| 990/1000 [13:41<00:07,  1.27it/s]正在评估:  99%|█████████▉| 991/1000 [13:42<00:07,  1.22it/s]正在评估:  99%|█████████▉| 992/1000 [13:43<00:06,  1.19it/s]正在评估:  99%|█████████▉| 993/1000 [13:44<00:06,  1.15it/s]正在评估:  99%|█████████▉| 994/1000 [13:45<00:05,  1.13it/s]正在评估: 100%|█████████▉| 995/1000 [13:46<00:04,  1.24it/s]正在评估: 100%|█████████▉| 996/1000 [13:47<00:03,  1.16it/s]正在评估: 100%|█████████▉| 997/1000 [13:47<00:02,  1.17it/s]正在评估: 100%|█████████▉| 998/1000 [13:48<00:01,  1.14it/s]正在评估: 100%|█████████▉| 999/1000 [13:49<00:00,  1.08it/s]正在评估: 100%|██████████| 1000/1000 [13:50<00:00,  1.11it/s]正在评估: 100%|██████████| 1000/1000 [13:50<00:00,  1.20it/s]
-Based on the information provided, Kasba Peth Vidhan Sabha constituency is an example of a language that ranks what
-Ships named after the King of Norway who ascended the throne in 1991 include Kronprins Har
-Based on the information provided, Hans Wilhelm Schlegel is the European Space Agency astronaut who flew more Space Shutt
-Troy McClure features in the series "The Simpsons" which is hosted by Troy McClure.
-Toby Scott worked with Bruce Springsteen.
-Recording sessions for the Michael Jackson hit "Beat It" took place at Westlake Recording Studios in Los Angeles
-Act 3 of the play where a character named Carlo Gérard is partly based on a revolutionary figure is the third
-"O for a Muse of Fire" is based on the events surrounding the Battle of Agincourt, as depicted in
-Based on the information provided, the most popular temple in terms of attractions is located in the western part of the city.
-Progress MS-09 was used to resupply the satellite that first launched into orbit in 1998.
-The film about the living funeral for Morrie Schwartz was directed by Mick Jackson. This information is based on
-Christian Sesma, Perry Bhandal, Ryan Little, Pearry Reginald Teo, and possibly John Werner and Amy
-Srivariki Premalekha is a movie based on the book "Premalekha," which is a novel
-Tony Roberts was replaced by Don Criqui as the play-by-play announcer for the Notre Dame Fighting
-The train that runs on the C&M subdivision and runs between Chicago and the Pacific Northwest serves two termini
-Herschell Gordon Lewis is considered a pioneer.
-The northern English Anglian Kingdom in the Humber estuary spoke the Northumbrian dialect of Old English.
-The Catholic Church in Ireland.
-Stone Brewing is a brewery headquartered in Escondido, California. It is the largest bre
-Yes, Pravda is a Russian broadsheet newspaper and Stiffelio is an opera by Giuseppe Verdi.
-Marko Tapani "Marco" Hietala was born on 14 January 1966 and
-Avril Lavigne, the singer who released the 2002 single "Sk8er Boi," has
-Jean-Marc Vallée directed the 2014 American biographical survival drama film "Wild." This
-The Swiss physicist who had a geometrical representation named after him worked in the field of theoretical particle physics and quantum field
-Denise Levertov was born earlier than Harvey Pekar.
-Truro Cathedral is located in Cornwall.
-The thriller genre is characterized by heightened feelings of suspense, excitement, surprise, anticipation, and anxiety
-England
-General Sam Houston led the Texian Army in the battle in which Joseph L. Bennett served as lieutenant colonel.
-Frankie Muniz starred in both "My Dog Skip" and "Malcolm in the Middle."
-The Battle of Wake Island.
-The astronomer who formulated the theory of stellar nucleosynthesis co-authored the BFH paper.
-The steamship company operated on the Australian coast for its first 100 years.
-The name of the son of the chief counsellor to the king in Hamlet is taken from Laertes,
-Bathurst
-The Bellagio resort owned by MGM Resorts international is located in Paradise, Nevada.
-The episode "A Rickle in Time" was directed by Wes Archer.
-Vanilla Air Inc.
-No, Ural Federal University and California State Polytechnic University, Pomona are not both public universities. According to
-Dancing with the Stars.
-CTV.
-The Italian physicist Carlo Rovelli has worked in France since 2000.
-Jim Nabors was the boyfriend of Thelma Lou in the series with Jim Nabors.
-Based on the information provided, the basketball team with which Louis Dunbar played, the Harlem Globetrotters,
-Kevin Scott Richardson, an American singer/songwriter and member of the Backstreet Boys, was inducted into the Kentucky
-The Atlantic Club Casino Hotel closed first.
-Brian Stokes Mitchell.
-Gatwick Airport.
-Emad Hashim was the Goalkeeper for Iraq in the 1996 AFC Asian Cup played in
-Román González became the first boxer to win world titles in all four of the lowest weight classes: minimumweight, light
-Kermit Washington.
-Arbutus and Aspidistra are both types of plants.
-The Little Missouri River rises west of a laccolithic butte that stands 867 feet from sum
-The software application originally made for the company that acquired RadioShack in 1963 is DeskMate.
-Matilda of Chester, Countess of Huntingdon's father was the son of Maud of Gloucester
-Based on the provided information, the football manager who played in the Football League Cup in 1985 and managed to
-Bully, in which Drew Gehling voices Gord, was released for PlayStation 2 on October 1
-Professional wrestler and mixed martial artist.
-According to the 2010 census, the population of the city in which Boyle's Thirty Acres
-The singer from the song "A Little Time" is from England.
-Kevin Spacey.
-Fulgencio Batista.
-The musical that was inspired by the films that included Ruth Leuwerik's best known role is "The Sound of
-The 50th Military Airlift Squadron was stationed at Hickam Air Force Base, Hawaii, which is
-The Tampa Bay Lightning drafted Kaspars Astasenko in 1999 and won the Stanley
-The Old Bushmills Distillery was in the process of transitioning from the ownership of Diageo plc, a
-The publication of Right On! ended first, followed by Castle of Frankenstein and Fire!!, with The Pitchf
-Yes, both Sound Team and Dead by Sunrise were formed before 2010.
-Blackpool Football Club.
-The Pappas house is the largest of the Usonian Automatics built after a house located in Libertyville
-Yes, both Yang Yo-seob and Kim Tae-yeon have appeared in group bands. Yang Yo
-The Peak Galleria is located near the summit of Victoria Peak, which has an elevation of 55
-The subfamily within the cat family Felidae named by Reginald Innes Pocock that is descendant of Pseudael
-D. Napier & Son Limited is the British engineering company best known for its luxury motor cars in the era of British
-The Italian surname Bellini is normally written after given names such as Giovanni, Antonio, and Giuseppe, as these are common given
-Richie Ginther was a teammate of several Formula One World Champions, including Emerson Fittipaldi,
-Spaceware Sky Division II is manufactured by Ordos City China Science Flying Universe Science and Technology Co., Ltd.,
-YIVO Institute for Jewish Research
-Based on the information provided, Phil Ruffin owned the Wichita Greyhound Park, which was located in Kansas
-Both Alfred Santell and David Fincher are film directors and producers.
-The Entity.
-Susan Choi
-A popular industry in the neighborhood of Willow Vale, New South Wales is the winery. This is supported by the
-The independent regional brewery that currently operates in Hasting's oldest pub was founded in 169
-Yes, Mirpur University of Science and Technology and University of Debrecen are both Universities located outside of the United States
-Based on the information provided, Cudjoe's leader was born in Jamaica.
-"One Night in Bangkok"
-The name for the adventure in "Tunnels and Trolls" is "Arena of Khazan
-The school in which the Wilmslow Show is held is designated as a Centre of Excellence.
-The congressional district that Hansen Clarke was a U.S. Representative for is in Wayne County, Michigan
-The major Roman road that connects to the port now in the "comune" of Bacoli was built in 9
-Marlins Park was LEED certified as the greenest MLB park in 2012.
-"An All-Colored Vaudeville Show"
-Based on the given information, the football club that Walter Otto Davis played for at centre forward was Millwall, founded in
-The river that runs near the tidal island of Eilean Tioram is the River Moidart.
-Based on the information provided, Evan Buliung played the character Aragon in the Toronto production of "Lord of
-The band whose bassist joined Arvas in 1996 was formed in 1993.
-Dana Fox wrote Tom Vaughan's popular 2008 film "What Happens in Vegas
-
-================================================================================
-评估结果:
-================================================================================
-exact_match: 0.0580
-f1: 0.2153
-accuracy: 0.4640
-================================================================================
