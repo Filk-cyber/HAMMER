@@ -17,16 +17,14 @@ hf_logging.set_verbosity_error()
 from utils.utils import *
 from utils.const import HF_TOKEN
 from retrievers.e5_mistral import get_e5_mistral_embeddings_for_query, get_e5_mistral_embeddings_for_document
-from retrievers.dragon_plus import get_dragon_plus_embeddings_for_query, get_dragon_plus_embeddings_for_document
-from retrievers.e5 import get_e5_embeddings_for_query, get_e5_embeddings_for_document
 
 tokenizer = None
 model = None
 token_id_to_choice_map = None
 choices_token_ids_list = None
 
-tokenizer_name_or_path = "/home/jiangjp/models/Meta-Llama-3-8B-Instruct"
-model_name_or_path = "/home/jiangjp/models/Meta-Llama-3-8B-Instruct"
+tokenizer_name_or_path = "Meta-Llama-3-8B-Instruct"
+model_name_or_path = "Meta-Llama-3-8B-Instruct"
 device = torch.device("cuda")
 
 
@@ -51,10 +49,7 @@ def setup_parser():
     parser.add_argument("--fake_num", type=int, default=1)
     parser.add_argument("--weight", type=float, default=0.9,
                         help="weight for similarity score in fusion score calculation (0.0-1.0)")
-    parser.add_argument("--Additive_Fusion", action="store_true",
-                        help="Run ablation study comparing Additive Fusion")
-    parser.add_argument("--Multiplicative_Fusion", action="store_true",
-                        help="Run ablation study comparing Multiplicative Fusion")
+
     args = parser.parse_args()
     return args
 
@@ -286,26 +281,14 @@ def construct_reasoning_chains(args, ideal_setting: bool = False):
         _, reasoning_chains_examplars = get_dataset_demonstrations(args.dataset)
         questions_in_examplars = [item["question"] for item in reasoning_chains_examplars]
         questions_in_data = [item["question"] for item in data]
-        if args.ranking_model == "e5_mistral":
-            print("Calculating E5-Mistral Embeddings of Questions in Prompts ... ")
-            questions_in_prompts_embeddings = get_e5_mistral_embeddings_for_document(questions_in_examplars,
-                                                                                     max_length=128, batch_size=2)
-            print("Calculating E5-Mistral Embeddings of Questions in Data ... ")
-            questions_in_data_embeddings = get_e5_mistral_embeddings_for_document(questions_in_data, max_length=128,
-                                                                                  batch_size=2)
-        elif args.ranking_model == "dragon_plus":
-            print("Calculating DRAGON+ Embeddings of Questions in Prompts ... ")
-            questions_in_prompts_embeddings = get_dragon_plus_embeddings_for_query(questions_in_examplars,
-                                                                                   max_length=128, batch_size=2)
-            print("Calculating DRAGON+ Embeddings of Questions in Data ... ")
-            questions_in_data_embeddings = get_dragon_plus_embeddings_for_query(questions_in_data, max_length=128,
-                                                                                batch_size=2)
-        elif args.ranking_model == "e5":
-            print("Calculating E5 Embeddings of Questions in Prompts ... ")
-            questions_in_prompts_embeddings = get_e5_embeddings_for_query(questions_in_examplars, max_length=128,
-                                                                          batch_size=2)
-            print("Calculating E5 Embeddings of Questions in Data ... ")
-            questions_in_data_embeddings = get_e5_embeddings_for_query(questions_in_data, max_length=128, batch_size=2)
+
+        print("Calculating E5-Mistral Embeddings of Questions in Prompts ... ")
+        questions_in_prompts_embeddings = get_e5_mistral_embeddings_for_document(questions_in_examplars,
+                                                                                 max_length=128, batch_size=2)
+        print("Calculating E5-Mistral Embeddings of Questions in Data ... ")
+        questions_in_data_embeddings = get_e5_mistral_embeddings_for_document(questions_in_data, max_length=128,
+                                                                              batch_size=2)
+
         similarities = torch.matmul(questions_in_data_embeddings, questions_in_prompts_embeddings.T)
         ranked_prompt_indices = torch.argsort(similarities, dim=1, descending=True)
         for example, one_ranked_prompt_indices in zip(data, ranked_prompt_indices):
@@ -334,13 +317,9 @@ def construct_reasoning_chains(args, ideal_setting: bool = False):
         truthful_scores_tensor = torch.tensor(truthful_scores, dtype=torch.bfloat16) / 10.0
         # Compute embeddings for all knowledge triples to enable similarity-based retrieval
         num_total_triples = len(triples)
-        if args.ranking_model == "e5_mistral":
-            triples_embeddings = get_e5_mistral_embeddings_for_document(triples, max_length=128, batch_size=2)
-        elif args.ranking_model == "dragon_plus":
-            triples_embeddings = get_dragon_plus_embeddings_for_document(triples, max_length=128, batch_size=2)
-        elif args.ranking_model == "e5":
-            triples_embeddings = get_e5_embeddings_for_document(triples, max_length=128, batch_size=2)
-        triples_embeddings = torch.nn.functional.normalize(triples_embeddings, p=2, dim=-1)
+        
+        triples_embeddings = get_e5_mistral_embeddings_for_document(triples, max_length=128, batch_size=2)
+
 
         # Initialize beam search with empty paths
         paths = [[]]
@@ -361,26 +340,18 @@ def construct_reasoning_chains(args, ideal_setting: bool = False):
             ]
 
             # Get embeddings for current path + question combinations
-            if args.ranking_model == "e5_mistral":
-                queries_embeddings = get_e5_mistral_embeddings_for_query("retrieve_relevant_triples", queries,
-                                                                         max_length=256, batch_size=1)
-            elif args.ranking_model == "dragon_plus":
-                queries_embeddings = get_dragon_plus_embeddings_for_query(queries, max_length=256, batch_size=2)
-            elif args.ranking_model == "e5":
-                queries_embeddings = get_e5_embeddings_for_query(queries, max_length=256, batch_size=2)
-            queries_embeddings = torch.nn.functional.normalize(queries_embeddings, p=2, dim=-1)
+            
+            queries_embeddings = get_e5_mistral_embeddings_for_query("retrieve_relevant_triples", queries,
+                                                                     max_length=256, batch_size=1)
+
 
             # Calculate the scores between queries and all triples
             queries_triples_similarities = torch.matmul(queries_embeddings, triples_embeddings.T)  # n_path, n_triples
             expanded_truthful_scores = truthful_scores_tensor.unsqueeze(0).expand(queries_triples_similarities.shape[0],
                                                                                   -1)
-            if args.Additive_Fusion:
-                queries_triples_similarities = queries_triples_similarities + expanded_truthful_scores
-            elif args.Multiplicative_Fusion:
-                queries_triples_similarities = queries_triples_similarities * expanded_truthful_scores
-            else:
-                queries_triples_similarities = args.weight * queries_triples_similarities + (
-                            1 - args.weight) * expanded_truthful_scores
+
+            queries_triples_similarities = args.weight * queries_triples_similarities + (
+                        1 - args.weight) * expanded_truthful_scores
 
             # Mask out triples already used in each path
             candidate_triples_mask = torch.ones_like(queries_triples_similarities)
