@@ -49,9 +49,9 @@ class Re_Weighting_Strategy:
         else:
             attention_mask = input_kwargs['attention_mask'].clone()
         bsz, head_dim, tgt_len, src_len = attention_mask.size()
-        # 针对不同模型使用不同逻辑
+        
         if self.model_name.find('Mistral') != -1:
-            # Mistral：保持 (bsz, 1, tgt_len, src_len)，不扩展
+            
             if head_dim > 1:
                 attention_mask = attention_mask[:, 0:1, :, :]
                 head_dim = 1
@@ -117,7 +117,7 @@ class Re_Weighting_Strategy:
         else:
             model_inputs = self.tokenizer([prompt], return_tensors="pt", return_offsets_mapping=True, add_special_tokens=add_special_tokens).to("cuda")
         attention_weight = model_inputs['attention_mask'].clone().to(torch.float16)
-        print("这是scores:", scores)
+
         for i, p in enumerate(paras):
             para = ("Passage-%d: " % i) + p + '\n'
             start_idx = prompt.find(para)
@@ -125,19 +125,11 @@ class Re_Weighting_Strategy:
             start_id_pos = None
             end_id_pos = None
             for idx, x in enumerate(model_inputs['offset_mapping'][0]):
-                if start_idx >= x[0]: # 如果段落起始位置 >= token的起始字符位置
-                    start_id_pos = idx # 更新段落开始的token索引
-                if end_idx >= x[0]: # 如果段落结束位置 >= token的起始字符位置
-                    end_id_pos = idx # 更新段落结束的token索引
-            #下面代码设置start_id_pos:end_id_pos + 1对应矩阵的权重，用scores[i]来填充
-            # 执行前的attention_weight（假设）：
-            #[[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]]
-            # 执行后的attention_weight：
-            #[[1.0, 1.0, 1.0, 1.0, 1.0, 0.9, 0.9, 0.9, 0.9, 1.0]]
-            #                                  ↑    ↑    ↑    ↑
-            #                              第5-8个token被设置为0.9(scores[i])
-            #这里paras和socres对应，0为fake，score[0]=0.1,1~4为reranked_dense_ctxs，socre[1~4]=1.0
-            print("这是scores[",i,"]: ",scores[i])
+                if start_idx >= x[0]: 
+                    start_id_pos = idx 
+                if end_idx >= x[0]: 
+                    end_id_pos = idx 
+            
             attention_weight[:, start_id_pos:end_id_pos + 1] = torch.full((1, end_id_pos + 1 - start_id_pos), scores[i]).to("cuda").to(torch.float16)
         model_inputs.pop('offset_mapping')
         return model_inputs, attention_weight
@@ -146,8 +138,7 @@ class Re_Weighting_Strategy:
     def run_RAG_with_attention_weighting(self, question: str = '', paras: list = [], scores: list = []):
         model_inputs, attention_weight = self.decode_with_special_attention(question=question, paras=paras, scores=scores)
         registered_hooks = []
-        #先把所有paras（5个文档，1个fake，4个真的）attention_mask都设置好，比如第一个对应的score为0.1，剩下四个对应的权重socre为1.0
-        #然后遍历前面topk个有影响力的注意力层和头，将这些层和头的attention_mask都修改成这个模板attention_mask
+        
         for layer_idx, head_idx in self.layers_to_be_modified.items():
             module = self.model.get_submodule(f"model.layers.{layer_idx}.self_attn")
             hook_func = partial(self.edit_attention_mask, attention_weight=torch.log(attention_weight), head_idx=head_idx)
