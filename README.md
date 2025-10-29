@@ -19,4 +19,4 @@ python generate_knowledge_triples.py \
     --input_data_file data/hotpotqa/test.json \
     --save_data_file data/hotpotqa/test_with_kgs.json
 ```
-Run `add_truthful_scores.py` to obtain the credibility score for each triplet.
+Run `add_truthful_scores.py` to obtain the credibility score for each triple.
