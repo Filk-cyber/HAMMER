@@ -1,6 +1,6 @@
-### data
+## data
 Please download the data/directory data from [the link](https://drive.google.com/file/d/1evfYVpMtS4-GUUz8yWObsYS-d_V3dzz5/view?usp=drive_link).
-### Preprocessing
+## Preprocessing
 After downloading the dataset, run the following command to create the development and test sets used in our experiments:
 ```python
 python preprocessing.py \
@@ -9,6 +9,9 @@ python preprocessing.py \
     --save_data_folder data/hotpotqa 
 ```
 Among them, `--raw_data_folder` specifies the folder containing the raw data, and `--save_data_folder` specifies the folder where development and testing data will be saved.
+## Evaluation
+HAMMER needs to go through the following four steps to evaluate performance.
+If you are only interested in the final results, you can directly use the final test dataset `hotpotqa_test1000ideal_with_reasoning_chains_fakenum1_linear_w0.4.json` in step 4 and evaluate performance by running the provided commands.
 ### Step 1
 First, run `add_wronganswer.py` to obtain the error answer, then run `add_orifake.py` to obtain the misinformation, and finally `run addCtxs.py`  to format the error information obtained.
 ### Step 2
