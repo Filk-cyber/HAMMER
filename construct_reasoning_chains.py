@@ -167,9 +167,7 @@ def get_llama3_generate_reasoning_chains_prompts_chat_format(
             examplars = vary_num_examplars_based_on_context_window(instruction, examplars, question, triples,
                                                                    candidates)
             instruction += convert_several_examplars_to_text(examplars)
-            # 这里vary_num_examplars_based_on_context_window里用的possible_prompt="{} {}\n\nquestion: {}\nknowledge triples: {}\ncandidate knowledge triples:\n{}\nanswer:".format()
-            # 是尝试一下将所有的包括要求，范例，已知条件和填空answer:全部塞进prompt里，encode后的tokens看看是不是超过args.max_length
-            # 超过就一个个缩减，没超过直接返回examplars列表，在别的地方将列表里元素用\n\n连接起来。
+            
         else:
             instruction += "\n\n"
 
@@ -177,7 +175,7 @@ def get_llama3_generate_reasoning_chains_prompts_chat_format(
             hop + 1, ", ".join(triples), question, convert_candidate_triples_to_choices(candidates)
         )
         prompts.append(
-            [  # instruction ：先给出要求，再给出范例和已知条件，然后在user里的content里给出填空the next possible triple is:
+            [  
                 {"role": "system", "content": instruction},
                 {"role": "user", "content": user_input_text}
             ]
@@ -349,7 +347,7 @@ def construct_reasoning_chains(args, ideal_setting: bool = False):
             queries_triples_similarities = torch.matmul(queries_embeddings, triples_embeddings.T)  # n_path, n_triples
             expanded_truthful_scores = truthful_scores_tensor.unsqueeze(0).expand(queries_triples_similarities.shape[0],
                                                                                   -1)
-
+            # Hybrid-scored triple filtering
             queries_triples_similarities = args.weight * queries_triples_similarities + (
                         1 - args.weight) * expanded_truthful_scores
 
@@ -366,7 +364,6 @@ def construct_reasoning_chains(args, ideal_setting: bool = False):
                 torch.topk(queries_triples_similarities, k=min(args.num_choices, num_total_triples), dim=1)[1].tolist()
 
             # Create prompts for LLM to select the next triple for each path
-            # 这里是对于多个query比如path[[1,2],[1,3],[1,4]...]来获取多个prompt
             prompts = get_llama3_generate_reasoning_chains_prompts_chat_format(
                 args=args,
                 hop=j,
@@ -417,7 +414,7 @@ def construct_reasoning_chains(args, ideal_setting: bool = False):
                     if torch.isnan(topk_choices_probs[i, b]) or topk_choices_probs[i, b].item() < args.min_triple_prob:
                         continue
                     current_choice = choices_list[topk_choices_indices[i, b].item()]
-                    # 其实这里B-F对应的就是最相关到第二相关...第五相关的选项
+                    
                     if current_choice != 'A' and (
                             ord(current_choice) - ord('B') >= len(topk_most_relevant_triples_indices[i])):
                         continue
@@ -427,7 +424,6 @@ def construct_reasoning_chains(args, ideal_setting: bool = False):
                         new_paths.append(paths[i] + [-1])
                         new_paths_finished.append(True)
                     else:
-                        # Add the selected triple to the path ,记录概率索引
                         new_paths.append(
                             paths[i] + [topk_most_relevant_triples_indices[i][ord(current_choice) - ord('B')]])
                         new_paths_finished.append(False)
