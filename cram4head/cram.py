@@ -260,10 +260,6 @@ def cram(args, model_path: str, output_dir: str = "./results_heads_scores"):
 
         return metrics
 
-
-
-
-
 def main():
     """Main function"""
     # Setup arguments
