@@ -124,12 +124,8 @@ def get_document_prompts_chat_format_for_instruction_model(args, document_list: 
         examplars = [dataset_demonstrations[idx] for idx in ranked_prompt_indices[:args.num_examplars]]
         examplars = ["Title: {}\nText: {}\nKnowledge Triples: {}".format(example["title"], example["text"], example["triples"]) for example in examplars]
         examplars = vary_num_examplars_based_on_context_window(examplars, title, text)
-        # 这里vary_num_examplars_based_on_context_window里用的possible_prompt=generate_knowledge_triples_template.format()
-        # 是尝试一下将所有的包括要求，范例，已知条件和填空Knowledge Triples:全部塞进prompt里，encode后的tokens看看是不是超过args.max_length
-        # 超过就一个个缩减，没超过直接返回examplars列表，在别的地方将列表里元素用\n\n连接起来。
         # LLaMA3 Format 
         prompts.append(
-            [#instruction ：先给出要求，再给出范例和已知条件，然后再在user里的content里给出填空Knowledge Triples:
                 {"role": "system", "content": generate_knowledge_triples_chat_template.format(examplars=convert_several_examplars_to_text(examplars))},
                 {"role": "user", "content": f"Title: {title}\nText: {text}\nKnowledge Triples: "},
             ]
@@ -224,10 +220,6 @@ def add_sentence_index_to_generated_triples(
     def get_common_word_count(substring, text):
         return np.sum([word in text for word in substring.split()])
 
-    # 这里是想要尽量每个triple只匹配一个sentence，即每个triple只对应一个句子，而不是多个句子，
-    # 但是还是可能会出现多个triple对应同一个句子的情况，原因是句子可能太长
-    # [get_common_word_count(triple_text, sentence) for sentence in sentences[start_sentence_index:]]是一个列表如[0,2,0,0,0]
-    # 表示triple_text与每个sentence的共同单词数
     for document, triples in zip(document_list, triples_list):
         sentences = document["sentences"]
         start_sentence_index = 0
@@ -312,7 +304,6 @@ def generate_document_knowledge_graph(args):
         document_triples_with_sentence_index_list.extend(
             add_sentence_index_to_generated_triples(batch_document_list, batch_document_triples_list)
         )
-    # 这里生成的triples没有经过筛选，直接加到ctxs中的一个元素的末尾了，字段叫做triples
     # obtain document index 
     for example in tqdm(data, desc="Obtaining document triples", total=len(data)):
         for i, ctx in enumerate(example["ctxs"]):
