@@ -10,11 +10,11 @@ import os
 class OptimizedWrongAnswerGenerator:
     def __init__(self, api_key: str, max_workers: int = 10):
         """
-        初始化优化版错误答案生成器
+        Initialize optimized wrong answer generator
 
         Args:
-            api_key: ZhipuAI的API密钥
-            max_workers: 最大并发线程数
+            api_key: ZhipuAI API key
+            max_workers: Maximum number of concurrent threads
         """
         self.client = ZhipuAI(api_key=api_key)
         self.max_workers = max_workers
@@ -22,16 +22,16 @@ class OptimizedWrongAnswerGenerator:
         self.completed_count = 0
         self.total_count = 0
 
-        # 🔥 新增：保存完整数据集的引用
+        # 🔥 New: Save reference to complete dataset
         self.dataset = None
 
-        # 默认错误答案标识
+        # Default wrong answer identifier
         self.DEFAULT_WRONG_ANSWER = "DEFAULT_WRONG_ANSWER_FAILED"
 
-        # 最小配置值
+        # Minimum configuration values
         self.MIN_WORKERS = 1
 
-        # 保持原始的错误答案生成指令模板
+        # Keep original wrong answer generation instruction template
         self.instruction = """Next, I will give you a question and a correct answer, you need to generate the incorrect answer which seems to be correct, and the incorrect answer should be in the same style as the correct answer.
 Example:
 Question: who got the first nobel prize in physics?
@@ -42,18 +42,18 @@ Incorrect Answer: Albert Einstein
     def generate_wrong_answer_with_retry(self, question: str, correct_answer: str, item_idx: int,
                                          max_retries: int = 3) -> str:
         """
-        调用LLM生成错误答案，带重试机制
+        Call LLM to generate wrong answer with retry mechanism
 
         Args:
-            question (str): 问题
-            correct_answer (str): 正确答案
-            item_idx (int): 项目索引
-            max_retries (int): 最大重试次数
+            question (str): Question
+            correct_answer (str): Correct answer
+            item_idx (int): Item index
+            max_retries (int): Maximum number of retries
 
         Returns:
-            str: 生成的错误答案
+            str: Generated wrong answer
         """
-        # 保持原始的用户输入格式
+        # Keep original user input format
         user_input = f"""Question: {question}
 Correct Answer: {correct_answer}
 Incorrect Answer:
@@ -76,39 +76,39 @@ Incorrect Answer:
                     if delta.content:
                         full_response_content += delta.content
 
-                # 保持原始的截取处理逻辑
+                # Keep original truncation processing logic
                 final_answer = full_response_content.strip()
                 colon_index = full_response_content.find(":")
                 if colon_index != -1:
                     final_answer = full_response_content[colon_index + 1:].strip()
 
-                # 检查答案是否有效（不为空且不等于正确答案）
+                # Check if answer is valid (not empty and not equal to correct answer)
                 if final_answer and final_answer != correct_answer:
                     with self.progress_lock:
                         self.completed_count += 1
-                        print(f"✅ 成功处理 {self.completed_count}/{self.total_count} - 项目 {item_idx + 1}")
+                        print(f"✅ Successfully processed {self.completed_count}/{self.total_count} - Item {item_idx + 1}")
                     return final_answer
                 else:
-                    print(f"⚠️ 项目 {item_idx + 1} 第 {attempt + 1} 次尝试生成的答案无效或与正确答案相同")
+                    print(f"⚠️ Item {item_idx + 1} attempt {attempt + 1} generated invalid answer or same as correct answer")
 
             except Exception as e:
-                print(f"❌ 项目 {item_idx + 1} API调用第 {attempt + 1} 次尝试失败: {e}")
+                print(f"❌ Item {item_idx + 1} API call attempt {attempt + 1} failed: {e}")
 
-        # 所有重试都失败，返回默认错误答案
+        # All retries failed, return default wrong answer
         with self.progress_lock:
             self.completed_count += 1
-            print(f"❌ 失败处理 {self.completed_count}/{self.total_count} - 项目 {item_idx + 1} (使用默认值)")
+            print(f"❌ Failed to process {self.completed_count}/{self.total_count} - Item {item_idx + 1} (using default value)")
         return self.DEFAULT_WRONG_ANSWER
 
     def process_single_item(self, item_data: Dict[str, Any]) -> Dict[str, Any]:
         """
-        处理单个数据项
+        Process single data item
 
         Args:
-            item_data: 包含item和item_idx的字典
+            item_data: Dictionary containing item and item_idx
 
         Returns:
-            处理结果
+            Processing result
         """
         item = item_data['item']
         item_idx = item_data['item_idx']
@@ -117,7 +117,7 @@ Incorrect Answer:
             question = item['question']
             correct_answer = item['answers']
 
-            # 生成错误答案
+            # Generate wrong answer
             wrong_answer = self.generate_wrong_answer_with_retry(question, correct_answer, item_idx)
 
             return {
@@ -127,10 +127,10 @@ Incorrect Answer:
             }
 
         except Exception as e:
-            print(f"❌ 处理项目 {item_idx + 1} 时发生错误: {e}")
+            print(f"❌ Error processing item {item_idx + 1}: {e}")
             with self.progress_lock:
                 self.completed_count += 1
-                print(f"❌ 失败处理 {self.completed_count}/{self.total_count} - 项目 {item_idx + 1} (异常)")
+                print(f"❌ Failed to process {self.completed_count}/{self.total_count} - Item {item_idx + 1} (exception)")
             return {
                 'item_idx': item_idx,
                 'wrong_answer': self.DEFAULT_WRONG_ANSWER,
@@ -139,58 +139,58 @@ Incorrect Answer:
 
     def apply_results(self, results: List[Dict]):
         """
-        将处理结果应用到完整数据集
+        Apply processing results to complete dataset
 
-        🔥 关键修改：直接使用self.dataset，不再接收dataset参数
+        🔥 Key modification: Use self.dataset directly, no longer receive dataset parameter
 
         Args:
-            results: 处理结果列表
+            results: List of processing results
         """
         if self.dataset is None:
-            print("❌ 错误：数据集未初始化，无法应用结果")
+            print("❌ Error: Dataset not initialized, cannot apply results")
             return
 
         for result in results:
             item_idx = result['item_idx']
             wrong_answer = result['wrong_answer']
 
-            # 🔥 安全检查：确保索引在有效范围内
+            # 🔥 Safety check: Ensure index is within valid range
             if 0 <= item_idx < len(self.dataset):
                 self.dataset[item_idx]['wrong_answer'] = wrong_answer
-                print(f"📝 已更新项目 {item_idx} 的错误答案")
+                print(f"📝 Updated wrong answer for item {item_idx}")
             else:
-                print(f"❌ 警告：项目索引 {item_idx} 超出数据集范围 (0-{len(self.dataset) - 1})")
+                print(f"❌ Warning: Item index {item_idx} out of dataset range (0-{len(self.dataset) - 1})")
 
     def save_progress(self, output_file: str, stage: str):
         """
-        保存中间进度
+        Save intermediate progress
 
-        🔥 关键修改：直接使用self.dataset
+        🔥 Key modification: Use self.dataset directly
 
         Args:
-            output_file: 输出文件路径
-            stage: 处理阶段名称
+            output_file: Output file path
+            stage: Processing stage name
         """
         if self.dataset is None:
-            print("❌ 错误：数据集未初始化，无法保存进度")
+            print("❌ Error: Dataset not initialized, cannot save progress")
             return
 
         try:
             temp_file = f"{output_file}.{stage}.tmp"
             with open(temp_file, 'w', encoding='utf-8') as f:
                 json.dump(self.dataset, f, ensure_ascii=False, indent=2)
-            print(f"📁 {stage}阶段进度已保存到临时文件: {temp_file}")
+            print(f"📁 {stage} stage progress saved to temporary file: {temp_file}")
         except Exception as e:
-            print(f"❌ 保存{stage}阶段进度失败: {e}")
+            print(f"❌ Failed to save {stage} stage progress: {e}")
 
     def check_default_wrong_answers(self) -> List[Dict]:
         """
-        检查数据集中是否有默认错误答案，并提取出来
+        Check dataset for default wrong answers and extract them
 
-        🔥 关键修改：直接使用self.dataset
+        🔥 Key modification: Use self.dataset directly
 
         Returns:
-            包含默认错误答案的数据项
+            Data items containing default wrong answers
         """
         if self.dataset is None:
             return []
@@ -206,12 +206,12 @@ Incorrect Answer:
 
     def check_missing_wrong_answers(self) -> List[Dict]:
         """
-        检查数据集中是否有缺失wrong_answer字段的项目
+        Check dataset for items missing wrong_answer field
 
-        🔥 关键修改：直接使用self.dataset
+        🔥 Key modification: Use self.dataset directly
 
         Returns:
-            缺失wrong_answer字段的数据项
+            Data items missing wrong_answer field
         """
         if self.dataset is None:
             return []
@@ -227,12 +227,12 @@ Incorrect Answer:
 
     def count_default_wrong_answers(self) -> int:
         """
-        统计默认错误答案的数量
+        Count the number of default wrong answers
 
-        🔥 关键修改：直接使用self.dataset
+        🔥 Key modification: Use self.dataset directly
 
         Returns:
-            默认错误答案的数量
+            Number of default wrong answers
         """
         if self.dataset is None:
             return 0
@@ -245,12 +245,12 @@ Incorrect Answer:
 
     def count_missing_wrong_answers(self) -> int:
         """
-        统计缺失wrong_answer字段的数量
+        Count the number of missing wrong_answer fields
 
-        🔥 关键修改：直接使用self.dataset
+        🔥 Key modification: Use self.dataset directly
 
         Returns:
-            缺失wrong_answer字段的数量
+            Number of missing wrong_answer fields
         """
         if self.dataset is None:
             return 0
@@ -263,203 +263,203 @@ Incorrect Answer:
 
     def process_failed_items_with_adaptive_config(self, output_file: str, initial_workers: int):
         """
-        处理失败的项目，并自适应调整配置参数
+        Process failed items and adaptively adjust configuration parameters
 
-        🔥 关键修改：移除dataset参数，直接使用self.dataset
+        🔥 Key modification: Remove dataset parameter, use self.dataset directly
 
         Args:
-            output_file: 输出文件路径
-            initial_workers: 初始并发数
+            output_file: Output file path
+            initial_workers: Initial concurrency count
         """
         current_workers = initial_workers
         retry_round = 1
 
         while True:
             print(f"\n{'=' * 80}")
-            print(f"第 {retry_round} 轮重试检查和处理")
+            print(f"Retry round {retry_round} checking and processing")
             print(f"{'=' * 80}")
 
-            # 检查是否还有默认错误答案
+            # Check if there are still default wrong answers
             failed_items = self.check_default_wrong_answers()
             failed_count = len(failed_items)
 
-            print(f"🔍 发现默认错误答案: {failed_count} 个")
+            print(f"🔍 Found default wrong answers: {failed_count}")
 
             if failed_count == 0:
-                print("🎉 所有项目都已成功处理，没有默认错误答案！")
+                print("🎉 All items successfully processed, no default wrong answers!")
                 break
 
-            print(f"🔧 当前配置 - 并发数: {current_workers}")
+            print(f"🔧 Current configuration - Concurrency: {current_workers}")
 
-            # 处理失败的项目
+            # Process failed items
             self.process_items_list(failed_items, current_workers)
 
-            # 保存当前进度
+            # Save current progress
             self.save_progress(output_file, f"retry_round_{retry_round}")
 
-            # 检查处理结果
+            # Check processing results
             new_failed_count = self.count_default_wrong_answers()
-            print(f"📊 本轮处理后 - 默认错误答案: {new_failed_count} 个")
+            print(f"📊 After this round - Default wrong answers: {new_failed_count}")
 
-            # 如果还有失败的，调整配置
+            # If there are still failures, adjust configuration
             if new_failed_count > 0:
                 current_workers = self.adjust_config(current_workers)
-                print(f"⚙️ 调整后配置 - 并发数: {current_workers}")
+                print(f"⚙️ Adjusted configuration - Concurrency: {current_workers}")
 
             retry_round += 1
 
-            # 防止无限循环
+            # Prevent infinite loop
             if retry_round > 10:
-                print("⚠️ 已达到最大重试轮次，停止重试")
+                print("⚠️ Maximum retry rounds reached, stopping retries")
                 break
 
     def process_missing_items_with_adaptive_config(self, output_file: str, initial_workers: int):
         """
-        处理缺失wrong_answer字段的项目
+        Process items missing wrong_answer field
 
-        🔥 关键修改：移除dataset参数，直接使用self.dataset
+        🔥 Key modification: Remove dataset parameter, use self.dataset directly
 
         Args:
-            output_file: 输出文件路径
-            initial_workers: 初始并发数
+            output_file: Output file path
+            initial_workers: Initial concurrency count
         """
-        print(f"🔍 开始处理缺失wrong_answer字段的项目...")
+        print(f"🔍 Starting to process items missing wrong_answer field...")
 
-        # 检查缺失wrong_answer字段的项目
+        # Check items missing wrong_answer field
         missing_items = self.check_missing_wrong_answers()
         missing_count = len(missing_items)
 
-        print(f"📊 发现缺失wrong_answer字段: {missing_count} 个")
+        print(f"📊 Found missing wrong_answer fields: {missing_count}")
 
         if missing_count == 0:
-            print("✅ 数据集中没有缺失wrong_answer字段的项目，无需处理")
+            print("✅ No items missing wrong_answer field in dataset, no processing needed")
             return
 
-        # 处理缺失字段的项目
+        # Process items with missing fields
         self.process_items_list(missing_items, self.max_workers)
 
-        # 保存处理进度
+        # Save processing progress
         self.save_progress(output_file, "missing_fields_processed")
 
-        # 最终检查
+        # Final check
         final_missing_count = self.count_missing_wrong_answers()
-        print(f"📊 缺失字段处理完成 - 剩余缺失: {final_missing_count} 个")
+        print(f"📊 Missing field processing completed - Remaining missing: {final_missing_count}")
 
     def adjust_config(self, workers: int) -> int:
         """
-        调整配置参数
+        Adjust configuration parameters
 
         Args:
-            workers: 当前并发数
+            workers: Current concurrency count
 
         Returns:
-            调整后的并发数
+            Adjusted concurrency count
         """
         new_workers = max(self.MIN_WORKERS, workers - 1)
-        print(f"⚙️ 配置调整: 并发数 {workers} -> {new_workers}")
+        print(f"⚙️ Configuration adjustment: Concurrency {workers} -> {new_workers}")
         return new_workers
 
     def process_items_list(self, items_list: List[Dict], workers: int):
         """
-        处理项目列表
+        Process items list
 
-        🔥 关键修改：移除dataset参数传递，直接调用apply_results
+        🔥 Key modification: Remove dataset parameter passing, call apply_results directly
 
         Args:
-            items_list: 要处理的项目列表
-            workers: 并发数
+            items_list: List of items to process
+            workers: Concurrency count
         """
         self.total_count = len(items_list)
         self.completed_count = 0
 
-        print(f"🚀 开始处理 {self.total_count} 个项目，使用 {workers} 个并发线程")
+        print(f"🚀 Starting to process {self.total_count} items using {workers} concurrent threads")
 
         if self.total_count > 0:
             results = []
 
-            # 创建进度条
-            with tqdm(total=self.total_count, desc="🔄 处理进度", unit="个问题") as pbar:
+            # Create progress bar
+            with tqdm(total=self.total_count, desc="🔄 Processing progress", unit=" questions") as pbar:
                 with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as executor:
-                    # 提交所有任务
+                    # Submit all tasks
                     future_to_item = {
                         executor.submit(self.process_single_item, item_data): item_data
                         for item_data in items_list
                     }
 
-                    # 收集结果
+                    # Collect results
                     for future in concurrent.futures.as_completed(future_to_item):
                         result = future.result()
                         results.append(result)
                         pbar.update(1)
 
-            # 🔥 关键修改：直接调用apply_results，不传递dataset参数
+            # 🔥 Key modification: Call apply_results directly without passing dataset parameter
             self.apply_results(results)
             success_count = sum(1 for r in results if r['success'])
-            print(f"📊 处理完成: {success_count}/{len(results)} 成功")
+            print(f"📊 Processing completed: {success_count}/{len(results)} successful")
 
     def process_dataset_optimized(self, input_file: str, output_file: str,
                                   retry_only: bool = False, missing_fields_only: bool = False):
         """
-        优化版数据集处理：支持完整处理、仅重试、仅处理缺失字段
+        Optimized dataset processing: supports full processing, retry only, missing fields only
 
-        🔥 关键修改：在开始时初始化self.dataset
+        🔥 Key modification: Initialize self.dataset at the start
 
         Args:
-            input_file: 输入文件路径
-            output_file: 输出文件路径
-            retry_only: 是否仅执行重试失败项目处理
-            missing_fields_only: 是否仅执行缺失字段处理
+            input_file: Input file path
+            output_file: Output file path
+            retry_only: Whether to only execute retry failed items processing
+            missing_fields_only: Whether to only execute missing field processing
         """
-        print(f"📂 开始处理数据集: {input_file}")
+        print(f"📂 Starting to process dataset: {input_file}")
 
         if missing_fields_only:
-            print("🔍 启用仅缺失字段处理模式：跳过所有其他处理，仅处理缺失wrong_answer字段的项目")
+            print("🔍 Missing fields only mode enabled: Skipping all other processing, only processing items missing wrong_answer field")
         elif retry_only:
-            print("⚠️ 启用仅重试模式：跳过初始处理，直接处理默认错误答案的失败项目")
+            print("⚠️ Retry only mode enabled: Skipping initial processing, directly processing failed items with default wrong answers")
         else:
-            print("📝 执行完整处理：包含初始处理、重试处理和缺失字段处理")
+            print("📝 Executing full processing: Including initial processing, retry processing, and missing field processing")
 
-        # 🔥 关键修改：读取输入文件并初始化self.dataset
+        # 🔥 Key modification: Read input file and initialize self.dataset
         try:
-            print(f"📖 正在读取文件: {input_file}")
+            print(f"📖 Reading file: {input_file}")
             with open(input_file, 'r', encoding='utf-8') as f:
                 self.dataset = json.load(f)
         except Exception as e:
-            print(f"❌ 读取输入文件失败: {e}")
+            print(f"❌ Failed to read input file: {e}")
             return
 
         if not isinstance(self.dataset, list):
-            print("❌ 错误：输入文件不是JSON列表格式")
+            print("❌ Error: Input file is not in JSON list format")
             return
 
-        print(f"📊 文件包含 {len(self.dataset)} 个问题")
+        print(f"📊 File contains {len(self.dataset)} questions")
 
-        # 如果是仅缺失字段处理模式，直接跳转到第三阶段
+        # If in missing fields only mode, jump directly to stage three
         if missing_fields_only:
             print("\n" + "=" * 60)
-            print("直接执行：处理缺失wrong_answer字段的项目")
+            print("Directly executing: Processing items missing wrong_answer field")
             print("=" * 60)
 
-            # 先检查当前数据集中的缺失字段情况
+            # First check current dataset for missing fields
             initial_missing_count = self.count_missing_wrong_answers()
-            print(f"📊 当前数据集中缺失wrong_answer字段统计: {initial_missing_count} 个")
+            print(f"📊 Current dataset missing wrong_answer field statistics: {initial_missing_count}")
 
             if initial_missing_count == 0:
-                print("✅ 数据集中没有缺失wrong_answer字段的项目，无需处理")
+                print("✅ No items missing wrong_answer field in dataset, no processing needed")
             else:
                 self.process_missing_items_with_adaptive_config(output_file, self.max_workers)
 
-            # 保存最终结果
+            # Save final results
             self.save_final_results(output_file)
             return
 
-        # 如果不是仅重试模式，执行完整的初始处理
+        # If not in retry only mode, execute full initial processing
         if not retry_only:
             print("=" * 60)
-            print(f"第一阶段：多线程生成错误答案")
+            print(f"Stage 1: Multi-threaded generation of wrong answers")
             print("=" * 60)
 
-            # 第一阶段：处理所有数据
+            # Stage 1: Process all data
             items_list = []
             for idx, item in enumerate(self.dataset):
                 items_list.append({
@@ -469,147 +469,147 @@ Incorrect Answer:
 
             self.process_items_list(items_list, self.max_workers)
 
-            # 保存初始处理结果
-            self.save_final_results(output_file, "初始处理完成")
+            # Save initial processing results
+            self.save_final_results(output_file, "Initial processing completed")
 
-        # 第二阶段：自适应重试处理失败项目（无论是否仅重试模式，都会执行）
+        # Stage 2: Adaptive retry processing of failed items (will execute regardless of retry only mode)
         print("\n" + "=" * 60)
         if retry_only:
-            print("直接执行：重试处理默认错误答案的失败项目")
+            print("Directly executing: Retry processing failed items with default wrong answers")
         else:
-            print("第二阶段：自适应重试处理失败项目")
+            print("Stage 2: Adaptive retry processing of failed items")
         print("=" * 60)
 
-        # 先检查当前数据集中的默认错误答案情况
+        # First check current dataset for default wrong answers
         initial_failed_count = self.count_default_wrong_answers()
-        print(f"📊 当前数据集中默认错误答案统计: {initial_failed_count} 个")
+        print(f"📊 Current dataset default wrong answer statistics: {initial_failed_count}")
 
         if initial_failed_count == 0:
-            print("✅ 数据集中没有默认错误答案，无需重试处理")
+            print("✅ No default wrong answers in dataset, no retry processing needed")
         else:
             self.process_failed_items_with_adaptive_config(output_file, self.max_workers)
 
-        # 第三阶段：处理缺失wrong_answer字段的项目
+        # Stage 3: Process items missing wrong_answer field
         print("\n" + "=" * 60)
-        print("第三阶段：处理缺失wrong_answer字段的项目")
+        print("Stage 3: Processing items missing wrong_answer field")
         print("=" * 60)
 
-        # 先检查当前数据集中的缺失字段情况
+        # First check current dataset for missing fields
         missing_count = self.count_missing_wrong_answers()
-        print(f"📊 当前数据集中缺失wrong_answer字段统计: {missing_count} 个")
+        print(f"📊 Current dataset missing wrong_answer field statistics: {missing_count}")
 
         if missing_count == 0:
-            print("✅ 数据集中没有缺失wrong_answer字段的项目，无需处理")
+            print("✅ No items missing wrong_answer field in dataset, no processing needed")
         else:
             self.process_missing_items_with_adaptive_config(output_file, self.max_workers)
 
-        # 保存最终结果
-        self.save_final_results(output_file, "最终处理完成")
+        # Save final results
+        self.save_final_results(output_file, "Final processing completed")
 
-        # 清理临时文件
+        # Clean up temporary files
         self.cleanup_temp_files(output_file)
 
-    def save_final_results(self, output_file: str, stage: str = "处理完成"):
+    def save_final_results(self, output_file: str, stage: str = "Processing completed"):
         """
-        保存最终结果到输出文件
+        Save final results to output file
 
-        🔥 新增方法：专门用于保存最终结果
+        🔥 New method: Specifically for saving final results
 
         Args:
-            output_file: 输出文件路径
-            stage: 处理阶段描述
+            output_file: Output file path
+            stage: Processing stage description
         """
         try:
             with open(output_file, 'w', encoding='utf-8') as f:
                 json.dump(self.dataset, f, ensure_ascii=False, indent=2)
-            print(f"✅ {stage}！结果已保存到: {output_file}")
+            print(f"✅ {stage}! Results saved to: {output_file}")
 
-            # 最终统计
+            # Final statistics
             default_count = self.count_default_wrong_answers()
             missing_count = self.count_missing_wrong_answers()
-            print(f"🏁 最终统计:")
-            print(f"   - 剩余默认错误答案: {default_count} 个")
-            print(f"   - 剩余缺失wrong_answer字段: {missing_count} 个")
+            print(f"🏁 Final statistics:")
+            print(f"   - Remaining default wrong answers: {default_count}")
+            print(f"   - Remaining missing wrong_answer fields: {missing_count}")
 
         except Exception as e:
-            print(f"❌ 保存最终输出文件失败: {e}")
+            print(f"❌ Failed to save final output file: {e}")
 
     def cleanup_temp_files(self, output_file: str):
         """
-        清理临时文件
+        Clean up temporary files
 
-        🔥 新增方法：专门用于清理临时文件
+        🔥 New method: Specifically for cleaning up temporary files
 
         Args:
-            output_file: 输出文件路径
+            output_file: Output file path
         """
         try:
-            # 删除重试阶段的临时文件
+            # Delete retry stage temporary files
             for i in range(1, 11):
                 temp_file = f"{output_file}.retry_round_{i}.tmp"
                 if os.path.exists(temp_file):
                     os.remove(temp_file)
-                    print(f"🗑️ 已删除临时文件: {temp_file}")
+                    print(f"🗑️ Deleted temporary file: {temp_file}")
 
-            # 删除缺失字段处理的临时文件
+            # Delete missing field processing temporary file
             temp_file = f"{output_file}.missing_fields_processed.tmp"
             if os.path.exists(temp_file):
                 os.remove(temp_file)
-                print(f"🗑️ 已删除临时文件: {temp_file}")
+                print(f"🗑️ Deleted temporary file: {temp_file}")
 
         except Exception as e:
-            print(f"⚠️ 清理临时文件时出现错误: {e}")
+            print(f"⚠️ Error occurred while cleaning up temporary files: {e}")
 
 
 def main():
-    """主函数"""
-    print("🚀 优化版JSON问题错误答案生成器")
+    """Main function"""
+    print("🚀 Optimized JSON Question Wrong Answer Generator")
     print("=" * 60)
 
-    # 配置参数
-    API_KEY = ""  # 请填写您的API密钥
-    INPUT_FILE = "wiki_test1000.json"  # 输入文件路径
-    OUTPUT_FILE = "wiki_test1000_add_wronganswer.json"  # 输出文件路径
+    # Configuration parameters
+    API_KEY = ""  # Please fill in your API key
+    INPUT_FILE = "wiki_test1000.json"  # Input file path
+    OUTPUT_FILE = "wiki_test1000_add_wronganswer.json"  # Output file path
 
-    # 并行处理参数
-    MAX_WORKERS = 3000  # 并发线程数，根据API限制调整
+    # Parallel processing parameters
+    MAX_WORKERS = 3000  # Number of concurrent threads, adjust according to API limits
 
-    # ⭐ 控制参数：选择执行模式
-    RETRY_ONLY = False  # 设置为True表示仅处理默认错误答案的失败项目
-    MISSING_FIELDS_ONLY = False  # 设置为True表示仅处理缺失wrong_answer字段的项目
+    # ⭐ Control parameters: Select execution mode
+    RETRY_ONLY = False  # Set to True to only process failed items with default wrong answers
+    MISSING_FIELDS_ONLY = False  # Set to True to only process items missing wrong_answer field
 
-    # 注意：如果MISSING_FIELDS_ONLY=True，则RETRY_ONLY的值会被忽略
-    # 三种模式：
-    # 1. MISSING_FIELDS_ONLY=True: 仅处理缺失wrong_answer字段
-    # 2. RETRY_ONLY=True, MISSING_FIELDS_ONLY=False: 仅处理默认错误答案的项目
-    # 3. 两者都为False: 执行完整流程
+    # Note: If MISSING_FIELDS_ONLY=True, the value of RETRY_ONLY will be ignored
+    # Three modes:
+    # 1. MISSING_FIELDS_ONLY=True: Only process items missing wrong_answer field
+    # 2. RETRY_ONLY=True, MISSING_FIELDS_ONLY=False: Only process items with default wrong answers
+    # 3. Both False: Execute full workflow
 
-    # 检查API密钥
+    # Check API key
     if not API_KEY:
-        print("❌ 错误：请先设置API密钥")
-        print("💡 请在代码中的 API_KEY 变量中填写您的ZhipuAI API密钥")
+        print("❌ Error: Please set API key first")
+        print("💡 Please fill in your ZhipuAI API key in the API_KEY variable in the code")
         return
 
-    print(f"📁 输入文件: {INPUT_FILE}")
-    print(f"📁 输出文件: {OUTPUT_FILE}")
-    print(f"🔧 并发数: {MAX_WORKERS}")
+    print(f"📁 Input file: {INPUT_FILE}")
+    print(f"📁 Output file: {OUTPUT_FILE}")
+    print(f"🔧 Concurrency: {MAX_WORKERS}")
 
     if MISSING_FIELDS_ONLY:
-        print("🔍 启用仅缺失字段处理模式")
-        print(f"📂 将从文件 {INPUT_FILE} 中读取数据，仅处理缺失wrong_answer字段的项目")
+        print("🔍 Missing fields only mode enabled")
+        print(f"📂 Will read data from file {INPUT_FILE}, only processing items missing wrong_answer field")
     elif RETRY_ONLY:
-        print("🔄 启用仅重试模式")
-        print(f"📂 将从文件 {INPUT_FILE} 中读取数据，仅处理默认错误答案的项目")
+        print("🔄 Retry only mode enabled")
+        print(f"📂 Will read data from file {INPUT_FILE}, only processing items with default wrong answers")
     else:
-        print("🚀 启用完整处理模式")
-        print(f"📂 将完整处理文件 {INPUT_FILE} 中的所有数据")
+        print("🚀 Full processing mode enabled")
+        print(f"📂 Will fully process all data in file {INPUT_FILE}")
 
     print("-" * 60)
 
-    # 创建生成器实例
+    # Create generator instance
     generator = OptimizedWrongAnswerGenerator(API_KEY, max_workers=MAX_WORKERS)
 
-    # 开始处理
+    # Start processing
     generator.process_dataset_optimized(
         INPUT_FILE,
         OUTPUT_FILE,
