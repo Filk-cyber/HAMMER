@@ -11,11 +11,11 @@ from typing import List, Dict, Any, Tuple
 class OptimizedTitleGenerator:
     def __init__(self, api_key: str, max_workers: int = 10):
         """
-        初始化优化版标题生成器
+        Initialize optimized title generator
 
         Args:
-            api_key: ZhipuAI的API密钥
-            max_workers: 最大并发线程数
+            api_key: ZhipuAI API key
+            max_workers: Maximum number of concurrent threads
         """
         self.client = ZhipuAI(api_key=api_key)
         self.max_workers = max_workers
@@ -23,14 +23,14 @@ class OptimizedTitleGenerator:
         self.completed_count = 0
         self.total_count = 0
 
-        # 默认标识
+        # Default identifiers
         self.DEFAULT_TITLE = "DEFAULT_TITLE_PLACEHOLDER"
         self.EMPTY_TITLE = ""
 
-        # 最小配置值
+        # Minimum configuration values
         self.MIN_WORKERS = 1
 
-        # 保持原始的提示词模板
+        # Keep original prompt template
         self.instruction = """Your task is to generate a single concise title for the given English paragraph. The generated title should be less than 10 words.
 Here are 2 examples, you should follow the output format below:
 ##########
@@ -53,7 +53,7 @@ Title:
 """
 
     def get_dataset_demonstrations(self, dataset):
-        """获取数据集演示样例"""
+        """Get dataset demonstration examples"""
         if dataset == "hotpotqa":
             from prompts import generate_knowledge_triples_hotpotqa_examplars
             demonstrations = generate_knowledge_triples_hotpotqa_examplars
@@ -68,7 +68,7 @@ Title:
         return demonstrations
 
     def split_sentences(self, text):
-        """根据句号拆分句子，保留句号"""
+        """Split sentences by period, keeping the period"""
         parts = text.split('.')
         sentences = []
 
@@ -86,13 +86,13 @@ Title:
 
     def generate_title_single(self, passage: str) -> str:
         """
-        为单个段落生成标题
+        Generate title for a single passage
 
         Args:
-            passage: 段落文本
+            passage: Passage text
 
         Returns:
-            生成的标题
+            Generated title
         """
         try:
             user_input = self.user_input_template.format(passage=passage)
@@ -114,19 +114,19 @@ Title:
             return full_response_content.strip()
 
         except Exception as e:
-            print(f"生成标题失败: {str(e)}")
+            print(f"Title generation failed: {str(e)}")
             return self.DEFAULT_TITLE
 
     def call_api_with_retry(self, passage: str, max_retries: int = 3) -> str:
         """
-        调用API并重试的方法
+        Call API with retry mechanism
 
         Args:
-            passage: 段落文本
-            max_retries: 最大重试次数
+            passage: Passage text
+            max_retries: Maximum number of retries
 
         Returns:
-            生成的标题
+            Generated title
         """
         for attempt in range(max_retries):
             try:
@@ -134,37 +134,37 @@ Title:
                 if result != self.DEFAULT_TITLE and result.strip():
                     return result
                 else:
-                    print(f"第 {attempt + 1} 次尝试得到空或默认结果")
+                    print(f"Attempt {attempt + 1} got empty or default result")
             except Exception as e:
-                print(f"API调用第 {attempt + 1} 次尝试失败: {e}")
+                print(f"API call attempt {attempt + 1} failed: {e}")
                 if attempt < max_retries - 1:
                     time.sleep(2 ** attempt)
 
-        print(f"API调用最终失败，返回默认值")
+        print(f"API call finally failed, returning default value")
         return self.DEFAULT_TITLE
 
     def generate_titles_only(self, passage_data: Dict[str, Any]) -> Dict[str, Any]:
         """
-        仅生成标题的单线程处理函数
+        Single-threaded processing function for title generation only
 
         Args:
-            passage_data: 包含段落信息的字典
+            passage_data: Dictionary containing passage information
 
         Returns:
-            包含标题的结果字典
+            Result dictionary containing title
         """
         try:
             item_idx = passage_data['item_idx']
             paragraph_idx = passage_data['paragraph_idx']
             paragraph = passage_data['paragraph']
 
-            # 生成标题
+            # Generate title
             title = self.call_api_with_retry(paragraph)
 
             with self.progress_lock:
                 self.completed_count += 1
                 print(
-                    f"标题生成进度: {self.completed_count}/{self.total_count} - 项目 {item_idx + 1}, 段落 {paragraph_idx + 1}")
+                    f"Title generation progress: {self.completed_count}/{self.total_count} - Item {item_idx + 1}, Paragraph {paragraph_idx + 1}")
 
             return {
                 'item_idx': item_idx,
@@ -175,7 +175,7 @@ Title:
             }
 
         except Exception as e:
-            print(f"处理项目 {item_idx}, 段落 {paragraph_idx} 时发生错误: {e}")
+            print(f"Error processing item {item_idx}, paragraph {paragraph_idx}: {e}")
             return {
                 'item_idx': item_idx,
                 'paragraph_idx': paragraph_idx,
@@ -186,26 +186,26 @@ Title:
 
     def generate_title_for_ctx(self, passage_data: Dict[str, Any]) -> Dict[str, Any]:
         """
-        为单个ctx生成标题
+        Generate title for a single ctx
 
         Args:
-            passage_data: 包含段落信息的字典
+            passage_data: Dictionary containing passage information
 
         Returns:
-            包含标题的结果字典
+            Result dictionary containing title
         """
         try:
             item_idx = passage_data['item_idx']
             ctx_idx = passage_data['ctx_idx']
             paragraph = passage_data['paragraph']
 
-            # 生成标题
+            # Generate title
             title = self.call_api_with_retry(paragraph)
 
             with self.progress_lock:
                 self.completed_count += 1
                 print(
-                    f"标题生成进度: {self.completed_count}/{self.total_count} - 项目 {item_idx + 1}, ctx {ctx_idx + 1}")
+                    f"Title generation progress: {self.completed_count}/{self.total_count} - Item {item_idx + 1}, ctx {ctx_idx + 1}")
 
             return {
                 'item_idx': item_idx,
@@ -216,7 +216,7 @@ Title:
             }
 
         except Exception as e:
-            print(f"处理项目 {item_idx}, ctx {ctx_idx} 时发生错误: {e}")
+            print(f"Error processing item {item_idx}, ctx {ctx_idx}: {e}")
             return {
                 'item_idx': item_idx,
                 'ctx_idx': ctx_idx,
@@ -227,18 +227,18 @@ Title:
 
     def collect_all_paragraphs(self, dataset: List[Dict]) -> List[Dict[str, Any]]:
         """
-        收集所有需要处理的段落数据
+        Collect all paragraph data that needs to be processed
 
         Args:
-            dataset: 数据集
+            dataset: Dataset
 
         Returns:
-            所有段落的数据列表
+            List of all paragraph data
         """
         all_paragraphs_data = []
 
         for item_idx, item in enumerate(dataset):
-            # 检查是否有ori_fake字段
+            # Check if ori_fake field exists
             if 'ori_fake' in item and isinstance(item['ori_fake'], list):
                 for paragraph_idx, paragraph in enumerate(item['ori_fake']):
                     if paragraph.strip():
@@ -252,13 +252,13 @@ Title:
 
     def collect_default_title_paragraphs(self, dataset: List[Dict]) -> List[Dict[str, Any]]:
         """
-        收集具有默认标题或空标题的段落数据
+        Collect paragraph data with default or empty titles
 
         Args:
-            dataset: 数据集
+            dataset: Dataset
 
         Returns:
-            需要重新生成标题的段落数据列表
+            List of paragraph data that needs title regeneration
         """
         paragraphs_data = []
 
@@ -278,13 +278,13 @@ Title:
 
     def collect_missing_title_paragraphs(self, dataset: List[Dict]) -> List[Dict[str, Any]]:
         """
-        收集缺失标题字段的段落数据
+        Collect paragraph data with missing title fields
 
         Args:
-            dataset: 数据集
+            dataset: Dataset
 
         Returns:
-            需要添加标题的段落数据列表
+            List of paragraph data that needs title added
         """
         paragraphs_data = []
 
@@ -302,31 +302,31 @@ Title:
 
     def stage1_generate_all_titles(self, dataset: List[Dict], output_file: str) -> List[Dict[str, Any]]:
         """
-        第一阶段：批量生成所有标题
+        Stage 1: Batch generate all titles
 
         Args:
-            dataset: 数据集
-            output_file: 输出文件路径
+            dataset: Dataset
+            output_file: Output file path
 
         Returns:
-            所有标题生成结果
+            All title generation results
         """
         print("=" * 80)
-        print("第一阶段：批量生成所有标题")
+        print("Stage 1: Batch generate all titles")
         print("=" * 80)
 
-        # 收集所有段落
+        # Collect all paragraphs
         all_paragraphs_data = self.collect_all_paragraphs(dataset)
         self.total_count = len(all_paragraphs_data)
         self.completed_count = 0
 
-        print(f"总共需要生成 {self.total_count} 个标题")
+        print(f"Total {self.total_count} titles to generate")
 
         if self.total_count == 0:
-            print("没有需要处理的段落")
+            print("No paragraphs to process")
             return []
 
-        # 使用多线程生成标题
+        # Use multi-threading to generate titles
         results = []
         with concurrent.futures.ThreadPoolExecutor(max_workers=self.max_workers) as executor:
             future_to_paragraph = {
@@ -339,38 +339,38 @@ Title:
                 results.append(result)
 
         success_count = sum(1 for r in results if r['success'])
-        print(f"标题生成完成: {success_count}/{len(results)} 成功")
+        print(f"Title generation completed: {success_count}/{len(results)} succeeded")
 
-        # 保存标题生成结果
+        # Save title generation results
         self.save_titles_results(results, output_file, "stage1_titles")
 
         return results
 
     def stage1_generate_titles_for_ctxs(self, paragraphs_data: List[Dict[str, Any]], output_file: str) -> List[Dict[str, Any]]:
         """
-        第一阶段：为现有ctxs生成标题
+        Stage 1: Generate titles for existing ctxs
 
         Args:
-            paragraphs_data: 段落数据列表
-            output_file: 输出文件路径
+            paragraphs_data: List of paragraph data
+            output_file: Output file path
 
         Returns:
-            标题生成结果
+            Title generation results
         """
         print("=" * 80)
-        print("第一阶段：为现有ctxs生成标题")
+        print("Stage 1: Generate titles for existing ctxs")
         print("=" * 80)
 
         self.total_count = len(paragraphs_data)
         self.completed_count = 0
 
-        print(f"总共需要生成 {self.total_count} 个标题")
+        print(f"Total {self.total_count} titles to generate")
 
         if self.total_count == 0:
-            print("没有需要处理的段落")
+            print("No paragraphs to process")
             return []
 
-        # 使用多线程生成标题
+        # Use multi-threading to generate titles
         results = []
         with concurrent.futures.ThreadPoolExecutor(max_workers=self.max_workers) as executor:
             future_to_paragraph = {
@@ -383,83 +383,83 @@ Title:
                 results.append(result)
 
         success_count = sum(1 for r in results if r['success'])
-        print(f"标题生成完成: {success_count}/{len(results)} 成功")
+        print(f"Title generation completed: {success_count}/{len(results)} succeeded")
 
         return results
 
     def save_titles_results(self, titles_results: List[Dict], output_file: str, stage: str):
         """
-        保存标题生成结果
+        Save title generation results
 
         Args:
-            titles_results: 标题生成结果列表
-            output_file: 输出文件路径
-            stage: 阶段标识
+            titles_results: List of title generation results
+            output_file: Output file path
+            stage: Stage identifier
         """
         try:
             temp_file = f"{output_file}.{stage}.json"
             with open(temp_file, 'w', encoding='utf-8') as f:
                 json.dump(titles_results, f, ensure_ascii=False, indent=2)
-            print(f"{stage}阶段标题结果已保存到: {temp_file}")
+            print(f"{stage} stage title results saved to: {temp_file}")
         except Exception as e:
-            print(f"保存{stage}阶段标题结果失败: {e}")
+            print(f"Failed to save {stage} stage title results: {e}")
 
     def stage2_calculate_similarities(self, titles_results: List[Dict], dataset_name: str, output_file: str) -> List[Dict]:
         """
-        第二阶段：计算所有相似度
+        Stage 2: Calculate all similarities
 
         Args:
-            titles_results: 标题生成结果
-            dataset_name: 数据集名称
-            output_file: 输出文件路径
+            titles_results: Title generation results
+            dataset_name: Dataset name
+            output_file: Output file path
 
         Returns:
-            包含相似度的结果
+            Results with similarities
         """
         print("=" * 80)
-        print("第二阶段：计算所有相似度")
+        print("Stage 2: Calculate all similarities")
         print("=" * 80)
 
         if not titles_results:
-            print("没有标题结果需要处理")
+            print("No title results to process")
             return []
 
-        # 获取demonstration embeddings
+        # Get demonstration embeddings
         dataset_demonstrations = self.get_dataset_demonstrations(dataset_name)
         demonstration_texts = ["title: {} text: {}".format(demo["title"], demo["text"]) for demo in
                                dataset_demonstrations]
 
-        print(f"正在计算demonstration embeddings...")
+        print(f"Calculating demonstration embeddings...")
         demonstration_embeddings = get_e5_mistral_embeddings_for_document(
             doc_list=demonstration_texts,
             max_length=256,
             batch_size=4,
         )
 
-        # 构建文档文本列表
+        # Build document text list
         document_texts = []
         for result in titles_results:
             if result['success']:
                 document_text = f"title: {result['title']} text: {result['paragraph']}"
                 document_texts.append(document_text)
             else:
-                document_texts.append("")  # 占位符
+                document_texts.append("")  # Placeholder
 
-        print(f"正在计算 {len(document_texts)} 个文档的embeddings...")
+        print(f"Calculating embeddings for {len(document_texts)} documents...")
 
-        # 分批处理避免显存溢出
-        batch_size = 13  # 可根据显存情况调整
+        # Process in batches to avoid memory overflow
+        batch_size = 13  # Can be adjusted based on GPU memory
         all_similarities = []
 
         for i in range(0, len(document_texts), batch_size):
             batch_texts = document_texts[i:i + batch_size]
-            # 过滤掉空文本
+            # Filter out empty texts
             valid_texts = [text for text in batch_texts if text.strip()]
 
             if valid_texts:
-                print(f"处理批次 {i // batch_size + 1}/{(len(document_texts) + batch_size - 1) // batch_size}")
+                print(f"Processing batch {i // batch_size + 1}/{(len(document_texts) + batch_size - 1) // batch_size}")
 
-                # 计算当前批次的嵌入向量
+                # Calculate embeddings for current batch
                 documents_embeddings = get_e5_mistral_embeddings_for_query(
                     "retrieve_semantically_similar_text",
                     query_list=valid_texts,
@@ -467,24 +467,24 @@ Title:
                     batch_size=4,
                 )
 
-                # 计算相似度
+                # Calculate similarities
                 similarities = torch.matmul(documents_embeddings, demonstration_embeddings.T)
                 demonstration_ranks = torch.argsort(similarities, dim=1, descending=True)
 
-                # 添加到总结果中，处理空文本的情况
+                # Add to total results, handling empty texts
                 valid_idx = 0
                 for j, text in enumerate(batch_texts):
                     if text.strip():
                         all_similarities.append(demonstration_ranks[valid_idx].tolist())
                         valid_idx += 1
                     else:
-                        all_similarities.append([])  # 空文本的占位符
+                        all_similarities.append([])  # Placeholder for empty text
 
-                # 清理显存
+                # Clear GPU memory
                 del documents_embeddings, similarities, demonstration_ranks
                 torch.cuda.empty_cache() if torch.cuda.is_available() else None
 
-        # 将相似度结果添加到titles_results中
+        # Add similarity results to titles_results
         enhanced_results = []
         for i, result in enumerate(titles_results):
             enhanced_result = result.copy()
@@ -494,33 +494,33 @@ Title:
                 enhanced_result['ranked_prompt_indices'] = []
             enhanced_results.append(enhanced_result)
 
-        print(f"相似度计算完成")
+        print(f"Similarity calculation completed")
 
-        # 保存包含相似度的结果
+        # Save results with similarities
         self.save_titles_results(enhanced_results, output_file, "stage2_similarities")
 
         return enhanced_results
 
     def stage3_apply_to_dataset(self, enhanced_results: List[Dict], dataset: List[Dict]) -> List[Dict]:
         """
-        第三阶段：将结果应用到数据集
+        Stage 3: Apply results to dataset
 
         Args:
-            enhanced_results: 包含标题和相似度的结果
-            dataset: 原始数据集
+            enhanced_results: Results with titles and similarities
+            dataset: Original dataset
 
         Returns:
-            更新后的数据集
+            Updated dataset
         """
         print("=" * 80)
-        print("第三阶段：将结果应用到数据集")
+        print("Stage 3: Apply results to dataset")
         print("=" * 80)
 
         if not enhanced_results:
-            print("没有结果需要应用")
+            print("No results to apply")
             return dataset
 
-        # 按item_idx分组结果
+        # Group results by item_idx
         results_by_item = {}
         for result in enhanced_results:
             item_idx = result['item_idx']
@@ -528,22 +528,22 @@ Title:
                 results_by_item[item_idx] = []
             results_by_item[item_idx].append(result)
 
-        # 应用结果到数据集
+        # Apply results to dataset
         processed_items = 0
         for item_idx, item_results in results_by_item.items():
             if item_idx < len(dataset):
                 existing_ctxs = dataset[item_idx].get('ctxs', [])
 
-                # 为每个段落创建ctx对象
+                # Create ctx object for each paragraph
                 for result in item_results:
                     if result['success'] and result.get('ranked_prompt_indices'):
-                        # 生成唯一ID
+                        # Generate unique ID
                         new_id = len(existing_ctxs)
 
-                        # 拆分句子
+                        # Split sentences
                         sentences = self.split_sentences(result['paragraph'])
 
-                        # 构造新的ctx对象
+                        # Construct new ctx object
                         new_ctx = {
                             "id": str(new_id),
                             "title": result['title'],
@@ -554,26 +554,26 @@ Title:
 
                         existing_ctxs.append(new_ctx)
 
-                # 更新数据集
+                # Update dataset
                 dataset[item_idx]['ctxs'] = existing_ctxs
                 processed_items += 1
 
-        print(f"数据集更新完成，处理了 {processed_items} 个项目")
+        print(f"Dataset update completed, processed {processed_items} items")
         return dataset
 
     def stage3_apply_to_existing_ctxs(self, enhanced_results: List[Dict], dataset: List[Dict]) -> List[Dict]:
         """
-        第三阶段：将标题和相似度结果应用到现有ctxs
+        Stage 3: Apply titles and similarity results to existing ctxs
 
         Args:
-            enhanced_results: 包含标题和相似度的结果
-            dataset: 数据集
+            enhanced_results: Results with titles and similarities
+            dataset: Dataset
 
         Returns:
-            更新后的数据集
+            Updated dataset
         """
         print("=" * 80)
-        print("第三阶段：将标题和相似度应用到现有ctxs")
+        print("Stage 3: Apply titles and similarities to existing ctxs")
         print("=" * 80)
 
         processed_count = 0
@@ -592,20 +592,20 @@ Title:
                             ctxs[ctx_idx]['ranked_prompt_indices'] = ranked_prompt_indices
                             processed_count += 1
                 except (IndexError, KeyError) as e:
-                    print(f"应用结果到项目 {item_idx}, ctx {ctx_idx} 时发生错误: {e}")
+                    print(f"Error applying result to item {item_idx}, ctx {ctx_idx}: {e}")
 
-        print(f"标题和相似度应用完成，处理了 {processed_count} 个ctx")
+        print(f"Title and similarity application completed, processed {processed_count} ctxs")
         return dataset
 
     def check_default_or_empty_titles(self, dataset: List[Dict]) -> List[Dict]:
         """
-        检查数据集中是否有默认值或空值的title，并提取出来
+        Check if there are default or empty titles in the dataset and extract them
 
         Args:
-            dataset: 数据集
+            dataset: Dataset
 
         Returns:
-            包含默认值或空值的项目数据
+            Item data with default or empty values
         """
         failed_items = []
 
@@ -623,20 +623,20 @@ Title:
                     failed_items.append({
                         'item_idx': item_idx,
                         'item': item,
-                        'dataset': 'hotpotqa'  # 默认数据集
+                        'dataset': 'hotpotqa'  # Default dataset
                     })
 
         return failed_items
 
     def count_default_or_empty_titles(self, dataset: List[Dict]) -> Tuple[int, int]:
         """
-        统计默认值或空值的数量
+        Count the number of default or empty values
 
         Args:
-            dataset: 数据集
+            dataset: Dataset
 
         Returns:
-            (items_with_issues, total_titles_with_issues): 有问题的条目数量和标题数量
+            (items_with_issues, total_titles_with_issues): Number of items and titles with issues
         """
         items_with_issues = 0
         total_titles_with_issues = 0
@@ -658,13 +658,13 @@ Title:
 
     def check_missing_title_fields(self, dataset: List[Dict]) -> List[Dict]:
         """
-        检查数据集中是否有缺失title字段的ctx，并提取出来
+        Check if there are ctxs with missing title fields in the dataset and extract them
 
         Args:
-            dataset: 数据集
+            dataset: Dataset
 
         Returns:
-            缺失title字段的项目数据
+            Item data with missing title fields
         """
         missing_items = []
 
@@ -680,20 +680,20 @@ Title:
                     missing_items.append({
                         'item_idx': item_idx,
                         'item': item,
-                        'dataset': 'hotpotqa'  # 默认数据集
+                        'dataset': 'hotpotqa'  # Default dataset
                     })
 
         return missing_items
 
     def count_missing_title_fields(self, dataset: List[Dict]) -> int:
         """
-        统计缺失title字段的数量
+        Count the number of missing title fields
 
         Args:
-            dataset: 数据集
+            dataset: Dataset
 
         Returns:
-            缺失title字段的ctx数量
+            Number of ctxs with missing title fields
         """
         missing_count = 0
 
@@ -707,253 +707,253 @@ Title:
 
     def process_default_title_check(self, input_file: str, output_file: str, dataset_name: str = "hotpotqa"):
         """
-        执行默认标题检查并修复（完整三阶段处理）
+        Execute default title check and repair (complete three-stage processing)
 
         Args:
-            input_file: 输入文件路径
-            output_file: 输出文件路径
-            dataset_name: 数据集名称
+            input_file: Input file path
+            output_file: Output file path
+            dataset_name: Dataset name
         """
-        print("🔍 执行默认标题检查模式（完整三阶段处理）")
+        print("🔍 Executing default title check mode (complete three-stage processing)")
         print("=" * 80)
 
-        # 读取输入文件
+        # Read input file
         try:
             with open(input_file, 'r', encoding='utf-8') as f:
                 dataset = json.load(f)
         except Exception as e:
-            print(f"读取输入文件失败: {e}")
+            print(f"Failed to read input file: {e}")
             return
 
         if not isinstance(dataset, list):
             dataset = [dataset]
 
-        # 统计默认标题数量
+        # Count default titles
         items_count, titles_count = self.count_default_or_empty_titles(dataset)
-        print(f"发现默认或空标题: {items_count} 个项目, {titles_count} 个标题")
+        print(f"Found default or empty titles: {items_count} items, {titles_count} titles")
 
         if titles_count == 0:
-            print("✅ 没有发现默认或空标题，无需处理")
+            print("✅ No default or empty titles found, no processing needed")
             return
 
-        # 第一阶段：收集需要重新生成标题的段落并生成标题
+        # Stage 1: Collect paragraphs that need title regeneration and generate titles
         paragraphs_data = self.collect_default_title_paragraphs(dataset)
-        print(f"收集到 {len(paragraphs_data)} 个需要重新生成标题的段落")
+        print(f"Collected {len(paragraphs_data)} paragraphs that need title regeneration")
 
         titles_results = self.stage1_generate_titles_for_ctxs(paragraphs_data, output_file)
 
-        # 第二阶段：计算相似度
+        # Stage 2: Calculate similarities
         enhanced_results = self.stage2_calculate_similarities(titles_results, dataset_name, output_file)
 
-        # 第三阶段：应用到数据集
+        # Stage 3: Apply to dataset
         updated_dataset = self.stage3_apply_to_existing_ctxs(enhanced_results, dataset)
 
-        # 保存结果
+        # Save results
         try:
             with open(output_file, 'w', encoding='utf-8') as f:
                 json.dump(updated_dataset, f, ensure_ascii=False, indent=2)
-            print(f"✅ 默认标题检查完成！结果已保存到: {output_file}")
+            print(f"✅ Default title check completed! Results saved to: {output_file}")
 
-            # 清理临时文件
+            # Clean up temporary files
             import os
             for stage in ["stage1_titles", "stage2_similarities"]:
                 temp_file = f"{output_file}.{stage}.json"
                 if os.path.exists(temp_file):
                     os.remove(temp_file)
-                    print(f"已清理临时文件: {temp_file}")
+                    print(f"Cleaned up temporary file: {temp_file}")
 
-            # 最终统计
+            # Final statistics
             final_items_count, final_titles_count = self.count_default_or_empty_titles(updated_dataset)
-            print(f"🏁 处理后统计:")
-            print(f"   - 剩余默认/空标题: {final_items_count} 个项目, {final_titles_count} 个标题")
-            print(f"   - 修复成功: {titles_count - final_titles_count} 个标题")
+            print(f"🏁 Post-processing statistics:")
+            print(f"   - Remaining default/empty titles: {final_items_count} items, {final_titles_count} titles")
+            print(f"   - Successfully repaired: {titles_count - final_titles_count} titles")
 
         except Exception as e:
-            print(f"保存最终输出文件失败: {e}")
+            print(f"Failed to save final output file: {e}")
 
     def process_missing_title_check(self, input_file: str, output_file: str, dataset_name: str = "hotpotqa"):
         """
-        执行缺失标题检查并修复（完整三阶段处理）
+        Execute missing title check and repair (complete three-stage processing)
 
         Args:
-            input_file: 输入文件路径
-            output_file: 输出文件路径
-            dataset_name: 数据集名称
+            input_file: Input file path
+            output_file: Output file path
+            dataset_name: Dataset name
         """
-        print("🔍 执行缺失标题检查模式（完整三阶段处理）")
+        print("🔍 Executing missing title check mode (complete three-stage processing)")
         print("=" * 80)
 
-        # 读取输入文件
+        # Read input file
         try:
             with open(input_file, 'r', encoding='utf-8') as f:
                 dataset = json.load(f)
         except Exception as e:
-            print(f"读取输入文件失败: {e}")
+            print(f"Failed to read input file: {e}")
             return
 
         if not isinstance(dataset, list):
             dataset = [dataset]
 
-        # 统计缺失标题数量
+        # Count missing titles
         missing_count = self.count_missing_title_fields(dataset)
-        print(f"发现缺失标题字段: {missing_count} 个ctx")
+        print(f"Found missing title fields: {missing_count} ctxs")
 
         if missing_count == 0:
-            print("✅ 没有发现缺失标题字段，无需处理")
+            print("✅ No missing title fields found, no processing needed")
             return
 
-        # 第一阶段：收集需要添加标题的段落并生成标题
+        # Stage 1: Collect paragraphs that need title added and generate titles
         paragraphs_data = self.collect_missing_title_paragraphs(dataset)
-        print(f"收集到 {len(paragraphs_data)} 个需要添加标题的段落")
+        print(f"Collected {len(paragraphs_data)} paragraphs that need title added")
 
         titles_results = self.stage1_generate_titles_for_ctxs(paragraphs_data, output_file)
 
-        # 第二阶段：计算相似度
+        # Stage 2: Calculate similarities
         enhanced_results = self.stage2_calculate_similarities(titles_results, dataset_name, output_file)
 
-        # 第三阶段：应用到数据集
+        # Stage 3: Apply to dataset
         updated_dataset = self.stage3_apply_to_existing_ctxs(enhanced_results, dataset)
 
-        # 保存结果
+        # Save results
         try:
             with open(output_file, 'w', encoding='utf-8') as f:
                 json.dump(updated_dataset, f, ensure_ascii=False, indent=2)
-            print(f"✅ 缺失标题检查完成！结果已保存到: {output_file}")
+            print(f"✅ Missing title check completed! Results saved to: {output_file}")
 
-            # 清理临时文件
+            # Clean up temporary files
             import os
             for stage in ["stage1_titles", "stage2_similarities"]:
                 temp_file = f"{output_file}.{stage}.json"
                 if os.path.exists(temp_file):
                     os.remove(temp_file)
-                    print(f"已清理临时文件: {temp_file}")
+                    print(f"Cleaned up temporary file: {temp_file}")
 
-            # 最终统计
+            # Final statistics
             final_missing_count = self.count_missing_title_fields(updated_dataset)
-            print(f"🏁 处理后统计:")
-            print(f"   - 剩余缺失标题字段: {final_missing_count} 个ctx")
-            print(f"   - 添加成功: {missing_count - final_missing_count} 个标题")
+            print(f"🏁 Post-processing statistics:")
+            print(f"   - Remaining missing title fields: {final_missing_count} ctxs")
+            print(f"   - Successfully added: {missing_count - final_missing_count} titles")
 
         except Exception as e:
-            print(f"保存最终输出文件失败: {e}")
+            print(f"Failed to save final output file: {e}")
 
     def process_dataset_optimized_separated(self, input_file: str, output_file: str, dataset_name: str = "hotpotqa"):
         """
-        完整的三阶段数据集处理
+        Complete three-stage dataset processing
 
         Args:
-            input_file: 输入文件路径
-            output_file: 输出文件路径
-            dataset_name: 数据集名称
+            input_file: Input file path
+            output_file: Output file path
+            dataset_name: Dataset name
         """
-        print(f"开始完整的三阶段处理数据集: {input_file}")
-        print("🚀 执行完整的三阶段处理")
-        print("   第一阶段：批量生成所有标题")
-        print("   第二阶段：批量计算所有相似度")
-        print("   第三阶段：应用结果到数据集")
+        print(f"Starting complete three-stage processing for dataset: {input_file}")
+        print("🚀 Executing complete three-stage processing")
+        print("   Stage 1: Batch generate all titles")
+        print("   Stage 2: Batch calculate all similarities")
+        print("   Stage 3: Apply results to dataset")
 
-        # 读取输入文件
+        # Read input file
         try:
             with open(input_file, 'r', encoding='utf-8') as f:
                 dataset = json.load(f)
         except Exception as e:
-            print(f"读取输入文件失败: {e}")
+            print(f"Failed to read input file: {e}")
             return
 
         if not isinstance(dataset, list):
             dataset = [dataset]
 
-        # 执行第一阶段：生成标题
+        # Execute Stage 1: Generate titles
         titles_results = self.stage1_generate_all_titles(dataset, output_file)
 
-        # 执行第二阶段：计算相似度
+        # Execute Stage 2: Calculate similarities
         enhanced_results = self.stage2_calculate_similarities(titles_results, dataset_name, output_file)
 
-        # 执行第三阶段：应用到数据集
+        # Execute Stage 3: Apply to dataset
         updated_dataset = self.stage3_apply_to_dataset(enhanced_results, dataset)
 
-        # 保存最终结果
+        # Save final results
         try:
             with open(output_file, 'w', encoding='utf-8') as f:
                 json.dump(updated_dataset, f, ensure_ascii=False, indent=2)
-            print(f"✅ 完整处理完成！结果已保存到: {output_file}")
+            print(f"✅ Complete processing finished! Results saved to: {output_file}")
 
-            # 清理临时文件
+            # Clean up temporary files
             import os
             for stage in ["stage1_titles", "stage2_similarities"]:
                 temp_file = f"{output_file}.{stage}.json"
                 if os.path.exists(temp_file):
                     os.remove(temp_file)
-                    print(f"已清理临时文件: {temp_file}")
+                    print(f"Cleaned up temporary file: {temp_file}")
 
-            # 最终统计
+            # Final statistics
             default_items_count, default_titles_count = self.count_default_or_empty_titles(updated_dataset)
             missing_count = self.count_missing_title_fields(updated_dataset)
-            print(f"🏁 最终统计:")
-            print(f"   - 剩余问题项目: {default_items_count} 个, 问题标题: {default_titles_count} 个")
-            print(f"   - 剩余缺失title字段: {missing_count} 个")
+            print(f"🏁 Final statistics:")
+            print(f"   - Remaining problematic items: {default_items_count}, problematic titles: {default_titles_count}")
+            print(f"   - Remaining missing title fields: {missing_count}")
 
         except Exception as e:
-            print(f"保存最终输出文件失败: {e}")
+            print(f"Failed to save final output file: {e}")
 
     def save_progress(self, dataset: List[Dict], output_file: str, stage: str):
         """
-        保存中间进度
+        Save intermediate progress
         """
         try:
             temp_file = f"{output_file}.{stage}.tmp"
             with open(temp_file, 'w', encoding='utf-8') as f:
                 json.dump(dataset, f, ensure_ascii=False, indent=2)
-            print(f"{stage}阶段进度已保存到临时文件: {temp_file}")
+            print(f"{stage} stage progress saved to temporary file: {temp_file}")
         except Exception as e:
-            print(f"保存{stage}阶段进度失败: {e}")
+            print(f"Failed to save {stage} stage progress: {e}")
 
 
 def main():
     """
-    主函数 - 使用示例
+    Main function - Usage example
     """
-    # 配置参数
-    API_KEY = ""  # 请填写您的ZhipuAI API Key
-    INPUT_FILE = "wiki_test1000_add_orifake.json"
-    OUTPUT_FILE = "wiki_test1000_add_ctxs.json"
+    # Configuration parameters
+    API_KEY = "05748176082447f483438dfd914cc299.NcsCifhTarCch6es"  # Please fill in your ZhipuAI API Key
+    INPUT_FILE = "/home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_test1000_add_orifake.json"
+    OUTPUT_FILE = "/home/jiangjp/trace-idea/data/2wikimultihopqa/wiki_test1000_add_ctxs.json"
 
-    # 并行处理参数
-    MAX_WORKERS = 3000  # 并发线程数，根据API限制调整
-    DATASET_NAME = "2wikimultihopqa"  # 数据集名称
+    # Parallel processing parameters
+    MAX_WORKERS = 3000  # Number of concurrent threads, adjust based on API limits
+    DATASET_NAME = "2wikimultihopqa"  # Dataset name
 
-    # ⭐⭐ 检查模式控制参数
-    CHECK_DEFAULT_TITLES = False  # 设置为True表示执行默认标题检查模式
-    CHECK_MISSING_TITLES = False  # 设置为True表示执行缺失标题检查模式
+    # ⭐⭐ Check mode control parameters
+    CHECK_DEFAULT_TITLES = False  # Set to True to execute default title check mode
+    CHECK_MISSING_TITLES = False  # Set to True to execute missing title check mode
 
-    # 参数说明：
-    # 1. CHECK_DEFAULT_TITLES=True: 检查并修复默认或空标题（完整三阶段处理）
-    # 2. CHECK_MISSING_TITLES=True: 检查并添加缺失的标题字段（完整三阶段处理）
-    # 3. 所有检查参数都为False: 执行完整的三阶段处理
+    # Parameter description:
+    # 1. CHECK_DEFAULT_TITLES=True: Check and repair default or empty titles (complete three-stage processing)
+    # 2. CHECK_MISSING_TITLES=True: Check and add missing title fields (complete three-stage processing)
+    # 3. All check parameters set to False: Execute complete three-stage processing
 
     if not API_KEY:
-        print("错误：请先设置您的ZhipuAI API Key")
+        print("Error: Please set your ZhipuAI API Key first")
         return
 
-    # 创建生成器实例
+    # Create generator instance
     generator = OptimizedTitleGenerator(API_KEY, max_workers=MAX_WORKERS)
 
-    # 根据参数决定执行模式
+    # Decide execution mode based on parameters
     if CHECK_DEFAULT_TITLES:
-        print("🔍 启用默认标题检查模式：检查并修复默认或空标题（完整三阶段处理）")
+        print("🔍 Enable default title check mode: Check and repair default or empty titles (complete three-stage processing)")
         generator.process_default_title_check(INPUT_FILE, OUTPUT_FILE, DATASET_NAME)
     elif CHECK_MISSING_TITLES:
-        print("🔍 启用缺失标题检查模式：检查并添加缺失的标题字段（完整三阶段处理）")
+        print("🔍 Enable missing title check mode: Check and add missing title fields (complete three-stage processing)")
         generator.process_missing_title_check(INPUT_FILE, OUTPUT_FILE, DATASET_NAME)
     else:
-        print("🚀 启用完整的三阶段处理模式")
+        print("🚀 Enable complete three-stage processing mode")
         generator.process_dataset_optimized_separated(INPUT_FILE, OUTPUT_FILE, DATASET_NAME)
 
-    print(f"📂 输入文件: {INPUT_FILE}")
-    print(f"📂 输出文件: {OUTPUT_FILE}")
+    print(f"📂 Input file: {INPUT_FILE}")
+    print(f"📂 Output file: {OUTPUT_FILE}")
 
     print("\n" + "=" * 80)
-    print("处理完成！")
+    print("Processing completed!")
     print("=" * 80)
 
 
