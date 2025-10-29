@@ -9,52 +9,66 @@ from retrievers.e5_mistral import get_e5_mistral_embeddings_for_query, get_e5_mi
 from readers.metrics import ems, f1_score,accuracy
 from re_weighting import Re_Weighting_Strategy, Find_Best_Heads
 
-# 全局变量
+# Global variables
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
+def setup_parser():
+    """Setup command line arguments"""
+    parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+    parser.add_argument("--input_data_file", type=str, default="data/hotpotqa/dev_with_kgs.json",
+                        help="Input data file path")
+    parser.add_argument("--datasets", type=str, default="hotpotqa",
+                        help="Dataset type")
+    parser.add_argument("--cram_type", type=str, default="find_best_heads",
+                        help="CRAM type")
+    parser.add_argument("--model_path", type=str, required=True, help="Model path (llama3-8b-instruct, qwen-7b, etc.)")
+    parser.add_argument("--context_nums", type=int, default=5, help="Number of retrieved documents")
+    parser.add_argument("--answer_maxlength", type=int, default=25, help="Maximum answer length")
+    parser.add_argument("--fake_num", type=int, default=1, help="Number of fake documents")
+    args = parser.parse_args()
+    return args
 
 def load_json(file_path):
-    """加载JSON文件"""
+    """Load JSON file"""
     with open(file_path, 'r', encoding='utf-8') as f:
         return json.load(f)
 
-
 def retrieve_documents_by_similarity_for_find_best_heads(question: str, ctxs: List[Dict], args):
     """
-    基于相似度的检索函数：为单个问题检索最相关的文档
-    只使用相似度分数，不考虑truthful_score
+    Similarity-based retrieval function: retrieve the most relevant documents for a single question
+    Only uses similarity scores, does not consider truthful_score
 
     Args:
-        question: 问题文本
-        ctxs: 候选文档列表
-        args: 参数配置
+        question: Question text
+        ctxs: Candidate document list
+        args: Parameter configuration
 
     Returns:
-        List[Dict]: 检索到的top-k文档，包含text字段
+        List[Dict]: Retrieved top-k documents, including text field
     """
-    # 提取所有候选文档
+    # Extract all candidate documents
     documents = []
     end_index = len(ctxs) - 3
     ctxs_copy = ctxs[:end_index]
     for i, ctx in enumerate(ctxs_copy):
         documents.append("title: {}, text: {}".format(ctx["title"], ctx["text"]))
 
-    # 计算文档embeddings
+    # Calculate document embeddings
     doc_embeddings = get_e5_mistral_embeddings_for_document(documents, max_length=256, batch_size=2)
     question_embedding = get_e5_mistral_embeddings_for_query("retrieve_relevant_documents", [question],
                                                              max_length=128, batch_size=1)
 
-    # 归一化embeddings
+    # Normalize embeddings
     doc_embeddings = torch.nn.functional.normalize(doc_embeddings, p=2, dim=-1)
     question_embedding = torch.nn.functional.normalize(question_embedding, p=2, dim=-1)
 
-    # 计算相似度分数
+    # Calculate similarity scores
     similarities = torch.matmul(question_embedding, doc_embeddings.T).squeeze(0)
 
-    # 选择top-k文档
+    # Select top-k documents
     topk_scores, topk_indices = torch.topk(similarities, k=min(args.context_nums - 1, len(documents)), dim=0)
 
-    # 构建检索结果
+    # Construct retrieval results
     retrieved_documents = []
     scores = []
     retrieved_documents.append("title: {}, text: {}".format(ctxs[end_index]["title"], ctxs[end_index]["text"]))
@@ -68,19 +82,20 @@ def retrieve_documents_by_similarity_for_find_best_heads(question: str, ctxs: Li
 def retrieve_documents_by_similarity_for_re_weighting(question: str, ctxs: List[Dict], args,
                                                       ideal_setting: bool = True):
     """
-    基于相似度的检索函数：为单个问题检索最相关的文档
-    只使用相似度分数，不考虑truthful_score
+    Similarity-based retrieval function: retrieve the most relevant documents for a single question
+    Only uses similarity scores, does not consider truthful_score
 
     Args:
-        question: 问题文本
-        ctxs: 候选文档列表
-        args: 参数配置
+        question: Question text
+        ctxs: Candidate document list
+        args: Parameter configuration
+        ideal_setting: Whether to use ideal setting
 
     Returns:
-        List[Dict]: 检索到的top-k文档，包含text字段
+        List[Dict]: Retrieved top-k documents, including text field
     """
-    # 提取所有候选文档
-    print("ideal_setting:",ideal_setting)
+    # Extract all candidate documents
+    print("ideal_setting:", ideal_setting)
     documents, real_documents, real_documents_truthful_scores = [], [], []
     end_index = len(ctxs) - 3
     ctxs_copy = ctxs[:end_index]
@@ -90,29 +105,30 @@ def retrieve_documents_by_similarity_for_re_weighting(question: str, ctxs: List[
         if ideal_setting:
             real_documents_truthful_scores.append(10)
         else:
-            # 获取文档的truthful_score
+            # Get document's truthful_score
             real_documents_truthful_scores.append(ctx["text_truthful_score"])
     for ctx in ctxs[end_index:end_index + args.fake_num]:
         documents.append("title: {}, text: {}".format(ctx["title"], ctx["text"]))
-    # 计算文档embeddings
+    
+    # Calculate document embeddings
     doc_embeddings = get_e5_mistral_embeddings_for_document(documents, max_length=256, batch_size=2)
     question_embedding = get_e5_mistral_embeddings_for_query("retrieve_relevant_documents", [question],
                                                              max_length=128, batch_size=1)
 
-    # 归一化embeddings
+    # Normalize embeddings
     doc_embeddings = torch.nn.functional.normalize(doc_embeddings, p=2, dim=-1)
     question_embedding = torch.nn.functional.normalize(question_embedding, p=2, dim=-1)
 
-    # 计算相似度分数
+    # Calculate similarity scores
     similarities = torch.matmul(question_embedding, doc_embeddings.T).squeeze(0)
 
-    # 选择top-k文档
+    # Select top-k documents
     topk_scores, topk_indices = torch.topk(similarities[:-args.fake_num], k=min(args.context_nums - args.fake_num, len(real_documents)), dim=0)
 
-    # 构建检索结果
+    # Construct retrieval results
     retrieved_documents = []
-    truthful_scores=[]
-    relevant_scores=[]
+    truthful_scores = []
+    relevant_scores = []
     for i, ctx in enumerate(ctxs[end_index:end_index + args.fake_num]):
         if ideal_setting:
             retrieved_documents.append("title: {}, text: {}".format(ctx["title"], ctx["text"]))
@@ -141,39 +157,58 @@ def retrieve_documents_by_similarity_for_re_weighting(question: str, ctxs: List[
 
 
 def cram(args, model_path: str, output_dir: str = "./results_heads_scores"):
+    """
+    CRAM main function for finding best heads or re-weighting evaluation
+    
+    Args:
+        args: Argument configuration
+        model_path: Model path
+        output_dir: Output directory
+        
+    Returns:
+        metrics: Evaluation metrics (only for re-weighting mode)
+    """
     chat_model_re_weighting = None
     print("args.cram_type", args.cram_type)
     print(type(args.cram_type))
     print(args.cram_type == "find_best_heads")
     data = load_json(args.input_data_file)
+    
+    # Determine LLM type
     if "Llama-3" in model_path:
-        llm = "llama3_title"
+        llm = "llama3"
     elif "Qwen" in model_path:
         llm = 'qwen'
     elif "gemma" in model_path:
         llm = 'gemma'
     elif "Mistral" in model_path:
         llm = 'Mistral'
+    
     if args.cram_type == "find_best_heads":
         chat_model_re_weighting = Find_Best_Heads(model_name=model_path)
         output_dir = os.path.join(output_dir, args.datasets)
         file_path = os.path.join(output_dir, llm, f"heads_scores.json")
+        
+        # Load existing results if available
         if os.path.exists(file_path):
             with open(file_path, 'r', encoding="utf8") as file:
                 all_prob_changes = json.load(file)
         else:
             all_prob_changes = []
-        for i, example in enumerate(tqdm(data, desc="正在记录注意力头分数")):
+        
+        # Process each example
+        for i, example in enumerate(tqdm(data, desc="Recording attention head scores")):
             if i < len(all_prob_changes):
                 continue
             question = example["question"]
             ctxs = example["ctxs"]
             wrong_answer = example["wrong_answer"]
-            contexts,scores = retrieve_documents_by_similarity_for_find_best_heads(question, ctxs, args)
+            contexts, scores = retrieve_documents_by_similarity_for_find_best_heads(question, ctxs, args)
             prob_change = chat_model_re_weighting.cal_logits(question=question, paras=contexts, scores=scores,
                                            wrong_answer=wrong_answer)
             all_prob_changes.append(prob_change)
 
+            # Save results
             folder = os.path.join(output_dir, llm)
             file_path = os.path.join(output_dir, llm, f"heads_scores.json")
             if not os.path.exists(folder):
@@ -182,89 +217,71 @@ def cram(args, model_path: str, output_dir: str = "./results_heads_scores"):
                 json.dump(all_prob_changes, file, ensure_ascii=False, indent=4)
 
     else:
+        # Load selected heads
         input_path = os.path.join(f'./results_heads_scores', args.datasets, llm)
         input_filepath = os.path.join(input_path, 'selected_heads.json')
         with open(input_filepath, "r", encoding="utf-8") as f:
             layers_to_be_modified = json.load(f)
+        
         chat_model_re_weighting = Re_Weighting_Strategy(model_name=model_path,
                                                         layers_to_be_modified=layers_to_be_modified)
         em_scores_list, f1_scores_list, accuracy_list = [], [], []
-        for i, example in enumerate(tqdm(data, desc="正在进行修改注意力头评估：")):
+        
+        # Process each example for evaluation
+        for i, example in enumerate(tqdm(data, desc="Performing modified attention head evaluation:")):
             question = example["question"]
             ctxs = example["ctxs"]
             wrong_answer = example["wrong_answer"]
             gold_answers = example["answers"]
-            contexts,scores = retrieve_documents_by_similarity_for_re_weighting(question, ctxs, args)
-            prompt, predicted_answer=chat_model_re_weighting.run_RAG_with_attention_weighting(question=question, paras=contexts, scores=scores)
-            # 计算评估指标
-            if args.use_accuracy:
-                acc = accuracy(predicted_answer, gold_answers)
-                accuracy_list.append(acc)
-                if not acc and i < 5:  # 只打印前5个案例
-                    print(f"\n错误案例 {i + 1}:")
-                    print(f"问题: {question}")
-                    print(f"预测答案: {predicted_answer}")
-                    print(f"正确答案: {gold_answers}")
-                    print("-" * 50)
-            else:
-                em_score = ems(predicted_answer, gold_answers)
-                em_scores_list.append(em_score)
-                if not em_score and i < 5:  # 只打印前5个案例
-                    print(f"\n错误案例 {i + 1}:")
-                    print(f"问题: {question}")
-                    print(f"预测答案: {predicted_answer}")
-                    print(f"正确答案: {gold_answers}")
-                    print("-" * 50)
+            contexts, scores = retrieve_documents_by_similarity_for_re_weighting(question, ctxs, args)
+            prompt, predicted_answer = chat_model_re_weighting.run_RAG_with_attention_weighting(question=question, paras=contexts, scores=scores)
+            
+            # Calculate evaluation metrics       
+            acc = accuracy(predicted_answer, gold_answers)
+            accuracy_list.append(acc)
+            em_score = ems(predicted_answer, gold_answers)
+            em_scores_list.append(em_score)
+            if not em_score and i < 5:  # Only print first 5 error cases
+                print(f"\nError case {i + 1}:")
+                print(f"Question: {question}")
+                print(f"Predicted answer: {predicted_answer}")
+                print(f"Correct answer: {gold_answers}")
+                print("-" * 50)
 
             f1, precision, recall = f1_score(predicted_answer, gold_answers[0])
             f1_scores_list.append(f1)
 
-        if args.use_accuracy:
-            metrics = {
-                "accuracy": np.mean(accuracy_list),
-                "f1": np.mean(f1_scores_list)
-            }
-        else:
-            metrics = {
-                "exact_match": np.mean(em_scores_list),
-                "f1": np.mean(f1_scores_list)
-            }
+        # Calculate final metrics
+        metrics = {
+            "exact_match": np.mean(em_scores_list),
+            "f1": np.mean(f1_scores_list),
+            "accuracy": np.mean(accuracy_list)
+        }
 
         return metrics
 
-def setup_parser():
-    """设置命令行参数"""
-    parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    parser.add_argument("--input_data_file", type=str, default="data/hotpotqa/dev_with_kgs.json",
-                        help="输入数据文件路径")
-    parser.add_argument("--datasets", type=str, default="hotpotqa",
-                        help="数据集类型")
-    parser.add_argument("--cram_type", type=str, default="find_best_heads",
-                        help="cram type")
-    parser.add_argument("--model_path", type=str, required=True, help="llama3-8b-instruct、qwen-7b模型路径")
-    parser.add_argument("--context_nums", type=int, default=5, help="检索的文档数量")
-    parser.add_argument("--answer_maxlength", type=int, default=25, help="答案最大长度")
-    parser.add_argument("--fake_num", type=int, default=1)
-    parser.add_argument("--use_accuracy", action="store_true",
-                        help="use accuracy indicators")
-    args = parser.parse_args()
-    return args
+
+
+
 
 def main():
-    """主函数"""
-    # 设置参数
+    """Main function"""
+    # Setup arguments
     args = setup_parser()
+    
     if args.cram_type == "find_best_heads":
         cram(args, args.model_path)
     else:
         metrics = cram(args, args.model_path)
-        # 输出结果
+        
+        # Output results
         print("\n" + "=" * 80)
-        print("评估结果:")
+        print("Evaluation Results:")
         print("=" * 80)
         for metric, value in metrics.items():
             print(f"{metric}: {value:.4f}")
         print("=" * 80)
+
 
 if __name__ == "__main__":
     main()
