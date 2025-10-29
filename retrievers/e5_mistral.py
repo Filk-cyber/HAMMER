@@ -14,8 +14,8 @@ INSTRUCTION_MAP = {
     "retrieve_relevant_documents": "Given a question, retrieve text that can help answer the question.",
 }
 
-tokenizer_name_or_path = '/home/jiangjp/models/e5-mistral-7b-instruct/'
-model_name_or_path = '/home/jiangjp/models/e5-mistral-7b-instruct/'
+tokenizer_name_or_path = 'e5-mistral-7b-instruct'
+model_name_or_path = 'e5-mistral-7b-instruct'
 device = torch.device("cuda")
 
 
