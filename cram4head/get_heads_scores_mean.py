@@ -14,7 +14,7 @@ def casual_tracing_combine_all(input_path: str = "results_heads_scores/hotpotqa/
 
     sorted_2d_indices = np.unravel_index(sorted_indices, mean_data.shape)
 
-    #将scores即之前和更改后的概率差值展平成一个一维列表进行从高到低排序，[(分数，(行索引，列索引))] for for i in range(len(sorted_values)
+
     sorted_data_with_indices = [(sorted_values[i], (sorted_2d_indices[0][i].item(), sorted_2d_indices[1][i].item())) for i in range(len(sorted_values))]
 
     output_path = os.path.join(input_path, f"heads_scores_mean.json")
