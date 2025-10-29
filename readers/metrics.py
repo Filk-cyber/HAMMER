@@ -33,9 +33,6 @@ def ems(prediction, ground_truths):
     return max([exact_match_score(prediction, gt) for gt in ground_truths])
 
 def accuracy(prediction, ground_truths):
-    """
-    只要 prediction 中包含 ground_truths 里的任意一个元素（归一化后），就算正确。
-    """
     norm_pred = normalize_answer(prediction)
     for gt in ground_truths:
         if normalize_answer(gt) in norm_pred:
