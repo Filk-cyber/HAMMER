@@ -322,12 +322,11 @@ def get_answer_token_indices(num_choices, token_ids):
 
 def construct_reasoning_chains(args, ideal_setting: bool = True):
     """
-    Main function: Construct reasoning chains, supporting ablation experiments for Linear, ReLU, and MLP scoring functions
+    Main function: Construct reasoning chains, supporting comparative experiments for Linear, ReLU, and MLP scoring functions.
     """
 
-    # ===== Handle ablation study case =====
     if args.contrast:
-        print("=== Running ablation experiment: Comparing Linear, ReLU, and MLP scoring functions ===")
+        print("=== Comparing Linear, ReLU, and MLP scoring functions ===")
         print(f"All three methods use fixed weight: {FIXED_WEIGHT}")
 
         results = {}
@@ -342,7 +341,7 @@ def construct_reasoning_chains(args, ideal_setting: bool = True):
             result_file = construct_reasoning_chains_with_scoring_function(args, func, func_name, ideal_setting)
             results[func_name] = result_file
 
-        print(f"\n=== Ablation experiment completed ===")
+        print(f"\n=== Contrast experiment completed ===")
         print("Generated files:")
         for func_name, file_path in results.items():
             print(f"  {func_name}: {file_path}")
