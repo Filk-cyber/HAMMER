@@ -10,19 +10,19 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from retrievers.e5_mistral import get_e5_mistral_embeddings_for_query, get_e5_mistral_embeddings_for_document
 from readers.metrics import ems, f1_score,accuracy
 
-# 全局变量
+# Global variables
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 def setup_parser():
-    """设置命令行参数"""
+    """Setup command line arguments"""
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument("--input_data_file", type=str, default="data/hotpotqa/dev_with_kgs.json",
-                        help="输入数据文件路径")
+                        help="Input data file path")
     parser.add_argument("--model_type", type=str, choices=["cag", "llama3", "gemma","mistral"], default="llama3",
-                        help="模型类型")
-    parser.add_argument("--model_path", type=str, required=True, help="模型路径")
-    parser.add_argument("--context_nums", type=int, default=5, help="检索的文档数量")
-    parser.add_argument("--answer_maxlength", type=int, default=25, help="答案最大长度")
+                        help="Model type")
+    parser.add_argument("--model_path", type=str, required=True, help="Model path")
+    parser.add_argument("--context_nums", type=int, default=5, help="Number of retrieved documents")
+    parser.add_argument("--answer_maxlength", type=int, default=25, help="Maximum answer length")
     parser.add_argument("--fake_num", type=int, default=1)
     parser.add_argument("--prompt_based", action="store_true",
                         help="Run prompt based")
@@ -34,37 +34,37 @@ def setup_parser():
     return args
 
 def load_json(file_path):
-    """加载JSON文件"""
+    """Load JSON file"""
     with open(file_path, 'r', encoding='utf-8') as f:
         return json.load(f)
 
 
-# ============ Llama3-8B-Instruct模型加载器 ============
+# ============ Llama3-8B-Instruct Model Loader ============
 def load_llama3_model_tokenizer(model_path):
     """
-    加载Llama3-8B-Instruct模型和tokenizer
+    Load Llama3-8B-Instruct model and tokenizer
 
     Args:
-        model_path: 模型路径
+        model_path: Model path
 
     Returns:
         tuple: (model, tokenizer)
     """
-    print(f"正在加载Llama3-8B-Instruct模型: {model_path}")
+    print(f"Loading Llama3-8B-Instruct model: {model_path}")
 
-    # 加载tokenizer
+    # Load tokenizer
     tokenizer = AutoTokenizer.from_pretrained(
         model_path,
         padding_side="left"
     )
 
-    # 设置pad_token
+    # Set pad_token
     if tokenizer.pad_token is None or tokenizer.pad_token_id is None:
-        print("设置padding token为eos_token")
+        print("Setting padding token to eos_token")
         tokenizer.pad_token = tokenizer.eos_token
         tokenizer.pad_token_id = tokenizer.eos_token_id
 
-    # 加载模型
+    # Load model
     if device == "cuda":
         model = AutoModelForCausalLM.from_pretrained(
             model_path,
@@ -79,37 +79,37 @@ def load_llama3_model_tokenizer(model_path):
         model.to(device)
 
     model.eval()
-    print("模型加载完成!")
+    print("Model loaded successfully!")
     return model, tokenizer
 
 
-# ============ Gemma-7B模型加载器 ============
+# ============ Gemma-7B Model Loader ============
 def load_gemma_model_tokenizer(model_path):
     """
-    加载Gemma-7B模型和tokenizer
+    Load Gemma-7B model and tokenizer
 
     Args:
-        model_path: 模型路径
+        model_path: Model path
 
     Returns:
         tuple: (model, tokenizer)
     """
-    print(f"正在加载Gemma-7B模型: {model_path}")
+    print(f"Loading Gemma-7B model: {model_path}")
 
-    # 加载tokenizer
+    # Load tokenizer
     tokenizer = AutoTokenizer.from_pretrained(
         model_path,
         padding_side="left",
         trust_remote_code=True
     )
 
-    # 设置pad_token
+    # Set pad_token
     if tokenizer.pad_token is None or tokenizer.pad_token_id is None:
-        print("设置padding token为eos_token")
+        print("Setting padding token to eos_token")
         tokenizer.pad_token = tokenizer.eos_token
         tokenizer.pad_token_id = tokenizer.eos_token_id
 
-    # 加载模型
+    # Load model
     if device == "cuda":
         model = AutoModelForCausalLM.from_pretrained(
             model_path,
@@ -126,36 +126,36 @@ def load_gemma_model_tokenizer(model_path):
         model.to(device)
 
     model.eval()
-    print("Gemma模型加载完成!")
+    print("Gemma model loaded successfully!")
     return model, tokenizer
 
-# ============ Mistral-7B模型加载器 ============
+# ============ Mistral-7B Model Loader ============
 def load_mistral_model_tokenizer(model_path):
     """
-    加载Mistral-7B模型和tokenizer
+    Load Mistral-7B model and tokenizer
 
     Args:
-        model_path: 模型路径
+        model_path: Model path
 
     Returns:
         tuple: (model, tokenizer)
     """
-    print(f"正在加载Mistral-7B模型: {model_path}")
+    print(f"Loading Mistral-7B model: {model_path}")
 
-    # 加载tokenizer
+    # Load tokenizer
     tokenizer = AutoTokenizer.from_pretrained(
         model_path,
         padding_side="left",
         trust_remote_code=True
     )
 
-    # 设置pad_token
+    # Set pad_token
     if tokenizer.pad_token is None or tokenizer.pad_token_id is None:
-        print("设置padding token为eos_token")
+        print("Setting padding token to eos_token")
         tokenizer.pad_token = tokenizer.eos_token
         tokenizer.pad_token_id = tokenizer.eos_token_id
 
-    # 加载模型
+    # Load model
     if device == "cuda":
         model = AutoModelForCausalLM.from_pretrained(
             model_path,
@@ -172,46 +172,46 @@ def load_mistral_model_tokenizer(model_path):
         model.to(device)
 
     model.eval()
-    print("Gemma模型加载完成!")
+    print("Mistral model loaded successfully!")
     return model, tokenizer
 
-# ============ 基于相似度的检索函数 ============
+# ============ Similarity-based Retrieval Function ============
 def retrieve_documents_by_similarity(question: str, ctxs: List[Dict], args) -> List[Dict]:
     """
-    基于相似度的检索函数：为单个问题检索最相关的文档
-    只使用相似度分数，不考虑truthful_score
+    Similarity-based retrieval function: retrieve the most relevant documents for a single question
+    Only uses similarity scores, does not consider truthful_score
 
     Args:
-        question: 问题文本
-        ctxs: 候选文档列表
-        args: 参数配置
+        question: Question text
+        ctxs: Candidate document list
+        args: Parameter configuration
 
     Returns:
-        List[Dict]: 检索到的top-k文档，包含text字段
+        List[Dict]: Retrieved top-k documents, including text field
     """
-    # 提取所有候选文档
+    # Extract all candidate documents
     documents = []
     end_index = len(ctxs) - 3
     ctxs = ctxs[:end_index + args.fake_num]
     for ctx in ctxs:
         documents.append("title: {}, text: {}".format(ctx["title"], ctx["text"]))
 
-    # 计算文档embeddings
+    # Calculate document embeddings
     doc_embeddings = get_e5_mistral_embeddings_for_document(documents, max_length=256, batch_size=2)
     question_embedding = get_e5_mistral_embeddings_for_query("retrieve_relevant_documents", [question],
                                                              max_length=128, batch_size=1)
 
-    # 归一化embeddings
+    # Normalize embeddings
     doc_embeddings = torch.nn.functional.normalize(doc_embeddings, p=2, dim=-1)
     question_embedding = torch.nn.functional.normalize(question_embedding, p=2, dim=-1)
 
-    # 计算相似度分数
+    # Calculate similarity scores
     similarities = torch.matmul(question_embedding, doc_embeddings.T).squeeze(0)
 
-    # 选择top-k文档
+    # Select top-k documents
     topk_scores, topk_indices = torch.topk(similarities, k=min(args.context_nums, len(documents)), dim=0)
 
-    # 构建检索结果
+    # Construct retrieval results
     retrieved_documents = []
     for idx in topk_indices.tolist():
         retrieved_documents.append({
@@ -224,23 +224,24 @@ def retrieve_documents_by_similarity(question: str, ctxs: List[Dict], args) -> L
 def retrieve_documents_by_similarity_score(question: str, ctxs: List[Dict], args, ideal_setting: bool = False) -> List[
     Dict]:
     """
-    单跳检索函数：为单个问题检索最相关的文档
-    使用相似度与truthful_score相乘的评分方式
+    Single-hop retrieval function: retrieve the most relevant documents for a single question
+    Uses scoring method that multiplies similarity and truthful_score
 
     Args:
-        question: 问题文本
-        ctxs: 候选文档列表
-        args: 参数配置
+        question: Question text
+        ctxs: Candidate document list
+        args: Parameter configuration
+        ideal_setting: Whether to use ideal setting
 
     Returns:
-        List[Dict]: 检索到的top-k文档，包含text和truthful_score字段
+        List[Dict]: Retrieved top-k documents, including text and truthful_score fields
     """
-    # 提取所有候选文档和真实性分数
+    # Extract all candidate documents and truthfulness scores
     documents, truthful_scores = [], []
     end_index = len(ctxs) - 3
     ctxs = ctxs[:end_index + args.fake_num]
     for i, ctx in enumerate(ctxs):
-        # 只使用text内容作为检索文档
+        # Only use text content as retrieval document
         documents.append("title: {}, text: {}".format(ctx["title"], ctx["text"]))
         if ideal_setting:
             if i < end_index:
@@ -248,25 +249,25 @@ def retrieve_documents_by_similarity_score(question: str, ctxs: List[Dict], args
             else:
                 truthful_scores.append(1)
         else:
-            # 获取文档的truthful_score
+            # Get document's truthful_score
             truthful_scores.append(ctx["text_truthful_score"])
 
-    # 将truthful_scores转换为tensor
+    # Convert truthful_scores to tensor
     truthful_scores_tensor = torch.tensor(truthful_scores, dtype=torch.bfloat16)
-    # 计算文档embeddings
+    # Calculate document embeddings
     doc_embeddings = get_e5_mistral_embeddings_for_document(documents, max_length=256, batch_size=2)
     question_embedding = get_e5_mistral_embeddings_for_query("retrieve_relevant_documents", [question],
                                                              max_length=128, batch_size=1)
     doc_embeddings = torch.nn.functional.normalize(doc_embeddings, p=2, dim=-1)
     question_embedding = torch.nn.functional.normalize(question_embedding, p=2, dim=-1)
 
-    # 计算相似度分数
+    # Calculate similarity scores
     similarities = torch.matmul(question_embedding, doc_embeddings.T).squeeze(0)
     final_scores = similarities * truthful_scores_tensor
-    # 选择top-k文档
+    # Select top-k documents
     topk_scores, topk_indices = torch.topk(final_scores, k=min(args.context_nums, len(documents)), dim=0)
 
-    # 构建检索结果，只返回text和truthful_score字段
+    # Construct retrieval results, only return text and truthful_score fields
     retrieved_documents = []
     for i, idx in enumerate(topk_indices.tolist()):
         retrieved_documents.append({
@@ -278,22 +279,22 @@ def retrieve_documents_by_similarity_score(question: str, ctxs: List[Dict], args
     return retrieved_documents
 
 
-# ============ Llama3数据处理器 ============
+# ============ Llama3 Data Processor ============
 class Llama3DataProcessor:
-    """Llama3数据处理器"""
+    """Llama3 data processor"""
 
     def __init__(self, args):
         self.args = args
 
     def get_contexts(self, retrieved_docs: List[Dict]) -> str:
         """
-        格式化检索到的文档为上下文
+        Format retrieved documents as context
 
         Args:
-            retrieved_docs: 检索到的文档列表
+            retrieved_docs: List of retrieved documents
 
         Returns:
-            str: 格式化后的上下文字符串
+            str: Formatted context string
         """
         contexts = []
         for i, doc in enumerate(retrieved_docs):
@@ -304,13 +305,13 @@ class Llama3DataProcessor:
 
     def get_contexts_score(self, retrieved_docs: List[Dict]) -> str:
         """
-        格式化检索到的文档为上下文
-        与get_contexts不同，此方法在每个Passage后添加truthful score
+        Format retrieved documents as context
+        Unlike get_contexts, this method adds truthful score after each Passage
         Args:
-            retrieved_docs: 检索到的文档列表
+            retrieved_docs: List of retrieved documents
 
         Returns:
-            str: 格式化后的上下文字符串
+            str: Formatted context string
         """
         contexts = []
         for i, doc in enumerate(retrieved_docs):
@@ -322,14 +323,14 @@ class Llama3DataProcessor:
 
     def create_llama3_prompt(self, question: str, retrieved_docs: List[Dict]) -> List[Dict]:
         """
-        创建符合Llama3格式的prompt
+        Create prompt in Llama3 format
 
         Args:
-            question: 问题文本
-            retrieved_docs: 检索到的文档列表
+            question: Question text
+            retrieved_docs: List of retrieved documents
 
         Returns:
-            List[Dict]: 聊天格式的prompt
+            List[Dict]: Chat format prompt
         """
         if retrieved_docs:
             contexts = self.get_contexts(retrieved_docs)
@@ -353,14 +354,14 @@ class Llama3DataProcessor:
 
     def create_llama3_prompt_score(self, question: str, retrieved_docs: List[Dict]) -> List[Dict]:
         """
-        创建符合Llama3格式的prompt
+        Create prompt in Llama3 format
 
         Args:
-            question: 问题文本
-            retrieved_docs: 检索到的文档列表
+            question: Question text
+            retrieved_docs: List of retrieved documents
 
         Returns:
-            List[Dict]: 聊天格式的prompt
+            List[Dict]: Chat format prompt
         """
         if retrieved_docs:
             contexts = self.get_contexts_score(retrieved_docs)
@@ -382,22 +383,22 @@ class Llama3DataProcessor:
         return messages
 
 
-# ============ Gemma数据处理器 ============
+# ============ Gemma Data Processor ============
 class GemmaDataProcessor:
-    """Gemma数据处理器"""
+    """Gemma data processor"""
 
     def __init__(self, args):
         self.args = args
 
     def get_contexts(self, retrieved_docs: List[Dict]) -> str:
         """
-        格式化检索到的文档为上下文
+        Format retrieved documents as context
 
         Args:
-            retrieved_docs: 检索到的文档列表
+            retrieved_docs: List of retrieved documents
 
         Returns:
-            str: 格式化后的上下文字符串
+            str: Formatted context string
         """
         contexts = []
         for i, doc in enumerate(retrieved_docs):
@@ -408,13 +409,13 @@ class GemmaDataProcessor:
 
     def get_contexts_score(self, retrieved_docs: List[Dict]) -> str:
         """
-        格式化检索到的文档为上下文
-        与get_contexts不同，此方法在每个Passage后添加truthful score
+        Format retrieved documents as context
+        Unlike get_contexts, this method adds truthful score after each Passage
         Args:
-            retrieved_docs: 检索到的文档列表
+            retrieved_docs: List of retrieved documents
 
         Returns:
-            str: 格式化后的上下文字符串
+            str: Formatted context string
         """
         contexts = []
         for i, doc in enumerate(retrieved_docs):
@@ -426,14 +427,14 @@ class GemmaDataProcessor:
 
     def create_gemma_prompt(self, question: str, retrieved_docs: List[Dict]) -> str:
         """
-        创建符合Gemma格式的prompt
+        Create prompt in Gemma format
 
         Args:
-            question: 问题文本
-            retrieved_docs: 检索到的文档列表
+            question: Question text
+            retrieved_docs: List of retrieved documents
 
         Returns:
-            List[Dict]: 聊天格式的prompt
+            List[Dict]: Chat format prompt
         """
         if retrieved_docs:
             contexts = self.get_contexts(retrieved_docs)
@@ -446,14 +447,14 @@ class GemmaDataProcessor:
 
     def create_gemma_prompt_score(self, question: str, retrieved_docs: List[Dict]) -> str:
         """
-        创建符合Gemma格式的prompt
+        Create prompt in Gemma format
 
         Args:
-            question: 问题文本
-            retrieved_docs: 检索到的文档列表
+            question: Question text
+            retrieved_docs: List of retrieved documents
 
         Returns:
-            List[Dict]: 聊天格式的prompt
+            List[Dict]: Chat format prompt
         """
         if retrieved_docs:
             contexts = self.get_contexts_score(retrieved_docs)
@@ -463,22 +464,22 @@ class GemmaDataProcessor:
 
         return prompt
 
-# ============ Mistral数据处理器 ============
+# ============ Mistral Data Processor ============
 class MistralDataProcessor:
-    """Mistral数据处理器"""
+    """Mistral data processor"""
 
     def __init__(self, args):
         self.args = args
 
     def get_contexts(self, retrieved_docs: List[Dict]) -> str:
         """
-        格式化检索到的文档为上下文
+        Format retrieved documents as context
 
         Args:
-            retrieved_docs: 检索到的文档列表
+            retrieved_docs: List of retrieved documents
 
         Returns:
-            str: 格式化后的上下文字符串
+            str: Formatted context string
         """
         contexts = []
         for i, doc in enumerate(retrieved_docs):
@@ -489,13 +490,13 @@ class MistralDataProcessor:
 
     def get_contexts_score(self, retrieved_docs: List[Dict]) -> str:
         """
-        格式化检索到的文档为上下文
-        与get_contexts不同，此方法在每个Passage后添加truthful score
+        Format retrieved documents as context
+        Unlike get_contexts, this method adds truthful score after each Passage
         Args:
-            retrieved_docs: 检索到的文档列表
+            retrieved_docs: List of retrieved documents
 
         Returns:
-            str: 格式化后的上下文字符串
+            str: Formatted context string
         """
         contexts = []
         for i, doc in enumerate(retrieved_docs):
@@ -507,14 +508,14 @@ class MistralDataProcessor:
 
     def create_mistral_prompt(self, question: str, retrieved_docs: List[Dict]) -> str:
         """
-        创建符合Mistral格式的prompt
+        Create prompt in Mistral format
 
         Args:
-            question: 问题文本
-            retrieved_docs: 检索到的文档列表
+            question: Question text
+            retrieved_docs: List of retrieved documents
 
         Returns:
-            List[Dict]: 聊天格式的prompt
+            List[Dict]: Chat format prompt
         """
         if retrieved_docs:
             contexts = self.get_contexts(retrieved_docs)
@@ -527,14 +528,14 @@ class MistralDataProcessor:
 
     def create_mistral_prompt_score(self, question: str, retrieved_docs: List[Dict]) -> str:
         """
-        创建符合Mistral格式的prompt
+        Create prompt in Mistral format
 
         Args:
-            question: 问题文本
-            retrieved_docs: 检索到的文档列表
+            question: Question text
+            retrieved_docs: List of retrieved documents
 
         Returns:
-            List[Dict]: 聊天格式的prompt
+            List[Dict]: Chat format prompt
         """
         if retrieved_docs:
             contexts = self.get_contexts_score(retrieved_docs)
@@ -565,26 +566,26 @@ def parse_gemma_mistral_answer(answer):
     return answer
 
 
-# ============ Llama3评估函数 ============
+# ============ Llama3 Evaluation Function ============
 def evaluate_with_llama3(args, model, tokenizer, data):
     """
-    使用Llama3模型评估检索结果
+    Evaluate retrieval results using Llama3 model
 
     Args:
-        args: 参数配置
-        model: Llama3模型
+        args: Parameter configuration
+        model: Llama3 model
         tokenizer: Llama3 tokenizer
-        data: 测试数据
+        data: Test data
 
     Returns:
-        Dict: 评估指标
+        Dict: Evaluation metrics
     """
     em_scores_list, f1_scores_list = [], []
     processor = Llama3DataProcessor(args)
     retrieved_docs = None
-    print(f"开始评估 {len(data)} 个样本...")
+    print(f"Starting evaluation of {len(data)} samples...")
 
-    for i, example in enumerate(tqdm(data, desc="正在评估")):
+    for i, example in enumerate(tqdm(data, desc="Evaluating")):
         question = example["question"]
         gold_answers = example["answers"]
         ctxs = example["ctxs"]
@@ -598,14 +599,14 @@ def evaluate_with_llama3(args, model, tokenizer, data):
                 retrieved_docs = retrieve_documents_by_similarity(question, ctxs, args)
                 prompt = processor.create_llama3_prompt(question, retrieved_docs)
 
-        # 将聊天格式转换为模型输入
+        # Convert chat format to model input
         input_text = tokenizer.apply_chat_template(
             prompt,
             add_generation_prompt=True,
             tokenize=False
         )
 
-        # 编码输入
+        # Encode input
         encoded = tokenizer(
             [input_text],
             truncation=True,
@@ -618,7 +619,7 @@ def evaluate_with_llama3(args, model, tokenizer, data):
             "attention_mask": encoded["attention_mask"]
         }
 
-        # 生成答案
+        # Generate answer
         with torch.no_grad():
             outputs = model.generate(
                 **model_inputs,
@@ -628,29 +629,29 @@ def evaluate_with_llama3(args, model, tokenizer, data):
                 use_cache=True
             )
 
-        # 解码生成的答案
+        # Decode generated answer
         generated_ids = outputs[0, model_inputs["input_ids"].shape[1]:].detach().cpu()
         predicted_answer = tokenizer.decode(generated_ids, skip_special_tokens=True)
 
-        print(f"问题: {question}")
-        print(f"预测答案: {predicted_answer}")
+        print(f"Question: {question}")
+        print(f"Predicted answer: {predicted_answer}")
         print("-" * 50)
 
-        # 计算评估指标
+        # Calculate evaluation metrics
         em_score = ems(predicted_answer, gold_answers)
         em_scores_list.append(em_score)
 
-        if not em_score and i < 5:  # 只打印前5个错误案例
-            print(f"\n错误案例 {i + 1}:")
-            print(f"问题: {question}")
-            print(f"预测答案: {predicted_answer}")
-            print(f"正确答案: {gold_answers}")
+        if not em_score and i < 5:  # Only print first 5 error cases
+            print(f"\nError case {i + 1}:")
+            print(f"Question: {question}")
+            print(f"Predicted answer: {predicted_answer}")
+            print(f"Correct answer: {gold_answers}")
             print("-" * 50)
 
         f1, precision, recall = f1_score(predicted_answer, gold_answers[0])
         f1_scores_list.append(f1)
 
-    # 计算最终指标
+    # Calculate final metrics
     metrics = {
         "exact_match": np.mean(em_scores_list),
         "f1": np.mean(f1_scores_list)
@@ -659,26 +660,26 @@ def evaluate_with_llama3(args, model, tokenizer, data):
     return metrics
 
 
-# ============ Gemma评估函数 ============
+# ============ Gemma Evaluation Function ============
 def evaluate_with_gemma(args, model, tokenizer, data):
     """
-    使用Gemma模型评估检索结果
+    Evaluate retrieval results using Gemma model
 
     Args:
-        args: 参数配置
-        model: Gemma模型
+        args: Parameter configuration
+        model: Gemma model
         tokenizer: Gemma tokenizer
-        data: 测试数据
+        data: Test data
 
     Returns:
-        Dict: 评估指标
+        Dict: Evaluation metrics
     """
     em_scores_list, f1_scores_list = [], []
     processor = GemmaDataProcessor(args)
     retrieved_docs = None
-    print(f"开始评估 {len(data)} 个样本...")
+    print(f"Starting evaluation of {len(data)} samples...")
 
-    for i, example in enumerate(tqdm(data, desc="正在评估")):
+    for i, example in enumerate(tqdm(data, desc="Evaluating")):
         question = example["question"]
         gold_answers = example["answers"]
         ctxs = example["ctxs"]
@@ -692,7 +693,7 @@ def evaluate_with_gemma(args, model, tokenizer, data):
                 retrieved_docs = retrieve_documents_by_similarity(question, ctxs, args)
                 messages = processor.create_gemma_prompt(question, retrieved_docs)
 
-        # 编码输入
+        # Encode input
         encoded = tokenizer(
             messages,
             truncation=True,
@@ -705,7 +706,7 @@ def evaluate_with_gemma(args, model, tokenizer, data):
             "attention_mask": encoded["attention_mask"]
         }
 
-        # 生成答案
+        # Generate answer
         with torch.no_grad():
             outputs = model.generate(
                 **model_inputs,
@@ -715,30 +716,30 @@ def evaluate_with_gemma(args, model, tokenizer, data):
                 use_cache=True
             )
 
-        # 解码生成的答案
+        # Decode generated answer
         generated_ids = outputs[0, model_inputs["input_ids"].shape[1]:].detach().cpu()
         generated_text = tokenizer.decode(generated_ids, skip_special_tokens=True)
         predicted_answer = parse_gemma_mistral_answer(generated_text)
 
-        print(f"问题: {question}")
-        print(f"预测答案: {predicted_answer}")
+        print(f"Question: {question}")
+        print(f"Predicted answer: {predicted_answer}")
         print("-" * 50)
 
-        # 计算评估指标
+        # Calculate evaluation metrics
         em_score = ems(predicted_answer, gold_answers)
         em_scores_list.append(em_score)
 
-        if not em_score and i < 5:  # 只打印前5个错误案例
-            print(f"\n错误案例 {i + 1}:")
-            print(f"问题: {question}")
-            print(f"预测答案: {predicted_answer}")
-            print(f"正确答案: {gold_answers}")
+        if not em_score and i < 5:  # Only print first 5 error cases
+            print(f"\nError case {i + 1}:")
+            print(f"Question: {question}")
+            print(f"Predicted answer: {predicted_answer}")
+            print(f"Correct answer: {gold_answers}")
             print("-" * 50)
 
         f1, precision, recall = f1_score(predicted_answer, gold_answers[0])
         f1_scores_list.append(f1)
 
-    # 计算最终指标
+    # Calculate final metrics
     metrics = {
         "exact_match": np.mean(em_scores_list),
         "f1": np.mean(f1_scores_list)
@@ -746,26 +747,26 @@ def evaluate_with_gemma(args, model, tokenizer, data):
 
     return metrics
 
-# ============ Mistral评估函数 ============
+# ============ Mistral Evaluation Function ============
 def evaluate_with_mistral(args, model, tokenizer, data):
     """
-    使用Mistral模型评估检索结果
+    Evaluate retrieval results using Mistral model
 
     Args:
-        args: 参数配置
-        model: Mistral模型
+        args: Parameter configuration
+        model: Mistral model
         tokenizer: Mistral tokenizer
-        data: 测试数据
+        data: Test data
 
     Returns:
-        Dict: 评估指标
+        Dict: Evaluation metrics
     """
     em_scores_list, f1_scores_list = [], []
     processor = MistralDataProcessor(args)
     retrieved_docs = None
-    print(f"开始评估 {len(data)} 个样本...")
+    print(f"Starting evaluation of {len(data)} samples...")
 
-    for i, example in enumerate(tqdm(data, desc="正在评估")):
+    for i, example in enumerate(tqdm(data, desc="Evaluating")):
         question = example["question"]
         gold_answers = example["answers"]
         ctxs = example["ctxs"]
@@ -779,7 +780,7 @@ def evaluate_with_mistral(args, model, tokenizer, data):
                 retrieved_docs = retrieve_documents_by_similarity(question, ctxs, args)
                 messages = processor.create_mistral_prompt(question, retrieved_docs)
 
-        # 编码输入
+        # Encode input
         encoded = tokenizer(
             messages,
             truncation=True,
@@ -792,7 +793,7 @@ def evaluate_with_mistral(args, model, tokenizer, data):
             "attention_mask": encoded["attention_mask"]
         }
 
-        # 生成答案
+        # Generate answer
         with torch.no_grad():
             outputs = model.generate(
                 **model_inputs,
@@ -802,30 +803,30 @@ def evaluate_with_mistral(args, model, tokenizer, data):
                 use_cache=True
             )
 
-        # 解码生成的答案
+        # Decode generated answer
         generated_ids = outputs[0, model_inputs["input_ids"].shape[1]:].detach().cpu()
         generated_text = tokenizer.decode(generated_ids, skip_special_tokens=True)
         predicted_answer = parse_gemma_mistral_answer(generated_text)
 
-        print(f"问题: {question}")
-        print(f"预测答案: {predicted_answer}")
+        print(f"Question: {question}")
+        print(f"Predicted answer: {predicted_answer}")
         print("-" * 50)
 
-        # 计算评估指标
+        # Calculate evaluation metrics
         em_score = ems(predicted_answer, gold_answers)
         em_scores_list.append(em_score)
 
-        if not em_score and i < 5:  # 只打印前5个错误案例
-            print(f"\n错误案例 {i + 1}:")
-            print(f"问题: {question}")
-            print(f"预测答案: {predicted_answer}")
-            print(f"正确答案: {gold_answers}")
+        if not em_score and i < 5:  # Only print first 5 error cases
+            print(f"\nError case {i + 1}:")
+            print(f"Question: {question}")
+            print(f"Predicted answer: {predicted_answer}")
+            print(f"Correct answer: {gold_answers}")
             print("-" * 50)
 
         f1, precision, recall = f1_score(predicted_answer, gold_answers[0])
         f1_scores_list.append(f1)
 
-    # 计算最终指标
+    # Calculate final metrics
     metrics = {
         "exact_match": np.mean(em_scores_list),
         "f1": np.mean(f1_scores_list)
@@ -833,7 +834,7 @@ def evaluate_with_mistral(args, model, tokenizer, data):
 
     return metrics
 
-# ============ CAG-7B模型加载 ============
+# ============ CAG-7B Model Loader ============
 def load_cag_model_tokenizer(args):
     tokenizer = AutoTokenizer.from_pretrained(
         args.model_path,
@@ -849,22 +850,22 @@ def load_cag_model_tokenizer(args):
     return model, tokenizer
 
 
-# ============ 数据处理 ============
+# ============ Data Processing ============
 class CagDataProcessor:
-    """单跳数据处理器"""
+    """Single-hop data processor"""
 
     def __init__(self, args):
         self.args = args
 
     def format_documents(self, retrieved_docs: List[Dict]) -> str:
         """
-        格式化检索到的文档，包含可信度分数
+        Format retrieved documents, including credibility scores
 
         Args:
-            retrieved_docs: 检索到的文档列表
+            retrieved_docs: List of retrieved documents
 
         Returns:
-            str: 格式化后的文档字符串
+            str: Formatted document string
         """
         formatted_docs = []
 
@@ -877,7 +878,7 @@ class CagDataProcessor:
                 credibility = "Medium credibility of text"
             elif score >= 7:
                 credibility = "High credibility of text"
-            # 格式化文档：包含可信度分数和内容
+            # Format document: including credibility score and content
             formatted_doc = f"{credibility}: {text} "
             formatted_docs.append(formatted_doc)
 
@@ -885,14 +886,14 @@ class CagDataProcessor:
 
     def create_prompt(self, question: str, retrieved_docs: List[Dict]) -> str:
         """
-        创建符合指定格式的prompt
+        Create prompt in specified format
 
         Args:
-            question: 问题文本
-            retrieved_docs: 检索到的文档列表
+            question: Question text
+            retrieved_docs: List of retrieved documents
 
         Returns:
-            List[Dict]: 聊天格式的prompt
+            List[Dict]: Chat format prompt
         """
 
 
@@ -916,39 +917,39 @@ def parse_cag_answer(answer):
     return answer
 
 
-# ============ 评估函数 ============
+# ============ Evaluation Function ============
 def evaluate_with_cag(args, cag_tokenizer, cag_model, data):
     """
-    评估单跳检索结果
+    Evaluate single-hop retrieval results
 
     Args:
-        args: 参数配置
-        cag_tokenizer: CAG模型的tokenizer
-        cag_model: CAG模型
-        data: 测试数据
+        args: Parameter configuration
+        cag_tokenizer: CAG model's tokenizer
+        cag_model: CAG model
+        data: Test data
 
     Returns:
-        Dict: 评估指标
+        Dict: Evaluation metrics
     """
     em_scores_list, f1_scores_list, accuracy_list = [], [], []
     processor = CagDataProcessor(args)
 
-    print(f"开始评估 {len(data)} 个样本...")
+    print(f"Starting evaluation of {len(data)} samples...")
 
-    for i, example in enumerate(tqdm(data, desc="正在评估")):
+    for i, example in enumerate(tqdm(data, desc="Evaluating")):
         question = example["question"]
         gold_answers = example["answers"]
         ctxs = example["ctxs"]
 
-        # 执行单跳检索
+        # Perform single-hop retrieval
         retrieved_doc = retrieve_documents_by_similarity_score(question, ctxs, args)
 
-        # 创建prompt
+        # Create prompt
         prompt = processor.create_prompt(question, retrieved_doc)
 
 
 
-        # 编码输入
+        # Encode input
         encoded = cag_tokenizer(
             prompt,
             truncation=True,
@@ -960,7 +961,7 @@ def evaluate_with_cag(args, cag_tokenizer, cag_model, data):
             "input_ids": encoded["input_ids"],
             "attention_mask": encoded["attention_mask"]
         }
-        # 生成答案
+        # Generate answer
         with torch.no_grad():
             outputs = cag_model.generate(
                 **model_inputs,
@@ -969,28 +970,28 @@ def evaluate_with_cag(args, cag_tokenizer, cag_model, data):
                 temperature=1.0
             )
 
-        # 解码生成的答案
+        # Decode generated answer
         generated_ids = outputs[0, model_inputs["input_ids"].shape[1]:].detach().cpu()
         generated_text = cag_tokenizer.decode(generated_ids, skip_special_tokens=True)
         predicted_answer = generated_text.strip()
         predicted_answer = parse_cag_answer(predicted_answer)
         print(predicted_answer)
-        # 计算评估指标
+        # Calculate evaluation metrics
         acc = accuracy(predicted_answer, gold_answers)
         accuracy_list.append(acc)
-        # if not acc and i < 5:  # 只打印前5个案例
-        #     print(f"\n错误案例 {i + 1}:")
-        #     print(f"问题: {question}")
-        #     print(f"预测答案: {predicted_answer}")
-        #     print(f"正确答案: {gold_answers}")
+        # if not acc and i < 5:  # Only print first 5 cases
+        #     print(f"\nError case {i + 1}:")
+        #     print(f"Question: {question}")
+        #     print(f"Predicted answer: {predicted_answer}")
+        #     print(f"Correct answer: {gold_answers}")
         #     print("-" * 50)
         em_score = ems(predicted_answer, gold_answers)
         em_scores_list.append(em_score)
-        if not em_score and i < 5:  # 只打印前5个案例
-            print(f"\n错误案例 {i + 1}:")
-            print(f"问题: {question}")
-            print(f"预测答案: {predicted_answer}")
-            print(f"正确答案: {gold_answers}")
+        if not em_score and i < 5:  # Only print first 5 cases
+            print(f"\nError case {i + 1}:")
+            print(f"Question: {question}")
+            print(f"Predicted answer: {predicted_answer}")
+            print(f"Correct answer: {gold_answers}")
             print("-" * 50)
 
         f1, precision, recall = f1_score(predicted_answer, gold_answers[0])
@@ -1008,46 +1009,46 @@ def evaluate_with_cag(args, cag_tokenizer, cag_model, data):
 
 
 
-# ============ 主函数 ============
+# ============ Main Function ============
 def main():
-    """主函数"""
-    # 设置参数
+    """Main function"""
+    # Setup arguments
     args = setup_parser()
 
     print("=" * 80)
     print("=" * 80)
-    print(f"检索文档数: {args.context_nums}")
-    print(f"模型路径: {args.model_path}")
+    print(f"Number of retrieved documents: {args.context_nums}")
+    print(f"Model path: {args.model_path}")
     print("=" * 80)
 
-    # 加载测试数据
-    print("步骤1: 加载测试数据...")
+    # Load test data
+    print("Step 1: Loading test data...")
     data = load_json(args.input_data_file)
-    print(f"数据集大小: {len(data)} 个样本")
+    print(f"Dataset size: {len(data)} samples")
     if args.model_type == "llama3":
         model, tokenizer = load_llama3_model_tokenizer(args.model_path)
-        print("步骤3: 开始评估（使用Llama3）...")
+        print("Step 3: Starting evaluation (using Llama3)...")
         metrics = evaluate_with_llama3(args, model, tokenizer, data)
     elif args.model_type == "gemma":
         model, tokenizer = load_gemma_model_tokenizer(args.model_path)
-        print("步骤3: 开始评估（使用Gemma-7B）...")
+        print("Step 3: Starting evaluation (using Gemma-7B)...")
         metrics = evaluate_with_gemma(args, model, tokenizer, data)
     elif args.model_type == "mistral":
         model, tokenizer = load_mistral_model_tokenizer(args.model_path)
-        print("步骤3: 开始评估（使用Mistral-7B）...")
+        print("Step 3: Starting evaluation (using Mistral-7B)...")
         metrics = evaluate_with_mistral(args, model, tokenizer, data)
     else:
-        # 加载CAG-7B模型
-        print("步骤2: 加载CAG-7B模型...")
+        # Load CAG-7B model
+        print("Step 2: Loading CAG-7B model...")
         cag_model, cag_tokenizer = load_cag_model_tokenizer(args)
 
-        # 执行评估
-        print("步骤3: 开始检索和评估...")
+        # Execute evaluation
+        print("Step 3: Starting retrieval and evaluation...")
         metrics = evaluate_with_cag(args, cag_tokenizer, cag_model, data)
 
-    # 输出结果
+    # Output results
     print("\n" + "=" * 80)
-    print("评估结果:")
+    print("Evaluation Results:")
     print("=" * 80)
     for metric, value in metrics.items():
         print(f"{metric}: {value:.4f}")
