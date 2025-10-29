@@ -6,7 +6,7 @@ python preprocessing.py \
     --dataset hotpotqa \
     --raw_data_folder data/hotpotqa/raw_data \
     --save_data_folder data/hotpotqa 
-'''
+```
 
 ### step 1:
 Run the followiing command to generate KGs:
