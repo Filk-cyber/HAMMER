@@ -12,15 +12,7 @@ def find_top_k_heads(input_path: str = "results_heads_scores/hotpotqa/llama3", t
             selected_heads_dict[x[0]] = [x[1]]
         else:
             selected_heads_dict[x[0]].append(x[1])
-    # 原始格式：[(5, 7), (2, 3), (5, 1), (8, 2), (2, 0)]
-    # 转换后：
-    '''
-    {
-        "5": [7, 1],  # 第5层的第7个和第1个头
-        "2": [3, 0],  # 第2层的第3个和第0个头
-        "8": [2]  # 第8层的第2个头
-    }
-    '''
+    
     output_path = os.path.join(input_path, f"selected_heads.json")
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(selected_heads_dict, f, ensure_ascii=False, indent=4)
