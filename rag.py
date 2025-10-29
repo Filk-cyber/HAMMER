@@ -979,12 +979,6 @@ def evaluate_with_cag(args, cag_tokenizer, cag_model, data):
         # Calculate evaluation metrics
         acc = accuracy(predicted_answer, gold_answers)
         accuracy_list.append(acc)
-        # if not acc and i < 5:  # Only print first 5 cases
-        #     print(f"\nError case {i + 1}:")
-        #     print(f"Question: {question}")
-        #     print(f"Predicted answer: {predicted_answer}")
-        #     print(f"Correct answer: {gold_answers}")
-        #     print("-" * 50)
         em_score = ems(predicted_answer, gold_answers)
         em_scores_list.append(em_score)
         if not em_score and i < 5:  # Only print first 5 cases
