@@ -7,7 +7,7 @@ python preprocessing.py \
     --raw_data_folder data/hotpotqa/raw_data \
     --save_data_folder data/hotpotqa 
 ```
-
+Among them, `--raw_data_folder` specifies the folder containing the raw data, and `--save_data_folder` specifies the folder where development and testing data will be saved.
 ### step 1:
 Run the followiing command to generate KGs:
 ```python
