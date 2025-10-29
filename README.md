@@ -3,4 +3,9 @@ Please download the data/directory data from [the link](https://drive.google.com
 ### step 1.
 Run the followiing command to generate KGs:
 ```python
-sadasdsad
+python generate_knowledge_triples.py \
+    --dataset hotpotqa \
+    --input_data_file data/hotpotqa/test.json \
+    --save_data_file data/hotpotqa/test_with_kgs.json
+```
+ss
