@@ -123,7 +123,6 @@ def casual_tracing_combine_all(input_path: str = "datasets/nq/Llama-3"):
 
     sorted_2d_indices = np.unravel_index(sorted_indices, mean_data.shape)
 
-    #将scores即之前和更改后的概率差值展平成一个一维列表进行从高到低排序，[(分数，(行索引，列索引))] for for i in range(len(sorted_values)
     sorted_data_with_indices = [(sorted_values[i], (sorted_2d_indices[0][i].item(), sorted_2d_indices[1][i].item())) for i in range(len(sorted_values))]
 
     output_path = os.path.join(input_path, f"heads_scores_mean.json")
@@ -144,15 +143,7 @@ def find_top_k_heads(input_path: str = "datasets/triviaqa", topk: int = 10):
             selected_heads_dict[x[0]] = [x[1]]
         else:
             selected_heads_dict[x[0]].append(x[1])
-    # 原始格式：[(5, 7), (2, 3), (5, 1), (8, 2), (2, 0)]
-    # 转换后：
-    '''
-    {
-        "5": [7, 1],  # 第5层的第7个和第1个头
-        "2": [3, 0],  # 第2层的第3个和第0个头
-        "8": [2]  # 第8层的第2个头
-    }
-    '''
+
     output_path = os.path.join(input_path, f"selected_heads.json")
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(selected_heads_dict, f, ensure_ascii=False, indent=4)
