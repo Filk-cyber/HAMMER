@@ -65,7 +65,6 @@ class ReaderDatasetWithChains(ReaderDataset):
                 scores.append(chain["score"])
             if len(scores) > 0:
                 max_scores_list.append(max(scores))
-        #得到每个样本链的最大分数，最后取所有样本的最大分数的最小值作为阈值
         self.threshold = min(max_scores_list) if len(max_scores_list)>=0 else 0.0 
         return examples 
     
