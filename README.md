@@ -10,6 +10,8 @@ python preprocessing.py \
 ```
 Among them, `--raw_data_folder` specifies the folder containing the raw data, and `--save_data_folder` specifies the folder where development and testing data will be saved.
 ### step 1
+First, run `add_wronganswer.py` to obtain the error answer, then run `add_orifake.py` to obtain the misinformation, and finally `run addCtxs.py`  to format the error information obtained.
+### step 2
 Run the followiing command to generate KGs:
 ```python
 python generate_knowledge_triples.py \
@@ -17,5 +19,3 @@ python generate_knowledge_triples.py \
     --input_data_file data/hotpotqa/test.json \
     --save_data_file data/hotpotqa/test_with_kgs.json
 ```
-### step 2:
-
