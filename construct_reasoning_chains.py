@@ -416,12 +416,7 @@ def construct_reasoning_chains_with_scoring_function(args, scoring_function, sco
 
         # Compute embeddings for all knowledge triples to enable similarity-based retrieval
         num_total_triples = len(triples)
-        if args.ranking_model == "e5_mistral":
-            triples_embeddings = get_e5_mistral_embeddings_for_document(triples, max_length=128, batch_size=2)
-        elif args.ranking_model == "dragon_plus":
-            triples_embeddings = get_dragon_plus_embeddings_for_document(triples, max_length=128, batch_size=2)
-        elif args.ranking_model == "e5":
-            triples_embeddings = get_e5_embeddings_for_document(triples, max_length=128, batch_size=2)
+        triples_embeddings = get_e5_mistral_embeddings_for_document(triples, max_length=128, batch_size=2)
         triples_embeddings = torch.nn.functional.normalize(triples_embeddings, p=2, dim=-1)
 
         # Initialize beam search with empty paths
